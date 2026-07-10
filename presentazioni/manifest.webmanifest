@@ -1,0 +1,13 @@
+{
+  "name": "Spazio — Presentazioni visuali",
+  "short_name": "Spazio",
+  "description": "Crea e presenta mappe visuali zoomabili.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f0e8",
+  "theme_color": "#10131a",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

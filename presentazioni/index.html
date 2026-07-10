@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10131a">
+  <meta name="description" content="Editor visuale e presentazioni zoomabili in stile Prezi.">
+  <title>Spazio — Presentazioni visuali</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand" aria-label="Spazio">
+        <span class="brand-mark">S</span>
+        <div><strong>Spazio</strong><small>presentazioni visuali</small></div>
+      </div>
+      <label class="project-title">
+        <span class="sr-only">Titolo della presentazione</span>
+        <input id="projectName" value="Presentazione senza titolo" maxlength="80">
+      </label>
+      <div class="top-actions">
+        <button id="newBtn" class="button ghost" type="button">Nuovo</button>
+        <button id="openBtn" class="button ghost" type="button">Apri</button>
+        <button id="saveBtn" class="button ghost" type="button">Salva</button>
+        <button id="exportBtn" class="button ghost" type="button">Esporta</button>
+        <label class="button ghost file-button">Importa<input id="importInput" type="file" accept="application/json,.json"></label>
+        <button id="presentBtn" class="button primary" type="button">Presenta</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="toolbox" aria-label="Strumenti">
+        <p class="section-label">Inserisci</p>
+        <button class="tool active" data-tool="select" type="button"><span>↖</span>Seleziona</button>
+        <button class="tool" data-add="text" type="button"><span>T</span>Testo</button>
+        <button class="tool" data-add="url" type="button"><span>↗</span>URL</button>
+        <label class="tool file-tool"><span>▧</span>Immagine<input id="imageInput" type="file" accept="image/*"></label>
+        <label class="tool file-tool"><span>▶</span>Audio/video<input id="mediaInput" type="file" accept="audio/*,video/*"></label>
+        <label class="tool file-tool"><span>⇩</span>Word / PDF<input id="documentInput" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"></label>
+        <p class="section-label">Disegna</p>
+        <button class="tool" data-add="shape" type="button"><span>□</span>Forma</button>
+        <button class="tool" data-tool="connector" type="button"><span>⌁</span>Connettore</button>
+        <p class="section-label">Percorso</p>
+        <button id="addPathBtn" class="tool" type="button"><span>＋</span>Aggiungi tappa</button>
+      </aside>
+
+      <section id="viewport" class="viewport" aria-label="Area di lavoro">
+        <div id="stage" class="stage">
+          <svg id="connectorLayer" class="connector-layer" width="6000" height="4000" aria-label="Connettori"></svg>
+          <div id="nodesLayer" class="nodes-layer"></div>
+        </div>
+        <div class="canvas-help" id="canvasHelp">Trascina gli elementi. Usa la rotellina per lo zoom e trascina lo sfondo per muoverti.</div>
+        <div class="zoom-controls" aria-label="Controlli zoom">
+          <button id="zoomOutBtn" type="button" aria-label="Riduci">−</button>
+          <button id="fitBtn" type="button">Panoramica</button>
+          <button id="zoomInBtn" type="button" aria-label="Ingrandisci">＋</button>
+        </div>
+      </section>
+
+      <aside class="inspector" aria-label="Proprietà">
+        <div id="emptyInspector">
+          <p class="section-label">Progetto</p>
+          <label>Sfondo <input id="projectBackground" type="color" value="#f4f0e8"></label>
+          <p class="hint">Seleziona un elemento o un connettore per modificarne aspetto e dimensioni.</p>
+        </div>
+        <div id="nodeInspector" hidden>
+          <div class="inspector-head"><p class="section-label">Elemento</p><button id="deleteNodeBtn" class="danger-link" type="button">Elimina</button></div>
+          <div class="field-grid">
+            <label>X <input id="nodeX" type="number"></label>
+            <label>Y <input id="nodeY" type="number"></label>
+            <label>Larghezza <input id="nodeW" type="number" min="80"></label>
+            <label>Altezza <input id="nodeH" type="number" min="50"></label>
+          </div>
+          <label>Rotazione <div class="range-row"><input id="nodeRotation" type="range" min="-180" max="180"><output id="nodeRotationValue">0°</output></div></label>
+          <label>Forma <select id="nodeShape"><option value="rounded">Arrotondata</option><option value="rectangle">Rettangolo</option><option value="ellipse">Ellisse</option><option value="pill">Capsula</option><option value="diamond">Rombo</option><option value="none">Senza contenitore</option></select></label>
+          <div class="field-grid">
+            <label>Sfondo <input id="nodeBg" type="color"></label>
+            <label>Testo <input id="nodeColor" type="color"></label>
+            <label>Bordo <input id="nodeBorder" type="color"></label>
+            <label>Spessore <input id="nodeBorderWidth" type="number" min="0" max="16"></label>
+          </div>
+          <label id="fontSizeField">Testo <div class="range-row"><input id="nodeFontSize" type="range" min="12" max="72"><output id="nodeFontSizeValue">28 px</output></div></label>
+          <label id="contentField">Contenuto <textarea id="nodeContent" rows="4"></textarea></label>
+          <div class="stack-actions">
+            <button id="bringFrontBtn" class="button ghost" type="button">Porta davanti</button>
+            <button id="sendBackBtn" class="button ghost" type="button">Porta dietro</button>
+          </div>
+        </div>
+        <div id="edgeInspector" hidden>
+          <div class="inspector-head"><p class="section-label">Connettore</p><button id="deleteEdgeBtn" class="danger-link" type="button">Elimina</button></div>
+          <label>Colore <input id="edgeColor" type="color"></label>
+          <label>Spessore <div class="range-row"><input id="edgeWidth" type="range" min="1" max="12"><output id="edgeWidthValue">3 px</output></div></label>
+          <label>Forma <select id="edgeShape"><option value="curve">Curva</option><option value="straight">Retta</option><option value="elbow">A gomito</option></select></label>
+          <label>Linea <select id="edgeStyle"><option value="solid">Continua</option><option value="dashed">Tratteggiata</option><option value="dotted">Puntinata</option></select></label>
+          <label class="checkbox"><input id="edgeArrow" type="checkbox"> Freccia finale</label>
+        </div>
+        <div class="path-panel">
+          <div class="inspector-head"><p class="section-label">Sequenza</p><button id="clearPathBtn" class="danger-link" type="button">Svuota</button></div>
+          <ol id="pathList" class="path-list"></ol>
+          <p id="pathEmpty" class="hint">Aggiungi elementi per creare una presentazione guidata.</p>
+        </div>
+      </aside>
+    </main>
+
+    <div id="presentationBar" class="presentation-bar" hidden>
+      <button id="exitPresentationBtn" type="button">Esci</button>
+      <div><button id="prevPathBtn" type="button" aria-label="Tappa precedente">←</button><span id="pathCounter">Panoramica</span><button id="nextPathBtn" type="button" aria-label="Tappa successiva">→</button></div>
+      <button id="fullscreenBtn" type="button">Schermo intero</button>
+    </div>
+
+    <dialog id="urlDialog">
+      <form method="dialog" id="urlForm">
+        <h2>Inserisci un collegamento</h2>
+        <label>Titolo <input id="urlTitle" maxlength="120" placeholder="Risorsa online"></label>
+        <label>Indirizzo URL <input id="urlValue" type="url" required placeholder="https://..."></label>
+        <div class="dialog-actions"><button class="button ghost" value="cancel">Annulla</button><button id="confirmUrlBtn" class="button primary" value="default">Inserisci</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="projectsDialog">
+      <div class="dialog-body">
+        <div class="dialog-title"><h2>Presentazioni salvate</h2><button id="closeProjectsBtn" class="icon-button" type="button" aria-label="Chiudi">×</button></div>
+        <div id="projectsList" class="projects-list"></div>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
