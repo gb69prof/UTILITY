@@ -1,20 +1,44 @@
 {
-  "version": 1,
-  "id": "demo-importabile",
-  "title": "Esempio minimo thinkgbLink",
-  "description": "Tre punti per capire il flusso: osserva, collega, interpreta.",
-  "image": {
-    "name": "esempio.svg",
-    "type": "image/svg+xml",
-    "alt": "Composizione astratta con tre aree collegate",
-    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='750' viewBox='0 0 1200 750'%3E%3Crect width='1200' height='750' fill='%23d8c9ad'/%3E%3Cpath d='M80 560 Q300 180 540 420 T1120 230' fill='none' stroke='%234a6b60' stroke-width='70' opacity='.45'/%3E%3Ccircle cx='250' cy='250' r='140' fill='%231c3933'/%3E%3Crect x='620' y='180' width='280' height='330' rx='30' fill='%23eee5d3'/%3E%3Cpath d='M760 180v330M620 350h280' stroke='%23a77935' stroke-width='8'/%3E%3Ctext x='70' y='690' fill='%23203934' font-family='Georgia' font-size='48'%3EUna superficie, molti percorsi%3C/text%3E%3C/svg%3E"
-  },
+  "version": 2,
+  "id": "demo-importabile-v2",
+  "title": "Esempio multilivello thinkgbLink",
+  "description": "Una scena principale conduce a una seconda immagine interattiva.",
+  "rootSceneId": "scene-root",
   "settings": { "guidedMode": true },
   "createdAt": "2026-08-08T00:00:00.000Z",
   "updatedAt": "2026-08-08T00:00:00.000Z",
-  "hotspots": [
-    { "id": "demo-a", "x": 21, "y": 34, "title": "Osserva", "category": "informazione", "style": "number", "number": 1, "shortText": "Parti da ciò che l’immagine mostra davvero.", "longText": "Distingui il dato visibile dall’interpretazione che ne ricavi.", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "", "answer": "", "previousId": "", "nextId": "demo-b", "relations": [] },
-    { "id": "demo-b", "x": 64, "y": 45, "title": "Collega", "category": "concetto", "style": "number", "number": 2, "shortText": "Metti in relazione forme, luoghi e concetti.", "longText": "Una relazione esplicita rende visibile il ragionamento dell’autore.", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "", "answer": "", "previousId": "demo-a", "nextId": "demo-c", "relations": [{ "targetId": "demo-c", "type": "consegue", "label": "Porta a" }] },
-    { "id": "demo-c", "x": 82, "y": 30, "title": "Interpreta", "category": "domanda", "style": "number", "number": 3, "shortText": "Il percorso produce una lettura, non una decorazione.", "longText": "", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "Quale ordine alternativo potresti costruire?", "answer": "Non esiste una sola risposta: deve però esserci una relazione argomentabile tra i punti.", "previousId": "demo-b", "nextId": "", "relations": [{ "targetId": "demo-a", "type": "ritorna", "label": "Ricomincia" }] }
+  "scenes": [
+    {
+      "id": "scene-root",
+      "title": "Una superficie, molti percorsi",
+      "description": "Scena principale",
+      "parentHotspotId": "",
+      "image": {
+        "name": "esempio.svg",
+        "type": "image/svg+xml",
+        "alt": "Composizione astratta con tre aree collegate",
+        "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='750' viewBox='0 0 1200 750'%3E%3Crect width='1200' height='750' fill='%23d8c9ad'/%3E%3Cpath d='M80 560 Q300 180 540 420 T1120 230' fill='none' stroke='%234a6b60' stroke-width='70' opacity='.45'/%3E%3Ccircle cx='250' cy='250' r='140' fill='%231c3933'/%3E%3Crect x='620' y='180' width='280' height='330' rx='30' fill='%23eee5d3'/%3E%3Cpath d='M760 180v330M620 350h280' stroke='%23a77935' stroke-width='8'/%3E%3Ctext x='70' y='690' fill='%23203934' font-family='Georgia' font-size='48'%3EUna superficie, molti percorsi%3C/text%3E%3C/svg%3E"
+      },
+      "hotspots": [
+        { "id": "demo-a", "x": 21, "y": 34, "title": "Entra nel dettaglio", "category": "luogo", "style": "number", "number": 1, "shortText": "Questo hotspot contiene una nuova scena.", "longText": "Apri la scheda e usa il pulsante Entra nella scena.", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "", "answer": "", "targetSceneId": "scene-child", "previousId": "", "nextId": "demo-b", "relations": [] },
+        { "id": "demo-b", "x": 64, "y": 45, "title": "Collega", "category": "concetto", "style": "number", "number": 2, "shortText": "Le relazioni restano leggibili dentro la scena.", "longText": "", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "", "answer": "", "targetSceneId": "", "previousId": "demo-a", "nextId": "", "relations": [{ "targetId": "demo-a", "type": "ritorna", "label": "Torna alla porta" }] }
+      ]
+    },
+    {
+      "id": "scene-child",
+      "title": "Dentro il dettaglio",
+      "description": "Seconda scena raggiunta dal primo hotspot",
+      "parentHotspotId": "demo-a",
+      "image": {
+        "name": "dettaglio.svg",
+        "type": "image/svg+xml",
+        "alt": "Composizione verde scuro con un cerchio dorato",
+        "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='750' viewBox='0 0 1200 750'%3E%3Crect width='1200' height='750' fill='%2317322d'/%3E%3Ccircle cx='380' cy='320' r='170' fill='%23e5a02d'/%3E%3Crect x='700' y='180' width='330' height='360' rx='36' fill='%23eef3ea'/%3E%3Ctext x='75' y='680' fill='white' font-family='Georgia' font-size='54'%3EDentro la seconda scena%3C/text%3E%3C/svg%3E"
+      },
+      "hotspots": [
+        { "id": "demo-c", "x": 32, "y": 43, "title": "Nuovo punto", "category": "informazione", "style": "number", "number": 1, "shortText": "La nuova immagine ha hotspot autonomi.", "longText": "", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "", "answer": "", "targetSceneId": "", "previousId": "", "nextId": "demo-d", "relations": [] },
+        { "id": "demo-d", "x": 72, "y": 48, "title": "Continua ancora", "category": "domanda", "style": "number", "number": 2, "shortText": "Anche questo hotspot potrebbe contenere un terzo livello.", "longText": "", "image": null, "imageAlt": "", "audio": null, "video": null, "videoUrl": "", "linkUrl": "", "linkLabel": "", "question": "Esiste un limite ai livelli?", "answer": "No: ogni hotspot può aprire un'altra scena.", "targetSceneId": "", "previousId": "demo-c", "nextId": "", "relations": [] }
+      ]
+    }
   ]
 }
