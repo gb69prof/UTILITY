@@ -83,20 +83,22 @@
       </header>
 
       <div class="editor-body">
-        <aside id="projectSidebar" class="project-sidebar" aria-label="Hotspot del progetto">
+        <aside id="projectSidebar" class="project-sidebar" aria-label="Struttura della scena">
           <div class="sidebar-heading">
-            <div><p class="eyebrow">STRUTTURA</p><h2>Hotspot</h2></div>
+            <div><p class="eyebrow">SCENA ATTIVA</p><h2 id="sceneTitleDisplay">Scena principale</h2><small id="sceneCountDisplay">0 hotspot</small></div>
             <button id="closeSidebarButton" class="icon-button mobile-only" type="button" aria-label="Chiudi pannello">×</button>
           </div>
           <label class="search-box"><span class="visually-hidden">Cerca hotspot</span><input id="hotspotSearch" type="search" placeholder="Cerca…"></label>
           <div id="hotspotList" class="hotspot-list"></div>
           <div class="sidebar-footer">
-            <button id="projectSettingsButton" class="button ghost full" type="button">Impostazioni progetto</button>
+            <button id="projectSettingsButton" class="button ghost full" type="button">Impostazioni scena</button>
           </div>
         </aside>
 
         <main class="workspace">
+          <nav id="sceneBreadcrumbs" class="scene-breadcrumbs" aria-label="Percorso delle scene"></nav>
           <div class="workspace-toolbar" aria-label="Strumenti immagine">
+            <button id="backSceneButton" class="tool scene-back hidden" type="button" aria-label="Torna alla scena precedente">← Indietro</button>
             <div class="tool-group editor-only">
               <button id="addToolButton" class="tool active" type="button" aria-pressed="true">+ Punto</button>
               <button id="panToolButton" class="tool" type="button" aria-pressed="false">Sposta</button>
@@ -157,6 +159,20 @@
               <label><span>Risposta nascosta</span><textarea name="answer" rows="3"></textarea></label>
             </details>
 
+            <details open><summary>Scena interna</summary>
+              <div id="childSceneEmpty" class="child-scene-box">
+                <p>Trasforma questo hotspot in una porta verso una nuova immagine interattiva.</p>
+                <label class="file-control"><span>Immagine della nuova scena</span><input id="childSceneImageInput" type="file" accept="image/jpeg,image/png,image/webp"><em id="childSceneImageName">Nessun file</em></label>
+                <button id="createChildSceneButton" class="button primary full" type="button">Crea scena interna</button>
+              </div>
+              <div id="childSceneLinked" class="child-scene-box linked hidden">
+                <strong id="childSceneTitle">Scena interna</strong>
+                <span id="childSceneStats">0 hotspot</span>
+                <button id="enterChildSceneButton" class="button primary full" type="button">Entra e aggiungi hotspot</button>
+                <button id="removeChildSceneButton" class="text-button danger" type="button">Elimina scena interna</button>
+              </div>
+            </details>
+
             <details><summary>Percorso e relazioni</summary>
               <div class="form-grid two"><label><span>Precedente</span><select name="previousId"><option value="">Nessuno</option></select></label><label><span>Successivo</span><select name="nextId"><option value="">Nessuno</option></select></label></div>
               <div class="relation-builder"><label><span>Collega a</span><select id="relationTarget"><option value="">Scegli hotspot</option></select></label><label><span>Tipo</span><select id="relationType"><option value="collega">Collega</option><option value="causa">Causa</option><option value="consegue">Conseguenza</option><option value="approfondisce">Approfondisce</option><option value="contrasta">Contrasta</option></select></label><label><span>Etichetta</span><input id="relationLabel" maxlength="60" placeholder="Vai a"></label><button id="addRelationButton" class="button secondary full" type="button">Aggiungi relazione</button></div>
@@ -187,7 +203,7 @@
 
   <dialog id="settingsDialog" class="dialog">
     <form id="settingsForm" method="dialog">
-      <div class="dialog-heading"><div><p class="eyebrow">PROGETTO</p><h2>Impostazioni</h2></div><button class="icon-button" value="cancel" aria-label="Chiudi">×</button></div>
+      <div class="dialog-heading"><div><p id="settingsEyebrow" class="eyebrow">SCENA</p><h2 id="settingsTitle">Impostazioni</h2></div><button class="icon-button" value="cancel" aria-label="Chiudi">×</button></div>
       <label><span>Titolo</span><input name="title" required maxlength="100"></label>
       <label><span>Descrizione</span><textarea name="description" rows="3" maxlength="500"></textarea></label>
       <label><span>Testo alternativo immagine</span><input name="imageAlt" maxlength="160"></label>
@@ -199,7 +215,7 @@
 
   <dialog id="contentDialog" class="content-dialog"><button id="closeContentButton" class="content-close" type="button" aria-label="Chiudi contenuto">×</button><article id="contentCard" class="content-card"></article></dialog>
 
-  <dialog id="guideDialog" class="dialog wide"><div class="dialog-heading"><div><p class="eyebrow">IN QUATTRO PASSI</p><h2>Guida rapida</h2></div><button id="closeGuideButton" class="icon-button" aria-label="Chiudi">×</button></div><ol class="guide-steps"><li><b>Carica</b><span>Crea un progetto scegliendo una JPG, PNG o WEBP.</span></li><li><b>Punto</b><span>Tocca l’immagine e descrivi l’hotspot nel pannello.</span></li><li><b>Collega</b><span>Crea un percorso con precedente, successivo e relazioni.</span></li><li><b>Esporta</b><span>Conserva il progetto o genera il Viewer ZIP per GitHub Pages.</span></li></ol></dialog>
+  <dialog id="guideDialog" class="dialog wide"><div class="dialog-heading"><div><p class="eyebrow">IN CINQUE PASSI</p><h2>Guida rapida</h2></div><button id="closeGuideButton" class="icon-button" aria-label="Chiudi">×</button></div><ol class="guide-steps"><li><b>Carica</b><span>Crea un progetto scegliendo una JPG, PNG o WEBP.</span></li><li><b>Punto</b><span>Tocca l’immagine e descrivi l’hotspot nel pannello.</span></li><li><b>Entra</b><span>Associa all’hotspot una nuova scena e aggiungi altri punti al suo interno.</span></li><li><b>Collega</b><span>Crea percorsi tra gli hotspot della scena.</span></li><li><b>Esporta</b><span>Conserva il progetto o genera il Viewer ZIP per GitHub Pages.</span></li></ol></dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="./js/db.js"></script>
