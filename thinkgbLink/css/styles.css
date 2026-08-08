@@ -142,7 +142,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .hotspot-marker.pulse { animation: pulse 1.8s ease-out infinite; }
 @keyframes pulse { 0%,100%{box-shadow:0 4px 18px rgba(0,0,0,.3),0 0 0 4px rgba(229,160,45,.2)}50%{box-shadow:0 4px 18px rgba(0,0,0,.3),0 0 0 12px rgba(229,160,45,0)} }
 .add-hint { position: absolute; left: 50%; bottom: 21px; padding: 8px 13px; border-radius: 10px; background: rgba(17,27,25,.78); color: white; font-size: .73rem; transform: translateX(-50%); pointer-events: none; backdrop-filter: blur(10px); }
-.empty-canvas { position: absolute; left: 50%; top: 50%; display: grid; gap: 4px; color: white; transform: translate(-50%,-50%); text-align: center; }.empty-canvas span { color: #c0cbc7; font-size: .82rem; }
+.empty-canvas { position: absolute; z-index: 3; left: 50%; top: 50%; display: grid; width: min(430px,calc(100% - 36px)); gap: 8px; color: white; transform: translate(-50%,-50%); text-align: center; }.empty-canvas span { color: #c0cbc7; font-size: .82rem; }.empty-canvas .button { width: min(300px,100%); margin: 10px auto 0; }
 .inspector { border-left: 1px solid var(--line); }
 .inspector-empty { display: grid; height: 100%; padding: 28px; place-content: center; color: var(--muted); text-align: center; }.inspector-empty > span { color: var(--brand); font-size: 2.5rem; }.inspector-empty strong { margin-top: 8px; color: var(--ink); }.inspector-empty p { max-width: 240px; margin: 7px auto; font-size: .83rem; }
 .hotspot-form { padding-bottom: 35px; }
