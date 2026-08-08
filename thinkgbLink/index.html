@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#13211f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="thinkgbLink">
+  <meta name="description" content="Trasforma immagini didattiche in percorsi interattivi, anche offline.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>thinkgbLink — Immagini che diventano percorsi</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <section id="homeView" class="home-view" aria-labelledby="brandTitle">
+      <header class="home-header">
+        <a class="brand" href="#" aria-label="thinkgbLink, torna alla home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span><strong id="brandTitle">thinkgbLink</strong><small>Immagini che diventano percorsi.</small></span>
+        </a>
+        <button id="installButton" class="button ghost hidden" type="button">Installa app</button>
+      </header>
+
+      <main class="home-main">
+        <div class="hero-copy">
+          <p class="eyebrow">EDITOR DI IMMAGINI INTERATTIVE</p>
+          <h1>Una superficie visiva può diventare una spiegazione.</h1>
+          <p>Carica un’immagine, indica i punti importanti, collega idee e costruisci un percorso esplorabile. Il progetto resta tuo, sul dispositivo.</p>
+          <div class="hero-actions">
+            <button id="newProjectButton" class="button primary large" type="button">Nuovo progetto</button>
+            <button id="openProjectButton" class="button secondary large" type="button">Apri progetto</button>
+            <button id="importProjectButton" class="button ghost large" type="button">Importa</button>
+          </div>
+          <input id="projectImportInput" class="visually-hidden" type="file" accept=".thinkgblink,.json,application/json">
+        </div>
+
+        <div class="hero-visual" aria-label="Esempio di immagine con punti collegati">
+          <div class="sample-map">
+            <div class="sample-grid"></div>
+            <span class="sample-label one">luogo</span>
+            <span class="sample-label two">evento</span>
+            <span class="sample-label three">idea</span>
+            <svg viewBox="0 0 600 420" aria-hidden="true">
+              <path d="M136 250 C240 110 332 115 435 198 S500 325 408 342" />
+            </svg>
+            <button class="demo-dot dot-one" tabindex="-1" aria-hidden="true">1</button>
+            <button class="demo-dot dot-two" tabindex="-1" aria-hidden="true">2</button>
+            <button class="demo-dot dot-three" tabindex="-1" aria-hidden="true">3</button>
+          </div>
+          <div class="principle"><span>Carico</span><b>→</b><span>Punto</span><b>→</b><span>Collego</span><b>→</b><span>Esploro</span></div>
+        </div>
+
+        <section class="recent-section" aria-labelledby="recentTitle">
+          <div class="section-heading">
+            <div><p class="eyebrow">SUL DISPOSITIVO</p><h2 id="recentTitle">Progetti recenti</h2></div>
+            <button id="loadDemoButton" class="text-button" type="button">Apri l’esempio</button>
+          </div>
+          <div id="recentProjects" class="recent-grid" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <footer class="home-footer"><span>Privato per progetto: nessun account, nessun backend.</span><button id="guideButton" class="text-button" type="button">Guida rapida</button></footer>
+    </section>
+
+    <section id="editorView" class="editor-view hidden" aria-label="Editor thinkgbLink">
+      <header class="editor-header">
+        <button id="homeButton" class="icon-button" type="button" aria-label="Torna ai progetti">←</button>
+        <div class="project-identity"><strong id="projectTitleDisplay">Senza titolo</strong><span id="saveState" data-state="saved">Salvato</span></div>
+        <div class="mode-switch" role="group" aria-label="Modalità di lavoro">
+          <button id="editModeButton" class="active" type="button">Editor</button>
+          <button id="exploreModeButton" type="button">Esplora</button>
+        </div>
+        <div class="header-actions">
+          <button id="saveButton" class="button secondary compact" type="button">Salva</button>
+          <button id="exportProjectButton" class="button ghost compact" type="button">Progetto</button>
+          <button id="exportViewerButton" class="button primary compact" type="button">Viewer ZIP</button>
+          <button id="mobileMenuButton" class="icon-button mobile-only" type="button" aria-label="Apri comandi">⋯</button>
+        </div>
+      </header>
+
+      <div class="editor-body">
+        <aside id="projectSidebar" class="project-sidebar" aria-label="Hotspot del progetto">
+          <div class="sidebar-heading">
+            <div><p class="eyebrow">STRUTTURA</p><h2>Hotspot</h2></div>
+            <button id="closeSidebarButton" class="icon-button mobile-only" type="button" aria-label="Chiudi pannello">×</button>
+          </div>
+          <label class="search-box"><span class="visually-hidden">Cerca hotspot</span><input id="hotspotSearch" type="search" placeholder="Cerca…"></label>
+          <div id="hotspotList" class="hotspot-list"></div>
+          <div class="sidebar-footer">
+            <button id="projectSettingsButton" class="button ghost full" type="button">Impostazioni progetto</button>
+          </div>
+        </aside>
+
+        <main class="workspace">
+          <div class="workspace-toolbar" aria-label="Strumenti immagine">
+            <div class="tool-group editor-only">
+              <button id="addToolButton" class="tool active" type="button" aria-pressed="true">+ Punto</button>
+              <button id="panToolButton" class="tool" type="button" aria-pressed="false">Sposta</button>
+            </div>
+            <div class="tool-group">
+              <button id="zoomOutButton" class="tool square" type="button" aria-label="Riduci zoom">−</button>
+              <output id="zoomOutput" class="zoom-output">100%</output>
+              <button id="zoomInButton" class="tool square" type="button" aria-label="Aumenta zoom">+</button>
+              <button id="resetViewButton" class="tool" type="button">Adatta</button>
+            </div>
+            <button id="openSidebarButton" class="tool mobile-only" type="button">Hotspot</button>
+          </div>
+
+          <div id="imageViewport" class="image-viewport" tabindex="0" aria-label="Immagine interattiva. Tocca per aggiungere un hotspot.">
+            <div id="emptyCanvas" class="empty-canvas hidden"><strong>Nessuna immagine</strong><span>Aggiungine una dalle impostazioni del progetto.</span></div>
+            <div id="imageCanvas" class="image-canvas">
+              <img id="mainImage" alt="">
+              <div id="hotspotLayer" class="hotspot-layer"></div>
+            </div>
+            <div id="addHint" class="add-hint editor-only">Tocca l’immagine per aggiungere un punto</div>
+          </div>
+        </main>
+
+        <aside id="inspector" class="inspector" aria-label="Editor hotspot">
+          <div class="inspector-empty" id="inspectorEmpty"><span>◎</span><strong>Seleziona un hotspot</strong><p>Oppure tocca un punto dell’immagine per crearne uno.</p></div>
+          <form id="hotspotForm" class="hotspot-form hidden">
+            <div class="inspector-heading">
+              <div><p class="eyebrow">PUNTO SELEZIONATO</p><h2 id="inspectorTitle">Nuovo hotspot</h2></div>
+              <button id="closeInspectorButton" class="icon-button mobile-only" type="button" aria-label="Chiudi editor">×</button>
+            </div>
+
+            <div class="form-grid two">
+              <label><span>Titolo</span><input name="title" maxlength="100" required></label>
+              <label><span>Categoria</span><select name="category"><option value="informazione">Informazione</option><option value="personaggio">Personaggio</option><option value="luogo">Luogo</option><option value="evento">Evento</option><option value="concetto">Concetto</option><option value="documento">Documento</option><option value="domanda">Domanda</option></select></label>
+            </div>
+            <div class="form-grid two">
+              <label><span>Stile</span><select name="style"><option value="point">Punto</option><option value="circle">Cerchio</option><option value="number">Numero</option><option value="icon">Icona</option></select></label>
+              <label><span>Numero</span><input name="number" type="number" min="1" max="999"></label>
+            </div>
+            <label><span>Testo breve</span><textarea name="shortText" rows="2" maxlength="280" placeholder="Il nucleo dell’informazione"></textarea></label>
+            <label><span>Approfondimento</span><textarea name="longText" rows="5" placeholder="Testo esteso facoltativo"></textarea></label>
+
+            <details open><summary>Media e link</summary>
+              <label class="file-control"><span>Immagine</span><input id="hotspotImageInput" type="file" accept="image/jpeg,image/png,image/webp"><em id="imageFileName">Nessun file</em></label>
+              <label><span>Testo alternativo immagine</span><input name="imageAlt" maxlength="160"></label>
+              <button id="removeHotspotImage" class="text-button danger hidden" type="button">Rimuovi immagine</button>
+              <label class="file-control"><span>Audio</span><input id="hotspotAudioInput" type="file" accept="audio/*"><em id="audioFileName">Nessun file</em></label>
+              <button id="removeHotspotAudio" class="text-button danger hidden" type="button">Rimuovi audio</button>
+              <label class="file-control"><span>Video locale</span><input id="hotspotVideoInput" type="file" accept="video/*"><em id="videoFileName">Nessun file</em></label>
+              <button id="removeHotspotVideo" class="text-button danger hidden" type="button">Rimuovi video</button>
+              <label><span>URL video</span><input name="videoUrl" type="url" inputmode="url" placeholder="https://…"></label>
+              <label><span>Link esterno</span><input name="linkUrl" type="url" inputmode="url" placeholder="https://…"></label>
+              <label><span>Etichetta link</span><input name="linkLabel" maxlength="80" placeholder="Apri la fonte"></label>
+            </details>
+
+            <details><summary>Domanda didattica</summary>
+              <label><span>Domanda</span><textarea name="question" rows="2"></textarea></label>
+              <label><span>Risposta nascosta</span><textarea name="answer" rows="3"></textarea></label>
+            </details>
+
+            <details><summary>Percorso e relazioni</summary>
+              <div class="form-grid two"><label><span>Precedente</span><select name="previousId"><option value="">Nessuno</option></select></label><label><span>Successivo</span><select name="nextId"><option value="">Nessuno</option></select></label></div>
+              <div class="relation-builder"><label><span>Collega a</span><select id="relationTarget"><option value="">Scegli hotspot</option></select></label><label><span>Tipo</span><select id="relationType"><option value="collega">Collega</option><option value="causa">Causa</option><option value="consegue">Conseguenza</option><option value="approfondisce">Approfondisce</option><option value="contrasta">Contrasta</option></select></label><label><span>Etichetta</span><input id="relationLabel" maxlength="60" placeholder="Vai a"></label><button id="addRelationButton" class="button secondary full" type="button">Aggiungi relazione</button></div>
+              <div id="relationList" class="relation-list"></div>
+            </details>
+
+            <div class="danger-zone"><button id="duplicateHotspotButton" class="button secondary" type="button">Duplica</button><button id="deleteHotspotButton" class="button danger" type="button">Elimina</button></div>
+          </form>
+        </aside>
+      </div>
+
+      <div id="mobileActions" class="mobile-actions hidden"><button id="mobileSave" type="button">Salva</button><button id="mobileExportProject" type="button">Esporta progetto</button><button id="mobileExportViewer" type="button">Esporta Viewer ZIP</button></div>
+    </section>
+  </div>
+
+  <dialog id="newProjectDialog" class="dialog">
+    <form id="newProjectForm" method="dialog">
+      <div class="dialog-heading"><div><p class="eyebrow">NUOVO PROGETTO</p><h2>Inizia dall’immagine</h2></div><button class="icon-button" value="cancel" aria-label="Chiudi">×</button></div>
+      <label><span>Titolo</span><input name="title" required maxlength="100" autocomplete="off" placeholder="Es. Atene di Socrate"></label>
+      <label><span>Breve descrizione</span><textarea name="description" rows="3" maxlength="500"></textarea></label>
+      <label class="drop-zone" id="mainImageDrop"><input name="image" type="file" accept="image/jpeg,image/png,image/webp" required><strong>Scegli l’immagine principale</strong><span>JPG, PNG o WEBP</span><em id="mainImageFileName">Nessun file selezionato</em></label>
+      <label><span>Testo alternativo</span><input name="imageAlt" maxlength="160" placeholder="Descrivi brevemente l’immagine"></label>
+      <div class="dialog-actions"><button class="button ghost" value="cancel">Annulla</button><button class="button primary" id="createProjectSubmit" value="default">Crea progetto</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="openProjectDialog" class="dialog wide"><div class="dialog-heading"><div><p class="eyebrow">ARCHIVIO LOCALE</p><h2>Apri progetto</h2></div><button id="closeOpenDialog" class="icon-button" aria-label="Chiudi">×</button></div><div id="allProjects" class="project-list"></div></dialog>
+
+  <dialog id="settingsDialog" class="dialog">
+    <form id="settingsForm" method="dialog">
+      <div class="dialog-heading"><div><p class="eyebrow">PROGETTO</p><h2>Impostazioni</h2></div><button class="icon-button" value="cancel" aria-label="Chiudi">×</button></div>
+      <label><span>Titolo</span><input name="title" required maxlength="100"></label>
+      <label><span>Descrizione</span><textarea name="description" rows="3" maxlength="500"></textarea></label>
+      <label><span>Testo alternativo immagine</span><input name="imageAlt" maxlength="160"></label>
+      <label class="file-control"><span>Sostituisci immagine</span><input id="replaceImageInput" type="file" accept="image/jpeg,image/png,image/webp"><em id="replaceImageName">Mantieni l’attuale</em></label>
+      <label class="toggle-row"><input name="guidedMode" type="checkbox"><span>Proponi il percorso guidato nel Viewer</span></label>
+      <div class="dialog-actions"><button class="button ghost" value="cancel">Annulla</button><button class="button primary" value="default">Salva</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="contentDialog" class="content-dialog"><button id="closeContentButton" class="content-close" type="button" aria-label="Chiudi contenuto">×</button><article id="contentCard" class="content-card"></article></dialog>
+
+  <dialog id="guideDialog" class="dialog wide"><div class="dialog-heading"><div><p class="eyebrow">IN QUATTRO PASSI</p><h2>Guida rapida</h2></div><button id="closeGuideButton" class="icon-button" aria-label="Chiudi">×</button></div><ol class="guide-steps"><li><b>Carica</b><span>Crea un progetto scegliendo una JPG, PNG o WEBP.</span></li><li><b>Punto</b><span>Tocca l’immagine e descrivi l’hotspot nel pannello.</span></li><li><b>Collega</b><span>Crea un percorso con precedente, successivo e relazioni.</span></li><li><b>Esporta</b><span>Conserva il progetto o genera il Viewer ZIP per GitHub Pages.</span></li></ol></dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./js/db.js"></script>
+  <script src="./js/zip.js"></script>
+  <script src="./js/exporter.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
