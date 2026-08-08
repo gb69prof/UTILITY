@@ -71,9 +71,11 @@ Ogni hotspot può essere sia una scheda informativa sia una porta verso una nuov
 
 1. selezionare l’hotspot nell’Editor;
 2. aprire **Scena interna**;
-3. scegliere l’immagine del nuovo livello;
-4. premere **Crea scena interna**;
-5. aggiungere gli hotspot sulla nuova immagine.
+3. premere **Crea e apri scena interna**;
+4. inserire subito l’immagine oppure aggiungerla dal nuovo spazio di lavoro;
+5. usare **Punto** per aggiungere gli hotspot esattamente come nella scena madre.
+
+Una scena già collegata si riapre con **Apri e modifica questa scena**. L’Editor entra automaticamente in modalità **Modifica** con lo strumento **Punto** attivo, anche quando il passaggio parte da un livello più profondo.
 
 Il percorso in alto mostra sempre la posizione corrente. **Indietro** riporta alla scena precedente. Eliminando un hotspot che contiene scene, l’Editor avverte che verranno rimossi anche tutti i livelli discendenti, evitando scene orfane.
 
