@@ -4,12 +4,14 @@
 
 thinkgbLink è una PWA locale per trasformare un’immagine in una superficie didattica esplorabile attraverso hotspot. Non richiede account, backend o servizi esterni: editor, archivio e strumenti di esportazione funzionano direttamente nel browser.
 
-Il flusso essenziale è: **Carico → Punto → Collego → Esploro → Esporto.**
+Il flusso essenziale è: **Carico → Punto → Entro → Collego → Esploro → Esporto.**
 
-## Funzioni della versione 1
+## Funzioni
 
 - caricamento di immagini JPG, PNG e WEBP;
 - hotspot posizionati con coordinate percentuali, responsive e trascinabili;
+- scene annidate: ogni hotspot può aprire una nuova immagine con altri hotspot, senza limite prefissato di profondità;
+- breadcrumb e comando **Indietro** per orientarsi tra i livelli;
 - contenuti testuali, immagini, audio, video locali, URL video e link;
 - domande didattiche con risposta nascosta;
 - categorie e quattro stili visivi per gli hotspot;
@@ -63,6 +65,18 @@ Nel pannello dell’hotspot si possono associare:
 
 I file locali vengono incorporati nel progetto conservato in IndexedDB. Video molto grandi possono consumare rapidamente la quota assegnata da Safari: in quel caso conviene comprimere il file o usare un URL.
 
+## Creare scene dentro gli hotspot
+
+Ogni hotspot può essere sia una scheda informativa sia una porta verso una nuova scena:
+
+1. selezionare l’hotspot nell’Editor;
+2. aprire **Scena interna**;
+3. scegliere l’immagine del nuovo livello;
+4. premere **Crea scena interna**;
+5. aggiungere gli hotspot sulla nuova immagine.
+
+Il percorso in alto mostra sempre la posizione corrente. **Indietro** riporta alla scena precedente. Eliminando un hotspot che contiene scene, l’Editor avverte che verranno rimossi anche tutti i livelli discendenti, evitando scene orfane.
+
 ## Salvare e riaprire
 
 Le modifiche vengono salvate automaticamente dopo una breve pausa; lo stato è indicato nell’intestazione. Il comando **Salva** forza il salvataggio immediato. Da **Apri progetto** si accede all’archivio del dispositivo.
@@ -90,7 +104,7 @@ nome-progetto/
 ├── index.html
 ├── data.json
 ├── assets/
-│   ├── main-image.*
+│   ├── scenes/
 │   ├── images/
 │   ├── audio/
 │   └── video/
@@ -99,7 +113,7 @@ nome-progetto/
 └── README.txt
 ```
 
-Il Viewer non contiene strumenti di modifica e non dipende da thinkgbLink. I dati essenziali sono incorporati anche in `index.html`, così la pagina può essere aperta direttamente; `data.json` resta disponibile come formato leggibile e riutilizzabile.
+Il Viewer non contiene strumenti di modifica e non dipende da thinkgbLink. Conserva scene annidate, breadcrumb e navigazione Indietro. I dati essenziali sono incorporati anche in `index.html`, così la pagina può essere aperta direttamente; `data.json` resta disponibile come formato leggibile e riutilizzabile.
 
 ## Pubblicare il Viewer su GitHub Pages
 
@@ -122,7 +136,7 @@ Dopo il primo caricamento, l’app shell resta disponibile offline. I progetti e
 
 ## Esempio
 
-La home offre **Apri l’esempio**, che crea una copia modificabile con tre hotspot. È inoltre disponibile [`examples/demo-project.thinkgblink`](./examples/demo-project.thinkgblink), importabile manualmente.
+La home offre **Apri l’esempio**, che crea una copia modificabile con due scene e cinque hotspot. È inoltre disponibile [`examples/demo-project.thinkgblink`](./examples/demo-project.thinkgblink), importabile manualmente.
 
 ## Architettura e formato
 
@@ -134,13 +148,12 @@ Il progetto usa soltanto HTML5, CSS e JavaScript moderno. Non richiede framework
 - `js/zip.js`: generatore ZIP senza dipendenze;
 - `sw.js`: cache offline dell’app shell.
 
-Il formato dati espone `version: 1` e conserva esplicitamente coordinate, contenuti, relazioni, sequenza e impostazioni. Questo permette migrazioni future senza rompere i progetti esistenti.
+Il formato dati espone `version: 2` e conserva esplicitamente scene, gerarchia, coordinate, contenuti, relazioni, sequenza e impostazioni. I progetti `version: 1` vengono migrati automaticamente: la vecchia immagine diventa la scena principale e nessun hotspot viene perduto.
 
-## Limiti consapevoli della v1
+## Limiti consapevoli
 
-- una sola immagine/scena principale per progetto;
 - nessun montaggio o conversione dei media;
 - nessuna valutazione, registro studenti o funzione LMS;
 - le relazioni sono esplorabili ma non vengono ancora disegnate come grafo sull’immagine.
 
-Questi limiti mantengono la prima versione solida e comprensibile. Il modello dati è già predisposto per scene multiple e visualizzazioni relazionali future.
+Le relazioni precedente/successivo restano interne alla scena corrente; la navigazione tra scene avviene attraverso l’hotspot che le contiene. È una scelta deliberata: mantiene leggibile la struttura e impedisce percorsi gerarchici incoerenti.
