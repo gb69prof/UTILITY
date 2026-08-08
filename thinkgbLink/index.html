@@ -113,7 +113,7 @@
           </div>
 
           <div id="imageViewport" class="image-viewport" tabindex="0" aria-label="Immagine interattiva. Tocca per aggiungere un hotspot.">
-            <div id="emptyCanvas" class="empty-canvas hidden"><strong>Nessuna immagine</strong><span>Aggiungine una dalle impostazioni del progetto.</span></div>
+            <div id="emptyCanvas" class="empty-canvas hidden"><strong>Questa scena è pronta</strong><span>Inserisci la sua immagine, poi aggiungi gli hotspot come nella scena madre.</span><button id="emptyCanvasImageButton" class="button primary" type="button">Inserisci immagine nella scena</button></div>
             <div id="imageCanvas" class="image-canvas">
               <img id="mainImage" alt="">
               <div id="hotspotLayer" class="hotspot-layer"></div>
@@ -161,14 +161,14 @@
 
             <details open><summary>Scena interna</summary>
               <div id="childSceneEmpty" class="child-scene-box">
-                <p>Trasforma questo hotspot in una porta verso una nuova immagine interattiva.</p>
-                <label class="file-control"><span>Immagine della nuova scena</span><input id="childSceneImageInput" type="file" accept="image/jpeg,image/png,image/webp"><em id="childSceneImageName">Nessun file</em></label>
-                <button id="createChildSceneButton" class="button primary full" type="button">Crea scena interna</button>
+                <p>Apri dentro questo hotspot un nuovo spazio di lavoro, identico alla scena madre.</p>
+                <label class="file-control"><span>Immagine iniziale (facoltativa)</span><input id="childSceneImageInput" type="file" accept="image/jpeg,image/png,image/webp"><em id="childSceneImageName">Puoi inserirla anche dopo</em></label>
+                <button id="createChildSceneButton" class="button primary full" type="button">Crea e apri scena interna</button>
               </div>
               <div id="childSceneLinked" class="child-scene-box linked hidden">
                 <strong id="childSceneTitle">Scena interna</strong>
                 <span id="childSceneStats">0 hotspot</span>
-                <button id="enterChildSceneButton" class="button primary full" type="button">Entra e aggiungi hotspot</button>
+                <button id="enterChildSceneButton" class="button primary full" type="button">Apri e modifica questa scena</button>
                 <button id="removeChildSceneButton" class="text-button danger" type="button">Elimina scena interna</button>
               </div>
             </details>

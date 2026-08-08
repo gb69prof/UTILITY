@@ -39,7 +39,7 @@
     [
       'homeView','editorView','installButton','newProjectButton','openProjectButton','importProjectButton','projectImportInput','loadDemoButton','recentProjects','guideButton',
       'homeButton','projectTitleDisplay','saveState','editModeButton','exploreModeButton','saveButton','exportProjectButton','exportViewerButton','mobileMenuButton','mobileActions','mobileSave','mobileExportProject','mobileExportViewer',
-      'projectSidebar','closeSidebarButton','openSidebarButton','hotspotSearch','hotspotList','projectSettingsButton','sceneTitleDisplay','sceneCountDisplay','sceneBreadcrumbs','backSceneButton','addToolButton','panToolButton','zoomOutButton','zoomInButton','zoomOutput','resetViewButton','imageViewport','emptyCanvas','imageCanvas','mainImage','hotspotLayer',
+      'projectSidebar','closeSidebarButton','openSidebarButton','hotspotSearch','hotspotList','projectSettingsButton','sceneTitleDisplay','sceneCountDisplay','sceneBreadcrumbs','backSceneButton','addToolButton','panToolButton','zoomOutButton','zoomInButton','zoomOutput','resetViewButton','imageViewport','emptyCanvas','emptyCanvasImageButton','imageCanvas','mainImage','hotspotLayer',
       'inspector','inspectorEmpty','hotspotForm','inspectorTitle','closeInspectorButton','hotspotImageInput','hotspotAudioInput','hotspotVideoInput','imageFileName','audioFileName','videoFileName','removeHotspotImage','removeHotspotAudio','removeHotspotVideo','relationTarget','relationType','relationLabel','addRelationButton','relationList','duplicateHotspotButton','deleteHotspotButton',
       'childSceneEmpty','childSceneImageInput','childSceneImageName','createChildSceneButton','childSceneLinked','childSceneTitle','childSceneStats','enterChildSceneButton','removeChildSceneButton',
       'newProjectDialog','newProjectForm','mainImageFileName','openProjectDialog','closeOpenDialog','allProjects','settingsDialog','settingsForm','settingsEyebrow','settingsTitle','replaceImageInput','replaceImageName',
@@ -126,12 +126,12 @@
   }
 
   function normalizeScene(raw, index) {
-    if (!raw?.image || !(raw.image.dataUrl || raw.image.src)) throw new Error(`Manca l’immagine della scena ${index + 1}`);
+    const image = raw?.image && (raw.image.dataUrl || raw.image.src) ? raw.image : null;
     return {
       id: typeof raw.id === 'string' && raw.id ? raw.id : uid(),
       title: slugText(raw.title) || `Scena ${index + 1}`,
       description: String(raw.description || ''),
-      image: raw.image,
+      image,
       hotspots: (Array.isArray(raw.hotspots) ? raw.hotspots : []).map(normalizeHotspot),
       parentHotspotId: String(raw.parentHotspotId || '')
     };
@@ -147,6 +147,7 @@
     const scenes = sourceScenes.map(normalizeScene);
     const requestedRoot = String(raw.rootSceneId || '');
     const rootScene = scenes.find(scene => scene.id === requestedRoot) || scenes[0];
+    if (!rootScene?.image) throw new Error('Manca l’immagine della scena principale');
     const project = {
       version: FORMAT_VERSION,
       id: typeof raw.id === 'string' && raw.id ? raw.id : uid(),
@@ -351,9 +352,11 @@
     if (remember && state.currentSceneId && state.currentSceneId !== sceneId) state.sceneHistory.push(state.currentSceneId);
     state.currentSceneId = next.id; state.selectedId = null;
     safeDialogClose(dom.contentDialog); closeInspector(); closeSidebar();
-    dom.mainImage.src = next.image?.dataUrl || next.image?.src || '';
+    const imageSource = next.image?.dataUrl || next.image?.src || '';
+    dom.mainImage.src = imageSource;
     dom.mainImage.alt = next.image?.alt || next.title;
-    dom.emptyCanvas.classList.toggle('hidden', Boolean(dom.mainImage.src));
+    dom.emptyCanvas.classList.toggle('hidden', Boolean(imageSource));
+    dom.imageCanvas.classList.toggle('hidden', !imageSource);
     renderSceneNavigation(); renderHotspots(); renderHotspotList(); renderInspector();
     if (dom.mainImage.complete && dom.mainImage.naturalWidth) fitImage();
   }
@@ -552,7 +555,7 @@
   }
 
   function startViewportPointer(event) {
-    if (event.target.closest('.hotspot-marker')) return;
+    if (event.target.closest('.hotspot-marker') || event.target.closest('button')) return;
     dom.imageViewport.setPointerCapture(event.pointerId);
     state.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     if (state.pointers.size === 1) state.gesture = { x: event.clientX, y: event.clientY, panX: state.panX, panY: state.panY, moved: false, add: state.mode === 'edit' && state.tool === 'add' };
@@ -657,14 +660,24 @@
     const hotspot = getSelected(); const file = dom.childSceneImageInput.files?.[0];
     if (!hotspot) return;
     if (childSceneFor(hotspot)) { toast('Questo hotspot contiene già una scena'); return; }
-    if (!file) { toast('Scegli l’immagine della nuova scena'); return; }
-    if (!ACCEPTED_IMAGES.includes(file.type)) { toast('Formato non compatibile: usa JPG, PNG o WEBP'); return; }
+    if (file && !ACCEPTED_IMAGES.includes(file.type)) { toast('Formato non compatibile: usa JPG, PNG o WEBP'); return; }
     try {
-      const image = await mediaFromFile(file);
-      const scene = { id: uid(), title: hotspot.title || 'Nuova scena', description: hotspot.shortText || '', image: { ...image, alt: hotspot.title || 'Scena interna' }, hotspots: [], parentHotspotId: hotspot.id };
+      const media = file ? await mediaFromFile(file) : null;
+      const image = media ? { ...media, alt: hotspot.title || 'Scena interna' } : null;
+      const scene = { id: uid(), title: hotspot.title || 'Nuova scena', description: hotspot.shortText || '', image, hotspots: [], parentHotspotId: hotspot.id };
       state.project.scenes.push(scene); hotspot.targetSceneId = scene.id; markDirty(); renderInspector(); renderSceneNavigation();
-      showScene(scene.id); toast('Scena interna creata: ora aggiungi i suoi hotspot');
+      enterSceneForEditing(scene.id);
+      toast(image ? 'Scena interna aperta: aggiungi i suoi hotspot' : 'Scena interna aperta: inserisci l’immagine e poi aggiungi gli hotspot');
     } catch (error) { toast(`Immagine non leggibile: ${error.message}`); }
+  }
+
+  function enterSceneForEditing(sceneId) {
+    state.mode = 'edit';
+    dom.editorView.classList.remove('explore');
+    dom.editModeButton.classList.add('active');
+    dom.exploreModeButton.classList.remove('active');
+    setTool('add');
+    showScene(sceneId);
   }
 
   function removeChildScene() {
@@ -744,7 +757,7 @@
 
   function openSettings() {
     const scene = activeScene(); if (!scene) return;
-    state.replacementImage = null; dom.replaceImageName.textContent = 'Mantieni l’attuale'; dom.replaceImageInput.value = '';
+    state.replacementImage = null; dom.replaceImageName.textContent = scene.image ? 'Mantieni l’attuale' : 'Scegli l’immagine della scena'; dom.replaceImageInput.value = '';
     const isRoot = scene.id === state.project.rootSceneId;
     dom.settingsEyebrow.textContent = isRoot ? 'SCENA PRINCIPALE' : 'SCENA INTERNA';
     dom.settingsTitle.textContent = isRoot ? 'Impostazioni progetto' : 'Impostazioni scena';
@@ -778,6 +791,7 @@
     dom.exploreModeButton.addEventListener('click', () => { state.mode = 'explore'; dom.editorView.classList.add('explore'); dom.exploreModeButton.classList.add('active'); dom.editModeButton.classList.remove('active'); closeInspector(); closeSidebar(); renderHotspots(); });
     dom.addToolButton.addEventListener('click', () => setTool('add')); dom.panToolButton.addEventListener('click', () => setTool('pan'));
     dom.backSceneButton.addEventListener('click', goBackScene);
+    dom.emptyCanvasImageButton.addEventListener('click', openSettings);
     dom.zoomInButton.addEventListener('click', () => setZoom(state.scale + .25)); dom.zoomOutButton.addEventListener('click', () => setZoom(state.scale - .25)); dom.resetViewButton.addEventListener('click', resetView);
     dom.mainImage.addEventListener('load', fitImage); window.addEventListener('resize', () => { if (state.project) fitImage(); });
     dom.imageViewport.addEventListener('wheel', event => { event.preventDefault(); setZoom(state.scale * (event.deltaY < 0 ? 1.12 : .89), event.clientX, event.clientY); }, { passive: false });
@@ -789,7 +803,7 @@
     dom.removeHotspotImage.addEventListener('click', () => removeMedia('image', dom.imageFileName, dom.removeHotspotImage)); dom.removeHotspotAudio.addEventListener('click', () => removeMedia('audio', dom.audioFileName, dom.removeHotspotAudio)); dom.removeHotspotVideo.addEventListener('click', () => removeMedia('video', dom.videoFileName, dom.removeHotspotVideo));
     dom.childSceneImageInput.addEventListener('change', () => { dom.childSceneImageName.textContent = dom.childSceneImageInput.files?.[0]?.name || 'Nessun file'; });
     dom.createChildSceneButton.addEventListener('click', createChildScene);
-    dom.enterChildSceneButton.addEventListener('click', () => { const child = childSceneFor(getSelected()); if (child) showScene(child.id); });
+    dom.enterChildSceneButton.addEventListener('click', () => { const child = childSceneFor(getSelected()); if (child) enterSceneForEditing(child.id); });
     dom.removeChildSceneButton.addEventListener('click', removeChildScene);
     dom.addRelationButton.addEventListener('click', () => { const hotspot = getSelected(); if (!hotspot || !dom.relationTarget.value) { toast('Scegli l’hotspot da collegare'); return; } if (hotspot.relations.some(r => r.targetId === dom.relationTarget.value)) { toast('Questo collegamento esiste già'); return; } hotspot.relations.push({ targetId: dom.relationTarget.value, type: dom.relationType.value, label: dom.relationLabel.value.trim() }); dom.relationLabel.value = ''; markDirty(); renderRelations(hotspot); });
     dom.duplicateHotspotButton.addEventListener('click', () => { const hotspot = getSelected(); if (!hotspot) return; const copy = clone(hotspot); copy.id = uid(); copy.title = `${hotspot.title} — copia`; copy.x = Math.min(98, copy.x + 3); copy.y = Math.min(98, copy.y + 3); copy.targetSceneId = ''; copy.previousId = ''; copy.nextId = ''; copy.relations = []; activeScene().hotspots.push(copy); state.selectedId = copy.id; markDirty(); renderSceneNavigation(); renderHotspots(); renderHotspotList(); renderInspector(); });
@@ -806,10 +820,16 @@
     dom.replaceImageInput.addEventListener('change', async () => { const file = dom.replaceImageInput.files?.[0]; if (!file) return; if (!ACCEPTED_IMAGES.includes(file.type)) { toast('Usa JPG, PNG o WEBP'); dom.replaceImageInput.value = ''; return; } state.replacementImage = await mediaFromFile(file); dom.replaceImageName.textContent = file.name; });
     dom.settingsForm.addEventListener('submit', event => {
       event.preventDefault(); const data = new FormData(dom.settingsForm); const scene = activeScene(); const isRoot = scene.id === state.project.rootSceneId;
-      scene.title = slugText(data.get('title')) || (isRoot ? 'Senza titolo' : 'Scena interna'); scene.description = String(data.get('description') || ''); scene.image.alt = String(data.get('imageAlt') || '');
+      const imageAlt = String(data.get('imageAlt') || '');
+      scene.title = slugText(data.get('title')) || (isRoot ? 'Senza titolo' : 'Scena interna'); scene.description = String(data.get('description') || '');
+      if (scene.image) scene.image.alt = imageAlt;
       if (isRoot) { state.project.title = scene.title; state.project.description = scene.description; dom.projectTitleDisplay.textContent = state.project.title; }
       state.project.settings.guidedMode = data.get('guidedMode') === 'on';
-      if (state.replacementImage) { scene.image = { ...state.replacementImage, alt: scene.image.alt }; dom.mainImage.src = scene.image.dataUrl; dom.mainImage.alt = scene.image.alt || scene.title; }
+      if (state.replacementImage) {
+        scene.image = { ...state.replacementImage, alt: imageAlt };
+        dom.mainImage.src = scene.image.dataUrl; dom.mainImage.alt = scene.image.alt || scene.title;
+        dom.emptyCanvas.classList.add('hidden'); dom.imageCanvas.classList.remove('hidden');
+      }
       markDirty(); renderSceneNavigation(); safeDialogClose(dom.settingsDialog);
     });
     dom.closeContentButton.addEventListener('click', () => safeDialogClose(dom.contentDialog)); dom.contentDialog.addEventListener('click', event => { if (event.target === dom.contentDialog) safeDialogClose(dom.contentDialog); });
