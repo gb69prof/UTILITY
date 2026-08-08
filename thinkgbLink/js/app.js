@@ -517,7 +517,7 @@
   }
 
   function createHotspotAt(clientX, clientY) {
-    if (!state.project?.image || state.mode !== 'edit') return;
+    if (!activeScene()?.image || state.mode !== 'edit' || state.tool !== 'add') return;
     const rect = dom.imageCanvas.getBoundingClientRect();
     if (clientX < rect.left || clientX > rect.right || clientY < rect.top || clientY > rect.bottom) return;
     const hotspot = newHotspot((clientX - rect.left) / rect.width * 100, (clientY - rect.top) / rect.height * 100);

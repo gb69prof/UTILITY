@@ -1,4 +1,4 @@
-const CACHE = 'thinkgblink-shell-v2.0.0';
+const CACHE = 'thinkgblink-shell-v2.0.1';
 const SHELL = [
   './', './index.html', './css/styles.css', './js/db.js', './js/zip.js', './js/exporter.js', './js/app.js',
   './manifest.webmanifest', './icons/icon.svg', './icons/icon-maskable.svg', './icons/apple-touch-icon.png', './icons/icon-192.png', './icons/icon-512.png'
