@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>UTILITY · gbprof</title>
+  <style>
+    :root {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f4f6f9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 18px;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+    }
+    main {
+      width: min(920px, 100%);
+    }
+    header {
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      letter-spacing: -0.04em;
+    }
+    .lead {
+      margin: 0;
+      color: #5b667a;
+      font-size: 1.05rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+      padding: 24px;
+      border: 1px solid #dfe4ec;
+      border-radius: 18px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 10px 30px rgba(35,49,75,.08);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+    }
+    .card p {
+      margin: 0 0 24px;
+      color: #687386;
+      line-height: 1.55;
+    }
+    .card a {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 12px;
+      background: #172033;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer {
+      margin-top: 24px;
+      color: #7c8798;
+      font-size: .9rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #f4f6fa; background: #111827; }
+      body { background: linear-gradient(180deg, #111827 0%, #0b1220 100%); }
+      .lead, .card p, footer { color: #aab4c3; }
+      .card {
+        background: rgba(24,34,52,.94);
+        border-color: #2c3a51;
+        box-shadow: none;
+      }
+      .card a { background: #f4f6fa; color: #111827; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>UTILITY</h1>
+      <p class="lead">Strumenti web di gbprof. Per ora due progetti, pronti ad aumentare.</p>
+    </header>
+
+    <section class="grid" aria-label="Progetti disponibili">
+      <article class="card">
+        <h2>Spazio</h2>
+        <p>Editor e visualizzatore per presentazioni visuali, zoomabili e navigabili.</p>
+        <a href="./presentazioni/">Apri Spazio</a>
+      </article>
+
+      <article class="card">
+        <h2>thinkgbLink</h2>
+        <p>Trasforma immagini in percorsi didattici esplorabili con hotspot e scene annidate.</p>
+        <a href="./thinkgbLink/">Apri thinkgbLink</a>
+      </article>
+    </section>
+
+    <footer>gbprof · UTILITY</footer>
+  </main>
+</body>
+</html>
