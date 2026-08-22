@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050706">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Viewer LIM — Desk LIM</title>
+</head>
+<body class="lim-body">
+  <main id="limApp" class="lim-app" aria-live="polite">
+    <section id="limNeutral" class="lim-neutral">
+      <div class="lim-neutral-mark" aria-hidden="true">D</div>
+      <h1 id="limNeutralTitle">Desk LIM</h1>
+      <p>In attesa del docente</p>
+    </section>
+    <section id="limContent" class="lim-content" hidden></section>
+    <div id="limConnection" class="lim-connection">Controller non collegato</div>
+    <button id="limFullscreen" class="lim-fullscreen" type="button">Schermo intero</button>
+  </main>
+  <script type="module" src="./js/lim-viewer.js"></script>
+</body>
+</html>

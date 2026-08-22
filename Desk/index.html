@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#18211f">
+  <meta name="description" content="Desk LIM: ambiente di lavoro privato del docente con viewer separato per la classe.">
+  <meta property="og:title" content="Desk LIM — Il desk del docente">
+  <meta property="og:description" content="Il Desk appartiene al docente. La LIM appartiene alla lezione.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gb69prof.github.io/UTILITY/Desk/">
+  <meta property="og:image" content="https://gb69prof.github.io/UTILITY/Desk/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desk LIM — Il desk del docente">
+  <meta name="twitter:description" content="Il Desk appartiene al docente. La LIM appartiene alla lezione.">
+  <meta name="twitter:image" content="https://gb69prof.github.io/UTILITY/Desk/assets/img/og.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Desk LIM">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Desk LIM — Il desk del docente</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Desk LIM, torna alla radice">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span><strong>Desk LIM</strong><small>Il desk del docente</small></span>
+      </a>
+
+      <nav class="main-tools" aria-label="Navigazione e strumenti">
+        <button id="homeBtn" class="icon-btn" type="button" title="Home" aria-label="Home">⌂</button>
+        <button id="backBtn" class="icon-btn" type="button" title="Indietro" aria-label="Indietro" disabled>←</button>
+        <button id="forwardBtn" class="icon-btn" type="button" title="Avanti" aria-label="Avanti" disabled>→</button>
+        <span class="tool-separator"></span>
+        <button id="newFolderBtn" class="tool-btn" type="button"><span>＋</span> Cartella</button>
+        <label class="tool-btn file-trigger"><span>⇧</span> Importa<input id="fileInput" type="file" multiple></label>
+        <label class="tool-btn file-trigger folder-import"><span>▣</span> Cartella<input id="folderInput" type="file" webkitdirectory multiple></label>
+        <button id="addUrlBtn" class="tool-btn" type="button"><span>↗</span> URL</button>
+      </nav>
+
+      <div class="top-actions">
+        <button id="lessonModeBtn" class="tool-btn lesson-toggle" type="button">▶ Lezione</button>
+        <button id="openLimBtn" class="lim-pill" type="button" aria-describedby="limNow">
+          <span id="limDot" class="status-dot offline"></span>
+          <span><b>Viewer LIM</b><small id="limStatus">Non collegata</small></span>
+        </button>
+        <button id="settingsBtn" class="icon-btn" type="button" title="Impostazioni" aria-label="Impostazioni">⚙</button>
+      </div>
+    </header>
+
+    <div id="lessonBar" class="lesson-bar" hidden>
+      <button id="lessonExitBtn" type="button">× Esci</button>
+      <strong id="lessonTitle">Modalità lezione</strong>
+      <div class="lesson-nav">
+        <button id="lessonPrevBtn" type="button" aria-label="Materiale precedente">← precedente</button>
+        <output id="lessonCounter">0 / 0</output>
+        <button id="lessonNextBtn" type="button" aria-label="Materiale successivo">successivo →</button>
+      </div>
+    </div>
+
+    <main id="workspace" class="workspace">
+      <section id="deskPane" class="desk-pane" aria-label="Desk del docente">
+        <aside class="sidebar">
+          <div class="sidebar-section">
+            <p class="eyebrow">SPAZI</p>
+            <button class="side-link active" data-view="all" type="button"><span>▦</span> Il mio Desk</button>
+            <button class="side-link" data-view="favorites" type="button"><span>★</span> Preferiti</button>
+            <button class="side-link" data-view="recent" type="button"><span>◷</span> Recenti</button>
+          </div>
+          <div class="sidebar-section">
+            <p class="eyebrow">LEZIONE</p>
+            <button id="lessonsBtn" class="side-link" type="button"><span>▤</span> Scrivanie</button>
+          </div>
+          <div class="lim-monitor">
+            <div class="monitor-head"><span id="limMonitorDot" class="status-dot offline"></span><strong>LIM</strong></div>
+            <p id="limNow">Nessun viewer collegato.</p>
+            <div id="limPreview" class="lim-preview"><span>Schermata neutra</span></div>
+            <div class="lim-controls">
+              <button id="blankLimBtn" type="button">Oscura</button>
+              <button id="restoreLimBtn" type="button">Ripristina</button>
+              <button id="closeProjectionBtn" type="button">Chiudi</button>
+            </div>
+          </div>
+        </aside>
+
+        <div class="desk-content">
+          <div class="desk-head">
+            <div>
+              <nav id="breadcrumbs" class="breadcrumbs" aria-label="Percorso"><button data-folder="root" type="button">Desk</button></nav>
+              <h1 id="viewTitle">Il mio Desk</h1>
+              <p id="itemCount">0 elementi</p>
+            </div>
+            <div class="desk-actions">
+              <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Cerca nel Desk</span><input id="searchInput" type="search" placeholder="Cerca file e cartelle…"></label>
+              <div class="view-switch" role="group" aria-label="Tipo di visualizzazione">
+                <button id="gridViewBtn" class="active" type="button" aria-pressed="true" title="Icone">▦</button>
+                <button id="listViewBtn" type="button" aria-pressed="false" title="Elenco">☷</button>
+              </div>
+              <select id="sortSelect" aria-label="Ordina elementi">
+                <option value="name">Nome</option>
+                <option value="date">Più recenti</option>
+                <option value="type">Tipo</option>
+                <option value="size">Dimensione</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="dropHint" class="drop-hint" hidden>Rilascia qui i materiali</div>
+          <div id="emptyState" class="empty-state">
+            <div class="empty-symbol" aria-hidden="true">＋</div>
+            <h2>Prepara il tuo primo Desk</h2>
+            <p>Importa file oppure crea cartelle. I materiali restano privati su questo dispositivo finché non scegli <b>Mostra alla LIM</b>.</p>
+            <div><label class="button primary file-trigger">Importa materiali<input id="emptyFileInput" type="file" multiple></label><button id="emptyFolderBtn" class="button secondary" type="button">Nuova cartella</button></div>
+          </div>
+          <div id="itemsView" class="items-grid" role="list" aria-label="File e cartelle"></div>
+        </div>
+      </section>
+
+      <div id="splitter" class="splitter" role="separator" aria-label="Ridimensiona Desk e documento" tabindex="0" hidden></div>
+
+      <section id="viewerPane" class="viewer-pane" aria-label="Viewer privato del docente" hidden>
+        <header class="viewer-head">
+          <div class="viewer-identity"><span id="viewerType" class="file-badge">FILE</span><div><strong id="viewerTitle">Documento</strong><small>Anteprima privata — la LIM non cambia</small></div></div>
+          <div class="viewer-actions">
+            <button id="addToLessonBtn" class="button secondary compact" type="button">＋ Scrivania</button>
+            <button id="showLimBtn" class="button project compact" type="button">Mostra alla LIM</button>
+            <button id="viewerFullscreenBtn" class="icon-btn" type="button" aria-label="Schermo intero" title="Schermo intero">⛶</button>
+            <button id="closeViewerBtn" class="button close compact" type="button">Chiudi</button>
+          </div>
+        </header>
+        <div id="viewerToolbar" class="viewer-toolbar" hidden></div>
+        <div id="viewerBody" class="viewer-body"></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="folderDialog" class="dialog">
+    <form id="folderForm" method="dialog">
+      <div class="dialog-head"><div><p class="eyebrow">ORGANIZZA</p><h2>Nuova cartella</h2></div><button value="cancel" class="icon-btn" aria-label="Chiudi">×</button></div>
+      <label><span>Nome</span><input name="name" required maxlength="80" autocomplete="off" placeholder="Es. Leopardi"></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="createFolderConfirm" value="default" class="button primary">Crea cartella</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="urlDialog" class="dialog">
+    <form id="urlForm" method="dialog">
+      <div class="dialog-head"><div><p class="eyebrow">RISORSA WEB</p><h2>Aggiungi un collegamento</h2></div><button value="cancel" class="icon-btn" aria-label="Chiudi">×</button></div>
+      <label><span>Titolo</span><input name="name" required maxlength="120" placeholder="Es. PWA Cubismo"></label>
+      <label><span>Indirizzo</span><input name="url" type="url" required placeholder="https://…"></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="createUrlConfirm" value="default" class="button primary">Aggiungi</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="renameDialog" class="dialog small">
+    <form id="renameForm" method="dialog">
+      <h2>Rinomina</h2>
+      <label><span>Nuovo nome</span><input name="name" required maxlength="120"></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="renameConfirm" value="default" class="button primary">Salva</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="moveDialog" class="dialog small">
+    <form id="moveForm" method="dialog">
+      <h2>Sposta in…</h2>
+      <label><span>Cartella</span><select name="folder"></select></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="moveConfirm" value="default" class="button primary">Sposta</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="lessonsDialog" class="dialog wide">
+    <div class="dialog-head"><div><p class="eyebrow">PREPARA LA CLASSE</p><h2>Scrivanie di lezione</h2></div><button id="closeLessonsBtn" class="icon-btn" aria-label="Chiudi">×</button></div>
+    <form id="lessonCreateForm" class="inline-form"><input name="name" required maxlength="100" placeholder="Es. Lezione — Cubismo"><button class="button primary">Crea</button></form>
+    <div id="lessonsList" class="lessons-list"></div>
+  </dialog>
+
+  <dialog id="addLessonDialog" class="dialog small">
+    <form id="addLessonForm" method="dialog">
+      <h2>Aggiungi a una scrivania</h2>
+      <label><span>Scrivania</span><select name="lesson"></select></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="addLessonConfirm" value="default" class="button primary">Aggiungi</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="settingsDialog" class="dialog">
+    <form id="settingsForm" method="dialog">
+      <div class="dialog-head"><div><p class="eyebrow">PREFERENZE</p><h2>Desk e schermata LIM</h2></div><button value="cancel" class="icon-btn" aria-label="Chiudi">×</button></div>
+      <label><span>Tema</span><select name="theme"><option value="auto">Automatico</option><option value="light">Chiaro</option><option value="dark">Scuro</option></select></label>
+      <label><span>Titolo schermata neutra</span><input name="neutralTitle" maxlength="100" value="Desk LIM"></label>
+      <label><span>Colore schermata neutra</span><input name="neutralColor" type="color" value="#111817"></label>
+      <label class="check-row"><input name="neutralBlack" type="checkbox"><span>Oscura con nero assoluto</span></label>
+      <div class="dialog-actions"><button value="cancel" class="button secondary">Annulla</button><button id="settingsConfirm" value="default" class="button primary">Salva</button></div>
+    </form>
+  </dialog>
+
+  <div id="contextMenu" class="context-menu" hidden role="menu">
+    <button data-action="open" role="menuitem">Apri</button>
+    <button data-action="project" role="menuitem">Mostra alla LIM</button>
+    <button data-action="favorite" role="menuitem">Preferito</button>
+    <button data-action="lesson" role="menuitem">Aggiungi a scrivania</button>
+    <button data-action="rename" role="menuitem">Rinomina</button>
+    <button data-action="move" role="menuitem">Sposta</button>
+    <button data-action="delete" class="danger" role="menuitem">Elimina</button>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
