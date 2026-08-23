@@ -125,7 +125,34 @@ button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focu
 .lim-controls button { min-height: 32px; padding: 0 5px; background: transparent; font-size: 10px; }
 .lim-controls button:last-child { grid-column: 1 / -1; }
 
-.desk-content { min-width: 0; min-height: 0; position: relative; padding: 24px 24px 40px; overflow: auto; }
+.desk-content {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  padding: 24px 24px 40px;
+  overflow: auto;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(248, 250, 247, .18), rgba(248, 250, 247, .18)),
+    url("../assets/img/desk-grid.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:root[data-theme="dark"] .desk-content {
+  background-image:
+    linear-gradient(rgba(17, 23, 21, .88), rgba(17, 23, 21, .88)),
+    url("../assets/img/desk-grid.webp");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .desk-content {
+    background-image:
+      linear-gradient(rgba(17, 23, 21, .88), rgba(17, 23, 21, .88)),
+      url("../assets/img/desk-grid.webp");
+  }
+}
 .desk-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 22px; margin-bottom: 22px; }
 .desk-head h1 { margin: 6px 0 2px; font-size: clamp(24px, 3vw, 38px); letter-spacing: -.045em; }
 .desk-head p { margin: 0; color: var(--muted); font-size: 12px; }

@@ -1,8 +1,8 @@
-const CACHE = "desk-lim-shell-v1";
+const CACHE = "desk-lim-shell-v2";
 const SHELL = [
   "./", "./index.html", "./lim.html", "./manifest.webmanifest", "./css/main.css",
   "./js/app.js", "./js/db.js", "./js/files.js", "./js/viewer.js", "./js/lessons.js",
-  "./js/lim-controller.js", "./js/lim-viewer.js", "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png", "./assets/img/og.png"
+  "./js/lim-controller.js", "./js/lim-viewer.js", "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png", "./assets/img/og.png", "./assets/img/desk-grid.webp"
 ];
 
 self.addEventListener("install", event => {
