@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "leopardi-infinito",
+    "title": "L’Infinito",
+    "author": "Giacomo Leopardi",
+    "work": "Canti",
+    "discipline": "Letteratura italiana",
+    "period": "Ottocento",
+    "description": "Lettura dell’Infinito come esperienza poetica che nasce dal limite sensibile e si apre, attraverso immaginazione, suono e memoria, all’immensità dello spazio e del tempo.",
+    "lessonUrl": "https://docs.google.com/document/d/1wdWFe-k0saUHpC8RuKjDHHdFPeH0OceShyE_sqk27Q8/edit?usp=drivesdk"
+  },
+  "presentation": {
+    "overviewTitle": "Dal limite all’immensità",
+    "overview": "Il testo si muove da un ostacolo concreto, la siepe, verso una progressiva dilatazione dell’esperienza. La vista impedita attiva l’immaginazione degli spazi e dei silenzi; il vento riporta alla percezione e apre la dimensione del tempo; infine il pensiero perde i propri confini nell’immensità. La lezione mette in evidenza come Leopardi trasformi il limite, la sensazione e il paesaggio in strumenti di conoscenza poetica e in una temporanea sospensione del dolore."
+  },
+  "units": [
+    {
+      "id": "u01",
+      "type": "label",
+      "text": "LEZIONE — L’INFINITO"
+    },
+    {
+      "id": "v01",
+      "type": "line",
+      "text": "Sempre caro mi fu quest’ermo colle,"
+    },
+    {
+      "id": "v02",
+      "type": "line",
+      "text": "e questa siepe, che da tanta parte"
+    },
+    {
+      "id": "v03",
+      "type": "line",
+      "text": "dell'ultimo orizzonte il guardo esclude."
+    },
+    {
+      "id": "v04",
+      "type": "line",
+      "text": "Ma sedendo e mirando, interminati"
+    },
+    {
+      "id": "v05",
+      "type": "line",
+      "text": "spazi di là da quella, e sovrumani"
+    },
+    {
+      "id": "v06",
+      "type": "line",
+      "text": "silenzi, e profondissima quiete"
+    },
+    {
+      "id": "v07",
+      "type": "line",
+      "text": "io nel pensier mi fingo; ove per poco"
+    },
+    {
+      "id": "v08",
+      "type": "line",
+      "text": "il cor non si spaura. E come il vento"
+    },
+    {
+      "id": "v09",
+      "type": "line",
+      "text": "odo stormir tra queste piante, io quello"
+    },
+    {
+      "id": "v10",
+      "type": "line",
+      "text": "infinito silenzio a questa voce"
+    },
+    {
+      "id": "v11",
+      "type": "line",
+      "text": "vo comparando: e mi sovvien l’eterno,"
+    },
+    {
+      "id": "v12",
+      "type": "line",
+      "text": "e le morte stagioni, e la presente"
+    },
+    {
+      "id": "v13",
+      "type": "line",
+      "text": "e viva, e il suon di lei. Così tra questa"
+    },
+    {
+      "id": "v14",
+      "type": "line",
+      "text": "immensità s’annega il pensier mio:"
+    },
+    {
+      "id": "v15",
+      "type": "line",
+      "text": "e il naufragar m’è dolce in questo mare. "
+    },
+    {
+      "id": "u02",
+      "type": "label",
+      "text": "Il limite che apre all’immaginazione"
+    },
+    {
+      "id": "p01",
+      "type": "paragraph",
+      "text": "L’Infinito viene composto nel 1819, un anno decisivo e doloroso per Leopardi. Il poeta vive una condizione di profonda chiusura: Recanati gli appare sempre più come una prigione, la casa paterna lo soffoca, il corpo è fragile, la vista peggiora, il tentativo di fuga fallisce. Eppure, nella poesia, questa sofferenza biografica non viene raccontata direttamente. Non troviamo un lamento personale, ma la trasformazione del dolore in esperienza poetica. Proprio qui sta la grandezza del testo: Leopardi non descrive semplicemente la sua infelicità, ma mostra come l’immaginazione possa aprire, per un momento, uno spazio più grande della realtà."
+    },
+    {
+      "id": "p02",
+      "type": "paragraph",
+      "text": "La scena è semplicissima: il poeta si trova su un colle solitario, identificato tradizionalmente con il monte Tabor, vicino a Recanati. Davanti a lui c’è una siepe che impedisce allo sguardo di vedere l’orizzonte completo. A prima vista sembrerebbe un ostacolo, un limite. In realtà è proprio quel limite a rendere possibile la poesia. Se Leopardi vedesse tutto, la mente resterebbe dentro la realtà concreta. Poiché invece una parte del paesaggio è nascosta, l’immaginazione comincia a lavorare."
+    },
+    {
+      "id": "p03",
+      "type": "paragraph",
+      "text": "La siepe, quindi, non chiude: apre. Esclude lo sguardo, ma libera il pensiero. Questo è il cuore della poetica del vago e dell’indefinito: ciò che non si vede chiaramente diventa più potente di ciò che si vede. Il visibile completo è finito; il non visibile, invece, può diventare infinito."
+    },
+    {
+      "id": "p04",
+      "type": "paragraph",
+      "text": "Il movimento della poesia nasce da due esperienze sensibili: la vista impedita e il suono del vento. Prima il poeta immagina “interminati spazi”, “sovrumani silenzi” e “profondissima quiete”. Non sono realtà viste con gli occhi, ma create interiormente. Poi, quando sente il vento stormire tra le piante, confronta quel suono reale con il silenzio infinito immaginato. Il suono concreto riporta il poeta al presente, ma nello stesso tempo lo spinge ancora più lontano: dalla percezione nasce il pensiero dell’eterno, del passato, del presente, del tempo che scorre."
+    },
+    {
+      "id": "p05",
+      "type": "paragraph",
+      "text": "Qui si vede bene il legame con il sensismo: la poesia parte dai sensi. Leopardi non arriva all’infinito attraverso un ragionamento astratto, ma attraverso un’esperienza concreta: una siepe vista, un vento ascoltato, un paesaggio solo in parte percepito. Però la sensazione non resta sensazione: diventa immaginazione, memoria, meditazione."
+    },
+    {
+      "id": "p06",
+      "type": "paragraph",
+      "text": "La poesia procede così da un limite fisico a un’esperienza mentale sempre più ampia. Prima c’è il colle; poi la siepe; poi ciò che sta oltre la siepe; poi lo spazio infinito; poi il silenzio; poi il vento; poi il tempo; infine il naufragio del pensiero. Il verbo decisivo è “mi fingo”: il poeta costruisce dentro di sé una realtà immaginata. Non sta fuggendo banalmente dal mondo: sta usando il limite del mondo per creare uno spazio interiore più vasto."
+    },
+    {
+      "id": "p07",
+      "type": "paragraph",
+      "text": "Il finale, “E il naufragar m’è dolce in questo mare”, è uno dei versi più importanti della poesia italiana. Il pensiero si perde nell’immensità, ma questa perdita non è dolorosa. È dolce perché per un attimo l’io non sente più il peso dei propri confini. Naufragare significa smarrirsi, perdere il controllo, non restare prigionieri della misura ordinaria della realtà. L’uomo non raggiunge davvero l’infinito, ma può immaginarlo; e questa immaginazione gli dà un piacere breve, fragile, ma profondissimo."
+    },
+    {
+      "id": "p08",
+      "type": "paragraph",
+      "text": "Dal punto di vista della forma, L’Infinito è un idillio leopardiano. Ma non è un idillio classico nel senso tradizionale. L’idillio greco descriveva paesaggi naturali armoniosi; Leopardi invece usa il paesaggio come punto di partenza per un viaggio interiore. La natura non è solo scenario: è occasione. Il colle, la siepe e il vento diventano strumenti attraverso cui il poeta passa dal particolare al generale, dalla realtà sensibile alla meditazione sull’infinito."
+    },
+    {
+      "id": "p09",
+      "type": "paragraph",
+      "text": "Per questo L’Infinito è una poesia centrale: contiene insieme filosofia, poetica e immagine del mondo. C’è il desiderio umano di un piacere infinito; c’è il limite della realtà; c’è il ruolo dell’immaginazione come rimedio; c’è la teoria della visione e del suono; c’è l’idillio trasformato in meditazione moderna. La poesia non cancella il dolore, ma per un momento lo sospende. E questa sospensione basta a creare bellezza."
+    },
+    {
+      "id": "u03",
+      "type": "label",
+      "text": "Vocabolario leopardiano essenziale"
+    },
+    {
+      "id": "p10",
+      "type": "paragraph",
+      "text": "Siepe\u000bOstacolo concreto che impedisce la visione completa dell’orizzonte. Proprio perché limita lo sguardo, attiva l’immaginazione."
+    },
+    {
+      "id": "p11",
+      "type": "paragraph",
+      "text": "Vago e indefinito\u000bCiò che non è chiaro, preciso, delimitato. È poetico perché lascia spazio alla fantasia."
+    },
+    {
+      "id": "p12",
+      "type": "paragraph",
+      "text": "Mi fingo\u000bSignifica “immagino”, “costruisco nel pensiero”. È il momento in cui la realtà concreta diventa realtà interiore."
+    },
+    {
+      "id": "p13",
+      "type": "paragraph",
+      "text": "Interminati spazi\u000bSpazi senza confine, creati dall’immaginazione oltre il limite della siepe."
+    },
+    {
+      "id": "p14",
+      "type": "paragraph",
+      "text": "Sovrumani silenzi\u000bSilenzi superiori alla misura umana, non percepiti realmente ma immaginati."
+    },
+    {
+      "id": "p15",
+      "type": "paragraph",
+      "text": "Stormire\u000bIl fruscio del vento tra le piante. È il suono reale che riattiva il pensiero e lo collega all’eterno."
+    },
+    {
+      "id": "p16",
+      "type": "paragraph",
+      "text": "Naufragare\u000bPerdersi nell’immensità immaginata. Non è una sconfitta, ma una dolce perdita dei limiti dell’io."
+    },
+    {
+      "id": "p17",
+      "type": "paragraph",
+      "text": "Idillio leopardiano\u000bComponimento in cui un paesaggio naturale diventa occasione di immaginazione, memoria e riflessione filosofica."
+    },
+    {
+      "id": "u04",
+      "type": "label",
+      "text": "Saperi irrinunciabili"
+    },
+    {
+      "id": "p18",
+      "type": "paragraph",
+      "text": "Lo studente deve sapere che:"
+    },
+    {
+      "id": "p19",
+      "type": "paragraph",
+      "text": "L’Infinito viene composto nel 1819, in un momento difficile della vita di Leopardi."
+    },
+    {
+      "id": "p20",
+      "type": "paragraph",
+      "text": "La poesia non racconta direttamente la sofferenza del poeta, ma la trasforma in esperienza immaginativa."
+    },
+    {
+      "id": "p21",
+      "type": "paragraph",
+      "text": "La siepe è il simbolo del limite che attiva l’immaginazione."
+    },
+    {
+      "id": "p22",
+      "type": "paragraph",
+      "text": "La poesia si fonda sulla teoria della visione: una vista incompleta è più poetica di una vista completa."
+    },
+    {
+      "id": "p23",
+      "type": "paragraph",
+      "text": "Il vento rappresenta la teoria del suono: un suono vago e naturale spinge la mente oltre la realtà immediata."
+    },
+    {
+      "id": "p24",
+      "type": "paragraph",
+      "text": "Il testo mostra il passaggio dalla realtà sensibile all’infinito immaginato."
+    },
+    {
+      "id": "p25",
+      "type": "paragraph",
+      "text": "L’Infinito è un idillio leopardiano, perché parte dal paesaggio ma arriva alla meditazione interiore."
+    },
+    {
+      "id": "p26",
+      "type": "paragraph",
+      "text": "Il finale esprime la dolcezza di perdersi nell’immensità creata dall’immaginazione."
+    }
+  ],
+  "focuses": [
+    {
+      "id": "limite-apertura",
+      "label": "Il limite che apre",
+      "segments": [
+        {
+          "unitId": "v01",
+          "note": "Il colle introduce uno spazio concreto, appartato e familiare: l’esperienza dell’infinito nasce da un luogo finito e determinato."
+        },
+        {
+          "unitId": "v02",
+          "note": "La siepe è il limite materiale decisivo: interrompendo la visione, sottrae una parte del paesaggio alla percezione diretta."
+        },
+        {
+          "unitId": "v03",
+          "note": "L’esclusione dell’orizzonte rende evidente il paradosso centrale del testo: proprio ciò che impedisce di vedere permette alla mente di andare oltre il visibile."
+        },
+        {
+          "unitId": "p02",
+          "note": "La lezione chiarisce che l’ostacolo non blocca il processo poetico ma lo attiva, perché ciò che resta nascosto viene affidato all’immaginazione."
+        },
+        {
+          "unitId": "p03",
+          "note": "Qui viene formulato esplicitamente il rovesciamento del limite in apertura, collegandolo alla poetica del vago e dell’indefinito."
+        }
+      ],
+      "explanation": "L’Infinito nasce da un’esperienza di privazione: la siepe impedisce la visione completa. Leopardi trasforma però l’ostacolo in una condizione produttiva. Il limite del senso non coincide con il limite del pensiero; al contrario, crea lo spazio vuoto che l’immaginazione può riempire.",
+      "connections": [
+        {
+          "category": "Poetica",
+          "text": "Il limite visivo attiva il vago e l’indefinito: ciò che non è interamente percepibile acquista una forza immaginativa maggiore del visibile completo."
+        },
+        {
+          "category": "Immagine del mondo",
+          "text": "La realtà concreta resta finita, ma l’uomo possiede la capacità di oltrepassarla interiormente senza annullarne i confini reali."
+        }
+      ]
+    },
+    {
+      "id": "immaginazione",
+      "label": "La costruzione dell’infinito",
+      "segments": [
+        {
+          "unitId": "v04",
+          "note": "Con “sedendo e mirando” il poeta passa dall’osservazione esterna a una contemplazione che prepara l’attività immaginativa."
+        },
+        {
+          "unitId": "v05",
+          "note": "Gli “interminati spazi” non sono percepiti: nascono oltre la siepe come proiezione mentale di ciò che la vista non può determinare."
+        },
+        {
+          "unitId": "v06",
+          "note": "I “sovrumani silenzi” e la “profondissima quiete” ampliano l’esperienza oltre la misura ordinaria dell’uomo."
+        },
+        {
+          "unitId": "v07",
+          "note": "“Mi fingo” dichiara esplicitamente l’atto creativo della mente: l’infinito non è visto né posseduto, ma costruito nel pensiero."
+        },
+        {
+          "unitId": "p05",
+          "note": "La lezione evidenzia il passaggio dalla sensazione all’immaginazione: il dato sensibile non viene negato, ma trasformato in memoria e meditazione."
+        },
+        {
+          "unitId": "p06",
+          "note": "Questo paragrafo ricostruisce la progressione dal luogo concreto allo spazio interiore e identifica “mi fingo” come verbo centrale del processo."
+        }
+      ],
+      "explanation": "L’infinito leopardiano non si presenta come una realtà direttamente accessibile. È un’esperienza mentale prodotta dal confronto fra un dato sensibile incompleto e la capacità immaginativa. Il verbo “mi fingo” rende visibile questo processo: la mente costruisce ciò che i sensi non possono offrire.",
+      "connections": [
+        {
+          "category": "Poetica",
+          "text": "L’immaginazione non è decorazione fantastica, ma facoltà capace di generare piacere attraverso immagini indefinite e non circoscritte."
+        },
+        {
+          "category": "Sensismo",
+          "text": "Il processo parte da percezioni concrete; la dimensione mentale nasce dal lavoro compiuto sui dati della vista e dell’udito."
+        }
+      ]
+    },
+    {
+      "id": "spazio-silenzio",
+      "label": "L’infinito dello spazio e del silenzio",
+      "segments": [
+        {
+          "unitId": "v05",
+          "note": "Lo spazio viene immaginato come privo di confini, in opposizione alla porzione limitata di paesaggio realmente visibile."
+        },
+        {
+          "unitId": "v06",
+          "note": "Il silenzio è dilatato fino a diventare “sovrumano”: non descrive semplicemente assenza di rumore, ma una dimensione oltre la misura umana."
+        },
+        {
+          "unitId": "v08",
+          "note": "Lo spaesamento del cuore mostra che l’immensità immaginata non è neutra: produce un momentaneo turbamento davanti alla perdita delle coordinate abituali."
+        },
+        {
+          "unitId": "p04",
+          "note": "La lezione distingue chiaramente gli spazi e i silenzi immaginati dalle percezioni effettive, mostrando che la loro forza nasce dall’interiorità."
+        }
+      ],
+      "explanation": "La prima forma dell’infinito è spaziale e acustica: oltre la siepe si aprono spazi senza termine e silenzi che superano la scala umana. Questa dilatazione produce insieme attrazione e paura, perché mette in crisi i confini ordinari dell’esperienza.",
+      "connections": [
+        {
+          "category": "Opposizione",
+          "text": "Finito/infinito e visibile/non visibile strutturano la prima metà della poesia."
+        },
+        {
+          "category": "Esperienza",
+          "text": "L’infinito non è soltanto pensato: viene avvertito dal soggetto come esperienza capace di coinvolgere anche il corpo, fino allo spaurimento del cuore."
+        }
+      ]
+    },
+    {
+      "id": "vento-tempo",
+      "label": "Dal vento all’eterno",
+      "segments": [
+        {
+          "unitId": "v08",
+          "note": "L’ingresso del vento introduce un evento sensibile che interrompe la quiete immaginata e apre una nuova fase del testo."
+        },
+        {
+          "unitId": "v09",
+          "note": "Lo stormire è un suono reale, vicino e presente: diventa il termine concreto da cui riparte la meditazione."
+        },
+        {
+          "unitId": "v10",
+          "note": "Il poeta mette in rapporto la voce del vento con il silenzio infinito, facendo dialogare percezione immediata e immaginazione."
+        },
+        {
+          "unitId": "v11",
+          "note": "Dal confronto tra voce e silenzio nasce il pensiero dell’eterno: il movimento non è più soltanto nello spazio, ma nel tempo."
+        },
+        {
+          "unitId": "v12",
+          "note": "Le “morte stagioni” condensano il passato trascorso e scomparso, posto accanto al presente."
+        },
+        {
+          "unitId": "v13",
+          "note": "La stagione presente è “viva” perché risuona nel vento: il suono rende percepibile il tempo attuale e lo inserisce nel confronto con l’eterno."
+        },
+        {
+          "unitId": "p04",
+          "note": "La lezione chiarisce che il vento riporta al presente ma, nello stesso gesto, conduce verso memoria, passato ed eterno."
+        },
+        {
+          "unitId": "p15",
+          "note": "La definizione di “stormire” mette a fuoco la funzione strutturale del suono: non semplice dettaglio naturale, ma riattivazione del pensiero."
+        }
+      ],
+      "explanation": "Il vento cambia la direzione della poesia. Dopo l’infinito spaziale immaginato nel silenzio, un suono reale permette al poeta di confrontare il finito con l’infinito e di passare dallo spazio al tempo. Il presente sonoro richiama le epoche trascorse e, attraverso esse, l’eterno.",
+      "connections": [
+        {
+          "category": "Forma",
+          "text": "La poesia procede per confronto: silenzio/voce, eterno/stagioni morte/presente vivo."
+        },
+        {
+          "category": "Poetica",
+          "text": "La teoria del suono agisce come la teoria della visione: una percezione naturale e non rigidamente definita favorisce l’espansione immaginativa."
+        }
+      ]
+    },
+    {
+      "id": "naufragio-io",
+      "label": "Il naufragio del pensiero",
+      "segments": [
+        {
+          "unitId": "v14",
+          "note": "Il pensiero non domina più l’immensità che ha prodotto: vi si immerge fino a perdere la propria posizione separata."
+        },
+        {
+          "unitId": "v15",
+          "note": "Il naufragio rovescia il significato abituale della perdita: smarrire i confini dell’io diventa un’esperienza dolce."
+        },
+        {
+          "unitId": "p07",
+          "note": "La lezione interpreta la dolcezza come sospensione momentanea del peso dei limiti individuali, non come conquista reale dell’infinito."
+        },
+        {
+          "unitId": "p09",
+          "note": "Il finale viene collegato alla funzione complessiva della poesia: il dolore non è eliminato, ma temporaneamente sospeso dall’esperienza immaginativa."
+        },
+        {
+          "unitId": "p16",
+          "note": "La voce di vocabolario sintetizza il paradosso del naufragio: perdita dell’orientamento e, insieme, liberazione dai limiti dell’io."
+        }
+      ],
+      "explanation": "Il punto d’arrivo non è la conoscenza razionale dell’infinito, ma la perdita temporanea della misura individuale. Il pensiero, dopo aver costruito l’immensità, vi si lascia sommergere. Il piacere nasce proprio da questa rinuncia momentanea al controllo e ai confini dell’io.",
+      "connections": [
+        {
+          "category": "Immagine del mondo",
+          "text": "L’uomo non possiede l’infinito, ma può sperimentarne un’immagine attraverso l’immaginazione."
+        },
+        {
+          "category": "Problema",
+          "text": "Il piacere è reale ma breve: non cancella la condizione limitata dell’uomo, la sospende per un momento."
+        }
+      ]
+    },
+    {
+      "id": "paesaggio-interiore",
+      "label": "Dal paesaggio alla meditazione",
+      "segments": [
+        {
+          "unitId": "v01",
+          "note": "Il paesaggio iniziale non è descritto per completezza pittorica: funge da soglia concreta dell’esperienza interiore."
+        },
+        {
+          "unitId": "v02",
+          "note": "La siepe trasforma immediatamente il paesaggio da scenario naturale a meccanismo della riflessione."
+        },
+        {
+          "unitId": "v09",
+          "note": "Le piante e il vento restano elementi reali, ma acquistano funzione mentale perché riattivano il confronto tra presente e infinito."
+        },
+        {
+          "unitId": "p08",
+          "note": "La lezione distingue l’idillio leopardiano da quello classico: il paesaggio non è fine della rappresentazione, ma occasione per un viaggio interiore."
+        },
+        {
+          "unitId": "p17",
+          "note": "La definizione conclusiva dell’idillio leopardiano lega natura, immaginazione, memoria e riflessione filosofica."
+        },
+        {
+          "unitId": "p25",
+          "note": "Il sapere irrinunciabile ribadisce la trasformazione del paesaggio in meditazione, elemento essenziale della forma dell’idillio leopardiano."
+        }
+      ],
+      "explanation": "Colle, siepe, piante e vento non costruiscono un semplice quadro naturale. Il paesaggio è un dispositivo di passaggio dal particolare al generale, dalla percezione alla meditazione. È in questo senso che l’idillio leopardiano diventa una forma moderna e interiore.",
+      "connections": [
+        {
+          "category": "Forma",
+          "text": "L’idillio viene trasformato: dalla descrizione armoniosa della natura si passa alla rappresentazione di un processo mentale."
+        },
+        {
+          "category": "Filosofia",
+          "text": "Gli elementi naturali permettono di interrogare i limiti dell’esperienza umana e il desiderio di oltrepassarli."
+        }
+      ]
+    },
+    {
+      "id": "dolore-bellezza",
+      "label": "La sospensione del dolore",
+      "segments": [
+        {
+          "unitId": "p01",
+          "note": "La lezione separa la sofferenza biografica dalla sua trasposizione poetica: il testo non registra il dolore, ma lo trasforma."
+        },
+        {
+          "unitId": "v15",
+          "note": "La dolcezza del naufragio mostra che l’immaginazione può produrre un piacere proprio dentro una condizione umana limitata."
+        },
+        {
+          "unitId": "p07",
+          "note": "Il piacere dell’infinito viene definito breve e fragile: non è salvezza definitiva, ma esperienza temporanea."
+        },
+        {
+          "unitId": "p09",
+          "note": "La conclusione della lezione formula il risultato più netto: la poesia non cancella il dolore, lo sospende abbastanza a lungo da trasformarlo in bellezza."
+        },
+        {
+          "unitId": "p20",
+          "note": "Il sapere irrinunciabile riassume la trasformazione della sofferenza in esperienza immaginativa, evitando una lettura puramente autobiografica."
+        }
+      ],
+      "explanation": "La poesia nasce in un momento biograficamente doloroso, ma non è una confessione diretta. Leopardi converte il limite e la sofferenza in un’esperienza immaginativa capace di produrre piacere. La bellezza non risolve la condizione umana: crea una sospensione temporanea del suo peso.",
+      "connections": [
+        {
+          "category": "Poetica",
+          "text": "La poesia agisce come trasformazione dell’esperienza, non come semplice esposizione autobiografica."
+        },
+        {
+          "category": "Etica",
+          "text": "Il testo non promette consolazioni assolute: riconosce il carattere breve e fragile del piacere immaginativo."
+        }
+      ]
+    }
+  ]
+}
