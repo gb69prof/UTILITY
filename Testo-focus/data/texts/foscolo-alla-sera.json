@@ -7,12 +7,12 @@
     "work": "Poesie",
     "discipline": "Letteratura italiana",
     "period": "Ottocento",
-    "description": "Lettura di Alla sera come meditazione sulla morte, sul tempo e sulla pace cercata da un io attraversato da un conflitto interiore permanente.",
+    "description": "Lettura di Alla sera come punto d’incontro tra materialismo meccanicista, religione delle illusioni e inquietudine preromantica: la poesia trasforma il nulla della morte in quiete e contiene, senza cancellarlo, lo spirto guerrier.",
     "lessonUrl": "https://docs.google.com/document/d/1gZs57UqcmFf-pXMyDFig7nZytqqEtUaVP-9m6rpPPwI/edit?usp=drivesdk"
   },
   "presentation": {
-    "overviewTitle": "La pace della sera e il ruggito dell’io",
-    "overview": "Il sonetto parte dalla sera come presenza naturale amata e la trasforma nell’immagine della «fatal quiete», cioè della morte pensata non come terrore ma come cessazione del conflitto. Da qui il testo si muove verso il «nulla eterno», opposto al «reo tempo» della vita e alle sue cure, fino al contrasto conclusivo tra la pace contemplata e lo «spirto guerrier» che ruggisce nell’interiorità. La lezione legge così la sera come figura di una tregua desiderata dentro una visione materialistica e inquieta dell’esistenza."
+    "overviewTitle": "Dalla macchina del mondo alla quiete immaginata",
+    "overview": "Il sonetto nasce dentro una contraddizione radicale. La ragione materialista conduce Foscolo al «nulla eterno»: non esistono aldilà o consolazioni metafisiche, e il tempo della vita appare come consumo e inquietudine. Eppure la poesia non si arrende a questa verità. Trasforma la sera, fenomeno naturale e ciclico, nell’«imago» della morte e rende la «fatal quiete» desiderabile, intima, soave. In questo gesto si riconosce la religione foscoliana delle illusioni: non negare il nulla, ma costruire immagini capaci di renderlo umanamente abitabile. La forma ordinata del sonetto contiene così una tensione preromantica che esplode nell’ultimo verso, nello «spirto guerrier» che continua a ruggire dentro l’io."
   },
   "units": [
     {"id":"u01","type":"label","text":"Lezione su \"Alla sera\" di Ugo Foscolo"},
@@ -62,82 +62,105 @@
   ],
   "focuses": [
     {
-      "id": "sera-fatal-quiete",
-      "label": "La sera come immagine della fatal quiete",
+      "id": "fatal-quiete",
+      "label": "La sera e la fatal quiete",
       "segments": [
-        {"unitId":"v01","note":"L’attacco collega immediatamente la sera alla «fatal quiete»: la morte entra nel testo non come incidente, ma come destino necessario."},
-        {"unitId":"v02","note":"La sera è definita «imago» della morte e proprio per questo è cara: il paradosso trasforma ciò che normalmente spaventa in una presenza desiderata."},
-        {"unitId":"v07","note":"Il fatto che la sera scenda «invocata» mostra che il poeta non subisce questa immagine di quiete, ma la chiama a sé."},
-        {"unitId":"v08","note":"La sera penetra «soavemente» nelle vie segrete del cuore: la morte, mediata dalla poesia, assume una qualità intima e consolatoria."},
-        {"unitId":"p17","note":"La lezione esplicita il fondamento materialistico del simbolo: la «fatal quiete» è il destino finale della materia, senza aldilà o resurrezione."},
-        {"unitId":"p18","note":"Il commento interpreta la trasformazione poetica della morte: ciò che filosoficamente è nulla può diventare, nell’immagine della sera, una presenza sopportabile e perfino desiderata."}
+        {"unitId":"v01","note":"L’espressione «fatal quïete» introduce la morte come destino necessario: non c’è apertura metafisica, ma cessazione inevitabile del vivere."},
+        {"unitId":"v02","note":"La sera è «imago» della morte e proprio per questo è cara: il testo rovescia l’associazione comune tra morte e terrore."},
+        {"unitId":"v07","note":"«Sempre scendi invocata» mostra che questa quiete non viene semplicemente subita: l’io la desidera e la chiama."},
+        {"unitId":"v08","note":"L’avverbio «soavemente» trasforma la morte pensata dalla ragione in una presenza intima, capace di penetrare senza violenza nel cuore."},
+        {"unitId":"p17","note":"La lezione esplicita il fondamento materialistico dell’immagine: la morte è la fine della materia, senza aldilà né resurrezione."},
+        {"unitId":"p20","note":"Il commento chiarisce che la sera rende pensabile la morte come pace e non come orrore."}
       ],
-      "explanation": "La sera vale insieme come fenomeno naturale e come figura della morte. Foscolo non attenua la propria idea materialistica del nulla, ma la rende poeticamente abitabile: la «fatal quiete» diventa immagine di pace, capace di entrare nel cuore senza terrore.",
+      "explanation": "La sera funziona contemporaneamente come fenomeno naturale e come figura della morte. La «fatal quiete» conserva il carattere necessario e definitivo della visione materialistica foscoliana, ma la poesia la trasforma: ciò che sul piano filosofico è annullamento diventa sul piano immaginativo pace desiderata. Il testo non nega il nulla; gli dà una forma umanamente sopportabile.",
       "connections": [
-        {"category":"Immagine del mondo","text":"La morte è pensata come esito necessario della materia e assenza di un aldilà."},
-        {"category":"Poetica","text":"La poesia non cancella il nulla, ma lo trasforma in immagine consolatoria."}
+        {"category":"Immagine del mondo","text":"Il materialismo meccanicista conduce a una morte senza aldilà: la «fatal quiete» è la cessazione della materia, non l’ingresso in un’altra vita."},
+        {"category":"Simbolismo","text":"La sera rende visibile e sensibile un concetto astratto e radicale come la morte."}
       ]
     },
     {
-      "id": "natura-doppio-volto",
-      "label": "La sera oltre le stagioni: serenità e tenebra",
+      "id": "nulla-reo-tempo",
+      "label": "Il nulla eterno contro il reo tempo",
       "segments": [
-        {"unitId":"v03","note":"La prima apparizione della sera è accompagnata da immagini liete: il crepuscolo estivo ha un volto leggero e armonioso."},
-        {"unitId":"v04","note":"Nubi estive e zeffiri sereni costruiscono il versante luminoso e pacificato della natura."},
-        {"unitId":"v05","note":"Il secondo «E quando» introduce il volto opposto della sera: inverno, neve e inquietudine atmosferica."},
-        {"unitId":"v06","note":"Le «tenebre e lunghe» estendono l’oscurità all’intero universo, dando alla sera una dimensione cosmica."},
-        {"unitId":"v07","note":"Il «sempre» annulla la differenza tra estate e inverno: la sera resta desiderata in entrambe le forme."},
-        {"unitId":"p20","note":"La lezione riconosce nelle immagini naturali non uno sfondo ornamentale, ma il clima sensibile attraverso cui la sera avvolge progressivamente l’io."}
+        {"unitId":"v09","note":"La sera mette in movimento la meditazione: i pensieri cominciano a seguire una traiettoria che supera il presente immediato."},
+        {"unitId":"v10","note":"Il «nulla eterno» condensa la conseguenza estrema del materialismo: dopo la morte non resta un’anima, ma l’annullamento dell’individuo."},
+        {"unitId":"v11","note":"Il «reo tempo» è la vita nel suo fluire doloroso: mentre il pensiero guarda alla quiete senza tempo, l’esistenza continua a consumarsi."},
+        {"unitId":"v12","note":"Le «torme delle cure» trasformano il tempo in esperienza concreta di affanno: vivere significa essere assediati da preoccupazioni e conflitti."},
+        {"unitId":"p17","note":"La spiegazione collega esplicitamente il nulla alla visione illuminista e materialistica dell’universo."},
+        {"unitId":"p20","note":"La lezione rende evidente il contrasto strutturale tra il «nulla eterno» e il «reo tempo» che fugge."}
       ],
-      "explanation": "La sera è amata sia nel suo volto estivo e sereno sia in quello invernale e oscuro. La sua funzione non dipende quindi dalla piacevolezza del paesaggio: ciò che conta è il suo potere costante di sospendere il giorno, attenuare il tumulto e preparare simbolicamente la quiete.",
+      "explanation": "Il centro filosofico del sonetto è il rapporto tra nulla e tempo. Il «nulla eterno» non è un infinito religioso: è l’assenza definitiva di coscienza e di scopo. Paradossalmente, però, non viene rappresentato come il vero male. Il dolore appartiene al «reo tempo», cioè alla vita che passa trascinando con sé le cure. La morte appare così come uscita dal logorio del tempo.",
       "connections": [
-        {"category":"Forma","text":"La struttura parallela dei due «E quando» costruisce due scenari opposti che convergono nello stesso «sempre scendi invocata»."}
+        {"category":"Immagine del mondo","text":"La concezione meccanicista elimina un fine provvidenziale: l’universo funziona, ma non consola."},
+        {"category":"Problema","text":"Il sonetto rovescia la gerarchia abituale: la vita è il luogo del consumo, mentre la morte assume la forma della quiete."}
       ]
     },
     {
-      "id": "nulla-tempo",
-      "label": "Dal nulla eterno al reo tempo",
+      "id": "illusione-poetica",
+      "label": "La poesia contro il nulla",
       "segments": [
-        {"unitId":"v09","note":"La sera mette in moto il pensiero: la contemplazione non immobilizza l’io, ma lo fa «vagare» oltre il presente."},
-        {"unitId":"v10","note":"Le «orme» conducono al «nulla eterno»: il pensiero segue una direzione precisa verso l’annullamento finale."},
-        {"unitId":"v11","note":"Mentre il pensiero si apre all’eterno, il «reo tempo» fugge: alla quiete senza tempo si oppone una vita sentita come colpevole e dolorosa."},
-        {"unitId":"v12","note":"Le «torme delle cure» danno forma concreta al peso dell’esistenza: il tempo trascina con sé preoccupazioni che consumano il poeta."},
-        {"unitId":"p20","note":"Il commento chiarisce l’opposizione fondamentale tra «nulla eterno» e «reo tempo»: morte come cessazione e vita come consumo."}
+        {"unitId":"v02","note":"Chiamare la sera «imago» è già un atto poetico: la morte viene mediata da una figura e quindi resa contemplabile."},
+        {"unitId":"v07","note":"L’invocazione trasforma un evento naturale in interlocutrice: la poesia costruisce una relazione affettiva con ciò che simboleggia la fine."},
+        {"unitId":"v08","note":"La sera percorre le «secrete vie» del cuore: l’immagine poetica opera nella sfera interiore dove la pura ragione non può offrire consolazione."},
+        {"unitId":"v13","note":"La «pace» osservata nella sera diventa un valore immaginato e interiorizzato, non una verità metafisica."},
+        {"unitId":"p18","note":"La lezione nomina esplicitamente la «religione delle illusioni»: la poesia non dimostra un aldilà, ma costruisce immagini necessarie a vivere."},
+        {"unitId":"p21","note":"La conclusione presenta la poesia come strumento di salvezza interiore: non elimina il nulla, ma gli oppone bellezza e significato."}
       ],
-      "explanation": "La seconda metà del sonetto sposta il discorso dalla sera al tempo. La quiete apre la mente al «nulla eterno», mentre la vita appare come «reo tempo», un fluire gravato dalle cure. Non è il nulla a essere rappresentato come minaccioso: è il tempo vissuto, con il suo logorio, a diventare il vero antagonista.",
+      "explanation": "Qui si vede con particolare chiarezza la religione foscoliana delle illusioni. Foscolo accetta intellettualmente il materialismo, ma rifiuta che esso esaurisca l’esperienza umana. La poesia crea una seconda verità, non scientifica ma affettiva e simbolica: la morte resta nulla, eppure può essere immaginata come pace. L’illusione non è ingenuità; è una costruzione consapevole che consente all’uomo di abitare una realtà altrimenti priva di senso.",
       "connections": [
-        {"category":"Problema","text":"Il testo rovescia l’opposizione comune vita/morte: la vita è inquietudine e consumo, la morte è pensata come cessazione del conflitto."}
+        {"category":"Poetica","text":"Le illusioni foscoliane non cancellano la verità materialistica: la rendono vivibile attraverso amore, memoria, patria, arte e bellezza."},
+        {"category":"Etica","text":"La poesia diventa una forma di resistenza al nichilismo pratico: sapere che un valore è costruito non significa che sia inutile."}
       ]
     },
     {
       "id": "spirto-guerrier",
-      "label": "Lo spirto guerrier e la tregua interiore",
+      "label": "Lo spirto guerrier: l’io che non si pacifica",
       "segments": [
-        {"unitId":"v13","note":"La «pace» della sera è contemplata direttamente: diventa il modello esterno di una calma che l’io non possiede spontaneamente."},
-        {"unitId":"v14","note":"Il sonetto si chiude sullo «spirto guerrier» che ruggisce dentro il poeta: la vera battaglia è interiore, e la sera riesce solo temporaneamente a farla dormire."},
-        {"unitId":"p19","note":"La lezione collega lo «spirto guerrier» al carattere foscoliano, presentato come incapace di adattarsi al compromesso e alla disillusione storica."},
-        {"unitId":"p20","note":"Il commento riconosce nel ruggito finale la metafora centrale del tormento interiore: la pace della sera vale perché sospende questo conflitto."},
-        {"unitId":"p21","note":"La conclusione insiste sul fatto che la quiete non viene trovata nel mondo storico, ma nella forma poetica costruita dal poeta."}
+        {"unitId":"v13","note":"La pace appartiene alla sera, cioè a qualcosa che l’io contempla fuori di sé e desidera interiorizzare."},
+        {"unitId":"v14","note":"L’ultimo verso svela la natura profonda dell’io foscoliano: uno «spirto guerrier» che non tace definitivamente ma viene soltanto fatto dormire."},
+        {"unitId":"p19","note":"La lezione collega lo «spirto guerrier» all’insofferenza verso il compromesso e alla disillusione storica seguita alla Rivoluzione e a Napoleone."},
+        {"unitId":"p20","note":"Il commento interpreta il ruggito interiore come metafora del tormento permanente che la sera riesce solo temporaneamente a placare."},
+        {"unitId":"p21","note":"La conclusione conferma che l’inquietudine non trova soluzione nel mondo esterno: la tregua viene prodotta dalle immagini poetiche."}
       ],
-      "explanation": "Il punto d’arrivo non è la morte in astratto, ma il contrasto tra una pace contemplata e un’identità combattiva. Lo «spirto guerrier» definisce un io irriducibilmente inquieto: la sera non lo trasforma, lo fa dormire. La consolazione è dunque una tregua, non una soluzione definitiva.",
+      "explanation": "Il sonetto non termina davvero nella pace: termina sul ruggito. La quiete della sera sospende il conflitto, non lo risolve. Questo distingue Foscolo da una sensibilità puramente neoclassica e apre alla tensione preromantica: l’io è assoluto, insofferente al limite e al compromesso, attraversato da una lotta che la forma poetica può contenere ma non cancellare.",
       "connections": [
-        {"category":"Fratture","text":"L’inquietudine personale è messa in rapporto con la disillusione politica e storica dell’età napoleonica."},
-        {"category":"Etica","text":"Lo «spirto guerrier» implica il rifiuto dell’adattamento passivo e del compromesso."}
+        {"category":"Fratture","text":"Il conflitto personale si intreccia alla disillusione storica: il crollo delle speranze politiche accentua l’insofferenza dell’io."},
+        {"category":"Preromanticismo","text":"Notte, morte, tormento, tensione verso l’assoluto e rifiuto del compromesso anticipano sensibilità romantiche."}
       ]
     },
     {
-      "id": "poesia-illusione",
-      "label": "La poesia come trasformazione del nulla",
+      "id": "forma-abisso",
+      "label": "Forma armonica e abisso interiore",
       "segments": [
-        {"unitId":"v01","note":"L’espressione «fatal quiete» sostituisce alla parola morte un’immagine solenne e pacificata: già la lingua poetica trasforma il dato filosofico."},
-        {"unitId":"v02","note":"La morte diventa «imago» e quindi figura contemplabile; l’astratto nulla viene reso sensibile attraverso la sera."},
-        {"unitId":"v08","note":"L’avverbio «soavemente» mostra l’effetto della trasfigurazione poetica: un pensiero radicale e materialistico assume una tonalità dolce."},
-        {"unitId":"p18","note":"La lezione formula esplicitamente la «religione delle illusioni»: la poesia rende accettabile ciò che la ragione materialistica presenta come annullamento."},
-        {"unitId":"p21","note":"La conclusione attribuisce alla costruzione delle immagini poetiche una funzione di salvezza interiore, pur senza modificarne il fondamento filosofico."}
+        {"unitId":"v01","note":"L’apertura introduce subito un contenuto estremo, la morte, ma dentro l’ordine rigoroso del sonetto."},
+        {"unitId":"v03","note":"La prima struttura «E quando» avvia una coppia simmetrica di scenari naturali."},
+        {"unitId":"v05","note":"La ripresa di «E quando» bilancia estate e inverno, serenità e tenebra: gli opposti vengono ordinati dalla costruzione formale."},
+        {"unitId":"v07","note":"Il «sempre» ricompone i due scenari nella costanza dell’invocazione alla sera."},
+        {"unitId":"v10","note":"Il passaggio al «nulla eterno» porta la poesia dall’armonia descrittiva all’abisso filosofico."},
+        {"unitId":"v14","note":"La chiusura sul verbo «rugge» lascia emergere, sotto l’armonia formale, un’energia violenta e non conciliata."},
+        {"unitId":"p16","note":"La definizione del testo come sonetto richiama una forma chiusa e regolata, significativa rispetto alla materia inquieta che contiene."}
       ],
-      "explanation": "Il sonetto mette in scena uno dei meccanismi più caratteristici di Foscolo: la ragione riconosce il nulla, ma la poesia crea immagini capaci di rendere vivibile questa verità. L’illusione non è una falsificazione ingenua; è una forma simbolica che concede all’io una tregua dal conflitto.",
+      "explanation": "Una delle tensioni più fertili di Alla sera nasce dal rapporto tra ordine e abisso. La struttura chiusa del sonetto, le simmetrie sintattiche e il bilanciamento delle immagini costruiscono una forma controllata; dentro questa forma entrano però nulla, morte, tempo colpevole e ruggito interiore. È un punto d’incontro tra l’aspirazione neoclassica all’armonia e la sensibilità preromantica del conflitto.",
       "connections": [
-        {"category":"Poetica","text":"La «religione delle illusioni» permette di attribuire valore umano e affettivo a realtà che la ragione materialistica considera prive di senso trascendente."}
+        {"category":"Forma","text":"L’ordine del sonetto non è semplice eleganza: funziona come dispositivo che contiene e rende dicibile l’inquietudine."},
+        {"category":"Poetica","text":"La bellezza formale è una delle modalità con cui Foscolo oppone una costruzione umana all’indifferenza del mondo materiale."}
+      ]
+    },
+    {
+      "id": "dal-cosmo-al-cuore",
+      "label": "Dall’universo al cuore",
+      "segments": [
+        {"unitId":"v06","note":"Le tenebre vengono proiettate sull’«universo»: il movimento parte da una dimensione cosmica e impersonale."},
+        {"unitId":"v08","note":"La sera passa dall’universo alle «secrete vie» del cuore: il paesaggio cosmico diventa esperienza interiore."},
+        {"unitId":"v09","note":"Dal cuore si passa al pensiero, che comincia a vagare oltre il dato sensibile."},
+        {"unitId":"v10","note":"Il pensiero raggiunge il limite filosofico del «nulla eterno»."},
+        {"unitId":"v13","note":"La contemplazione torna alla scena visibile della sera, ora caricata del valore interiore di pace."},
+        {"unitId":"v14","note":"Il percorso termina nel punto più interno dell’io, dove lo «spirto guerrier» continua a ruggire."}
+      ],
+      "explanation": "Il movimento del sonetto è anche spaziale e psicologico. Parte dall’universo esterno, attraversa il cuore e il pensiero, tocca il nulla e ritorna infine al nucleo conflittuale dell’io. La natura non è quindi un semplice paesaggio: è il dispositivo che permette a Foscolo di trasformare una percezione esterna in meditazione filosofica e autoanalisi.",
+      "connections": [
+        {"category":"Forma","text":"Il testo procede per progressiva interiorizzazione: cosmo → cuore → pensiero → nulla → spirito."},
+        {"category":"Immagine del mondo","text":"L’universo impersonale del materialismo viene attraversato dall’io, che tenta di produrre un senso senza poterlo trovare già dato nella natura."}
       ]
     }
   ]
