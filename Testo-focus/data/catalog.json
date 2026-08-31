@@ -12,6 +12,17 @@
       "description": "Lettura dell’Infinito come esperienza poetica che nasce dal limite sensibile e si apre, attraverso immaginazione, suono e memoria, all’immensità dello spazio e del tempo.",
       "dataPath": "./data/texts/leopardi-infinito.json",
       "lessonUrl": "https://docs.google.com/document/d/1wdWFe-k0saUHpC8RuKjDHHdFPeH0OceShyE_sqk27Q8/edit?usp=drivesdk"
+    },
+    {
+      "id": "foscolo-alla-sera",
+      "title": "Alla sera",
+      "author": "Ugo Foscolo",
+      "discipline": "Letteratura italiana",
+      "period": "Ottocento",
+      "category": "Poesia",
+      "description": "Lettura di Alla sera come meditazione sulla morte, sul tempo e sulla pace cercata da un io attraversato da un conflitto interiore permanente.",
+      "dataPath": "./data/texts/foscolo-alla-sera.json",
+      "lessonUrl": "https://docs.google.com/document/d/1gZs57UqcmFf-pXMyDFig7nZytqqEtUaVP-9m6rpPPwI/edit?usp=drivesdk"
     }
   ]
 }
