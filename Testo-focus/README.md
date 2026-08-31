@@ -103,3 +103,5 @@ I focus non hanno categorie obbligatorie. `connections` può contenere Fratture,
 ## Cache e aggiornamenti
 
 La shell dell’app viene conservata per l’uso offline. I dataset visitati vengono memorizzati e aggiornati in sottofondo. Il catalogo usa invece una strategia *network first*: quando la rete è disponibile viene sempre richiesta la versione più recente, evitando che i nuovi testi restino nascosti dietro una cache obsoleta.
+
+Quando si modifica un file della shell (`index.html`, CSS, JavaScript, manifest o icone), incrementare `CACHE_VERSION` in `service-worker.js`. Non è necessario farlo quando si aggiunge soltanto un nuovo dataset o si aggiorna `catalog.json`.

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "testo-focus-v1";
+const CACHE_VERSION = "testo-focus-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
