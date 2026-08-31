@@ -1,13 +1,13 @@
-const CACHE_VERSION = "testo-focus-v2";
+const CACHE_VERSION = "testo-focus-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./assets/css/styles.css",
-  "./assets/js/app.js",
+  "./assets/css/styles.css?v=3",
+  "./assets/js/app.js?v=3",
   "./assets/icons/icon.svg",
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
-  "./manifest.webmanifest",
+  "./manifest.webmanifest?v=3",
   "./data/texts/dimostrazione-tecnica.json"
 ];
 
