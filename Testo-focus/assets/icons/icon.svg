@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Icona Testo-Focus">
+  <rect width="512" height="512" rx="112" fill="#102a43"/>
+  <rect x="102" y="108" width="238" height="296" rx="28" fill="#fffefa"/>
+  <path d="M148 174h146M148 226h108M148 278h154M148 330h88" stroke="#829ab1" stroke-width="22" stroke-linecap="round"/>
+  <path d="M148 226h108" stroke="#f3a712" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="328" cy="292" r="78" fill="#d9f2f3" fill-opacity=".82" stroke="#fffefa" stroke-width="22"/>
+  <path d="m382 350 62 62" stroke="#fffefa" stroke-width="28" stroke-linecap="round"/>
+  <path d="M292 292h72" stroke="#0b7285" stroke-width="16" stroke-linecap="round"/>
+</svg>

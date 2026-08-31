@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="Testo-Focus: dal testo ai concetti, un focus alla volta.">
+  <title>Testo-Focus · gbprof</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Vai al contenuto</a>
+
+  <div class="app-shell" id="app-shell">
+    <header class="topbar">
+      <button class="brand" type="button" data-action="home" aria-label="Vai alla home di Testo-Focus">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span><strong>TESTO-FOCUS</strong><small>Dal testo ai concetti</small></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <button type="button" data-action="catalog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5h16M4 12h16M4 18.5h16"/></svg>
+          <span>Testi</span>
+        </button>
+        <button type="button" data-action="catalog">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM9 4v16"/></svg>
+          <span>Indice</span>
+        </button>
+        <a id="lesson-link" class="nav-button is-disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M19 13v6H5V5h6"/></svg>
+          <span>Lezione completa</span>
+        </a>
+        <button type="button" data-action="home">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M6 10v10h12V10"/></svg>
+          <span>Home</span>
+        </button>
+        <button type="button" data-action="fullscreen">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></svg>
+          <span class="wide-label">Schermo intero</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section id="home-view" class="home-view" aria-labelledby="home-title">
+        <div class="home-copy">
+          <p class="eyebrow"><span></span> Strumento didattico permanente</p>
+          <h1 id="home-title">Il testo si accende.<br><em>Il resto fa silenzio.</em></h1>
+          <p class="home-intro">Seleziona un testo e scegli un nucleo interpretativo. Testo-Focus isola i passaggi pertinenti e mostra le connessioni con il contesto, la visione del mondo e la poetica.</p>
+          <div class="home-actions">
+            <button class="primary-button" type="button" data-action="catalog">Scegli un testo <span aria-hidden="true">→</span></button>
+            <button class="secondary-button" type="button" data-action="demo">Prova Testo-Focus</button>
+          </div>
+          <p class="home-note">Letteratura, storia, filosofia e documenti: una sola interfaccia, nuclei diversi per ogni testo.</p>
+        </div>
+
+        <div class="focus-illustration" aria-label="Rappresentazione astratta del funzionamento di Testo-Focus">
+          <div class="illustration-label">UN FOCUS ALLA VOLTA</div>
+          <div class="mock-window" aria-hidden="true">
+            <div class="mock-toolbar"><i></i><i></i><i></i><span></span></div>
+            <div class="mock-body">
+              <div class="mock-text">
+                <b></b><b></b><b class="lit short"></b><b></b><b class="lit"></b><b></b><b></b><b class="lit short"></b><b></b>
+              </div>
+              <div class="mock-connection"><span></span><span></span><span></span></div>
+              <div class="mock-concepts"><strong>PERCHÉ?</strong><i></i><i></i><strong>CONNESSIONI</strong><em></em><em></em></div>
+            </div>
+          </div>
+          <div class="lens" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <section id="analysis-view" class="analysis-view" hidden aria-labelledby="text-title">
+        <div class="focus-strip">
+          <div class="text-identity">
+            <p id="text-author"></p>
+            <h1 id="text-title"></h1>
+          </div>
+          <div class="focus-controls" id="focus-controls" role="toolbar" aria-label="Nuclei interpretativi"></div>
+        </div>
+
+        <div class="workspace">
+          <article class="text-panel" aria-labelledby="text-panel-heading">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">TESTO</p>
+                <h2 id="text-panel-heading">Lettura integrale</h2>
+              </div>
+              <button id="reset-focus" class="text-reset is-active" type="button">Testo intero</button>
+            </div>
+            <div id="text-content" class="text-content" tabindex="0" aria-label="Testo completo"></div>
+          </article>
+
+          <aside class="insight-panel" aria-label="Spiegazione e collegamenti">
+            <section class="why-section" aria-labelledby="why-heading">
+              <p class="panel-kicker">PERCHÉ?</p>
+              <h2 id="why-heading">Scegli un focus</h2>
+              <div id="focus-fragment" class="focus-fragment" hidden></div>
+              <p id="focus-explanation" class="focus-explanation">Seleziona uno dei nuclei in alto: il testo metterà in evidenza solo i passaggi pertinenti.</p>
+              <div id="occurrence-nav" class="occurrence-nav" hidden>
+                <button id="previous-occurrence" type="button" aria-label="Segmento precedente">‹ <span>Precedente</span></button>
+                <output id="occurrence-count" aria-live="polite"></output>
+                <button id="next-occurrence" type="button" aria-label="Segmento successivo"><span>Successivo</span> ›</button>
+              </div>
+            </section>
+            <section class="connections-section" aria-labelledby="connections-heading">
+              <div class="section-title-row">
+                <p class="panel-kicker">RETE DI SENSO</p>
+                <h2 id="connections-heading">Collegamenti concettuali</h2>
+              </div>
+              <div id="connections" class="connections-list">
+                <p class="empty-connections">I collegamenti appariranno qui, senza sovraccaricare la lettura.</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="catalog-dialog" class="catalog-dialog" aria-labelledby="catalog-title">
+    <div class="dialog-head">
+      <div>
+        <p class="eyebrow"><span></span> Biblioteca</p>
+        <h2 id="catalog-title">Indice dei testi</h2>
+        <p>La biblioteca cresce senza cambiare il motore dell’app.</p>
+      </div>
+      <button class="icon-button" type="button" data-action="close-catalog" aria-label="Chiudi indice">×</button>
+    </div>
+
+    <form class="catalog-filters" id="catalog-filters" role="search">
+      <label class="search-field">
+        <span>Ricerca</span>
+        <input id="catalog-search" type="search" placeholder="Titolo, autore, parola chiave…" autocomplete="off">
+      </label>
+      <label>
+        <span>Disciplina</span>
+        <select id="discipline-filter"><option value="">Tutte</option></select>
+      </label>
+      <label>
+        <span>Periodo</span>
+        <select id="period-filter"><option value="">Tutti</option></select>
+      </label>
+      <button class="clear-filters" type="reset">Azzera filtri</button>
+    </form>
+
+    <div id="catalog-results" class="catalog-results" aria-live="polite"></div>
+    <div class="demo-entry">
+      <div><span>AREA DI PROVA</span><strong>Dimostrazione tecnica</strong><p>Frasi neutre inventate per verificare il funzionamento del motore.</p></div>
+      <button class="secondary-button" type="button" data-action="demo">Apri la demo</button>
+    </div>
+  </dialog>
+
+  <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

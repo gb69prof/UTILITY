@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "dimostrazione-tecnica",
+    "title": "Dimostrazione tecnica",
+    "author": "Testo inventato",
+    "discipline": "Esempio neutro",
+    "period": "Area di prova",
+    "description": "Breve testo artificiale usato esclusivamente per mostrare le funzioni di Testo-Focus.",
+    "lessonUrl": ""
+  },
+  "presentation": {
+    "overviewTitle": "Una scena, tre direzioni",
+    "overview": "Il testo racconta un attraversamento molto semplice. I nuclei permettono di osservare separatamente spazio, percezione e cambiamento, senza attribuire il brano a un autore o a un’opera reale."
+  },
+  "units": [
+    { "id": "u01", "type": "paragraph", "text": "Una persona entra in una stanza quasi vuota. Sul tavolo trova una mappa senza nomi e, accanto, una piccola lente." },
+    { "id": "u02", "type": "paragraph", "text": "Dalla finestra arriva una luce obliqua: rende nitida una parte del foglio e lascia il resto in penombra." },
+    { "id": "u03", "type": "paragraph", "text": "La persona sposta la lente. Prima compare una strada, poi un ponte, infine un segno che sembrava soltanto una macchia." },
+    { "id": "u04", "type": "paragraph", "text": "Ogni dettaglio cambia il significato di quelli già visti, ma la mappa resta sempre intera sul tavolo." },
+    { "id": "u05", "type": "paragraph", "text": "Quando la luce si allontana, la persona non ha una risposta definitiva: possiede però una direzione da seguire." },
+    { "id": "u06", "type": "paragraph", "text": "Prima di uscire, annota due osservazioni sul margine del foglio e ne cancella una che non sembra più convincente." },
+    { "id": "u07", "type": "paragraph", "text": "Un rumore nel corridoio interrompe per un istante la ricerca. La stanza, rimasta immobile, appare ora meno vuota." },
+    { "id": "u08", "type": "paragraph", "text": "La lente torna sulla prima strada: il punto di partenza è lo stesso, ma il percorso possibile non coincide più con quello immaginato all’inizio." },
+    { "id": "u09", "type": "paragraph", "text": "La persona ripiega la mappa senza nascondere i segni e lascia sul tavolo la lente, pronta per un altro sguardo." },
+    { "id": "u10", "type": "paragraph", "text": "Fuori dalla stanza, la direzione scelta resta provvisoria; è sufficiente, tuttavia, per cominciare il cammino." }
+  ],
+  "focuses": [
+    {
+      "id": "spazio",
+      "label": "Spazio",
+      "segments": [
+        { "unitId": "u01", "note": "La stanza e il tavolo definiscono un luogo concreto, ma volutamente essenziale." },
+        { "unitId": "u03", "note": "Strada e ponte trasformano la mappa in uno spazio da percorrere." },
+        { "unitId": "u04", "note": "La mappa resta intera: il singolo dettaglio conserva la propria posizione nell’insieme." },
+        { "unitId": "u10", "note": "L’uscita dalla stanza trasferisce nello spazio reale la direzione individuata sulla mappa." }
+      ],
+      "explanation": "Lo spazio non è uno sfondo decorativo. Organizza l’azione: dalla stanza chiusa si passa alla possibilità di un percorso, mentre la mappa tiene insieme particolare e totalità.",
+      "connections": [
+        { "category": "Struttura", "text": "Il movimento procede dal luogo reale alla rappresentazione di un cammino." },
+        { "category": "Idea guida", "text": "Isolare un punto non significa separarlo dall’insieme che gli dà senso." }
+      ]
+    },
+    {
+      "id": "luce",
+      "label": "Luce e visibilità",
+      "segments": [
+        { "unitId": "u02", "note": "La luce seleziona: rende leggibile una zona e attenua ciò che la circonda." },
+        { "unitId": "u05", "note": "La luce si sposta, ma ciò che è stato compreso lascia una traccia." }
+      ],
+      "explanation": "La luce funziona come una metafora del focus: non cancella il resto, ma stabilisce temporaneamente che cosa osservare con maggiore intensità.",
+      "connections": [
+        { "category": "Percezione", "text": "Vedere dipende da una selezione, non dalla presenza simultanea di ogni informazione." },
+        { "category": "Metodo", "text": "L’attenzione è mobile: un nuovo focus può riorganizzare ciò che è già stato letto." },
+        { "category": "Limite", "text": "La penombra resta visibile e ricorda che ogni lettura è parziale." }
+      ]
+    },
+    {
+      "id": "trasformazione",
+      "label": "Trasformazione",
+      "segments": [
+        { "unitId": "u03", "note": "La lente rende distinguibile ciò che prima appariva indistinto." },
+        { "unitId": "u04", "note": "Il nuovo dettaglio modifica retroattivamente il senso dei precedenti." },
+        { "unitId": "u05", "note": "Il risultato non è una certezza assoluta, ma una nuova possibilità di azione." },
+        { "unitId": "u06", "note": "Cancellare un’ipotesi rende visibile il carattere rivedibile dell’interpretazione." },
+        { "unitId": "u08", "note": "Ritornare al punto di partenza non significa ripetere la stessa lettura." }
+      ],
+      "explanation": "Il cambiamento avviene nel modo di interpretare, non negli oggetti. La sequenza mostra come una lettura possa trasformarsi per aggiunte successive senza chiudersi in una risposta definitiva.",
+      "connections": [
+        { "category": "Processo", "text": "Comprendere è una successione di revisioni, non una rivelazione istantanea." },
+        { "category": "Conseguenza", "text": "L’interpretazione produce orientamento: alla fine compare una direzione possibile." }
+      ]
+    }
+  ]
+}
