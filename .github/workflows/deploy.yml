@@ -17,6 +17,9 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            echo "Connessione al server riuscita"
-            whoami
-            hostname
+            set -e
+            cd /opt/gbprof/projects/UTILITY
+            git fetch origin
+            git reset --hard origin/main
+            echo "Deploy UTILITY completato"
+            git log -1 --oneline
