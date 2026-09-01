@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "texts": [
     {
       "id": "leopardi-infinito",
@@ -34,6 +34,17 @@
       "description": "La dedica alla Moda come manifesto satirico del Giorno: antifrasi, parodia del sublime, culto dell’apparenza e denuncia del privilegio aristocratico privo di funzione.",
       "dataPath": "./data/texts/parini-alla-dea-moda.json",
       "lessonUrl": "https://docs.google.com/document/d/1D6DaThDkT41QVju7L2oWQ7LUlEfdvjHg3cxt6auKgbU/edit?usp=drivesdk"
+    },
+    {
+      "id": "dannunzio-la-pioggia-nel-pineto",
+      "title": "La pioggia nel pineto",
+      "author": "Gabriele D’Annunzio",
+      "discipline": "Letteratura italiana",
+      "period": "Novecento",
+      "category": "Poesia",
+      "description": "La pineta come lingua e orchestra vivente: pioggia, metamorfosi panica, corpo vegetale, smarrimento e inversione finale della «favola bella».",
+      "dataPath": "./data/texts/dannunzio-la-pioggia-nel-pineto.json",
+      "lessonUrl": "https://docs.google.com/document/d/18PlYANgBBqZ2cqEIDD2qWC_VRQLBrvmr_9mfGi7wxsk/edit?usp=drivesdk"
     }
   ]
 }
