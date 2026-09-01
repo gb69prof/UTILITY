@@ -23,6 +23,17 @@
       "description": "Lettura di Alla sera come punto d’incontro tra materialismo meccanicista, religione delle illusioni e inquietudine preromantica: la poesia trasforma il nulla della morte in quiete e contiene, senza cancellarlo, lo spirto guerrier.",
       "dataPath": "./data/texts/foscolo-alla-sera.json",
       "lessonUrl": "https://docs.google.com/document/d/1gZs57UqcmFf-pXMyDFig7nZytqqEtUaVP-9m6rpPPwI/edit?usp=drivesdk"
+    },
+    {
+      "id": "parini-alla-dea-moda",
+      "title": "Alla dea Moda",
+      "author": "Giuseppe Parini",
+      "discipline": "Letteratura italiana",
+      "period": "Settecento",
+      "category": "Prosa satirica",
+      "description": "La dedica alla Moda come manifesto satirico del Giorno: antifrasi, parodia del sublime, culto dell’apparenza e denuncia del privilegio aristocratico privo di funzione.",
+      "dataPath": "./data/texts/parini-alla-dea-moda.json",
+      "lessonUrl": "https://docs.google.com/document/d/1D6DaThDkT41QVju7L2oWQ7LUlEfdvjHg3cxt6auKgbU/edit?usp=drivesdk"
     }
   ]
 }

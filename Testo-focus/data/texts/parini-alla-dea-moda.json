@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "parini-alla-dea-moda",
+    "title": "Alla dea Moda",
+    "author": "Giuseppe Parini",
+    "work": "Il Mattino, prima parte del Giorno",
+    "discipline": "Letteratura italiana",
+    "period": "Settecento",
+    "description": "Lettura della dedica alla Moda come manifesto satirico del Giorno: la finta celebrazione dell’effimero smaschera una nobiltà che ha sostituito ragione, responsabilità e funzione sociale con il culto dell’apparenza.",
+    "lessonUrl": "https://docs.google.com/document/d/1D6DaThDkT41QVju7L2oWQ7LUlEfdvjHg3cxt6auKgbU/edit?usp=drivesdk"
+  },
+  "presentation": {
+    "overviewTitle": "La dea che regna sul vuoto",
+    "overview": "Parini apre Il Mattino con una dedica solo apparentemente elogiativa. La Moda viene innalzata al rango di divinità perché ha sconfitto Ragione, Buon Senso e Ordine e governa una gioventù aristocratica che sacrifica le proprie ore a se stessa. Ma ogni lode contiene il proprio rovescio: il linguaggio solenne rende grottesca la pochezza di ciò che celebra. In poche righe sono già presenti il metodo e il bersaglio del Giorno: antifrasi, parodia della tradizione alta e denuncia di una nobiltà elegante ma priva di funzione. Anche il poemetto si dichiara effimero e soggetto ai capricci della dea; così la dedica imita la logica della moda mentre, dall’interno, la espone al ridicolo."
+  },
+  "units": [
+    {"id":"u01","type":"label","text":"Testo originale"},
+    {"id":"t01","type":"paragraph","text":"Lungi da queste carte i cisposi occhi già da un secolo rintuzzati, lungi i fluidi nasi de’ malinconici vegliardi."},
+    {"id":"t02","type":"paragraph","text":"Qui non si tratta di gravi ministerj nella patria esercitati, non di severe leggi, non di annojante domestica economia, misero appannaggio della canuta età."},
+    {"id":"t03","type":"paragraph","text":"A te, vezzosissima Dea, che non sí dolci redine oggi temperi e governi la nostra brillante gioventù, a te sola questo piccolo Libretto si dedica, e si consagra."},
+    {"id":"t04","type":"paragraph","text":"Chi è che te, qual sommo Nume, oggimai non riverisca, ed onori, poiché in sí breve tempo se’ giunta a debellar la ghiacciata Ragione, il pedante Buon Senso e l’Ordine seccagginoso, tuoi capitali nemici, ed hai sciolto dagli antichissimi lacci questo secolo avventurato?"},
+    {"id":"t05","type":"paragraph","text":"Piacciati adunque di accogliere sotto alla tua protezione, ché forse non n’è indegno, questo piccolo Poemetto."},
+    {"id":"t06","type":"paragraph","text":"Tu il reca su i pacifici altari, ove le gentili Dame e gli amabili Garzoni sagrificano a se medesimi le mattutine ore."},
+    {"id":"t07","type":"paragraph","text":"Di questo solo egli è vago, e di questo solo andrà superbo e contento."},
+    {"id":"t08","type":"paragraph","text":"Per esserti più caro egli ha scosso il giogo della servile rima, e se ne va libero in Versi Sciolti, sapendo, che tu di questi specialmente ora godi, e ti compiaci."},
+    {"id":"t09","type":"paragraph","text":"Esso non aspira all’immortalità, come altri libri, troppo lusingati da’ loro Autori, che tu, repentinamente sopravvenendo, hai seppelliti nell’oblio."},
+    {"id":"t10","type":"paragraph","text":"Siccome egli è per te nato, e consagrato a te sola, così fie pago di vivere quel solo momento, che tu ti mostri sotto un medesimo aspetto, e pensi a cangiarti, e risorgere in più graziose forme."},
+    {"id":"t11","type":"paragraph","text":"Se a te piacerà di riguardare con placid’occhio questo Mattino, forse gli succederanno il Mezzogiorno, e la Sera; e il loro Autore si studierà di comporli, ed ornarli in modo, che non men di questo abbiano ad esserti cari."},
+    {"id":"u02","type":"label","text":"Parafrasi ragionata"},
+    {"id":"p01","type":"paragraph","text":"Stiano lontani da queste pagine i vecchi dagli occhi cisposi e dal naso gocciolante."},
+    {"id":"p02","type":"paragraph","text":"Qui non si parlerà di importanti incarichi svolti al servizio della patria, di leggi rigorose o della noiosa amministrazione della casa: occupazioni che l’autore attribuisce ironicamente alla vecchiaia."},
+    {"id":"p03","type":"paragraph","text":"Questo piccolo libro è dedicato soltanto a te, graziosissima dea Moda, che oggi guidi, con briglie tutt’altro che miti, la nostra brillante gioventù."},
+    {"id":"p04","type":"paragraph","text":"Chi potrebbe ormai non venerarti come una divinità suprema? In poco tempo hai sconfitto la fredda Ragione, il pedante Buon Senso e il noioso Ordine, tuoi nemici mortali, e hai liberato questo secolo fortunato dagli antichi vincoli."},
+    {"id":"p05","type":"paragraph","text":"Accogli dunque sotto la tua protezione questo poemetto, che forse non è indegno di te."},
+    {"id":"p06","type":"paragraph","text":"Portalo sui tuoi tranquilli altari, dove dame eleganti e giovani amabili sacrificano a se stessi le ore del mattino."},
+    {"id":"p07","type":"paragraph","text":"Il poemetto desidera soltanto essere accolto in quel mondo e di ciò soltanto sarà fiero e soddisfatto."},
+    {"id":"p08","type":"paragraph","text":"Per piacerti di più, ha rifiutato il vincolo della rima e procede libero in endecasillabi sciolti, sapendo che ora sono particolarmente di tuo gusto."},
+    {"id":"p09","type":"paragraph","text":"Non pretende di diventare immortale, come altri libri troppo adulati dai loro autori e poi rapidamente condannati da te all’oblio."},
+    {"id":"p10","type":"paragraph","text":"Poiché è nato per te ed è consacrato soltanto a te, si accontenterà di vivere finché conserverai il medesimo aspetto, prima di mutare e rinascere in forme più graziose."},
+    {"id":"p11","type":"paragraph","text":"Se guarderai benevolmente questo Mattino, forse gli faranno seguito il Mezzogiorno e la Sera, che l’autore cercherà di comporre e ornare in modo che ti risultino altrettanto graditi."},
+    {"id":"u03","type":"label","text":"Chiavi di lettura"},
+    {"id":"c01","type":"paragraph","text":"La dedica è costruita sull’antifrasi: Parini finge di elogiare la Moda, ma le qualità che le attribuisce costituiscono un atto d’accusa. Una divinità che trionfa sulla ragione, sul buon senso e sull’ordine non libera l’uomo; lo consegna al capriccio e all’irrazionalità."},
+    {"id":"c02","type":"paragraph","text":"La parodia nasce dal contrasto tra forma e contenuto. Il tono è quello solenne delle dediche e delle invocazioni poetiche; al posto di una Musa o di un alto valore compare però la Moda, mentre dame e garzoni celebrano un culto rivolto a se stessi."},
+    {"id":"c03","type":"paragraph","text":"Il bersaglio non è l’eleganza in sé, ma il vuoto che essa nasconde. La gioventù aristocratica continua a esibire prestigio e superiorità, ma non esercita più una funzione morale o sociale: il privilegio sopravvive alla responsabilità."},
+    {"id":"c04","type":"paragraph","text":"Il poemetto si presenta come un oggetto alla moda: rinuncia ironicamente all’immortalità, accetta di durare un istante e dichiara perfino di aver scelto i versi sciolti per compiacere il gusto del momento. Il testo imita così la legge dell’effimero per mostrarne l’assurdità."},
+    {"id":"c05","type":"paragraph","text":"La dedica anticipa l’intero Giorno. Il poeta assumerà la maschera del precettore e descriverà con apparente serietà la giornata del giovin signore, trasformando il risveglio tardivo, la toilette, le visite e i riti mondani in imprese pseudo-eroiche."},
+    {"id":"c06","type":"paragraph","text":"Parini unisce morale cristiana e ragione illuministica: giudica la società secondo misura, utilità, giustizia e responsabilità. La satira non chiede di abolire la nobiltà in quanto tale, ma le contesta il diritto al privilegio quando questo non corrisponde più ad alcun servizio reso alla comunità."}
+  ],
+  "focuses": [
+    {
+      "id": "dedica-rovesciata",
+      "label": "La dedica rovesciata",
+      "segments": [
+        {"unitId":"t03","note":"La formula solenne della dedica innalza la Moda a divinità e prepara una celebrazione che il lettore deve interpretare al contrario."},
+        {"unitId":"t05","note":"Il poemetto chiede protezione alla dea secondo il cerimoniale delle dediche encomiastiche, ma il destinatario rende già grottesco quel cerimoniale."},
+        {"unitId":"p03","note":"La parafrasi fa emergere un dettaglio decisivo: le redini della Moda non sono affatto dolci; il suo governo è una forma di dominio."},
+        {"unitId":"c01","note":"La chiave tecnica è l’antifrasi: la lode apparente deve essere capovolta per riconoscere l’accusa reale."}
+      ],
+      "explanation": "Parini non denuncia la Moda con un’invettiva diretta. Le concede invece tutti gli onori di una dea e imita il linguaggio della celebrazione. Proprio l’eccesso dell’elogio costringe però il lettore a rovesciarne il senso: ciò che viene venerato è capriccioso, irrazionale ed effimero. La dedica è quindi una trappola retorica nella quale la società aristocratica si condanna con le proprie parole.",
+      "connections": [
+        {"category":"Poetica","text":"L’antifrasi è la tecnica fondamentale della satira pariniana: fingere di approvare per rendere più evidente la condanna."},
+        {"category":"Narratore","text":"La voce encomiastica anticipa la maschera del precettore del Giorno, che impartirà con serietà apparente lezioni moralmente rovesciate."}
+      ]
+    },
+    {
+      "id": "moda-contro-ragione",
+      "label": "Moda contro ragione",
+      "segments": [
+        {"unitId":"t02","note":"Gli incarichi pubblici, le leggi e l’amministrazione domestica vengono liquidati come occupazioni noiose: il mondo della responsabilità è espulso dal libro della Moda."},
+        {"unitId":"t04","note":"Ragione, Buon Senso e Ordine, personificati e degradati da aggettivi sprezzanti, sono i nemici che la Moda si vanta di aver sconfitto."},
+        {"unitId":"p04","note":"La presunta liberazione dagli antichi vincoli coincide in realtà con l’abbandono di ogni criterio razionale e morale."},
+        {"unitId":"c06","note":"Il giudizio di Parini nasce dall’incontro tra morale cristiana e Illuminismo: responsabilità e ragione convergono contro il privilegio vuoto."}
+      ],
+      "explanation": "La Moda instaura un sistema di valori capovolto. Ciò che serve alla comunità — governo, leggi, economia, ordine — diventa vecchio e ridicolo; ciò che muta senza ragione viene presentato come liberazione. L’ironia difende quindi il nucleo etico dell’Illuminismo pariniano: la ragione deve misurare l’utilità dei costumi e smascherare l’ingiustizia nascosta dietro il prestigio.",
+      "connections": [
+        {"category":"Illuminismo","text":"La ragione non è per Parini un’astrazione fredda, ma lo strumento con cui giudicare privilegi, costumi e utilità sociale."},
+        {"category":"Sistema dei valori","text":"Dovere, misura e responsabilità vengono caricaturizzati dalla voce della Moda proprio perché costituiscono il criterio autentico dell’autore."}
+      ]
+    },
+    {
+      "id": "culto-di-se",
+      "label": "Il culto di sé",
+      "segments": [
+        {"unitId":"t03","note":"La «brillante gioventù» è definita attraverso lo splendore esteriore, non attraverso qualità morali o azioni utili."},
+        {"unitId":"t06","note":"Dame e garzoni sacrificano le ore mattutine non a un dio o alla comunità, ma «a se medesimi»: l’ozio assume la forma di un rito religioso."},
+        {"unitId":"p06","note":"La parafrasi conserva il nucleo dell’immagine: il vero oggetto del culto aristocratico è l’io."},
+        {"unitId":"c03","note":"L’eleganza diventa colpevole quando serve a mascherare l’assenza di responsabilità e funzione sociale."}
+      ],
+      "explanation": "L’immagine degli altari è uno dei punti più duri della dedica. La nobiltà ha trasformato la cura di sé in liturgia: tempo, gusto e ricchezza vengono consumati per alimentare la propria immagine. Il mattino, che nel sistema di valori pariniano dovrebbe riaprire il ciclo naturale del lavoro, è sacrificato all’ozio. Il narcisismo non è soltanto un difetto individuale; è il principio di un’intera classe.",
+      "connections": [
+        {"category":"Immagine del mondo","text":"Al ritmo naturale e socialmente utile dell’uomo operoso si oppone la giornata artificiale del nobile, che vive per il piacere e la rappresentazione."},
+        {"category":"Società","text":"La nobiltà è una «classe scenografica»: conserva i segni del rango, ma non la funzione che dovrebbe giustificarli."}
+      ]
+    },
+    {
+      "id": "parodia-del-sublime",
+      "label": "Parodia del sublime",
+      "segments": [
+        {"unitId":"t03","note":"L’apostrofe alla «vezzosissima Dea» sostituisce alle Muse e ai grandi valori una potenza frivola."},
+        {"unitId":"t04","note":"Il lessico eroico e militare — «sommo Nume», «debellar», «capitali nemici» — trasforma il trionfo della frivolezza in un’impresa epica."},
+        {"unitId":"t06","note":"Altari e sacrifici appartengono al linguaggio del sacro, ma qui celebrano l’ozio mondano e l’autocompiacimento."},
+        {"unitId":"c02","note":"Il contrasto tra stile alto e contenuto basso è il motore comico e morale della parodia."},
+        {"unitId":"c05","note":"Lo stesso procedimento governerà il Giorno: i riti banali del giovin signore saranno narrati come imprese eroiche."}
+      ],
+      "explanation": "La satira nasce dalla sproporzione. Parini convoca il lessico della religione e dell’epica per raccontare una realtà meschina; non abbassa lo stile, ma lo innalza fino a far risaltare il vuoto dell’oggetto. Il sublime diventa così uno specchio deformante: più la voce celebra, più la nobiltà appare ridicola.",
+      "connections": [
+        {"category":"Forma","text":"Il linguaggio solenne non nobilita la materia frivola; ne rende visibile l’inconsistenza attraverso il contrasto."},
+        {"category":"Tradizione","text":"La Moda prende il posto della Musa, il giovin signore quello dell’eroe, i rituali mondani quello delle imprese."}
+      ]
+    },
+    {
+      "id": "versi-sciolti",
+      "label": "I versi sciolti e il gusto",
+      "segments": [
+        {"unitId":"t08","note":"Il poemetto dichiara di essersi liberato dalla rima per compiacere la preferenza corrente della Moda."},
+        {"unitId":"p08","note":"I «Versi Sciolti» sono endecasillabi non legati da uno schema di rime: una scelta formale reale presentata però come capriccio mondano."},
+        {"unitId":"c04","note":"La dichiarazione è metapoetica: l’opera finge di adeguare perfino la propria forma alla legge mutevole del gusto."}
+      ],
+      "explanation": "Parini trasforma una scelta letteraria seria in un gesto di ossequio alla Moda. Gli endecasillabi sciolti permettono al Giorno una narrazione ampia, discorsiva e insieme elevata; nella dedica, però, la loro adozione viene attribuita ironicamente al gusto del momento. La poesia parla così della propria forma e contemporaneamente mette in ridicolo l’idea che il valore estetico dipenda soltanto dalla novità.",
+      "connections": [
+        {"category":"Metrica","text":"Il Giorno è scritto in endecasillabi sciolti, privi di uno schema rimico fisso ma capaci di sostenere un tono alto e narrativo."},
+        {"category":"Metapoesia","text":"Il testo riflette su se stesso e finge di essere un prodotto confezionato secondo la tendenza del momento."}
+      ]
+    },
+    {
+      "id": "legge-dell-effimero",
+      "label": "La legge dell’effimero",
+      "segments": [
+        {"unitId":"t09","note":"La Moda condanna rapidamente all’oblio i libri che i loro autori immaginavano immortali."},
+        {"unitId":"t10","note":"Il poemetto accetta di vivere soltanto finché la dea conserva lo stesso aspetto: la durata dell’opera coincide con quella di una tendenza."},
+        {"unitId":"t11","note":"La promessa del Mezzogiorno e della Sera viene formulata come ulteriore tentativo di ottenere il favore mutevole della dea."},
+        {"unitId":"p10","note":"Il continuo «cangiarsi» della Moda mostra che la novità è destinata a consumarsi nel momento stesso in cui trionfa."},
+        {"unitId":"c04","note":"L’opera si traveste da oggetto effimero per denunciare una cultura incapace di distinguere novità e valore."}
+      ],
+      "explanation": "La Moda esercita un potere paradossale: rende ogni cosa desiderabile e, proprio per questo, la destina subito a invecchiare. Il poemetto dichiara di accettare tale sorte, ma l’ironia oppone implicitamente alla durata brevissima del gusto l’ambizione critica della letteratura. Il testo che finge di voler vivere un solo momento continua infatti a parlarci perché ha compreso il meccanismo dell’effimero.",
+      "connections": [
+        {"category":"Tempo","text":"Il tempo della Moda è discontinuo e accelerato: ogni forma nasce già orientata verso la sostituzione e l’oblio."},
+        {"category":"Attualità","text":"La critica non riguarda solo l’abito: investe ogni cultura che misura il valore attraverso visibilità, novità e rapida sostituzione."}
+      ]
+    },
+    {
+      "id": "privilegio-senza-funzione",
+      "label": "Privilegio senza funzione",
+      "segments": [
+        {"unitId":"t01","note":"L’attacco contro i vecchi serve alla voce della Moda per espellere esperienza e memoria dal proprio pubblico ideale."},
+        {"unitId":"t02","note":"Patria, leggi ed economia domestica nominano responsabilità concrete dalle quali la brillante gioventù prende le distanze."},
+        {"unitId":"t06","note":"Le ore che potrebbero essere dedicate a una funzione sociale vengono consumate nei rituali dell’io aristocratico."},
+        {"unitId":"c03","note":"La critica colpisce la distanza tra prestigio dichiarato e valore effettivamente prodotto."},
+        {"unitId":"c06","note":"Per Parini il privilegio è moralmente indifendibile quando non corrisponde più a un servizio reso alla comunità."}
+      ],
+      "explanation": "Dietro la polemica contro la Moda si trova una questione politica e morale: che cosa giustifica la superiorità sociale? La nobiltà descritta da Parini conserva ricchezza, visibilità e deferenza, ma non combatte, non produce e non guida moralmente la società. Il poeta non critica quindi un guardaroba; mostra una classe che ha trasformato la propria esistenza in rappresentazione e ha separato il rango dalla responsabilità.",
+      "connections": [
+        {"category":"Frattura","text":"L’esperienza di Parini come precettore gli permette di osservare dall’interno la distanza tra educazione aristocratica e formazione morale."},
+        {"category":"Etica sociale","text":"La domanda implicita è illuministica: chi serve davvero la comunità e chi vive invece grazie al lavoro altrui?"}
+      ]
+    }
+  ]
+}
