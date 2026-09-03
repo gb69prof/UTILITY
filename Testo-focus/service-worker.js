@@ -1,4 +1,5 @@
-const CACHE_VERSION = "testo-focus-v3";
+const CACHE_PREFIX = "testo-focus-";
+const CACHE_VERSION = `${CACHE_PREFIX}v4`;
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,7 +9,11 @@ const APP_SHELL = [
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./manifest.webmanifest?v=3",
-  "./data/texts/dimostrazione-tecnica.json"
+  "./data/texts/dimostrazione-tecnica.json",
+  "../privacy.html",
+  "../accessibilita.html",
+  "../pwa-common/gbprof-accessibility.css",
+  "../pwa-common/gbprof-accessibility.js"
 ];
 
 self.addEventListener("install", (event) => {
@@ -19,7 +24,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_VERSION).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_VERSION).map((key) => caches.delete(key))))
       .then(() => self.clients.claim())
   );
 });
