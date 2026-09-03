@@ -1,8 +1,10 @@
-const CACHE = "desk-lim-shell-v2";
+const CACHE_PREFIX = "desk-lim-shell-";
+const CACHE = `${CACHE_PREFIX}v3`;
 const SHELL = [
   "./", "./index.html", "./lim.html", "./manifest.webmanifest", "./css/main.css",
   "./js/app.js", "./js/db.js", "./js/files.js", "./js/viewer.js", "./js/lessons.js",
-  "./js/lim-controller.js", "./js/lim-viewer.js", "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png", "./assets/img/og.png", "./assets/img/desk-grid.webp"
+  "./js/lim-controller.js", "./js/lim-viewer.js", "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png", "./assets/img/og.png", "./assets/img/desk-grid.webp",
+  "../privacy.html", "../accessibilita.html", "../pwa-common/gbprof-accessibility.css", "../pwa-common/gbprof-accessibility.js"
 ];
 
 self.addEventListener("install", event => {
@@ -10,7 +12,11 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("activate", event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key.startsWith(CACHE_PREFIX) && key !== CACHE).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener("fetch", event => {
