@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "gbprof-lezioni-";
-const CACHE_NAME = CACHE_PREFIX + "v1-2026-09-06";
+const CACHE_NAME = CACHE_PREFIX + "v2-legal-2026-09-07";
 const APP_SHELL = [
   "./",
   "./index.html",
