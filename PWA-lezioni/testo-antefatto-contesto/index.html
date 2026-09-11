@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08283d">
+  <meta name="description" content="Presentazione interattiva per imparare a distinguere testo, antefatto e contesto.">
+  <title>Capire un testo · Testo, antefatto, contesto</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <noscript>Questa presentazione richiede JavaScript per funzionare.</noscript>
+
+  <div class="presentation-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Torna alla copertina">
+        <span class="brand-mark">TAC</span>
+        <span>
+          <strong>CAPIRE UN TESTO</strong>
+          <small>Ciò che accade, ciò che viene prima, il mondo che gli sta intorno.</small>
+        </span>
+      </a>
+      <div class="top-actions">
+        <a class="utility-link" href="../../index.html">UTILITY</a>
+        <button class="icon-button" id="fullscreenBtn" type="button" aria-label="Attiva schermo intero">Schermo intero</button>
+      </div>
+    </header>
+
+    <main class="stage" aria-live="polite">
+      <section class="slide-card" id="slide" tabindex="-1"></section>
+
+      <aside class="index-panel" aria-label="Indice della presentazione">
+        <div class="index-title">
+          <span>Indice</span>
+          <button class="map-button" id="mapBtn" type="button">Home</button>
+        </div>
+        <nav id="indexNav"></nav>
+        <blockquote>Ogni presente ha una storia alle spalle e un mondo intorno.</blockquote>
+      </aside>
+    </main>
+
+    <footer class="controls">
+      <button class="nav-button" id="prevBtn" type="button">Precedente</button>
+      <div class="progress">
+        <span id="counter">1 / 10</span>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+      </div>
+      <button class="nav-button primary" id="nextBtn" type="button">Successiva</button>
+    </footer>
+  </div>
+
+  <script src="./js/app.js" defer></script>
+</body>
+</html>
