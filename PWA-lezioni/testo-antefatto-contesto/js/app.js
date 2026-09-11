@@ -41,7 +41,7 @@ const slides = [
       "Si collega con antefatto e contesto."
     ],
     message: "Il testo è il punto di partenza della nostra analisi.",
-    jump: { label: "Concetto <-> nella vita", target: 6 }
+    jump: { label: "Esplora nella vita →", target: 6 }
   },
   {
     title: "L'antefatto",
@@ -59,7 +59,7 @@ const slides = [
       "Si comprende meglio ciò che accade nel testo."
     ],
     message: "L'antefatto ci aiuta a capire da dove viene la storia.",
-    jump: { label: "Concetto <-> nella vita", target: 7 }
+    jump: { label: "Esplora nella vita →", target: 7 }
   },
   {
     title: "Il contesto",
@@ -76,7 +76,7 @@ const slides = [
       "Bisogna scegliere solo le informazioni che servono a capire quel testo."
     ],
     message: "Il contesto dà senso al testo e ne spiega il significato profondo.",
-    jump: { label: "Concetto <-> nella vita", target: 8 }
+    jump: { label: "Esplora nella vita →", target: 8 }
   },
   {
     title: "Adesso chiudiamo il libro",
@@ -99,7 +99,7 @@ const slides = [
       "Questo presente diventa il nostro punto di partenza."
     ],
     message: "Questo è il nostro testo: ciò che sta accadendo davanti ai nostri occhi.",
-    jump: { label: "Nella vita <-> concetto", target: 2 }
+    jump: { label: "← Torna al concetto", target: 2 }
   },
   {
     title: "La vita: antefatto",
@@ -119,7 +119,7 @@ const slides = [
       "E ora siamo qui."
     ],
     message: "L'antefatto seleziona gli avvenimenti rilevanti che spiegano come siamo arrivati a questo momento.",
-    jump: { label: "Nella vita <-> concetto", target: 3 }
+    jump: { label: "← Torna al concetto", target: 3 }
   },
   {
     title: "La vita: contesto",
@@ -142,7 +142,7 @@ const slides = [
       "Epoca storica: il tempo in cui viviamo."
     ],
     message: "Il contesto ci fa vedere il quadro completo.",
-    jump: { label: "Nella vita <-> concetto", target: 4 }
+    jump: { label: "← Torna al concetto", target: 4 }
   },
   {
     title: "Conclusione",
@@ -166,14 +166,16 @@ const counter = document.querySelector("#counter");
 const dots = document.querySelector("#dots");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
-const mapBtn = document.querySelector("#mapBtn");
+const indexBtn = document.querySelector("#indexBtn");
+const indexPanel = document.querySelector("#indexPanel");
+const closeIndexBtn = document.querySelector("#closeIndexBtn");
 const fullscreenBtn = document.querySelector("#fullscreenBtn");
 
 let current = Number(new URLSearchParams(window.location.search).get("slide")) || 0;
 current = clamp(current, 0, slides.length - 1);
 
 function clamp(value, min, max) {
-  return Math.max(min, Math.min(max, value));
+  return Math.max(min, Math.min(max, Number.isFinite(value) ? Math.trunc(value) : min));
 }
 
 function imagePath(name) {
@@ -214,20 +216,7 @@ function renderJump(jump) {
 }
 
 function renderCover(slide) {
-  return `
-    <div class="visual">
-      <img src="${imagePath(slide.image)}" alt="Libro aperto in biblioteca con indice della lezione">
-      <div class="cover-content">
-        <h1>${slide.title}</h1>
-        <p>${slide.body}</p>
-      </div>
-      <div class="hotspots" aria-label="Aree cliccabili della mappa iniziale">
-        ${slide.hotspots.map((hotspot) => `
-          <button class="hotspot ${hotspot.className}" type="button" data-target="${hotspot.target}">${hotspot.label}</button>
-        `).join("")}
-      </div>
-    </div>
-  `;
+  return `<div class="visual"><div class="cover-art"><img src="${imagePath(slide.image)}" alt="Testo, antefatto, contesto. Un metodo per capire i testi e per orientarsi nella realtà. Libro aperto in biblioteca."></div></div>`;
 }
 
 function renderTransition(slide) {
@@ -247,7 +236,7 @@ function renderStandard(slide) {
       <img src="${imagePath(slide.image)}" alt="">
     </div>
     <article class="content">
-      <p class="eyebrow">${slide.menu}</p>
+      <p class="eyebrow">${current < 5 ? "Leggere un testo" : current < 9 ? "Leggere la realtà" : "Le tre domande"}</p>
       <h2>${slide.title}</h2>
       ${slide.question ? `<p class="question">${slide.question}</p>` : ""}
       ${slide.lead ? `<p class="lead">${slide.lead}</p>` : ""}
@@ -277,6 +266,10 @@ function render() {
     slideEl.innerHTML = renderStandard(slide);
   }
 
+  slideEl.scrollTop = 0;
+  document.querySelectorAll('.concept-links button').forEach(button => {
+    button.setAttribute('aria-current', Number(button.dataset.target) === current ? 'page' : 'false');
+  });
   prevBtn.disabled = current === 0;
   nextBtn.disabled = current === slides.length - 1;
   counter.textContent = `${current + 1} / ${slides.length}`;
@@ -286,6 +279,7 @@ function render() {
 }
 
 function goTo(index) {
+  if (indexPanel.open) indexPanel.close();
   current = clamp(index, 0, slides.length - 1);
   render();
   slideEl.focus({ preventScroll: true });
@@ -308,7 +302,19 @@ document.addEventListener("click", (event) => {
 
 prevBtn.addEventListener("click", prev);
 nextBtn.addEventListener("click", next);
-mapBtn.addEventListener("click", () => goTo(0));
+indexBtn.addEventListener("click", () => {
+  indexPanel.showModal();
+  indexBtn.setAttribute("aria-expanded", "true");
+  indexPanel.querySelector(".active")?.focus();
+});
+closeIndexBtn.addEventListener("click", () => indexPanel.close());
+indexPanel.addEventListener("close", () => indexBtn.setAttribute("aria-expanded", "false"));
+indexPanel.addEventListener("click", event => {
+  if (event.target === indexPanel) {
+    const rect = indexPanel.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) indexPanel.close();
+  }
+});
 
 fullscreenBtn.addEventListener("click", async () => {
   try {
@@ -330,7 +336,7 @@ document.addEventListener("fullscreenchange", () => {
 
 document.addEventListener("keydown", (event) => {
   const tag = document.activeElement?.tagName;
-  if (tag === "INPUT" || tag === "TEXTAREA") return;
+  if (indexPanel.open || ["INPUT", "TEXTAREA", "BUTTON", "A"].includes(tag)) return;
   if (event.key === "ArrowRight" || event.key === " ") {
     event.preventDefault();
     next();
@@ -345,8 +351,12 @@ document.addEventListener("keydown", (event) => {
 });
 
 if ("serviceWorker" in navigator) {
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!refreshing) { refreshing = true; window.location.reload(); }
+  });
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js");
+    navigator.serviceWorker.register("./service-worker.js", { updateViaCache: "none" }).catch(() => {});
   });
 }
 

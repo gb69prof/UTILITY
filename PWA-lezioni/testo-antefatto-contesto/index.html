@@ -16,14 +16,9 @@
 
   <div class="presentation-shell">
     <header class="topbar">
-      <a class="brand" href="./" aria-label="Torna alla copertina">
-        <span class="brand-mark">TAC</span>
-        <span>
-          <strong>CAPIRE UN TESTO</strong>
-          <small>Ciò che accade, ciò che viene prima, il mondo che gli sta intorno.</small>
-        </span>
-      </a>
+      <button class="brand" type="button" data-target="0" aria-label="Torna alla copertina">TAC <span>Capire un testo</span></button>
       <div class="top-actions">
+        <button class="icon-button" id="indexBtn" type="button" aria-expanded="false" aria-controls="indexPanel">Indice</button>
         <a class="utility-link" href="../../index.html">UTILITY</a>
         <button class="icon-button" id="fullscreenBtn" type="button" aria-label="Attiva schermo intero">Schermo intero</button>
       </div>
@@ -32,18 +27,19 @@
     <main class="stage" aria-live="polite">
       <section class="slide-card" id="slide" tabindex="-1"></section>
 
-      <aside class="index-panel" aria-label="Indice della presentazione">
-        <div class="index-title">
-          <span>Indice</span>
-          <button class="map-button" id="mapBtn" type="button">Home</button>
-        </div>
-        <nav id="indexNav"></nav>
-        <blockquote>Ogni presente ha una storia alle spalle e un mondo intorno.</blockquote>
-      </aside>
     </main>
 
+    <dialog id="indexPanel" aria-labelledby="indexTitle">
+      <div class="index-title"><h2 id="indexTitle">Indice</h2><button id="closeIndexBtn" type="button" aria-label="Chiudi indice">Chiudi</button></div>
+      <nav id="indexNav" aria-label="Indice della lezione"></nav>
+    </dialog>
     <footer class="controls">
       <button class="nav-button" id="prevBtn" type="button">Precedente</button>
+      <nav class="concept-links" aria-label="Concetti della lezione">
+        <button type="button" data-target="4" style="--accent:#176ead">Contesto</button>
+        <button type="button" data-target="3" style="--accent:#587d32">Antefatto</button>
+        <button type="button" data-target="2" style="--accent:#b83d31">Testo</button>
+      </nav>
       <div class="progress">
         <span id="counter">1 / 10</span>
         <div class="dots" id="dots" aria-hidden="true"></div>
