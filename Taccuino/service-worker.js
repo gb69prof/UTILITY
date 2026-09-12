@@ -1,7 +1,7 @@
 'use strict';
 
 const CACHE_PREFIX = 'taccuino-shell-';
-const CACHE_NAME = CACHE_PREFIX + 'v4-file-io';
+const CACHE_NAME = CACHE_PREFIX + 'v5-filename-picker';
 const CORE_PATHS = [
   '',
   'index.html',
