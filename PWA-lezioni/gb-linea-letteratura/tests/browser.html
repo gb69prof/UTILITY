@@ -26,7 +26,7 @@ const localImages=authors.map(a=>a.immagine).filter(Boolean);const images=await 
 const manifest=await fetch('../manifest.json').then(r=>r.json());check('Manifest standalone con icone installabili',manifest.display==='standalone'&&manifest.icons.some(i=>i.sizes==='192x192')&&manifest.icons.some(i=>i.sizes==='512x512'&&i.purpose==='maskable'));
 const registration=await Promise.race([navigator.serviceWorker.ready,delay(15000).then(()=>null)]);check('Service worker attivo',!!registration?.active);const keys=await caches.keys(),key=keys.find(k=>k.startsWith('gb-letteratura-'));const cache=key?await caches.open(key):null;const cached=cache?await cache.keys():[];check('Precache completo: dati, struttura e ritratti',cached.length>=16+localImages.length&&!!await cache?.match(new URL('../data/authors.json',location.href)));
 const index=await fetch('../../../index.html').then(r=>r.text());check('Card di ingresso UTILITY',index.includes('./PWA-lezioni/gb-linea-letteratura/'));
-q('.author[data-id="leopardi"]').click();
+q('.author[data-id="leopardi"]').click();q('#timeline').scrollLeft=(1780-1180)*5;await delay(80);const label=q('.movement[data-id="neoclassicismo"] span').getBoundingClientRect(),viewport=q('#timeline').getBoundingClientRect();check('Nome della corrente leggibile anche a fascia parzialmente fuori schermo',label.left>=viewport.left&&label.right<=viewport.right);
 }catch(e){check(e.message,false);}
 document.querySelector('#summary').textContent=`${passed} controlli superati; ${failed} errori. I controlli touch verificano la configurazione; il test fisico dei dispositivi resta distinto.`;
 </script></html>

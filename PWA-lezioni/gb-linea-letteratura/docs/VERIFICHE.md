@@ -2,7 +2,7 @@
 
 - Build completata: 53 risorse in cache, circa 1,67 MB di struttura, dati e immagini fondamentali.
 - 8 test sui dati superati: autori unici, date, Ferrante e Benni, relazioni, inventario, assenza di sovrapposizioni nelle righe, ricerca normalizzata, risorse locali.
-- 29 controlli integrati nel browser superati, inclusa l'apertura di tutte le 84 schede autore e delle 43 schede corrente.
+- 30 controlli integrati nel browser superati, inclusa l'apertura di tutte le 84 schede autore e delle 43 schede corrente.
 - Tutti i 37 ritratti locali si caricano e vengono decodificati dal browser.
 - Tutti i 40 collegamenti alle PWA hanno una pagina pubblica corrispondente e un manifest leggibile.
 - Verifiche visive a 1536×1024, 1024×768, 768×1024 e 390×844, senza overflow orizzontale della pagina.

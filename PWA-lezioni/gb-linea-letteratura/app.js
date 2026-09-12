@@ -28,7 +28,11 @@ function render(){
  $("#period-block").classList.toggle("expanded",details);syncFilters();updateYears();
 }
 function syncFilters(){for(const k of ['authors','movements']){$('#'+k).hidden=!$('#show-'+k).checked;$('#'+k+'-label').hidden=!$('#show-'+k).checked;}}
-function updateYears(){const from=Math.round(START+timeline.scrollLeft/scale),to=Math.min(END,Math.round(from+timeline.clientWidth/scale));$('#visible-years').textContent=`${from} — ${to}`;}
+function updateYears(){
+ const from=Math.round(START+timeline.scrollLeft/scale),to=Math.min(END,Math.round(from+timeline.clientWidth/scale));$('#visible-years').textContent=`${from} — ${to}`;
+ // Keep labels readable when the beginning of a long interval leaves the viewport.
+ for(const band of content.querySelectorAll('.movement')){const label=band.firstElementChild;if(!label)continue;const shift=Math.min(Math.max(0,timeline.scrollLeft-band.offsetLeft+2),Math.max(0,band.clientWidth-label.offsetWidth-20));label.style.transform=`translateX(${shift}px)`;}
+}
 function goYear(year){lastWidth=timeline.clientWidth;timeline.scrollLeft=(year-START)*scale-lastWidth/2;updateYears();}
 function zoomTo(next,anchorX=timeline.clientWidth/2){let year=START+(timeline.scrollLeft+anchorX)/scale;scale=Math.max(2,Math.min(16,Number(next)));$('#zoom').value=scale;render();timeline.scrollLeft=(year-START)*scale-anchorX;updateYears();}
 function openPanel(id,{focus=true,center=true}={}){

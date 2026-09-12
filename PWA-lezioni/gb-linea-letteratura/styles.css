@@ -9,4 +9,5 @@
 .section-label{display:flex}.section-label>span{position:sticky;left:12px;max-width:95vw}.movement{background:var(--color)}.author .portrait{position:sticky;left:3px;z-index:1}.author .name{position:sticky;left:46px}.movement>span{position:sticky;left:10px}
 @media(max-width:900px){.panel{bottom:78px;max-height:44%}}
 @media(max-width:550px){.panel{bottom:74px;max-height:41%}.zoom button{min-height:44px}.filters label{min-height:44px}}
+.movement>span{position:relative;left:auto;display:inline-block;pointer-events:none}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
