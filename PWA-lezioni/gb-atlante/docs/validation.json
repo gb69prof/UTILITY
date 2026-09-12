@@ -1,0 +1,69 @@
+{
+  "checks": 21313,
+  "errors": [],
+  "valid": true,
+  "mutation_tests": [
+    {
+      "name": "orphan entity",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "missing geometry source",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "uncertain boundary promoted to documented",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "out of range event coordinates",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "false snapshot date",
+      "rejected": true,
+      "detected_errors": 51
+    },
+    {
+      "name": "unknown event category",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "duplicate event ID",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "Vienna labelled actual control",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "unclosed polygon ring",
+      "rejected": true,
+      "detected_errors": 1
+    },
+    {
+      "name": "self-intersecting polygon",
+      "rejected": true,
+      "detected_errors": 1
+    }
+  ],
+  "pwa_errors": [],
+  "counts": {
+    "snapshots": 15,
+    "entities": 126,
+    "polities": 148,
+    "sources": 301,
+    "events": 53,
+    "campaigns": 9,
+    "geometries": 200
+  },
+  "scientific_release_ready": false,
+  "scientific_limit": "Geometries retain upstream uncertainties; several MAP_10 components and other-snapshot political profiles remain incomplete."
+}

@@ -14,7 +14,8 @@
       "SRC_CHRONO_1797"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato.",
+    "date_precision": "day"
   },
   {
     "id": "ITALY_1800",
@@ -28,7 +29,8 @@
       "SRC_CHRONO"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato. Gli estremi mensili indicano un periodo didattico orientativo, non la data esatta della prima operazione.",
+    "date_precision": "approximate_period"
   },
   {
     "id": "AUSTRIA_1805",
@@ -44,7 +46,8 @@
       "SRC_CHRONO_1805"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato. Gli estremi mensili indicano un periodo didattico orientativo, non la data esatta della prima operazione.",
+    "date_precision": "approximate_period"
   },
   {
     "id": "PRUSSIA_1806",
@@ -60,7 +63,8 @@
       "SRC_CHRONO"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato. Gli estremi mensili indicano un periodo didattico orientativo, non la data esatta della prima operazione.",
+    "date_precision": "approximate_period"
   },
   {
     "id": "SPAIN",
@@ -77,7 +81,8 @@
       "SRC_CONGRESO_1812"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato.",
+    "date_precision": "day"
   },
   {
     "id": "RUSSIA_1812",
@@ -98,7 +103,8 @@
       "SRC_RUSSIA_RETREAT"
     ],
     "route_status": "documented_generalization",
-    "notes": "Percorso cartografico generalizzato da Minard (1869), non tracciato stradale. Le cifre rappresentano la fonte, non stime indipendenti."
+    "notes": "Percorso cartografico generalizzato da Minard (1869), non tracciato stradale. Le cifre rappresentano la fonte, non stime indipendenti.",
+    "date_precision": "day"
   },
   {
     "id": "GERMANY_1813",
@@ -112,7 +118,8 @@
       "SRC_CHRONO"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato. Gli estremi mensili indicano un periodo didattico orientativo, non la data esatta della prima operazione.",
+    "date_precision": "approximate_period"
   },
   {
     "id": "FRANCE_1814",
@@ -126,7 +133,8 @@
       "SRC_CHRONO_1815"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato. Gli estremi mensili indicano un periodo didattico orientativo, non la data esatta della prima operazione.",
+    "date_precision": "approximate_period"
   },
   {
     "id": "BELGIUM_1815",
@@ -141,6 +149,7 @@
       "SRC_CHRONO_1815"
     ],
     "route_status": "stages_only",
-    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato."
+    "notes": "Tappe/eventi documentati; non sono disegnate linee fra località prive di un itinerario verificato.",
+    "date_precision": "day"
   }
 ]

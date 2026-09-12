@@ -1,0 +1,1 @@
+{"name":"gb-atlante","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/model.test.js","validate":"python tools/validate_atlas.py","build":"python tools/build_content.py && python tools/build_atlas.py && python tools/build_pwa.py"},"engines":{"node":">=20"},"devDependencies":{},"license":"UNLICENSED"}

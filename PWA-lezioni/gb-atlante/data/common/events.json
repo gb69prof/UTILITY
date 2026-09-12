@@ -10,7 +10,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Armata francese d’Italia",
+      "Esercito austriaco"
     ],
     "description_it": "La vittoria apre la separazione degli eserciti austriaco e piemontese.",
     "territorial_consequences": "La campagna modifica i rapporti di forza nell’Italia settentrionale.",
@@ -20,7 +21,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_002",
@@ -33,7 +35,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Armata francese d’Italia",
+      "Esercito austriaco"
     ],
     "description_it": "Il passaggio dell’Adda apre la via verso Milano.",
     "territorial_consequences": "Avanza l’occupazione francese della Lombardia.",
@@ -43,7 +46,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_003",
@@ -56,7 +60,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Armata francese d’Italia",
+      "Esercito austriaco"
     ],
     "description_it": "La vittoria francese precede la capitolazione di Mantova.",
     "territorial_consequences": "Si rafforza il dominio militare francese nell’Italia settentrionale.",
@@ -66,7 +71,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_004",
@@ -79,7 +85,8 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica francese",
+      "Papa Pio VI"
     ],
     "description_it": "La Santa Sede accetta cessioni e condizioni imposte dalla Francia.",
     "territorial_consequences": "Le Legazioni sono sottratte allo Stato pontificio.",
@@ -89,7 +96,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_005",
@@ -102,7 +110,8 @@
     "coordinate_source_ids": [],
     "category": "scomparsa_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Maggior Consiglio della Repubblica di Venezia",
+      "Armata francese d’Italia"
     ],
     "description_it": "Il Maggior Consiglio pone fine al governo aristocratico.",
     "territorial_consequences": "Si apre una transizione politica prima della sistemazione di Campoformio.",
@@ -112,7 +121,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_006",
@@ -125,7 +135,8 @@
     "coordinate_source_ids": [],
     "category": "nascita_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica Cisalpina",
+      "Napoleone Bonaparte"
     ],
     "description_it": "La nuova repubblica riunisce territori dell’Italia settentrionale.",
     "territorial_consequences": "Nasce uno Stato dipendente dall’appoggio francese.",
@@ -135,7 +146,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_007",
@@ -148,7 +160,9 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica francese",
+      "Monarchia asburgica",
+      "Repubblica di Venezia"
     ],
     "description_it": "Francia e Austria concordano una nuova sistemazione territoriale.",
     "territorial_consequences": "Venezia passa all’Austria; si consolida la Repubblica Cisalpina.",
@@ -158,7 +172,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1797"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_008",
@@ -176,7 +191,9 @@
     ],
     "category": "nascita_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica Romana",
+      "Repubblica francese",
+      "Papa Pio VI"
     ],
     "description_it": "La repubblica è proclamata dopo l’intervento francese.",
     "territorial_consequences": "Il potere temporale pontificio è sospeso sul territorio occupato.",
@@ -185,8 +202,9 @@
     "map_after": "MAP_03",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1799"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_009",
@@ -204,7 +222,8 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica Elvetica",
+      "Repubblica francese"
     ],
     "description_it": "La nuova repubblica sostituisce il precedente ordinamento confederale.",
     "territorial_consequences": "L’assetto svizzero è riorganizzato in senso unitario.",
@@ -214,7 +233,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_SWISS_ARCHIVES"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_010",
@@ -232,7 +252,9 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone Bonaparte",
+      "Direttorio",
+      "Consiglio dei Cinquecento"
     ],
     "description_it": "Il colpo di Stato apre il Consolato.",
     "territorial_consequences": "Il cambiamento di governo prepara una nuova fase delle guerre europee.",
@@ -241,8 +263,9 @@
     "map_after": "MAP_03",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1799"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_011",
@@ -255,7 +278,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Esercito francese",
+      "Esercito austriaco"
     ],
     "description_it": "La vittoria di Bonaparte ribalta l’esito della campagna d’Italia.",
     "territorial_consequences": "La Francia recupera la prevalenza nell’Italia settentrionale.",
@@ -264,8 +288,9 @@
     "map_after": "MAP_03",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1802"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_012",
@@ -278,7 +303,8 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica francese",
+      "Francesco II"
     ],
     "description_it": "Francia e Austria concludono la guerra della seconda coalizione.",
     "territorial_consequences": "Si riconoscono la riva sinistra del Reno alla Francia e i nuovi assetti italiani.",
@@ -287,8 +313,9 @@
     "map_after": "MAP_03",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1802"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_013",
@@ -301,7 +328,10 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica francese",
+      "Regno Unito",
+      "Spagna",
+      "Repubblica Batava"
     ],
     "description_it": "Francia e Regno Unito concludono una pace di breve durata.",
     "territorial_consequences": "Le restituzioni previste non eliminano le rivalità coloniali e mediterranee.",
@@ -310,8 +340,9 @@
     "map_after": "MAP_03",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1802"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_014",
@@ -324,7 +355,8 @@
     "coordinate_source_ids": [],
     "category": "annessione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Repubblica francese",
+      "Casa di Savoia"
     ],
     "description_it": "Il Piemonte entra nel territorio della Repubblica francese.",
     "territorial_consequences": "Il dominio sabaudo resta sull’isola di Sardegna.",
@@ -334,7 +366,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_FN_DEPARTMENTS"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_015",
@@ -352,7 +385,8 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone Bonaparte",
+      "Cantoni svizzeri"
     ],
     "description_it": "Napoleone stabilisce un nuovo ordinamento confederale per la Svizzera.",
     "territorial_consequences": "I cantoni recuperano autonomia entro una confederazione legata alla Francia.",
@@ -362,7 +396,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_SWISS_ARCHIVES"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_016",
@@ -375,7 +410,8 @@
     "coordinate_source_ids": [],
     "category": "trasferimento_territoriale",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Deputazione imperiale",
+      "Stati del Sacro Romano Impero"
     ],
     "description_it": "La deputazione imperiale approva secolarizzazioni e indennizzi territoriali.",
     "territorial_consequences": "Molti enti ecclesiastici e città imperiali perdono autonomia.",
@@ -384,8 +420,9 @@
     "map_after": "MAP_04",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1804"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_017",
@@ -403,7 +440,8 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone Bonaparte",
+      "Senato francese"
     ],
     "description_it": "Napoleone assume la dignità imperiale.",
     "territorial_consequences": "La forma di governo francese cambia; non coincide con una nuova annessione.",
@@ -412,8 +450,9 @@
     "map_after": "MAP_05",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1804"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_018",
@@ -426,7 +465,8 @@
     "coordinate_source_ids": [],
     "category": "nascita_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Repubblica Italiana"
     ],
     "description_it": "La Repubblica Italiana diventa regno con Napoleone sovrano.",
     "territorial_consequences": "Unione personale con l’Impero francese, non fusione territoriale.",
@@ -436,7 +476,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1805"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_019",
@@ -449,7 +490,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Esercito francese",
+      "Esercito austriaco"
     ],
     "description_it": "Un esercito austriaco capitola dopo l’accerchiamento francese.",
     "territorial_consequences": "La via verso Vienna è aperta.",
@@ -459,7 +501,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1805"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_020",
@@ -472,7 +515,9 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Royal Navy",
+      "Flotta francese",
+      "Flotta spagnola"
     ],
     "description_it": "La flotta britannica sconfigge la flotta franco-spagnola.",
     "territorial_consequences": "La superiorità navale britannica limita le opzioni francesi.",
@@ -482,7 +527,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1805"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_021",
@@ -495,7 +541,9 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Francesco II",
+      "Alessandro I"
     ],
     "description_it": "Napoleone sconfigge gli eserciti austro-russi.",
     "territorial_consequences": "La pace di Presburgo ridisegna l’Europa centrale.",
@@ -505,7 +553,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1805"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_022",
@@ -523,17 +572,22 @@
     ],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Impero francese",
+      "Impero austriaco"
     ],
     "description_it": "L’Austria accetta perdite territoriali dopo Austerlitz.",
     "territorial_consequences": "Il Veneto passa al Regno d’Italia; crescono gli alleati tedeschi della Francia.",
-    "entity_ids": [],
+    "entity_ids": [
+      "FRA_EMPIRE",
+      "AUT_EMPIRE"
+    ],
     "map_before": "MAP_04",
     "map_after": "MAP_05",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1805"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_023",
@@ -551,7 +605,8 @@
     ],
     "category": "nascita_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Stati firmatari della Confederazione del Reno",
+      "Napoleone I"
     ],
     "description_it": "Il trattato istituisce una confederazione di Stati sotto protezione napoleonica.",
     "territorial_consequences": "I membri conservano una propria sovranità; la confederazione non è proprietaria dei territori.",
@@ -561,7 +616,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RH_ACT_1806"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_024",
@@ -579,7 +635,8 @@
     ],
     "category": "scomparsa_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Francesco II",
+      "Stati del Sacro Romano Impero"
     ],
     "description_it": "Francesco II depone la corona imperiale romana.",
     "territorial_consequences": "Termina la compagine imperiale; continua l’Impero austriaco.",
@@ -588,8 +645,9 @@
     "map_after": "MAP_06",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1806"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_025",
@@ -602,7 +660,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Esercito francese",
+      "Esercito prussiano"
     ],
     "description_it": "Le vittorie francesi disgregano l’esercito prussiano.",
     "territorial_consequences": "La Prussia viene occupata e subirà le condizioni di Tilsit.",
@@ -611,8 +670,9 @@
     "map_after": "MAP_06",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1806"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_026",
@@ -630,17 +690,21 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Regno Unito"
     ],
     "description_it": "Napoleone proclama il blocco contro le Isole britanniche.",
     "territorial_consequences": "La politica economica rafforza la pressione sugli Stati continentali.",
-    "entity_ids": [],
+    "entity_ids": [
+      "UK"
+    ],
     "map_before": "MAP_05",
     "map_after": "MAP_06",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1806"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_027",
@@ -653,7 +717,8 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Alessandro I"
     ],
     "description_it": "Napoleone e Alessandro I concludono la pace e un’alleanza.",
     "territorial_consequences": "Si configura un nuovo equilibrio fra Francia e Russia.",
@@ -662,8 +727,9 @@
     "map_after": "MAP_07",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1807"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_028",
@@ -676,7 +742,8 @@
     "coordinate_source_ids": [],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Federico Guglielmo III"
     ],
     "description_it": "La Prussia perde una parte importante dei propri territori.",
     "territorial_consequences": "Nascono il Ducato di Varsavia e il Regno di Westfalia.",
@@ -685,8 +752,9 @@
     "map_after": "MAP_07",
     "certainty": "medium",
     "sources": [
-      "SRC_CHRONO"
-    ]
+      "SRC_CHRONO_1807"
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_029",
@@ -704,7 +772,8 @@
     ],
     "category": "rivoluzione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Insorti di Madrid",
+      "Truppe francesi"
     ],
     "description_it": "La popolazione insorge contro la presenza francese.",
     "territorial_consequences": "La crisi dinastica diventa una guerra di occupazione e resistenza.",
@@ -714,7 +783,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_030",
@@ -732,7 +802,9 @@
     ],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Giuseppe Bonaparte",
+      "Napoleone I",
+      "Monarchia spagnola"
     ],
     "description_it": "Giuseppe riceve la corona spagnola.",
     "territorial_consequences": "La pretesa dinastica non assicura il controllo dell’intera penisola.",
@@ -742,7 +814,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_031",
@@ -760,7 +833,8 @@
     ],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Esercito francese",
+      "Esercito austriaco"
     ],
     "description_it": "La vittoria francese conclude la principale fase della guerra con l’Austria.",
     "territorial_consequences": "Segue il trattato di Schönbrunn.",
@@ -770,7 +844,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_032",
@@ -788,17 +863,22 @@
     ],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Impero francese",
+      "Impero austriaco"
     ],
     "description_it": "L’Austria cede territori alla Francia e ai suoi alleati.",
     "territorial_consequences": "Si formano le Province Illiriche e cresce il Ducato di Varsavia.",
-    "entity_ids": [],
+    "entity_ids": [
+      "FRA_EMPIRE",
+      "AUT_EMPIRE"
+    ],
     "map_before": "MAP_07",
     "map_after": "MAP_08",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_033",
@@ -816,7 +896,9 @@
     ],
     "category": "annessione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Regno d’Olanda",
+      "Luigi Bonaparte"
     ],
     "description_it": "Il Regno d’Olanda è assorbito nell’Impero francese.",
     "territorial_consequences": "L’unione dinastica è sostituita dall’amministrazione diretta.",
@@ -826,7 +908,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_FN_DEPARTMENTS"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_034",
@@ -839,17 +922,21 @@
     "coordinate_source_ids": [],
     "category": "annessione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Impero francese",
+      "Territori della Germania settentrionale"
     ],
     "description_it": "Il controllo della costa e dei porti è rafforzato mediante annessioni.",
     "territorial_consequences": "I territori incorporati entrano nel sistema dipartimentale francese.",
-    "entity_ids": [],
+    "entity_ids": [
+      "FRA_EMPIRE"
+    ],
     "map_before": "MAP_08",
     "map_after": "MAP_09",
     "certainty": "medium",
     "sources": [
       "SRC_FN_DEPARTMENTS"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_035",
@@ -862,7 +949,8 @@
     "coordinate_source_ids": [],
     "category": "occupazione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Amministrazione imperiale francese",
+      "Autorità spagnole concorrenti"
     ],
     "description_it": "La Catalogna è organizzata in quattro dipartimenti sotto amministrazione francese.",
     "territorial_consequences": "Il controllo resta diseguale; lo status giuridico non coincide con quello dei dipartimenti ordinari.",
@@ -872,7 +960,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_FN_CATALONIA_1812"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_036",
@@ -885,7 +974,8 @@
     "coordinate_source_ids": [],
     "category": "cambio_di_regime",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Cortes di Cadice",
+      "Reggenza spagnola"
     ],
     "description_it": "Le Cortes promulgano una costituzione della monarchia spagnola.",
     "territorial_consequences": "Continua la competizione politica con la monarchia di Giuseppe.",
@@ -895,7 +985,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CONGRESO_1812"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_037",
@@ -913,17 +1004,22 @@
     ],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Impero russo",
+      "Impero ottomano"
     ],
     "description_it": "Russia e Impero ottomano concordano la pace.",
     "territorial_consequences": "La Bessarabia è in trasferimento: firma, ratifica e controllo non sono simultanei.",
-    "entity_ids": [],
+    "entity_ids": [
+      "RUS_EMPIRE",
+      "OTT_EMPIRE"
+    ],
     "map_before": "MAP_09",
     "map_after": "MAP_10",
     "certainty": "medium",
     "sources": [
       "SRC_BUCHAREST_MWNF"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_038",
@@ -941,17 +1037,21 @@
     ],
     "category": "campagna",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Impero russo"
     ],
     "description_it": "La Grande Armée entra nell’Impero russo.",
     "territorial_consequences": "Comincia la campagna; questo evento è successivo a MAP_10.",
-    "entity_ids": [],
+    "entity_ids": [
+      "RUS_EMPIRE"
+    ],
     "map_before": "MAP_10",
     "map_after": "MAP_11",
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_ADVANCE"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_039",
@@ -969,7 +1069,8 @@
     ],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Esercito russo"
     ],
     "description_it": "La battaglia precede una nuova ritirata russa verso est.",
     "territorial_consequences": "L’avanzata francese allunga le linee di rifornimento.",
@@ -979,7 +1080,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_ADVANCE"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_040",
@@ -992,7 +1094,8 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Esercito russo"
     ],
     "description_it": "La battaglia apre la strada verso Mosca senza distruggere l’esercito russo.",
     "territorial_consequences": "La conquista di una città non determina la resa dell’Impero.",
@@ -1002,7 +1105,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_ADVANCE"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_041",
@@ -1020,7 +1124,8 @@
     ],
     "category": "occupazione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Autorità e popolazione di Mosca"
     ],
     "description_it": "Le truppe francesi raggiungono Mosca; Napoleone vi entra il giorno seguente.",
     "territorial_consequences": "L’occupazione non porta all’accordo politico sperato.",
@@ -1030,7 +1135,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_ADVANCE"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_042",
@@ -1048,7 +1154,8 @@
     ],
     "category": "campagna",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Esercito russo"
     ],
     "description_it": "L’esercito francese abbandona Mosca.",
     "territorial_consequences": "Il ritiro incontra eserciti avversari e una grave crisi logistica.",
@@ -1058,7 +1165,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_RETREAT"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_043",
@@ -1076,7 +1184,8 @@
     ],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Grande Armée",
+      "Eserciti russi"
     ],
     "description_it": "Il passaggio del fiume consente a una parte dell’esercito di proseguire la ritirata.",
     "territorial_consequences": "La campagna termina con perdite catastrofiche.",
@@ -1086,7 +1195,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_RUSSIA_RETREAT"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_044",
@@ -1099,7 +1209,11 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Francia e alleati",
+      "Russia",
+      "Prussia",
+      "Austria",
+      "Svezia"
     ],
     "description_it": "La sconfitta francese conclude quattro giorni di battaglia.",
     "territorial_consequences": "Accelera la disgregazione della Confederazione del Reno.",
@@ -1109,7 +1223,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_045",
@@ -1122,7 +1237,8 @@
     "coordinate_source_ids": [],
     "category": "abdicazione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Potenze della coalizione"
     ],
     "description_it": "Napoleone rinuncia al trono.",
     "territorial_consequences": "Si apre il ritorno della dinastia borbonica in Francia.",
@@ -1132,7 +1248,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_046",
@@ -1150,17 +1267,24 @@
     ],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Luigi XVIII",
+      "Austria",
+      "Regno Unito",
+      "Prussia",
+      "Russia"
     ],
     "description_it": "La pace riconosce alla Francia un perimetro vicino a quello del 1792.",
     "territorial_consequences": "Resta da definire la sistemazione complessiva dell’Europa.",
-    "entity_ids": [],
+    "entity_ids": [
+      "UK"
+    ],
     "map_before": "MAP_11",
     "map_after": "MAP_12",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_047",
@@ -1178,17 +1302,26 @@
     ],
     "category": "congresso",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Austria",
+      "Russia",
+      "Prussia",
+      "Regno Unito",
+      "Francia",
+      "Altri Stati europei"
     ],
     "description_it": "I negoziati riuniscono le potenze per riorganizzare l’Europa.",
     "territorial_consequences": "Decisioni e trasferimenti effettivi seguono calendari differenti.",
-    "entity_ids": [],
+    "entity_ids": [
+      "UK"
+    ],
     "map_before": "MAP_12",
     "map_after": "MAP_13",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "month",
+    "date_note": "Settembre 1814 indica l’avvio dei negoziati. Il giorno 01 è solo il limite inferiore del mese per il filtro temporale."
   },
   {
     "id": "EV_048",
@@ -1206,7 +1339,8 @@
     ],
     "category": "restaurazione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Luigi XVIII"
     ],
     "description_it": "Il ritorno dall’Elba apre i Cento Giorni.",
     "territorial_consequences": "L’assetto discusso a Vienna non descrive il governo effettivo della Francia.",
@@ -1216,7 +1350,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_049",
@@ -1234,7 +1369,7 @@
     ],
     "category": "congresso",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Stati firmatari dell’Atto di Vienna"
     ],
     "description_it": "L’atto riunisce le decisioni diplomatiche del congresso.",
     "territorial_consequences": "MAP_13 rappresenta questo assetto normativo, non una fotografia del controllo.",
@@ -1244,7 +1379,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_VIENNA"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_050",
@@ -1257,7 +1393,9 @@
     "coordinate_source_ids": [],
     "category": "battaglia",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Duca di Wellington",
+      "Gebhard von Blücher"
     ],
     "description_it": "Le armate alleate sconfiggono Napoleone.",
     "territorial_consequences": "La sconfitta porta alla seconda abdicazione e alla Restaurazione.",
@@ -1267,7 +1405,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_051",
@@ -1285,7 +1424,8 @@
     ],
     "category": "abdicazione",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Napoleone I",
+      "Camere francesi"
     ],
     "description_it": "Napoleone lascia nuovamente il potere.",
     "territorial_consequences": "Termina il governo dei Cento Giorni.",
@@ -1295,7 +1435,8 @@
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_052",
@@ -1313,17 +1454,24 @@
     ],
     "category": "trattato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Luigi XVIII",
+      "Austria",
+      "Prussia",
+      "Russia",
+      "Regno Unito"
     ],
     "description_it": "La nuova pace impone condizioni più gravose alla Francia.",
     "territorial_consequences": "Seguono riduzioni territoriali, indennità e occupazione alleata.",
-    "entity_ids": [],
+    "entity_ids": [
+      "UK"
+    ],
     "map_before": "MAP_13",
     "map_after": "MAP_14",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   },
   {
     "id": "EV_053",
@@ -1336,16 +1484,21 @@
     "coordinate_source_ids": [],
     "category": "nascita_di_stato",
     "actors": [
-      "Francia e potenze coinvolte: vedi fonte"
+      "Ferdinando di Borbone",
+      "Regno di Napoli",
+      "Regno di Sicilia"
     ],
     "description_it": "Ferdinando riunisce formalmente i due regni.",
     "territorial_consequences": "L’unificazione istituzionale modifica l’ordinamento dell’Italia meridionale.",
-    "entity_ids": [],
+    "entity_ids": [
+      "SIC_KINGDOM"
+    ],
     "map_before": "MAP_14",
     "map_after": "MAP_15",
     "certainty": "medium",
     "sources": [
       "SRC_CHRONO_1815"
-    ]
+    ],
+    "date_precision": "day"
   }
 ]

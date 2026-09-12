@@ -9,7 +9,13 @@
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_029",
+      "EV_030",
+      "EV_031",
+      "EV_032",
+      "EV_044"
+    ]
   },
   {
     "source_id": "SRC_CHRONO_1797",
@@ -21,7 +27,15 @@
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_001",
+      "EV_002",
+      "EV_003",
+      "EV_004",
+      "EV_005",
+      "EV_006",
+      "EV_007"
+    ]
   },
   {
     "source_id": "SRC_CHRONO_1805",
@@ -33,7 +47,13 @@
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_018",
+      "EV_019",
+      "EV_020",
+      "EV_021",
+      "EV_022"
+    ]
   },
   {
     "source_id": "SRC_CHRONO_1815",
@@ -45,7 +65,16 @@
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_045",
+      "EV_046",
+      "EV_047",
+      "EV_048",
+      "EV_050",
+      "EV_051",
+      "EV_052",
+      "EV_053"
+    ]
   },
   {
     "source_id": "SRC_RUSSIA_ADVANCE",
@@ -57,19 +86,27 @@
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_038",
+      "EV_039",
+      "EV_040",
+      "EV_041"
+    ]
   },
   {
     "source_id": "SRC_RUSSIA_RETREAT",
     "author_or_institution": "Fondation Napoléon",
     "title": "Napoleon’s Russian campaign: The retreat from Moscow",
-    "url": "https://www.napoleon.org/en/history-of-the-two-empires/timelines/napoleons-russian-campaign-the-retreat-from-moscow/",
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/timelines/napoleons-russian-campaign-the-retreat/",
     "date": "modern",
     "source_type": "scholarly_chronology",
     "license": "reference_only",
     "accessed": "2026-09-12",
     "reliability": "high",
-    "supports": []
+    "supports": [
+      "EV_042",
+      "EV_043"
+    ]
   },
   {
     "source_id": "SRC_NE",
@@ -121,14 +158,105 @@
   },
   {
     "source_id": "SRC_VIENNA",
-    "author_or_institution": "Congress of Vienna / Wikisource",
-    "title": "Acte du Congrès de Vienne du 9 juin 1815",
-    "url": "https://fr.wikisource.org/wiki/Acte_du_Congr%C3%A8s_de_Vienne_du_9_juin_1815",
+    "author_or_institution": "Congresso di Vienna / Wienbibliothek im Rathaus",
+    "title": "Acte du Congrès de Vienne du 9 Juin 1815, avec ses annexes. Edizione ufficiale",
+    "url": "https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/2293309",
     "date": "1815-06-09",
     "source_type": "primary_diplomatic",
-    "license": "public_domain_original; reference only",
+    "license": "Public Domain Mark 1.0; credit Wienbibliothek im Rathaus, C-1951",
     "accessed": "2026-09-12",
     "reliability": "primary_direct",
+    "supports": [
+      "EV_049"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1799",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 2 — La campagne d’Égypte et l’avènement, 1798–1799",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-2-la-campagne-degypte-et-lavenement-1798-1799/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
+    "supports": [
+      "EV_008",
+      "EV_010"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1802",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 3 — Pacifications, 1800–1802",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-3-pacifications-1800-1802/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
+    "supports": [
+      "EV_011",
+      "EV_012",
+      "EV_013"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1804",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 4 — Ruptures et fondation, 1803–1804",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-4-ruptures-et-fondation-1803-1804/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
+    "supports": [
+      "EV_016",
+      "EV_017"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1806",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 6 — Vers le Grand Empire, 1806",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-6-1806-vers-le-grand-empire/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
+    "supports": [
+      "EV_024",
+      "EV_025",
+      "EV_026"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1807",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 7 — Tilsit, l’apogée de l’Empire, 1807",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-7-1807-tilsit-lapogee-de-lempire/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
+    "supports": [
+      "EV_027",
+      "EV_028"
+    ]
+  },
+  {
+    "source_id": "SRC_CHRONO_1811",
+    "author_or_institution": "Fondation Napoléon",
+    "title": "Correspondance générale de Napoléon, tome 10 — Un Grand Empire, mars 1810–mars 1811",
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/chronologie-de-la-correspondance-generale-de-napoleon-bonaparte-tome-10-un-grand-empire-mars-1810-mars-1811/",
+    "date": "edizione moderna",
+    "source_type": "scholarly_chronology",
+    "license": "reference_only",
+    "accessed": "2026-09-12",
+    "reliability": "high",
     "supports": []
   }
 ]

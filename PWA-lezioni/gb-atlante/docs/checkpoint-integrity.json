@@ -1,0 +1,97 @@
+[
+  {
+    "file": "README-MAP_10.md",
+    "identical": true,
+    "sha256": "9b25f8032784193cb27218bf35d86a3e8b5a573974d98ddad858d610819e967f"
+  },
+  {
+    "file": "tools\\build_map10.py",
+    "identical": true,
+    "sha256": "2bb78f4f481864da350a90aa87501f054047bcec5fbf89fbcd96f212f4a99789"
+  },
+  {
+    "file": "tools\\validate_map10.py",
+    "identical": true,
+    "sha256": "a407005cb6c0ae1467c6b8072473338c3f5674431ca669837377da49447755a2"
+  },
+  {
+    "file": "data\\MAP_10\\entities.json",
+    "identical": true,
+    "sha256": "da93808a662e3d2944f814979be9e70a323e700dfa5173875dd6075ceef33de9"
+  },
+  {
+    "file": "data\\MAP_10\\issues.json",
+    "identical": true,
+    "sha256": "36030008bbbb0074c5acef9b113e42ed58df8c405d6755acd2fba8b26357cb80"
+  },
+  {
+    "file": "data\\MAP_10\\persons.json",
+    "identical": true,
+    "sha256": "aaa2b16263a5a8870bee3d08f0b79f2504b73bc7abd8cc898b8590e6d5d930f4"
+  },
+  {
+    "file": "data\\MAP_10\\relations.json",
+    "identical": true,
+    "sha256": "48ab203f324f0f35a08092ac2db92803050d8418cb05acfdd0547b776879357d"
+  },
+  {
+    "file": "data\\MAP_10\\snapshot.json",
+    "identical": true,
+    "sha256": "6eca4b2b7d07237442936550135cf284a8a9cd0ea134a70e0c916d36aa258e7c"
+  },
+  {
+    "file": "data\\MAP_10\\sources.json",
+    "identical": true,
+    "sha256": "26e0f39eb169c1069a6969440e3e12ab20b17cc46e0de1c0be899b73254a2a5a"
+  },
+  {
+    "file": "data\\MAP_10\\spatial_assertions.json",
+    "identical": true,
+    "sha256": "b2dfb5ff49946e35c4f171e44939d59753cb283081e772d911a924af5cc97d15"
+  },
+  {
+    "file": "data\\MAP_10\\validation-report.json",
+    "identical": true,
+    "sha256": "697f1c60473986f7f93d7f2c542a50b867332a4f42572e21bcb22188d9849995"
+  },
+  {
+    "file": "data\\MAP_10\\vocabularies.json",
+    "identical": true,
+    "sha256": "5833af48e339b234d2e5d488a2fe6bb2332deffa0368d9ff287305fb72ba0607"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\entity.schema.json",
+    "identical": true,
+    "sha256": "0fccb683a7b270b54781b7aa9282ecd9ae1f60803f0f3bdd13089fa9a39b87ad"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\issue.schema.json",
+    "identical": true,
+    "sha256": "b97458eba89b793cae0f966aa22e8a36de830d6ca65bda8d9434926e79a5e09a"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\person.schema.json",
+    "identical": true,
+    "sha256": "7a33f3fd818bbea8384193cdc55d8350148c5b335e396ea5267881841fc52ca5"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\relation.schema.json",
+    "identical": true,
+    "sha256": "04015fd40e37e0620c1ce613ce17e93e9b9a28ad0559acb927a88978f5f2faf8"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\snapshot.schema.json",
+    "identical": true,
+    "sha256": "732712121ae9489d45aa065e122b542ac859dc6621bc616f0cc209114f3088a1"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\source.schema.json",
+    "identical": true,
+    "sha256": "5ac77b2311753e63f229a12e9ffe37bc6b7544a83efa85781b4d948d4e79bed2"
+  },
+  {
+    "file": "data\\MAP_10\\schemas\\spatial_assertion.schema.json",
+    "identical": true,
+    "sha256": "2f219eb289e5aa4f05d7d167d0857c54f329f3dd1280814b62c9e9ef6c4b0a81"
+  }
+]

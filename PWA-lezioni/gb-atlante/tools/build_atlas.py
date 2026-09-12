@@ -23,7 +23,10 @@ def bounds(d):
  if len(parts)==2:return(d+'-01',d+'-'+str(calendar.monthrange(int(parts[0]),int(parts[1]))[1]))
  return(d,d)
 def active(f,date):
- p=f['properties'];return bounds(p['valid_from'])[0]<=date and (not p['valid_to'] or date<bounds(p['valid_to'])[1] if len(p.get('valid_to') or '')<10 else date<p['valid_to'])
+ p=f['properties']
+ if bounds(p['valid_from'])[0]>date:return False
+ if not p['valid_to']:return True
+ return date<bounds(p['valid_to'])[1]
 def main():
  canonical=read(COMMON/'canonical.geojson.gz')['features'];byrid={f['properties']['relation_id']:f for f in canonical}
  entities=read(ROOT/'data/MAP_10/entities.json')['entities'];eb={e['id']:e for e in entities}
@@ -52,6 +55,12 @@ def main():
   if not g.is_empty:
    cat={'type':'Feature','id':'G_CAT_ADMIN','properties':{'geometry_id':'G_CAT_ADMIN','entity_id':'CAT_SPECIAL','source_id':'OHM_2696587','geometry_source_ids':['OHM_2696587','OHM_2914131'],'certainty':'low','boundary_type':'administrative_control','notes':['Differenza fra perimetri OHM 1811/1812, limitata alla Catalogna. Non prova una sovranità francese incontestata.'],'valid_from':'1812-01-26','valid_to':'1814-04-13'},'geometry':mapping(g)}
   issues.append({'id':'CAT_OHM_SOVEREIGNTY','snapshot':'MAP_10','area':'Catalogna','problem':'OHM ingloba la Catalogna nella Francia; il checkpoint distingue amministrazione e sovranità.','solution':'Perimetro francese pre-1812 e superficie amministrativa separata.','status':'provisionally_resolved','certainty':'low','sources':['OHM_2696587','OHM_2914131','SRC_FN_CATALONIA_1812']})
+ sardinia=None
+ if 2957697 in byrid:
+  from shapely.geometry import box
+  origin=shape(byrid[2957697]['geometry']);g=origin.intersection(box(8,38.5,10,41.5))
+  if not g.is_empty:
+   sardinia={'type':'Feature','id':'G_SARDINIA_ISLAND','properties':{'geometry_id':'G_SARDINIA_ISLAND','geometry_source_ids':['OHM_2957697','SRC_IEG_1812'],'certainty':'low','boundary_type':'approximate','notes':['Sola componente insulare della geometria OHM sabauda. Il quadro politico del 1812 è verificato sulla carta IEG; la costa resta generalizzata.'],'valid_from':'1802-09-11','valid_to':'1814-05-30'},'geometry':mapping(g)}
  snapshots=[];compiled=[]
  for i,(dt,title,note) in enumerate(zip(DATES,TITLES,NOTES),1):
   sid=f'MAP_{i:02}';selected=[f for f in features if active(f,dt)]
@@ -65,12 +74,14 @@ def main():
    level=t.get('admin_level','2')
    # Major independent states plus explicit subordinate special cases.
    if level!='2' and not eid and not any(x in name for x in ['Illyrian','Moldavia','Wallachia','Finland','Pomerania']):continue
-   category='other';sov=None;controller=None;control_status='not_recorded';members=[]
+   category='other' if eid else 'unclassified';sov=None;controller=None;control_status='not_recorded';members=[]
    if eid:
     e=eb[eid];m=e['napoleonic_relation'];modes=m['integration_modes'];members=e['institutional_memberships']
     if 'system_center' in modes or 'direct_annexation' in modes:category='annexed'
-    elif 'dynastic_client' in modes:category='dynastic'
-    elif m['dependence_level'] not in ['none','not_applicable']:category='client'
+    elif any(x in modes for x in ['dynastic_client','personal_union_napoleonic_crown']):category='dynastic'
+    elif any(x in modes for x in ['client_state','confederated_client','mediated_state','imperial_fief']):category='client'
+    elif any(x in modes for x in ['treaty_ally','coerced_treaty_ally']):category='ally'
+    elif 'imperial_domain' in modes:category='annexed'
     if m['war_status'] in ['at_war_with_france','prewar_adversary']:category='adversary'
     elif m['alignment']=='allied_with_france':category='ally'
     if eid in ('AUT_EMPIRE','PRU_KINGDOM','DEN_NOR'):category='ally'
@@ -86,21 +97,29 @@ def main():
    output.append(state)
   if sid=='MAP_10' and cat:
    output.append({'geometry_id':cat['id'],'entity_id':'CAT_SPECIAL','snapshot_id':sid,'name':'Catalogna · amministrazione francese','category':'other','sovereignty':'ESP_CADIZ / ESP_JOSEPH','controller':'FRA_EMPIRE','control_status':'fragmented','rhine':False,'certainty':'low','boundary_type':'administrative_control','disputed':True,'source_ids':cat['properties']['geometry_source_ids'],'notes':cat['properties']['notes'],'level':'3','valid_from':dt,'valid_to':dt});covered.add('CAT_SPECIAL')
+  if sid=='MAP_10' and sardinia:
+   output.append({'geometry_id':sardinia['id'],'entity_id':'SAR_KINGDOM','snapshot_id':sid,'name':'Regno di Sardegna','category':'adversary','sovereignty':'SAR_KINGDOM','controller':'SAR_KINGDOM','control_status':'full','rhine':False,'certainty':'low','boundary_type':'approximate','source_ids':sardinia['properties']['geometry_source_ids'],'notes':sardinia['properties']['notes'],'level':'2','valid_from':dt,'valid_to':dt});covered.add('SAR_KINGDOM')
   if sid=='MAP_10':
    for e in entities:
     if e['spatial_mode']!='nonspatial' and e['id'] not in covered:
      issues.append({'id':'NO_GEOM_'+e['id'],'snapshot':sid,'area':e['names']['it'],'problem':'Geometria autonoma non ancora verificata','solution':'Scheda scientifica consultabile; nessun confine inventato. Eventuale appartenenza visibile nella scheda.','status':'open','certainty':'low','sources':[s['source_id'] for s in e['sources']]})
-  snapshots.append({'id':sid,'date':dt,'title':title,'description':note,'nature':'diplomatic_normative' if sid=='MAP_13' else 'historical_reconstruction','geometry_count':len(output),'source_ids':['SRC_IEG_1812'] if sid=='MAP_10' else ['SRC_CHRONO'],'geometry_status':'provisional','data_url':f'data/{sid}/atlas.json'})
+  # Research gaps must be visible, not concealed by a successful JSON validator.
+  for major in ['Austrian Empire','Kingdom of Bavaria']:
+   if dt>='1806-01-01' and not any(f['properties']['name_en']==major for f in selected):
+    issues.append({'id':'COVERAGE_'+sid+'_'+major.replace(' ','_'),'snapshot':sid,'area':major,'problem':'Manca una geometria temporalmente pertinente nell’estrazione OHM; non sostituita con confini del 1816 o del 1820.','solution':'Lacuna esplicita. Ricerca OHM estesa alle relazioni cronologiche senza trovare il perimetro intermedio; IEG disponibile come controllo bibliografico, digitalizzazione ulteriore necessaria.','status':'open','certainty':'low','sources':['SRC_OHM_POLICY']})
+  if sid!='MAP_10':issues.append({'id':'PROFILE_'+sid,'snapshot':sid,'area':'Intero quadro europeo','problem':'Schede politiche temporalizzate non ancora complete','solution':'Valori mancanti espliciti; nessuna eredità automatica dei rapporti del 1812.','status':'open','certainty':'low','sources':['SRC_CHRONO']})
+  snapshots.append({'id':sid,'date':dt,'title':title,'description':note,'nature':'diplomatic_normative' if sid=='MAP_13' else 'historical_reconstruction','geometry_count':len(output),'source_ids':['SRC_IEG_1812'] if sid=='MAP_10' else ['SRC_VIENNA'] if sid=='MAP_13' else ['SRC_CHRONO'],'geometry_status':'provisional','data_url':f'data/{sid}/atlas.json'})
   write(ROOT/f'data/{sid}/atlas.json',{'snapshot_id':sid,'date':dt,'features':output})
   compiled.extend(output)
  # Shared generalized derivative; preserve tiny islands using topology.
  used={r['geometry_id'] for r in compiled};geom=[]
- for f in features+([cat] if cat else[]):
+ for f in features+([cat] if cat else[])+([sardinia] if sardinia else[]):
   if f['id'] not in used:continue
   g=shape(f['geometry']);simplified=g.simplify(0.008,preserve_topology=True)
-  geom.append({'type':'Feature','id':f['id'],'properties':{'geometry_id':f['id'],'geometry_source_ids':f['properties']['geometry_source_ids'],'certainty':'low','boundary_type':f['properties']['boundary_type'],'notes':f['properties']['notes']},'geometry':mapping(simplified)})
+  largest=max(simplified.geoms,key=lambda p:p.area) if simplified.geom_type=='MultiPolygon' else simplified;point=largest.representative_point()
+  geom.append({'type':'Feature','id':f['id'],'properties':{'geometry_id':f['id'],'label_point':[point.x,point.y],'label_priority':-largest.area,'geometry_source_ids':f['properties']['geometry_source_ids'],'certainty':'low','boundary_type':f['properties']['boundary_type'],'notes':f['properties']['notes']},'geometry':mapping(simplified)})
  write(COMMON/'geometries.geojson',{'type':'FeatureCollection','features':geom})
- if cat:write(COMMON/'derived.geojson',{'type':'FeatureCollection','features':[cat]})
+ write(COMMON/'derived.geojson',{'type':'FeatureCollection','features':([cat] if cat else[])+([sardinia] if sardinia else[])})
  write(COMMON/'snapshots.json',snapshots);write(COMMON/'polities.json',list(polities.values()));write(COMMON/'sources.json',sources);write(COMMON/'issues.json',issues)
  print('Snapshots',len(snapshots),'shared geometries',len(geom),'issues',len(issues))
  for s in snapshots:print(s['id'],s['geometry_count'])

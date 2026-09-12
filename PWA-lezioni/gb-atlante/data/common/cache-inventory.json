@@ -1,8 +1,12 @@
 {
-  "version": "08b98fc3940b",
+  "version": "425b712e0409",
   "files": [
     "./",
+    "LICENSES.md",
+    "METHODOLOGY.md",
     "README-MAP_10.md",
+    "README.md",
+    "SOURCES.md",
     "assets/stockdale-1812.jpg",
     "css/atlas.css",
     "data/MAP_01/atlas.json",
@@ -46,5 +50,5 @@
     "vendor/maplibre-gl.css",
     "vendor/maplibre-gl.mjs"
   ],
-  "total_bytes": 7340430
+  "total_bytes": 7400048
 }
