@@ -3,9 +3,10 @@
 <script>
 const frame=document.querySelector('iframe'),log=document.querySelector('#log');
 document.querySelectorAll('[data-size]').forEach(b=>b.onclick=()=>{const [w,h]=b.dataset.size.split(',');frame.width=w;frame.height=h;});
-const pause=(ms=100)=>new Promise(r=>setTimeout(r,ms));
+const pause=(ms=100)=>new Promise(r=>setTimeout(()=>frame.contentWindow.requestAnimationFrame(()=>r()),ms));
 const report=(name,ok,extra='')=>{log.textContent+=(ok?'PASS ':'FAIL ')+name+(extra?' · '+extra:'')+'\n';if(!ok)throw Error(name);};
 async function run(){log.textContent='';document.querySelector('#run').disabled=true;try{const d=frame.contentDocument,w=frame.contentWindow,$=id=>d.getElementById(id);let errors=[];w.addEventListener('error',e=>errors.push(e.message));const click=async id=>{$(id).click();await pause();};
+while(!d.querySelector('[data-id=\"impero-romano\"]'))await pause();
 await click('home');report('Apertura al passaggio fra ere',$('moment').textContent==='1 a.C. | 1 d.C.');
 await click('zoom-in');report('Zoom cambia scala',Number($('scale-label').textContent.replace(/\D/g,''))===2222);await click('home');
 const before=$('moment').textContent;d.querySelector('[data-id="impero-romano"]').click();await pause();report('Scheda senza perdita del momento',!$('detail').hidden&&$('moment').textContent===before);report('Durata romana corretta',$('detail').textContent.includes('502 anni'));d.querySelector('.detail-close').click();await pause();report('Chiusura preserva il momento',$('detail').hidden&&$('moment').textContent===before);
@@ -24,3 +25,4 @@ await pause(500);report('Cache offline pronta',$('offline-state').textContent.st
 }catch(e){log.textContent+='ERRORE: '+e.message+'\n';}finally{document.querySelector('#run').disabled=false;}}
 document.querySelector('#run').onclick=run;
 </script></html>
+
