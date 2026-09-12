@@ -169,6 +169,28 @@
       this.ctx.restore();
     }
 
+    async importImage(src) {
+      const image = await this.loadImage(src);
+      const rect = this.canvas.getBoundingClientRect();
+      const targetWidth = Math.max(1, rect.width);
+      const targetHeight = Math.max(1, rect.height);
+      const scale = Math.min(targetWidth / image.width, targetHeight / image.height);
+      const width = image.width * scale;
+      const height = image.height * scale;
+      const x = (targetWidth - width) / 2;
+      const y = (targetHeight - height) / 2;
+
+      this.pushUndoState();
+      this.redoStack.length = 0;
+      this.ctx.save();
+      this.ctx.fillStyle = '#ffffff';
+      this.ctx.fillRect(0, 0, targetWidth, targetHeight);
+      this.ctx.drawImage(image, x, y, width, height);
+      this.ctx.restore();
+      this.setDirty(true);
+      this.notifyHistory();
+    }
+
     async undo() {
       if (!this.undoStack.length || this.activePointerId !== null) return;
       const previous = this.undoStack.pop();
