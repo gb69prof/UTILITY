@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "GBATLANTE_MAP10_1.0.1"
+    },
+    "snapshot_id": {
+      "const": "MAP_10"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "author_or_institution",
+          "date",
+          "source_type",
+          "url",
+          "license",
+          "accessed",
+          "reliability",
+          "needs_source_upgrade",
+          "notes"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^SRC_[A-Z0-9_]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author_or_institution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_type": {
+            "enum": [
+              "primary_legal",
+              "primary_diplomatic",
+              "primary_administrative",
+              "primary_narrative",
+              "contemporary_cartography",
+              "contemporary_statistical",
+              "academic_historiography",
+              "institutional_historiography",
+              "modern_cartographic_reconstruction",
+              "gis_dataset",
+              "archival_catalog"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date"
+          },
+          "reliability": {
+            "enum": [
+              "primary_direct",
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "needs_source_upgrade": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateNullable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "sourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SRC_[A-Z0-9_]+$"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

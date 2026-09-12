@@ -1,0 +1,486 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "issues": [
+    {
+      "id": "PRB_RHINE_COUNT",
+      "title": "Conteggio giuridico degli Stati della Confederazione del Reno",
+      "area": "Germania",
+      "issue_type": "membership",
+      "description": "L’audit Fase 5.1 ha riesaminato Waldeck/Pyrmont. Gli atti distinguono l’adesione di Friedrich Karl August di Waldeck e un atto del 18 aprile 1807 intestato a Georg, governante separato di Pyrmont. Al 1 giugno 1812 il roster adottato comprende quindi 35 membri attivi, mantenendo distinti i quattro principati Reuss e Pyrmont.",
+      "affected_entities": [
+        "CONF_RHINE",
+        "WALDECK",
+        "PYRMONT",
+        "REUSS_GREIZ",
+        "REUSS_SCHLEIZ",
+        "REUSS_LOBENSTEIN",
+        "REUSS_EBERSDORF"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Usare 35 relazioni member_of attive nello snapshot. Pyrmont è membro autonomo; Waldeck e Pyrmont restano entità statuali separate fino alla successione del settembre 1812.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_HGIS_WALDECK",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_PYRMONT_ACCESSION",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_WALDECK_PYRMONT_LWL",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_WALDECK_PYRMONT",
+      "title": "Waldeck e Pyrmont al 1 giugno 1812",
+      "area": "Germania",
+      "issue_type": "ontology",
+      "description": "Dal 1805 Friedrich governava Waldeck e Georg governava Pyrmont separatamente. HGIS conferma la separazione statuale; l’atto del 18 aprile 1807 intestato a Georg documenta la sua adesione al Rheinbund. La personal union con Waldeck inizia soltanto dopo la morte di Friedrich nel settembre 1812.",
+      "affected_entities": [
+        "WALDECK",
+        "PYRMONT"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Mantenere WALDECK e PYRMONT come due entità distinte e assegnare a entrambe una relazione member_of con CONF_RHINE; nessuna personal_union_with è attiva al 1 giugno 1812.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_HGIS_WALDECK",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_PYRMONT_ACCESSION",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_WALDECK_PYRMONT_LWL",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_SPAIN_CONTROL",
+      "title": "Controllo territoriale frammentato nella Penisola iberica",
+      "area": "Spagna",
+      "issue_type": "effective_control",
+      "description": "Sovranità rivendicata, amministrazione civile e controllo militare non coincidono. La futura geometria richiederà ricostruzione spaziale distinta per attori e date.",
+      "affected_entities": [
+        "ESP_JOSEPH",
+        "ESP_CADIZ",
+        "CAT_SPECIAL"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Usare spatial assertions separate per legal claim, civil administration e military control; geometry_id resta null.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_CATALONIA_STATUS",
+      "title": "Status giuridico della Catalogna amministrata dalla Francia",
+      "area": "Catalogna",
+      "issue_type": "legal_status",
+      "description": "Il decreto del 26 gennaio 1812 crea quattro dipartimenti e amministrazione francese diretta, ma lo studio istituzionale Fondation Napoléon precisa la mancata annessione giuridica ordinaria alla Francia.",
+      "affected_entities": [
+        "CAT_SPECIAL",
+        "CAT_MONTSERRAT",
+        "CAT_BOUCHES_EBRE",
+        "CAT_TER",
+        "CAT_SEGRE"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "CAT_SPECIAL non è territorial_component_of FRA_EMPIRE; viene modellata come special_french_administration con pretese spagnole concorrenti.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_ANDORRA_1812",
+      "title": "Andorra e il Département du Sègre",
+      "area": "Pirenei",
+      "issue_type": "administration",
+      "description": "Fonti catalane descrivono Andorra come inclusa nel Département du Sègre nel 1812; uno studio universitario qualifica tuttavia l’atto come progetto la cui piena implementazione sarebbe stata impedita dal declino militare napoleonico.",
+      "affected_entities": [
+        "ANDORRA",
+        "CAT_SEGRE"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Conservare ANDORRA come entità locale con sovereignty contested e spatial assertion francese planned_or_disputed; non trattarla né come Francia pienamente incorporata né come microstato invariato.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_ANDORRA_1806",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_ANDORRA_1812_STUDY",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_CATALONIA_ATLAS",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_BUCHAREST_TRANSITION",
+      "title": "Bucarest firmato quattro giorni prima dello snapshot",
+      "area": "Moldavia-Valacchia-Bessarabia",
+      "issue_type": "chronology",
+      "description": "Il trattato è firmato il 28 maggio 1812; l’evacuazione russa dei territori da restituire segue l’attuazione diplomatica. Il 1 giugno non va rappresentato come assetto materiale già concluso.",
+      "affected_entities": [
+        "BESSARABIA_TRANSITION",
+        "MOLDAVIA",
+        "WALLACHIA",
+        "RUS_EMPIRE",
+        "OTT_EMPIRE"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Usare pending_transfer per Bessarabia e handover_pending per Moldavia/Valacchia, con controllo russo ancora registrato.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_MWNF",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_MALTA_STATUS",
+      "title": "Status internazionale di Malta",
+      "area": "Mediterraneo",
+      "issue_type": "legal_status",
+      "description": "Il controllo britannico è de facto; la formalizzazione della sovranità britannica è successiva. La letteratura segnala una persistente questione di titolo giuridico collegata alla corona siciliana.",
+      "affected_entities": [
+        "MALTA",
+        "UK",
+        "SIC_KINGDOM"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Sovereignty indeterminate, holder/claim siciliano registrato con certezza media; controllo e amministrazione britannici ad alta certezza.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_IONIAN_SOVEREIGNTY",
+      "title": "Sovranità e controllo delle Isole Ionie",
+      "area": "Isole Ionie",
+      "issue_type": "legal_status",
+      "description": "La testimonianza coeva di Henry Holland conferma che nel 1812 Corfù e Paxos restavano in potere francese mentre Zante, Cefalonia, Itaca, Santa Maura e Cerigo erano sotto controllo britannico. Lo status internazionale resta distinto dal mero controllo militare.",
+      "affected_entities": [
+        "ION_CORFU",
+        "ION_PAXOS",
+        "ION_BRIT_GROUP",
+        "ION_ZANTE",
+        "ION_CEPHALONIA",
+        "ION_ITHACA",
+        "ION_SANTA_MAURA",
+        "ION_CERIGO"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Registrare il controllo per singola isola ad alta certezza; mantenere sovereignty indeterminate finché non sarà consolidata l’intera catena diplomatica.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_HELGOLAND_TITLE",
+      "title": "Titolo giuridico di Helgoland fra 1807 e 1814",
+      "area": "Mare del Nord",
+      "issue_type": "legal_status",
+      "description": "Il Landesarchiv Schleswig-Holstein documenta l’occupazione britannica del 1807 e la successiva fase britannica; la cessione formale danese viene distinta e resta successiva allo snapshot.",
+      "affected_entities": [
+        "HELIGOLAND",
+        "UK",
+        "DEN_NOR"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Sovereignty indeterminate con titolo danese conservato; occupazione e controllo britannici ad alta certezza.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_HELGOLAND_LASH",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_MONTENEGRO_STATUS",
+      "title": "Status del Montenegro rispetto alla Porta",
+      "area": "Balcani",
+      "issue_type": "legal_status",
+      "description": "I governanti montenegrini sostenevano l’indipendenza, gli Ottomani lo consideravano parte dell’Impero; il controllo ottomano effettivo sulle montagne era molto debole.",
+      "affected_entities": [
+        "MONTENEGRO",
+        "OTT_EMPIRE"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Modellare come de_facto_polity con sovereignty contested e controllo montenegrino predominant.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_MONTENEGRO_PRINCETON",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_SERBIA_1812",
+      "title": "Serbia insorta e articolo del trattato di Bucarest",
+      "area": "Serbia",
+      "issue_type": "legal_status",
+      "description": "Il movimento insurrezionale esercita un potere territoriale de facto; il trattato del 1812 prevede autogoverno ma resta nel quadro della sovranità ottomana e precede la riconquista del 1813.",
+      "affected_entities": [
+        "SERBIA_INSURGENT",
+        "OTT_EMPIRE"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Usare de_facto_polity + sovranità contestata, senza anticipare lo status autonomo consolidato degli anni successivi.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_SERBIA_MFA",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_BUCHAREST_MWNF",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_PONTECORVO_RULER",
+      "title": "Titolare preciso di Pontecorvo al 1 giugno 1812",
+      "area": "Italia",
+      "issue_type": "source_quality",
+      "description": "La fonte archivistica conferma il titolo di Lucien Murat ma non stabilisce da sola con sufficiente precisione la decorrenza dell’investitura rispetto allo snapshot.",
+      "affected_entities": [
+        "PONTECORVO"
+      ],
+      "resolution_status": "open",
+      "adopted_solution": "Lasciare office_holders vuoto e certezza complessiva media finché non si verifica l’atto d’investitura.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_PONTECORVO_AN",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_LUCCA_SOURCE",
+      "title": "Fonte archivistica specifica per Lucca e Piombino",
+      "area": "Italia",
+      "issue_type": "source_quality",
+      "description": "L’audit ha sostituito la home generica SIAS con il record archivistico specifico Principato Baciocchi, 1805-1814.",
+      "affected_entities": [
+        "LUCCA_PIOMBINO"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Usare il permalink SIAS specifico come fonte archivistica principale, con IEG come controllo cartografico generale.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_LUCCA_ARCHIVE",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_PAPAL_CLAIM",
+      "title": "Pretesa temporale pontificia dopo l’annessione",
+      "area": "Italia",
+      "issue_type": "legal_status",
+      "description": "L’Impero francese amministra gli ex Stati pontifici, mentre Pio VII non riconosce la perdita della potestà temporale.",
+      "affected_entities": [
+        "HOLY_SEE",
+        "FRA_PAPAL"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Conservare HOLY_SEE come sovereign_institution nonspatial che claims_sovereignty_over FRA_PAPAL; nessuna doppia geometria statale.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_HANOVER_SOURCE",
+      "title": "Continuità hannoveriana in esilio",
+      "area": "Germania",
+      "issue_type": "source_quality",
+      "description": "Il Niedersächsisches Landesarchiv documenta che nel giugno 1803 il ministero hannoveriano si trasferì prima a Lauenburg e poi a Londra durante l’occupazione francese. La natura precisa delle strutture operative nel 1812 resta materia da trattare con prudenza.",
+      "affected_entities": [
+        "HANOVER_CLAIM"
+      ],
+      "resolution_status": "provisionally_resolved",
+      "adopted_solution": "Conservare HANOVER_CLAIM come record nonspatial a certezza media, ora sostenuto da una fonte archivistica dedicata; non trasformarlo in geometria territoriale autonoma.",
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_HANOVER_NLA",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_ERFURT_LEGAL_FORM",
+      "title": "Qualificazione del dominio di Erfurt",
+      "area": "Germania",
+      "issue_type": "legal_status",
+      "description": "La descrizione archivistica del Landesarchiv Thüringen qualifica Erfurt nel 1806-1813 come domaine réservée à l’empereur, confermando la separazione dai normali Rheinbundstaaten.",
+      "affected_entities": [
+        "ERFURT_DOMAIN"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Mantenere integration_mode imperial_domain, sovranità francese e amministrazione diretta napoleonica; Erfurt non è membro del Rheinbund.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ERFURT_ARCHIVE",
+          "supports": [
+            "issue_assessment"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRB_COSPAIA_1812",
+      "title": "Cospaia non è repubblica indipendente nello snapshot 1812",
+      "area": "Italia centrale",
+      "issue_type": "legal_status",
+      "description": "Il checkpoint di Fase 4 la elencava come microrepubblica, ma il profilo archivistico italiano indica una reggenza imperiale francese 1809-1814.",
+      "affected_entities": [
+        "COSPAIA_LOCAL",
+        "FRA_PAPAL"
+      ],
+      "resolution_status": "resolved",
+      "adopted_solution": "Correggere l’ontologia: COSPAIA_LOCAL resta località storica, non Stato; è ricompresa nel dominio francese dell’ex territorio pontificio.",
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_COSPAIA_ARCHIVE",
+          "supports": [
+            "issue_assessment"
+          ]
+        }
+      ]
+    }
+  ]
+}

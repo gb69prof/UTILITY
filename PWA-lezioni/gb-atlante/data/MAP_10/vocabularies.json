@@ -1,0 +1,917 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "vocabularies": {
+    "entity_class": [
+      {
+        "id": "state",
+        "label_it": "Stato",
+        "definition": "Entità politica territoriale dotata o rivendicante personalità statale propria."
+      },
+      {
+        "id": "confederation",
+        "label_it": "Confederazione",
+        "definition": "Associazione istituzionale di entità politiche che non implica sovranità territoriale unitaria."
+      },
+      {
+        "id": "claimant_government",
+        "label_it": "Governo rivendicante",
+        "definition": "Governo organizzato che rivendica legittimità o sovranità senza controllare necessariamente tutto il territorio rivendicato."
+      },
+      {
+        "id": "autonomous_polity",
+        "label_it": "Entità autonoma",
+        "definition": "Entità dotata di autogoverno interno ma inserita in una sovranità superiore."
+      },
+      {
+        "id": "de_facto_polity",
+        "label_it": "Entità politica de facto",
+        "definition": "Potere territoriale organizzato con controllo effettivo ma status internazionale non pienamente stabilizzato."
+      },
+      {
+        "id": "sovereign_institution",
+        "label_it": "Istituzione sovrana",
+        "definition": "Istituzione che esercita o rivendica potestà sovrana senza coincidere con un normale Stato territoriale."
+      },
+      {
+        "id": "territorial_unit",
+        "label_it": "Unità territoriale",
+        "definition": "Territorio politicamente significativo privo di distinta personalità statale."
+      },
+      {
+        "id": "administrative_unit",
+        "label_it": "Unità amministrativa",
+        "definition": "Suddivisione amministrativa formale di un’entità superiore."
+      }
+    ],
+    "constitutional_form": [
+      {
+        "id": "empire",
+        "label_it": "Impero",
+        "definition": "Monarchia imperiale."
+      },
+      {
+        "id": "kingdom",
+        "label_it": "Regno",
+        "definition": "Monarchia regia."
+      },
+      {
+        "id": "grand_duchy",
+        "label_it": "Granducato",
+        "definition": "Monarchia con titolo granducale."
+      },
+      {
+        "id": "duchy",
+        "label_it": "Ducato",
+        "definition": "Monarchia con titolo ducale."
+      },
+      {
+        "id": "principality",
+        "label_it": "Principato",
+        "definition": "Monarchia con titolo principesco."
+      },
+      {
+        "id": "co_principality",
+        "label_it": "Coprincipato",
+        "definition": "Entità sottoposta a due co-sovrani o co-signori."
+      },
+      {
+        "id": "confederation",
+        "label_it": "Confederazione",
+        "definition": "Forma confederale."
+      },
+      {
+        "id": "republic",
+        "label_it": "Repubblica",
+        "definition": "Forma repubblicana."
+      },
+      {
+        "id": "free_city",
+        "label_it": "Città libera",
+        "definition": "Entità statale cittadina con status di città libera."
+      },
+      {
+        "id": "canton",
+        "label_it": "Cantone",
+        "definition": "Entità cantonale confederata."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Forma costituzionale non pertinente al record."
+      }
+    ],
+    "sovereignty_status": [
+      {
+        "id": "full",
+        "label_it": "Piena",
+        "definition": "Nessuna sovranità giuridicamente superiore registrata nel modello."
+      },
+      {
+        "id": "shared",
+        "label_it": "Condivisa",
+        "definition": "La sovranità è esercitata o rivendicata congiuntamente da più soggetti."
+      },
+      {
+        "id": "under_suzerainty",
+        "label_it": "Sotto suzeraineté",
+        "definition": "Autonomia interna sotto una sovranità o suzeraineté formalmente superiore."
+      },
+      {
+        "id": "contested",
+        "label_it": "Contestata",
+        "definition": "Due o più pretese di sovranità incompatibili sono politicamente operative."
+      },
+      {
+        "id": "pending_transfer",
+        "label_it": "Trasferimento pendente",
+        "definition": "Il trasferimento è stato concordato ma non è ancora considerato perfezionato o pienamente attuato nello snapshot."
+      },
+      {
+        "id": "no_separate_sovereignty",
+        "label_it": "Nessuna sovranità separata",
+        "definition": "Il territorio appartiene giuridicamente a un’altra entità e non possiede sovranità propria."
+      },
+      {
+        "id": "indeterminate",
+        "label_it": "Indeterminata",
+        "definition": "Le fonti non consentono di ridurre in modo affidabile lo status a una delle categorie più determinate."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "L’entità non è portatrice di sovranità territoriale propria."
+      }
+    ],
+    "effective_control_status": [
+      {
+        "id": "full",
+        "label_it": "Pieno",
+        "definition": "Un solo attore controlla stabilmente quasi tutto il territorio pertinente."
+      },
+      {
+        "id": "predominant",
+        "label_it": "Predominante",
+        "definition": "Un attore domina, con eccezioni territoriali significative."
+      },
+      {
+        "id": "partial",
+        "label_it": "Parziale",
+        "definition": "Controllo importante ma non dominante sull’intero territorio."
+      },
+      {
+        "id": "fragmented",
+        "label_it": "Frammentato",
+        "definition": "Più attori controllano aree diverse senza controllo unitario stabile."
+      },
+      {
+        "id": "foreign_occupation",
+        "label_it": "Occupazione straniera",
+        "definition": "Un soggetto esterno esercita controllo militare o amministrativo senza che ciò implichi automaticamente sovranità."
+      },
+      {
+        "id": "handover_pending",
+        "label_it": "Consegna pendente",
+        "definition": "Il precedente occupante mantiene controllo in attesa di evacuazione o trasferimento concordato."
+      },
+      {
+        "id": "none",
+        "label_it": "Nessuno",
+        "definition": "Nessun controllo territoriale diretto significativo."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Controllo territoriale non pertinente al record."
+      }
+    ],
+    "integration_mode": [
+      {
+        "id": "system_center",
+        "label_it": "Centro del sistema",
+        "definition": "L’Impero francese come centro sovrano del sistema napoleonico."
+      },
+      {
+        "id": "direct_annexation",
+        "label_it": "Annessione diretta",
+        "definition": "Territorio legalmente incorporato nell’Impero francese."
+      },
+      {
+        "id": "special_french_administration",
+        "label_it": "Amministrazione francese speciale",
+        "definition": "Amministrazione diretta francese senza normale annessione giuridica."
+      },
+      {
+        "id": "personal_union_napoleonic_crown",
+        "label_it": "Unione personale napoleonica",
+        "definition": "Stato distinto la cui corona è detenuta personalmente da Napoleone."
+      },
+      {
+        "id": "dynastic_client",
+        "label_it": "Stato dinastico cliente",
+        "definition": "Stato distinto governato da un membro della famiglia/dinastia napoleonica e fortemente dipendente dalla Francia."
+      },
+      {
+        "id": "confederated_client",
+        "label_it": "Cliente confederato",
+        "definition": "Stato membro della Confederazione del Reno, sovrano ma strutturalmente legato al sistema francese."
+      },
+      {
+        "id": "client_state",
+        "label_it": "Stato cliente",
+        "definition": "Stato distinto strutturalmente dipendente o protetto dalla Francia senza rientrare in una categoria più specifica."
+      },
+      {
+        "id": "imperial_fief",
+        "label_it": "Feudo imperiale",
+        "definition": "Entità feudale o principesca concessa dal sistema imperiale napoleonico."
+      },
+      {
+        "id": "imperial_domain",
+        "label_it": "Dominio imperiale",
+        "definition": "Territorio direttamente riservato all’autorità di Napoleone senza essere un normale territorio dipartimentale francese."
+      },
+      {
+        "id": "mediated_state",
+        "label_it": "Stato mediato",
+        "definition": "Entità il cui assetto è stato garantito o imposto dalla mediazione napoleonica."
+      },
+      {
+        "id": "treaty_ally",
+        "label_it": "Alleato per trattato",
+        "definition": "Stato sovrano alleato della Francia mediante accordo internazionale."
+      },
+      {
+        "id": "coerced_treaty_ally",
+        "label_it": "Alleato per trattato sotto costrizione",
+        "definition": "Alleanza formalmente internazionale conclusa sotto forte pressione strategico-militare."
+      },
+      {
+        "id": "military_occupation",
+        "label_it": "Occupazione militare francese",
+        "definition": "Territorio controllato militarmente dalla Francia senza annessione."
+      },
+      {
+        "id": "outside_system",
+        "label_it": "Esterno al sistema",
+        "definition": "Nessuna integrazione strutturale nel sistema napoleonico."
+      }
+    ],
+    "alignment": [
+      {
+        "id": "napoleonic_system",
+        "label_it": "Sistema napoleonico",
+        "definition": "Entità organicamente interna al sistema napoleonico."
+      },
+      {
+        "id": "france_aligned",
+        "label_it": "Allineata alla Francia",
+        "definition": "Entità politicamente o militarmente allineata alla Francia."
+      },
+      {
+        "id": "coerced_france_aligned",
+        "label_it": "Allineata sotto costrizione",
+        "definition": "Allineamento alla Francia prodotto in misura determinante da pressione o costrizione."
+      },
+      {
+        "id": "neutral",
+        "label_it": "Neutrale",
+        "definition": "Nessun allineamento bellico stabile con o contro la Francia nello snapshot."
+      },
+      {
+        "id": "anti_french",
+        "label_it": "Antifrancese",
+        "definition": "Entità schierata contro la Francia."
+      },
+      {
+        "id": "internally_divided",
+        "label_it": "Divisa internamente",
+        "definition": "Allineamento non riducibile a un’unica posizione per conflitto politico interno."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Allineamento non pertinente al record."
+      }
+    ],
+    "dependence_level": [
+      {
+        "id": "none",
+        "label_it": "Nessuna",
+        "definition": "Nessuna dipendenza stabile dalla Francia."
+      },
+      {
+        "id": "limited",
+        "label_it": "Limitata",
+        "definition": "Obblighi specifici con ampia autonomia politica."
+      },
+      {
+        "id": "substantial",
+        "label_it": "Sostanziale",
+        "definition": "Politica estera o militare significativamente condizionata."
+      },
+      {
+        "id": "high",
+        "label_it": "Alta",
+        "definition": "Scelte strategiche largamente determinate dalla Francia pur restando istituzioni proprie."
+      },
+      {
+        "id": "direct",
+        "label_it": "Diretta",
+        "definition": "Autorità francesi o Napoleone esercitano direttamente governo o amministrazione."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Campo non pertinente."
+      }
+    ],
+    "coercion_level": [
+      {
+        "id": "none",
+        "label_it": "Nessuna",
+        "definition": "Nessuna costrizione specifica registrata."
+      },
+      {
+        "id": "diplomatic_pressure",
+        "label_it": "Pressione diplomatica",
+        "definition": "Condizionamento principalmente diplomatico."
+      },
+      {
+        "id": "structural_constraint",
+        "label_it": "Vincolo strutturale",
+        "definition": "Dipendenza istituzionale o strategica che limita stabilmente l’autonomia."
+      },
+      {
+        "id": "military_compulsion",
+        "label_it": "Costrizione militare",
+        "definition": "Adesione o comportamento determinati da pressione militare diretta o minaccia credibile."
+      },
+      {
+        "id": "occupation",
+        "label_it": "Occupazione",
+        "definition": "Costrizione esercitata attraverso occupazione militare."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Campo non pertinente."
+      }
+    ],
+    "war_status": [
+      {
+        "id": "not_at_war_with_france",
+        "label_it": "Non in guerra con la Francia",
+        "definition": "Nessuno stato di guerra con la Francia alla data dello snapshot."
+      },
+      {
+        "id": "at_war_with_france",
+        "label_it": "In guerra con la Francia",
+        "definition": "Stato di guerra con la Francia alla data dello snapshot."
+      },
+      {
+        "id": "prewar_adversary",
+        "label_it": "Avversario prebellico",
+        "definition": "Rapporto ostile e mobilitazione verso la guerra, senza ancora stato di guerra nel giorno dello snapshot."
+      },
+      {
+        "id": "internal_conflict_with_french_forces",
+        "label_it": "Conflitto interno con forze francesi",
+        "definition": "Conflitto territoriale nel quale forze francesi combattono entro il territorio senza semplice guerra interstatale binaria."
+      },
+      {
+        "id": "occupied_not_belligerent",
+        "label_it": "Occupato senza belligeranza autonoma",
+        "definition": "Territorio occupato il cui soggetto politico non è trattato come belligerante autonomo."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Campo non pertinente."
+      }
+    ],
+    "certainty": [
+      {
+        "id": "high",
+        "label_it": "Alta",
+        "definition": "Fonte primaria diretta o convergenza di fonti autorevoli senza contraddizioni sostanziali."
+      },
+      {
+        "id": "medium",
+        "label_it": "Media",
+        "definition": "Fatto principale solido ma data, estensione o interpretazione presentano margini non risolti."
+      },
+      {
+        "id": "low",
+        "label_it": "Bassa",
+        "definition": "Ricostruzione plausibile con lacune o divergenze sostanziali."
+      },
+      {
+        "id": "unknown",
+        "label_it": "Sconosciuta",
+        "definition": "Il database dichiara di non poter stabilire il dato."
+      }
+    ],
+    "display_level": [
+      {
+        "id": "europe",
+        "label_it": "Europa",
+        "definition": "Normalmente visibile alla scala europea."
+      },
+      {
+        "id": "regional",
+        "label_it": "Regionale",
+        "definition": "Visibile aumentando lo zoom o in una vista regionale."
+      },
+      {
+        "id": "local",
+        "label_it": "Locale",
+        "definition": "Microentità interrogabile ma normalmente nascosta alla scala europea."
+      }
+    ],
+    "spatial_mode": [
+      {
+        "id": "direct_area",
+        "label_it": "Area diretta",
+        "definition": "L’entità riceverà una propria geometria territoriale."
+      },
+      {
+        "id": "derived_area",
+        "label_it": "Area derivata",
+        "definition": "L’area sarà derivata dall’unione di entità componenti e non implica possesso sovrano unitario."
+      },
+      {
+        "id": "overlap_layer",
+        "label_it": "Layer sovrapposto",
+        "definition": "L’entità o affermazione deve essere visualizzata come sovrapposizione ad altre geometrie."
+      },
+      {
+        "id": "point_only",
+        "label_it": "Solo punto",
+        "definition": "Entità rappresentabile normalmente come punto."
+      },
+      {
+        "id": "nonspatial",
+        "label_it": "Non spaziale",
+        "definition": "Entità priva di geometria propria nello snapshot."
+      }
+    ],
+    "relation_type": [
+      {
+        "id": "member_of",
+        "label_it": "Membro di",
+        "definition": "Appartenenza istituzionale; non implica sovranità territoriale del contenitore."
+      },
+      {
+        "id": "territorial_component_of",
+        "label_it": "Componente territoriale di",
+        "definition": "Il territorio è parte giuridica o analitica dell’entità oggetto."
+      },
+      {
+        "id": "administrative_subdivision_of",
+        "label_it": "Suddivisione amministrativa di",
+        "definition": "Gerarchia amministrativa formale."
+      },
+      {
+        "id": "autonomous_within",
+        "label_it": "Autonomo entro",
+        "definition": "Autogoverno interno dentro una sovranità superiore."
+      },
+      {
+        "id": "vassal_of",
+        "label_it": "Vassallo di",
+        "definition": "Dipendenza formale da un suzerain."
+      },
+      {
+        "id": "protected_by",
+        "label_it": "Protetto da",
+        "definition": "Protezione politica o militare senza annessione."
+      },
+      {
+        "id": "mediated_by",
+        "label_it": "Mediato da",
+        "definition": "Assetto politico-costituzionale garantito o imposto dal soggetto oggetto."
+      },
+      {
+        "id": "administered_by",
+        "label_it": "Amministrato da",
+        "definition": "Amministrazione civile esercitata dall’altro soggetto."
+      },
+      {
+        "id": "occupied_by",
+        "label_it": "Occupato da",
+        "definition": "Occupazione militare straniera."
+      },
+      {
+        "id": "claims_sovereignty_over",
+        "label_it": "Rivendica sovranità su",
+        "definition": "Pretesa di sovranità sul territorio o entità oggetto."
+      },
+      {
+        "id": "personal_union_with",
+        "label_it": "In unione personale con",
+        "definition": "Due Stati distinti condividono il medesimo sovrano."
+      },
+      {
+        "id": "dynastic_marriage_link_with",
+        "label_it": "Legame matrimoniale dinastico con",
+        "definition": "Legame dinastico politicamente significativo mediante matrimonio."
+      },
+      {
+        "id": "dynastic_link_with",
+        "label_it": "Legame dinastico con",
+        "definition": "Legame dinastico significativo non ridotto a matrimonio o unione personale."
+      },
+      {
+        "id": "military_alliance_with",
+        "label_it": "Alleanza militare con",
+        "definition": "Alleanza militare formalizzata."
+      },
+      {
+        "id": "military_obligation_to",
+        "label_it": "Obbligo militare verso",
+        "definition": "Obbligo strutturato di contingenti, passaggi, rifornimenti o altri servizi militari."
+      },
+      {
+        "id": "co_belligerent_with",
+        "label_it": "Cobelligerante con",
+        "definition": "Combattimento effettivo contro il medesimo avversario."
+      },
+      {
+        "id": "at_war_with",
+        "label_it": "In guerra con",
+        "definition": "Stato di guerra tra due soggetti."
+      },
+      {
+        "id": "transfer_agreed_to",
+        "label_it": "Trasferimento concordato a",
+        "definition": "Trasferimento territoriale diplomaticamente concordato ma non necessariamente completato."
+      },
+      {
+        "id": "transfer_completed_to",
+        "label_it": "Trasferimento completato a",
+        "definition": "Trasferimento territoriale perfezionato."
+      },
+      {
+        "id": "guaranteed_by",
+        "label_it": "Garantito da",
+        "definition": "Status, territorio o costituzione garantiti dall’altro soggetto."
+      },
+      {
+        "id": "succeeds",
+        "label_it": "Succede a",
+        "definition": "Successione politico-istituzionale."
+      }
+    ],
+    "spatial_layer_type": [
+      {
+        "id": "sovereignty_claim",
+        "label_it": "Pretesa di sovranità",
+        "definition": "Geometria futura di una pretesa giuridico-politica."
+      },
+      {
+        "id": "civil_administration",
+        "label_it": "Amministrazione civile",
+        "definition": "Geometria futura dell’amministrazione civile effettiva."
+      },
+      {
+        "id": "military_control",
+        "label_it": "Controllo militare",
+        "definition": "Geometria futura del controllo militare effettivo."
+      },
+      {
+        "id": "military_occupation",
+        "label_it": "Occupazione militare",
+        "definition": "Geometria futura di un’occupazione straniera senza automatica annessione."
+      },
+      {
+        "id": "special_administration",
+        "label_it": "Amministrazione speciale",
+        "definition": "Geometria futura di un regime amministrativo eccezionale."
+      },
+      {
+        "id": "military_presence",
+        "label_it": "Presenza militare",
+        "definition": "Presenza di forze senza implicare controllo stabile."
+      },
+      {
+        "id": "treaty_transfer_pending",
+        "label_it": "Trasferimento pendente da trattato",
+        "definition": "Area il cui trasferimento è concordato ma non ancora considerato completamente attuato."
+      }
+    ],
+    "source_type": [
+      {
+        "id": "primary_legal",
+        "label_it": "Fonte primaria giuridica",
+        "definition": "Legge, costituzione, decreto o atto normativo coevo."
+      },
+      {
+        "id": "primary_diplomatic",
+        "label_it": "Fonte primaria diplomatica",
+        "definition": "Trattato, convenzione, protocollo o atto diplomatico coevo."
+      },
+      {
+        "id": "primary_administrative",
+        "label_it": "Fonte primaria amministrativa",
+        "definition": "Documento amministrativo o archivistico coevo."
+      },
+      {
+        "id": "primary_narrative",
+        "label_it": "Fonte primaria narrativa",
+        "definition": "Testimonianza o resoconto coevo direttamente pertinente, distinto da atto normativo o amministrativo."
+      },
+      {
+        "id": "contemporary_cartography",
+        "label_it": "Cartografia coeva",
+        "definition": "Carta prodotta nell’epoca rappresentata."
+      },
+      {
+        "id": "contemporary_statistical",
+        "label_it": "Statistica coeva",
+        "definition": "Repertorio, statistica o manuale contemporaneo agli eventi."
+      },
+      {
+        "id": "academic_historiography",
+        "label_it": "Storiografia accademica",
+        "definition": "Studio scientifico moderno."
+      },
+      {
+        "id": "institutional_historiography",
+        "label_it": "Storiografia istituzionale",
+        "definition": "Ricostruzione storica pubblicata da istituzione archivistica, museale o pubblica."
+      },
+      {
+        "id": "modern_cartographic_reconstruction",
+        "label_it": "Ricostruzione cartografica moderna",
+        "definition": "Carta storica moderna elaborata scientificamente."
+      },
+      {
+        "id": "gis_dataset",
+        "label_it": "Dataset GIS",
+        "definition": "Dataset geografico strutturato."
+      },
+      {
+        "id": "archival_catalog",
+        "label_it": "Catalogo archivistico",
+        "definition": "Descrizione archivistica o catalografica di documenti."
+      }
+    ],
+    "date_precision": [
+      {
+        "id": "day",
+        "label_it": "Giorno",
+        "definition": "Data precisa al giorno."
+      },
+      {
+        "id": "month",
+        "label_it": "Mese",
+        "definition": "Data precisa al mese."
+      },
+      {
+        "id": "year",
+        "label_it": "Anno",
+        "definition": "Data precisa soltanto all’anno."
+      },
+      {
+        "id": "range",
+        "label_it": "Intervallo",
+        "definition": "La data rappresenta un intervallo documentario."
+      },
+      {
+        "id": "unknown",
+        "label_it": "Sconosciuta",
+        "definition": "Precisione non determinabile."
+      }
+    ],
+    "record_nature": [
+      {
+        "id": "contemporary_political_entity",
+        "label_it": "Entità politica contemporanea",
+        "definition": "Record che rappresenta una entità politica effettivamente operante nello snapshot."
+      },
+      {
+        "id": "historical_analytical_aggregation",
+        "label_it": "Aggregazione storico-analitica",
+        "definition": "Aggregazione creata da GB-Atlante per conservare origine storica o regime territoriale; non pretende di essere un ente amministrativo coevo."
+      },
+      {
+        "id": "administrative_subdivision",
+        "label_it": "Suddivisione amministrativa",
+        "definition": "Record di una suddivisione amministrativa formalmente esistente."
+      },
+      {
+        "id": "claimant_structure",
+        "label_it": "Struttura rivendicante",
+        "definition": "Record di un governo o struttura politica concorrente."
+      },
+      {
+        "id": "derived_grouping",
+        "label_it": "Raggruppamento derivato",
+        "definition": "Raggruppamento analitico di unità componenti."
+      },
+      {
+        "id": "historical_locality",
+        "label_it": "Località storica",
+        "definition": "Record locale conservato per rilevanza storica senza attribuirgli automaticamente statualità."
+      }
+    ],
+    "capital_role": [
+      {
+        "id": "capital",
+        "label_it": "Capitale",
+        "definition": "Capitale politica ordinaria."
+      },
+      {
+        "id": "royal_capital",
+        "label_it": "Capitale regia",
+        "definition": "Capitale della monarchia."
+      },
+      {
+        "id": "government_seat",
+        "label_it": "Sede del governo",
+        "definition": "Sede effettiva degli organi centrali."
+      },
+      {
+        "id": "legal_capital",
+        "label_it": "Capitale legale",
+        "definition": "Capitale designata giuridicamente, anche se il trasferimento amministrativo non è completo."
+      },
+      {
+        "id": "de_facto_government_seat",
+        "label_it": "Sede governativa de facto",
+        "definition": "Sede effettiva diversa dalla capitale legale."
+      },
+      {
+        "id": "administrative_centre",
+        "label_it": "Centro amministrativo",
+        "definition": "Centro principale di una unità territoriale o amministrativa."
+      },
+      {
+        "id": "residence",
+        "label_it": "Residenza",
+        "definition": "Residenza principesca o dinastica rilevante."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Ruolo non pertinente."
+      }
+    ],
+    "office_role": [
+      {
+        "id": "sovereign",
+        "label_it": "Sovrano",
+        "definition": "Titolare della sovranità monarchica."
+      },
+      {
+        "id": "co_sovereign",
+        "label_it": "Co-sovrano",
+        "definition": "Uno dei titolari di una sovranità condivisa."
+      },
+      {
+        "id": "regent",
+        "label_it": "Reggente",
+        "definition": "Esercita il governo in nome di un sovrano minorenne o impedito."
+      },
+      {
+        "id": "viceroy",
+        "label_it": "Viceré",
+        "definition": "Esercita il governo vicereale."
+      },
+      {
+        "id": "head_of_government",
+        "label_it": "Capo del governo",
+        "definition": "Responsabile politico dell’esecutivo."
+      },
+      {
+        "id": "governor",
+        "label_it": "Governatore",
+        "definition": "Autorità territoriale o militare superiore."
+      },
+      {
+        "id": "prince_regent",
+        "label_it": "Principe reggente",
+        "definition": "Reggente con titolo principesco."
+      },
+      {
+        "id": "not_applicable",
+        "label_it": "Non applicabile",
+        "definition": "Ruolo non pertinente."
+      }
+    ],
+    "source_reliability": [
+      {
+        "id": "primary_direct",
+        "label_it": "Primaria diretta",
+        "definition": "Fonte coeva direttamente pertinente all’affermazione."
+      },
+      {
+        "id": "high",
+        "label_it": "Alta",
+        "definition": "Fonte istituzionale o accademica autorevole e direttamente pertinente."
+      },
+      {
+        "id": "medium",
+        "label_it": "Media",
+        "definition": "Fonte utile e plausibile ma non sufficiente da sola per affermazioni critiche."
+      },
+      {
+        "id": "low",
+        "label_it": "Bassa",
+        "definition": "Fonte provvisoria o secondaria debole, da sostituire."
+      }
+    ],
+    "resolution_status": [
+      {
+        "id": "open",
+        "label_it": "Aperto",
+        "definition": "Problema ancora irrisolto."
+      },
+      {
+        "id": "provisionally_resolved",
+        "label_it": "Risolto provvisoriamente",
+        "definition": "Soluzione operativa adottata ma soggetta a revisione."
+      },
+      {
+        "id": "resolved",
+        "label_it": "Risolto",
+        "definition": "Problema sufficientemente risolto per lo stato corrente del dataset."
+      },
+      {
+        "id": "blocked",
+        "label_it": "Bloccato",
+        "definition": "Problema che impedisce una fase successiva specifica."
+      }
+    ],
+    "issue_type": [
+      {
+        "id": "chronology",
+        "label_it": "Cronologia",
+        "definition": "Incertezza o discordanza su date e sequenze."
+      },
+      {
+        "id": "legal_status",
+        "label_it": "Status giuridico",
+        "definition": "Incertezza sulla sovranità o qualificazione giuridica."
+      },
+      {
+        "id": "effective_control",
+        "label_it": "Controllo effettivo",
+        "definition": "Incertezza sulla distribuzione del controllo reale."
+      },
+      {
+        "id": "membership",
+        "label_it": "Appartenenza",
+        "definition": "Incertezza su appartenenza istituzionale o conteggio dei membri."
+      },
+      {
+        "id": "source_quality",
+        "label_it": "Qualità fonte",
+        "definition": "La fonte disponibile necessita rafforzamento o sostituzione."
+      },
+      {
+        "id": "ontology",
+        "label_it": "Ontologia",
+        "definition": "Problema nella definizione o granularità di entità e relazioni."
+      },
+      {
+        "id": "administration",
+        "label_it": "Amministrazione",
+        "definition": "Incertezza sul regime amministrativo."
+      },
+      {
+        "id": "territorial_scope",
+        "label_it": "Ambito territoriale",
+        "definition": "Incertezza sull’estensione spaziale futura."
+      },
+      {
+        "id": "naming",
+        "label_it": "Denominazione",
+        "definition": "Incertezza o varianti significative del nome."
+      }
+    ],
+    "spatial_assertion_status": [
+      {
+        "id": "active",
+        "label_it": "Attiva",
+        "definition": "Affermazione valida nello snapshot."
+      },
+      {
+        "id": "transitional",
+        "label_it": "Transitoria",
+        "definition": "Affermazione relativa a una situazione in corso di trasferimento o evacuazione."
+      },
+      {
+        "id": "contested",
+        "label_it": "Contestata",
+        "definition": "Affermazione concorrente con altre pretese o controlli."
+      },
+      {
+        "id": "planned_or_disputed",
+        "label_it": "Pianificata o discussa",
+        "definition": "Provvedimento/intento documentato la cui piena implementazione è incerta."
+      }
+    ]
+  }
+}

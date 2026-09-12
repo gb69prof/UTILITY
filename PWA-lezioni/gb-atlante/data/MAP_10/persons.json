@@ -1,0 +1,1018 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "persons": [
+    {
+      "id": "P_NAPOLEON_I",
+      "name": "Napoleone Bonaparte",
+      "birth": "1769-08-15",
+      "death": "1821-05-05",
+      "aliases": [
+        "Napoleone I"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_DUSSELDORF_BERG",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_JOSEPH_BONAPARTE",
+      "name": "Giuseppe Bonaparte",
+      "birth": "1768-01-07",
+      "death": "1844-07-28",
+      "aliases": [
+        "Giuseppe I di Spagna"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_JEROME_BONAPARTE",
+      "name": "Girolamo Bonaparte",
+      "birth": "1784-11-15",
+      "death": "1860-06-24",
+      "aliases": [
+        "Jérôme Bonaparte"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_EUGENE_BEAUHARNAIS",
+      "name": "Eugenio di Beauharnais",
+      "birth": "1781-09-03",
+      "death": "1824-02-21",
+      "aliases": [
+        "Eugène de Beauharnais"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_MURAT",
+      "name": "Gioacchino Murat",
+      "birth": "1767-03-25",
+      "death": "1815-10-13",
+      "aliases": [
+        "Joachim Murat"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_DUSSELDORF_BERG",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRANCIS_I_AUSTRIA",
+      "name": "Francesco I d’Austria",
+      "birth": "1768-02-12",
+      "death": "1835-03-02",
+      "aliases": [
+        "Francesco II del Sacro Romano Impero"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_MARIE_LOUISE",
+      "name": "Maria Luisa d’Austria",
+      "birth": "1791-12-12",
+      "death": "1847-12-17",
+      "aliases": [
+        "Marie-Louise"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_DUSSELDORF_BERG",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_WILLIAM_III",
+      "name": "Federico Guglielmo III di Prussia",
+      "birth": "1770-08-03",
+      "death": "1840-06-07",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_ALEXANDER_I",
+      "name": "Alessandro I di Russia",
+      "birth": "1777-12-23",
+      "death": "1825-12-01",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_FINLAND_GOV",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_AUGUSTUS_I",
+      "name": "Federico Augusto I di Sassonia",
+      "birth": "1750-12-23",
+      "death": "1827-05-05",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_MAXIMILIAN_I_JOSEPH",
+      "name": "Massimiliano I Giuseppe di Baviera",
+      "birth": "1756-05-27",
+      "death": "1825-10-13",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FERDINAND_VII",
+      "name": "Ferdinando VII di Spagna",
+      "birth": "1784-10-14",
+      "death": "1833-09-29",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_CHARLES_XIII_SWEDEN",
+      "name": "Carlo XIII di Svezia",
+      "birth": "1748-10-07",
+      "death": "1818-02-05",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_BERNADOTTE",
+      "name": "Jean-Baptiste Bernadotte",
+      "birth": "1763-01-26",
+      "death": "1844-03-08",
+      "aliases": [
+        "Carlo Giovanni, principe ereditario di Svezia"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_FN_RUSSIA_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_VI_DENMARK",
+      "name": "Federico VI di Danimarca",
+      "birth": "1768-01-28",
+      "death": "1839-12-03",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_GEORGE_III",
+      "name": "Giorgio III del Regno Unito",
+      "birth": "1738-06-04",
+      "death": "1820-01-29",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_GEORGE_PRINCE_REGENT",
+      "name": "Giorgio, Principe Reggente",
+      "birth": "1762-08-12",
+      "death": "1830-06-26",
+      "aliases": [
+        "futuro Giorgio IV"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_JOAO_PORTUGAL",
+      "name": "Giovanni, Principe Reggente del Portogallo",
+      "birth": "1767-05-13",
+      "death": "1826-03-10",
+      "aliases": [
+        "futuro Giovanni VI"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_MARIA_I_PORTUGAL",
+      "name": "Maria I del Portogallo",
+      "birth": "1734-12-17",
+      "death": "1816-03-20",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FERDINAND_SICILY",
+      "name": "Ferdinando III di Sicilia",
+      "birth": "1751-01-12",
+      "death": "1825-01-04",
+      "aliases": [
+        "Ferdinando IV di Napoli"
+      ],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_VICTOR_EMMANUEL_I",
+      "name": "Vittorio Emanuele I di Sardegna",
+      "birth": "1759-07-24",
+      "death": "1824-01-10",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_MAHMUD_II",
+      "name": "Mahmud II",
+      "birth": "1785-07-20",
+      "death": "1839-07-01",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_MWNF",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_BERTHIER",
+      "name": "Louis-Alexandre Berthier",
+      "birth": "1753-11-20",
+      "death": "1815-06-01",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_ELISA_BONAPARTE",
+      "name": "Elisa Bonaparte",
+      "birth": "1777-01-03",
+      "death": "1820-08-07",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_LUCCA_ARCHIVE",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FELICE_BACIOCCHI",
+      "name": "Felice Baciocchi",
+      "birth": "1762-05-18",
+      "death": "1841-04-27",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_LUCCA_ARCHIVE",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_TALLEYRAND",
+      "name": "Charles-Maurice de Talleyrand-Périgord",
+      "birth": "1754-02-02",
+      "death": "1838-05-17",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_PIUS_VII",
+      "name": "Pio VII",
+      "birth": "1742-08-14",
+      "death": "1823-08-20",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_DECAEN",
+      "name": "Charles Mathieu Isidore Decaen",
+      "birth": "1769-04-13",
+      "death": "1832-09-09",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_I_WURT",
+      "name": "Federico I di Württemberg",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_CHARLES_BADEN",
+      "name": "Carlo di Baden",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_LOUIS_I_HESSE",
+      "name": "Luigi I d’Assia-Darmstadt",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_FRANCIS_I",
+      "name": "Federico Francesco I di Meclemburgo-Schwerin",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_CHARLES_II_MECK_STRELITZ",
+      "name": "Carlo II di Meclemburgo-Strelitz",
+      "birth": "1741",
+      "death": "1816",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_KARL_AUGUST_WEIMAR",
+      "name": "Carlo Augusto di Sassonia-Weimar-Eisenach",
+      "birth": "1757",
+      "death": "1828",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_AUGUST_GOTHA",
+      "name": "Augusto di Sassonia-Gotha-Altenburg",
+      "birth": "1772",
+      "death": "1822",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FREDERICK_HILDBURG",
+      "name": "Federico di Sassonia-Hildburghausen",
+      "birth": "1763",
+      "death": "1834",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_BERNHARD_II_MEININGEN",
+      "name": "Bernardo II di Sassonia-Meiningen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_LUISE_ELEONORE_MEININGEN",
+      "name": "Luisa Eleonora di Sassonia-Meiningen",
+      "birth": "1763",
+      "death": "1837",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_ERNST_I_COBURG",
+      "name": "Ernesto I di Sassonia-Coburgo-Saalfeld",
+      "birth": "1784",
+      "death": "1844",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_ALEXIUS_ANHALT_BERN",
+      "name": "Alessio Federico Cristiano di Anhalt-Bernburg",
+      "birth": "1767",
+      "death": "1834",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_LEOPOLD_III_DESSAU",
+      "name": "Leopoldo III Federico Francesco di Anhalt-Dessau",
+      "birth": "1740",
+      "death": "1817",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_LUDWIG_AUGUST_KOTHEN",
+      "name": "Luigi Augusto di Anhalt-Köthen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRIEDRICH_HOH_HECH",
+      "name": "Federico Ermanno Ottone di Hohenzollern-Hechingen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_ANTON_ALOYS_HOH_SIG",
+      "name": "Antonio Aloisio di Hohenzollern-Sigmaringen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRED_AUG_NASSAU",
+      "name": "Federico Augusto di Nassau-Usingen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRED_WILL_NASSAU",
+      "name": "Federico Guglielmo di Nassau-Weilburg",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_JOHANN_I_LIECH",
+      "name": "Giovanni I Giuseppe del Liechtenstein",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_GUNTHER_SOND",
+      "name": "Günther Federico Carlo I di Schwarzburg-Sondershausen",
+      "birth": "1760",
+      "death": "1837",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRIEDRICH_GUNTHER_RUD",
+      "name": "Federico Günther di Schwarzburg-Rudolstadt",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FRIEDRICH_WALDECK",
+      "name": "Federico Carlo Augusto di Waldeck",
+      "birth": "1743",
+      "death": "1812",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_CARL_ISENBURG",
+      "name": "Carlo Federico di Isenburg",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_HEINRICH_XIII_GREIZ",
+      "name": "Enrico XIII di Reuss-Greiz",
+      "birth": "1747",
+      "death": "1817",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_HEINRICH_XLII_SCHLEIZ",
+      "name": "Enrico XLII di Reuss-Schleiz",
+      "birth": "1752",
+      "death": "1818",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_HEINRICH_LIV_LOBENSTEIN",
+      "name": "Enrico LIV di Reuss-Lobenstein",
+      "birth": "1767",
+      "death": "1824",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_HEINRICH_LI_EBERSDORF",
+      "name": "Enrico LI di Reuss-Ebersdorf",
+      "birth": "1761",
+      "death": "1822",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_PHILIPP_FRANZ_LEYEN",
+      "name": "Filippo Francesco von der Leyen",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_LEOPOLD_II_LIPPE",
+      "name": "Leopoldo II di Lippe",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_PAULINE_LIPPE",
+      "name": "Paolina di Lippe",
+      "birth": "1769",
+      "death": "1820",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_GEORG_WILHELM_SCHAUM",
+      "name": "Giorgio Guglielmo di Schaumburg-Lippe",
+      "birth": "1784",
+      "death": "1860",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_DALBERG",
+      "name": "Karl Theodor von Dalberg",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_NAPOLEON_LOUIS_BERG",
+      "name": "Napoléon Louis Bonaparte",
+      "birth": "1804-12-18",
+      "death": "1831-03-17",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_DUSSELDORF_BERG",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_FERDINAND_WURZBURG",
+      "name": "Ferdinando di Würzburg",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_GEORG_I_PYRMONT",
+      "name": "Giorgio I di Pyrmont",
+      "birth": null,
+      "death": "1813",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_BISHOP_URGELL_1812",
+      "name": "Francesc Antoni de la Dueña y Cisneros",
+      "birth": null,
+      "death": "1821-11-08",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_ANDORRA_1806",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_PETER_BURCKHARDT",
+      "name": "Peter Burckhardt",
+      "birth": null,
+      "death": null,
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P_KARADORDE",
+      "name": "Karađorđe Petrović",
+      "birth": "1768",
+      "death": "1817",
+      "aliases": [],
+      "sources": [
+        {
+          "source_id": "SRC_SERBIA_MFA",
+          "supports": [
+            "identity"
+          ]
+        }
+      ]
+    }
+  ]
+}

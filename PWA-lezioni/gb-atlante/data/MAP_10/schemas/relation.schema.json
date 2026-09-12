@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relations.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "relations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "GBATLANTE_MAP10_1.0.1"
+    },
+    "snapshot_id": {
+      "const": "MAP_10"
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "snapshot_id",
+          "subject_id",
+          "type",
+          "object_id",
+          "valid_from",
+          "valid_to",
+          "date_precision",
+          "qualifiers",
+          "certainty",
+          "sources",
+          "issue_ids",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^REL_[A-Z0-9_]+$"
+          },
+          "snapshot_id": {
+            "const": "MAP_10"
+          },
+          "subject_id": {
+            "$ref": "#/$defs/id"
+          },
+          "type": {
+            "enum": [
+              "member_of",
+              "territorial_component_of",
+              "administrative_subdivision_of",
+              "autonomous_within",
+              "vassal_of",
+              "protected_by",
+              "mediated_by",
+              "administered_by",
+              "occupied_by",
+              "claims_sovereignty_over",
+              "personal_union_with",
+              "dynastic_marriage_link_with",
+              "dynastic_link_with",
+              "military_alliance_with",
+              "military_obligation_to",
+              "co_belligerent_with",
+              "at_war_with",
+              "transfer_agreed_to",
+              "transfer_completed_to",
+              "guaranteed_by",
+              "succeeds"
+            ]
+          },
+          "object_id": {
+            "$ref": "#/$defs/id"
+          },
+          "valid_from": {
+            "$ref": "#/$defs/dateNullable"
+          },
+          "valid_to": {
+            "$ref": "#/$defs/dateNullable"
+          },
+          "date_precision": {
+            "enum": [
+              "day",
+              "month",
+              "year",
+              "range",
+              "unknown"
+            ]
+          },
+          "qualifiers": {
+            "type": "object"
+          },
+          "certainty": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "unknown"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/sourceLink"
+            }
+          },
+          "issue_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^PRB_[A-Z0-9_]+$"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateNullable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "sourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SRC_[A-Z0-9_]+$"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

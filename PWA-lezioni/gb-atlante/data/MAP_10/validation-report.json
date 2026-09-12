@@ -1,0 +1,262 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "validated_at": "2026-09-12",
+  "validator_mode": "recomputed_from_current_dataset",
+  "summary": {
+    "entities": 126,
+    "persons": 66,
+    "relations": 155,
+    "spatial_assertions": 38,
+    "sources": 43,
+    "issues": 17,
+    "rheinbund_members": 35
+  },
+  "schema_validation": {
+    "draft": "2020-12",
+    "errors": [],
+    "passed": true
+  },
+  "id_validation": {
+    "duplicate_ids": [],
+    "empty_ids": [],
+    "passed": true
+  },
+  "referential_integrity": {
+    "missing_references": [],
+    "evidence_errors": [],
+    "passed": true
+  },
+  "date_validation": {
+    "errors": [],
+    "snapshot_date": "1812-06-01",
+    "passed": true
+  },
+  "vocabulary_validation": {
+    "errors": [],
+    "passed": true
+  },
+  "relation_validation": {
+    "errors": [],
+    "passed": true
+  },
+  "geometry_check": {
+    "geometry_ids_non_null": 0,
+    "ids": [],
+    "passed": true
+  },
+  "source_quality": {
+    "policy": "high certainty requires >=1 primary_direct/high reliability source, or >=2 independent medium sources; needs_source_upgrade is always reported",
+    "errors": [],
+    "warnings": [
+      "SRC_PONTECORVO_AN: needs_source_upgrade=true",
+      "SRC_OHM_ELBE: needs_source_upgrade=true"
+    ],
+    "sources_still_needing_upgrade": [
+      "SRC_PONTECORVO_AN",
+      "SRC_OHM_ELBE"
+    ],
+    "passed": true
+  },
+  "historical_tests": {
+    "passed": 24,
+    "failed": 0,
+    "tests": [
+      {
+        "id": "HT01_BAVARIA_NOT_FRANCE",
+        "passed": true,
+        "detail": "BAV_KINGDOM sovereignty holder is not FRA_EMPIRE"
+      },
+      {
+        "id": "HT02_BAVARIA_MEMBER_RHINE",
+        "passed": true,
+        "detail": "BAV_KINGDOM member_of CONF_RHINE"
+      },
+      {
+        "id": "HT03_RHINE_NOT_OWNER_BAVARIA",
+        "passed": true,
+        "detail": "CONF_RHINE does not own Bavaria"
+      },
+      {
+        "id": "HT04_CATALONIA_NOT_FRANCE_COMPONENT",
+        "passed": true,
+        "detail": "CAT_SPECIAL is not territorial_component_of FRA_EMPIRE"
+      },
+      {
+        "id": "HT05_CATALONIA_ADMIN_FRANCE",
+        "passed": true,
+        "detail": "CAT_SPECIAL administered_by FRA_EMPIRE"
+      },
+      {
+        "id": "HT06_AUSTRIA_FR_ALLY",
+        "passed": true,
+        "detail": "Austria has treaty/military alliance relation with France"
+      },
+      {
+        "id": "HT07_PRUSSIA_FR_ALLY",
+        "passed": true,
+        "detail": "Prussia has coerced treaty/military alliance relation with France"
+      },
+      {
+        "id": "HT08_AUSTRIA_NOT_DYNASTIC_CLIENT",
+        "passed": true,
+        "detail": "AUT_EMPIRE is not dynastic_client"
+      },
+      {
+        "id": "HT09_PRUSSIA_NOT_DYNASTIC_CLIENT",
+        "passed": true,
+        "detail": "PRU_KINGDOM is not dynastic_client"
+      },
+      {
+        "id": "HT10_RUSSIA_PREWAR",
+        "passed": true,
+        "detail": "RUS_EMPIRE war_status = prewar_adversary"
+      },
+      {
+        "id": "HT11_FR_RUS_NOT_AT_WAR",
+        "passed": true,
+        "detail": "France and Russia are not yet at_war_with on 1812-06-01"
+      },
+      {
+        "id": "HT12_JOSEPH_NOT_FULL_CONTROL",
+        "passed": true,
+        "detail": "ESP_JOSEPH effective_control != full"
+      },
+      {
+        "id": "HT13_WARSAW_NOT_FRANCE",
+        "passed": true,
+        "detail": "WARSAW_GD is not territorial_component_of FRA_EMPIRE"
+      },
+      {
+        "id": "HT14_ILLYRIA_FRENCH_SOV",
+        "passed": true,
+        "detail": "FRA_ILLYRIA belongs to French sovereignty"
+      },
+      {
+        "id": "HT15_ILLYRIA_NOT_NORMAL_DEPARTMENT",
+        "passed": true,
+        "detail": "FRA_ILLYRIA is not a normal French departmental administrative unit"
+      },
+      {
+        "id": "HT16_MALTA_CONTROL_UK",
+        "passed": true,
+        "detail": "MALTA primary_controller = UK"
+      },
+      {
+        "id": "HT17_MALTA_SOV_NOT_UK",
+        "passed": true,
+        "detail": "MALTA sovereignty not automatically UK"
+      },
+      {
+        "id": "HT18_POMERANIA_OCC_FR",
+        "passed": true,
+        "detail": "SWEDISH_POMERANIA occupied_by FRA_EMPIRE"
+      },
+      {
+        "id": "HT19_POMERANIA_SOV_SWE",
+        "passed": true,
+        "detail": "SWEDISH_POMERANIA sovereignty remains Swedish"
+      },
+      {
+        "id": "HT20_RHINE_MEMBER_COUNT",
+        "passed": true,
+        "detail": "CONF_RHINE has 35 active members; adopted number is 35"
+      },
+      {
+        "id": "HT21_WALDECK_MEMBER_RHINE",
+        "passed": true,
+        "detail": "WALDECK is a Rheinbund member"
+      },
+      {
+        "id": "HT22_PYRMONT_MEMBER_RHINE",
+        "passed": true,
+        "detail": "PYRMONT is independently represented as a Rheinbund member"
+      },
+      {
+        "id": "HT23_WALDECK_PYRMONT_DISTINCT",
+        "passed": true,
+        "detail": "Waldeck and Pyrmont remain distinct political records at snapshot"
+      },
+      {
+        "id": "HT24_WALDECK_PYRMONT_NO_PERSONAL_UNION_YET",
+        "passed": true,
+        "detail": "No Waldeck-Pyrmont personal union is active on 1812-06-01"
+      }
+    ]
+  },
+  "mutation_tests": {
+    "executed": true,
+    "passed": 5,
+    "failed": 0,
+    "tests": [
+      {
+        "id": "MUT_A_BAVARIA_SOVEREIGNTY_CORRUPTION",
+        "passed": true,
+        "detail": "validator rejected corrupted fixture",
+        "detected_hard_errors": 1
+      },
+      {
+        "id": "MUT_B_DELETE_REFERENCED_ENTITY",
+        "passed": true,
+        "detail": "validator rejected corrupted fixture",
+        "detected_hard_errors": 2
+      },
+      {
+        "id": "MUT_C_NON_NULL_GEOMETRY",
+        "passed": true,
+        "detail": "validator rejected corrupted fixture",
+        "detected_hard_errors": 2
+      },
+      {
+        "id": "MUT_D_INVALID_CERTAINTY_ENUM",
+        "passed": true,
+        "detail": "validator rejected corrupted fixture",
+        "detected_hard_errors": 2
+      },
+      {
+        "id": "MUT_E_FUTURE_ACTIVE_RELATION",
+        "passed": true,
+        "detail": "validator rejected corrupted fixture",
+        "detected_hard_errors": 2
+      }
+    ]
+  },
+  "issues": {
+    "open": [
+      "PRB_PONTECORVO_RULER"
+    ],
+    "provisionally_resolved": [
+      "PRB_SPAIN_CONTROL",
+      "PRB_ANDORRA_1812",
+      "PRB_BUCHAREST_TRANSITION",
+      "PRB_MALTA_STATUS",
+      "PRB_IONIAN_SOVEREIGNTY",
+      "PRB_HELGOLAND_TITLE",
+      "PRB_MONTENEGRO_STATUS",
+      "PRB_SERBIA_1812",
+      "PRB_HANOVER_SOURCE"
+    ],
+    "resolved": [
+      "PRB_RHINE_COUNT",
+      "PRB_WALDECK_PYRMONT",
+      "PRB_CATALONIA_STATUS",
+      "PRB_LUCCA_SOURCE",
+      "PRB_PAPAL_CLAIM",
+      "PRB_ERFURT_LEGAL_FORM",
+      "PRB_COSPAIA_1812"
+    ],
+    "blocked": [],
+    "counts": {
+      "resolved": 7,
+      "provisionally_resolved": 9,
+      "open": 1
+    }
+  },
+  "hard_error_count": 0,
+  "valid": true,
+  "readiness": {
+    "ready_for_geometry_planning": true,
+    "ready_for_geometry_digitization": false,
+    "reason": "Audit/hardening passed; unresolved historical ambiguities remain explicit and geometry_id is null."
+  }
+}

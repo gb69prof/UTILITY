@@ -1,0 +1,553 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "entity.schema.json",
+  "title": "GB-Atlante MAP_10 entities",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "entities"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "GBATLANTE_MAP10_1.0.1"
+    },
+    "snapshot_id": {
+      "const": "MAP_10"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema_version",
+          "snapshot_id",
+          "as_of",
+          "id",
+          "names",
+          "entity_class",
+          "constitutional_form",
+          "record_nature",
+          "validity",
+          "display_level",
+          "spatial_mode",
+          "capital",
+          "office_holders",
+          "sovereignty",
+          "effective_control",
+          "institutional_memberships",
+          "napoleonic_relation",
+          "relations",
+          "territorial_components",
+          "issue_ids",
+          "certainty",
+          "sources",
+          "notes"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "GBATLANTE_MAP10_1.0.1"
+          },
+          "snapshot_id": {
+            "const": "MAP_10"
+          },
+          "as_of": {
+            "const": "1812-06-01"
+          },
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "names": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "it",
+              "original",
+              "short",
+              "aliases"
+            ],
+            "properties": {
+              "it": {
+                "type": "string",
+                "minLength": 1
+              },
+              "original": {
+                "type": "string",
+                "minLength": 1
+              },
+              "short": {
+                "type": "string",
+                "minLength": 1
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "entity_class": {
+            "enum": [
+              "state",
+              "confederation",
+              "claimant_government",
+              "autonomous_polity",
+              "de_facto_polity",
+              "sovereign_institution",
+              "territorial_unit",
+              "administrative_unit"
+            ]
+          },
+          "constitutional_form": {
+            "enum": [
+              "empire",
+              "kingdom",
+              "grand_duchy",
+              "duchy",
+              "principality",
+              "co_principality",
+              "confederation",
+              "republic",
+              "free_city",
+              "canton",
+              "not_applicable"
+            ]
+          },
+          "record_nature": {
+            "enum": [
+              "contemporary_political_entity",
+              "historical_analytical_aggregation",
+              "administrative_subdivision",
+              "claimant_structure",
+              "derived_grouping",
+              "historical_locality"
+            ]
+          },
+          "validity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "to",
+              "date_precision"
+            ],
+            "properties": {
+              "from": {
+                "$ref": "#/$defs/dateNullable"
+              },
+              "to": {
+                "$ref": "#/$defs/dateNullable"
+              },
+              "date_precision": {
+                "enum": [
+                  "day",
+                  "month",
+                  "year",
+                  "range",
+                  "unknown"
+                ]
+              }
+            }
+          },
+          "display_level": {
+            "enum": [
+              "europe",
+              "regional",
+              "local"
+            ]
+          },
+          "spatial_mode": {
+            "enum": [
+              "direct_area",
+              "derived_area",
+              "overlap_layer",
+              "point_only",
+              "nonspatial"
+            ]
+          },
+          "capital": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/capital"
+            }
+          },
+          "office_holders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/officeHolder"
+            }
+          },
+          "sovereignty": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "holder_ids",
+              "holder_person_ids",
+              "suzerain_ids",
+              "competing_claimant_ids",
+              "basis_relation_ids"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "full",
+                  "shared",
+                  "under_suzerainty",
+                  "contested",
+                  "pending_transfer",
+                  "no_separate_sovereignty",
+                  "indeterminate",
+                  "not_applicable"
+                ]
+              },
+              "holder_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/id"
+                }
+              },
+              "holder_person_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^P_[A-Z0-9_]+$"
+                }
+              },
+              "suzerain_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/id"
+                }
+              },
+              "competing_claimant_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/id"
+                }
+              },
+              "basis_relation_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^REL_[A-Z0-9_]+$"
+                }
+              }
+            }
+          },
+          "effective_control": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "primary_controller_ids",
+              "competing_controller_ids",
+              "spatial_assertion_ids"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "full",
+                  "predominant",
+                  "partial",
+                  "fragmented",
+                  "foreign_occupation",
+                  "handover_pending",
+                  "none",
+                  "not_applicable"
+                ]
+              },
+              "primary_controller_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/id"
+                }
+              },
+              "competing_controller_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/id"
+                }
+              },
+              "spatial_assertion_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^SA_[A-Z0-9_]+$"
+                }
+              }
+            }
+          },
+          "institutional_memberships": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^REL_[A-Z0-9_]+$"
+            }
+          },
+          "napoleonic_relation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "integration_modes",
+              "alignment",
+              "dependence_level",
+              "coercion_level",
+              "war_status"
+            ],
+            "properties": {
+              "integration_modes": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "enum": [
+                    "system_center",
+                    "direct_annexation",
+                    "special_french_administration",
+                    "personal_union_napoleonic_crown",
+                    "dynastic_client",
+                    "confederated_client",
+                    "client_state",
+                    "imperial_fief",
+                    "imperial_domain",
+                    "mediated_state",
+                    "treaty_ally",
+                    "coerced_treaty_ally",
+                    "military_occupation",
+                    "outside_system"
+                  ]
+                }
+              },
+              "alignment": {
+                "enum": [
+                  "napoleonic_system",
+                  "france_aligned",
+                  "coerced_france_aligned",
+                  "neutral",
+                  "anti_french",
+                  "internally_divided",
+                  "not_applicable"
+                ]
+              },
+              "dependence_level": {
+                "enum": [
+                  "none",
+                  "limited",
+                  "substantial",
+                  "high",
+                  "direct",
+                  "not_applicable"
+                ]
+              },
+              "coercion_level": {
+                "enum": [
+                  "none",
+                  "diplomatic_pressure",
+                  "structural_constraint",
+                  "military_compulsion",
+                  "occupation",
+                  "not_applicable"
+                ]
+              },
+              "war_status": {
+                "enum": [
+                  "not_at_war_with_france",
+                  "at_war_with_france",
+                  "prewar_adversary",
+                  "internal_conflict_with_french_forces",
+                  "occupied_not_belligerent",
+                  "not_applicable"
+                ]
+              }
+            }
+          },
+          "relations": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^REL_[A-Z0-9_]+$"
+            }
+          },
+          "territorial_components": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/$defs/id"
+            }
+          },
+          "issue_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^PRB_[A-Z0-9_]+$"
+            }
+          },
+          "certainty": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "overall",
+              "fields"
+            ],
+            "properties": {
+              "overall": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "unknown"
+                ]
+              },
+              "fields": {
+                "type": "object",
+                "additionalProperties": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low",
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/sourceLink"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateNullable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "sourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SRC_[A-Z0-9_]+$"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "capital": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "role",
+        "valid_from",
+        "valid_to"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "capital",
+            "royal_capital",
+            "government_seat",
+            "legal_capital",
+            "de_facto_government_seat",
+            "administrative_centre",
+            "residence",
+            "not_applicable"
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/dateNullable"
+        },
+        "valid_to": {
+          "$ref": "#/$defs/dateNullable"
+        }
+      }
+    },
+    "officeHolder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "person_id",
+        "office",
+        "role",
+        "valid_from",
+        "valid_to"
+      ],
+      "properties": {
+        "person_id": {
+          "type": "string",
+          "pattern": "^P_[A-Z0-9_]+$"
+        },
+        "office": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "sovereign",
+            "co_sovereign",
+            "regent",
+            "viceroy",
+            "head_of_government",
+            "governor",
+            "prince_regent",
+            "not_applicable"
+          ]
+        },
+        "valid_from": {
+          "$ref": "#/$defs/dateNullable"
+        },
+        "valid_to": {
+          "$ref": "#/$defs/dateNullable"
+        }
+      }
+    }
+  }
+}

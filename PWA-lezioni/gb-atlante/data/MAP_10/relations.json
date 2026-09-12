@@ -1,0 +1,4096 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "relations": [
+    {
+      "id": "REL_BAV_KINGDOM_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BAV_KINGDOM",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BAV_KINGDOM_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BAV_KINGDOM",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V1",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WUR_KINGDOM_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WUR_KINGDOM",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WUR_KINGDOM_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WUR_KINGDOM",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V1",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_KINGDOM_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_KINGDOM",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-11",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_KINGDOM_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_KINGDOM",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-11",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V1",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WEST_KINGDOM_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WEST_KINGDOM",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-11-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WEST_KINGDOM_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WEST_KINGDOM",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-11-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V1",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRANKFURT_GD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRANKFURT_GD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1810",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRANKFURT_GD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRANKFURT_GD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1810",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BAD_GD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BAD_GD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BAD_GD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BAD_GD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HES_GD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HES_GD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HES_GD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HES_GD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BERG_GD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BERG_GD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BERG_GD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BERG_GD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WURZBURG_GD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WURZBURG_GD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-09-23",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WURZBURG_GD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WURZBURG_GD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-09-23",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_NASSAU_DUCHY_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "NASSAU_DUCHY",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_NASSAU_DUCHY_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "NASSAU_DUCHY",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_BERN_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_BERN",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_BERN_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_BERN",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_KOTH_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_KOTH",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_KOTH_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_KOTH",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_DESS_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_DESS",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANH_DESS_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANH_DESS",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MECK_SCH_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MECK_SCH",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1808-03-22",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MECK_SCH_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MECK_SCH",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1808-03-22",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MECK_STR_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MECK_STR",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1808-02-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MECK_STR_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MECK_STR",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1808-02-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_WEIMAR_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_WEIMAR",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_WEIMAR_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_WEIMAR",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_GOTHA_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_GOTHA",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_GOTHA_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_GOTHA",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_MEIN_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_MEIN",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_MEIN_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_MEIN",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_COB_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_COB",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_COB_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_COB",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_HILD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_HILD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_HILD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_HILD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-12-15",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOH_HECH_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOH_HECH",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOH_HECH_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOH_HECH",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOH_SIG_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOH_SIG",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOH_SIG_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOH_SIG",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ISENBURG_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ISENBURG",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ISENBURG_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ISENBURG",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LIECHTENSTEIN_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LIECHTENSTEIN",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LIECHTENSTEIN_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LIECHTENSTEIN",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LEYEN_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LEYEN",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LEYEN_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LEYEN",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806-07-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LIPPE_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LIPPE",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_LIPPE_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LIPPE",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHAUM_LIPPE_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHAUM_LIPPE",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHAUM_LIPPE_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHAUM_LIPPE",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_GREIZ_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_GREIZ",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_RHINE_COUNT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_GREIZ_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_GREIZ",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_SCHLEIZ_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_SCHLEIZ",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_RHINE_COUNT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_SCHLEIZ_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_SCHLEIZ",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_LOBENSTEIN_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_LOBENSTEIN",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_RHINE_COUNT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_LOBENSTEIN_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_LOBENSTEIN",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_EBERSDORF_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_EBERSDORF",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_RHINE_COUNT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_REUSS_EBERSDORF_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "REUSS_EBERSDORF",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WALDECK_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WALDECK",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WALDECK_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WALDECK",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHW_RUD_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHW_RUD",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHW_RUD_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHW_RUD",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHW_SOND_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHW_SOND",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_ACCESSIONS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHW_SOND_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHW_SOND",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_ACT_1806",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_DEMIAN_V2",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_ZURICH_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_ZURICH",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_BERN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_BERN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_LUCERNE_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_LUCERNE",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_URI_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_URI",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_SCHWYZ_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_SCHWYZ",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_UNTERWALDEN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_UNTERWALDEN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_GLARUS_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_GLARUS",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_ZUG_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_ZUG",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_FRIBOURG_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_FRIBOURG",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_SOLOTHURN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_SOLOTHURN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_BASEL_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_BASEL",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_SCHAFFHAUSEN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_SCHAFFHAUSEN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_APPENZELL_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_APPENZELL",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_ST_GALLEN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_ST_GALLEN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_GRAUBUNDEN_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_GRAUBUNDEN",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_AARGAU_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_AARGAU",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_THURGAU_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_THURGAU",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_TICINO_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_TICINO",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CH_VAUD_SWISS",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CH_VAUD",
+      "type": "member_of",
+      "object_id": "SWISS_CONF",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_ACT_MEDIATION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FR_ITALY_UNION",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_EMPIRE",
+      "type": "personal_union_with",
+      "object_id": "ITA_KINGDOM",
+      "valid_from": "1805-03-17",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {
+        "ruler_person_id": "P_NAPOLEON_I"
+      },
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SAX_WARSAW_UNION",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SAX_KINGDOM",
+      "type": "personal_union_with",
+      "object_id": "WARSAW_GD",
+      "valid_from": "1807",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {
+        "ruler_person_id": "P_FREDERICK_AUGUSTUS_I"
+      },
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FR_AUT_ALLIANCE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_EMPIRE",
+      "type": "military_alliance_with",
+      "object_id": "AUT_EMPIRE",
+      "valid_from": "1812-03-14",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_RUSSIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FR_PRU_ALLIANCE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_EMPIRE",
+      "type": "military_alliance_with",
+      "object_id": "PRU_KINGDOM",
+      "valid_from": "1812-02-24",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_RUSSIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FR_AUT_DYNASTIC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_EMPIRE",
+      "type": "dynastic_marriage_link_with",
+      "object_id": "AUT_EMPIRE",
+      "valid_from": "1810-04-01",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {
+        "person_ids": [
+          "P_NAPOLEON_I",
+          "P_MARIE_LOUISE"
+        ]
+      },
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_DUSSELDORF_BERG",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FIN_RUS_AUTONOMY",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FIN_GD",
+      "type": "autonomous_within",
+      "object_id": "RUS_EMPIRE",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FINLAND_GOV",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_FINLAND_1812_HELSINKI",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MOLDAVIA_OTTOMAN",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MOLDAVIA",
+      "type": "vassal_of",
+      "object_id": "OTT_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WALLACHIA_OTTOMAN",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WALLACHIA",
+      "type": "vassal_of",
+      "object_id": "OTT_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_MOLDAVIA_RUS_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MOLDAVIA",
+      "type": "occupied_by",
+      "object_id": "RUS_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WALLACHIA_RUS_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WALLACHIA",
+      "type": "occupied_by",
+      "object_id": "RUS_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BESSARABIA_TRANSFER",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BESSARABIA_TRANSITION",
+      "type": "transfer_agreed_to",
+      "object_id": "RUS_EMPIRE",
+      "valid_from": "1812-05-28",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_MWNF",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_BUCHAREST_TRANSITION"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_OTT_SERBIA_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "OTT_EMPIRE",
+      "type": "claims_sovereignty_over",
+      "object_id": "SERBIA_INSURGENT",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_SERBIA_MFA",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_OTT_MONTENEGRO_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "OTT_EMPIRE",
+      "type": "claims_sovereignty_over",
+      "object_id": "MONTENEGRO",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_MONTENEGRO_PRINCETON",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_MONTENEGRO_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_SWISS_FR_MEDIATION",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SWISS_CONF",
+      "type": "mediated_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1803",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_SWISS_ARCHIVES",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_WARSAW_FR_PROT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WARSAW_GD",
+      "type": "protected_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_DANZIG_FR_PROT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "DANZIG_FREE",
+      "type": "protected_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CAT_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CAT_SPECIAL",
+      "type": "administered_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_JOSEPH_CAT_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ESP_JOSEPH",
+      "type": "claims_sovereignty_over",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1808",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_CATALONIA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_CADIZ_CAT_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ESP_CADIZ",
+      "type": "claims_sovereignty_over",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1810",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOLYSEE_PAPAL_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOLY_SEE",
+      "type": "claims_sovereignty_over",
+      "object_id": "FRA_PAPAL",
+      "valid_from": "1809-05-17",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SWEPOM_FR_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SWEDISH_POMERANIA",
+      "type": "occupied_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-27",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_SWEDISH_POMERANIA_FN",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HELGOLAND_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HELIGOLAND",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1807",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_HELGOLAND_LASH",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_HELGOLAND_TITLE"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_MALTA_UK_ADMIN",
+      "snapshot_id": "MAP_10",
+      "subject_id": "MALTA",
+      "type": "administered_by",
+      "object_id": "UK",
+      "valid_from": "1800",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SIC_MALTA_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SIC_KINGDOM",
+      "type": "claims_sovereignty_over",
+      "object_id": "MALTA",
+      "valid_from": "1800",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_MALTA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_ERFURT_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ERFURT_DOMAIN",
+      "type": "administered_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_ERFURT_ARCHIVE",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ANDORRA_FR_ADMIN_CLAIM",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ANDORRA",
+      "type": "administered_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_ANDORRA_1812_STUDY",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_CATALONIA_ATLAS",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_ANDORRA_1812"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_CORE_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_CORE",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_SAVOY_NICE_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_SAVOY_NICE",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1792",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_BELGIUM_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_BELGIUM",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1795",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_LEFT_RHINE_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_LEFT_RHINE",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1801-03-08",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_GENEVA_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_GENEVA",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1798",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_PIEDMONT_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_PIEDMONT",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1802-09-11",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_LIGURIA_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_LIGURIA",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1805-06-06",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_TUSCANY_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_TUSCANY",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1808",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_PARMA_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_PARMA",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1808",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_PAPAL_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_PAPAL",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1809-05-17",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_HOLLAND_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_HOLLAND",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1810-07-09",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_SIMPLON_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_SIMPLON",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1810-11-12",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_NORTH_GERMANY_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_NORTH_GERMANY",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1810-12-13",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FRA_ILLYRIA_FRA",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FRA_ILLYRIA",
+      "type": "territorial_component_of",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_DEPARTMENTS",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CAT_MONTSERRAT_CAT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CAT_MONTSERRAT",
+      "type": "administrative_subdivision_of",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CAT_BOUCHES_EBRE_CAT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CAT_BOUCHES_EBRE",
+      "type": "administrative_subdivision_of",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CAT_TER_CAT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CAT_TER",
+      "type": "administrative_subdivision_of",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CAT_SEGRE_CAT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "CAT_SEGRE",
+      "type": "administrative_subdivision_of",
+      "object_id": "CAT_SPECIAL",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_ZANTE_BRITGROUP",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_ZANTE",
+      "type": "territorial_component_of",
+      "object_id": "ION_BRIT_GROUP",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_ZANTE_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_ZANTE",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_CEPHALONIA_BRITGROUP",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_CEPHALONIA",
+      "type": "territorial_component_of",
+      "object_id": "ION_BRIT_GROUP",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_CEPHALONIA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_CEPHALONIA",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_ITHACA_BRITGROUP",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_ITHACA",
+      "type": "territorial_component_of",
+      "object_id": "ION_BRIT_GROUP",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_ITHACA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_ITHACA",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_SANTA_MAURA_BRITGROUP",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_SANTA_MAURA",
+      "type": "territorial_component_of",
+      "object_id": "ION_BRIT_GROUP",
+      "valid_from": "1810",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_SANTA_MAURA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_SANTA_MAURA",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1810",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_CERIGO_BRITGROUP",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_CERIGO",
+      "type": "territorial_component_of",
+      "object_id": "ION_BRIT_GROUP",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ION_CERIGO_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_CERIGO",
+      "type": "occupied_by",
+      "object_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_CORFU_FR_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_CORFU",
+      "type": "occupied_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_PAXOS_FR_OCC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ION_PAXOS",
+      "type": "occupied_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_DENMARK_COMPONENT_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "DENMARK_COMPONENT",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_NORWAY_COMPONENT_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "NORWAY_COMPONENT",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_SCHLESWIG_DUCHY_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "SCHLESWIG_DUCHY",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_HOLSTEIN_DUCHY_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "HOLSTEIN_DUCHY",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_ICELAND_COMPONENT_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "ICELAND_COMPONENT",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_FAROE_COMPONENT_DENNOR",
+      "snapshot_id": "MAP_10",
+      "subject_id": "FAROE_COMPONENT",
+      "type": "territorial_component_of",
+      "object_id": "DEN_NOR",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_PYRMONT_RHINE",
+      "snapshot_id": "MAP_10",
+      "subject_id": "PYRMONT",
+      "type": "member_of",
+      "object_id": "CONF_RHINE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_PYRMONT_ACCESSION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_WALDECK_PYRMONT_LWL",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_WALDECK_PYRMONT",
+        "PRB_RHINE_COUNT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_PYRMONT_FR_MILOB",
+      "snapshot_id": "MAP_10",
+      "subject_id": "PYRMONT",
+      "type": "military_obligation_to",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1807-04-18",
+      "valid_to": null,
+      "date_precision": "day",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_PYRMONT_ACCESSION",
+          "supports": [
+            "relation"
+          ]
+        },
+        {
+          "source_id": "SRC_RH_WALDECK_PYRMONT_LWL",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_WALDECK_PYRMONT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_WALDECK_PYRMONT_DYNASTIC",
+      "snapshot_id": "MAP_10",
+      "subject_id": "WALDECK",
+      "type": "dynastic_link_with",
+      "object_id": "PYRMONT",
+      "valid_from": null,
+      "valid_to": null,
+      "date_precision": "unknown",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_HGIS_WALDECK",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_WALDECK_PYRMONT"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_LUCCA_FR_PROT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "LUCCA_PIOMBINO",
+      "type": "protected_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1805",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_LUCCA_ARCHIVE",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_LUCCA_SOURCE"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "REL_NEUCHATEL_FR_PROT",
+      "snapshot_id": "MAP_10",
+      "subject_id": "NEUCHATEL",
+      "type": "protected_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "REL_BENEVENTO_FR_LINK",
+      "snapshot_id": "MAP_10",
+      "subject_id": "BENEVENTO",
+      "type": "protected_by",
+      "object_id": "FRA_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "date_precision": "year",
+      "qualifiers": {},
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "relation"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    }
+  ]
+}

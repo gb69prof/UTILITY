@@ -1,0 +1,906 @@
+{
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "snapshot_id": "MAP_10",
+  "spatial_assertions": [
+    {
+      "id": "SA_ESP_JOSEPH_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "ESP_JOSEPH",
+      "actor_entity_id": "ESP_JOSEPH",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_CADIZ_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "ESP_CADIZ",
+      "actor_entity_id": "ESP_CADIZ",
+      "valid_from": "1810",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_JOSEPH_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "ESP_JOSEPH",
+      "actor_entity_id": "ESP_JOSEPH",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_FR_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ESP_JOSEPH",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        },
+        {
+          "source_id": "SRC_FN_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_ANTI_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ESP_CADIZ",
+      "actor_entity_id": "ESP_CADIZ",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_UK_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ESP_CADIZ",
+      "actor_entity_id": "UK",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ESP_POR_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ESP_CADIZ",
+      "actor_entity_id": "POR_KINGDOM",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_FR_SPECIAL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "special_administration",
+      "subject_entity_id": "CAT_SPECIAL",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_CATALONIA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_JOSEPH_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "CAT_SPECIAL",
+      "actor_entity_id": "ESP_JOSEPH",
+      "valid_from": "1808",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_CATALONIA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_CADIZ_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "CAT_SPECIAL",
+      "actor_entity_id": "ESP_CADIZ",
+      "valid_from": "1810",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_CONGRESO_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_FR_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "CAT_SPECIAL",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1810",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_ANTI_MIL_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "CAT_SPECIAL",
+      "actor_entity_id": "ESP_CADIZ",
+      "valid_from": "1810",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_CATALONIA_ATLAS",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_SPAIN_CONTROL"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_MONTSERRAT_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "CAT_MONTSERRAT",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_BOUCHES_EBRE_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "CAT_BOUCHES_EBRE",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_TER_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "CAT_TER",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_CAT_SEGRE_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "CAT_SEGRE",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_FN_CATALONIA_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_ANDORRA_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "special_administration",
+      "subject_entity_id": "ANDORRA",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-26",
+      "valid_to": null,
+      "status": "planned_or_disputed",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_ANDORRA_1812_STUDY",
+          "supports": [
+            "spatial_assertion"
+          ]
+        },
+        {
+          "source_id": "SRC_CATALONIA_ATLAS",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_ANDORRA_1812"
+      ],
+      "notes": "Inclusione nel dipartimento del Sègre attestata da varie ricostruzioni; uno studio universitario segnala che il progetto non fu pienamente implementato."
+    },
+    {
+      "id": "SA_BESS_TRANSFER",
+      "snapshot_id": "MAP_10",
+      "layer_type": "treaty_transfer_pending",
+      "subject_entity_id": "BESSARABIA_TRANSITION",
+      "actor_entity_id": "RUS_EMPIRE",
+      "valid_from": "1812-05-28",
+      "valid_to": null,
+      "status": "transitional",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_MWNF",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_BUCHAREST_TRANSITION"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_BESS_RUS_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "BESSARABIA_TRANSITION",
+      "actor_entity_id": "RUS_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "status": "transitional",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_MOLD_OTT_SUZ",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "MOLDAVIA",
+      "actor_entity_id": "OTT_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_MOLD_RUS_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "MOLDAVIA",
+      "actor_entity_id": "RUS_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "status": "transitional",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_WALL_OTT_SUZ",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "WALLACHIA",
+      "actor_entity_id": "OTT_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_WALL_RUS_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "WALLACHIA",
+      "actor_entity_id": "RUS_EMPIRE",
+      "valid_from": "1806",
+      "valid_to": null,
+      "status": "transitional",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_BUCHAREST_TAKI",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_CORFU_FR_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ION_CORFU",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_PAXOS_FR_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "ION_PAXOS",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ION_ZANTE_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "ION_ZANTE",
+      "actor_entity_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ION_CEPHALONIA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "ION_CEPHALONIA",
+      "actor_entity_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ION_ITHACA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "ION_ITHACA",
+      "actor_entity_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ION_SANTA_MAURA_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "ION_SANTA_MAURA",
+      "actor_entity_id": "UK",
+      "valid_from": "1810",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ION_CERIGO_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "ION_CERIGO",
+      "actor_entity_id": "UK",
+      "valid_from": "1809",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IONIAN_HOLLAND_1815",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_IONIAN_SOVEREIGNTY"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_MALTA_UK_CONTROL",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_control",
+      "subject_entity_id": "MALTA",
+      "actor_entity_id": "UK",
+      "valid_from": "1800",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_MALTA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_MALTA_UK_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "civil_administration",
+      "subject_entity_id": "MALTA",
+      "actor_entity_id": "UK",
+      "valid_from": "1800",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_MALTA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_MALTA_SIC_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "MALTA",
+      "actor_entity_id": "SIC_KINGDOM",
+      "valid_from": "1800",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_MALTA_UM",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_MALTA_STATUS"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_SWEPOM_FR_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "SWEDISH_POMERANIA",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1812-01-27",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_SWEDISH_POMERANIA_FN",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_SWEPOM_SWE_SOV",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "SWEDISH_POMERANIA",
+      "actor_entity_id": "SWE_KINGDOM",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_IEG_1812",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    },
+    {
+      "id": "SA_HELGOLAND_UK_OCC",
+      "snapshot_id": "MAP_10",
+      "layer_type": "military_occupation",
+      "subject_entity_id": "HELIGOLAND",
+      "actor_entity_id": "UK",
+      "valid_from": "1807",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_HELGOLAND_LASH",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_HELGOLAND_TITLE"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_HELGOLAND_DAN_CLAIM",
+      "snapshot_id": "MAP_10",
+      "layer_type": "sovereignty_claim",
+      "subject_entity_id": "HELIGOLAND",
+      "actor_entity_id": "DEN_NOR",
+      "valid_from": "1807",
+      "valid_to": null,
+      "status": "contested",
+      "geometry_id": null,
+      "certainty": "medium",
+      "sources": [
+        {
+          "source_id": "SRC_HELGOLAND_LASH",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [
+        "PRB_HELGOLAND_TITLE"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "SA_ERFURT_FR_ADMIN",
+      "snapshot_id": "MAP_10",
+      "layer_type": "special_administration",
+      "subject_entity_id": "ERFURT_DOMAIN",
+      "actor_entity_id": "FRA_EMPIRE",
+      "valid_from": "1807",
+      "valid_to": null,
+      "status": "active",
+      "geometry_id": null,
+      "certainty": "high",
+      "sources": [
+        {
+          "source_id": "SRC_RH_LANCIZOLLE_1830",
+          "supports": [
+            "spatial_assertion"
+          ]
+        },
+        {
+          "source_id": "SRC_ERFURT_ARCHIVE",
+          "supports": [
+            "spatial_assertion"
+          ]
+        }
+      ],
+      "issue_ids": [],
+      "notes": ""
+    }
+  ]
+}

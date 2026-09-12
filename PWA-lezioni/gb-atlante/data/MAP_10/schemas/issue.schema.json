@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "issues.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "issues"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "GBATLANTE_MAP10_1.0.1"
+    },
+    "snapshot_id": {
+      "const": "MAP_10"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "area",
+          "issue_type",
+          "description",
+          "affected_entities",
+          "resolution_status",
+          "adopted_solution",
+          "certainty",
+          "sources"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^PRB_[A-Z0-9_]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "area": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issue_type": {
+            "enum": [
+              "chronology",
+              "legal_status",
+              "effective_control",
+              "membership",
+              "source_quality",
+              "ontology",
+              "administration",
+              "territorial_scope",
+              "naming"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "affected_entities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/id"
+            }
+          },
+          "resolution_status": {
+            "enum": [
+              "open",
+              "provisionally_resolved",
+              "resolved",
+              "blocked"
+            ]
+          },
+          "adopted_solution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "certainty": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "unknown"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/sourceLink"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateNullable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "sourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SRC_[A-Z0-9_]+$"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

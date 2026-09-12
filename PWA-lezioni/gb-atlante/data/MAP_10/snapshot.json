@@ -1,0 +1,26 @@
+{
+  "id": "MAP_10",
+  "title": "Europa all’apogeo del sistema napoleonico — 1 giugno 1812",
+  "date": "1812-06-01",
+  "description": "Snapshot politico-territoriale dell’Europa immediatamente precedente all’apertura formale della guerra franco-russa del giugno 1812. Separa sovranità, amministrazione, controllo, occupazione, appartenenze e rapporti politici.",
+  "snapshot_nature": "historical_reconstruction",
+  "geographic_scope": {
+    "name": "Europa",
+    "notes": "Europa politica con periferie mediterranee e caucaso-balcaniche solo quando necessarie alla comprensione delle entità europee; nessuna geometria è ancora inclusa."
+  },
+  "schema_version": "GBATLANTE_MAP10_1.0.1",
+  "validation_status": "validated_with_open_issues",
+  "general_cartographic_source_ids": [
+    "SRC_IEG_1812",
+    "SRC_IEG_1812_SERIE2",
+    "SRC_FN_1812",
+    "SRC_RH_MAP_1812_HALLE"
+  ],
+  "methodological_notes": [
+    "La mappa non assume territorio=Stato=colore.",
+    "geometry_id deve rimanere null in tutta la Fase 5.",
+    "Le aggregazioni FRA_* sono blocchi storico-analitici e non fingono di essere enti amministrativi contemporanei.",
+    "Le pretese e i controlli della Penisola iberica sono predisposti come layer separati.",
+    "La data 1812-06-01 precede il passaggio del Niemen e l’apertura della guerra franco-russa."
+  ]
+}

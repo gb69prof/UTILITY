@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "spatial_assertions.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "spatial_assertions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "GBATLANTE_MAP10_1.0.1"
+    },
+    "snapshot_id": {
+      "const": "MAP_10"
+    },
+    "spatial_assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "snapshot_id",
+          "layer_type",
+          "subject_entity_id",
+          "actor_entity_id",
+          "valid_from",
+          "valid_to",
+          "status",
+          "geometry_id",
+          "certainty",
+          "sources",
+          "issue_ids",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^SA_[A-Z0-9_]+$"
+          },
+          "snapshot_id": {
+            "const": "MAP_10"
+          },
+          "layer_type": {
+            "enum": [
+              "sovereignty_claim",
+              "civil_administration",
+              "military_control",
+              "military_occupation",
+              "special_administration",
+              "military_presence",
+              "treaty_transfer_pending"
+            ]
+          },
+          "subject_entity_id": {
+            "$ref": "#/$defs/id"
+          },
+          "actor_entity_id": {
+            "$ref": "#/$defs/id"
+          },
+          "valid_from": {
+            "$ref": "#/$defs/dateNullable"
+          },
+          "valid_to": {
+            "$ref": "#/$defs/dateNullable"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "transitional",
+              "contested",
+              "planned_or_disputed"
+            ]
+          },
+          "geometry_id": {
+            "type": "null"
+          },
+          "certainty": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "unknown"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/sourceLink"
+            }
+          },
+          "issue_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^PRB_[A-Z0-9_]+$"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateNullable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "sourceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "supports"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SRC_[A-Z0-9_]+$"
+        },
+        "supports": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
