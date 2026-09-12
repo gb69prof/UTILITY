@@ -33,10 +33,13 @@
         <input id="noteTitle" class="title-input" type="text" maxlength="120" placeholder="Titolo dell’appunto" autocomplete="off">
         <div class="actions">
           <button id="newNoteBtn" class="btn" type="button">Nuovo</button>
+          <button id="openNoteBtn" class="btn" type="button">Apri</button>
+          <button id="importTextBtn" class="btn" type="button">Importa</button>
           <button id="saveNoteBtn" class="btn primary" type="button">Salva</button>
-          <button id="exportTxtBtn" class="btn" type="button">TXT</button>
         </div>
       </div>
+      <input id="openNoteInput" class="sr-only" type="file" accept=".txt,text/plain">
+      <input id="importTextInput" class="sr-only" type="file" accept=".txt,text/plain">
       <textarea id="noteText" class="note-paper" spellcheck="true" autocapitalize="sentences" placeholder="Scrivi qui…"></textarea>
       <div id="noteStatus" class="status" role="status" aria-live="polite"></div>
     </section>
@@ -47,10 +50,14 @@
         <input id="drawingTitle" class="title-input" type="text" maxlength="120" placeholder="Titolo del disegno" autocomplete="off">
         <div class="actions">
           <button id="newDrawingBtn" class="btn" type="button">Nuovo</button>
+          <button id="openDrawingBtn" class="btn" type="button">Apri</button>
+          <button id="importImageBtn" class="btn" type="button">Importa</button>
           <button id="saveDrawingBtn" class="btn primary" type="button">Salva</button>
           <button id="exportJpgBtn" class="btn" type="button">JPG</button>
         </div>
       </div>
+      <input id="openDrawingInput" class="sr-only" type="file" accept=".json,application/json">
+      <input id="importImageInput" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
 
       <div class="drawing-toolbar" role="toolbar" aria-label="Strumenti di disegno">
         <div class="tool-group colors" aria-label="Colori">
@@ -85,7 +92,7 @@
       <div class="archive-header">
         <div>
           <h1 id="archiveHeading">Archivio</h1>
-          <p>Le pagine restano su questo dispositivo.</p>
+          <p>Le pagine restano su questo dispositivo. Il pulsante Salva crea anche un file esportabile.</p>
         </div>
         <button id="refreshArchiveBtn" class="btn" type="button">Aggiorna</button>
       </div>
