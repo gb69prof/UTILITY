@@ -1,0 +1,401 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "RUSSIA_1_A",
+      "properties": {
+        "geometry_id": "RUSSIA_1_A",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Avanzata · gruppo 1",
+        "direction": "A",
+        "division": 1,
+        "army_sizes": [
+          340000,
+          340000,
+          340000,
+          320000,
+          300000,
+          280000,
+          240000,
+          210000,
+          180000,
+          175000,
+          145000,
+          140000,
+          127100,
+          100000,
+          100000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24,
+            54.9
+          ],
+          [
+            24.5,
+            55
+          ],
+          [
+            25.5,
+            54.5
+          ],
+          [
+            26,
+            54.7
+          ],
+          [
+            27,
+            54.8
+          ],
+          [
+            28,
+            54.9
+          ],
+          [
+            28.5,
+            55
+          ],
+          [
+            29,
+            55.1
+          ],
+          [
+            30,
+            55.2
+          ],
+          [
+            30.3,
+            55.3
+          ],
+          [
+            32,
+            54.8
+          ],
+          [
+            33.2,
+            54.9
+          ],
+          [
+            34.4,
+            55.5
+          ],
+          [
+            35.5,
+            55.4
+          ],
+          [
+            36,
+            55.5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RUSSIA_1_R",
+      "properties": {
+        "geometry_id": "RUSSIA_1_R",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Ritirata · gruppo 1",
+        "direction": "R",
+        "division": 1,
+        "army_sizes": [
+          100000,
+          98000,
+          97000,
+          96000,
+          87000,
+          55000,
+          37000,
+          24000,
+          20000,
+          20000,
+          20000,
+          20000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            37.6,
+            55.8
+          ],
+          [
+            37.5,
+            55.7
+          ],
+          [
+            37,
+            55
+          ],
+          [
+            36.8,
+            55
+          ],
+          [
+            35.4,
+            55.3
+          ],
+          [
+            34.3,
+            55.2
+          ],
+          [
+            33.3,
+            54.8
+          ],
+          [
+            32,
+            54.6
+          ],
+          [
+            30.4,
+            54.4
+          ],
+          [
+            29.2,
+            54.4
+          ],
+          [
+            28.5,
+            54.3
+          ],
+          [
+            28.3,
+            54.4
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RUSSIA_2_A",
+      "properties": {
+        "geometry_id": "RUSSIA_2_A",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Avanzata · gruppo 2",
+        "direction": "A",
+        "division": 2,
+        "army_sizes": [
+          60000,
+          60000,
+          60000,
+          40000,
+          33000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24,
+            55.1
+          ],
+          [
+            24.5,
+            55.2
+          ],
+          [
+            25.5,
+            54.7
+          ],
+          [
+            26.6,
+            55.7
+          ],
+          [
+            27.4,
+            55.6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RUSSIA_2_R",
+      "properties": {
+        "geometry_id": "RUSSIA_2_R",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Ritirata · gruppo 2",
+        "direction": "R",
+        "division": 2,
+        "army_sizes": [
+          33000,
+          30000,
+          30000,
+          28000,
+          20000,
+          12000,
+          14000,
+          8000,
+          4000,
+          4000,
+          4000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            28.7,
+            55.5
+          ],
+          [
+            29.2,
+            54.3
+          ],
+          [
+            28.5,
+            54.2
+          ],
+          [
+            28.3,
+            54.3
+          ],
+          [
+            27.5,
+            54.5
+          ],
+          [
+            26.8,
+            54.3
+          ],
+          [
+            26.4,
+            54.4
+          ],
+          [
+            24.6,
+            54.5
+          ],
+          [
+            24.4,
+            54.4
+          ],
+          [
+            24.2,
+            54.4
+          ],
+          [
+            24.1,
+            54.3
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RUSSIA_3_A",
+      "properties": {
+        "geometry_id": "RUSSIA_3_A",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Avanzata · gruppo 3",
+        "direction": "A",
+        "division": 3,
+        "army_sizes": [
+          22000,
+          22000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24,
+            55.2
+          ],
+          [
+            24.5,
+            55.3
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RUSSIA_3_R",
+      "properties": {
+        "geometry_id": "RUSSIA_3_R",
+        "campaign_id": "RUSSIA_1812",
+        "name": "Ritirata · gruppo 3",
+        "direction": "R",
+        "division": 3,
+        "army_sizes": [
+          6000,
+          6000,
+          6000
+        ],
+        "valid_from": "1812-06-24",
+        "valid_to": "1812-12-14",
+        "certainty": "medium",
+        "boundary_type": "approximate",
+        "geometry_source_ids": [
+          "SRC_MINARD"
+        ],
+        "notes": "Coordinate della carta di Minard, generalizzate; non itinerario stradale."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.6,
+            55.8
+          ],
+          [
+            24.2,
+            54.4
+          ],
+          [
+            24.1,
+            54.3
+          ]
+        ]
+      }
+    }
+  ]
+}

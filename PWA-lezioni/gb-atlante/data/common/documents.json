@@ -1,0 +1,17 @@
+[
+  {
+    "id": "DOC_1812_STOCKDALE",
+    "title": "L’Europa vista nel luglio 1812",
+    "author": "John Stockdale",
+    "date": "1812-07-25",
+    "collection": "Library of Congress, Geography and Map Division",
+    "url": "https://www.loc.gov/item/2018588030/",
+    "asset": "assets/stockdale-1812.jpg",
+    "source_ids": [
+      "SRC_STOCKDALE"
+    ],
+    "license": "Public domain; free to use and reuse, Library of Congress",
+    "georeferencing": null,
+    "notes": "Carta pubblicata dopo MAP_10. Non mostra le operazioni militari; le rappresentazioni territoriali riflettono conoscenze e scelte del cartografo. Documento originale distinto dall’atlante ricostruito."
+  }
+]

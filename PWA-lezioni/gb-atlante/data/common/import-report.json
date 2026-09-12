@@ -1,0 +1,80 @@
+{
+  "features": 241,
+  "rejected": [],
+  "clipped_extent": [
+    -26,
+    33,
+    46,
+    72
+  ],
+  "input_files": [
+    {
+      "file": "ohm-geometry-00.geojson",
+      "sha256": "e80deed40f8731dbf2eff9d33ffcf81e450474f892550410de7775f03c7e4d3d"
+    },
+    {
+      "file": "ohm-geometry-01.geojson",
+      "sha256": "b5bb64a35a70143a2d9d023e868e26fc10d0c4d81d268c4ea7107a76c3343630"
+    },
+    {
+      "file": "ohm-geometry-02.geojson",
+      "sha256": "1dc85d47535e032727562650e998a8e3fecc1dd64be0551dd44e182bf107b9c7"
+    },
+    {
+      "file": "ohm-geometry-03.geojson",
+      "sha256": "dc25ed1ffe03e9e335b88be6f3b81a5684fcf413bc4a93bd538bf7c972713766"
+    },
+    {
+      "file": "ohm-geometry-04.geojson",
+      "sha256": "56a79e0891ede99f859386a5165ecb8fe0b6e006e28162775f3e875a6a80810f"
+    },
+    {
+      "file": "ohm-geometry-05.geojson",
+      "sha256": "23af8f1fb951106f5addac1ed825752bc8c7fe97e8c77aef585dc6229c2e05b3"
+    },
+    {
+      "file": "ohm-geometry-06.geojson",
+      "sha256": "0a0014ea6cf4f3b065ed3eebb488a4d801d2943477a3fe1f44832d6316abcb8f"
+    },
+    {
+      "file": "ohm-geometry-07.geojson",
+      "sha256": "db599efa362c9282ac900e1f2853e8074bfad546e70c9f134de747957b5e52bd"
+    },
+    {
+      "file": "ohm-geometry-08.geojson",
+      "sha256": "4b672dfa1aa137f347f7beb51fc6d72582d91f06f38ba7be83a077012719b406"
+    },
+    {
+      "file": "ohm-geometry-09.geojson",
+      "sha256": "ec78170a448959d797e2f5294abfb4246a81fed9e22d9d3593d280674b6a6045"
+    },
+    {
+      "file": "ohm-geometry-10.geojson",
+      "sha256": "c091cf211c103a13a9976df764cc286c4cc9fd8c51681c7d2434d1f1e55f7f7d"
+    },
+    {
+      "file": "ohm-geometry-11.geojson",
+      "sha256": "83e62a79d7a9bd282409a0daaad8c5cdf86737d309a117e5d987db533545c5ed"
+    },
+    {
+      "file": "ohm-geometry-12.geojson",
+      "sha256": "c536166c18883d9ef99872552d99ed8a24124d5dfb4a23e1664da769afdd55f1"
+    },
+    {
+      "file": "ohm-geometry-13.geojson",
+      "sha256": "71e476ac43ebdedd30dd147675a37de695ea2fdd5b4137a92e1f67fe1b6107b9"
+    },
+    {
+      "file": "ohm-geometry-14.geojson",
+      "sha256": "3f4a074a75722fb1b2aa975f534efcd4da9f635506ab4a43f2c788c2088f4608"
+    },
+    {
+      "file": "ohm-geometry-15.geojson",
+      "sha256": "6391df438322eda6b0c9c9789de54b86b0b51fe2cffe8bce4c6b5d806724a093"
+    },
+    {
+      "file": "ohm-geometry-16.geojson",
+      "sha256": "44d0450d806145cb31e9b2d66815d7b8d371aa68a7aed6aac7b98241b87a9f14"
+    }
+  ]
+}
