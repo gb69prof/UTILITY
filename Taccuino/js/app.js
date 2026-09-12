@@ -71,33 +71,60 @@
   }
 
   function bindNotes() {
-    $('#noteText').addEventListener('input', () => {
-      state.noteDirty = true;
-      setNoteStatus('Modifiche non salvate');
-    });
-    $('#noteTitle').addEventListener('input', () => {
-      state.noteDirty = true;
-      setNoteStatus('Modifiche non salvate');
-    });
+    $('#noteText').addEventListener('input', markNoteDirty);
+    $('#noteTitle').addEventListener('input', markNoteDirty);
     $('#saveNoteBtn').addEventListener('click', saveNote);
     $('#newNoteBtn').addEventListener('click', newNote);
-    $('#exportTxtBtn').addEventListener('click', exportTxt);
+
+    $('#openNoteBtn').addEventListener('click', () => $('#openNoteInput').click());
+    $('#openNoteInput').addEventListener('change', async (event) => {
+      const file = event.target.files && event.target.files[0];
+      event.target.value = '';
+      if (file) await openTextFile(file);
+    });
+
+    $('#importTextBtn').addEventListener('click', () => $('#importTextInput').click());
+    $('#importTextInput').addEventListener('change', async (event) => {
+      const file = event.target.files && event.target.files[0];
+      event.target.value = '';
+      if (file) await importTextFile(file);
+    });
+  }
+
+  function markNoteDirty() {
+    state.noteDirty = true;
+    setNoteStatus('Modifiche non salvate');
   }
 
   async function saveNote() {
     const content = $('#noteText').value;
-    const record = await window.TaccuinoStorage.savePage({
-      id: state.noteId,
-      createdAt: state.noteCreatedAt,
-      title: $('#noteTitle').value,
-      type: 'text',
-      content
-    });
-    state.noteId = record.id;
-    state.noteCreatedAt = record.createdAt;
-    state.noteDirty = false;
-    $('#noteTitle').value = record.title;
-    setNoteStatus(`Salvato ${formatTime(record.updatedAt)}`);
+    const title = $('#noteTitle').value.trim() || defaultExportName('appunto');
+
+    try {
+      const record = await window.TaccuinoStorage.savePage({
+        id: state.noteId,
+        createdAt: state.noteCreatedAt,
+        title,
+        type: 'text',
+        content
+      });
+      state.noteId = record.id;
+      state.noteCreatedAt = record.createdAt;
+      state.noteDirty = false;
+      $('#noteTitle').value = record.title;
+
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const result = await saveBlobToDevice(blob, `${sanitizeFilename(record.title)}.txt`, {
+        description: 'File di testo',
+        mime: 'text/plain',
+        extensions: ['.txt']
+      });
+      setNoteStatus(result === 'cancelled'
+        ? `Salvato nell’archivio · file TXT non scaricato`
+        : `Salvato · ${formatTime(record.updatedAt)} · file TXT creato`);
+    } catch (error) {
+      setNoteStatus(`Salvataggio non riuscito: ${friendlyError(error)}`);
+    }
   }
 
   function newNote() {
@@ -111,12 +138,48 @@
     $('#noteText').focus({ preventScroll: true });
   }
 
-  function exportTxt() {
-    const text = $('#noteText').value;
-    const title = $('#noteTitle').value.trim() || defaultExportName('appunto');
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-    downloadBlob(blob, `${sanitizeFilename(title)}.txt`);
-    setNoteStatus('File TXT preparato');
+  async function openTextFile(file) {
+    if (!isTextFile(file)) {
+      setNoteStatus('Il file selezionato non è un file di testo.');
+      return;
+    }
+    if (state.noteDirty && !window.confirm('Aprire il file e sostituire l’appunto con modifiche non salvate?')) return;
+
+    try {
+      const text = await file.text();
+      state.noteId = null;
+      state.noteCreatedAt = null;
+      state.noteDirty = false;
+      $('#noteTitle').value = filenameWithoutExtension(file.name) || 'Appunto';
+      $('#noteText').value = text;
+      setNoteStatus(`Aperto dal dispositivo · ${file.name}`);
+    } catch (error) {
+      setNoteStatus(`Apertura non riuscita: ${friendlyError(error)}`);
+    }
+  }
+
+  async function importTextFile(file) {
+    if (!isTextFile(file)) {
+      setNoteStatus('Il file selezionato non è un file di testo.');
+      return;
+    }
+
+    try {
+      const imported = await file.text();
+      const textarea = $('#noteText');
+      const start = Number.isInteger(textarea.selectionStart) ? textarea.selectionStart : textarea.value.length;
+      const end = Number.isInteger(textarea.selectionEnd) ? textarea.selectionEnd : start;
+      const before = textarea.value.slice(0, start);
+      const after = textarea.value.slice(end);
+      const separator = before && !before.endsWith('\n') ? '\n' : '';
+      textarea.value = before + separator + imported + after;
+      if (!$('#noteTitle').value.trim() && file.name) $('#noteTitle').value = filenameWithoutExtension(file.name);
+      state.noteDirty = true;
+      setNoteStatus(`Testo importato · ${file.name}`);
+      textarea.focus({ preventScroll: true });
+    } catch (error) {
+      setNoteStatus(`Importazione non riuscita: ${friendlyError(error)}`);
+    }
   }
 
   function bindDrawing() {
@@ -148,6 +211,20 @@
     $('#saveDrawingBtn').addEventListener('click', saveDrawing);
     $('#exportJpgBtn').addEventListener('click', exportJpg);
     $('#drawingTitle').addEventListener('input', () => pad.setDirty(true));
+
+    $('#openDrawingBtn').addEventListener('click', () => $('#openDrawingInput').click());
+    $('#openDrawingInput').addEventListener('change', async (event) => {
+      const file = event.target.files && event.target.files[0];
+      event.target.value = '';
+      if (file) await openDrawingFile(file);
+    });
+
+    $('#importImageBtn').addEventListener('click', () => $('#importImageInput').click());
+    $('#importImageInput').addEventListener('change', async (event) => {
+      const file = event.target.files && event.target.files[0];
+      event.target.value = '';
+      if (file) await importImageFile(file);
+    });
   }
 
   function setTool(tool) {
@@ -160,18 +237,43 @@
   }
 
   async function saveDrawing() {
-    const record = await window.TaccuinoStorage.savePage({
-      id: state.drawingId,
-      createdAt: state.drawingCreatedAt,
-      title: $('#drawingTitle').value,
-      type: 'drawing',
-      content: pad.snapshot()
-    });
-    state.drawingId = record.id;
-    state.drawingCreatedAt = record.createdAt;
-    $('#drawingTitle').value = record.title;
-    pad.setDirty(false);
-    setDrawingStatus(`Salvato ${formatTime(record.updatedAt)}`);
+    const title = $('#drawingTitle').value.trim() || defaultExportName('disegno');
+    const now = new Date().toISOString();
+
+    try {
+      const record = await window.TaccuinoStorage.savePage({
+        id: state.drawingId,
+        createdAt: state.drawingCreatedAt,
+        title,
+        type: 'drawing',
+        content: pad.snapshot()
+      });
+      state.drawingId = record.id;
+      state.drawingCreatedAt = record.createdAt;
+      $('#drawingTitle').value = record.title;
+      pad.setDirty(false);
+
+      const documentData = {
+        format: 'gbprof-taccuino',
+        version: 1,
+        type: 'drawing',
+        title: record.title,
+        createdAt: record.createdAt,
+        updatedAt: record.updatedAt || now,
+        image: record.content
+      };
+      const blob = new Blob([JSON.stringify(documentData, null, 2)], { type: 'application/json;charset=utf-8' });
+      const result = await saveBlobToDevice(blob, `${sanitizeFilename(record.title)}.json`, {
+        description: 'Disegno Taccuino',
+        mime: 'application/json',
+        extensions: ['.json']
+      });
+      setDrawingStatus(result === 'cancelled'
+        ? 'Salvato nell’archivio · file JSON non scaricato'
+        : `Salvato · ${formatTime(record.updatedAt)} · file JSON creato`);
+    } catch (error) {
+      setDrawingStatus(`Salvataggio non riuscito: ${friendlyError(error)}`);
+    }
   }
 
   function newDrawing() {
@@ -183,11 +285,69 @@
     setDrawingStatus('');
   }
 
-  function exportJpg() {
-    const title = $('#drawingTitle').value.trim() || defaultExportName('taccuino');
-    const dataUrl = pad.exportJpeg(0.92);
-    downloadDataUrl(dataUrl, `${sanitizeFilename(title)}.jpg`);
-    setDrawingStatus('File JPG preparato');
+  async function openDrawingFile(file) {
+    if (!file.name.toLowerCase().endsWith('.json') && file.type !== 'application/json') {
+      setDrawingStatus('Seleziona un file JSON creato da Taccuino.');
+      return;
+    }
+    if (pad.dirty && !window.confirm('Aprire il file e sostituire il disegno con modifiche non salvate?')) return;
+
+    try {
+      const data = JSON.parse(await file.text());
+      const image = data && (data.image || data.content);
+      const validFormat = data && (data.format === 'gbprof-taccuino' || data.type === 'drawing');
+      if (!validFormat || typeof image !== 'string' || !image.startsWith('data:image/')) {
+        throw new Error('Il JSON non contiene un disegno Taccuino valido.');
+      }
+
+      switchView('drawing');
+      requestAnimationFrame(async () => {
+        try {
+          pad.resize(false);
+          await pad.load(image);
+          state.drawingId = null;
+          state.drawingCreatedAt = data.createdAt || null;
+          $('#drawingTitle').value = data.title || filenameWithoutExtension(file.name) || 'Disegno';
+          setDrawingStatus(`Aperto dal dispositivo · ${file.name}`);
+        } catch (error) {
+          setDrawingStatus(`Apertura non riuscita: ${friendlyError(error)}`);
+        }
+      });
+    } catch (error) {
+      setDrawingStatus(`Apertura non riuscita: ${friendlyError(error)}`);
+    }
+  }
+
+  async function importImageFile(file) {
+    if (!file.type.startsWith('image/')) {
+      setDrawingStatus('Seleziona un file immagine PNG, JPG, WEBP o GIF.');
+      return;
+    }
+
+    try {
+      const dataUrl = await fileToDataUrl(file);
+      await pad.importImage(dataUrl);
+      if (!$('#drawingTitle').value.trim()) $('#drawingTitle').value = filenameWithoutExtension(file.name) || 'Disegno';
+      setDrawingStatus(`Immagine importata · ${file.name}`);
+    } catch (error) {
+      setDrawingStatus(`Importazione non riuscita: ${friendlyError(error)}`);
+    }
+  }
+
+  async function exportJpg() {
+    const title = $('#drawingTitle').value.trim() || defaultExportName('disegno');
+    try {
+      const dataUrl = pad.exportJpeg(0.94);
+      const blob = await dataUrlToBlob(dataUrl);
+      const result = await saveBlobToDevice(blob, `${sanitizeFilename(title)}.jpg`, {
+        description: 'Immagine JPEG',
+        mime: 'image/jpeg',
+        extensions: ['.jpg', '.jpeg']
+      });
+      setDrawingStatus(result === 'cancelled' ? 'Salvataggio JPG annullato' : 'Immagine JPG salvata sul dispositivo');
+    } catch (error) {
+      setDrawingStatus(`JPG non salvato: ${friendlyError(error)}`);
+    }
   }
 
   function bindArchive() {
@@ -298,6 +458,86 @@
     pad.newPage();
   }
 
+  async function saveBlobToDevice(blob, filename, typeInfo) {
+    if ('showSaveFilePicker' in window) {
+      try {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: filename,
+          types: [{
+            description: typeInfo.description,
+            accept: { [typeInfo.mime]: typeInfo.extensions }
+          }]
+        });
+        const writable = await handle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        return 'saved';
+      } catch (error) {
+        if (error && error.name === 'AbortError') return 'cancelled';
+        console.warn('File picker non disponibile, uso il download classico:', error);
+      }
+    }
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (isIOS && typeof File !== 'undefined' && navigator.share && navigator.canShare) {
+      try {
+        const file = new File([blob], filename, { type: blob.type || typeInfo.mime });
+        if (navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], title: filename });
+          return 'saved';
+        }
+      } catch (error) {
+        if (error && error.name === 'AbortError') return 'cancelled';
+        console.warn('Condivisione file non disponibile, uso il download classico:', error);
+      }
+    }
+
+    downloadBlob(blob, filename);
+    return 'saved';
+  }
+
+  function downloadBlob(blob, filename) {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    link.rel = 'noopener';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  }
+
+  function dataUrlToBlob(dataUrl) {
+    const parts = dataUrl.split(',');
+    const header = parts[0] || '';
+    const payload = parts[1] || '';
+    const match = header.match(/data:([^;]+);base64/i);
+    const mime = match ? match[1] : 'application/octet-stream';
+    const binary = atob(payload);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+    return new Blob([bytes], { type: mime });
+  }
+
+  function fileToDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => reject(reader.error || new Error('File non leggibile.'));
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function isTextFile(file) {
+    return file.type === 'text/plain' || file.name.toLowerCase().endsWith('.txt') || file.type === '';
+  }
+
+  function filenameWithoutExtension(name) {
+    return String(name || '').replace(/\.[^.]+$/, '').trim();
+  }
+
   function sanitizeFilename(name) {
     return (name || 'taccuino')
       .normalize('NFKD')
@@ -313,28 +553,6 @@
     return `${prefix}-${now.getFullYear()}-${p(now.getMonth() + 1)}-${p(now.getDate())}-${p(now.getHours())}${p(now.getMinutes())}`;
   }
 
-  function downloadBlob(blob, filename) {
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = filename;
-    link.rel = 'noopener';
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  }
-
-  function downloadDataUrl(dataUrl, filename) {
-    const link = document.createElement('a');
-    link.href = dataUrl;
-    link.download = filename;
-    link.rel = 'noopener';
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  }
-
   function formatTime(iso) {
     return new Intl.DateTimeFormat('it-IT', { hour: '2-digit', minute: '2-digit' }).format(new Date(iso));
   }
@@ -343,6 +561,10 @@
     return new Intl.DateTimeFormat('it-IT', {
       day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
     }).format(new Date(iso));
+  }
+
+  function friendlyError(error) {
+    return error && error.message ? error.message : 'errore sconosciuto';
   }
 
   function setNoteStatus(text) { $('#noteStatus').textContent = text || ''; }
