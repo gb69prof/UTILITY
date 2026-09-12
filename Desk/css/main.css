@@ -66,6 +66,11 @@ button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focu
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .eyebrow { margin: 0 0 7px; color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .13em; }
 
+/* Keep the shared footer inside the viewport budget, so focus cannot
+   scroll the whole application (and its tools) out of view. */
+.desk-body { display: flex; flex-direction: column; height: 100%; height: 100dvh; }
+.desk-body .app-shell { flex: 1; min-height: 0; }
+.desk-body > .gbprof-compliance-footer { flex: 0 0 auto; padding: 6px 12px; font-size: 12px; }
 .app-shell { height: 100%; display: flex; flex-direction: column; }
 .topbar { flex: 0 0 66px; display: grid; grid-template-columns: 210px minmax(400px, 1fr) auto; align-items: center; gap: 20px; padding: 0 16px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--panel-strong) 94%, transparent); backdrop-filter: blur(18px); position: relative; z-index: 50; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; min-width: 0; }
@@ -281,16 +286,18 @@ button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focu
 .lim-fullscreen:hover, .lim-fullscreen:focus-visible { opacity: 1; }
 
 @media (max-width: 1180px) {
-  .topbar { grid-template-columns: 185px 1fr auto; gap: 10px; }
-  .folder-import, .lesson-toggle { display: none; }
+  .lesson-toggle { display: none; }
+  .topbar { grid-template-columns: 1fr auto; gap: 10px; padding: 8px 12px; flex-basis: auto; }
+  .main-tools { grid-row: 2; grid-column: 1 / -1; flex-wrap: wrap; }
+  .top-actions { grid-row: 1; grid-column: 2; }
   .desk-pane { grid-template-columns: 180px minmax(0, 1fr); }
   .workspace.viewer-open { grid-template-columns: minmax(330px, 40%) 8px minmax(430px, 1fr); }
   .desk-actions #sortSelect { display: none; }
 }
 
 @media (max-width: 900px) {
-  .topbar { flex-basis: 60px; grid-template-columns: auto 1fr auto; padding: 0 10px; }
-  .brand small, .brand > span:last-child, .main-tools .tool-btn { display: none; }
+  .topbar { grid-template-columns: 1fr auto; padding: 8px 10px; }
+  .brand small, .brand > span:last-child { display: none; }
   .main-tools { justify-content: flex-start; }
   .workspace.viewer-open { grid-template-columns: 1fr; grid-template-rows: minmax(260px, 42%) 8px minmax(300px, 1fr); }
   .workspace.viewer-open .desk-pane { grid-row: 1; }
@@ -314,6 +321,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focu
 }
 
 @media (max-width: 650px) {
+  .desk-body > .gbprof-compliance-footer { margin-bottom: calc(58px + env(safe-area-inset-bottom)); flex-direction: row; }
   .lim-pill { min-width: auto; padding: 0 10px; }
   .lim-pill > span:last-child { display: none; }
   .top-actions { gap: 4px; }

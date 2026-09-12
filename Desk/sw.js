@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "desk-lim-shell-";
-const CACHE = `${CACHE_PREFIX}v3`;
+const CACHE = `${CACHE_PREFIX}v4`;
 const SHELL = [
   "./", "./index.html", "./lim.html", "./manifest.webmanifest", "./css/main.css",
   "./js/app.js", "./js/db.js", "./js/files.js", "./js/viewer.js", "./js/lessons.js",
