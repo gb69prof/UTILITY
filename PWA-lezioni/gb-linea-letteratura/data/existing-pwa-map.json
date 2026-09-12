@@ -1,0 +1,1098 @@
+[
+  {
+    "repo": "III-anno",
+    "path": "Dante-corpus/index.html",
+    "title": "Dante Alighieri — Opere complete | gbprof",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/III-anno/Dante-corpus/",
+    "id": "iii-anno-dante-corpus",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "dante",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Dante Alighieri — Opere complete | gbprof",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Dante-corpus/manifest.webmanifest",
+    "manifestName": "Dante Alighieri — Opere complete gbprof",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/dante.webp"
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/Dolce-stil-novo/index.html",
+    "title": "Il dolce stil novo · Interiorità, forma, conoscenza",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img id=\"mapDialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/Dolce-stil-novo/",
+    "id": "iii-anno-letteratura-dolce-stil-novo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "stilnovo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Il dolce stil novo · Interiorità, forma, conoscenza",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/Dolce-stil-novo/manifest.webmanifest",
+    "manifestName": "Il dolce stil novo · Interiorità, forma e conoscenza",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/Eloisa-Abelardo/index.html",
+    "title": "Eloisa e Abelardo — Le lettere che non obbediscono",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-image\" src=\"assets/images/01-scuola-parigi.webp\" alt=\"Ricostruzione artistica: Eloisa e Abelardo discutono su un codice aperto nella Parigi del primo XII secolo\">",
+      "<img id=\"map-large\" src=\"assets/maps/01-mondo.svg\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/Eloisa-Abelardo/",
+    "id": "iii-anno-letteratura-eloisa-abelardo",
+    "checkedAt": "2026-09-12",
+    "mapping": null,
+    "status": 200,
+    "publicTitle": "Eloisa e Abelardo — Le lettere che non obbediscono",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/Eloisa-Abelardo/manifest.webmanifest",
+    "manifestName": "Eloisa e Abelardo — Le lettere che non obbediscono",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/Lezioni/Contrasto-/index.html",
+    "title": "Rosa fresca aulentissima · L’amore cortese scende in strada",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img id=\"mapDialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/Lezioni/Contrasto-/",
+    "id": "iii-anno-letteratura-lezioni-contrasto",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "siciliana",
+      "opera"
+    ],
+    "status": 200,
+    "publicTitle": "Rosa fresca aulentissima · L’amore cortese scende in strada",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/Lezioni/Contrasto-/manifest.webmanifest",
+    "manifestName": "Rosa fresca aulentissima · Lezione gbprof",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/Lezioni/amor-cortese/index.html",
+    "title": "Amor cortese — Percorso didattico",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/III-anno/Letteratura/Lezioni/amor-cortese/",
+    "id": "iii-anno-letteratura-lezioni-amor-cortese",
+    "checkedAt": "2026-09-12",
+    "mapping": null,
+    "status": 200,
+    "publicTitle": "Amor cortese — Percorso didattico",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/Lezioni/amor-cortese/manifest.webmanifest",
+    "manifestName": "Amor cortese — Percorso didattico",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/Scuola-siciliana/index.html",
+    "title": "La Scuola siciliana · Corte, lingua, forme",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img id=\"mapDialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/Scuola-siciliana/",
+    "id": "iii-anno-letteratura-scuola-siciliana",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "siciliana",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "La Scuola siciliana · Corte, lingua, forme",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/Scuola-siciliana/manifest.webmanifest",
+    "manifestName": "La Scuola siciliana · Corte, lingua e forme",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/amor-cortese/index.html",
+    "title": "Amor cortese · Desiderio, parola e responsabilità",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img id=\"mapDialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/amor-cortese/",
+    "id": "iii-anno-letteratura-amor-cortese",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "stilnovo",
+      "contesto"
+    ],
+    "status": 200,
+    "publicTitle": "Amor cortese · Desiderio, parola e responsabilità",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/amor-cortese/manifest.webmanifest",
+    "manifestName": "Amor cortese · Desiderio, parola e responsabilità",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "Letteratura/fiore-rosa/index.html",
+    "title": "Il fiore e la rosa nel Medioevo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img id=\"mapDialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/III-anno/Letteratura/fiore-rosa/",
+    "id": "iii-anno-letteratura-fiore-rosa",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "comunale",
+      "contesto"
+    ],
+    "status": 200,
+    "publicTitle": "Il fiore e la rosa nel Medioevo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/Letteratura/fiore-rosa/manifest.webmanifest",
+    "manifestName": "Il fiore e la rosa nel Medioevo",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "III-anno",
+    "path": "inferno/index.html",
+    "title": "Inferno di Dante — Libro vivo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\" />"
+    ],
+    "images": [
+      "<img src=\"assets/icons/icon.svg\" alt=\"\"/>"
+    ],
+    "url": "https://gbprof.it/III-anno/inferno/",
+    "id": "iii-anno-inferno",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "dante",
+      "opera"
+    ],
+    "status": 200,
+    "publicTitle": "Inferno di Dante — Libro vivo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/III-anno/inferno/manifest.webmanifest",
+    "manifestName": "Inferno di Dante — Libro vivo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/dante.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Foscolo-gioco-3d/index.html",
+    "title": "Foscolo — Il tempio delle illusioni",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Foscolo-gioco-3d/",
+    "id": "iv-anno-letteratura-foscolo-gioco-3d",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "foscolo",
+      "gioco"
+    ],
+    "status": 200,
+    "publicTitle": "Foscolo — Il tempio delle illusioni",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Foscolo-gioco-3d/manifest.webmanifest",
+    "manifestName": "Foscolo — Il tempio delle illusioni",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/foscolo.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Foscolo-testi/index.html",
+    "title": "La Biblioteca di Ugo Foscolo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Foscolo-testi/",
+    "id": "iv-anno-letteratura-foscolo-testi",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "foscolo",
+      "opera"
+    ],
+    "status": 200,
+    "publicTitle": "La Biblioteca di Ugo Foscolo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Foscolo-testi/manifest.webmanifest",
+    "manifestName": "La Biblioteca di Ugo Foscolo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/foscolo.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Foscolo/index.html",
+    "title": "Ugo Foscolo | PWA didattica",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.json\">"
+    ],
+    "images": [
+      "<img class=\"index-replica-image\" src=\"assets/immagini/index.png\" alt=\"Homepage illustrata della PWA didattica su Ugo Foscolo\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Foscolo/",
+    "id": "iv-anno-letteratura-foscolo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "foscolo",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Ugo Foscolo | PWA didattica",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Foscolo/manifest.json",
+    "manifestName": "Ugo Foscolo - PWA didattica",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/foscolo.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Goldoni/index.html",
+    "title": "Carlo Goldoni — percorso didattico | Carlo Goldoni",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"index-replica-image\" src=\"assets/index.webp\" alt=\"Copertina illustrata di Carlo Goldoni: Venezia, il ritratto dell’autore, sei movimenti del percorso e figure della sua commedia.\">",
+      "<img id=\"zoomed-map\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Goldoni/",
+    "id": "iv-anno-letteratura-goldoni",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "goldoni",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Carlo Goldoni — percorso didattico | Carlo Goldoni",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Goldoni/manifest.webmanifest",
+    "manifestName": "Carlo Goldoni · Il mondo va in scena",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/goldoni.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Leopardi-testi/index.html",
+    "title": "Leopardi · Biblioteca viva",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.json\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Leopardi-testi/",
+    "id": "iv-anno-letteratura-leopardi-testi",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "leopardi",
+      "opera"
+    ],
+    "status": 200,
+    "publicTitle": "Leopardi · Biblioteca viva",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Leopardi-testi/manifest.json",
+    "manifestName": "Leopardi · Biblioteca viva",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/leopardi.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Leopardi/index.html",
+    "title": "Giacomo Leopardi | PWA didattica",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.json\">"
+    ],
+    "images": [
+      "<img class=\"index-replica-image\" src=\"assets/immagini/index.png\" alt=\"Homepage illustrata della PWA didattica su Giacomo Leopardi\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Leopardi/",
+    "id": "iv-anno-letteratura-leopardi",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "leopardi",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Giacomo Leopardi | PWA didattica",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Leopardi/manifest.json",
+    "manifestName": "Leopardi - percorso didattico",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/leopardi.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Manzoni/index.html",
+    "title": "Alessandro Manzoni | PWA didattica",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.json\">"
+    ],
+    "images": [
+      "<img class=\"index-replica-image\" src=\"assets/immagini/index.png\" alt=\"Homepage illustrata della PWA didattica su Alessandro Manzoni\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Manzoni/",
+    "id": "iv-anno-letteratura-manzoni",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "manzoni",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Alessandro Manzoni | PWA didattica",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Manzoni/manifest.json",
+    "manifestName": "Alessandro Manzoni - PWA didattica",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/manzoni.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Parini/index.html",
+    "title": "Giuseppe Parini · Ambiente di studio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/parini_fotorealistico.png\" alt=\"Ricostruzione visiva di Giuseppe Parini\" width=\"1086\" height=\"1448\">",
+      "<img id=\"visualImage\" alt=\"\" src=\"assets/schema_primo_stato_08.png\">",
+      "<img id=\"largeImage\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Parini/",
+    "id": "iv-anno-letteratura-parini",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "parini",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Giuseppe Parini · Ambiente di studio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Parini/manifest.webmanifest",
+    "manifestName": "Giuseppe Parini · Ambiente di studio",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/parini.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Romanticismo-lezioni/index.html",
+    "title": "Romanticismo — Ambiente di studio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"./assets/images/copertina-romanticismo.webp\"\n          alt=\"Copertina illustrata: una città ordinata si spezza in rovine e conduce verso montagne, notte e infinito. Contiene le porte del percorso romantico.\"\n          width=\"941\" height=\"1672\">",
+      "<img src=\"./assets/images/tavola-contraddizioni.png\" alt=\"Anteprima della tavola illustrata sulle contraddizioni romantiche\" loading=\"lazy\" decoding=\"async\">",
+      "<img src=\"./assets/images/tavola-romanticismo-europeo.png\" alt=\"Anteprima della tavola illustrata sul Romanticismo europeo\" loading=\"lazy\" decoding=\"async\">",
+      "<img src=\"./assets/images/tavola-romanticismo-italiano.png\" alt=\"Anteprima della tavola illustrata sul Romanticismo italiano\" loading=\"lazy\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Romanticismo-lezioni/",
+    "id": "iv-anno-letteratura-romanticismo-lezioni",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "romanticismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Romanticismo — Ambiente di studio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Romanticismo-lezioni/manifest.webmanifest",
+    "manifestName": "Romanticismo — Ambiente di studio",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Romanticismo/index.html",
+    "title": "Il Romanticismo — Ambiente di studio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest?v=3.0.2\">"
+    ],
+    "images": [
+      "<img class=\"hero-img\" src=\"assets/images/il_romanticismo_un_viaggio_interattivo.png\" alt=\"Copertina illustrata del percorso sul Romanticismo\">",
+      "<img id=\"contextImage\" src=\"\" alt=\"\">",
+      "<img id=\"dialogImage\" src=\"\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Romanticismo/",
+    "id": "iv-anno-letteratura-romanticismo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "romanticismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Il Romanticismo — Ambiente di studio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Romanticismo/manifest.webmanifest?v=3.0.2",
+    "manifestName": "Il Romanticismo — Ambiente di studio",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/Settecento-illuminista/index.html",
+    "title": "Il Settecento illuminista — Tre vie alla libertà",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/copertina-indice.png\" width=\"1672\" height=\"941\" alt=\"Copertina illustrata del percorso sul Settecento illuminista, con Goldoni, Alfieri e Parini e quattro schede di accesso alle lezioni.\">",
+      "<img id=\"contextImage\" src=\"assets/images/visual-mondo.svg\" alt=\"\" width=\"1200\" height=\"720\">",
+      "<img id=\"dialogImage\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/Settecento-illuminista/",
+    "id": "iv-anno-letteratura-settecento-illuminista",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "illuminismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Il Settecento illuminista — Tre vie alla libertà",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/Settecento-illuminista/manifest.webmanifest",
+    "manifestName": "Il Settecento illuminista — Tre vie alla libertà",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/colle-vulcano/index.html",
+    "title": "Dalla collina al vulcano — Giacomo Leopardi",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\" />"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/IV-anno/Letteratura/colle-vulcano/",
+    "id": "iv-anno-letteratura-colle-vulcano",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "leopardi",
+      "gioco"
+    ],
+    "status": 200,
+    "publicTitle": "Dalla collina al vulcano — Giacomo Leopardi",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/colle-vulcano/manifest.webmanifest",
+    "manifestName": "Dalla collina al vulcano",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/leopardi.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/promessi-sposi/index.html",
+    "title": "I Promessi Sposi - Atlante del testo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/copertina.jpg\" alt=\"Copertina dei Promessi Sposi\">"
+    ],
+    "url": "https://gbprof.it/IV-anno/Letteratura/promessi-sposi/",
+    "id": "iv-anno-letteratura-promessi-sposi",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "manzoni",
+      "opera"
+    ],
+    "status": 200,
+    "publicTitle": "I Promessi Sposi - Atlante del testo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/promessi-sposi/manifest.webmanifest",
+    "manifestName": "I Promessi Sposi - Atlante del testo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/manzoni.webp"
+  },
+  {
+    "repo": "IV-anno",
+    "path": "Letteratura/prova/index.html",
+    "title": "Illuminismo · Corpus gbprof",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/IV-anno/Letteratura/prova/",
+    "id": "iv-anno-letteratura-prova",
+    "checkedAt": "2026-09-12",
+    "mapping": null,
+    "status": 200,
+    "publicTitle": "Illuminismo · Corpus gbprof",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/IV-anno/Letteratura/prova/manifest.webmanifest",
+    "manifestName": "Corpus gbprof · Illuminismo",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Buzzati/index.html",
+    "title": "Dino Buzzati · La vita che aspetta",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-buzzati.png\" alt=\"Ritratto fotografico di Dino Buzzati\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Buzzati/",
+    "id": "v-anno-letteratura-buzzati",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "buzzati",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Dino Buzzati · La vita che aspetta",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Buzzati/manifest.webmanifest",
+    "manifestName": "Dino Buzzati · La vita che aspetta",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/buzzati.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Calvino/index.html",
+    "title": "Italo Calvino · La forma del labirinto",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-calvino.png\" alt=\"Ritratto fotografico di Italo Calvino\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Calvino/",
+    "id": "v-anno-letteratura-calvino",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "calvino",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Italo Calvino · La forma del labirinto",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Calvino/manifest.webmanifest",
+    "manifestName": "Italo Calvino · La forma del labirinto",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/calvino.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/D’Annunzio/index.html",
+    "title": "Gabriele D’Annunzio — Libro vivo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/copertina-dannunzio.png\" width=\"1672\" height=\"941\" alt=\"Copertina illustrata del percorso su Gabriele D’Annunzio con sei movimenti, mappe, timeline e quiz.\">",
+      "<img id=\"contextImage\" src=\"assets/images/section-mondo.svg\" alt=\"\" width=\"1000\" height=\"650\">",
+      "<img id=\"dialogImage\" alt=\"\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/D%E2%80%99Annunzio/",
+    "id": "v-anno-letteratura-dannunzio",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "dannunzio",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Gabriele D’Annunzio — Libro vivo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/D%E2%80%99Annunzio/manifest.webmanifest",
+    "manifestName": "Gabriele D’Annunzio — Libro vivo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/dannunzio.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Ermetismo/index.html",
+    "title": "Ermetismo · La parola e il silenzio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/ermetismo.jpg\" alt=\"Piazza metafisica silenziosa, con edifici, lunghe ombre e una figura isolata\">",
+      "<img src=\"assets/maps/mappa-sintesi.svg\" alt=\"La crisi della parola pubblica produce il ritiro nell'interiorità; la realtà opaca richiede una parola essenziale; analogia e silenzio confluiscono nelle opere e lasciano una nuova responsabilità della parola.\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Ermetismo/",
+    "id": "v-anno-letteratura-ermetismo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "ermetismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Ermetismo · La parola e il silenzio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Ermetismo/manifest.webmanifest",
+    "manifestName": "Ermetismo · La parola e il silenzio",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Fallaci/index.html",
+    "title": "Oriana Fallaci · La parola in prima linea",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-fallaci.png\" alt=\"Ritratto fotografico di Oriana Fallaci\" width=\"1165\" height=\"1350\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Fallaci/",
+    "id": "v-anno-letteratura-fallaci",
+    "checkedAt": "2026-09-12",
+    "mapping": null,
+    "status": 200,
+    "publicTitle": "Oriana Fallaci · La parola in prima linea",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Fallaci/manifest.webmanifest",
+    "manifestName": "Oriana Fallaci · La parola in prima linea",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Futurismo/index.html",
+    "title": "Futurismo — La velocità e la sua ombra",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/futurismo.jpg\" alt=\"Composizione futurista dai colori accesi, attraversata da linee dinamiche e forme in movimento\">",
+      "<img src=\"maps/01-mondo.svg\" alt=\"Mappa: la modernizzazione diseguale produce nuovi ritmi; il patrimonio diventa peso; stampa e metropoli cambiano il pubblico; la crisi delle forme prepara la frattura futurista.\">",
+      "<img src=\"maps/02-fratture.svg\" alt=\"Mappa: il manifesto crea il gruppo; le serate trasformano il pubblico; la guerra divide e uccide; la politica conduce a fascismo e divergenze; le donne contestano la misoginia; le fratture portano a più futurismi.\">",
+      "<img src=\"maps/03-immagine.svg\" alt=\"Mappa: la metropoli viene percepita come energia; il dinamismo dissolve i contorni; la simultaneità moltiplica i tempi; la macchina diventa mito; il culto della forza produce una tensione politica; la visione richiede una nuova lingua.\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Futurismo/",
+    "id": "v-anno-letteratura-futurismo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "futurismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Futurismo — La velocità e la sua ombra",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Futurismo/manifest.webmanifest",
+    "manifestName": "Futurismo — La velocità e la sua ombra",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Gadda/index.html",
+    "title": "Carlo Emilio Gadda — L'ingegnere del groviglio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/gadda-ritratto.jpg\" alt=\"Ritratto completo di Carlo Emilio Gadda con cappello scuro\" width=\"1198\" height=\"1313\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Gadda/",
+    "id": "v-anno-letteratura-gadda",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "gadda",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Carlo Emilio Gadda — L'ingegnere del groviglio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Gadda/manifest.webmanifest",
+    "manifestName": "Carlo Emilio Gadda — L'ingegnere del groviglio",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/gadda.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Ginzburg/index.html",
+    "title": "Natalia Ginzburg — Le parole che restano",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-ginzburg.png\" alt=\"Ritratto fotografico di Natalia Ginzburg\" width=\"1254\" height=\"1254\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Ginzburg/",
+    "id": "v-anno-letteratura-ginzburg",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "ginzburg",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Natalia Ginzburg — Le parole che restano",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Ginzburg/manifest.webmanifest",
+    "manifestName": "Natalia Ginzburg — Le parole che restano",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/ginzburg.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Montale/index.html",
+    "title": "Montale · Il varco e il limite",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-montale.png\" alt=\"Ritratto fotografico di Eugenio Montale\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Montale/",
+    "id": "v-anno-letteratura-montale",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "montale",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Montale · Il varco e il limite",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Montale/manifest.webmanifest",
+    "manifestName": "Montale · Il varco e il limite",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/montale.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Morante/index.html",
+    "title": "Elsa Morante — Il reale e l’incanto",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-morante.png\" alt=\"Ritratto fotografico di Elsa Morante\" width=\"1448\" height=\"1086\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Morante/",
+    "id": "v-anno-letteratura-morante",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "morante",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Elsa Morante — Il reale e l’incanto",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Morante/manifest.webmanifest",
+    "manifestName": "Elsa Morante — Il reale e l’incanto",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/morante.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Neorealismo/index.html",
+    "title": "Neorealismo · L’Italia entra nell’inquadratura",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/neorealismo.jpg\" alt=\"Mercato popolare affollato, immagine della vita quotidiana e collettiva del dopoguerra\">",
+      "<img src=\"assets/maps/07-sintesi.svg\" alt=\"Mappa di sintesi: il mondo precedente diventa insufficiente; le fratture producono una nuova immagine del reale; la poetica costruisce lo sguardo; le opere superano la formula; la conclusione rinnova la domanda critica.\" width=\"1200\" height=\"760\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Neorealismo/",
+    "id": "v-anno-letteratura-neorealismo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "neorealismo",
+      "corrente"
+    ],
+    "status": 200,
+    "publicTitle": "Neorealismo · L’Italia entra nell’inquadratura",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Neorealismo/manifest.webmanifest",
+    "manifestName": "Neorealismo — L’Italia entra nell’inquadratura",
+    "manifestVerified": true,
+    "immagineAssociata": null
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Pascoli/index.html",
+    "title": "Giovanni Pascoli — Libro vivo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img src=\"assets/images/copertina-Pascoli.png\" width=\"1672\" height=\"941\" alt=\"Copertina illustrata del percorso su Giovanni Pascoli con otto lezioni, temi chiave, mappe, timeline e quiz.\">",
+      "<img src=\"assets/images/02_mondo_precedente.jpg\" width=\"1536\" height=\"1024\" alt=\"Mappa concettuale sul mondo precedente: positivismo, Carducci, eredità classica e soglia della modernità.\" loading=\"lazy\">",
+      "<img src=\"assets/images/03_fratture_e_nido.jpg\" width=\"1536\" height=\"1024\" alt=\"Mappa concettuale sulle fratture e sull’ambivalenza del nido.\" loading=\"lazy\">",
+      "<img src=\"assets/images/04_immagine_del_mondo.jpg\" width=\"1536\" height=\"1024\" alt=\"Mappa dell’immagine pascoliana del mondo: precisione, mistero, natura e soglia.\" loading=\"lazy\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Pascoli/",
+    "id": "v-anno-letteratura-pascoli",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "pascoli",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Giovanni Pascoli — Libro vivo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Pascoli/manifest.webmanifest",
+    "manifestName": "Giovanni Pascoli — Libro vivo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/pascoli.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Pasolini/index.html",
+    "title": "Pasolini · Lo scandalo di restare umani",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-pasolini.png\" alt=\"Ritratto fotografico di Pier Paolo Pasolini\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Pasolini/",
+    "id": "v-anno-letteratura-pasolini",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "pasolini",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Pasolini · Lo scandalo di restare umani",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Pasolini/manifest.webmanifest",
+    "manifestName": "Pasolini · Lo scandalo di restare umani",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/pasolini.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Pavese/index.html",
+    "title": "Pavese · Il ritorno impossibile",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-pavese.png\" alt=\"Ritratto fotografico di Cesare Pavese\" width=\"1669\" height=\"942\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Pavese/",
+    "id": "v-anno-letteratura-pavese",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "pavese",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Pavese · Il ritorno impossibile",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Pavese/manifest.webmanifest",
+    "manifestName": "Cesare Pavese · Il ritorno impossibile",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/pavese.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Pirandello/index.html",
+    "title": "Luigi Pirandello — Percorso interattivo",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"cover-art\" src=\"assets/images/copertina-pirandello.webp\" alt=\"Copertina illustrata del percorso su Luigi Pirandello con cinque tappe, figure chiave, mappe, timeline e quiz\" width=\"1536\" height=\"1024\">",
+      "<img src=\"assets/images/Filosofia-Pirandello.webp\" alt=\"Schema originale sulla concezione filosofica: realtà come divenire incessante\" loading=\"lazy\" width=\"1536\" height=\"1024\">",
+      "<img src=\"assets/images/Realta-Pirandello.webp\" alt=\"Mappa originale: la realtà è multiforme\" loading=\"lazy\" width=\"1536\" height=\"1024\">",
+      "<img src=\"assets/images/Societa-Pirandello.webp\" alt=\"Mappa originale su Pirandello e la società borghese\" loading=\"lazy\" width=\"1024\" height=\"1536\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Pirandello/",
+    "id": "v-anno-letteratura-pirandello",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "pirandello",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Luigi Pirandello — Percorso interattivo",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Pirandello/manifest.webmanifest",
+    "manifestName": "Luigi Pirandello — Percorso interattivo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/pirandello.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Quasimodo/index.html",
+    "title": "Quasimodo · L'isola e la storia",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-quasimodo.png\" alt=\"Ritratto fotografico di Salvatore Quasimodo\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Quasimodo/",
+    "id": "v-anno-letteratura-quasimodo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "quasimodo",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Quasimodo · L'isola e la storia",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Quasimodo/manifest.webmanifest",
+    "manifestName": "Salvatore Quasimodo · L'isola e la storia",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/quasimodo.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Saba/index.html",
+    "title": "Umberto Saba · La verità difficile",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-saba.png\" alt=\"Ritratto fotografico di Umberto Saba\" width=\"1086\" height=\"1448\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Saba/",
+    "id": "v-anno-letteratura-saba",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "saba",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Umberto Saba · La verità difficile",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Saba/manifest.webmanifest",
+    "manifestName": "Umberto Saba · La verità difficile",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/saba.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Sciascia/index.html",
+    "title": "Sciascia · La verità sotto interrogatorio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-sciascia.png\" alt=\"Ritratto fotografico di Leonardo Sciascia\" width=\"1085\" height=\"1449\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Sciascia/",
+    "id": "v-anno-letteratura-sciascia",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "sciascia",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Sciascia · La verità sotto interrogatorio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Sciascia/manifest.webmanifest",
+    "manifestName": "Leonardo Sciascia · La verità sotto interrogatorio",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/sciascia.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Svevo/index.html",
+    "title": "Svevo | La coscienza dell'uomo moderno",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [],
+    "url": "https://gbprof.it/V-anno/Letteratura/Svevo/",
+    "id": "v-anno-letteratura-svevo",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "svevo",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Svevo | La coscienza dell'uomo moderno",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Svevo/manifest.webmanifest",
+    "manifestName": "Svevo - Libro vivo",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/svevo.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Ungaretti/index.html",
+    "title": "Ungaretti · La parola nel naufragio",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-ungaretti.png\" alt=\"Ritratto fotografico di Giuseppe Ungaretti\" width=\"1448\" height=\"1086\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Ungaretti/",
+    "id": "v-anno-letteratura-ungaretti",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "ungaretti",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Ungaretti · La parola nel naufragio",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Ungaretti/manifest.webmanifest",
+    "manifestName": "Ungaretti · La parola nel naufragio",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/ungaretti.webp"
+  },
+  {
+    "repo": "V-anno",
+    "path": "Letteratura/Vittorini/index.html",
+    "title": "Elio Vittorini · Il mondo offeso e la forma",
+    "manifests": [
+      "<link rel=\"manifest\" href=\"./manifest.webmanifest\">"
+    ],
+    "images": [
+      "<img class=\"hero-photo\" src=\"./assets/images/hero-vittorini.png\" alt=\"Ritratto fotografico di Elio Vittorini\" width=\"1085\" height=\"1450\" decoding=\"async\">"
+    ],
+    "url": "https://gbprof.it/V-anno/Letteratura/Vittorini/",
+    "id": "v-anno-letteratura-vittorini",
+    "checkedAt": "2026-09-12",
+    "mapping": [
+      "vittorini",
+      "autore"
+    ],
+    "status": 200,
+    "publicTitle": "Elio Vittorini · Il mondo offeso e la forma",
+    "titleMatches": true,
+    "manifestUrl": "https://gbprof.it/V-anno/Letteratura/Vittorini/manifest.webmanifest",
+    "manifestName": "Elio Vittorini · Il mondo offeso e la forma",
+    "manifestVerified": true,
+    "immagineAssociata": "assets/portraits/vittorini.webp"
+  }
+]

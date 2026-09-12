@@ -1,0 +1,7 @@
+{
+  "id": "./", "name": "GB — Letteratura italiana nel tempo", "short_name": "GB Letteratura",
+  "description": "La linea del tempo interattiva di autori, opere e correnti della letteratura italiana.",
+  "lang": "it", "start_url": "./", "scope": "./", "display": "standalone",
+  "background_color": "#091f30", "theme_color": "#091f30",
+  "icons": [{"src":"assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},{"src":"assets/icon-maskable.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]
+}

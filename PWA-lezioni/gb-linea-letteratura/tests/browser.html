@@ -1,0 +1,32 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Verifica GB Letteratura</title><style>body{font:16px system-ui;background:#0d2538;color:#fff;margin:24px}iframe{width:100%;height:680px;border:1px solid #789}li{padding:5px}h1{font-size:25px}.pass{color:#9de5b9}.fail{color:#ffada7}</style><h1>Verifica integrata GB Letteratura</h1><p id="summary">Controlli in corso…</p><ol id="results"></ol><iframe id="app" title="PWA in verifica" src="../?offline-test"></iframe><script type="module">
+const frame=document.querySelector('#app'),results=document.querySelector('#results');let passed=0,failed=0;
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+function check(name,ok){const li=document.createElement('li');li.className=ok?'pass':'fail';li.textContent=(ok?'PASS — ':'FAIL — ')+name;results.append(li);ok?passed++:failed++;}
+for(let i=0;i<150&&!frame.contentDocument?.querySelector('.author');i++)await delay(100);
+try{
+const d=frame.contentDocument,w=frame.contentWindow,q=s=>d.querySelector(s);const data=await Promise.all(['authors','movements','pwa-links'].map(f=>fetch('../data/'+f+'.json').then(r=>r.json())));const [authors,movements,links]=data;
+check('Caricamento iniziale: 84 autori e Leopardi selezionato',d.querySelectorAll('.author').length===84&&q('#panel-title').textContent==='Giacomo Leopardi');
+let panels=true;for(const a of authors){q(`.author[data-id="${a.id}"]`).click();if(q('#panel-title').textContent!==a.nomeCompleto||!q(`.author[data-id="${a.id}"]`).classList.contains('selected'))panels=false;}check('Apertura e selezione di tutte le 84 schede autore',panels);
+q('#detail-toggle').click();let movementPanels=true;for(const m of movements){q(`.movement[data-id="${m.id}"]`).click();if(q('#panel-title').textContent!==m.nome)movementPanels=false;}check('Apertura delle 43 schede corrente',movementPanels);
+for(const [query,expected] of [['Leopardi','leopardi'],['Futurismo','futurismo'],['Divina Commedia','dante'],["D'Annunzio",'dannunzio'],['Niccolo','machiavelli']]){q('#search').value=query;q('#search').dispatchEvent(new w.Event('input',{bubbles:true}));const hit=q('#results button');check('Ricerca: '+query,hit?.dataset.id===expected);hit?.click();}
+q('#search').value='zzzzzzzz';q('#search').dispatchEvent(new w.Event('input',{bubbles:true}));check('Ricerca senza risultati',q('#results').textContent.includes('Nessun risultato'));q('#search').value='';q('#search').dispatchEvent(new w.Event('input',{bubbles:true}));
+q('#close-panel').click();check('Chiusura pannello',q('#panel').hidden);
+for(const group of ['authors','movements']){q('#show-'+group).click();check('Filtro '+group,!q('#'+group).checkVisibility());q('#show-'+group).click();}
+q('#show-works').click();check('Richiami opere: 84 pulsanti',d.querySelectorAll('.work-label').length===84);q('#show-works').click();
+const x0=q('#timeline').scrollWidth;q('[data-action="zoom-in"]').click();check('Zoom aumenta la scala',q('#timeline').scrollWidth>x0);q('[data-action="zoom-out"]').click();
+q('[data-action="origins"]').click();check('Navigazione alle origini',q('#timeline').scrollLeft===0);q('[data-action="future"]').click();check('Navigazione verso il futuro',q('#timeline').scrollLeft>0);
+q('[data-action="today"]').click();check('Navigazione al presente',q('#visible-years').textContent.includes(new Date().getFullYear()));
+q('#timeline').dispatchEvent(new w.KeyboardEvent('keydown',{key:'Home',bubbles:true}));check('Tastiera: Home',q('#timeline').scrollLeft===0);q('#timeline').dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));check('Tastiera: freccia destra',q('#timeline').scrollLeft>0);
+const before=q('#timeline').scrollLeft;q('#timeline').dispatchEvent(new w.WheelEvent('wheel',{deltaY:120,shiftKey:true,bubbles:true,cancelable:true}));check('Rotella orizzontale con Shift',q('#timeline').scrollLeft>before);
+check('Touch: scorrimento nativo in entrambi gli assi',w.getComputedStyle(q('#timeline')).touchAction==='pan-x pan-y');
+q('.author[data-id="leopardi"]').click();check('Pulsante PWA autore',q('#panel-action a').href==='https://gbprof.it/IV-anno/Letteratura/Leopardi/');
+q('.author[data-id="petrarca"]').click();check('Nessun pulsante PWA inventato',!q('#panel-action a'));
+q('.author[data-id="ferrante"]').click();check('Ferrante: attività e nessun ritratto',q('#panel-dates').textContent.includes('Attività')&&!q('#panel-body .panel-image'));
+const localImages=authors.map(a=>a.immagine).filter(Boolean);const images=await Promise.all(localImages.map(src=>new Promise(resolve=>{let i=new Image;i.onload=()=>resolve(i.naturalWidth>0);i.onerror=()=>resolve(false);i.src='../'+src;})));check('Tutti i '+images.length+' ritratti locali si decodificano',images.every(Boolean));
+const manifest=await fetch('../manifest.json').then(r=>r.json());check('Manifest standalone con icone installabili',manifest.display==='standalone'&&manifest.icons.some(i=>i.sizes==='192x192')&&manifest.icons.some(i=>i.sizes==='512x512'&&i.purpose==='maskable'));
+const registration=await Promise.race([navigator.serviceWorker.ready,delay(15000).then(()=>null)]);check('Service worker attivo',!!registration?.active);const keys=await caches.keys(),key=keys.find(k=>k.startsWith('gb-letteratura-'));const cache=key?await caches.open(key):null;const cached=cache?await cache.keys():[];check('Precache completo: dati, struttura e ritratti',cached.length>=16+localImages.length&&!!await cache?.match(new URL('../data/authors.json',location.href)));
+const index=await fetch('../../../index.html').then(r=>r.text());check('Card di ingresso UTILITY',index.includes('./PWA-lezioni/gb-linea-letteratura/'));
+q('.author[data-id="leopardi"]').click();
+}catch(e){check(e.message,false);}
+document.querySelector('#summary').textContent=`${passed} controlli superati; ${failed} errori. I controlli touch verificano la configurazione; il test fisico dei dispositivi resta distinto.`;
+</script></html>

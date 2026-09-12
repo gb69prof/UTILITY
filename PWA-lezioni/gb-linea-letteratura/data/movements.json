@@ -1,0 +1,651 @@
+[
+  {
+    "id": "religiosa",
+    "nome": "Letteratura religiosa",
+    "annoInizio": 1200,
+    "annoFine": 1350,
+    "colore": "#9b4249",
+    "descrizioneBreve": "Laude, predicazione e scrittura in volgare portano l’esperienza religiosa verso pubblici nuovi.",
+    "autoriAssociati": [
+      "francesco",
+      "jacopone"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "siciliana",
+    "nome": "Scuola siciliana",
+    "annoInizio": 1230,
+    "annoFine": 1266,
+    "colore": "#a36435",
+    "descrizioneBreve": "Alla corte di Federico II la poesia amorosa in volgare elabora forme destinate a una lunga fortuna, come il sonetto.",
+    "autoriAssociati": [
+      "lentini"
+    ],
+    "pwaLinks": [
+      "iii-anno-letteratura-lezioni-contrasto",
+      "iii-anno-letteratura-scuola-siciliana"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "siculo-toscani",
+    "nome": "Siculo-toscani",
+    "annoInizio": 1250,
+    "annoFine": 1300,
+    "colore": "#96752d",
+    "descrizioneBreve": "La lirica siciliana viene ripresa nei comuni toscani e incontra temi morali, religiosi e politici.",
+    "autoriAssociati": [
+      "guittone"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "stilnovo",
+    "nome": "Dolce Stil Novo",
+    "annoInizio": 1260,
+    "annoFine": 1320,
+    "colore": "#a55f47",
+    "descrizioneBreve": "Una costellazione di poeti ripensa amore, interiorità e nobiltà del cuore. Non costituisce una scuola uniforme.",
+    "autoriAssociati": [
+      "guinizzelli",
+      "cavalcanti",
+      "dante"
+    ],
+    "pwaLinks": [
+      "iii-anno-letteratura-dolce-stil-novo",
+      "iii-anno-letteratura-amor-cortese"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "comico",
+    "nome": "Poesia comico-realistica",
+    "annoInizio": 1260,
+    "annoFine": 1350,
+    "colore": "#87603c",
+    "descrizioneBreve": "Una tradizione di registri bassi, parodia e provocazione, contemporanea alla lirica amorosa elevata.",
+    "autoriAssociati": [
+      "angiolieri"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "comunale",
+    "nome": "Cultura comunale",
+    "annoInizio": 1200,
+    "annoFine": 1400,
+    "colore": "#667747",
+    "descrizioneBreve": "Scritture e pratiche culturali delle città: cronache, novelle, poesia politica, volgari e conflitti civili.",
+    "autoriAssociati": [
+      "dante",
+      "boccaccio",
+      "sacchetti"
+    ],
+    "pwaLinks": [
+      "iii-anno-letteratura-fiore-rosa"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "preumanesimo",
+    "nome": "Preumanesimo",
+    "annoInizio": 1300,
+    "annoFine": 1400,
+    "colore": "#588062",
+    "descrizioneBreve": "Categoria di orientamento per nuove relazioni con i classici, la filologia e l’individualità nel Trecento.",
+    "autoriAssociati": [
+      "petrarca",
+      "boccaccio"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "umanesimo",
+    "nome": "Umanesimo",
+    "annoInizio": 1350,
+    "annoFine": 1500,
+    "colore": "#387555",
+    "descrizioneBreve": "Lo studio dei testi antichi diventa strumento di educazione, ricerca e riflessione sull’agire umano.",
+    "autoriAssociati": [
+      "alberti",
+      "lorenzo",
+      "poliziano",
+      "sannazaro"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "corti",
+    "nome": "Cultura delle corti",
+    "annoInizio": 1400,
+    "annoFine": 1600,
+    "colore": "#416b64",
+    "descrizioneBreve": "Le corti sono luoghi di patronato, scambio e conflitto per scrittori e artisti. Si tratta di un contesto, non di una poetica unica.",
+    "autoriAssociati": [
+      "lorenzo",
+      "poliziano",
+      "pulci",
+      "boiardo",
+      "castiglione"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "cavalleresco",
+    "nome": "Poema cavalleresco",
+    "annoInizio": 1450,
+    "annoFine": 1600,
+    "colore": "#577b50",
+    "descrizioneBreve": "La materia epica e romanzesca si rinnova attraverso intrecci, avventure, amore e riflessione sul racconto.",
+    "autoriAssociati": [
+      "pulci",
+      "boiardo",
+      "ariosto"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "rinascimento",
+    "nome": "Rinascimento",
+    "annoInizio": 1470,
+    "annoFine": 1550,
+    "colore": "#2f7566",
+    "descrizioneBreve": "Rielaborazione dei modelli antichi, ricerca formale e nuove riflessioni sull’uomo e sulla politica, fra corti e crisi italiane.",
+    "autoriAssociati": [
+      "sannazaro",
+      "machiavelli",
+      "ariosto",
+      "castiglione",
+      "guicciardini",
+      "michelangelo"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "classicismo-rin",
+    "nome": "Classicismo rinascimentale",
+    "annoInizio": 1500,
+    "annoFine": 1570,
+    "colore": "#567544",
+    "descrizioneBreve": "I classici e i grandi autori volgari diventano modelli di stile, genere e lingua letteraria.",
+    "autoriAssociati": [
+      "bembo"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "lingua",
+    "nome": "Questione della lingua",
+    "annoInizio": 1500,
+    "annoFine": 1600,
+    "colore": "#667049",
+    "descrizioneBreve": "Nel Cinquecento si confrontano proposte per una lingua letteraria comune. Il dibattito continua, in forme diverse, nei secoli successivi.",
+    "autoriAssociati": [
+      "bembo"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "manierismo",
+    "nome": "Manierismo",
+    "annoInizio": 1530,
+    "annoFine": 1600,
+    "colore": "#807548",
+    "descrizioneBreve": "Categoria critica per tensioni e trasformazioni dei modelli rinascimentali: artificio, inquietudine e instabilità degli equilibri.",
+    "autoriAssociati": [
+      "michelangelo",
+      "tasso"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "controriforma",
+    "nome": "Età della Controriforma",
+    "annoInizio": 1545,
+    "annoFine": 1648,
+    "colore": "#80613a",
+    "descrizioneBreve": "Il Concilio di Trento e i conflitti religiosi ridefiniscono istituzioni, controllo della cultura e produzione letteraria. È un contesto storico plurale.",
+    "autoriAssociati": [
+      "tasso",
+      "campanella"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "barocco",
+    "nome": "Barocco",
+    "annoInizio": 1600,
+    "annoFine": 1700,
+    "colore": "#956735",
+    "descrizioneBreve": "Metafora, meraviglia e sperimentazione mettono in movimento linguaggi e generi in un mondo percepito come mutevole.",
+    "autoriAssociati": [
+      "marino",
+      "tassoni",
+      "basile"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "marinismo",
+    "nome": "Marinismo",
+    "annoInizio": 1600,
+    "annoFine": 1670,
+    "colore": "#a67a39",
+    "descrizioneBreve": "La fortuna di Marino alimenta una poesia ricca di concetti ingegnosi, analogie e ricerca della sorpresa.",
+    "autoriAssociati": [
+      "marino"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "eroicomico",
+    "nome": "Poesia eroicomica",
+    "annoInizio": 1600,
+    "annoFine": 1700,
+    "colore": "#8d6846",
+    "descrizioneBreve": "L’incontro fra stile epico e materia umile genera comicità e riflessione sui codici letterari.",
+    "autoriAssociati": [
+      "tassoni"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "scientifica",
+    "nome": "Prosa scientifica",
+    "annoInizio": 1600,
+    "annoFine": 1700,
+    "colore": "#48778a",
+    "descrizioneBreve": "Il volgare diventa strumento di argomentazione e divulgazione della nuova scienza. Il dialogo rende visibile il confronto fra metodi e idee.",
+    "autoriAssociati": [
+      "galilei"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "arcadia",
+    "nome": "Arcadia",
+    "annoInizio": 1690,
+    "annoFine": 1780,
+    "colore": "#797a48",
+    "descrizioneBreve": "Contro gli eccessi attribuiti al Barocco, l’Arcadia propone chiarezza, misura e immaginario pastorale, con esperienze anche molto diverse.",
+    "autoriAssociati": [
+      "metastasio"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "illuminismo",
+    "nome": "Illuminismo",
+    "annoInizio": 1730,
+    "annoFine": 1800,
+    "colore": "#277a99",
+    "descrizioneBreve": "Ragione critica, riforma delle istituzioni e circolazione pubblica del sapere si intrecciano a nuove funzioni civili della letteratura.",
+    "autoriAssociati": [
+      "goldoni",
+      "parini",
+      "beccaria"
+    ],
+    "pwaLinks": [
+      "iv-anno-letteratura-settecento-illuminista"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "teatro",
+    "nome": "Riforma teatrale",
+    "annoInizio": 1740,
+    "annoFine": 1780,
+    "colore": "#397f91",
+    "descrizioneBreve": "La riforma goldoniana procede attraverso il confronto con attori e pubblico: caratteri, ambienti sociali e scrittura drammatica.",
+    "autoriAssociati": [
+      "goldoni"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "neoclassicismo",
+    "nome": "Neoclassicismo",
+    "annoInizio": 1750,
+    "annoFine": 1820,
+    "colore": "#68649a",
+    "descrizioneBreve": "Il mondo antico offre modelli estetici ed etici: armonia e bellezza convivono con nostalgia, storia e tensioni moderne.",
+    "autoriAssociati": [
+      "parini",
+      "alfieri",
+      "monti",
+      "foscolo",
+      "leopardi"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "preromanticismo",
+    "nome": "Preromanticismo",
+    "annoInizio": 1760,
+    "annoFine": 1815,
+    "colore": "#746298",
+    "descrizioneBreve": "Etichetta retrospettiva per sensibilità della notte, del sublime, della memoria e del sentimento che convivono con il gusto classico.",
+    "autoriAssociati": [
+      "alfieri",
+      "foscolo"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "romanticismo",
+    "nome": "Romanticismo",
+    "annoInizio": 1816,
+    "annoFine": 1870,
+    "colore": "#8b418b",
+    "descrizioneBreve": "In Italia il dibattito del 1816 lega letteratura, storia e pubblico. I romanticismi europei hanno tempi e caratteri differenti.",
+    "autoriAssociati": [
+      "manzoni",
+      "leopardi",
+      "nievo"
+    ],
+    "pwaLinks": [
+      "iv-anno-letteratura-romanticismo-lezioni",
+      "iv-anno-letteratura-romanticismo"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "dialettale",
+    "nome": "Poesia dialettale dell’Ottocento",
+    "annoInizio": 1800,
+    "annoFine": 1870,
+    "colore": "#8e615e",
+    "descrizioneBreve": "La poesia di Porta e Belli rappresenta lingue e mondi sociali con autonomia espressiva. Le tradizioni dialettali precedono e superano questo intervallo.",
+    "autoriAssociati": [
+      "belli",
+      "porta"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "scapigliatura",
+    "nome": "Scapigliatura",
+    "annoInizio": 1860,
+    "annoFine": 1880,
+    "colore": "#91566b",
+    "descrizioneBreve": "Negli ambienti soprattutto lombardi e piemontesi emergono ribellione antiborghese, sperimentazione e dialogo con la cultura europea.",
+    "autoriAssociati": [
+      "praga",
+      "tarchetti"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "verismo",
+    "nome": "Verismo",
+    "annoInizio": 1870,
+    "annoFine": 1900,
+    "colore": "#9a4767",
+    "descrizioneBreve": "Verga e Capuana elaborano risposte originali al realismo europeo. Impersonalità e punti di vista sociali trasformano la narrazione.",
+    "autoriAssociati": [
+      "verga",
+      "capuana"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "carducciano",
+    "nome": "Classicismo carducciano",
+    "annoInizio": 1860,
+    "annoFine": 1907,
+    "colore": "#895842",
+    "descrizioneBreve": "La ricerca di Carducci intreccia modelli classici, rinnovamento metrico, memoria privata e funzione civile della poesia.",
+    "autoriAssociati": [
+      "carducci"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "decadentismo",
+    "nome": "Decadentismo",
+    "annoInizio": 1880,
+    "annoFine": 1920,
+    "colore": "#854565",
+    "descrizioneBreve": "Categoria ampia per crisi delle certezze, simbolo, estetismo e nuove esperienze dell’io. Pascoli e D’Annunzio ne esprimono possibilità diverse.",
+    "autoriAssociati": [
+      "fogazzaro",
+      "pascoli",
+      "dannunzio"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "narrativa-postunitaria",
+    "nome": "Narrativa postunitaria",
+    "annoInizio": 1861,
+    "annoFine": 1900,
+    "colore": "#8d5c58",
+    "descrizioneBreve": "Romanzo, giornalismo e letteratura per ragazzi dialogano con la formazione della società e del pubblico dell’Italia unita.",
+    "autoriAssociati": [
+      "de-amicis",
+      "collodi"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "crepuscolarismo",
+    "nome": "Crepuscolarismo",
+    "annoInizio": 1900,
+    "annoFine": 1918,
+    "colore": "#62699a",
+    "descrizioneBreve": "Poesie di oggetti quotidiani, ironia e voce dimessa mettono in discussione la figura del poeta vate.",
+    "autoriAssociati": [
+      "gozzano"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "futurismo",
+    "nome": "Futurismo",
+    "annoInizio": 1909,
+    "annoFine": 1944,
+    "colore": "#3e629e",
+    "descrizioneBreve": "Manifesti, parole in libertà, performance e contaminazione delle arti celebrano rottura e velocità. Vanno interrogati anche i legami con guerra e fascismo.",
+    "autoriAssociati": [
+      "marinetti"
+    ],
+    "pwaLinks": [
+      "v-anno-letteratura-futurismo"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "modernismo",
+    "nome": "Modernismo",
+    "annoInizio": 1900,
+    "annoFine": 1940,
+    "colore": "#61558e",
+    "descrizioneBreve": "Categoria critica per esperienze che rinnovano tempo, identità, linguaggio e rappresentazione. Non indica un movimento italiano con un unico manifesto.",
+    "autoriAssociati": [
+      "pirandello",
+      "svevo",
+      "tozzi",
+      "ungaretti",
+      "saba",
+      "montale",
+      "moravia",
+      "buzzati",
+      "gadda"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "ermetismo",
+    "nome": "Ermetismo",
+    "annoInizio": 1930,
+    "annoFine": 1945,
+    "colore": "#406ba2",
+    "descrizioneBreve": "Soprattutto nella Firenze degli anni Trenta, una ricerca di essenzialità, analogia e interiorità affida alla parola poetica una forte tensione conoscitiva.",
+    "autoriAssociati": [
+      "ungaretti",
+      "quasimodo"
+    ],
+    "pwaLinks": [
+      "v-anno-letteratura-ermetismo"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "neorealismo",
+    "nome": "Neorealismo",
+    "annoInizio": 1943,
+    "annoFine": 1955,
+    "colore": "#397e8d",
+    "descrizioneBreve": "Nel clima della Resistenza e del dopoguerra si cercano nuovi modi di raccontare la realtà sociale. Le opere non costituiscono una scuola omogenea.",
+    "autoriAssociati": [
+      "moravia",
+      "pavese",
+      "vittorini",
+      "fenoglio",
+      "ginzburg",
+      "calvino"
+    ],
+    "pwaLinks": [
+      "v-anno-letteratura-neorealismo"
+    ],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "resistenza",
+    "nome": "Letteratura della Resistenza",
+    "annoInizio": 1943,
+    "annoFine": 1970,
+    "colore": "#487c73",
+    "descrizioneBreve": "Racconti e testimonianze della lotta antifascista, della guerra civile e delle sue memorie, con forme e punti di vista differenti.",
+    "autoriAssociati": [
+      "levi",
+      "fenoglio"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "sperimentalismo",
+    "nome": "Sperimentalismo",
+    "annoInizio": 1950,
+    "annoFine": 1980,
+    "colore": "#4a6493",
+    "descrizioneBreve": "Ricerche plurali rinnovano lingua, forma e rapporto con la società. Gadda costituisce anche un fondamentale antecedente.",
+    "autoriAssociati": [
+      "vittorini",
+      "pasolini",
+      "calvino",
+      "gadda",
+      "fo"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "neoavanguardia",
+    "nome": "Neoavanguardia",
+    "annoInizio": 1961,
+    "annoFine": 1970,
+    "colore": "#4a5985",
+    "descrizioneBreve": "Dai Novissimi al Gruppo 63, nuove esperienze contestano convenzioni linguistiche e narrative e interrogano la società di massa.",
+    "autoriAssociati": [],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "postmoderno",
+    "nome": "Postmoderno",
+    "annoInizio": 1970,
+    "annoFine": 2000,
+    "colore": "#447e8c",
+    "descrizioneBreve": "Citazione, riscrittura e pluralità dei codici mettono in discussione il racconto unitario. È una categoria discussa, dai confini mobili.",
+    "autoriAssociati": [
+      "calvino",
+      "eco",
+      "tabucchi"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto."
+  },
+  {
+    "id": "narrativa-contemporanea",
+    "nome": "Narrativa contemporanea",
+    "annoInizio": 1950,
+    "annoFine": 2026,
+    "colore": "#267e7e",
+    "descrizioneBreve": "Un campo plurale di romanzi e racconti, non una corrente unica: memoria, relazioni, identità e mutamento sociale convivono in forme diverse.",
+    "autoriAssociati": [
+      "morante",
+      "bassani",
+      "camilleri",
+      "magris",
+      "maraini",
+      "de-luca",
+      "ferrante",
+      "giordano"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto. Categoria aperta sul presente."
+  },
+  {
+    "id": "scritture-civili",
+    "nome": "Scritture civili",
+    "annoInizio": 1945,
+    "annoFine": 2026,
+    "colore": "#417a75",
+    "descrizioneBreve": "Testimonianza, inchiesta e racconto interrogano memoria, potere e responsabilità. La categoria è trasversale e non esaurisce i percorsi degli autori.",
+    "autoriAssociati": [
+      "levi",
+      "ginzburg",
+      "pasolini",
+      "sciascia",
+      "fo",
+      "maraini",
+      "saviano"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto. Categoria aperta sul presente."
+  },
+  {
+    "id": "nuove-forme",
+    "nome": "Nuove forme narrative",
+    "annoInizio": 1980,
+    "annoFine": 2026,
+    "colore": "#427a88",
+    "descrizioneBreve": "Ibridazioni di generi, linguaggi e media: una prospettiva aperta sul presente, senza proclamare una nuova scuola unitaria.",
+    "autoriAssociati": [
+      "benni"
+    ],
+    "pwaLinks": [],
+    "notaDate": "Intervallo orientativo, non un confine assoluto. Categoria aperta sul presente."
+  }
+]

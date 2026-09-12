@@ -1,0 +1,1 @@
+{"name":"gb-linea-letteratura","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test --test-isolation=none tests/core.test.mjs"}}

@@ -1,0 +1,2752 @@
+[
+  {
+    "id": "francesco",
+    "nome": "Francesco",
+    "cognome": "d’Assisi",
+    "nomeCompleto": "Francesco d’Assisi",
+    "annoNascita": 1182,
+    "annoMorte": 1226,
+    "vitaBreve": "Dopo la giovinezza ad Assisi scelse povertà e fraternità e fondò l’ordine francescano. Il Cantico loda Dio attraverso le creature e il volgare umbro.",
+    "correnti": [
+      "religiosa"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Cantico delle creature"
+    ],
+    "notaDate": "Nascita nel 1181 o 1182.",
+    "immagine": "assets/portraits/francesco.webp",
+    "imageAlt": "Ritratto di Francesco d’Assisi",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1182,
+    "timelineEnd": 1226,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Francesco_d'Assisi"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Luca_Giordano_-_San_Francisco_de_Asis.jpg",
+      "autore": "Luca Giordano",
+      "credit": "Museo Nacional de Bellas Artes de Cuba: file",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "jacopone",
+    "nome": "Jacopone",
+    "cognome": "da Todi",
+    "nomeCompleto": "Jacopone da Todi",
+    "annoNascita": 1230,
+    "annoMorte": 1306,
+    "vitaBreve": "Francescano di Todi, vicino agli spirituali, fu coinvolto nello scontro con Bonifacio VIII. Nelle laude unisce tensione mistica e aspra critica del mondo.",
+    "correnti": [
+      "religiosa"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Laude",
+      "Donna de Paradiso"
+    ],
+    "notaDate": "Nascita circa 1230.",
+    "immagine": "assets/portraits/jacopone.webp",
+    "imageAlt": "Ritratto di Jacopone da Todi",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1230,
+    "timelineEnd": 1306,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Jacopone_da_Todi"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Paolo_uccello%2C_beato_iacopone_da_todi%2C_1435-36%2C_da_duomo_di_prato%2C_02.JPG",
+      "autore": "\nsailko",
+      "credit": "Own work",
+      "licenza": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "id": "lentini",
+    "nome": "Giacomo",
+    "cognome": "da Lentini",
+    "nomeCompleto": "Giacomo da Lentini",
+    "annoNascita": 1210,
+    "annoMorte": 1260,
+    "vitaBreve": "Notaio alla corte di Federico II e protagonista della Scuola siciliana. Alla sua poesia è tradizionalmente ricondotta l’invenzione del sonetto.",
+    "correnti": [
+      "siciliana"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Amor è uno desio che ven da core",
+      "Io m’aggio posto in core a Dio servire"
+    ],
+    "notaDate": "Date circa; documentato soprattutto tra 1233 e 1240.",
+    "immagine": "assets/portraits/lentini.webp",
+    "imageAlt": "Ritratto di Giacomo da Lentini",
+    "pwaLinks": [
+      "iii-anno-letteratura-lezioni-contrasto",
+      "iii-anno-letteratura-scuola-siciliana"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1210,
+    "timelineEnd": 1260,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Jacopo_da_Lentini"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Jacopo_da_Lentini.jpg",
+      "autore": "Anonimo monaco fiorentino (Anonymous Florentine monk)",
+      "credit": "scan postcard of thumbnail depicting  the poet Jacopo da Lentini (from Palatine Song Book, Florence National Library)",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "guittone",
+    "nome": "Guittone",
+    "cognome": "d’Arezzo",
+    "nomeCompleto": "Guittone d’Arezzo",
+    "annoNascita": 1235,
+    "annoMorte": 1294,
+    "vitaBreve": "Poeta aretino, trasferì in Toscana temi e forme della lirica siciliana. Dopo l’ingresso nei frati gaudenti privilegiò la poesia morale e religiosa.",
+    "correnti": [
+      "siculo-toscani"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Rime",
+      "Lettere"
+    ],
+    "notaDate": "Nascita circa 1235.",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1235,
+    "timelineEnd": 1294,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "guinizzelli",
+    "nome": "Guido",
+    "cognome": "Guinizzelli",
+    "nomeCompleto": "Guido Guinizzelli",
+    "annoNascita": 1230,
+    "annoMorte": 1276,
+    "vitaBreve": "Giudice e poeta bolognese, fu esiliato per le lotte politiche. Il legame fra amore e nobiltà del cuore ne fece un riferimento per gli stilnovisti.",
+    "correnti": [
+      "stilnovo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Al cor gentil rempaira sempre amore",
+      "Io voglio del ver la mia donna laudare"
+    ],
+    "notaDate": "Nascita circa 1230.",
+    "immagine": "assets/portraits/guinizzelli.webp",
+    "imageAlt": "Ritratto di Guido Guinizzelli",
+    "pwaLinks": [
+      "iii-anno-letteratura-dolce-stil-novo",
+      "iii-anno-letteratura-amor-cortese"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1230,
+    "timelineEnd": 1276,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Guido_Guinizelli"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Adolfo_de_Carolis_-_Guido_Guinizzelli.jpg",
+      "autore": "Adolfo de Carolis",
+      "credit": "https://www.finestresullarte.info/recensioni-mostre/dante-la-visione-dell-arte-mostra-forli-recensione",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "cavalcanti",
+    "nome": "Guido",
+    "cognome": "Cavalcanti",
+    "nomeCompleto": "Guido Cavalcanti",
+    "annoNascita": 1259,
+    "annoMorte": 1300,
+    "vitaBreve": "Fiorentino, amico di Dante e partecipe dei conflitti comunali, rappresentò l’amore come esperienza che sconvolge le facoltà dell’individuo.",
+    "correnti": [
+      "stilnovo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Rime",
+      "Donna me prega"
+    ],
+    "notaDate": "Nascita circa 1259.",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [
+      "iii-anno-letteratura-dolce-stil-novo",
+      "iii-anno-letteratura-amor-cortese"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1259,
+    "timelineEnd": 1300,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Guido_Cavalcanti"
+      }
+    ]
+  },
+  {
+    "id": "angiolieri",
+    "nome": "Cecco",
+    "cognome": "Angiolieri",
+    "nomeCompleto": "Cecco Angiolieri",
+    "annoNascita": 1260,
+    "annoMorte": 1312,
+    "vitaBreve": "Poeta senese della tradizione comica, costruì un io provocatorio, fra denaro, desiderio e conflitto familiare. La voce dei sonetti non coincide automaticamente con la biografia.",
+    "correnti": [
+      "comico"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "S’i’ fosse foco",
+      "Tre cose solamente m’ènno in grado"
+    ],
+    "notaDate": "Date approssimative; morto entro il 1313.",
+    "immagine": "assets/portraits/angiolieri.webp",
+    "imageAlt": "Ritratto di Cecco Angiolieri",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1260,
+    "timelineEnd": 1312,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Cecco_Angiolieri"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Decameron-_%C3%96NB_2561_-_Neuvi%C3%A8me_journ%C3%A9e%2C_nouvelle_4.png",
+      "autore": "Giovanni Boccaccio",
+      "credit": "[1]",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "dante",
+    "nome": "Dante",
+    "cognome": "Alighieri",
+    "nomeCompleto": "Dante Alighieri",
+    "annoNascita": 1265,
+    "annoMorte": 1321,
+    "vitaBreve": "Nato a Firenze, partecipò alla vita politica e fu condannato all’esilio nel 1302. Scrisse la Commedia durante gli anni lontani dalla città e morì a Ravenna.",
+    "correnti": [
+      "stilnovo",
+      "comunale"
+    ],
+    "rapportoCorrente": "Muove dallo Stilnovo, ma la Commedia sviluppa un progetto poetico, politico e teologico molto più ampio.",
+    "operePrincipali": [
+      "Commedia (Divina Commedia)",
+      "Vita nuova",
+      "Convivio",
+      "De vulgari eloquentia",
+      "Monarchia"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/dante.webp",
+    "imageAlt": "Ritratto di Dante Alighieri",
+    "pwaLinks": [
+      "iii-anno-dante-corpus",
+      "iii-anno-inferno"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1265,
+    "timelineEnd": 1321,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Dante_Alighieri"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/III-anno/Dante-corpus/"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Portrait_de_Dante.jpg",
+      "autore": "Sandro Botticelli",
+      "credit": "telegraph http://www.pileface.com/sollers/article.php3?id_article=312",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "petrarca",
+    "nome": "Francesco",
+    "cognome": "Petrarca",
+    "nomeCompleto": "Francesco Petrarca",
+    "annoNascita": 1304,
+    "annoMorte": 1374,
+    "vitaBreve": "Nato ad Arezzo, visse fra Provenza e Italia. Filologo e poeta in latino e in volgare, esplorò il dissidio interiore, il tempo e il desiderio di gloria.",
+    "correnti": [
+      "preumanesimo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Canzoniere",
+      "Trionfi",
+      "Secretum",
+      "Africa"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/petrarca.webp",
+    "imageAlt": "Ritratto di Francesco Petrarca",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1304,
+    "timelineEnd": 1374,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Francesco_Petrarca"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Petrarch_by_Bargilla.jpg",
+      "autore": "Andrea del Castagno",
+      "credit": "Web Gallery of Art:   Image  Info about artworkwga QS:P11807,\"a/andrea/castagno/2_famous/9petrarc\"",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "boccaccio",
+    "nome": "Giovanni",
+    "cognome": "Boccaccio",
+    "nomeCompleto": "Giovanni Boccaccio",
+    "annoNascita": 1313,
+    "annoMorte": 1375,
+    "vitaBreve": "Formatosi fra Firenze e Napoli, raccontò nel Decameron la varietà dei comportamenti umani. Fu amico di Petrarca e studioso di Dante e dei classici.",
+    "correnti": [
+      "preumanesimo",
+      "comunale"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Decameron",
+      "Elegia di madonna Fiammetta",
+      "Genealogia deorum gentilium"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/boccaccio.webp",
+    "imageAlt": "Ritratto di Giovanni Boccaccio",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1313,
+    "timelineEnd": 1375,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giovanni_Boccaccio"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Andrea_del_Castagno_Giovanni_Boccaccio_c_1450.jpg",
+      "autore": "Andrea del Castagno",
+      "credit": "Web Gallery of Art:   Image  Info about artworkwga QS:P11807,\"a/andrea/castagno/2_famous/8boccacc\"",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "sacchetti",
+    "nome": "Franco",
+    "cognome": "Sacchetti",
+    "nomeCompleto": "Franco Sacchetti",
+    "annoNascita": 1332,
+    "annoMorte": 1400,
+    "vitaBreve": "Mercante e uomo politico fiorentino, raccolse nelle novelle episodi della vita cittadina, con attenzione alla concretezza dei comportamenti.",
+    "correnti": [
+      "comunale"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Trecentonovelle",
+      "Il libro delle rime"
+    ],
+    "notaDate": "Nascita circa 1332.",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1332,
+    "timelineEnd": 1400,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "alberti",
+    "nome": "Leon",
+    "cognome": "Battista Alberti",
+    "nomeCompleto": "Leon Battista Alberti",
+    "annoNascita": 1404,
+    "annoMorte": 1472,
+    "vitaBreve": "Umanista, scrittore e architetto, lavorò in più città italiane. Collegò studio dei classici, arti, conoscenza e responsabilità nella vita civile.",
+    "correnti": [
+      "umanesimo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "I libri della famiglia",
+      "De pictura",
+      "De re aedificatoria"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1404,
+    "timelineEnd": 1472,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "lorenzo",
+    "nome": "Lorenzo",
+    "cognome": "de’ Medici",
+    "nomeCompleto": "Lorenzo de’ Medici",
+    "annoNascita": 1449,
+    "annoMorte": 1492,
+    "vitaBreve": "Signore di Firenze e promotore delle arti, praticò registri diversi, dal canto carnevalesco alla poesia amorosa e filosofica.",
+    "correnti": [
+      "umanesimo",
+      "corti"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Canzona di Bacco",
+      "Nencia da Barberino",
+      "Comento de’ miei sonetti"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1449,
+    "timelineEnd": 1492,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "poliziano",
+    "nome": "Angelo",
+    "cognome": "Poliziano",
+    "nomeCompleto": "Angelo Poliziano",
+    "annoNascita": 1454,
+    "annoMorte": 1494,
+    "vitaBreve": "Nato a Montepulciano e attivo nella Firenze medicea, unì filologia e poesia. Rielaborò miti e forme classiche in una lingua raffinata.",
+    "correnti": [
+      "umanesimo",
+      "corti"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Stanze per la giostra",
+      "Fabula di Orfeo",
+      "Miscellanea"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1454,
+    "timelineEnd": 1494,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "pulci",
+    "nome": "Luigi",
+    "cognome": "Pulci",
+    "nomeCompleto": "Luigi Pulci",
+    "annoNascita": 1432,
+    "annoMorte": 1484,
+    "vitaBreve": "Poeta fiorentino legato all’ambiente mediceo, rinnovò la materia cavalleresca con comicità, gusto linguistico e invenzioni fantastiche.",
+    "correnti": [
+      "corti",
+      "cavalleresco"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Morgante"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1432,
+    "timelineEnd": 1484,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "boiardo",
+    "nome": "Matteo",
+    "cognome": "Maria Boiardo",
+    "nomeCompleto": "Matteo Maria Boiardo",
+    "annoNascita": 1441,
+    "annoMorte": 1494,
+    "vitaBreve": "Conte di Scandiano e uomo della corte estense, intrecciò guerra e amore nel poema cavalleresco, lasciato incompiuto.",
+    "correnti": [
+      "corti",
+      "cavalleresco"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Orlando innamorato",
+      "Amorum libri tres"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1441,
+    "timelineEnd": 1494,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "sannazaro",
+    "nome": "Jacopo",
+    "cognome": "Sannazaro",
+    "nomeCompleto": "Jacopo Sannazaro",
+    "annoNascita": 1457,
+    "annoMorte": 1530,
+    "vitaBreve": "Poeta napoletano, fu legato alla corte aragonese. Nell’Arcadia unì prosa e versi creando un modello europeo della letteratura pastorale.",
+    "correnti": [
+      "umanesimo",
+      "rinascimento"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Arcadia",
+      "De partu Virginis"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1457,
+    "timelineEnd": 1530,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "machiavelli",
+    "nome": "Niccolò",
+    "cognome": "Machiavelli",
+    "nomeCompleto": "Niccolò Machiavelli",
+    "annoNascita": 1469,
+    "annoMorte": 1527,
+    "vitaBreve": "Segretario della Repubblica fiorentina, dopo il ritorno dei Medici fu escluso dalla politica. Studiò conflitto e potere a partire dall’esperienza storica.",
+    "correnti": [
+      "rinascimento"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il Principe",
+      "Discorsi sopra la prima deca di Tito Livio",
+      "Mandragola",
+      "Istorie fiorentine"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/machiavelli.webp",
+    "imageAlt": "Ritratto di Niccolò Machiavelli",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1469,
+    "timelineEnd": 1527,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
+      "autore": "Santi di Tito",
+      "credit": "Cropped and enhanced from a book cover found on Google Images.",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "ariosto",
+    "nome": "Ludovico",
+    "cognome": "Ariosto",
+    "nomeCompleto": "Ludovico Ariosto",
+    "annoNascita": 1474,
+    "annoMorte": 1533,
+    "vitaBreve": "Poeta della corte estense di Ferrara, svolse anche incarichi amministrativi. Nel Furioso intrecciò percorsi e desideri con ironia e mobilità narrativa.",
+    "correnti": [
+      "rinascimento",
+      "cavalleresco"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Orlando furioso",
+      "Satire",
+      "La Lena"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/ariosto.webp",
+    "imageAlt": "Ritratto di Ludovico Ariosto",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1474,
+    "timelineEnd": 1533,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Ludovico_Ariosto"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Ludovico_Ariosto_1532.jpg",
+      "autore": "Unknown authorUnknown author",
+      "credit": "http://www.bvh.univ-tours.fr/Consult/index.asp?numfiche=1015",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "bembo",
+    "nome": "Pietro",
+    "cognome": "Bembo",
+    "nomeCompleto": "Pietro Bembo",
+    "annoNascita": 1470,
+    "annoMorte": 1547,
+    "vitaBreve": "Umanista veneziano e poi cardinale, propose Petrarca e Boccaccio come modelli della lingua letteraria volgare.",
+    "correnti": [
+      "classicismo-rin",
+      "lingua"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Prose della volgar lingua",
+      "Gli Asolani",
+      "Rime"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1470,
+    "timelineEnd": 1547,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "castiglione",
+    "nome": "Baldassarre",
+    "cognome": "Castiglione",
+    "nomeCompleto": "Baldassarre Castiglione",
+    "annoNascita": 1478,
+    "annoMorte": 1529,
+    "vitaBreve": "Diplomatico e scrittore, frequentò la corte di Urbino. Nel Cortegiano elaborò un ideale di cultura, comportamento e relazione politica.",
+    "correnti": [
+      "rinascimento",
+      "corti"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il libro del Cortegiano"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1478,
+    "timelineEnd": 1529,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "guicciardini",
+    "nome": "Francesco",
+    "cognome": "Guicciardini",
+    "nomeCompleto": "Francesco Guicciardini",
+    "annoNascita": 1483,
+    "annoMorte": 1540,
+    "vitaBreve": "Politico e diplomatico fiorentino, analizzò le guerre d’Italia e i limiti dell’azione individuale. La sua riflessione valorizza circostanze e discernimento.",
+    "correnti": [
+      "rinascimento"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Ricordi",
+      "Storia d’Italia"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1483,
+    "timelineEnd": 1540,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "michelangelo",
+    "nome": "Michelangelo",
+    "cognome": "Buonarroti",
+    "nomeCompleto": "Michelangelo Buonarroti",
+    "annoNascita": 1475,
+    "annoMorte": 1564,
+    "vitaBreve": "Scultore, pittore e architetto, scrisse versi segnati da amore, riflessione sull’arte e tensione religiosa. Le Rime dialogano con la sua esperienza creativa.",
+    "correnti": [
+      "rinascimento",
+      "manierismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Rime"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1475,
+    "timelineEnd": 1564,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "tasso",
+    "nome": "Torquato",
+    "cognome": "Tasso",
+    "nomeCompleto": "Torquato Tasso",
+    "annoNascita": 1544,
+    "annoMorte": 1595,
+    "vitaBreve": "Nato a Sorrento e a lungo legato a Ferrara, visse una difficile relazione con la corte e anni di reclusione a Sant’Anna. La sua poesia intreccia desiderio e norma.",
+    "correnti": [
+      "manierismo",
+      "controriforma"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Gerusalemme liberata",
+      "Aminta",
+      "Rime",
+      "Gerusalemme conquistata"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/tasso.webp",
+    "imageAlt": "Ritratto di Torquato Tasso",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1544,
+    "timelineEnd": 1595,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Torquato_Tasso"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:16th-century_unknown_painters_-_Portrait_of_Torquato_Tasso_-_WGA23945.jpg",
+      "autore": "Unidentified painter",
+      "credit": "Web Gallery of Art:   Image  Info about artworkwga QS:P11807,\"m/master/xunk_it/xunk_it4/tortasso\"",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "marino",
+    "nome": "Giambattista",
+    "cognome": "Marino",
+    "nomeCompleto": "Giambattista Marino",
+    "annoNascita": 1569,
+    "annoMorte": 1625,
+    "vitaBreve": "Poeta napoletano, visse in varie corti italiane e in Francia. Cercò la meraviglia attraverso metafore, sensualità e virtuosismo descrittivo.",
+    "correnti": [
+      "barocco",
+      "marinismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Adone",
+      "La lira",
+      "La galeria"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1569,
+    "timelineEnd": 1625,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "tassoni",
+    "nome": "Alessandro",
+    "cognome": "Tassoni",
+    "nomeCompleto": "Alessandro Tassoni",
+    "annoNascita": 1565,
+    "annoMorte": 1635,
+    "vitaBreve": "Scrittore modenese, combinò forme epiche e argomenti comici. La secchia rapita trasforma una contesa municipale in un poema eroicomico.",
+    "correnti": [
+      "eroicomico",
+      "barocco"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La secchia rapita",
+      "Pensieri diversi"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1565,
+    "timelineEnd": 1635,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "galilei",
+    "nome": "Galileo",
+    "cognome": "Galilei",
+    "nomeCompleto": "Galileo Galilei",
+    "annoNascita": 1564,
+    "annoMorte": 1642,
+    "vitaBreve": "Scienziato e autore pisano, difese un nuovo metodo di osservazione e ragionamento. Il processo del 1633 segnò la sua vita; la prosa volgare fu parte della sua battaglia culturale.",
+    "correnti": [
+      "scientifica"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il Saggiatore",
+      "Dialogo sopra i due massimi sistemi del mondo",
+      "Sidereus Nuncius"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1564,
+    "timelineEnd": 1642,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "campanella",
+    "nome": "Tommaso",
+    "cognome": "Campanella",
+    "nomeCompleto": "Tommaso Campanella",
+    "annoNascita": 1568,
+    "annoMorte": 1639,
+    "vitaBreve": "Filosofo domenicano calabrese, trascorse lunghi anni in carcere. Nelle opere intrecciò riforma religiosa, utopia politica e riflessione sulla natura.",
+    "correnti": [
+      "controriforma"
+    ],
+    "rapportoCorrente": "Voce eterodossa dell’età della Controriforma, non espressione uniforme della cultura dominante.",
+    "operePrincipali": [
+      "La città del Sole",
+      "Poesie"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1568,
+    "timelineEnd": 1639,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "basile",
+    "nome": "Giambattista",
+    "cognome": "Basile",
+    "nomeCompleto": "Giambattista Basile",
+    "annoNascita": 1566,
+    "annoMorte": 1632,
+    "vitaBreve": "Scrittore campano, raccolse e rielaborò fiabe in una ricchissima lingua napoletana, dando forma letteraria a materiali della tradizione orale.",
+    "correnti": [
+      "barocco"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Lo cunto de li cunti"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1566,
+    "timelineEnd": 1632,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "metastasio",
+    "nome": "Pietro",
+    "cognome": "Metastasio",
+    "nomeCompleto": "Pietro Metastasio",
+    "annoNascita": 1698,
+    "annoMorte": 1782,
+    "vitaBreve": "Nato a Roma come Pietro Trapassi, divenne poeta della corte di Vienna. I suoi libretti portarono al successo europeo il melodramma settecentesco.",
+    "correnti": [
+      "arcadia"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Didone abbandonata",
+      "Artaserse",
+      "La clemenza di Tito"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1698,
+    "timelineEnd": 1782,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "goldoni",
+    "nome": "Carlo",
+    "cognome": "Goldoni",
+    "nomeCompleto": "Carlo Goldoni",
+    "annoNascita": 1707,
+    "annoMorte": 1793,
+    "vitaBreve": "Nato a Venezia, trasformò progressivamente la commedia valorizzando testo scritto, caratteri e ambienti sociali. Si trasferì a Parigi, dove concluse la sua vita.",
+    "correnti": [
+      "teatro",
+      "illuminismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La locandiera",
+      "La bottega del caffè",
+      "I rusteghi",
+      "Memorie"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/goldoni.webp",
+    "imageAlt": "Ritratto di Carlo Goldoni — immagine didattica",
+    "pwaLinks": [
+      "iv-anno-letteratura-goldoni",
+      "iv-anno-letteratura-settecento-illuminista"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1707,
+    "timelineEnd": 1793,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/IV-anno/blob/main/Letteratura/Goldoni/assets/goldoni.webp",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/IV-anno/Letteratura/Goldoni/"
+      }
+    ]
+  },
+  {
+    "id": "parini",
+    "nome": "Giuseppe",
+    "cognome": "Parini",
+    "nomeCompleto": "Giuseppe Parini",
+    "annoNascita": 1729,
+    "annoMorte": 1799,
+    "vitaBreve": "Poeta e sacerdote lombardo, lavorò come precettore e insegnante a Milano. Mise la dignità della poesia al servizio della critica dei privilegi e dell’educazione civile.",
+    "correnti": [
+      "illuminismo",
+      "neoclassicismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il Giorno",
+      "Odi"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/parini.webp",
+    "imageAlt": "Ritratto di Giuseppe Parini — immagine didattica",
+    "pwaLinks": [
+      "iv-anno-letteratura-parini",
+      "iv-anno-letteratura-settecento-illuminista"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1729,
+    "timelineEnd": 1799,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/IV-anno/blob/main/Letteratura/Parini/assets/parini_fotorealistico.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/IV-anno/Letteratura/Parini/"
+      }
+    ]
+  },
+  {
+    "id": "beccaria",
+    "nome": "Cesare",
+    "cognome": "Beccaria",
+    "nomeCompleto": "Cesare Beccaria",
+    "annoNascita": 1738,
+    "annoMorte": 1794,
+    "vitaBreve": "Intellettuale milanese vicino al gruppo del Caffè, criticò tortura e pena di morte. Collegò razionalità delle leggi e utilità sociale.",
+    "correnti": [
+      "illuminismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Dei delitti e delle pene"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1738,
+    "timelineEnd": 1794,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "alfieri",
+    "nome": "Vittorio",
+    "cognome": "Alfieri",
+    "nomeCompleto": "Vittorio Alfieri",
+    "annoNascita": 1749,
+    "annoMorte": 1803,
+    "vitaBreve": "Nato ad Asti, viaggiò in Europa e scelse la scrittura come esercizio di libertà. Nelle tragedie mise in scena conflitti radicali tra volontà individuale e potere.",
+    "correnti": [
+      "preromanticismo",
+      "neoclassicismo"
+    ],
+    "rapportoCorrente": "Classicista nelle forme, presenta tensioni che anticipano sensibilità romantiche; non aderisce a una scuola preromantica organizzata.",
+    "operePrincipali": [
+      "Saul",
+      "Mirra",
+      "Vita",
+      "Della tirannide"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/alfieri.webp",
+    "imageAlt": "Ritratto di Vittorio Alfieri",
+    "pwaLinks": [
+      "iv-anno-letteratura-settecento-illuminista"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1749,
+    "timelineEnd": 1803,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Vittorio_Alfieri"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Ritratto_di_Alfieri_Fran%C3%A7ois-Xavier_Fabre.jpg",
+      "autore": "François-Xavier Fabre",
+      "credit": "http://www.thearttribune.com/spip.php?page=docbig&amp;id_document=633",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "monti",
+    "nome": "Vincenzo",
+    "cognome": "Monti",
+    "nomeCompleto": "Vincenzo Monti",
+    "annoNascita": 1754,
+    "annoMorte": 1828,
+    "vitaBreve": "Poeta romagnolo attivo fra Roma e Milano, attraversò i mutamenti politici tra Sette e Ottocento. La traduzione dell’Iliade mostra il suo ideale di eloquenza classica.",
+    "correnti": [
+      "neoclassicismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Traduzione dell’Iliade",
+      "Bassvilliana",
+      "Al signor di Montgolfier"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1754,
+    "timelineEnd": 1828,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "foscolo",
+    "nome": "Ugo",
+    "cognome": "Foscolo",
+    "nomeCompleto": "Ugo Foscolo",
+    "annoNascita": 1778,
+    "annoMorte": 1827,
+    "vitaBreve": "Nato a Zante, visse tra l’Italia napoleonica e l’esilio in Svizzera e Inghilterra. Alla visione materialistica oppose il valore civile degli affetti, della memoria e della poesia.",
+    "correnti": [
+      "neoclassicismo",
+      "preromanticismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Ultime lettere di Jacopo Ortis",
+      "Dei sepolcri",
+      "Sonetti",
+      "Le Grazie"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/foscolo.webp",
+    "imageAlt": "Ritratto di Ugo Foscolo — immagine didattica",
+    "pwaLinks": [
+      "iv-anno-letteratura-foscolo-gioco-3d",
+      "iv-anno-letteratura-foscolo-testi",
+      "iv-anno-letteratura-foscolo"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1778,
+    "timelineEnd": 1827,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/IV-anno/blob/main/Letteratura/Foscolo/assets/immagini/Foscolo-foto.PNG",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/IV-anno/Letteratura/Foscolo/"
+      }
+    ]
+  },
+  {
+    "id": "manzoni",
+    "nome": "Alessandro",
+    "cognome": "Manzoni",
+    "nomeCompleto": "Alessandro Manzoni",
+    "annoNascita": 1785,
+    "annoMorte": 1873,
+    "vitaBreve": "Scrittore milanese, elaborò una riflessione cristiana sulla storia e sulla responsabilità. Riscrisse più volte I promessi sposi, contribuendo alla questione della lingua nazionale.",
+    "correnti": [
+      "romanticismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "I promessi sposi",
+      "Adelchi",
+      "Il conte di Carmagnola",
+      "Inni sacri"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/manzoni.webp",
+    "imageAlt": "Ritratto di Alessandro Manzoni — immagine didattica",
+    "pwaLinks": [
+      "iv-anno-letteratura-manzoni",
+      "iv-anno-letteratura-promessi-sposi"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1785,
+    "timelineEnd": 1873,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/IV-anno/blob/main/Letteratura/Manzoni/assets/immagini/manzoni-ritratto.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/IV-anno/Letteratura/Manzoni/"
+      }
+    ]
+  },
+  {
+    "id": "leopardi",
+    "nome": "Giacomo",
+    "cognome": "Leopardi",
+    "nomeCompleto": "Giacomo Leopardi",
+    "annoNascita": 1798,
+    "annoMorte": 1837,
+    "vitaBreve": "Nato a Recanati, si formò nella biblioteca paterna. Visse poi in diverse città italiane e morì a Napoli. Poesia e pensiero indagano desiderio, natura, illusioni e solidarietà.",
+    "correnti": [
+      "romanticismo",
+      "neoclassicismo"
+    ],
+    "rapportoCorrente": "Di formazione classica e illuministica, polemizza con i romantici italiani, pur condividendo interrogativi della modernità europea. Non è riducibile all’etichetta di poeta romantico.",
+    "operePrincipali": [
+      "Canti",
+      "Operette morali",
+      "Zibaldone",
+      "Epistolario"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/leopardi.webp",
+    "imageAlt": "Ritratto di Giacomo Leopardi",
+    "pwaLinks": [
+      "iv-anno-letteratura-leopardi-testi",
+      "iv-anno-letteratura-leopardi",
+      "iv-anno-letteratura-colle-vulcano"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1798,
+    "timelineEnd": 1837,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giacomo_Leopardi"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/IV-anno/Letteratura/Leopardi/"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Giacomo_Leopardi_Morelli.jpg",
+      "autore": "Domenico Morelli",
+      "credit": "photo-editing based on an ancient artwork.",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "belli",
+    "nome": "Giuseppe",
+    "cognome": "Gioachino Belli",
+    "nomeCompleto": "Giuseppe Gioachino Belli",
+    "annoNascita": 1791,
+    "annoMorte": 1863,
+    "vitaBreve": "Poeta romano, nei sonetti in romanesco diede voce a un mondo popolare attraversato da miseria, religione e rapporti di potere.",
+    "correnti": [
+      "dialettale"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Sonetti romaneschi"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1791,
+    "timelineEnd": 1863,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "porta",
+    "nome": "Carlo",
+    "cognome": "Porta",
+    "nomeCompleto": "Carlo Porta",
+    "annoNascita": 1775,
+    "annoMorte": 1821,
+    "vitaBreve": "Poeta milanese, fece del dialetto uno strumento per rappresentare la vita popolare e criticare pregiudizi e ingiustizie sociali.",
+    "correnti": [
+      "dialettale"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La Ninetta del Verzee",
+      "Desgrazzi de Giovannin Bongee"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1775,
+    "timelineEnd": 1821,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "nievo",
+    "nome": "Ippolito",
+    "cognome": "Nievo",
+    "nomeCompleto": "Ippolito Nievo",
+    "annoNascita": 1831,
+    "annoMorte": 1861,
+    "vitaBreve": "Scrittore e patriota, partecipò alla spedizione dei Mille. Nel suo grande romanzo intrecciò formazione personale e storia nazionale; morì in un naufragio.",
+    "correnti": [
+      "romanticismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Le confessioni d’un italiano",
+      "Il Varmo"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1831,
+    "timelineEnd": 1861,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "carducci",
+    "nome": "Giosuè",
+    "cognome": "Carducci",
+    "nomeCompleto": "Giosuè Carducci",
+    "annoNascita": 1835,
+    "annoMorte": 1907,
+    "vitaBreve": "Poeta e docente a Bologna, legò il culto dei classici alla memoria storica e civile dell’Italia. Ricevette il premio Nobel nel 1906.",
+    "correnti": [
+      "carducciano"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Rime nuove",
+      "Odi barbare",
+      "Rime e ritmi"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/carducci.webp",
+    "imageAlt": "Ritratto di Giosuè Carducci",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1835,
+    "timelineEnd": 1907,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giosu%C3%A8_Carducci"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Giosu%C3%A8_Carducci2.jpg",
+      "autore": "R. Borghi",
+      "credit": "http://benignomigliarino.blogspot.com/2010/04/carducci-giosue.html",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "verga",
+    "nome": "Giovanni",
+    "cognome": "Verga",
+    "nomeCompleto": "Giovanni Verga",
+    "annoNascita": 1840,
+    "annoMorte": 1922,
+    "vitaBreve": "Nato a Catania, visse anche a Firenze e Milano. Nei romanzi e nelle novelle veriste rappresentò i conflitti sociali attraverso una narrazione che assume il punto di vista dei personaggi.",
+    "correnti": [
+      "verismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "I Malavoglia",
+      "Mastro-don Gesualdo",
+      "Vita dei campi",
+      "Novelle rusticane"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/verga.webp",
+    "imageAlt": "Ritratto di Giovanni Verga",
+    "pwaLinks": [],
+    "livelloImportanza": 2,
+    "timelineStart": 1840,
+    "timelineEnd": 1922,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giovanni_Verga"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Giovanni_Verga.jpg",
+      "autore": "\nnot stated",
+      "credit": "Giovanni Verga: https://archive.org/stream/giovanniverga00russuoft#page/n9/mode/2up",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "capuana",
+    "nome": "Luigi",
+    "cognome": "Capuana",
+    "nomeCompleto": "Luigi Capuana",
+    "annoNascita": 1839,
+    "annoMorte": 1915,
+    "vitaBreve": "Scrittore e critico siciliano, contribuì al dibattito sul Verismo. Sperimentò nel romanzo, nella novella e nella fiaba, senza ridurre l’arte a documento.",
+    "correnti": [
+      "verismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Giacinta",
+      "Il marchese di Roccaverdina"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1839,
+    "timelineEnd": 1915,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "de-amicis",
+    "nome": "Edmondo",
+    "cognome": "De Amicis",
+    "nomeCompleto": "Edmondo De Amicis",
+    "annoNascita": 1846,
+    "annoMorte": 1908,
+    "vitaBreve": "Scrittore ligure, affrontò educazione, emigrazione e vita sociale. Cuore ebbe un ruolo centrale nell’immaginario scolastico dell’Italia unita.",
+    "correnti": [
+      "narrativa-postunitaria"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Cuore",
+      "Sull’Oceano",
+      "Il romanzo d’un maestro"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1846,
+    "timelineEnd": 1908,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "collodi",
+    "nome": "Carlo",
+    "cognome": "Collodi",
+    "nomeCompleto": "Carlo Collodi",
+    "annoNascita": 1826,
+    "annoMorte": 1890,
+    "vitaBreve": "Carlo Lorenzini, giornalista e scrittore fiorentino, creò in Pinocchio un racconto aperto a satira, fiaba ed educazione.",
+    "correnti": [
+      "narrativa-postunitaria"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Le avventure di Pinocchio",
+      "Giannettino"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/collodi.webp",
+    "imageAlt": "Ritratto di Carlo Collodi",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1826,
+    "timelineEnd": 1890,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Carlo_Collodi"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Carlo_Collodi.jpg",
+      "autore": "Unknown authorUnknown author",
+      "credit": "«L'Illustrazione Italiana», No 44",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "fogazzaro",
+    "nome": "Antonio",
+    "cognome": "Fogazzaro",
+    "nomeCompleto": "Antonio Fogazzaro",
+    "annoNascita": 1842,
+    "annoMorte": 1911,
+    "vitaBreve": "Scrittore vicentino, esplorò conflitti fra fede, scienza e desiderio. La sua narrativa si muove tra eredità romantica e sensibilità di fine secolo.",
+    "correnti": [
+      "decadentismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Malombra",
+      "Piccolo mondo antico",
+      "Il santo"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1842,
+    "timelineEnd": 1911,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "pascoli",
+    "nome": "Giovanni",
+    "cognome": "Pascoli",
+    "nomeCompleto": "Giovanni Pascoli",
+    "annoNascita": 1855,
+    "annoMorte": 1912,
+    "vitaBreve": "Nato a San Mauro di Romagna, fu segnato dai lutti familiari e insegnò in scuole e università. Alla precisione delle cose quotidiane associò inquietudine e valore simbolico.",
+    "correnti": [
+      "decadentismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Myricae",
+      "Canti di Castelvecchio",
+      "Poemetti",
+      "Il fanciullino"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/pascoli.webp",
+    "imageAlt": "Ritratto di Giovanni Pascoli",
+    "pwaLinks": [
+      "v-anno-letteratura-pascoli"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1855,
+    "timelineEnd": 1912,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giovanni_Pascoli"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Pascoli/"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Giovanni_Pascoli_01.jpg",
+      "autore": "Unknown authorUnknown author",
+      "credit": "File:Poesie varie (Pascoli).djvu",
+      "licenza": ""
+    }
+  },
+  {
+    "id": "dannunzio",
+    "nome": "Gabriele",
+    "cognome": "D’Annunzio",
+    "nomeCompleto": "Gabriele D’Annunzio",
+    "annoNascita": 1863,
+    "annoMorte": 1938,
+    "vitaBreve": "Nato a Pescara, costruì una figura pubblica fra letteratura, politica e spettacolo. La sua opera attraversa estetismo, mito del superuomo e immersione panica nella natura.",
+    "correnti": [
+      "decadentismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il piacere",
+      "Alcyone",
+      "Le vergini delle rocce",
+      "Notturno"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/dannunzio.webp",
+    "imageAlt": "Ritratto di Gabriele D’Annunzio",
+    "pwaLinks": [
+      "v-anno-letteratura-dannunzio"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1863,
+    "timelineEnd": 1938,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Gabriele_D'Annunzio"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/D%E2%80%99Annunzio/"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Gabriele_D%27Annunzio_%28before_1938%29_-_Archivio_Storico_Ricordi_FOTO001172.jpg",
+      "autore": "\nVarischi e Artico",
+      "credit": "Archivio Storico Ricordi, Collezione Digitale Ricordi",
+      "licenza": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "id": "praga",
+    "nome": "Emilio",
+    "cognome": "Praga",
+    "nomeCompleto": "Emilio Praga",
+    "annoNascita": 1839,
+    "annoMorte": 1875,
+    "vitaBreve": "Poeta e pittore milanese, mise in discussione il conformismo borghese e i modelli letterari dominanti. La sua poesia unisce provocazione e disagio.",
+    "correnti": [
+      "scapigliatura"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Tavolozza",
+      "Penombre"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1839,
+    "timelineEnd": 1875,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "tarchetti",
+    "nome": "Iginio",
+    "cognome": "Ugo Tarchetti",
+    "nomeCompleto": "Iginio Ugo Tarchetti",
+    "annoNascita": 1839,
+    "annoMorte": 1869,
+    "vitaBreve": "Scrittore piemontese attivo a Milano, affrontò ossessioni, malattia e alienazione. La sua narrativa apre la cultura italiana al fantastico e al perturbante.",
+    "correnti": [
+      "scapigliatura"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Fosca",
+      "Racconti fantastici",
+      "Una nobile follia"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1839,
+    "timelineEnd": 1869,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "pirandello",
+    "nome": "Luigi",
+    "cognome": "Pirandello",
+    "nomeCompleto": "Luigi Pirandello",
+    "annoNascita": 1867,
+    "annoMorte": 1936,
+    "vitaBreve": "Nato presso Agrigento, scrisse novelle, romanzi e teatro. Indagò la distanza fra vita e forme sociali e la molteplicità dell’identità. Nobel nel 1934.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "Partecipa alla crisi modernista della rappresentazione, con una poetica dell’umorismo e una ricerca teatrale proprie.",
+    "operePrincipali": [
+      "Il fu Mattia Pascal",
+      "Uno, nessuno e centomila",
+      "Sei personaggi in cerca d’autore",
+      "Novelle per un anno",
+      "L’umorismo"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/pirandello.webp",
+    "imageAlt": "Ritratto di Luigi Pirandello — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-pirandello"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1867,
+    "timelineEnd": 1936,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Pirandello/assets/images/Pirandello-ritratto.webp",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Pirandello/"
+      }
+    ]
+  },
+  {
+    "id": "svevo",
+    "nome": "Italo",
+    "cognome": "Svevo",
+    "nomeCompleto": "Italo Svevo",
+    "annoNascita": 1861,
+    "annoMorte": 1928,
+    "vitaBreve": "Ettore Schmitz, scrittore triestino, lavorò nel commercio e nell’industria. Nei romanzi esplorò autoinganno, inettitudine e ambivalenza della coscienza.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Una vita",
+      "Senilità",
+      "La coscienza di Zeno"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/svevo.webp",
+    "imageAlt": "Ritratto fotografico di Italo Svevo",
+    "pwaLinks": [
+      "v-anno-letteratura-svevo"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1861,
+    "timelineEnd": 1928,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Italo_Svevo"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Svevo/"
+      }
+    ],
+    "imageCredit": {
+      "autore": "Fotografo non identificato; fonte Wikimedia Commons",
+      "tipo": "Pubblico dominio",
+      "url": "https://commons.wikimedia.org/wiki/File:Svevo.jpg"
+    }
+  },
+  {
+    "id": "tozzi",
+    "nome": "Federigo",
+    "cognome": "Tozzi",
+    "nomeCompleto": "Federigo Tozzi",
+    "annoNascita": 1883,
+    "annoMorte": 1920,
+    "vitaBreve": "Scrittore senese, rappresentò relazioni familiari e sociali attraverso percezioni instabili, incomprensioni e conflitti profondi.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Con gli occhi chiusi",
+      "Tre croci",
+      "Il podere"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1883,
+    "timelineEnd": 1920,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "gozzano",
+    "nome": "Guido",
+    "cognome": "Gozzano",
+    "nomeCompleto": "Guido Gozzano",
+    "annoNascita": 1883,
+    "annoMorte": 1916,
+    "vitaBreve": "Poeta torinese, guardò con ironia agli ideali letterari e alle piccole cose della vita borghese, rendendo visibile la distanza tra desiderio e realtà.",
+    "correnti": [
+      "crepuscolarismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La via del rifugio",
+      "I colloqui"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1883,
+    "timelineEnd": 1916,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "marinetti",
+    "nome": "Filippo",
+    "cognome": "Tommaso Marinetti",
+    "nomeCompleto": "Filippo Tommaso Marinetti",
+    "annoNascita": 1876,
+    "annoMorte": 1944,
+    "vitaBreve": "Nato ad Alessandria d’Egitto, fondò il Futurismo nel 1909. Promosse rottura linguistica e culto della velocità, con scelte interventiste e una successiva adesione al fascismo.",
+    "correnti": [
+      "futurismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Manifesto del Futurismo",
+      "Zang Tumb Tuuum",
+      "Mafarka il futurista"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [
+      "v-anno-letteratura-futurismo"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1876,
+    "timelineEnd": 1944,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "ungaretti",
+    "nome": "Giuseppe",
+    "cognome": "Ungaretti",
+    "nomeCompleto": "Giuseppe Ungaretti",
+    "annoNascita": 1888,
+    "annoMorte": 1970,
+    "vitaBreve": "Nato ad Alessandria d’Egitto, visse la guerra di trincea. Rinnovò il verso attraverso essenzialità e silenzio, poi ricercò forme più distese e memoria della tradizione.",
+    "correnti": [
+      "modernismo",
+      "ermetismo"
+    ],
+    "rapportoCorrente": "La prima poesia anticipa aspetti dell’Ermetismo; il percorso complessivo non coincide con la scuola ermetica degli anni Trenta.",
+    "operePrincipali": [
+      "L’Allegria",
+      "Sentimento del tempo",
+      "Il dolore"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/ungaretti.webp",
+    "imageAlt": "Ritratto di Giuseppe Ungaretti — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-ungaretti"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1888,
+    "timelineEnd": 1970,
+    "tipoIntervallo": "vita",
+    "fonti": [
+      {
+        "titolo": "Profilo biografico — Wikipedia",
+        "url": "https://it.wikipedia.org/wiki/Giuseppe_Ungaretti"
+      },
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Ungaretti/"
+      }
+    ],
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Ungaretti/assets/images/hero-ungaretti.png",
+      "autore": "Archivio didattico gbprof"
+    }
+  },
+  {
+    "id": "saba",
+    "nome": "Umberto",
+    "cognome": "Saba",
+    "nomeCompleto": "Umberto Saba",
+    "annoNascita": 1883,
+    "annoMorte": 1957,
+    "vitaBreve": "Nato a Trieste, fu libraio e poeta. La sua poesia ricerca una verità quotidiana e psicologica attraverso una relazione originale con le forme tradizionali.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "Voce autonoma del Novecento, lontana dai programmi delle avanguardie e dall’oscurità ermetica.",
+    "operePrincipali": [
+      "Il Canzoniere",
+      "Scorciatoie e raccontini",
+      "Ernesto"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/saba.webp",
+    "imageAlt": "Ritratto di Umberto Saba — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-saba"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1883,
+    "timelineEnd": 1957,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Saba/assets/images/hero-saba.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Saba/"
+      }
+    ]
+  },
+  {
+    "id": "montale",
+    "nome": "Eugenio",
+    "cognome": "Montale",
+    "nomeCompleto": "Eugenio Montale",
+    "annoNascita": 1896,
+    "annoMorte": 1981,
+    "vitaBreve": "Nato a Genova, lavorò a Firenze e Milano come intellettuale e giornalista. La poesia interroga il male di vivere e la possibilità di un varco. Nobel nel 1975.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "Dialoga con il clima ermetico ma non si lascia ridurre all’Ermetismo; oggetti, storia e dissonanza attraversano fasi molto diverse.",
+    "operePrincipali": [
+      "Ossi di seppia",
+      "Le occasioni",
+      "La bufera e altro",
+      "Satura"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/montale.webp",
+    "imageAlt": "Ritratto di Eugenio Montale — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-montale"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1896,
+    "timelineEnd": 1981,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Montale/assets/images/hero-montale.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Montale/"
+      }
+    ]
+  },
+  {
+    "id": "quasimodo",
+    "nome": "Salvatore",
+    "cognome": "Quasimodo",
+    "nomeCompleto": "Salvatore Quasimodo",
+    "annoNascita": 1901,
+    "annoMorte": 1968,
+    "vitaBreve": "Poeta siciliano e traduttore dei lirici greci, passò dalla concentrazione analogica a una poesia aperta al trauma della guerra e alla responsabilità civile. Nobel nel 1959.",
+    "correnti": [
+      "ermetismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Acque e terre",
+      "Ed è subito sera",
+      "Giorno dopo giorno"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/quasimodo.webp",
+    "imageAlt": "Ritratto di Salvatore Quasimodo — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-quasimodo"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1901,
+    "timelineEnd": 1968,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Quasimodo/assets/images/hero-quasimodo.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Quasimodo/"
+      }
+    ]
+  },
+  {
+    "id": "moravia",
+    "nome": "Alberto",
+    "cognome": "Moravia",
+    "nomeCompleto": "Alberto Moravia",
+    "annoNascita": 1907,
+    "annoMorte": 1990,
+    "vitaBreve": "Scrittore romano, indagò la borghesia, l’alienazione e i rapporti fra sesso e denaro. Partecipò al dibattito culturale come giornalista e critico.",
+    "correnti": [
+      "modernismo",
+      "neorealismo"
+    ],
+    "rapportoCorrente": "Realismo critico e analisi dell’alienazione attraversano il suo percorso; la relazione con il Neorealismo riguarda soprattutto alcune opere.",
+    "operePrincipali": [
+      "Gli indifferenti",
+      "Agostino",
+      "La ciociara",
+      "La noia"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1907,
+    "timelineEnd": 1990,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "pavese",
+    "nome": "Cesare",
+    "cognome": "Pavese",
+    "nomeCompleto": "Cesare Pavese",
+    "annoNascita": 1908,
+    "annoMorte": 1950,
+    "vitaBreve": "Nato nelle Langhe, fu scrittore, traduttore ed editor a Torino. Narrò solitudine, ritorno e mito; subì il confino fascista e morì suicida.",
+    "correnti": [
+      "neorealismo"
+    ],
+    "rapportoCorrente": "Vicino al rinnovamento realistico, intreccia storia, simbolo e mito senza coincidere con un programma neorealista uniforme.",
+    "operePrincipali": [
+      "Lavorare stanca",
+      "La casa in collina",
+      "La luna e i falò",
+      "Dialoghi con Leucò"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/pavese.webp",
+    "imageAlt": "Ritratto di Cesare Pavese — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-pavese"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1908,
+    "timelineEnd": 1950,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Pavese/assets/images/hero-pavese.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Pavese/"
+      }
+    ]
+  },
+  {
+    "id": "vittorini",
+    "nome": "Elio",
+    "cognome": "Vittorini",
+    "nomeCompleto": "Elio Vittorini",
+    "annoNascita": 1908,
+    "annoMorte": 1966,
+    "vitaBreve": "Nato a Siracusa, lavorò nell’editoria e nelle riviste. Collegò sperimentazione letteraria e impegno civile, promuovendo nuove voci narrative.",
+    "correnti": [
+      "neorealismo",
+      "sperimentalismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Conversazione in Sicilia",
+      "Uomini e no",
+      "Il Sempione strizza l’occhio al Frejus"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/vittorini.webp",
+    "imageAlt": "Ritratto di Elio Vittorini — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-vittorini"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1908,
+    "timelineEnd": 1966,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Vittorini/assets/images/hero-vittorini.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Vittorini/"
+      }
+    ]
+  },
+  {
+    "id": "levi",
+    "nome": "Primo",
+    "cognome": "Levi",
+    "nomeCompleto": "Primo Levi",
+    "annoNascita": 1919,
+    "annoMorte": 1987,
+    "vitaBreve": "Chimico torinese, partigiano e sopravvissuto ad Auschwitz, fece della testimonianza un’indagine rigorosa sui comportamenti umani e sulla memoria.",
+    "correnti": [
+      "resistenza",
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "La testimonianza della deportazione ha una specificità irriducibile alla sola letteratura resistenziale.",
+    "operePrincipali": [
+      "Se questo è un uomo",
+      "La tregua",
+      "Il sistema periodico",
+      "I sommersi e i salvati"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1919,
+    "timelineEnd": 1987,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "fenoglio",
+    "nome": "Beppe",
+    "cognome": "Fenoglio",
+    "nomeCompleto": "Beppe Fenoglio",
+    "annoNascita": 1922,
+    "annoMorte": 1963,
+    "vitaBreve": "Nato ad Alba e partigiano nelle Langhe, raccontò la guerra civile e la vita contadina con una lingua fortemente personale.",
+    "correnti": [
+      "resistenza",
+      "neorealismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Una questione privata",
+      "Il partigiano Johnny",
+      "I ventitré giorni della città di Alba"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1922,
+    "timelineEnd": 1963,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "buzzati",
+    "nome": "Dino",
+    "cognome": "Buzzati",
+    "nomeCompleto": "Dino Buzzati",
+    "annoNascita": 1906,
+    "annoMorte": 1972,
+    "vitaBreve": "Scrittore, giornalista e pittore bellunese, intrecciò quotidiano e fantastico, rendendo attesa e mistero forme dell’esperienza umana.",
+    "correnti": [
+      "modernismo"
+    ],
+    "rapportoCorrente": "Il suo fantastico è difficilmente riconducibile a una sola corrente.",
+    "operePrincipali": [
+      "Il deserto dei Tartari",
+      "Sessanta racconti",
+      "Un amore",
+      "Poema a fumetti"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/buzzati.webp",
+    "imageAlt": "Ritratto di Dino Buzzati — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-buzzati"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1906,
+    "timelineEnd": 1972,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Buzzati/assets/images/hero-buzzati.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Buzzati/"
+      }
+    ]
+  },
+  {
+    "id": "morante",
+    "nome": "Elsa",
+    "cognome": "Morante",
+    "nomeCompleto": "Elsa Morante",
+    "annoNascita": 1912,
+    "annoMorte": 1985,
+    "vitaBreve": "Scrittrice romana, diede forma a mondi narrativi in cui immaginazione, infanzia e violenza della storia sono strettamente intrecciate.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "Voce autonoma: il realismo storico convive con mito e invenzione, oltre l’etichetta neorealista.",
+    "operePrincipali": [
+      "Menzogna e sortilegio",
+      "L’isola di Arturo",
+      "La Storia",
+      "Aracoeli"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/morante.webp",
+    "imageAlt": "Ritratto di Elsa Morante — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-morante"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1912,
+    "timelineEnd": 1985,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Morante/assets/images/hero-morante.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Morante/"
+      }
+    ]
+  },
+  {
+    "id": "ginzburg",
+    "nome": "Natalia",
+    "cognome": "Ginzburg",
+    "nomeCompleto": "Natalia Ginzburg",
+    "annoNascita": 1916,
+    "annoMorte": 1991,
+    "vitaBreve": "Nata a Palermo e cresciuta a Torino, lavorò nell’editoria. Raccontò famiglia e storia attraverso le parole della vita quotidiana e la memoria dell’antifascismo.",
+    "correnti": [
+      "neorealismo",
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Lessico famigliare",
+      "Le piccole virtù",
+      "Caro Michele"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/ginzburg.webp",
+    "imageAlt": "Ritratto di Natalia Ginzburg — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-ginzburg"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1916,
+    "timelineEnd": 1991,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Ginzburg/assets/images/hero-ginzburg.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Ginzburg/"
+      }
+    ]
+  },
+  {
+    "id": "pasolini",
+    "nome": "Pier",
+    "cognome": "Paolo Pasolini",
+    "nomeCompleto": "Pier Paolo Pasolini",
+    "annoNascita": 1922,
+    "annoMorte": 1975,
+    "vitaBreve": "Poeta, narratore e regista, nato a Bologna, passò dal Friuli a Roma. Indagò trasformazioni sociali e culturali, conflitti del desiderio e perdita dei mondi popolari.",
+    "correnti": [
+      "sperimentalismo",
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Ragazzi di vita",
+      "Le ceneri di Gramsci",
+      "Una vita violenta",
+      "Scritti corsari"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/pasolini.webp",
+    "imageAlt": "Ritratto di Pier Paolo Pasolini — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-pasolini"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1922,
+    "timelineEnd": 1975,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Pasolini/assets/images/hero-pasolini.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Pasolini/"
+      }
+    ]
+  },
+  {
+    "id": "sciascia",
+    "nome": "Leonardo",
+    "cognome": "Sciascia",
+    "nomeCompleto": "Leonardo Sciascia",
+    "annoNascita": 1921,
+    "annoMorte": 1989,
+    "vitaBreve": "Scrittore siciliano, usò racconto, saggio e indagine per mettere in discussione potere e verità ufficiali. La razionalità resta per lui un’esigenza critica.",
+    "correnti": [
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il giorno della civetta",
+      "A ciascuno il suo",
+      "Il consiglio d’Egitto",
+      "L’affaire Moro"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/sciascia.webp",
+    "imageAlt": "Ritratto di Leonardo Sciascia — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-sciascia"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1921,
+    "timelineEnd": 1989,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Sciascia/assets/images/hero-sciascia.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Sciascia/"
+      }
+    ]
+  },
+  {
+    "id": "calvino",
+    "nome": "Italo",
+    "cognome": "Calvino",
+    "nomeCompleto": "Italo Calvino",
+    "annoNascita": 1923,
+    "annoMorte": 1985,
+    "vitaBreve": "Nato a Cuba e cresciuto a Sanremo, partecipò alla Resistenza e lavorò nell’editoria. Esplorò le possibilità della narrazione fra storia, fiaba, scienza e combinazione.",
+    "correnti": [
+      "neorealismo",
+      "sperimentalismo",
+      "postmoderno"
+    ],
+    "rapportoCorrente": "Attraversa una fase vicina al Neorealismo, la narrazione fantastica e la ricerca combinatoria; le fasi non cancellano continuità e differenze.",
+    "operePrincipali": [
+      "Il sentiero dei nidi di ragno",
+      "I nostri antenati",
+      "Le città invisibili",
+      "Se una notte d’inverno un viaggiatore",
+      "Lezioni americane"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/calvino.webp",
+    "imageAlt": "Ritratto di Italo Calvino — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-calvino"
+    ],
+    "livelloImportanza": 2,
+    "timelineStart": 1923,
+    "timelineEnd": 1985,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Calvino/assets/images/hero-calvino.png",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Calvino/"
+      }
+    ]
+  },
+  {
+    "id": "gadda",
+    "nome": "Carlo",
+    "cognome": "Emilio Gadda",
+    "nomeCompleto": "Carlo Emilio Gadda",
+    "annoNascita": 1893,
+    "annoMorte": 1973,
+    "vitaBreve": "Ingegnere e scrittore milanese, visse la guerra e la prigionia. La sua prosa plurilingue restituisce la complessità delle cause e l’impossibilità di ordinare il reale.",
+    "correnti": [
+      "modernismo",
+      "sperimentalismo"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La cognizione del dolore",
+      "Quer pasticciaccio brutto de via Merulana",
+      "L’Adalgisa"
+    ],
+    "notaDate": "",
+    "immagine": "assets/portraits/gadda.webp",
+    "imageAlt": "Ritratto di Carlo Emilio Gadda — immagine didattica",
+    "pwaLinks": [
+      "v-anno-letteratura-gadda"
+    ],
+    "livelloImportanza": 1,
+    "timelineStart": 1893,
+    "timelineEnd": 1973,
+    "tipoIntervallo": "vita",
+    "imageCredit": {
+      "tipo": "Materiale didattico già adottato da gbprof; può essere una ricostruzione illustrativa.",
+      "url": "https://github.com/gb69prof/V-anno/blob/main/Letteratura/Gadda/assets/images/gadda-ritratto.jpg",
+      "autore": "Archivio didattico gbprof"
+    },
+    "fonti": [
+      {
+        "titolo": "Percorso didattico gbprof",
+        "url": "https://gbprof.it/V-anno/Letteratura/Gadda/"
+      }
+    ]
+  },
+  {
+    "id": "bassani",
+    "nome": "Giorgio",
+    "cognome": "Bassani",
+    "nomeCompleto": "Giorgio Bassani",
+    "annoNascita": 1916,
+    "annoMorte": 2000,
+    "vitaBreve": "Nato a Bologna e cresciuto a Ferrara, narrò esclusione e memoria ebraica nella società italiana segnata dal fascismo.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il giardino dei Finzi-Contini",
+      "Gli occhiali d’oro",
+      "Cinque storie ferraresi"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1916,
+    "timelineEnd": 2000,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "eco",
+    "nome": "Umberto",
+    "cognome": "Eco",
+    "nomeCompleto": "Umberto Eco",
+    "annoNascita": 1932,
+    "annoMorte": 2016,
+    "vitaBreve": "Semiologo, saggista e romanziere, nato ad Alessandria, trasformò sapere, interpretazione e memoria dei testi in materia narrativa.",
+    "correnti": [
+      "postmoderno"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Il nome della rosa",
+      "Il pendolo di Foucault",
+      "Opera aperta",
+      "Il cimitero di Praga"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1932,
+    "timelineEnd": 2016,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "fo",
+    "nome": "Dario",
+    "cognome": "Fo",
+    "nomeCompleto": "Dario Fo",
+    "annoNascita": 1926,
+    "annoMorte": 2016,
+    "vitaBreve": "Drammaturgo e attore lombardo, collaborò a lungo con Franca Rame. Rinnovò teatro popolare, satira e racconto orale. Nobel nel 1997.",
+    "correnti": [
+      "sperimentalismo",
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Mistero buffo",
+      "Morte accidentale di un anarchico",
+      "Non si paga! Non si paga!"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1926,
+    "timelineEnd": 2016,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "camilleri",
+    "nome": "Andrea",
+    "cognome": "Camilleri",
+    "nomeCompleto": "Andrea Camilleri",
+    "annoNascita": 1925,
+    "annoMorte": 2019,
+    "vitaBreve": "Nato a Porto Empedocle, lavorò in teatro e televisione. Nei romanzi storici e polizieschi intrecciò indagine sociale e invenzione linguistica.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La forma dell’acqua",
+      "Il birraio di Preston",
+      "La concessione del telefono"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1925,
+    "timelineEnd": 2019,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "magris",
+    "nome": "Claudio",
+    "cognome": "Magris",
+    "nomeCompleto": "Claudio Magris",
+    "annoNascita": 1939,
+    "annoMorte": null,
+    "vitaBreve": "Germanista e scrittore triestino, esplora confini, culture mitteleuropee e memoria storica attraverso saggio e narrazione.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Danubio",
+      "Microcosmi",
+      "Alla cieca"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1939,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "maraini",
+    "nome": "Dacia",
+    "cognome": "Maraini",
+    "nomeCompleto": "Dacia Maraini",
+    "annoNascita": 1936,
+    "annoMorte": null,
+    "vitaBreve": "Scrittrice, drammaturga e poeta, nata a Fiesole, pone al centro memoria, condizione femminile e rapporti fra parola e potere.",
+    "correnti": [
+      "scritture-civili",
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La lunga vita di Marianna Ucrìa",
+      "Bagheria",
+      "Donna in guerra"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1936,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "de-luca",
+    "nome": "Erri",
+    "cognome": "De Luca",
+    "nomeCompleto": "Erri De Luca",
+    "annoNascita": 1950,
+    "annoMorte": null,
+    "vitaBreve": "Scrittore napoletano, ha intrecciato esperienze di lavoro, impegno politico e studio dei testi biblici in una prosa concentrata.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Non ora, non qui",
+      "Montedidio",
+      "Il peso della farfalla"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1950,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "benni",
+    "nome": "Stefano",
+    "cognome": "Benni",
+    "nomeCompleto": "Stefano Benni",
+    "annoNascita": 1947,
+    "annoMorte": 2025,
+    "vitaBreve": "Scrittore bolognese, ha unito satira, fantastico e invenzione linguistica per raccontare contraddizioni sociali e difendere immaginazione e marginalità.",
+    "correnti": [
+      "nuove-forme"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Bar Sport",
+      "Terra!",
+      "La compagnia dei Celestini"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1947,
+    "timelineEnd": 2025,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "tabucchi",
+    "nome": "Antonio",
+    "cognome": "Tabucchi",
+    "nomeCompleto": "Antonio Tabucchi",
+    "annoNascita": 1943,
+    "annoMorte": 2012,
+    "vitaBreve": "Nato a Pisa, studioso di Pessoa e della cultura portoghese, ha indagato identità, memoria, equivoco e responsabilità civile.",
+    "correnti": [
+      "postmoderno"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Sostiene Pereira",
+      "Notturno indiano",
+      "Il gioco del rovescio"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1943,
+    "timelineEnd": 2012,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "ferrante",
+    "nome": "Elena",
+    "cognome": "Ferrante",
+    "nomeCompleto": "Elena Ferrante",
+    "annoNascita": null,
+    "annoMorte": null,
+    "vitaBreve": "Pseudonimo di una scrittrice la cui identità anagrafica non è accertata. I romanzi esplorano relazioni femminili, trasformazioni sociali e forza ambivalente dei legami.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "L’amore molesto",
+      "I giorni dell’abbandono",
+      "L’amica geniale",
+      "La vita bugiarda degli adulti"
+    ],
+    "notaDate": "Sulla timeline è rappresentata l’attività editoriale dal 1992, non una durata biografica.",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1992,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "attivita"
+  },
+  {
+    "id": "saviano",
+    "nome": "Roberto",
+    "cognome": "Saviano",
+    "nomeCompleto": "Roberto Saviano",
+    "annoNascita": 1979,
+    "annoMorte": null,
+    "vitaBreve": "Scrittore e giornalista napoletano, intreccia racconto e inchiesta su criminalità organizzata, economia e potere.",
+    "correnti": [
+      "scritture-civili"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "Gomorra",
+      "ZeroZeroZero",
+      "La paranza dei bambini"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1979,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "vita"
+  },
+  {
+    "id": "giordano",
+    "nome": "Paolo",
+    "cognome": "Giordano",
+    "nomeCompleto": "Paolo Giordano",
+    "annoNascita": 1982,
+    "annoMorte": null,
+    "vitaBreve": "Scrittore torinese di formazione scientifica, indaga fragilità individuali, legami e inquietudini del presente.",
+    "correnti": [
+      "narrativa-contemporanea"
+    ],
+    "rapportoCorrente": "",
+    "operePrincipali": [
+      "La solitudine dei numeri primi",
+      "Il corpo umano",
+      "Divorare il cielo",
+      "Tasmania"
+    ],
+    "notaDate": "",
+    "immagine": null,
+    "imageAlt": "",
+    "pwaLinks": [],
+    "livelloImportanza": 1,
+    "timelineStart": 1982,
+    "timelineEnd": 2026,
+    "tipoIntervallo": "vita"
+  }
+]
