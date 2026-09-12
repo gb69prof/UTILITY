@@ -1,0 +1,2393 @@
+{
+  "version": 1,
+  "reviewed": "2026-09-12",
+  "items": [
+    {
+      "id": "habilis",
+      "name": "Homo habilis",
+      "subtitle": "Un ramo antico della famiglia umana",
+      "type": "specie / gruppi umani",
+      "start": {
+        "bp": 2400000
+      },
+      "end": {
+        "bp": 1400000
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "stone",
+      "color": "#957133",
+      "history": "Vissuto in Africa orientale e meridionale, Homo habilis è uno dei primi rappresentanti del genere Homo. I fossili mostrano una combinazione di caratteri antichi e nuovi. La sua storia si sovrappone a quella di altri ominini: l’evoluzione umana è ramificata, non una scala di specie che si sostituiscono ordinatamente.",
+      "culture": "I reperti sono associati a contesti con strumenti di pietra. Non possiamo attribuire automaticamente a questa specie ogni utensile, né ricostruirne con certezza linguaggio e organizzazione sociale.",
+      "legacy": [
+        "Testimonianze delle prime diversificazioni del genere Homo",
+        "Un problema scientifico aperto sul rapporto fra anatomia e tecniche"
+      ],
+      "note": "Intervallo fossile approssimativo; non coincide con date esatte di comparsa ed estinzione.",
+      "images": [
+        {
+          "src": "assets/stone.svg",
+          "caption": "Pietra scheggiata: illustrazione simbolica delle tecniche preistoriche."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Smithsonian · Human Origins",
+          "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-habilis"
+        }
+      ]
+    },
+    {
+      "id": "erectus",
+      "name": "Homo erectus",
+      "subtitle": "Corpi e migrazioni su nuove distanze",
+      "type": "specie / gruppi umani",
+      "start": {
+        "bp": 1890000
+      },
+      "end": {
+        "bp": 110000
+      },
+      "approx": true,
+      "region": "Africa e Asia",
+      "symbol": "stone",
+      "color": "#39788b",
+      "history": "Popolazioni attribuite a Homo erectus si diffusero dall’Africa in ampie regioni dell’Asia. Le proporzioni del corpo favorivano spostamenti terrestri prolungati. La lunga durata e la grande distribuzione geografica spiegano la varietà dei fossili inclusi in questo gruppo.",
+      "culture": "Le tecniche di lavorazione della pietra variarono tra luoghi e periodi. Le prove dell’uso del fuoco richiedono valutazioni sito per sito: non indicano una singola invenzione universale.",
+      "legacy": [
+        "Una lunga storia di adattamenti a diversi ambienti",
+        "Testimonianze delle antiche dispersioni umane fuori dall’Africa"
+      ],
+      "note": "La classificazione di alcune popolazioni africane e le relazioni fra specie restano discusse.",
+      "images": [
+        {
+          "src": "assets/stone.svg",
+          "caption": "Pietra scheggiata: illustrazione simbolica delle tecniche preistoriche."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Smithsonian · Human Origins",
+          "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-erectus"
+        }
+      ]
+    },
+    {
+      "id": "neanderthal",
+      "name": "Neanderthal",
+      "subtitle": "Umani nell’Eurasia glaciale",
+      "type": "specie / gruppi umani",
+      "start": {
+        "bp": 400000
+      },
+      "end": {
+        "bp": 40000
+      },
+      "approx": true,
+      "region": "Europa e Asia",
+      "symbol": "stone",
+      "color": "#74688f",
+      "history": "I Neanderthal abitarono l’Europa e l’Asia occidentale affrontando forti oscillazioni climatiche. Cacciavano, lavoravano materiali diversi e convissero con Homo sapiens. La loro scomparsa come popolazione distinta dipese da processi complessi, non da una semplice inferiorità.",
+      "culture": "Utensili, tracce di cura di persone fragili e pratiche simboliche mostrano comportamenti articolati. Alcune interpretazioni dei reperti, comprese quelle funerarie, sono discusse.",
+      "legacy": [
+        "Una componente genetica presente in molte popolazioni umane attuali",
+        "Una prospettiva meno lineare sull’evoluzione e sulle capacità umane"
+      ],
+      "note": "Le estremità sono stime paleoantropologiche; l’incrocio con sapiens impedisce di parlare di scomparsa genetica completa.",
+      "images": [
+        {
+          "src": "assets/stone.svg",
+          "caption": "Pietra scheggiata: illustrazione simbolica delle tecniche preistoriche."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Smithsonian · Human Origins",
+          "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-neanderthalensis"
+        }
+      ]
+    },
+    {
+      "id": "sapiens",
+      "name": "Homo sapiens",
+      "subtitle": "La specie a cui apparteniamo",
+      "type": "specie / gruppi umani",
+      "start": {
+        "bp": 300000
+      },
+      "end": null,
+      "approx": true,
+      "region": "Mondo",
+      "symbol": "people",
+      "color": "#39796e",
+      "history": "Homo sapiens si formò in Africa attraverso una storia di popolazioni connesse. Si diffuse poi negli altri continenti e incontrò altri gruppi umani. Tutti gli esseri umani viventi appartengono alla stessa specie; le differenze culturali non sono specie biologiche differenti.",
+      "culture": "Comunicazione simbolica, reti di scambio e tecniche trasmesse tra generazioni si svilupparono in forme diverse. Agricoltura e città sono trasformazioni recentissime rispetto alla durata della nostra specie.",
+      "legacy": [
+        "La capacità di costruire e trasmettere mondi culturali",
+        "Una storia comune intrecciata con la diversità delle società"
+      ],
+      "note": "La fascia arriva al presente. Non implica che tutte le società seguano lo stesso percorso.",
+      "images": [
+        {
+          "src": "assets/people.svg",
+          "caption": "Figure umane: illustrazione simbolica della nostra specie."
+        },
+        {
+          "src": "assets/globe.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Smithsonian · Human Origins",
+          "url": "https://humanorigins.si.edu/evidence/human-fossils/species/homo-sapiens"
+        }
+      ]
+    },
+    {
+      "id": "neolitico",
+      "name": "Neolitico nel Vicino Oriente",
+      "subtitle": "Coltivare, allevare, abitare",
+      "type": "culture preistoriche",
+      "start": {
+        "year": 10000,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 4500,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "grain",
+      "color": "#9d5047",
+      "history": "Dopo l’ultima glaciazione, alcune comunità del Vicino Oriente intensificarono coltivazione e allevamento. Villaggi, riserve alimentari e crescita demografica modificarono il rapporto con l’ambiente. La sedentarietà precedette in alcuni casi la piena agricoltura: le trasformazioni non furono simultanee.",
+      "culture": "Case, strumenti levigati, rituali e più tardi ceramiche accompagnarono nuove forme di vita collettiva. Produzione agricola e proprietà crearono opportunità, ma anche vulnerabilità e diseguaglianze.",
+      "legacy": [
+        "Agricoltura e allevamento",
+        "Paesaggi trasformati dall’insediamento stabile"
+      ],
+      "note": "Periodizzazione regionale approssimativa. Agricolture autonome nacquero anche in altre parti del mondo.",
+      "images": [
+        {
+          "src": "assets/grain.svg",
+          "caption": "Spighe e coltivazioni: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Neolitico nel Vicino Oriente",
+          "url": "https://www.worldhistory.org/Neolithic/"
+        }
+      ]
+    },
+    {
+      "id": "sumeri",
+      "name": "Sumeri",
+      "subtitle": "Città tra il Tigri e l’Eufrate",
+      "type": "civiltà",
+      "start": {
+        "year": 4000,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1750,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "temple",
+      "color": "#59783c",
+      "history": "Nella Mesopotamia meridionale, irrigazione e crescita degli insediamenti favorirono città come Uruk e Ur. Templi e palazzi coordinarono lavoro e risorse. Rivalità fra città e conquiste produssero regni più vasti; il dominio politico sumerico scomparve, mentre la sua cultura continuò a essere studiata.",
+      "culture": "La scrittura cuneiforme nacque da esigenze amministrative e si estese a letteratura e sapere. Il politeismo legava la città ai suoi dèi, e gli scribi custodivano conoscenze specializzate.",
+      "legacy": [
+        "Scrittura cuneiforme e tradizioni letterarie",
+        "Pratiche amministrative urbane",
+        "Sistemi di calcolo sessagesimali"
+      ],
+      "note": "La fine indica una trasformazione politico-linguistica graduale, non l’improvvisa sparizione degli abitanti.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Sumeri",
+          "url": "https://www.worldhistory.org/Sumer/"
+        }
+      ]
+    },
+    {
+      "id": "egizi",
+      "name": "Egizi",
+      "subtitle": "Il Nilo, il potere e l’eternità",
+      "type": "civiltà",
+      "start": {
+        "year": 3100,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 30,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "pyramid",
+      "color": "#4c7098",
+      "history": "L’unificazione della valle del Nilo diede forma a una monarchia capace di coordinare risorse agricole e grandi lavori. Regni unitari e fasi di frammentazione si alternarono per millenni. Dopo dominazioni straniere e il regno dei Tolomei, l’Egitto divenne una provincia romana nel 30 a.C.",
+      "culture": "La regalità sacra e la ricerca dell’ordine cosmico sostenevano istituzioni e rituali. Geroglifici, pratiche funerarie, templi e conoscenze tecniche esprimevano un rapporto stretto fra ambiente, potere e religione.",
+      "legacy": [
+        "Un patrimonio monumentale e figurativo straordinario",
+        "Testimonianze scritte della vita e dell’amministrazione antiche",
+        "Conoscenze pratiche in medicina e misurazione"
+      ],
+      "note": "Inizio approssimativo. Il 30 a.C. è una cesura politica: lingua, culti e comunità egizie continuarono.",
+      "images": [
+        {
+          "src": "assets/pyramid.svg",
+          "caption": "Monumentalità e memoria: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Egizi",
+          "url": "https://www.worldhistory.org/Ancient_Egypt/"
+        }
+      ]
+    },
+    {
+      "id": "indo",
+      "name": "Civiltà dell’Indo",
+      "subtitle": "Le città di Harappa e Mohenjo-daro",
+      "type": "civiltà",
+      "start": {
+        "year": 2600,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1900,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Asia meridionale",
+      "symbol": "city",
+      "color": "#9b723f",
+      "history": "Nella fase urbana matura, gli insediamenti dell’Indo formarono una vasta rete di città e commerci. Strade, drenaggi e pesi standardizzati indicano un’organizzazione complessa. Dal II millennio a.C. il sistema urbano si trasformò in insediamenti più piccoli, in relazione a cambiamenti ambientali ed economici.",
+      "culture": "Sigilli, artigianato e contatti a lunga distanza sono documentati. La scrittura non è stata decifrata: religione, lingua e istituzioni non possono essere ricostruite con sicurezza.",
+      "legacy": [
+        "Tecniche urbane di gestione dell’acqua",
+        "Una grande tradizione artigianale e commerciale"
+      ],
+      "note": "È rappresentata soltanto la fase harappana matura; le fasi precedenti e successive sono più estese.",
+      "images": [
+        {
+          "src": "assets/city.svg",
+          "caption": "Insediamento e reti: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Civiltà dell’Indo",
+          "url": "https://www.worldhistory.org/Indus_Valley_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "minoici",
+      "name": "Creta minoica",
+      "subtitle": "Palazzi e rotte nell’Egeo",
+      "type": "civiltà",
+      "start": {
+        "year": 2000,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1450,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "temple",
+      "color": "#586776",
+      "history": "A Creta sorsero centri palaziali come Cnosso e Festo, collegati alle rotte del Mediterraneo orientale. I palazzi concentravano attività economiche e cerimoniali. Distruzioni e successive trasformazioni aprirono una fase di forte presenza micenea.",
+      "culture": "Affreschi, ceramiche e architetture mostrano una cultura legata all’ambiente egeo. La Lineare A resta indecifrata: il nome «minoico» è moderno e molte interpretazioni politiche sono ipotesi.",
+      "legacy": [
+        "Arte e architettura palaziale",
+        "Testimonianze di scambi mediterranei nell’età del bronzo"
+      ],
+      "note": "Fascia riferita alla principale fase palaziale; la cultura cretese continuò dopo il 1450 a.C.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Creta minoica",
+          "url": "https://www.worldhistory.org/Minoan_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "micenei",
+      "name": "Greci micenei",
+      "subtitle": "I regni dei palazzi",
+      "type": "civiltà",
+      "start": {
+        "year": 1600,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1100,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "temple",
+      "color": "#816883",
+      "history": "Nella Grecia continentale, centri come Micene e Pilo organizzarono territori e produzioni attraverso palazzi fortificati. Gli scambi li collegavano all’Egeo e al Vicino Oriente. Intorno al 1200 a.C. distruzioni e crisi interruppero il sistema palaziale, senza cancellare la popolazione greca.",
+      "culture": "Le tavolette in Lineare B documentano una forma antica di greco e registrano beni e lavoratori. Tombe, armi e fortezze esprimono il prestigio delle élite.",
+      "legacy": [
+        "Le prime attestazioni scritte della lingua greca",
+        "Un passato rielaborato nei racconti epici"
+      ],
+      "note": "Date approssimative. L’epica omerica è una rielaborazione successiva, non una cronaca dei palazzi.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Greci micenei",
+          "url": "https://www.worldhistory.org/Mycenaean_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "ittiti",
+      "name": "Regno ittita",
+      "subtitle": "Un impero nell’Anatolia",
+      "type": "regni",
+      "start": {
+        "year": 1650,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1180,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "temple",
+      "color": "#957133",
+      "history": "Dalla capitale Hattusa, i sovrani ittiti costruirono un regno che controllò l’Anatolia e contese la Siria all’Egitto. Guerre e diplomazia legavano fra loro le grandi potenze dell’età del bronzo. La crisi del sistema palaziale portò alla dissoluzione del regno centrale.",
+      "culture": "Archivi cuneiformi conservarono leggi, trattati e rituali. Religioni e pratiche linguistiche diverse convivevano entro strutture politiche composite.",
+      "legacy": [
+        "Trattati diplomatici e archivi giuridici",
+        "Documentazione di una delle più antiche lingue indoeuropee scritte"
+      ],
+      "note": "Dopo il regno continuarono Stati neo-ittiti in Siria e Anatolia meridionale.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Regno ittita",
+          "url": "https://www.worldhistory.org/Hittites/"
+        }
+      ]
+    },
+    {
+      "id": "assiri",
+      "name": "Impero neo-assiro",
+      "subtitle": "Conquista e amministrazione",
+      "type": "imperi",
+      "start": {
+        "year": 911,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 609,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "temple",
+      "color": "#39788b",
+      "history": "I sovrani assiri estesero il potere su gran parte del Vicino Oriente. Esercito, province e deportazioni sostennero l’impero, ma produssero resistenze. L’alleanza di Babilonesi e Medi abbatté i principali centri; la caduta di Ninive nel 612 a.C. precedette la fine delle ultime resistenze.",
+      "culture": "Rilievi celebravano conquiste e regalità. Gli archivi di Ninive conservarono testi letterari, religiosi e scientifici di tradizioni mesopotamiche differenti.",
+      "legacy": [
+        "Archivi fondamentali per conoscere la Mesopotamia",
+        "Tecniche di organizzazione imperiale"
+      ],
+      "note": "911–609 a.C. indica la fase neo-assira, non l’intera storia degli Assiri. Esistono convenzioni alternative: 912–612 a.C. delimita un nucleo più ristretto; qui si includono le ultime resistenze fino al 609.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero neo-assiro",
+          "url": "https://www.worldhistory.org/Neo-Assyrian_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "babilonesi",
+      "name": "Impero neo-babilonese",
+      "subtitle": "La città di Nabucodonosor",
+      "type": "imperi",
+      "start": {
+        "year": 626,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 539,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "temple",
+      "color": "#74688f",
+      "history": "La rivolta contro l’Assiria aprì una nuova fase del potere babilonese. Nabucodonosor II ampliò il regno e monumentalizzò Babilonia. Le conquiste comportarono deportazioni, fra cui quella di parte della popolazione di Gerusalemme. Ciro conquistò Babilonia nel 539 a.C.",
+      "culture": "Templi e tradizioni scribali sostenevano il prestigio della città. Il sapere astronomico mesopotamico si sviluppò lungo molti secoli, prima e dopo questa dinastia.",
+      "legacy": [
+        "Patrimonio monumentale e tradizioni astronomiche",
+        "Un ruolo duraturo nella memoria delle religioni del Vicino Oriente"
+      ],
+      "note": "Questa è la fase neo-babilonese: Hammurabi appartiene a una fase molto precedente.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero neo-babilonese",
+          "url": "https://www.worldhistory.org/Babylon/"
+        }
+      ]
+    },
+    {
+      "id": "persiani",
+      "name": "Persiani achemenidi",
+      "subtitle": "Governare molte terre",
+      "type": "imperi",
+      "start": {
+        "year": 550,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 330,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "temple",
+      "color": "#39796e",
+      "history": "Ciro e i suoi successori unirono territori dall’Anatolia e dall’Egitto all’Asia centrale. Province, tributi e reti di comunicazione sostenevano il governo. L’impero affrontò rivolte e guerre esterne prima della conquista di Alessandro.",
+      "culture": "Le corti combinavano tradizioni differenti. Lingue e culti locali persistevano entro rapporti di potere imperiali: la diversità non eliminava diseguaglianze e coercizione.",
+      "legacy": [
+        "Modelli di amministrazione territoriale",
+        "Architettura monumentale di Persepoli",
+        "Reti di scambio fra regioni lontane"
+      ],
+      "note": "Intervallo della dinastia achemenide, non di tutta la storia persiana.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Persiani achemenidi",
+          "url": "https://www.worldhistory.org/Achaemenid_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "fenici",
+      "name": "Città fenicie",
+      "subtitle": "Navigare e scrivere",
+      "type": "popoli",
+      "start": {
+        "year": 1200,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 332,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Vicino Oriente",
+      "symbol": "ship",
+      "color": "#9d5047",
+      "history": "Città come Tiro, Sidone e Biblo svilupparono reti mercantili nel Mediterraneo. Fondarono insediamenti e intrecciarono rapporti con molti popoli. Furono spesso sottoposte a grandi imperi, pur conservando identità urbane e tradizioni locali.",
+      "culture": "Artigianato, culti cittadini e competenze nautiche accompagnavano i commerci. La scrittura alfabetica fenicia fu adattata da altri popoli, fra cui i Greci.",
+      "legacy": [
+        "La diffusione di un modello alfabetico",
+        "Reti di scambio e conoscenze nautiche"
+      ],
+      "note": "Il 332 a.C., conquista di Tiro da parte di Alessandro, è un limite politico convenzionale: le comunità non scomparvero.",
+      "images": [
+        {
+          "src": "assets/ship.svg",
+          "caption": "Imbarcazione: illustrazione simbolica delle reti marittime."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Città fenicie",
+          "url": "https://www.worldhistory.org/Phoenicia/"
+        }
+      ]
+    },
+    {
+      "id": "greci",
+      "name": "Greci: età arcaica e classica",
+      "subtitle": "Le città e la discussione pubblica",
+      "type": "civiltà",
+      "start": {
+        "year": 800,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 323,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "temple",
+      "color": "#59783c",
+      "history": "La polis divenne una forma centrale di organizzazione nel mondo greco. Migrazioni e fondazioni ampliarono le reti mediterranee. Guerre contro i Persiani, conflitti fra città e ascesa macedone trasformarono gli equilibri. Il 323 a.C. apre convenzionalmente l’età ellenistica.",
+      "culture": "Lingua e culti comuni convivevano con istituzioni differenti. Filosofia, teatro e storiografia nacquero entro società che praticavano anche schiavitù ed esclusione politica.",
+      "legacy": [
+        "Filosofia, teatro e storiografia",
+        "Esperienze di partecipazione politica",
+        "Modelli artistici e architettonici"
+      ],
+      "note": "La fascia delimita due fasi, non la durata del popolo greco. La democrazia ateniese non equivale a quella contemporanea.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Greci: età arcaica e classica",
+          "url": "https://www.worldhistory.org/Ancient_Greece/"
+        }
+      ]
+    },
+    {
+      "id": "ellenismo",
+      "name": "Regni ellenistici",
+      "subtitle": "Dopo Alessandro, un mondo connesso",
+      "type": "grandi sistemi storico-politici",
+      "start": {
+        "year": 323,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 30,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "temple",
+      "color": "#4c7098",
+      "history": "Dopo la morte di Alessandro, i suoi successori si contesero territori e fondarono dinastie. Regni come quelli tolemaico e seleucide unirono élite greco-macedoni e popolazioni diverse. La crescita di Roma ridusse progressivamente la loro autonomia; l’Egitto tolemaico cadde nel 30 a.C.",
+      "culture": "Città e corti ospitarono biblioteche, scienziati e artisti. Il greco divenne lingua di comunicazione in vaste aree, interagendo con tradizioni locali.",
+      "legacy": [
+        "Circolazione di saperi scientifici e filosofici",
+        "Una cultura urbana condivisa in parte del Mediterraneo orientale"
+      ],
+      "note": "Il 30 a.C. è una cesura politica, non la fine dell’influenza della cultura ellenistica.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Regni ellenistici",
+          "url": "https://www.worldhistory.org/Hellenistic_Period/"
+        }
+      ]
+    },
+    {
+      "id": "etruschi",
+      "name": "Etruschi",
+      "subtitle": "Città dell’Italia antica",
+      "type": "popoli",
+      "start": {
+        "year": 800,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 90,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "temple",
+      "color": "#9b723f",
+      "history": "Le città etrusche dell’Italia centrale si arricchirono grazie ad agricoltura, metallurgia e scambi. Non formarono un unico Stato unitario. L’espansione romana ne ridusse l’autonomia; l’integrazione politica e linguistica si svolse nel corso di secoli.",
+      "culture": "Necropoli, pitture e oggetti restituiscono aspetti di società e religione. La lingua etrusca è leggibile ma conosciuta in modo incompleto, soprattutto attraverso iscrizioni.",
+      "legacy": [
+        "Un patrimonio funerario e figurativo",
+        "Contributi alla religione e alla cultura dell’Italia romana"
+      ],
+      "note": "Fine convenzionale legata all’integrazione nella cittadinanza romana, non alla scomparsa biologica o culturale.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Etruschi",
+          "url": "https://www.worldhistory.org/Etruscan_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "cartagine",
+      "name": "Cartagine",
+      "subtitle": "Una potenza fra Africa e Mediterraneo",
+      "type": "Stati",
+      "start": {
+        "year": 814,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 146,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "ship",
+      "color": "#586776",
+      "history": "Fondata secondo la tradizione da coloni fenici, Cartagine costruì una rete di domini e alleanze nel Mediterraneo occidentale. La competizione con Roma sfociò nelle guerre puniche. La città fu distrutta dai Romani nel 146 a.C. e rifondata in seguito.",
+      "culture": "Commerci, agricoltura e navigazione sostenevano una società punica. Le informazioni provengono anche da avversari greci e romani e vanno confrontate con l’archeologia.",
+      "legacy": [
+        "Patrimonio fenicio-punico del Mediterraneo",
+        "Conoscenze agricole e marittime"
+      ],
+      "note": "814 a.C. è una data tradizionale; il 146 a.C. conclude lo Stato cartaginese, non tutte le culture puniche.",
+      "images": [
+        {
+          "src": "assets/ship.svg",
+          "caption": "Imbarcazione: illustrazione simbolica delle reti marittime."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Cartagine",
+          "url": "https://www.worldhistory.org/Carthage/"
+        }
+      ]
+    },
+    {
+      "id": "repubblica-romana",
+      "name": "Repubblica romana",
+      "subtitle": "Dalla città al dominio mediterraneo",
+      "type": "Stati",
+      "start": {
+        "year": 509,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 27,
+        "era": "BCE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "rome",
+      "color": "#816883",
+      "history": "Dopo la monarchia, Roma elaborò istituzioni repubblicane attraversate dai conflitti fra gruppi sociali. Le conquiste estesero il dominio e le diseguaglianze. Le guerre civili del I secolo a.C. portarono alla concentrazione del potere e al principato di Augusto.",
+      "culture": "Senato, magistrature e assemblee distribuivano poteri in modo diseguale. Cittadinanza e diritto si trasformarono con l’espansione; la schiavitù sosteneva parte dell’economia.",
+      "legacy": [
+        "Tradizioni repubblicane e lessico politico",
+        "Sviluppi del diritto e della cittadinanza"
+      ],
+      "note": "509 a.C. è la data tradizionale dell’inizio della repubblica.",
+      "images": [
+        {
+          "src": "assets/rome.svg",
+          "caption": "Arcate romane: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Repubblica romana",
+          "url": "https://www.worldhistory.org/Roman_Republic/"
+        }
+      ]
+    },
+    {
+      "id": "impero-romano",
+      "name": "Impero romano",
+      "subtitle": "Da Augusto alla cesura in Occidente",
+      "type": "imperi",
+      "start": {
+        "year": 27,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 476,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "rome",
+      "color": "#9c443c",
+      "history": "Augusto consolidò un potere monarchico entro forme repubblicane. L’impero unì territori e popolazioni del Mediterraneo attraverso esercito, città, tributi e diritto. Crisi e riforme ne mutarono la struttura; nel V secolo il potere imperiale si dissolse in Occidente, mentre continuò in Oriente.",
+      "culture": "Lingue, religioni e tradizioni locali convivevano con istituzioni comuni. Latino e greco ebbero ruoli centrali. La diffusione del cristianesimo trasformò progressivamente la vita religiosa e politica.",
+      "legacy": [
+        "Diritto romano e tradizioni istituzionali",
+        "Lingue romanze e patrimonio latino",
+        "Strade, acquedotti e modelli urbani"
+      ],
+      "note": "Il 476 riguarda l’Occidente. L’impero romano d’Oriente continuò: vedi la fascia bizantina. La durata qui è 502 anni tra gli anni indicati.",
+      "images": [
+        {
+          "src": "assets/rome.svg",
+          "caption": "Arcate romane: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/essays/the-roman-empire-27-b-c-393-a-d"
+        },
+        {
+          "title": "World History Encyclopedia · Western Roman Empire",
+          "url": "https://www.worldhistory.org/Western_Roman_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "kush",
+      "name": "Regno di Kush",
+      "subtitle": "Le potenze della Nubia",
+      "type": "regni",
+      "start": {
+        "year": 750,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 350,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "pyramid",
+      "color": "#39788b",
+      "history": "Nella valle del Nilo a sud dell’Egitto, i sovrani di Kush costruirono regni con centri a Napata e Meroe. Alcuni governarono anche l’Egitto. Relazioni commerciali, guerre e trasformazioni regionali modificarono il regno fino al declino del centro meroitico.",
+      "culture": "Tradizioni nubiane e rapporti con l’Egitto si riflettono in templi e piramidi. La scrittura meroitica è leggibile nei segni ma la lingua resta compresa solo in parte.",
+      "legacy": [
+        "Un patrimonio africano di architettura e regalità",
+        "Testimonianze delle reti nilotiche e del Mar Rosso"
+      ],
+      "note": "La fascia comprende le fasi napatea e meroitica; non include il precedente regno di Kerma.",
+      "images": [
+        {
+          "src": "assets/pyramid.svg",
+          "caption": "Monumentalità e memoria: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Regno di Kush",
+          "url": "https://www.worldhistory.org/Kush/"
+        }
+      ]
+    },
+    {
+      "id": "aksum",
+      "name": "Regno di Aksum",
+      "subtitle": "Fra Africa e Mar Rosso",
+      "type": "regni",
+      "start": {
+        "year": 100,
+        "era": "CE"
+      },
+      "end": {
+        "year": 940,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "temple",
+      "color": "#74688f",
+      "history": "Aksum prosperò nel Corno d’Africa grazie ad agricoltura e scambi sul Mar Rosso. Coniò monete e partecipò a reti che collegavano Mediterraneo, Arabia e India. I cambiamenti commerciali e politici ridussero poi la centralità della capitale.",
+      "culture": "La conversione della monarchia al cristianesimo nel IV secolo fu una svolta. Stele monumentali, iscrizioni e tradizione ge’ez documentano una cultura propria, con connessioni esterne.",
+      "legacy": [
+        "Tradizioni cristiane etiopiche",
+        "Patrimonio epigrafico e monumentale",
+        "La memoria di uno Stato africano connesso al mondo antico"
+      ],
+      "note": "Limiti approssimativi: la trasformazione del regno non fu un singolo evento.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Regno di Aksum",
+          "url": "https://www.worldhistory.org/Kingdom_of_Axum/"
+        }
+      ]
+    },
+    {
+      "id": "maurya",
+      "name": "Impero Maurya",
+      "subtitle": "Unire l’India settentrionale",
+      "type": "imperi",
+      "start": {
+        "year": 321,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 185,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Asia meridionale",
+      "symbol": "temple",
+      "color": "#39796e",
+      "history": "Chandragupta Maurya costruì un grande impero nell’Asia meridionale. Sotto Ashoka l’espansione e il governo furono accompagnati da riflessioni sulla violenza e sui doveri del sovrano. Dopo la sua morte, il potere si frammentò fino alla fine della dinastia.",
+      "culture": "Editti su rocce e pilastri esponevano princìpi di governo e condotta. Il sostegno di Ashoka al buddhismo favorì la circolazione della religione, senza eliminare la pluralità dei culti.",
+      "legacy": [
+        "Editti come testimonianze dirette del governo",
+        "Diffusione del buddhismo",
+        "Simboli ripresi dall’India contemporanea"
+      ],
+      "note": "Date politiche convenzionali, con margini di incertezza per gli inizi.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero Maurya",
+          "url": "https://www.worldhistory.org/Mauryan_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "gupta",
+      "name": "Impero Gupta",
+      "subtitle": "Corti, saperi e religioni",
+      "type": "imperi",
+      "start": {
+        "year": 320,
+        "era": "CE"
+      },
+      "end": {
+        "year": 550,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Asia meridionale",
+      "symbol": "temple",
+      "color": "#9d5047",
+      "history": "I Gupta ampliarono un potere dinastico nell’India settentrionale attraverso alleanze e guerre. Il controllo variava fra centro e territori subordinati. Conflitti interni e pressioni esterne contribuirono alla frammentazione politica nel VI secolo.",
+      "culture": "Corti e centri religiosi favorirono letteratura sanscrita, arti e studi matematici e astronomici. L’etichetta «età dell’oro» descrive alcuni risultati culturali, non il benessere uniforme della popolazione.",
+      "legacy": [
+        "Letteratura e arti del mondo sanscrito",
+        "Sviluppi matematici e astronomici",
+        "Modelli figurativi religiosi"
+      ],
+      "note": "Fascia riferita alla principale fase imperiale; estremità approssimative.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero Gupta",
+          "url": "https://www.worldhistory.org/Gupta_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "shang",
+      "name": "Dinastia Shang",
+      "subtitle": "Bronzi e prime scritture cinesi",
+      "type": "regni",
+      "start": {
+        "year": 1600,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 1046,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Asia orientale",
+      "symbol": "bronze",
+      "color": "#59783c",
+      "history": "I sovrani Shang controllarono centri e territori della Cina settentrionale. La corte organizzava guerre, rituali e produzioni specializzate. La conquista Zhou pose fine alla dinastia, senza cancellarne il patrimonio culturale.",
+      "culture": "Iscrizioni su ossa oracolari documentano divinazione, antenati e pratiche di governo. La fusione del bronzo richiedeva reti di lavoro e risorse.",
+      "legacy": [
+        "Le più antiche ampie attestazioni della scrittura cinese",
+        "Una grande tradizione di bronzi rituali"
+      ],
+      "note": "Inizio approssimativo; cronologie alternative collocano la fine intorno al 1050 a.C.",
+      "images": [
+        {
+          "src": "assets/bronze.svg",
+          "caption": "Vaso rituale in bronzo: illustrazione simbolica, non riproduzione di un reperto."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Shang",
+          "url": "https://www.worldhistory.org/Shang_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "zhou",
+      "name": "Dinastia Zhou",
+      "subtitle": "Il mandato del Cielo e i regni rivali",
+      "type": "regni",
+      "start": {
+        "year": 1046,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 256,
+        "era": "BCE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "bronze",
+      "color": "#4c7098",
+      "history": "I Zhou sostituirono gli Shang e distribuirono poteri a casate regionali. Col tempo, i principati acquisirono autonomia. Le guerre fra Stati trasformarono eserciti e società, preparando l’unificazione Qin dopo la fine della monarchia Zhou.",
+      "culture": "Il mandato del Cielo offriva una giustificazione morale della regalità. In questo lungo periodo si svilupparono tradizioni confuciane, daoiste e altre scuole di pensiero.",
+      "legacy": [
+        "Idee sul governo e sulla responsabilità del sovrano",
+        "Tradizioni filosofiche centrali nella cultura cinese"
+      ],
+      "note": "La continuità dinastica comprende lunghi periodi di frammentazione politica.",
+      "images": [
+        {
+          "src": "assets/bronze.svg",
+          "caption": "Vaso rituale in bronzo: illustrazione simbolica, non riproduzione di un reperto."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Zhou",
+          "url": "https://www.worldhistory.org/Zhou_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "qin",
+      "name": "Dinastia Qin",
+      "subtitle": "La prima unificazione imperiale",
+      "type": "imperi",
+      "start": {
+        "year": 221,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 206,
+        "era": "BCE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "scroll",
+      "color": "#9b723f",
+      "history": "Dopo aver sconfitto i regni rivali, Qin Shi Huang impose un governo centralizzato. Standardizzazioni, grandi lavori e campagne militari richiesero vaste risorse. La dinastia durò poco e cadde fra rivolte e lotte per il potere.",
+      "culture": "Amministrazione territoriale e norme comuni sostenevano lo Stato. Il mausoleo del primo imperatore, con l’esercito di terracotta, mostra la capacità organizzativa e coercitiva del regime.",
+      "legacy": [
+        "Una struttura imperiale ripresa dalle dinastie successive",
+        "Standardizzazioni di scrittura, pesi e misure"
+      ],
+      "note": "Una fascia breve non equivale a scarsa importanza storica.",
+      "images": [
+        {
+          "src": "assets/scroll.svg",
+          "caption": "Cultura scritta e amministrazione: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Qin",
+          "url": "https://www.worldhistory.org/Qin_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "han",
+      "name": "Dinastia Han",
+      "subtitle": "Un impero sulle rotte dell’Asia",
+      "type": "imperi",
+      "start": {
+        "year": 206,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 220,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "scroll",
+      "color": "#586776",
+      "history": "Gli Han consolidarono e trasformarono l’ordine imperiale. Espansione e diplomazia favorirono collegamenti con l’Asia centrale. Tensioni sociali, rivolte e competizione fra gruppi di potere portarono alla frammentazione nel III secolo.",
+      "culture": "La tradizione confuciana assunse un ruolo crescente nelle istituzioni. Storiografia, tecniche e cultura scritta contribuirono a una memoria politica duratura.",
+      "legacy": [
+        "Tradizione storiografica cinese",
+        "Sviluppi della cultura scritta e della carta",
+        "Reti di collegamento eurasiatiche"
+      ],
+      "note": "La fascia comprende l’interruzione della dinastia Xin, dal 9 al 23 d.C., e la restaurazione Han nel 25.",
+      "images": [
+        {
+          "src": "assets/scroll.svg",
+          "caption": "Cultura scritta e amministrazione: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Han",
+          "url": "https://www.worldhistory.org/Han_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "tang",
+      "name": "Dinastia Tang",
+      "subtitle": "Città cosmopolite e poesia",
+      "type": "imperi",
+      "start": {
+        "year": 618,
+        "era": "CE"
+      },
+      "end": {
+        "year": 907,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "pagoda",
+      "color": "#816883",
+      "history": "I Tang consolidarono l’unificazione cinese e estesero la propria influenza in Asia. Chang’an fu un centro di incontri e scambi. Ribellioni e autonomie militari indebolirono la corte fino alla caduta della dinastia.",
+      "culture": "Poesia, arti e culti diversi animarono la vita urbana. Il buddhismo ebbe grande diffusione, ma incontrò anche persecuzioni e restrizioni politiche.",
+      "legacy": [
+        "Una tradizione poetica di grande influenza",
+        "Modelli politici e culturali diffusi nell’Asia orientale"
+      ],
+      "note": "Il 907 è il termine dinastico convenzionale; alcune tavole sintetiche riportano il 906.",
+      "images": [
+        {
+          "src": "assets/pagoda.svg",
+          "caption": "Padiglione: illustrazione evocativa dell’Asia orientale, non di una singola dinastia."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Tang",
+          "url": "https://www.worldhistory.org/Tang_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "song",
+      "name": "Dinastia Song",
+      "subtitle": "Commerci, stampa e città",
+      "type": "imperi",
+      "start": {
+        "year": 960,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1279,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "pagoda",
+      "color": "#957133",
+      "history": "I Song governarono una società con grandi città, reti commerciali e produzione specializzata. Dopo la perdita del Nord, la corte si trasferì nel Sud. La conquista mongola concluse la dinastia nel 1279.",
+      "culture": "Stampa, educazione e selezione dei funzionari alimentarono la cultura dei letterati. Innovazioni tecniche si intrecciarono con mercati, guerra e amministrazione.",
+      "legacy": [
+        "Diffusione della stampa e della cultura scritta",
+        "Sviluppi del pensiero neoconfuciano",
+        "Innovazioni in navigazione e tecniche produttive"
+      ],
+      "note": "Song settentrionali fino al 1127; Song meridionali dal 1127 al 1279.",
+      "images": [
+        {
+          "src": "assets/pagoda.svg",
+          "caption": "Padiglione: illustrazione evocativa dell’Asia orientale, non di una singola dinastia."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Song",
+          "url": "https://www.worldhistory.org/Song_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "ming",
+      "name": "Dinastia Ming",
+      "subtitle": "Ricostruire l’impero",
+      "type": "imperi",
+      "start": {
+        "year": 1368,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1644,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "pagoda",
+      "color": "#39788b",
+      "history": "La dinastia Ming sostituì il dominio mongolo Yuan. Agricoltura, artigianato e commerci sostennero una grande popolazione. Le spedizioni marittime del primo Quattrocento furono seguite da politiche diverse. Crisi fiscali, rivolte e avanzata mancese portarono alla caduta della capitale.",
+      "culture": "Romanzo, porcellane e architetture imperiali riflettono una società complessa. Il commercio collegava la Cina a circuiti mondiali dell’argento e dei beni.",
+      "legacy": [
+        "Porcellane e cultura del romanzo",
+        "Patrimonio della Città Proibita",
+        "Connessioni commerciali globali"
+      ],
+      "note": "Il 1644 è la caduta di Pechino; resistenze dei Ming meridionali continuarono.",
+      "images": [
+        {
+          "src": "assets/pagoda.svg",
+          "caption": "Padiglione: illustrazione evocativa dell’Asia orientale, non di una singola dinastia."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Dinastia Ming",
+          "url": "https://www.worldhistory.org/Ming_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "qing",
+      "name": "Dinastia Qing",
+      "subtitle": "Un impero multietnico",
+      "type": "imperi",
+      "start": {
+        "year": 1644,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1912,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia orientale",
+      "symbol": "pagoda",
+      "color": "#74688f",
+      "history": "La dinastia mancese Qing consolidò un impero vasto e composito. Crescita demografica, espansione territoriale e commerci si accompagnarono a tensioni sociali. Nel XIX secolo guerre, rivolte e interventi stranieri aprirono una crisi che portò alla fine della monarchia.",
+      "culture": "La corte governava attraverso tradizioni politiche diverse. Cultura letterata, pratiche religiose e produzioni artistiche continuarono a trasformarsi in contatto con nuovi saperi.",
+      "legacy": [
+        "Un’eredità territoriale e amministrativa complessa",
+        "Patrimonio letterario e artistico",
+        "Questioni centrali della transizione alla Cina contemporanea"
+      ],
+      "note": "1644 indica la presa di Pechino; lo Stato Qing era stato proclamato nel 1636.",
+      "images": [
+        {
+          "src": "assets/pagoda.svg",
+          "caption": "Padiglione: illustrazione evocativa dell’Asia orientale, non di una singola dinastia."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Columbia University · Asia for Educators",
+          "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+        }
+      ]
+    },
+    {
+      "id": "olmeci",
+      "name": "Olmechi",
+      "subtitle": "Centri cerimoniali della Mesoamerica",
+      "type": "civiltà",
+      "start": {
+        "year": 1500,
+        "era": "BCE"
+      },
+      "end": {
+        "year": 400,
+        "era": "BCE"
+      },
+      "approx": true,
+      "region": "Americhe",
+      "symbol": "terraces",
+      "color": "#39796e",
+      "history": "Sulla costa del Golfo del Messico sorsero centri come San Lorenzo e La Venta. Agricoltura, poteri locali e scambi sostennero produzioni monumentali. Il declino dei centri principali non cancellò tradizioni trasmesse ad altre società mesoamericane.",
+      "culture": "Teste colossali, giade e immagini rituali mostrano abilità tecniche e reti di approvvigionamento. Molti aspetti di lingua e organizzazione politica restano incerti.",
+      "legacy": [
+        "Tradizioni figurative e cerimoniali",
+        "Reti di scambio mesoamericane"
+      ],
+      "note": "Le date variano secondo le fasi archeologiche considerate; non è corretto ridurre tutte le culture successive a semplici discendenti olmeche.",
+      "images": [
+        {
+          "src": "assets/terraces.svg",
+          "caption": "Architettura a terrazze: illustrazione simbolica, non ricostruzione di un sito."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Olmechi",
+          "url": "https://www.worldhistory.org/Olmec_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "maya",
+      "name": "Maya: periodo classico",
+      "subtitle": "Città, scrittura e calendari",
+      "type": "civiltà",
+      "start": {
+        "year": 250,
+        "era": "CE"
+      },
+      "end": {
+        "year": 900,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Americhe",
+      "symbol": "terraces",
+      "color": "#9d5047",
+      "history": "Nel periodo classico, numerose città maya si allearono e combatterono senza formare un unico impero. Corti e centri monumentali organizzavano territori agricoli. Fra VIII e X secolo molte città delle pianure meridionali entrarono in crisi, mentre altre regioni continuarono a prosperare.",
+      "culture": "Iscrizioni, calendari e osservazioni astronomiche sostenevano rituali e memoria dinastica. Le fonti richiedono un confronto fra celebrazione del potere e vita delle comunità.",
+      "legacy": [
+        "Scrittura e patrimonio architettonico",
+        "Tradizioni linguistiche e culturali tuttora vive"
+      ],
+      "note": "Il 900 conclude convenzionalmente il periodo classico: i popoli maya vivono ancora oggi.",
+      "images": [
+        {
+          "src": "assets/terraces.svg",
+          "caption": "Architettura a terrazze: illustrazione simbolica, non ricostruzione di un sito."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Maya: periodo classico",
+          "url": "https://www.worldhistory.org/Maya_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "aztechi",
+      "name": "Triplice Alleanza azteca",
+      "subtitle": "Tributi e potere nella valle del Messico",
+      "type": "imperi",
+      "start": {
+        "year": 1428,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1521,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Americhe",
+      "symbol": "terraces",
+      "color": "#59783c",
+      "history": "Tenochtitlan, Texcoco e Tlacopan costruirono un’alleanza capace di imporre tributi a molti territori. Nel 1521, gli Spagnoli con numerosi alleati indigeni conquistarono Tenochtitlan. Guerra ed epidemie produssero una trasformazione profonda.",
+      "culture": "Mercati, agricoltura intensiva e istituzioni religiose sostenevano la vita urbana. Testi coloniali e archeologia devono essere letti tenendo conto delle condizioni della conquista.",
+      "legacy": [
+        "Patrimonio culturale nahua",
+        "Tecniche agricole e tradizioni alimentari",
+        "Una memoria centrale nella storia messicana"
+      ],
+      "note": "La fascia rappresenta la Triplice Alleanza, non l’intera storia dei Mexica o dei popoli nahua.",
+      "images": [
+        {
+          "src": "assets/terraces.svg",
+          "caption": "Architettura a terrazze: illustrazione simbolica, non ricostruzione di un sito."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Triplice Alleanza azteca",
+          "url": "https://www.worldhistory.org/Aztec_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "inca",
+      "name": "Impero inca",
+      "subtitle": "Una rete attraverso le Ande",
+      "type": "imperi",
+      "start": {
+        "year": 1438,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1533,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Americhe",
+      "symbol": "terraces",
+      "color": "#4c7098",
+      "history": "Dal centro di Cusco, gli Inca espansero il Tawantinsuyu lungo le Ande. Strade, depositi e obblighi di lavoro collegavano ambienti molto diversi. Guerra civile, epidemie e invasione spagnola provocarono la crisi del potere imperiale.",
+      "culture": "Terrazzamenti, architettura in pietra e quipu sostenevano produzione e amministrazione. Tradizioni locali erano integrate attraverso relazioni di dominio e negoziazione.",
+      "legacy": [
+        "Reti stradali e paesaggi agrari",
+        "Patrimonio architettonico andino",
+        "Lingue e culture vive delle popolazioni andine"
+      ],
+      "note": "1438 è una data convenzionale dell’espansione; la resistenza inca a Vilcabamba terminò nel 1572.",
+      "images": [
+        {
+          "src": "assets/terraces.svg",
+          "caption": "Architettura a terrazze: illustrazione simbolica, non ricostruzione di un sito."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero inca",
+          "url": "https://www.worldhistory.org/Inca_Civilization/"
+        }
+      ]
+    },
+    {
+      "id": "bizantini",
+      "name": "Impero romano d’Oriente",
+      "subtitle": "La continuità romana, nuove forme",
+      "type": "imperi",
+      "start": {
+        "year": 330,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1453,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "dome",
+      "color": "#9b723f",
+      "history": "Costantinopoli divenne capitale imperiale nel 330. Lo Stato orientale attraversò secoli di guerre, riforme e contrazioni territoriali. Dopo la conquista crociata del 1204 e la restaurazione del 1261, l’impero sopravvisse fino alla presa ottomana della capitale nel 1453.",
+      "culture": "Diritto romano, lingua greca e cristianesimo plasmarono istituzioni e cultura. Mosaici, icone e controversie religiose mostrano l’intreccio fra potere e fede.",
+      "legacy": [
+        "Trasmissione di testi greci",
+        "Codificazione giustinianea del diritto",
+        "Tradizioni del cristianesimo orientale"
+      ],
+      "note": "«Bizantino» è un nome storiografico. Il 330 è convenzionale; la fascia include la cesura del 1204–1261, quando la corte sopravvisse in Stati successori.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero romano d’Oriente",
+          "url": "https://www.worldhistory.org/Byzantine_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "omayyadi",
+      "name": "Califfato omayyade",
+      "subtitle": "Damasco e l’espansione islamica",
+      "type": "imperi",
+      "start": {
+        "year": 661,
+        "era": "CE"
+      },
+      "end": {
+        "year": 750,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Vicino Oriente",
+      "symbol": "dome",
+      "color": "#586776",
+      "history": "Dopo i conflitti della prima comunità islamica, gli Omayyadi consolidarono una dinastia con centro a Damasco. Il dominio si estese dal Mediterraneo occidentale all’Asia. Tensioni politiche e sociali favorirono la rivoluzione abbaside.",
+      "culture": "L’arabo assunse un ruolo amministrativo crescente. Nuove architetture religiose e monete esprimevano l’identità del potere, entro società plurilingui e multireligiose.",
+      "legacy": [
+        "Diffusione della lingua araba",
+        "Monumenti della prima arte islamica",
+        "Reti fra Mediterraneo e Asia"
+      ],
+      "note": "La dinastia continuò in al-Andalus dopo il 750; la fascia riguarda il califfato di Damasco.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Califfato omayyade",
+          "url": "https://www.worldhistory.org/Umayyad_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "abbasidi",
+      "name": "Califfato abbaside di Baghdad",
+      "subtitle": "Saperi e reti del mondo islamico",
+      "type": "imperi",
+      "start": {
+        "year": 750,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1258,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Vicino Oriente",
+      "symbol": "dome",
+      "color": "#816883",
+      "history": "Gli Abbasidi sostituirono gli Omayyadi e fondarono Baghdad. L’autorità politica si frammentò progressivamente fra dinastie regionali, mentre il califfato conservò prestigio. La conquista mongola di Baghdad nel 1258 concluse questa fase.",
+      "culture": "Traduzioni, medicina, matematica e filosofia si svilupparono in reti di studiosi e committenti. Vi parteciparono persone di religioni e lingue differenti.",
+      "legacy": [
+        "Trasmissione e sviluppo di saperi",
+        "Tradizioni filosofiche e letterarie",
+        "Reti culturali e commerciali afroeurasiatiche"
+      ],
+      "note": "Non fu un impero politicamente unitario per tutti i cinque secoli; una linea califfale abbaside continuò al Cairo.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Califfato abbaside di Baghdad",
+          "url": "https://www.worldhistory.org/Abbasid_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "carolingi",
+      "name": "Impero carolingio",
+      "subtitle": "Riorganizzare l’Occidente",
+      "type": "imperi",
+      "start": {
+        "year": 800,
+        "era": "CE"
+      },
+      "end": {
+        "year": 843,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "castle",
+      "color": "#957133",
+      "history": "L’incoronazione di Carlo Magno sancì una nuova autorità imperiale in Occidente. Conquiste e rapporti con aristocrazie e Chiesa sostenevano il governo. I conflitti dinastici portarono alla divisione di Verdun nel 843.",
+      "culture": "Scuole, monasteri e amministrazione promossero la copia dei testi e la formazione del clero. La società restava prevalentemente agricola e segnata da rapporti di dipendenza.",
+      "legacy": [
+        "La minuscola carolina e la conservazione dei testi",
+        "Nuove forme del rapporto fra impero e Chiesa"
+      ],
+      "note": "La fascia indica l’impero unitario; la dinastia e il titolo imperiale continuarono dopo il 843.",
+      "images": [
+        {
+          "src": "assets/castle.svg",
+          "caption": "Fortificazione: illustrazione evocativa del mondo medievale."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero carolingio",
+          "url": "https://www.worldhistory.org/Carolingian_Dynasty/"
+        }
+      ]
+    },
+    {
+      "id": "sacro-impero",
+      "name": "Sacro Romano Impero",
+      "subtitle": "Un potere composto nel cuore d’Europa",
+      "type": "imperi",
+      "start": {
+        "year": 962,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1806,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "castle",
+      "color": "#39788b",
+      "history": "L’incoronazione di Ottone I è un inizio convenzionale dell’impero medievale di area germanica. Imperatori, principi, città e autorità ecclesiastiche negoziarono poteri e autonomie. Le guerre napoleoniche portarono allo scioglimento nel 1806.",
+      "culture": "Una pluralità di lingue, istituzioni e confessioni rende improprio immaginarlo come uno Stato nazionale moderno. Città e università furono centri di scambio e sapere.",
+      "legacy": [
+        "Tradizioni di autonomia urbana e territoriale",
+        "Patrimoni giuridici, artistici e universitari"
+      ],
+      "note": "Il nome «Sacro Romano Impero» si affermò gradualmente, dopo il 962.",
+      "images": [
+        {
+          "src": "assets/castle.svg",
+          "caption": "Fortificazione: illustrazione evocativa del mondo medievale."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Sacro Romano Impero",
+          "url": "https://www.worldhistory.org/Holy_Roman_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "vichinghi",
+      "name": "Espansioni vichinghe",
+      "subtitle": "Rotte del Nord",
+      "type": "popoli",
+      "start": {
+        "year": 793,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1066,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "ship",
+      "color": "#74688f",
+      "history": "Gruppi scandinavi combinarono razzie, commerci, insediamenti e servizio militare. Le loro reti raggiunsero l’Atlantico settentrionale e l’Europa orientale. Consolidamento dei regni e cristianizzazione trasformarono gradualmente queste attività.",
+      "culture": "Navigazione, costruzione navale, arti e tradizioni orali appartenevano a società diverse. «Vichingo» descrive un’attività e un’etichetta storica, non tutti gli Scandinavi in ogni epoca.",
+      "legacy": [
+        "Reti marittime e insediamenti",
+        "Tradizioni narrative e linguistiche nordiche"
+      ],
+      "note": "793 e 1066 sono limiti convenzionali di una periodizzazione centrata sull’Europa nordoccidentale.",
+      "images": [
+        {
+          "src": "assets/ship.svg",
+          "caption": "Imbarcazione: illustrazione simbolica delle reti marittime."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Espansioni vichinghe",
+          "url": "https://www.worldhistory.org/Vikings/"
+        }
+      ]
+    },
+    {
+      "id": "mali",
+      "name": "Impero del Mali",
+      "subtitle": "Oro, città e vie sahariane",
+      "type": "imperi",
+      "start": {
+        "year": 1240,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1645,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "city",
+      "color": "#39796e",
+      "history": "L’ascesa di Sundiata pose le basi di un impero nell’Africa occidentale. Il controllo di risorse e rotte commerciali sostenne il potere; il pellegrinaggio di Mansa Musa ne rese celebre la ricchezza. L’espansione di potenze rivali ridusse progressivamente il territorio.",
+      "culture": "Commerci e centri di studio islamici convivevano con tradizioni locali. La trasmissione orale e le fonti scritte offrono prospettive diverse sulla regalità.",
+      "legacy": [
+        "Patrimonio culturale mandingo",
+        "Manoscritti e centri di sapere",
+        "Memorie delle reti transahariane"
+      ],
+      "note": "Date approssimative: alcune ricostruzioni iniziano dal 1235; il declino fu graduale.",
+      "images": [
+        {
+          "src": "assets/city.svg",
+          "caption": "Insediamento e reti: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero del Mali",
+          "url": "https://www.worldhistory.org/Mali_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "zimbabwe",
+      "name": "Grande Zimbabwe",
+      "subtitle": "Pietra, bestiame e scambi",
+      "type": "regni",
+      "start": {
+        "year": 1100,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1550,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Africa",
+      "symbol": "city",
+      "color": "#9d5047",
+      "history": "Grande Zimbabwe fu un centro politico ed economico dell’Africa australe. Allevamento, agricoltura e commercio di oro sostenevano élite collegate all’Oceano Indiano. Mutamenti economici e politici favorirono poi lo spostamento dei centri di potere.",
+      "culture": "Le grandi mura a secco furono costruite da popolazioni africane locali. Le interpretazioni coloniali che le attribuivano a stranieri negavano senza basi la capacità storica delle società africane.",
+      "legacy": [
+        "Architettura monumentale a secco",
+        "Un patrimonio centrale nella memoria dello Zimbabwe"
+      ],
+      "note": "La fascia indica l’occupazione del sito; la fase di massima prosperità è circa 1300–1450.",
+      "images": [
+        {
+          "src": "assets/city.svg",
+          "caption": "Insediamento e reti: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Grande Zimbabwe",
+          "url": "https://www.worldhistory.org/Great_Zimbabwe/"
+        }
+      ]
+    },
+    {
+      "id": "khmer",
+      "name": "Impero khmer",
+      "subtitle": "Angkor e il governo dell’acqua",
+      "type": "imperi",
+      "start": {
+        "year": 802,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1431,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia sudorientale",
+      "symbol": "temple",
+      "color": "#59783c",
+      "history": "I sovrani khmer costruirono un potere regionale con centro nell’area di Angkor. Opere idrauliche, agricoltura e grandi complessi templari sostenevano il sistema. Guerre e trasformazioni ambientali ed economiche favorirono il trasferimento dei centri politici.",
+      "culture": "Induismo e buddhismo influenzarono regalità, architettura e rituali. I templi rappresentavano universi religiosi, ma erano anche organizzazioni con terre e lavoratori.",
+      "legacy": [
+        "Angkor e il suo patrimonio architettonico",
+        "Tecniche idrauliche e paesaggi culturali",
+        "Tradizioni vive della Cambogia"
+      ],
+      "note": "Il 1431 è una cesura convenzionale legata alla presa di Angkor, non alla fine della cultura khmer.",
+      "images": [
+        {
+          "src": "assets/temple.svg",
+          "caption": "Architettura monumentale: illustrazione simbolica, non ricostruzione di un edificio."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero khmer",
+          "url": "https://www.worldhistory.org/Khmer_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "mongoli",
+      "name": "Impero mongolo",
+      "subtitle": "Conquiste e connessioni eurasiatiche",
+      "type": "imperi",
+      "start": {
+        "year": 1206,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1368,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia centrale",
+      "symbol": "horse",
+      "color": "#4c7098",
+      "history": "Gengis Khan unificò gruppi delle steppe e avviò conquiste su vastissima scala. I successori estesero il dominio e poi si divisero in khanati. La fine degli Yuan in Cina nel 1368 è qui usata come cesura, mentre altri Stati mongoli continuarono.",
+      "culture": "Mobilità pastorale, organizzazione militare e reti di comunicazione sostenevano il potere. Le conquiste provocarono devastazioni, ma intensificarono anche circolazioni di persone e saperi.",
+      "legacy": [
+        "Connessioni fra regioni dell’Eurasia",
+        "Trasferimenti di tecniche e conoscenze",
+        "Nuovi assetti politici regionali"
+      ],
+      "note": "Dalla metà del XIII secolo non esiste più un unico impero effettivamente unitario.",
+      "images": [
+        {
+          "src": "assets/horse.svg",
+          "caption": "Mobilità e steppe: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero mongolo",
+          "url": "https://www.worldhistory.org/Mongol_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "ottomani",
+      "name": "Impero ottomano",
+      "subtitle": "Fra tre continenti",
+      "type": "imperi",
+      "start": {
+        "year": 1299,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1922,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Vicino Oriente",
+      "symbol": "dome",
+      "color": "#9b723f",
+      "history": "Da un principato anatolico gli Ottomani costruirono un impero fra Europa, Asia e Africa. La conquista di Costantinopoli nel 1453 ne trasformò il centro. Riforme, nazionalismi e guerre accompagnarono la crisi ottocentesca; dopo la Prima guerra mondiale il sultanato fu abolito.",
+      "culture": "Istituzioni islamiche e amministrazione imperiale governavano comunità differenti attraverso gerarchie e autonomie variabili. Architettura, arti e cultura urbana furono particolarmente ricche.",
+      "legacy": [
+        "Patrimoni architettonici e urbani",
+        "Tradizioni culturali diffuse fra Balcani e Medio Oriente",
+        "Questioni politiche ereditate dagli Stati successori"
+      ],
+      "note": "1299 è la data fondativa tradizionale; il califfato fu abolito nel 1924.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero ottomano",
+          "url": "https://www.worldhistory.org/Ottoman_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "mughal",
+      "name": "Impero Mughal",
+      "subtitle": "Corti e territori dell’India",
+      "type": "imperi",
+      "start": {
+        "year": 1526,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1857,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Asia meridionale",
+      "symbol": "dome",
+      "color": "#586776",
+      "history": "Babur avviò la dinastia dopo la vittoria di Panipat. I successori ampliarono e organizzarono il dominio su gran parte dell’India. Dal XVIII secolo, poteri regionali e Compagnia delle Indie ridussero l’autorità imperiale; i Britannici deposero l’ultimo sovrano nel 1857.",
+      "culture": "Cultura persianizzata, tradizioni indiane e politiche religiose diverse si intrecciarono nelle corti. Miniatura, giardini e architetture monumentali esprimevano il potere dinastico.",
+      "legacy": [
+        "Architetture come il Taj Mahal",
+        "Pittura di corte e arti decorative",
+        "Tradizioni culturali indo-persiane"
+      ],
+      "note": "Negli ultimi decenni l’autorità dell’imperatore era soprattutto nominale.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Impero Mughal",
+          "url": "https://www.worldhistory.org/Mughal_Empire/"
+        }
+      ]
+    },
+    {
+      "id": "rinascimento",
+      "name": "Rinascimento europeo",
+      "subtitle": "Rileggere l’antico, trasformare il presente",
+      "type": "epoche o fenomeni storici",
+      "start": {
+        "year": 1400,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1600,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "dome",
+      "color": "#816883",
+      "history": "In città e corti europee, a partire soprattutto dall’Italia, lo studio dell’antichità alimentò nuove ricerche artistiche e culturali. Mecenatismo, commercio e competizione politica sostennero produzioni molto diverse. La diffusione fu graduale e diseguale.",
+      "culture": "Umanesimo, filologia e prospettiva modificarono il lavoro intellettuale e artistico. Non scomparvero la religiosità né le strutture sociali precedenti: innovazione e continuità convivevano.",
+      "legacy": [
+        "Pratiche filologiche e ideali educativi",
+        "Un vasto patrimonio artistico",
+        "Nuove forme della rappresentazione visiva"
+      ],
+      "note": "Intervallo orientativo; gli inizi italiani risalgono anche al Trecento e le cronologie regionali differiscono.",
+      "images": [
+        {
+          "src": "assets/dome.svg",
+          "caption": "Architettura a cupola: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Rinascimento europeo",
+          "url": "https://www.worldhistory.org/Renaissance/"
+        }
+      ]
+    },
+    {
+      "id": "industrializzazione",
+      "name": "Prima industrializzazione",
+      "subtitle": "Fabbriche, energia e società",
+      "type": "epoche o fenomeni storici",
+      "start": {
+        "year": 1760,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1840,
+        "era": "CE"
+      },
+      "approx": true,
+      "region": "Europa e Mediterraneo",
+      "symbol": "factory",
+      "color": "#957133",
+      "history": "In Gran Bretagna si combinarono innovazioni tecniche, capitali, mercati e risorse energetiche. La fabbrica cambiò ritmi e organizzazione del lavoro. L’industrializzazione si diffuse poi con tempi e forme differenti, legandosi anche a reti coloniali e sfruttamento.",
+      "culture": "Urbanizzazione, nuove classi sociali e conflitti sul lavoro trasformarono la vita quotidiana. Produzione e consumi crebbero, ma costi sociali e ambientali furono distribuiti in modo diseguale.",
+      "legacy": [
+        "Il sistema industriale e la società urbana",
+        "Movimenti operai e questioni sociali",
+        "Una trasformazione duratura dell’uso dell’energia"
+      ],
+      "note": "1760–1840 è una convenzione per la prima fase britannica, non per tutta l’industrializzazione mondiale.",
+      "images": [
+        {
+          "src": "assets/factory.svg",
+          "caption": "Fabbrica: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "World History Encyclopedia · Prima industrializzazione",
+          "url": "https://www.worldhistory.org/Industrial_Revolution/"
+        }
+      ]
+    },
+    {
+      "id": "stati-uniti",
+      "name": "Stati Uniti d’America",
+      "subtitle": "Una repubblica in trasformazione",
+      "type": "Stati",
+      "start": {
+        "year": 1776,
+        "era": "CE"
+      },
+      "end": null,
+      "approx": false,
+      "region": "Americhe",
+      "symbol": "city",
+      "color": "#39788b",
+      "history": "La dichiarazione d’indipendenza del 1776 aprì la costruzione degli Stati Uniti. Espansione territoriale, espropriazione delle popolazioni native e schiavitù segnarono la crescita della repubblica. Guerra civile, industrializzazione e lotte per i diritti ne trasformarono istituzioni e società.",
+      "culture": "Il linguaggio della libertà ha convissuto con esclusioni e conflitti sulla cittadinanza. Migrazioni e pluralità delle comunità hanno prodotto una cultura diversificata.",
+      "legacy": [
+        "Esperienze costituzionali e dibattiti sui diritti",
+        "Produzioni scientifiche e culturali di influenza mondiale"
+      ],
+      "note": "La fascia indica lo Stato dal 1776 e resta aperta. Non sintetizza in una sola identità tutte le popolazioni delle Americhe.",
+      "images": [
+        {
+          "src": "assets/city.svg",
+          "caption": "Insediamento e reti: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Stati Uniti d’America",
+          "url": "https://www.archives.gov/founding-docs/declaration"
+        }
+      ]
+    },
+    {
+      "id": "italia",
+      "name": "Italia unita",
+      "subtitle": "Dall’unificazione alla Repubblica",
+      "type": "Stati",
+      "start": {
+        "year": 1861,
+        "era": "CE"
+      },
+      "end": null,
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "city",
+      "color": "#74688f",
+      "history": "Il Regno d’Italia nacque nel 1861 attraverso guerre, diplomazia e movimenti politici. L’unificazione lasciò forti differenze territoriali e sociali. Il fascismo instaurò una dittatura; la guerra, la Resistenza e il referendum del 1946 aprirono la fase repubblicana.",
+      "culture": "Scuola, stampa e migrazioni contribuirono a costruire una lingua e uno spazio pubblico comuni, entro persistenti diversità regionali. La Costituzione definisce diritti e istituzioni della Repubblica.",
+      "legacy": [
+        "La Costituzione repubblicana",
+        "Un patrimonio culturale plurale",
+        "Esperienze di partecipazione e conflitto democratico"
+      ],
+      "note": "1861 è l’unificazione politica, non la nascita della lingua o della cultura italiana.",
+      "images": [
+        {
+          "src": "assets/city.svg",
+          "caption": "Insediamento e reti: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Italia unita",
+          "url": "https://www.quirinale.it/page/costituzione"
+        }
+      ]
+    },
+    {
+      "id": "urss",
+      "name": "Unione Sovietica",
+      "subtitle": "Rivoluzione, potere e società",
+      "type": "grandi sistemi storico-politici",
+      "start": {
+        "year": 1922,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1991,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Europa e Asia",
+      "symbol": "factory",
+      "color": "#39796e",
+      "history": "Nata dopo la rivoluzione russa e la guerra civile, l’URSS riunì repubbliche sotto il potere del partito comunista. Industrializzazione forzata, repressione staliniana e guerra segnarono profondamente la società. Divenuta superpotenza, attraversò una crisi che culminò nella dissoluzione del 1991.",
+      "culture": "Istruzione, scienza e cultura furono promosse e insieme sottoposte a controllo politico. Ideali egualitari convivevano con gerarchie, coercizione e limiti alle libertà.",
+      "legacy": [
+        "Trasformazioni geopolitiche del Novecento",
+        "Esperienze scientifiche e spaziali",
+        "Memorie sociali e politiche ancora conflittuali"
+      ],
+      "note": "La fascia indica l’URSS, non tutta la storia russa né l’intero movimento comunista.",
+      "images": [
+        {
+          "src": "assets/factory.svg",
+          "caption": "Fabbrica: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica · Soviet Union",
+          "url": "https://www.britannica.com/place/Soviet-Union"
+        }
+      ]
+    },
+    {
+      "id": "onu",
+      "name": "Sistema delle Nazioni Unite",
+      "subtitle": "Cooperare dopo la guerra mondiale",
+      "type": "grandi sistemi storico-politici",
+      "start": {
+        "year": 1945,
+        "era": "CE"
+      },
+      "end": null,
+      "approx": false,
+      "region": "Mondo",
+      "symbol": "globe",
+      "color": "#9d5047",
+      "history": "Alla fine della Seconda guerra mondiale nacque l’ONU, con l’obiettivo di organizzare la cooperazione fra Stati e limitare nuovi conflitti. Guerra fredda, decolonizzazione e trasformazioni globali ne hanno modificato il ruolo. Le decisioni risentono dei rapporti di forza fra gli Stati.",
+      "culture": "Diritti umani, diplomazia e cooperazione internazionale formano un linguaggio comune, applicato però in modo controverso e diseguale. L’ONU non è un governo mondiale.",
+      "legacy": [
+        "Istituzioni per la cooperazione internazionale",
+        "Un quadro di riferimento per diritti e sviluppo",
+        "Spazi di negoziazione fra Stati"
+      ],
+      "note": "La fascia indica un sistema internazionale, non una civiltà o uno Stato unitario.",
+      "images": [
+        {
+          "src": "assets/globe.svg",
+          "caption": "Connessioni fra territori: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Sistema delle Nazioni Unite",
+          "url": "https://www.un.org/en/about-us/history-of-the-un"
+        }
+      ]
+    },
+    {
+      "id": "decolonizzazione",
+      "name": "Decolonizzazione afroasiatica",
+      "subtitle": "Diventare Stati indipendenti",
+      "type": "epoche o fenomeni storici",
+      "start": {
+        "year": 1945,
+        "era": "CE"
+      },
+      "end": {
+        "year": 1975,
+        "era": "CE"
+      },
+      "approx": false,
+      "region": "Africa e Asia",
+      "symbol": "globe",
+      "color": "#59783c",
+      "history": "Dopo la Seconda guerra mondiale, movimenti politici e sociali misero in crisi gli imperi coloniali europei. L’indipendenza fu ottenuta attraverso negoziati, mobilitazioni e guerre. I nuovi Stati affrontarono confini ereditati, diseguaglianze e pressioni internazionali.",
+      "culture": "Anticolonialismo e autodeterminazione alimentarono progetti diversi. Recupero delle lingue, istruzione e costruzione della memoria nazionale furono parte della trasformazione.",
+      "legacy": [
+        "Nuovi Stati e cittadinanze",
+        "Critiche al razzismo e al dominio coloniale",
+        "Il principio di autodeterminazione"
+      ],
+      "note": "1945–1975 delimita una fase intensa. Il processo ha precedenti e non è concluso ovunque.",
+      "images": [
+        {
+          "src": "assets/globe.svg",
+          "caption": "Connessioni fra territori: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Decolonizzazione afroasiatica",
+          "url": "https://www.un.org/en/global-issues/decolonization"
+        }
+      ]
+    },
+    {
+      "id": "integrazione-europea",
+      "name": "Integrazione europea",
+      "subtitle": "Condividere poteri fra Stati",
+      "type": "grandi sistemi storico-politici",
+      "start": {
+        "year": 1957,
+        "era": "CE"
+      },
+      "end": null,
+      "approx": false,
+      "region": "Europa e Mediterraneo",
+      "symbol": "globe",
+      "color": "#4c7098",
+      "history": "Dopo le guerre mondiali, alcuni Stati europei avviarono forme di integrazione economica e politica. I Trattati di Roma del 1957 fondarono la CEE e l’Euratom. Allargamenti e nuovi trattati trasformarono il progetto, che dal 1993 prese la forma dell’Unione europea.",
+      "culture": "Istituzioni comuni convivono con governi nazionali e identità differenti. Diritti, mobilità, mercato e sovranità sono oggetto di confronto politico.",
+      "legacy": [
+        "Istituzioni sovranazionali",
+        "Esperienze di cooperazione e mobilità",
+        "Un dibattito aperto sul rapporto fra democrazia e integrazione"
+      ],
+      "note": "La CECA precede il 1957; la denominazione Unione europea risale al 1993.",
+      "images": [
+        {
+          "src": "assets/globe.svg",
+          "caption": "Connessioni fra territori: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Integrazione europea",
+          "url": "https://european-union.europa.eu/principles-countries-history/history-eu/1945-59_en"
+        }
+      ]
+    },
+    {
+      "id": "rete",
+      "name": "Società del Web",
+      "subtitle": "Informazione e relazioni connesse",
+      "type": "epoche o fenomeni storici",
+      "start": {
+        "year": 1989,
+        "era": "CE"
+      },
+      "end": null,
+      "approx": false,
+      "region": "Mondo",
+      "symbol": "globe",
+      "color": "#9b723f",
+      "history": "La proposta del World Wide Web al CERN nel 1989 aprì un nuovo modo di collegare e consultare documenti su Internet. La diffusione della rete trasformò comunicazione, lavoro e accesso al sapere. Piattaforme e dispositivi mobili ampliarono l’uso, insieme a nuovi squilibri.",
+      "culture": "Pubblicazione diffusa e partecipazione convivono con concentrazione del potere economico, disinformazione e diseguaglianze di accesso. Il Web è una parte di Internet, non un suo sinonimo.",
+      "legacy": [
+        "Accesso e collegamento di conoscenze",
+        "Nuove forme di comunicazione e produzione culturale",
+        "Questioni aperte su cittadinanza digitale e potere"
+      ],
+      "note": "1989 è l’anno della proposta del Web, non la nascita di Internet o della tecnologia digitale.",
+      "images": [
+        {
+          "src": "assets/globe.svg",
+          "caption": "Connessioni fra territori: illustrazione simbolica."
+        },
+        {
+          "src": "assets/people.svg",
+          "caption": "Comunità e relazioni sociali: simbolo grafico, non documento storico."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fonte istituzionale · Società del Web",
+          "url": "https://home.cern/science/computing/birth-web"
+        }
+      ]
+    }
+  ]
+}

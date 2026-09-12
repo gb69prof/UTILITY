@@ -1,0 +1,26 @@
+<!doctype html><html lang="it"><meta charset="utf-8"><title>Collaudo GB Tempo</title><style>body{margin:0;background:#243340;color:white;font:14px system-ui}header{padding:12px;display:flex;gap:10px;align-items:center}button{padding:10px;cursor:pointer}iframe{display:block;border:0;background:white}pre{padding:15px;white-space:pre-wrap;margin:0}#view{overflow:auto;max-width:100%;}#log{max-height:240px;overflow:auto}</style>
+<header><strong>Collaudo GB — Linea del Tempo</strong><button data-size="1440,900">Desktop</button><button data-size="1180,820">iPad orizzontale</button><button data-size="820,1180">iPad verticale</button><button data-size="390,844">Telefono</button><button id="run">Esegui verifiche</button></header><pre id="log">Scegli un formato o esegui i controlli.</pre><div id="view"><iframe title="PWA in collaudo" src="../" width="1180" height="820"></iframe></div>
+<script>
+const frame=document.querySelector('iframe'),log=document.querySelector('#log');
+document.querySelectorAll('[data-size]').forEach(b=>b.onclick=()=>{const [w,h]=b.dataset.size.split(',');frame.width=w;frame.height=h;});
+const pause=(ms=100)=>new Promise(r=>setTimeout(r,ms));
+const report=(name,ok,extra='')=>{log.textContent+=(ok?'PASS ':'FAIL ')+name+(extra?' · '+extra:'')+'\n';if(!ok)throw Error(name);};
+async function run(){log.textContent='';document.querySelector('#run').disabled=true;try{const d=frame.contentDocument,w=frame.contentWindow,$=id=>d.getElementById(id);let errors=[];w.addEventListener('error',e=>errors.push(e.message));const click=async id=>{$(id).click();await pause();};
+await click('home');report('Apertura al passaggio fra ere',$('moment').textContent==='1 a.C. | 1 d.C.');
+await click('zoom-in');report('Zoom cambia scala',$('scale-label').textContent.startsWith('2.222'));await click('home');
+const before=$('moment').textContent;d.querySelector('[data-id="impero-romano"]').click();await pause();report('Scheda senza perdita del momento',!$('detail').hidden&&$('moment').textContent===before);report('Durata romana corretta',$('detail').textContent.includes('502 anni'));d.querySelector('.detail-close').click();await pause();report('Chiusura preserva il momento',$('detail').hidden&&$('moment').textContent===before);
+$('search').value='Homo habilis';$('search').dispatchEvent(new w.Event('input',{bubbles:true}));await pause();d.querySelector('[data-result="habilis"]').click();await pause();report('Ricerca raggiunge la preistoria',$('moment').textContent.includes('BP')&&$('detail-title').textContent==='Homo habilis');await click('today');report('Oggi raggiunge il presente',$('moment').textContent.includes(new Date().getFullYear()));await click('home');
+// Synthetic pointer paths exercise handlers. Capture itself is verified with real mouse separately.
+const chart=$('timeline'),capture=chart.setPointerCapture;chart.setPointerCapture=()=>{};
+function pointer(type,x,y,id=4){chart.dispatchEvent(new w.PointerEvent(type,{bubbles:true,pointerId:id,pointerType:'touch',button:0,clientX:x,clientY:y}));}
+pointer('pointerdown',300,400);pointer('pointermove',500,403);pointer('pointerup',500,403);await pause(500);report('Trascinamento touch orizzontale',$('moment').textContent!==before);await click('home');const previous=$('scale-label').textContent;
+pointer('pointerdown',300,400,4);pointer('pointerdown',500,400,5);pointer('pointermove',200,400,4);pointer('pointermove',600,400,5);pointer('pointerup',200,400,4);pointer('pointerup',600,400,5);await pause();report('Pinch touch cambia scala',$('scale-label').textContent!==previous);chart.setPointerCapture=capture;await click('home');
+chart.dispatchEvent(new w.WheelEvent('wheel',{bubbles:true,deltaX:160,deltaY:0,clientX:500,clientY:450}));await pause();report('Scroll orizzontale trackpad',$('moment').textContent!==before);await click('home');
+$('region').value='Americhe';$('region').dispatchEvent(new w.Event('change'));await pause();report('Filtro geografico',Array.from(d.querySelectorAll('.bar-text small')).every(n=>n.textContent==='Americhe'));await click('home');
+for(const [label,fw,fh] of [['desktop',1440,900],['iPad orizzontale',1180,820],['iPad verticale',820,1180],['telefono',390,844]]){frame.width=fw;frame.height=fh;await pause(180);report('Layout '+label,d.documentElement.scrollWidth<=fw&&d.documentElement.scrollHeight<=fh,fw+'×'+fh);const r=$('timeline').getBoundingClientRect();report('Timeline utilizzabile '+label,r.height>150&&r.width>300,Math.round(r.width)+'×'+Math.round(r.height));d.querySelector('[data-id="impero-romano"]').click();await pause();const p=$('detail').getBoundingClientRect();report('Pannello nel viewport '+label,p.left>=0&&p.right<=fw+1&&p.top>=0&&p.bottom<=fh);d.querySelector('.detail-close').click();await pause();}
+frame.width=1180;frame.height=820;await pause();await click('home');
+const images=Array.from(d.images);report('Immagini caricate',images.every(i=>i.complete&&i.naturalWidth>0));
+await pause(500);report('Cache offline pronta',$('offline-state').textContent.startsWith('Pronto offline'));report('Nessun errore JavaScript',errors.length===0,errors.join('; '));log.textContent+='VERIFICHE COMPLETATE\n';
+}catch(e){log.textContent+='ERRORE: '+e.message+'\n';}finally{document.querySelector('#run').disabled=false;}}
+document.querySelector('#run').onclick=run;
+</script></html>

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "preistoria",
+    "name": "Preistoria",
+    "subtitle": "Le origini",
+    "type": "epoca",
+    "start": {
+      "bp": 2400000
+    },
+    "end": {
+      "year": 3300,
+      "era": "BCE"
+    },
+    "approx": true,
+    "region": "Africa e altri continenti",
+    "symbol": "stone",
+    "color": "#957133",
+    "history": "La preistoria non termina ovunque nello stesso momento: la scrittura compare in società e tempi differenti.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "La preistoria non termina ovunque nello stesso momento: la scrittura compare in società e tempi differenti.",
+    "images": [
+      {
+        "src": "assets/stone.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  },
+  {
+    "id": "prime-civilta",
+    "name": "Prime civiltà",
+    "subtitle": "Città, fiumi e scrittura",
+    "type": "epoca",
+    "start": {
+      "year": 4000,
+      "era": "BCE"
+    },
+    "end": {
+      "year": 1200,
+      "era": "BCE"
+    },
+    "approx": true,
+    "region": "Vicino Oriente, Africa e Asia",
+    "symbol": "pyramid",
+    "color": "#39788b",
+    "history": "Una finestra sulle prime società urbane; si sovrappone al mondo antico e alla preistoria di altre aree.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "Una finestra sulle prime società urbane; si sovrappone al mondo antico e alla preistoria di altre aree.",
+    "images": [
+      {
+        "src": "assets/pyramid.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  },
+  {
+    "id": "antichita",
+    "name": "Mondo antico",
+    "subtitle": "Città, imperi, culture",
+    "type": "epoca",
+    "start": {
+      "year": 1200,
+      "era": "BCE"
+    },
+    "end": {
+      "year": 476,
+      "era": "CE"
+    },
+    "approx": true,
+    "region": "Mediterraneo e Vicino Oriente",
+    "symbol": "temple",
+    "color": "#74688f",
+    "history": "Riferimento orientativo centrato sul Mediterraneo. Altre regioni seguono cronologie differenti.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "Riferimento orientativo centrato sul Mediterraneo. Altre regioni seguono cronologie differenti.",
+    "images": [
+      {
+        "src": "assets/temple.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  },
+  {
+    "id": "medioevo",
+    "name": "Medioevo",
+    "subtitle": "Fedi, regni e scambi",
+    "type": "epoca",
+    "start": {
+      "year": 476,
+      "era": "CE"
+    },
+    "end": {
+      "year": 1492,
+      "era": "CE"
+    },
+    "approx": true,
+    "region": "Europa",
+    "symbol": "castle",
+    "color": "#39796e",
+    "history": "476 e 1492 sono convenzioni europee, non fratture simultanee per il mondo intero.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "476 e 1492 sono convenzioni europee, non fratture simultanee per il mondo intero.",
+    "images": [
+      {
+        "src": "assets/castle.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  },
+  {
+    "id": "moderna",
+    "name": "Età moderna",
+    "subtitle": "Scoperte e connessioni",
+    "type": "epoca",
+    "start": {
+      "year": 1492,
+      "era": "CE"
+    },
+    "end": {
+      "year": 1789,
+      "era": "CE"
+    },
+    "approx": true,
+    "region": "Europa e connessioni mondiali",
+    "symbol": "dome",
+    "color": "#9d5047",
+    "history": "Questa periodizzazione europea comprende espansioni coloniali, scambi e conflitti globali.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "Questa periodizzazione europea comprende espansioni coloniali, scambi e conflitti globali.",
+    "images": [
+      {
+        "src": "assets/dome.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  },
+  {
+    "id": "contemporanea",
+    "name": "Età contemporanea",
+    "subtitle": "Il mondo che abitiamo",
+    "type": "epoca",
+    "start": {
+      "year": 1789,
+      "era": "CE"
+    },
+    "end": null,
+    "approx": true,
+    "region": "Europa e mondo",
+    "symbol": "city",
+    "color": "#59783c",
+    "history": "Il 1789 è una convenzione legata alla Rivoluzione francese. L’industrializzazione e le trasformazioni globali hanno tempi diversi.",
+    "culture": "Una periodizzazione è uno strumento per porre domande, non una legge universale. Confronta le fasce delle diverse aree per riconoscere contemporaneità e differenze.",
+    "legacy": [
+      "Un riferimento per orientarsi nel tempo",
+      "Una domanda da verificare attraverso le storie delle società"
+    ],
+    "note": "Il 1789 è una convenzione legata alla Rivoluzione francese. L’industrializzazione e le trasformazioni globali hanno tempi diversi.",
+    "images": [
+      {
+        "src": "assets/city.svg",
+        "caption": "Illustrazione simbolica dell’epoca."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Columbia University · Cronologie regionali e periodizzazione",
+        "url": "https://afe.easia.columbia.edu/timelines/china_timeline.htm"
+      }
+    ]
+  }
+]

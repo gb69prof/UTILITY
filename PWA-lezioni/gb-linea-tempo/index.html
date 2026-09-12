@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c2231"><meta name="description" content="Esplora la storia dell’umanità: epoche, civiltà e popoli su una linea del tempo continua. Un progetto didattico gbprof.">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>GB — Linea del Tempo</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#timeline">Vai alla linea del tempo</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html" aria-label="Torna a UTILITY"><img src="assets/icon.svg" alt="" width="44" height="44"><span><strong>CIVILTÀ NEL TEMPO</strong><small>Dalle origini dell’uomo ai giorni nostri</small></span></a>
+  <nav class="topnav" aria-label="Navigazione"><button id="home" class="nav-active" title="Torna al passaggio tra le ere"><span aria-hidden="true">⌂</span>Linea del tempo</button><button id="explore"><span aria-hidden="true">◎</span>Esplora</button><button id="info"><span aria-hidden="true">ⓘ</span>Informazioni</button></nav>
+  <div class="search-wrap"><label class="sr-only" for="search">Cerca una civiltà, un’epoca o un’area</label><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Cerca una civiltà, un’epoca…" autocomplete="off" aria-controls="results" aria-expanded="false"><div id="results" class="results" hidden></div></div>
+</header>
+<main id="workspace">
+<section class="timeline-area" aria-label="Esplorazione cronologica">
+ <div id="epochs" class="epochs" aria-label="Raggiungi un’epoca"></div>
+ <div class="subline"><span id="period-context">Mondi contemporanei, storie differenti</span><button id="conventions">Le epoche sono convenzioni ⓘ</button></div>
+ <div class="chart-top"><span id="visible-count">Caricamento delle storie…</span><label>Area <select id="region"><option value="all">Tutto il mondo</option></select></label></div>
+ <div id="timeline" class="timeline" tabindex="0" role="region" aria-label="Linea del tempo. Frecce destra e sinistra per scorrere, più e meno per lo zoom." aria-describedby="gesture-hint">
+   <div id="ruler" class="ruler" aria-hidden="true"></div>
+   <div id="rows-scroll" class="rows-scroll"><div id="rows" class="rows"></div></div>
+   <div class="center-line" aria-hidden="true"><i></i></div>
+   <div id="empty" class="empty" hidden>Nessun soggetto in questo intervallo e filtro.<br>Riduci lo zoom o scegli «Tutto il mondo».</div>
+ </div>
+ <div class="moment-bar"><button id="past" aria-label="Scorri verso il passato">← <span>Verso il passato</span></button><div class="moment"><strong id="moment">1 a.C. | 1 d.C.</strong><small id="moment-note">Il passaggio tra le due ere</small></div><button id="future" aria-label="Scorri verso il futuro"><span>Verso il futuro</span> →</button></div>
+</section>
+<aside id="detail" class="detail" aria-labelledby="detail-title" hidden></aside>
+</main>
+<footer class="controls">
+ <div class="zoom"><button id="zoom-out" aria-label="Riduci zoom temporale">−</button><label class="zoom-slider"><span class="sr-only">Zoom temporale</span><input id="zoom" type="range" min="0" max="100" step="0.1" value="50"><small id="scale-label"></small></label><button id="zoom-in" aria-label="Aumenta zoom temporale">+</button></div>
+ <p id="gesture-hint">Trascina la storia · scorri per esplorare · pizzica per lo zoom</p>
+ <button id="today">▦ <span>Oggi</span></button>
+ <div class="segmented" aria-label="Contenuti visualizzati"><button data-mode="epochs">Epoche</button><button data-mode="subjects" class="active" aria-pressed="true">Civiltà</button></div>
+ <button id="fullscreen" aria-label="Schermo intero">⛶</button>
+</footer>
+<div id="status" class="status sr-only" role="status" aria-live="polite"></div>
+<dialog id="help" aria-labelledby="help-title"><button class="dialog-close" aria-label="Chiudi informazioni">×</button><p class="eyebrow">GBPROF · STRUMENTI PER COMPRENDERE</p><h1 id="help-title">Una storia, molte storie.</h1><p>Quali mondi esistevano nello stesso momento? Le fasce mettono in relazione durata, successione e contemporaneità.</p><h2>Come esplorare</h2><p>Trascina orizzontalmente con mouse o dito. Usa rotella e trackpad per spostarti nel tempo; scorri verticalmente l’elenco per vedere le altre fasce. Usa + e −, il cursore o due dita per lo zoom. Da tastiera: frecce, +, − e Home sulla timeline. Tocca una fascia per leggerne la storia. «Esplora» mostra l’intero catalogo.</p><h2>Come leggere le date</h2><p><strong>3 a.C. → 2 a.C. → 1 a.C. → 1 d.C. → 2 d.C.</strong> Non c’è un anno zero. Tra l’inizio del 1 a.C. e l’inizio del 1 d.C. passa un anno. Le durate misurano la distanza tra gli anni indicati, senza contare due volte gli estremi; non rappresentano una precisione al giorno.</p><p><strong>BP</strong> significa «prima del 1950», il riferimento convenzionale usato qui per la preistoria. Una data come 300 mila BP è una stima, non un compleanno della specie. «Ca.» indica date approssimative; il tratteggio delle fasce le richiama. Le date in BP sono raccordate alla stessa scala continua delle date storiche.</p><h2>Le epoche non cambiano tutte insieme</h2><p>Preistoria, prime civiltà e antichità si sovrappongono. Medioevo (476–1492), età moderna (1492–1789) e contemporanea (dal 1789) sono riferimenti soprattutto europei. Il mondo antico è qui inquadrato dal 1200 a.C.; non è un confine universale. La fine della fascia di uno Stato non significa la scomparsa dei suoi abitanti.</p><p>La scala è lineare a ogni livello di zoom: la stessa distanza vale lo stesso numero di anni. Quando una fascia diventa sottilissima, resta un segno selezionabile; cercala per ingrandirla. Alle scale dei milioni di anni prevalgono le specie umane; alle scale storiche le società.</p><h2>Fonti e immagini</h2><p>Ogni scheda collega le fonti per controllare e approfondire. La selezione è introduttiva e ampliabile, non un catalogo completo della storia mondiale. Le immagini sono fotografie contemporanee di luoghi e reperti o illustrazioni simboliche dichiarate: non testimonianze fotografiche del passato.</p><div id="credits"></div><h2>Installazione e uso offline</h2><p>Su iPad: Safari → Condividi → Aggiungi alla schermata Home. Su desktop usa il comando di installazione del browser, quando disponibile. Dopo il primo caricamento completo, struttura, testi e immagini locali sono consultabili offline. I collegamenti alle fonti richiedono Internet.</p><p id="offline-state">Preparazione della consultazione offline…</p><p class="signature">GB — Linea del Tempo · Ideazione didattica gbprof</p></dialog>
+<noscript>Per utilizzare la linea del tempo occorre attivare JavaScript nel browser.</noscript>
+</body></html>
