@@ -4,7 +4,7 @@ PWA didattica autonoma, senza dipendenze o build: 58 soggetti storici e sei epoc
 
 ## Avvio
 
-Dalla radice di UTILITY: `python -m http.server 8765`, quindi aprire `/PWA-lezioni/gb-linea-tempo/`. La PWA va servita via HTTPS (o localhost per sviluppo). Il percorso pubblico previsto è `https://gbprof.it/UTILITY/PWA-lezioni/gb-linea-tempo/`.
+Dalla radice di UTILITY: `python -m http.server 8765`, quindi aprire `/PWA-lezioni/gb-linea-tempo/`. La PWA va servita via HTTPS (o localhost per sviluppo). La versione pubblicata è disponibile su `https://gbprof.it/UTILITY/PWA-lezioni/gb-linea-tempo/`.
 
 ## Architettura
 
@@ -39,8 +39,9 @@ Per aggiungere una scheda: creare un ID unico, date positive con era oppure BP, 
 
 ## Stato della verifica (12 settembre 2026)
 
-- 13 test Node superati: cronologia, date BP, etichette a ogni scala, integrità dei 58 soggetti, risorse locali, collegamento nell’indice e service worker in un ambiente simulato (offline, isolamento delle cache, navigazione di fallback).
-- Sintassi JavaScript verificata. La prova visuale e dei gesti nel browser resta da eseguire: il browser disponibile non accede a localhost o ai file locali.
-- Pubblicazione su GitHub ancora da eseguire: l’auto-review ha bloccato il push su `main` richiedendo una conferma esplicita della destinazione e della pubblicazione.
-- L’indirizzo pubblico previsto restituisce ancora 404. Non considerare questa versione collaudata su Safari o su iPad fisico.
-- `tests/browser.html` prepara il controllo della UI nei quattro formati dopo la pubblicazione.
+- Pubblicata su `gb69prof/UTILITY`, ramo `main`, e raggiungibile su https://gbprof.it/UTILITY/PWA-lezioni/gb-linea-tempo/. Il collegamento dalla card nell’indice UTILITY è stato aperto e verificato nel browser.
+- 13 test Node superati: cronologia, date BP, etichette a ogni scala, integrità dei 58 soggetti, risorse locali, collegamento nell’indice e service worker in un ambiente simulato (offline, isolamento delle cache, navigazione di fallback). Sintassi JavaScript verificata.
+- Collaudo della versione pubblicata completato in Chrome: 26 controlli superati, inclusi ricerca, zoom, scheda e durata romana, conservazione del momento, Oggi, filtro geografico, immagini e stato della cache offline. Nessun errore JavaScript della PWA rilevato.
+- Layout, spazio utilizzabile della timeline e contenimento del pannello verificati nei viewport desktop 1440×900, iPad orizzontale 1180×820, iPad verticale 820×1180 e telefono 390×844.
+- Trascinamento con mouse reale verificato tramite browser; trascinamento touch, pinch e trackpad verificati con eventi simulati. Anche la vista Epoche è stata controllata nel browser.
+- Cache pronta confermata nel browser; comportamento senza rete verificato nei test simulati del service worker. Non è stata eseguita una prova su Safari o iPad fisico.
