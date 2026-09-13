@@ -1,0 +1,21 @@
+// Run against a disposable local origin, never a personal Desk archive.
+const path=require('node:path');const output=require('node:fs').mkdtempSync(path.join(require('node:os').tmpdir(),'desk-qa-'));
+const {chromium}=require('playwright');const assert=require('node:assert/strict');
+(async()=>{
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_EXECUTABLE ? { executablePath: process.env.CHROMIUM_EXECUTABLE } : {}),args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});
+const context=await browser.newContext({viewport:{width:1180,height:820},hasTouch:true,isMobile:true,deviceScaleFactor:2});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto((process.env.DESK_TEST_URL || 'http://127.0.0.1:8765/Desk/'));
+await p.evaluate(async()=>{const {db}=await import('./js/db.js');for(let n=0;n<4;n++)await db.putItem({id:'t'+n,name:['gbprof','Goldoni','Illuminismo','Linea del tempo'][n],type:'url',url:'https://gbprof.it',parentId:'root',createdAt:1,modifiedAt:1});});await p.reload();await p.waitForSelector('.move-handle');
+const s=()=>p.evaluate(async()=>(await(await import('./js/db.js')).db.getSettings()).boardsV2['folder:root']);
+const before=await s();const r=await p.locator('[data-id="t1"] .move-handle').boundingBox();const cdp=await context.newCDPSession(p);const x=r.x+20,y=r.y+15;
+await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});for(let i=1;i<=15;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+i*3,y:y+i*12,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await p.waitForTimeout(400);
+assert((await s()).positions.t1.y>before.positions.t1.y+100);assert(await p.locator('#viewerPane').isHidden());console.log('PASS Trascinamento touch reale via CDP, senza apertura accidentale');
+await p.locator('[data-id="t1"] .move-handle').focus();const old=(await s()).positions.t1.x;await p.keyboard.press('ArrowRight');await p.waitForTimeout(150);assert((await s()).positions.t1.x===old+10);console.log('PASS Spostamento con tastiera');
+await p.locator('[data-tool="style"]').tap();await p.locator('.board-dialog input[name="image"]').setInputFiles({name:'test.png',mimeType:'image/png',buffer:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aD2kAAAAASUVORK5CYII=','base64')});await p.locator('.board-dialog button[type="submit"]').tap();await p.waitForSelector('.board-dialog',{state:'detached'});assert((await s()).customBackground.startsWith('data:image/png;base64,'));console.log('PASS Sfondo personale salvato');
+// The complete transaction aborts if a later material cannot be cloned.
+const result=await p.evaluate(async()=>{const {db}=await import('./js/db.js');const count=(await db.allItems()).length;try{await db.importBatch([{id:'should-rollback',parentId:'root',type:'folder',name:'rollback'},{id:'invalid-clone',bad:()=>{}}],[],{});}catch{}return {before:count,after:(await db.allItems()).length};});assert.equal(result.before,result.after);console.log('PASS Ripristino atomico: errore a metà transazione non lascia dati parziali');
+await p.waitForFunction(()=>navigator.serviceWorker.controller!==null,{timeout:20000});
+const cached=await p.evaluate(async()=>{const names=await caches.keys();const cache=await caches.open(names.find(n=>n==='desk-lim-shell-v5'));return !!(await cache.match('./js/board.js'));});assert(cached);console.log('PASS Nuova app memorizzata dal service worker');
+await context.setOffline(true);await p.reload();await p.waitForSelector('.move-handle');assert(await p.locator('.item-card').count()===4);console.log('PASS Riapertura offline con materiali e posizioni');await context.setOffline(false);
+await p.locator('#sidebarToggle').tap();assert(await p.locator('.sidebar').isHidden());await p.setViewportSize({width:820,height:1180});await p.locator('[data-tool="fit"]').tap();assert(await p.locator('.board-tools').isVisible());console.log('PASS Tablet verticale, barra nascosta e comandi accessibili');
+assert.equal(errors.length,0);await browser.close();console.log('8 controlli aggiuntivi superati');
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -53,6 +53,20 @@ export const db = {
     return Object.fromEntries(rows.map(row => [row.key, row.value]));
   },
   putSetting: (key, value) => request("settings", "readwrite", store => store.put({ key, value })),
+  async importBatch(items, lessons, settings) {
+    const database = await openDatabase();
+    return new Promise((resolve, reject) => {
+      const tx = database.transaction(["items", "lessons", "settings"], "readwrite");
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error || new Error("Importazione non riuscita"));
+      tx.onabort = () => reject(tx.error || new Error("Importazione annullata"));
+      try {
+        for (const item of items) tx.objectStore("items").put(item);
+        for (const lesson of lessons) tx.objectStore("lessons").put(lesson);
+        for (const [key, value] of Object.entries(settings)) tx.objectStore("settings").put({ key, value });
+      } catch (error) { tx.abort(); reject(error); }
+    });
+  },
   async estimate() {
     if (!navigator.storage?.estimate) return null;
     return navigator.storage.estimate();

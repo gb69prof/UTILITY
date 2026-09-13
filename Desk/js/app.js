@@ -1,3 +1,5 @@
+import { DeskBoard } from "./board.js";
+import { exportDesk, importDesk } from "./backup.js";
 import { db, uid } from "./db.js";
 import { importFiles, kindFor, itemGlyph, describeItem, collectDescendantIds } from "./files.js";
 import { PrivateViewer } from "./viewer.js";
@@ -15,16 +17,17 @@ const elements = {
 
 const state = {
   items: [], lessons: [], settings: {}, currentFolder: "root", currentSpace: "all", selectedId: null,
-  history: ["root"], historyIndex: 0, viewMode: "grid", search: "", sort: "name", contextId: null,
-  lesson: null, lessonIndex: 0
+  history: ["root"], historyIndex: 0, viewMode: "free", search: "", sort: "name", contextId: null,
+  lesson: null, lessonIndex: 0, boardId: null
 };
 
 const viewer = new PrivateViewer({
   pane: elements.viewerPane, body: elements.viewerBody, toolbar: elements.viewerToolbar,
   title: $("#viewerTitle"), type: $("#viewerType"),
-  onState: async (item, viewState) => { item.viewState = viewState; await db.putItem(item); }
+  onState: async (item, viewState) => { const latest = await db.getItem(item.id); if (latest) await db.putItem({ ...latest, viewState }); }
 });
 const lim = new LimController();
+const board = new DeskBoard({ state, render, toast, open: { refresh } });
 
 function toast(message, duration = 2500) {
   elements.toast.textContent = message;
@@ -48,14 +51,16 @@ function byId(id) { return state.items.find(item => item.id === id); }
 
 function filteredItems() {
   let list;
-  if (state.currentSpace === "favorites") list = state.items.filter(item => item.starred);
+  if (state.currentSpace === "board") list = (state.lessons.find(l => l.id === state.boardId)?.itemIds || []).map(byId).filter(Boolean);
+  else if (state.currentSpace === "favorites") list = state.items.filter(item => item.starred);
   else if (state.currentSpace === "recent") list = state.items.filter(item => item.lastOpenedAt).sort((a, b) => b.lastOpenedAt - a.lastOpenedAt).slice(0, 40);
   else list = state.items.filter(item => item.parentId === state.currentFolder);
   const query = state.search.trim().toLocaleLowerCase("it");
   if (query) list = state.items.filter(item => item.name.toLocaleLowerCase("it").includes(query));
   const factor = state.sort === "date" || state.sort === "size" ? -1 : 1;
   return [...list].sort((a, b) => {
-    if (!query && state.currentSpace === "all" && a.type !== b.type) return a.type === "folder" ? -1 : 1;
+    if (!query && state.currentSpace === "all" && a.type !== b.type && (a.type === "folder" || b.type === "folder")) return a.type === "folder" ? -1 : 1;
+    if (state.currentSpace === "recent") return (b.lastOpenedAt || 0) - (a.lastOpenedAt || 0);
     if (state.sort === "date") return factor * ((a.modifiedAt || 0) - (b.modifiedAt || 0));
     if (state.sort === "size") return factor * ((a.size || 0) - (b.size || 0));
     if (state.sort === "type") return kindFor(a).localeCompare(kindFor(b), "it") || a.name.localeCompare(b.name, "it", { numeric: true });
@@ -65,6 +70,11 @@ function filteredItems() {
 
 function buildBreadcrumbs() {
   elements.breadcrumbs.replaceChildren();
+  if (state.currentSpace === "board") {
+    const root = document.createElement("button"); root.type = "button"; root.dataset.folder = "root"; root.textContent = "Desk";
+    const title = document.createElement("span"); title.textContent = " / Scrivania di lezione";
+    elements.breadcrumbs.append(root, title); return;
+  }
   const chain = [];
   let id = state.currentFolder;
   while (id && id !== "root") {
@@ -82,13 +92,15 @@ function render() {
   const list = filteredItems();
   elements.items.replaceChildren();
   elements.items.className = state.viewMode === "list" ? "items-grid list" : "items-grid";
-  const titles = { all: state.currentFolder === "root" ? "Il mio Desk" : (byId(state.currentFolder)?.name || "Cartella"), favorites: "Preferiti", recent: "Recenti" };
+  const titles = { board: state.lessons.find(l => l.id === state.boardId)?.name || "Scrivania", all: state.currentFolder === "root" ? "Il mio Desk" : (byId(state.currentFolder)?.name || "Cartella"), favorites: "Preferiti", recent: "Recenti" };
   elements.title.textContent = state.search ? `Risultati per “${state.search}”` : titles[state.currentSpace];
   elements.count.textContent = `${list.length} ${list.length === 1 ? "elemento" : "elementi"}`;
   elements.empty.hidden = list.length > 0 || Boolean(state.search) || state.currentSpace !== "all" || state.currentFolder !== "root";
   elements.items.hidden = list.length === 0;
   buildBreadcrumbs();
   for (const item of list) elements.items.append(createItemCard(item));
+  board.paint(list);
+  $("#lessonsBtn").classList.toggle("active", state.currentSpace === "board");
   $("#backBtn").disabled = state.historyIndex <= 0;
   $("#forwardBtn").disabled = state.historyIndex >= state.history.length - 1;
   $$(".side-link[data-view]").forEach(button => button.classList.toggle("active", button.dataset.view === state.currentSpace));
@@ -112,7 +124,7 @@ function createItemCard(item) {
   more.addEventListener("click", event => showContext(item.id, event.clientX || more.getBoundingClientRect().right, event.clientY || more.getBoundingClientRect().bottom));
   card.addEventListener("contextmenu", event => { event.preventDefault(); showContext(item.id, event.clientX, event.clientY); });
   let holdTimer;
-  card.addEventListener("pointerdown", event => { if (event.pointerType !== "mouse") holdTimer = setTimeout(() => showContext(item.id, event.clientX, event.clientY), 620); });
+  card.addEventListener("pointerdown", event => { if (!board.active && event.pointerType !== "mouse") holdTimer = setTimeout(() => showContext(item.id, event.clientX, event.clientY), 620); });
   ["pointerup", "pointercancel", "pointermove"].forEach(type => card.addEventListener(type, () => clearTimeout(holdTimer)));
   card.addEventListener("dragstart", event => { event.dataTransfer.setData("text/desk-item", item.id); event.dataTransfer.effectAllowed = "move"; });
   if (item.type === "folder") {
@@ -124,6 +136,7 @@ function createItemCard(item) {
       if (movedId && movedId !== item.id) await moveItem(movedId, item.id);
     });
   }
+  board.decorate(card, item);
   return card;
 }
 
@@ -159,10 +172,11 @@ function showContext(id, x, y) {
   elements.context.querySelector('[data-action="project"]').hidden = item?.type === "folder";
   elements.context.querySelector('[data-action="lesson"]').hidden = item?.type === "folder";
   elements.context.querySelector('[data-action="favorite"]').textContent = item?.starred ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti";
+  elements.context.querySelector('[data-action="unpin"]').hidden = state.currentSpace !== "board";
   elements.context.hidden = false;
-  const width = 190, height = 290;
-  elements.context.style.left = `${Math.min(x, innerWidth - width - 8)}px`;
-  elements.context.style.top = `${Math.min(y, innerHeight - height - 8)}px`;
+  const width = elements.context.offsetWidth, height = elements.context.offsetHeight;
+  elements.context.style.left = `${Math.max(8, Math.min(x, innerWidth - width - 8))}px`;
+  elements.context.style.top = `${Math.max(8, Math.min(y, innerHeight - height - 8))}px`;
 }
 function hideContext() { elements.context.hidden = true; state.contextId = null; }
 
@@ -197,7 +211,8 @@ async function moveItem(id, folderId) {
 async function importSelection(files) {
   if (!files?.length) return;
   try {
-    await importFiles(files, state.currentSpace === "all" ? state.currentFolder : "root", (done, total) => toast(`Importazione ${done} / ${total}…`, 800));
+    const imported = await importFiles(files, state.currentSpace === "all" ? state.currentFolder : "root", (done, total) => toast(`Importazione ${done} / ${total}…`, 800));
+    if (state.currentSpace === "board") { const lesson = state.lessons.find(l => l.id === state.boardId); for (const item of imported.filter(i => i.type !== "folder")) await addItemToLesson(lesson, item.id); }
     toast(`${files.length} ${files.length === 1 ? "materiale importato" : "materiali importati"}`);
     await refresh();
   } catch (error) {
@@ -217,10 +232,11 @@ function renderLessons() {
     const identity = document.createElement("div"); const title = document.createElement("strong"); title.textContent = lesson.name; const meta = document.createElement("small"); meta.textContent = `${lesson.itemIds.length} materiali`; identity.append(title, meta);
     const actions = document.createElement("div"); actions.className = "lesson-card-actions";
     const start = miniButton("Avvia", () => startLesson(lesson));
-    const duplicate = miniButton("Duplica", async () => { await duplicateLesson(lesson); await refresh(); renderLessons(); });
+    const duplicate = miniButton("Duplica", async () => { const copy = await duplicateLesson(lesson); board.duplicateBoard(lesson.id, copy.id); await refresh(); renderLessons(); });
     const rename = miniButton("Rinomina", async () => { const name = prompt("Nuovo nome della scrivania", lesson.name)?.trim(); if (name) { lesson.name = name; lesson.modifiedAt = Date.now(); await db.putLesson(lesson); await refresh(); renderLessons(); } });
     const remove = miniButton("Elimina", async () => { if (confirm(`Eliminare la scrivania “${lesson.name}”? I file resteranno nel Desk.`)) { await db.deleteLesson(lesson.id); await refresh(); renderLessons(); } });
-    actions.append(start, duplicate, rename, remove); head.append(identity, actions); card.append(head);
+    const arrange = miniButton("Apri scrivania", () => { state.currentSpace = "board"; state.boardId = lesson.id; state.search = ""; elements.search.value = ""; $("#lessonsDialog").close(); render(); });
+    actions.append(arrange, start, duplicate, rename, remove); head.append(identity, actions); card.append(head);
     const items = document.createElement("div"); items.className = "lesson-items";
     lesson.itemIds.forEach((id, index) => {
       const item = byId(id); if (!item) return;
@@ -283,11 +299,14 @@ function updateLim(detail) {
 
 async function initialize() {
   state.settings = await db.getSettings();
-  state.viewMode = state.settings.viewMode || "grid";
+  state.viewMode = state.settings.deskV2 ? (state.settings.viewMode || "free") : "free";
   state.sort = state.settings.sort || "name";
   elements.sort.value = state.sort;
   applyTheme(state.settings.theme || "auto");
   await db.persist().catch(() => false);
+  await board.init();
+  if (!state.settings.deskV2) await db.putSetting("viewMode", "free");
+  await db.putSetting("deskV2", true);
   await refresh();
   $("#gridViewBtn").classList.toggle("active", state.viewMode === "grid");
   $("#listViewBtn").classList.toggle("active", state.viewMode === "list");
@@ -302,6 +321,7 @@ elements.breadcrumbs.addEventListener("click", event => { const button = event.t
 $$(".side-link[data-view]").forEach(button => button.addEventListener("click", () => { state.currentSpace = button.dataset.view; state.search = ""; elements.search.value = ""; render(); }));
 elements.search.addEventListener("input", () => { state.search = elements.search.value; render(); });
 elements.sort.addEventListener("change", async () => { state.sort = elements.sort.value; await db.putSetting("sort", state.sort); render(); });
+$("#freeViewBtn").addEventListener("click", () => setViewMode("free"));
 $("#gridViewBtn").addEventListener("click", () => setViewMode("grid"));
 $("#listViewBtn").addEventListener("click", () => setViewMode("list"));
 async function setViewMode(mode) { state.viewMode = mode; await db.putSetting("viewMode", mode); $("#gridViewBtn").classList.toggle("active", mode === "grid"); $("#listViewBtn").classList.toggle("active", mode === "list"); render(); }
@@ -315,11 +335,25 @@ elements.deskPane.addEventListener("dragover", event => { if (event.dataTransfer
 elements.deskPane.addEventListener("drop", async event => { if (event.dataTransfer.files.length) { event.preventDefault(); dragDepth = 0; $("#dropHint").hidden = true; await importSelection(event.dataTransfer.files); } });
 
 // Dialogs
+document.querySelectorAll('dialog button[value="cancel"]').forEach(button => { button.type = "button"; button.addEventListener("click", () => button.closest("dialog").close()); });
 function showFolderDialog() { $("#folderForm").reset(); $("#folderDialog").showModal(); setTimeout(() => $("#folderForm input").focus(), 0); }
 $("#newFolderBtn").addEventListener("click", showFolderDialog); $("#emptyFolderBtn").addEventListener("click", showFolderDialog);
-$("#folderForm").addEventListener("submit", async event => { event.preventDefault(); const name = new FormData(event.currentTarget).get("name").trim(); if (!name) return; await db.putItem({ id: uid("folder"), parentId: state.currentSpace === "all" ? state.currentFolder : "root", type: "folder", name, starred: false, createdAt: Date.now(), modifiedAt: Date.now() }); $("#folderDialog").close(); await refresh(); });
+$("#folderForm").addEventListener("submit", async event => {
+  event.preventDefault(); const name = new FormData(event.currentTarget).get("name").trim(); if (!name) return;
+  const folder = { id: uid("folder"), parentId: state.currentSpace === "all" ? state.currentFolder : "root", type: "folder", name, starred: false, createdAt: Date.now(), modifiedAt: Date.now() };
+  await db.putItem(folder);
+  if (state.currentSpace === "board") await addItemToLesson(state.lessons.find(l=>l.id===state.boardId), folder.id);
+  $("#folderDialog").close(); await refresh();
+});
 $("#addUrlBtn").addEventListener("click", () => { $("#urlForm").reset(); $("#urlDialog").showModal(); });
-$("#urlForm").addEventListener("submit", async event => { event.preventDefault(); const data = new FormData(event.currentTarget); await db.putItem({ id: uid("url"), parentId: state.currentFolder, type: "url", name: data.get("name").trim(), url: data.get("url"), starred: false, createdAt: Date.now(), modifiedAt: Date.now(), lastOpenedAt: 0 }); $("#urlDialog").close(); await refresh(); });
+$("#urlForm").addEventListener("submit", async event => {
+  event.preventDefault(); const data = new FormData(event.currentTarget);
+  const url = new URL(data.get("url")); if (!["http:","https:"].includes(url.protocol)) { toast("Usa un indirizzo http o https."); return; }
+  const item = { id: uid("url"), parentId: state.currentSpace === "all" ? state.currentFolder : "root", type: "url", name: data.get("name").trim(), url: url.href, starred: false, createdAt: Date.now(), modifiedAt: Date.now(), lastOpenedAt: 0 };
+  await db.putItem(item);
+  if (state.currentSpace === "board") await addItemToLesson(state.lessons.find(l=>l.id===state.boardId), item.id);
+  $("#urlDialog").close(); await refresh();
+});
 $("#renameForm").addEventListener("submit", async event => { event.preventDefault(); const item = byId($("#renameDialog").dataset.itemId); if (!item) return; item.name = new FormData(event.currentTarget).get("name").trim(); item.modifiedAt = Date.now(); await db.putItem(item); $("#renameDialog").close(); await refresh(); });
 $("#moveForm").addEventListener("submit", async event => { event.preventDefault(); const id = $("#moveDialog").dataset.itemId; const folder = new FormData(event.currentTarget).get("folder"); $("#moveDialog").close(); await moveItem(id, folder); });
 
@@ -346,6 +380,8 @@ $("#lessonNextBtn").addEventListener("click", async () => { state.lessonIndex +=
 // Context menu
 elements.context.addEventListener("click", async event => {
   const action = event.target.dataset.action; const item = byId(state.contextId); if (!action || !item) return; hideContext();
+  if (action === "unpin") { const lesson = state.lessons.find(l => l.id === state.boardId); if (lesson) { await removeItemFromLesson(lesson, item.id); await refresh(); } }
+  if (action === "customize") board.customize(item);
   if (action === "open") openItem(item);
   if (action === "project") { lim.show(item, { kind: kindFor(item), page: item.viewState?.page || 1, zoom: item.viewState?.zoom || 1 }); toast("Materiale inviato alla LIM"); }
   if (action === "favorite") { item.starred = !item.starred; await db.putItem(item); await refresh(); }
@@ -394,7 +430,21 @@ elements.splitter.addEventListener("keydown", event => {
 document.addEventListener("keydown", event => {
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "f") { event.preventDefault(); elements.search.focus(); }
   if (event.key === "Escape" && !elements.viewerPane.hidden && !document.querySelector("dialog[open]")) closeViewer();
-  if ((event.key === "Delete" || event.key === "Backspace") && state.selectedId && !event.target.matches("input,textarea")) deleteItem(byId(state.selectedId));
+  if ((event.key === "Delete" || event.key === "Backspace") && state.selectedId && !event.target.closest("input,textarea,select,button,dialog")) deleteItem(byId(state.selectedId));
 });
 
 initialize().catch(error => { console.error(error); toast("Desk LIM non riesce ad aprire l’archivio locale. Verifica che il browser consenta IndexedDB.", 6000); });
+
+// Portable archive: user-controlled download and additive transactional import.
+$("#exportDeskBtn").addEventListener("click", async () => {
+  const name = prompt("Nome del file di backup", `Desk-gbprof-${new Date().toISOString().slice(0,10)}`)?.trim(); if (!name) return;
+  const button = $("#exportDeskBtn"); button.disabled = true;
+  try { await board.queue; await exportDesk(name); toast("Copia del Desk pronta per il download."); } catch(error) { toast(`Esportazione non riuscita: ${error.message}`, 6000); } finally { button.disabled = false; }
+});
+$("#importDeskInput").addEventListener("change", async event => {
+  const file = event.target.files[0]; if (!file) return;
+  if (!confirm("Aggiungere questa copia al Desk? I materiali attuali resteranno presenti.")) { event.target.value = ""; return; }
+  try { await board.queue; const count = await importDesk(file); await board.init(); await refresh(); toast(`Importazione completata: ${count} materiali aggiunti.`, 5000); }
+  catch(error) { toast(`Importazione non riuscita: ${error.message}`, 6000); }
+  finally { event.target.value = ""; }
+});

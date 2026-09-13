@@ -141,3 +141,55 @@ Desk/
 ├── ATTRIBUTIONS.md
 └── README.md
 ```
+
+## Desk libero — aggiornamento settembre 2026
+
+La vista **Libera** è predefinita al primo accesso alla nuova versione. I materiali
+esistenti sono preservati; una disposizione ordinata viene salvata una volta sola.
+Per spostare una scheda trascinare la maniglia a puntini in alto a sinistra, con
+mouse, dito o penna. Da tastiera: portare il focus sulla maniglia e usare le frecce
+(Shift per passi più ampi). Il corpo della scheda apre il materiale.
+
+- **Libera / Griglia / Elenco**: le posizioni non vengono cancellate cambiando vista.
+- **Collega**: toccare due schede, scegliere etichetta, linea/freccia e colore.
+  Toccare il collegamento per modificarlo o eliminarlo.
+- **Blocca** impedisce spostamenti e modifiche ai connettori; **Annulla** recupera
+  fino a 40 cambiamenti della disposizione nella sessione corrente (anche Ctrl/Cmd+Z).
+- **Mostra tutto**, zoom e scorrimento consentono di esplorare superfici più ampie
+  dello schermo senza risistemare i materiali quando si ruota il tablet.
+- Il pulsante **☰** nasconde o mostra la barra laterale. A ogni avvio è visibile.
+  **⛶** attiva lo schermo intero dove disponibile. Su iPad utilizzare la PWA
+  installata dalla schermata Home per eliminare le barre di Safari.
+- **Aspetto**: sfondo gbprof originale, quattro alternative leggere, immagine
+  personale (PNG/JPG/WebP, massimo 10 MB), dimensione schede e allineamento.
+- Menu **⋯ → Personalizza / Modifica URL**: titolo, indirizzo web, colore e immagine.
+- **Scrivanie → Apri scrivania** apre la superficie tematica; **Avvia** mantiene la
+  sequenza ordinata con ↑/↓. Una duplicazione conserva anche disposizione e sfondo.
+  URL e file aggiunti mentre una scrivania è aperta vengono inseriti anche in essa.
+
+### Copie complete e trasferimento tra dispositivi
+
+Da Impostazioni scegliere **Esporta Desk** e il nome del file JSON. Il backup
+include i file binari, i collegamenti web, le scrivanie, gli sfondi personali,
+le posizioni e i connettori. Il file rimane sul dispositivo scelto dall'utente.
+
+**Importa Desk** valida l'intero archivio prima di scrivere e usa una transazione
+IndexedDB: un errore non lascia metà archivio importato. I materiali recuperati
+sono aggiunti dentro una nuova cartella “Desk importato”, mantenendo la loro
+struttura; le scrivanie vengono aggiunte con nuovi identificatori. I materiali
+preesistenti non sono sovrascritti. Le preferenze generali del dispositivo e le
+viste dinamiche Preferiti/Recenti del destinatario rimangono invariate.
+Limite del file di backup: 512 MB. L'esportazione richiede memoria proporzionale
+al contenuto; per archivi video molto grandi mantenere anche gli originali.
+
+I dati sono sempre locali al browser: il backup è un trasferimento manuale, non
+una sincronizzazione fra PC e iPad. Il trasporto del Viewer LIM rimane locale
+allo stesso browser/dispositivo, come descritto sopra.
+
+### Dati e compatibilità
+
+Il database `desk-lim-db` resta alla versione 1. Le nuove informazioni spaziali
+sono memorizzate nella chiave `boardsV2` dello store `settings`; non è necessaria
+una migrazione distruttiva dei file. Le chiavi `folder:<id>` e `lesson:<id>` separano
+le disposizioni. Lo sfondo è indipendente dalle coordinate e resta centrato nel
+viewport. La ricerca usa temporaneamente una vista ordinata senza alterare il Desk.
