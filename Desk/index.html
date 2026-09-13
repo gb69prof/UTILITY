@@ -21,6 +21,7 @@
   <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/board.css">
   <link rel="stylesheet" href="../pwa-common/gbprof-accessibility.css?v=1">
   <title>Desk LIM — Il desk del docente</title>
 </head>
@@ -33,6 +34,7 @@
       </a>
 
       <nav class="main-tools" aria-label="Navigazione e strumenti">
+        <button id="sidebarToggle" class="icon-btn" type="button" aria-label="Mostra o nascondi barra laterale" title="Nascondi barra laterale" aria-expanded="true" aria-controls="deskSidebar">☰</button>
         <button id="homeBtn" class="icon-btn" type="button" title="Home" aria-label="Home">⌂</button>
         <button id="backBtn" class="icon-btn" type="button" title="Indietro" aria-label="Indietro" disabled>←</button>
         <button id="forwardBtn" class="icon-btn" type="button" title="Avanti" aria-label="Avanti" disabled>→</button>
@@ -65,7 +67,7 @@
 
     <main id="workspace" class="workspace">
       <section id="deskPane" class="desk-pane" aria-label="Desk del docente">
-        <aside class="sidebar">
+        <aside id="deskSidebar" class="sidebar">
           <div class="sidebar-section">
             <p class="eyebrow">SPAZI</p>
             <button class="side-link active" data-view="all" type="button"><span>▦</span> Il mio Desk</button>
@@ -93,14 +95,16 @@
             <div>
               <nav id="breadcrumbs" class="breadcrumbs" aria-label="Percorso"><button data-folder="root" type="button">Desk</button></nav>
               <h1 id="viewTitle">Il mio Desk</h1>
-              <p id="itemCount">0 elementi</p>
+              <p><span id="itemCount">0 elementi</span><span id="boardStatus" role="status">Disposizione salvata</span></p>
             </div>
             <div class="desk-actions">
               <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Cerca nel Desk</span><input id="searchInput" type="search" placeholder="Cerca file e cartelle…"></label>
               <div class="view-switch" role="group" aria-label="Tipo di visualizzazione">
-                <button id="gridViewBtn" class="active" type="button" aria-pressed="true" title="Icone">▦</button>
-                <button id="listViewBtn" type="button" aria-pressed="false" title="Elenco">☷</button>
+                <button id="freeViewBtn" class="active" type="button" aria-pressed="true" title="Disposizione libera">Libera</button>
+                <button id="gridViewBtn" class="active" type="button" aria-pressed="true" title="Icone">Griglia</button>
+                <button id="listViewBtn" type="button" aria-pressed="false" title="Elenco">Elenco</button>
               </div>
+              <button id="deskFullscreen" class="icon-btn" type="button" title="Schermo intero" aria-label="Schermo intero">⛶</button>
               <select id="sortSelect" aria-label="Ordina elementi">
                 <option value="name">Nome</option>
                 <option value="date">Più recenti</option>
@@ -189,6 +193,7 @@
   <dialog id="settingsDialog" class="dialog">
     <form id="settingsForm" method="dialog">
       <div class="dialog-head"><div><p class="eyebrow">PREFERENZE</p><h2>Desk e schermata LIM</h2></div><button value="cancel" class="icon-btn" aria-label="Chiudi">×</button></div>
+      <div class="backup-actions"><button type="button" id="exportDeskBtn" class="button secondary">Esporta Desk</button><label class="button secondary file-trigger">Importa Desk<input type="file" id="importDeskInput" accept=".json,application/json"></label></div><p class="muted">La copia comprende file, scrivanie, sfondi e collegamenti. Importare aggiunge i materiali senza cancellare quelli presenti.</p>
       <label><span>Tema</span><select name="theme"><option value="auto">Automatico</option><option value="light">Chiaro</option><option value="dark">Scuro</option></select></label>
       <label><span>Titolo schermata neutra</span><input name="neutralTitle" maxlength="100" value="Desk LIM"></label>
       <label><span>Colore schermata neutra</span><input name="neutralColor" type="color" value="#111817"></label>
@@ -202,8 +207,10 @@
     <button data-action="project" role="menuitem">Mostra alla LIM</button>
     <button data-action="favorite" role="menuitem">Preferito</button>
     <button data-action="lesson" role="menuitem">Aggiungi a scrivania</button>
+    <button data-action="customize" role="menuitem">Personalizza / Modifica URL</button>
     <button data-action="rename" role="menuitem">Rinomina</button>
     <button data-action="move" role="menuitem">Sposta</button>
+    <button data-action="unpin" role="menuitem" hidden>Rimuovi dalla scrivania</button>
     <button data-action="delete" class="danger" role="menuitem">Elimina</button>
   </div>
 

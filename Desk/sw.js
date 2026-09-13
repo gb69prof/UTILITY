@@ -1,7 +1,7 @@
 const CACHE_PREFIX = "desk-lim-shell-";
-const CACHE = `${CACHE_PREFIX}v4`;
+const CACHE = `${CACHE_PREFIX}v5`;
 const SHELL = [
-  "./", "./index.html", "./lim.html", "./manifest.webmanifest", "./css/main.css",
+  "./", "./index.html", "./lim.html", "./manifest.webmanifest", "./css/main.css", "./css/board.css", "./js/board.js", "./js/backup.js", "./assets/img/gbprof-desktop.png",
   "./js/app.js", "./js/db.js", "./js/files.js", "./js/viewer.js", "./js/lessons.js",
   "./js/lim-controller.js", "./js/lim-viewer.js", "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png", "./assets/img/og.png", "./assets/img/desk-grid.webp",
   "../privacy.html", "../accessibilita.html", "../pwa-common/gbprof-accessibility.css", "../pwa-common/gbprof-accessibility.js"
