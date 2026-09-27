@@ -1070,6 +1070,7 @@
     "immagine": "assets/portraits/alfieri.webp",
     "imageAlt": "Ritratto di Vittorio Alfieri",
     "pwaLinks": [
+      "iv-anno-letteratura-alfieri",
       "iv-anno-letteratura-settecento-illuminista"
     ],
     "livelloImportanza": 2,

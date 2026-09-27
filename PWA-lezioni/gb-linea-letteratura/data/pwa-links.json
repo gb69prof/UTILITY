@@ -438,5 +438,16 @@
     "tipo": "autore",
     "immagine": "assets/portraits/vittorini.webp",
     "checkedAt": "2026-09-12"
+  },
+  {
+    "id": "iv-anno-letteratura-alfieri",
+    "entity": "alfieri",
+    "repository": "IV-anno",
+    "path": "Letteratura/Alfieri/index.html",
+    "url": "https://gbprof.it/IV-anno/Letteratura/Alfieri/",
+    "titolo": "Vittorio Alfieri | PWA didattica",
+    "tipo": "autore",
+    "immagine": "assets/portraits/alfieri.webp",
+    "checkedAt": "2026-09-27"
   }
 ]
