@@ -1,0 +1,275 @@
+{
+  "paglicci-catalogo": {
+    "title": "MiC · Grotta Paglicci e riparo esterno",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchaeologicalProperty/1600388964",
+    "kind": "Catalogo istituzionale",
+    "note": "Sequenza di frequentazione; le cronologie molto antiche sono approssimative.",
+    "accessed": "2026-10-01"
+  },
+  "paglicci-strati": {
+    "title": "Museo del Paleolitico · Visita alla sequenza di Paglicci",
+    "url": "https://www.grotta-paglicci.it/visita/",
+    "kind": "Museo e ricerca",
+    "note": "Livelli, fauna e alternanza tra frequentazione umana e carnivori.",
+    "accessed": "2026-10-01"
+  },
+  "paglicci-fauna": {
+    "title": "Berto et al. · Small mammal record from Grotta Paglicci (2017)",
+    "url": "https://sfera.unife.it/handle/11392/2370620",
+    "kind": "Studio scientifico",
+    "note": "Indicatori paleoambientali del Paleolitico superiore; non estendere un singolo livello a tutta la fase.",
+    "accessed": "2026-10-01"
+  },
+  "paglicci-sepolture": {
+    "title": "Regione Puglia · Grotta Paglicci",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/15961",
+    "kind": "Catalogo regionale",
+    "note": "Stratigrafia, sepolture, strumenti e georeferenziazione.",
+    "accessed": "2026-10-01"
+  },
+  "scaloria": {
+    "title": "Elster, Isetti, Robb, Traverso (a cura di), The Archaeology of Grotta Scaloria (2016)",
+    "url": "https://escholarship.org/uc/item/2560t87t",
+    "kind": "Monografia scientifica",
+    "note": "Monumenta Archaeologica 38, UCLA. Capitoli 2.2 (cronologia), 3.3 (faune), 6.2 (strumenti). La revisione distingue i livelli chiamati in passato «mesolitici» dalle datazioni effettive.",
+    "accessed": "2026-10-01"
+  },
+  "scaloria-archivio": {
+    "title": "UCLA · The Archaeology of Grotta Scaloria, archivio dei dati",
+    "url": "https://dig.ucla.edu/scaloria/",
+    "kind": "Archivio universitario",
+    "note": "Documentazione e appendici del progetto di revisione degli scavi.",
+    "accessed": "2026-10-01"
+  },
+  "scaloria-sabap": {
+    "title": "SABAP BAT e Foggia · Ricerche a Scaloria e Coppa Nevigata",
+    "url": "https://sabapfoggia.cultura.gov.it/servizi/concessioni-di-ricerca-e-scavo/elenco-concessioni-di-scavo-attive/",
+    "kind": "Soprintendenza",
+    "note": "Pagina sulle concessioni 2023–2025; usata per le evidenze, non per affermare lo stato attuale delle concessioni.",
+    "accessed": "2026-10-01"
+  },
+  "corvo": {
+    "title": "MiC · Parco archeologico Passo di Corvo",
+    "url": "https://cultura.gov.it/luogo/parco-archeologico-passo-di-corvo",
+    "kind": "Ministero della Cultura",
+    "note": "Villaggio, fossati a C, pozzi, silos, recinti e sepolture. Estensione indicata: 40 ettari.",
+    "accessed": "2026-10-01"
+  },
+  "corvo-II": {
+    "title": "Regione Puglia · Passo di Corvo II",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/22219",
+    "kind": "Catalogo regionale",
+    "note": "Sito distinto da Passo di Corvo: documentato attraverso aerofotografia. Non confondere i due luoghi.",
+    "accessed": "2026-10-01"
+  },
+  "miniere": {
+    "title": "Siena · Mining landscape and mines (2010)",
+    "url": "https://usiena-air.unisi.it/handle/11365/11121",
+    "kind": "Studio universitario",
+    "note": "Miniere di selce del Gargano; Defensola A attiva circa dal 5800 a.C. Non è inserita come punto senza coordinate verificate.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-laguna": {
+    "title": "Cazzella et al. · Un centro fortificato sulla laguna (2024)",
+    "url": "https://iris.uniroma1.it/handle/11573/1719929",
+    "kind": "Studio universitario",
+    "note": "Risorse, accesso al mare e funzione difensiva della laguna di Coppa Nevigata.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-scambi": {
+    "title": "Cazzella e Recchia · Coping with Changes: Coppa Nevigata in the 12th Century BC",
+    "url": "https://austriaca.at/0xc1aa5572%200x003c9792.pdf",
+    "kind": "Pubblicazione scientifica",
+    "note": "Scambi, produzione italo-micenea e differenze sociali. Non dimostra automaticamente dominio politico su un territorio.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-sedimenti": {
+    "title": "Caldara, Caroli, Simone (2004) · Geomorphological changes due to human actions at Coppa Nevigata",
+    "url": "https://amq.aiqua.it/index.php/amq/article/view/507",
+    "kind": "Articolo scientifico",
+    "note": "Il Quaternario 17, pp. 495–508. Carotaggi, riporti e livellamenti; coordinate del sito nel PDF.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-mura": {
+    "title": "MiC · Mura protostoriche di Coppa Nevigata",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchitecturalOrLandscapeHeritage/1600389241",
+    "kind": "Catalogo istituzionale",
+    "note": "Mura e lunga occupazione del centro lagunare.",
+    "accessed": "2026-10-01"
+  },
+  "paleo-laguna": {
+    "title": "Di Rita, Magri, Simone, Caldara, Gehrels (2011) · Holocene environmental changes in the coastal Tavoliere Plain",
+    "url": "https://doi.org/10.1016/j.palaeo.2011.06.012",
+    "kind": "Articolo scientifico",
+    "note": "Palaeogeography, Palaeoclimatology, Palaeoecology 310, pp. 139–151. Pollini, molluschi, foraminiferi. Abstract verificato nel deposito universitario di York.",
+    "accessed": "2026-10-01"
+  },
+  "paleo-york": {
+    "title": "York Research Database · Scheda e abstract dello studio del 2011",
+    "url": "https://pure.york.ac.uk/portal/en/publications/holocene-environmental-changes-in-the-coastal-tavoliere-plain-apu/",
+    "kind": "Deposito universitario",
+    "note": "Una carota locale non rappresenta tutta la Daunia. cal BP: anni calibrati prima del 1950.",
+    "accessed": "2026-10-01"
+  },
+  "nava": {
+    "title": "Maria Luisa Nava (2008) · Le sculture della Daunia e lo sviluppo dell’ethnos indigeno",
+    "url": "https://www.archeologiadigitale.it/attidaunia/pdf/28-nava.pdf",
+    "kind": "Atti scientifici",
+    "note": "28° Convegno sulla Daunia, pp. 311–326. Monte Saraceno e statue-stele eneolitiche di Bovino–Castelluccio; cronologie distinte.",
+    "accessed": "2026-10-01"
+  },
+  "nava-cronologia": {
+    "title": "Nava (2001) · Puntualizzazioni cronologiche sulla necropoli di Monte Saraceno",
+    "url": "https://www.archeologiadigitale.it/attidaunia/pdf/21-nava.pdf",
+    "kind": "Atti scientifici",
+    "note": "Controllo della cronologia della necropoli; non usare la voce generica «Neolitico» presente in una pagina divulgativa.",
+    "accessed": "2026-10-01"
+  },
+  "arpi": {
+    "title": "MiC · Arpi, scheda del peso da telaio 1600389186",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchaeologicalProperty/1600389186",
+    "kind": "Catalogo istituzionale",
+    "note": "La sezione storico-critica descrive aggere, sviluppo urbano e contatti greci, osco-sanniti, punici e romani.",
+    "accessed": "2026-10-01"
+  },
+  "arpi-romana": {
+    "title": "Regione Puglia · Arpi in età romana",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/22297",
+    "kind": "Catalogo regionale",
+    "note": "Quartiere presso Masseria Menga; limiti della documentazione tardoantica.",
+    "accessed": "2026-10-01"
+  },
+  "herdonia-daunia": {
+    "title": "Regione Puglia · Herdonia, villaggio daunio",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/16192",
+    "kind": "Catalogo regionale",
+    "note": "Abitato diffuso, necropoli, fornaci e vasche; il trattamento della lana è un’interpretazione.",
+    "accessed": "2026-10-01"
+  },
+  "herdonia-romana": {
+    "title": "MiC · Anfiteatro di Herdonia",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchaeologicalProperty/1600389167",
+    "kind": "Catalogo istituzionale",
+    "note": "Storia urbana e infrastrutture della città romana.",
+    "accessed": "2026-10-01"
+  },
+  "herdonia-acqua": {
+    "title": "MiC · Acquedotto di Herdonia",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchaeologicalProperty/1600389198",
+    "kind": "Catalogo istituzionale",
+    "note": "Tracciati rilevati, canale rivestito e tecniche costruttive.",
+    "accessed": "2026-10-01"
+  },
+  "ausculum": {
+    "title": "Regione Puglia · Collina del Serpente, insediamento",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/17509",
+    "kind": "Catalogo regionale",
+    "note": "Edifici, tombe e mosaici di ciottoli; fasi VI–III secolo a.C.",
+    "accessed": "2026-10-01"
+  },
+  "ausculum-necropoli": {
+    "title": "Regione Puglia · Collina del Serpente, necropoli",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/17540",
+    "kind": "Catalogo regionale",
+    "note": "Uso funerario dell’altura tra età ellenistica e romana; non equivale a continuità del medesimo abitato.",
+    "accessed": "2026-10-01"
+  },
+  "salapia-daunia": {
+    "title": "MiC · Salapia, scheda dell’elmo 1600389193",
+    "url": "https://catalogo.cultura.gov.it/detail/ArchaeologicalProperty/1600389193",
+    "kind": "Catalogo istituzionale",
+    "note": "Lupara–Giardino, necropoli, rifondazione e quartiere artigianale.",
+    "accessed": "2026-10-01"
+  },
+  "salapia-romana": {
+    "title": "Regione Puglia · Salapia romana",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/26945",
+    "kind": "Catalogo regionale",
+    "note": "Trasferimento, prospezioni geomagnetiche e impianto pianificato.",
+    "accessed": "2026-10-01"
+  },
+  "salapia-tarda": {
+    "title": "Regione Puglia · Salapia, sito pluristratificato",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/29080",
+    "kind": "Catalogo regionale",
+    "note": "Contrazione, trasformazioni e ricerche condotte da Unifg e Davidson College.",
+    "accessed": "2026-10-01"
+  },
+  "salapia-studio": {
+    "title": "Goffredo e Totten (2024) · Building Resilience through Territorial Planning",
+    "url": "https://www.mdpi.com/2073-445X/13/10/1550",
+    "kind": "Articolo scientifico",
+    "note": "Land 13, 1550; paesaggio lagunare, infrastrutture idriche e scelte insediative tra età ellenistica e tarda antichità.",
+    "accessed": "2026-10-01"
+  },
+  "siponto": {
+    "title": "MiC · Parco archeologico di Siponto",
+    "url": "https://cultura.gov.it/luogo/parco-archeologico-di-siponto",
+    "kind": "Ministero della Cultura",
+    "note": "Colonia del 194 a.C., porto e basilica paleocristiana. L’installazione metallica contemporanea non è una struttura antica.",
+    "accessed": "2026-10-01"
+  },
+  "siponto-citta": {
+    "title": "Regione Puglia · Sipontum, civitas romana",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/27953",
+    "kind": "Catalogo regionale",
+    "note": "Cupola–Beccarini e nuova colonia; ragioni dello spostamento non definitivamente chiarite.",
+    "accessed": "2026-10-01"
+  },
+  "siponto-mura": {
+    "title": "Regione Puglia · Cinta muraria di Siponto",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/8623",
+    "kind": "Catalogo regionale",
+    "note": "Indagini topografiche, aerofotografiche e saggi.",
+    "accessed": "2026-10-01"
+  },
+  "lucera": {
+    "title": "Regione Puglia · Lucera romana",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/22261",
+    "kind": "Catalogo regionale",
+    "note": "Colonia latina del 314 a.C., trasformazioni urbane e relazioni con Roma e i Sanniti.",
+    "accessed": "2026-10-01"
+  },
+  "lucera-anfiteatro": {
+    "title": "Comune di Lucera · Anfiteatro romano",
+    "url": "https://www.comune.lucera.fg.it/vivere_il_comune/luoghi/luogo_7.html",
+    "kind": "Ente territoriale, evidenza epigrafica",
+    "note": "L’iscrizione dedicatoria collega l’edificio augusteo a M. Vecilio Campo.",
+    "accessed": "2026-10-01"
+  },
+  "faragola": {
+    "title": "Regione Puglia · Villa tardoantica di Faragola",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/17588",
+    "kind": "Catalogo regionale",
+    "note": "Terme, cenatio, cisterna, magazzini; settore produttivo non identificato nella scheda.",
+    "accessed": "2026-10-01"
+  },
+  "faragola-fasi": {
+    "title": "Regione Puglia · Faragola, sito pluristratificato",
+    "url": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/29290",
+    "kind": "Catalogo regionale",
+    "note": "Villaggio daunio, fattoria romana, villa e abitato altomedievale: funzioni diverse nello stesso luogo.",
+    "accessed": "2026-10-01"
+  },
+  "faragola-sabap": {
+    "title": "SABAP BAT e Foggia · Faragola siamo noi",
+    "url": "https://sabapfoggia.cultura.gov.it/faragola-siamo-noi/",
+    "kind": "Soprintendenza",
+    "note": "Posizione nella valle del Carapelle, rete viaria; incendio del 2017 e danni alla conservazione.",
+    "accessed": "2026-10-01"
+  },
+  "geositi": {
+    "title": "Provincia di Foggia · Analisi fisica integrata del territorio",
+    "url": "https://sportellotelematico.provincia.foggia.it/sites/default/files/2022-06/3%20Analisi%20fisica.pdf",
+    "kind": "Documento territoriale",
+    "note": "Schede geositi: coordinate di Coppa Nevigata e del complesso Scaloria–Occhiopinto; paesaggi moderni.",
+    "accessed": "2026-10-01"
+  },
+  "natural-earth": {
+    "title": "Natural Earth · cartografia moderna 1:10m e condizioni d’uso",
+    "url": "https://github.com/nvkelso/natural-earth-vector/blob/master/LICENSE.md",
+    "kind": "Dati geografici",
+    "note": "Dominio pubblico. Costa e Ofanto moderni generalizzati: non una ricostruzione del paesaggio antico.",
+    "accessed": "2026-10-01"
+  }
+}

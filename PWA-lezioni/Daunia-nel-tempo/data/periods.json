@@ -1,0 +1,392 @@
+[
+  {
+    "id": "paleolitico",
+    "name": "Paleolitico",
+    "dates": "Nel territorio: circa 300.000–11.700 anni fa",
+    "title": "Abitare un ambiente che cambia",
+    "intro": [
+      "Grotte e ripari conservano tracce di soste, attività e ritorni. Non erano necessariamente case occupate tutto l’anno: gli esseri umani si muovevano fra risorse distribuite nel territorio.",
+      "Paglicci permette di seguire episodi lontanissimi fra loro. Un livello con strumenti litici e resti animali non descrive automaticamente tutto il Gargano né tutta la durata del Paleolitico."
+    ],
+    "change": [
+      "Caccia, raccolta e lavorazione della pietra; uso ripetuto di alcuni luoghi.",
+      "Focolari, scarti, sepolture e segni sulle pareti modificano spazi circoscritti. L’impatto limitato sul territorio non significa assenza di cultura."
+    ],
+    "environment": {
+      "clima": "La sequenza di Paglicci registra alternanze: alcuni livelli indicano condizioni aride e ambienti aperti, altri condizioni più temperate. Non esiste un unico «clima paleolitico».",
+      "vegetazione": "Steppa o prateria sono interpretazioni di specifici livelli; una foresta identica alla Foresta Umbra attuale non è ricostruibile per tutta la fase.",
+      "fauna": "A Paglicci sono documentati, in differenti contesti, cervi, cavalli, stambecchi e carnivori. Bisogna distinguere prede umane da animali entrati autonomamente nella cavità.",
+      "acqua": "Durante fasi fredde il livello marino era inferiore all’attuale. Questa PWA non disegna una paleocosta priva di un modello locale datato.",
+      "risorse": "Ripari calcarei, selce e animali; accesso alle risorse attraverso spostamenti."
+    },
+    "limits": "Date antiche approssimative; frequenze e intensità dell’occupazione variano. La carta mantiene la costa moderna come riferimento.",
+    "sources": [
+      "paglicci-catalogo",
+      "paglicci-strati",
+      "paglicci-fauna"
+    ],
+    "before": [
+      "Ambienti e fauna mutano anche senza intervento umano.",
+      "La grotta è una formazione naturale, non una casa costruita."
+    ],
+    "after": [
+      "I livelli conservano focolari, strumenti, ossa lavorate e pratiche funerarie.",
+      "Non possediamo una fotografia del territorio paleolitico."
+    ],
+    "question": "Quali tracce distinguerebbero una sosta di cacciatori da una tana di carnivori?"
+  },
+  {
+    "id": "mesolitico",
+    "name": "Mesolitico",
+    "dates": "Circa 9700–6100 a.C.; limiti locali discussi",
+    "title": "Dopo il ghiaccio: cambiano le risorse",
+    "intro": [
+      "Con l’inizio dell’Olocene cambiano condizioni climatiche e posizione del mare. Le comunità di cacciatori-raccoglitori rispondono a risorse e ambienti diversi; l’agricoltura non è un esito già scritto.",
+      "Scaloria offre un caso di revisione: alcune unità chiamate «mesolitiche» durante gli scavi hanno restituito date del Paleolitico finale. La classificazione va controllata insieme alla stratigrafia."
+    ],
+    "change": [
+      "Adattamenti della mobilità e della sussistenza.",
+      "Nessun villaggio agricolo mesolitico viene inventato per riempire la mappa."
+    ],
+    "environment": {
+      "clima": "Transizione postglaciale; senza una sequenza locale continua non attribuiamo un valore di temperatura al Gargano.",
+      "vegetazione": "Non estendiamo al Mesolitico i pollini più recenti della carota di Lago Salso.",
+      "fauna": "La revisione di Scaloria studia faune del tardo Pleistocene/primo Olocene; i reperti non hanno tutti la stessa cronologia.",
+      "acqua": "La risalita marina modifica gli spazi costieri. L’esatta forma delle rive non viene ricostruita qui.",
+      "risorse": "Caccia e raccolta in paesaggi in trasformazione; la grotta è un punto di osservazione, non la prova di sedentarietà."
+    },
+    "limits": "A Scaloria le date tra tardo X e inizio VIII millennio a.C. riguardano una transizione Paleolitico finale/Mesolitico. La documentazione locale è diseguale e alcuni contesti possono essere mescolati.",
+    "sources": [
+      "scaloria",
+      "scaloria-archivio"
+    ],
+    "before": [
+      "Il sistema di risorse del tardo Pleistocene si trasforma."
+    ],
+    "after": [
+      "Le persone riorganizzano attività e spostamenti.",
+      "Un nome assegnato a uno strato può cambiare dopo nuove datazioni."
+    ],
+    "question": "Perché una data al radiocarbonio può correggere il nome dato a uno strato?"
+  },
+  {
+    "id": "neolitico",
+    "name": "Neolitico",
+    "dates": "Circa 6100–4000 a.C.; fasi regionali variabili",
+    "title": "Il territorio diventa uno spazio di lavoro",
+    "intro": [
+      "Coltivare e allevare richiede organizzare il tempo e lo spazio: semina, raccolto, conservazione, acqua e gestione degli animali. La presenza umana lascia strutture più durevoli.",
+      "Passo di Corvo è un caso emblematico. Pozzi, silos, recinti e fossati mostrano investimenti nel luogo; non basta chiamare ogni fossato una fortificazione."
+    ],
+    "change": [
+      "Villaggi e infrastrutture; gestione delle scorte e degli spazi.",
+      "Apertura di aree coltivate e pascoli come processo generale, senza inventare ettari di disboscamento locale.",
+      "Nel Gargano l’estrazione della selce, documentata alla Defensola, mostra che l’antropizzazione riguarda anche il sottosuolo."
+    ],
+    "environment": {
+      "clima": "Condizioni oloceniche; agricoltura e disponibilità d’acqua non permettono, da sole, di dedurre il clima esatto.",
+      "vegetazione": "La carota presso Coppa Nevigata documenta boschi misti di querce tra 6340 e 4880 cal BP (circa 4390–2930 a.C.): riguarda la parte finale della fase e il successivo Rame.",
+      "fauna": "L’allevamento modifica il rapporto con gli animali; Scaloria conserva resti di animali domestici e selvatici.",
+      "acqua": "Pozzi nell’abitato e gocciolamento nelle grotte hanno usi differenti. Nel Tavoliere costiero esistono bacini lagunari.",
+      "risorse": "Suoli, acqua e selce; le risorse devono essere lavorate, conservate e talvolta scambiate."
+    },
+    "limits": "Il polline di quercia non identifica automaticamente una specie né una foresta uniforme. La funzione dei fossati va valutata caso per caso.",
+    "sources": [
+      "corvo",
+      "scaloria",
+      "miniere",
+      "paleo-york"
+    ],
+    "before": [
+      "Le risorse vengono cercate attraverso frequentazioni e spostamenti."
+    ],
+    "after": [
+      "Campi, recinti, scorte e abitati stabilizzano alcune attività.",
+      "I dati non autorizzano una veduta completa di un villaggio antico."
+    ],
+    "question": "Che cosa cambia quando una comunità deve conservare il raccolto fino all’anno successivo?"
+  },
+  {
+    "id": "rame",
+    "name": "Età del Rame",
+    "dates": "Circa 4000–2300 a.C.",
+    "title": "Nuove tracce, senza una cesura uniforme",
+    "intro": [
+      "L’Eneolitico non cancella agricoltura, pietra e allevamento. Il rame è una novità entro economie e tradizioni diverse; non tutti gli oggetti o tutti i villaggi cambiano insieme.",
+      "Le statue-stele di Bovino–Castelluccio dei Sauri, riferite al III millennio a.C., appartengono a un complesso distinto dalle successive sculture e stele daunie."
+    ],
+    "change": [
+      "Nuove forme di rappresentazione e pratiche sociali, accanto alla gestione agropastorale.",
+      "Coppa Nevigata conserva fasi preistoriche precedenti al grande insediamento fortificato del Bronzo."
+    ],
+    "environment": {
+      "clima": "La PWA non dispone di una curva climatica omogenea per tutta la Daunia eneolitica.",
+      "vegetazione": "I boschi di querce e le variazioni polliniche del Tavoliere costiero sono dati locali; l’apertura più marcata del paesaggio dello studio del 2011 è successiva, intorno a 4000 cal BP.",
+      "fauna": "Non viene compilato un elenco di specie per tutta la fase senza un campione locale contestualizzato.",
+      "acqua": "Nella carota di Lago Salso la laguna semichiusa passa a un bacino più isolato tra circa 2930 e 1280 a.C.; la trasformazione continua nel Bronzo.",
+      "risorse": "Suoli e pascoli restano importanti; uso dei metalli e dei materiali litici può coesistere."
+    },
+    "limits": "Non tutte le trasformazioni delle lagune sono prodotte dall’uomo. Le statue-stele del Rame non vanno datate all’età daunia per somiglianza visiva.",
+    "sources": [
+      "nava",
+      "scaloria-sabap",
+      "paleo-york"
+    ],
+    "before": [
+      "Un paesaggio già lavorato da agricoltori e allevatori."
+    ],
+    "after": [
+      "Nuovi oggetti e rappresentazioni; occupazioni da verificare separatamente."
+    ],
+    "question": "Un nuovo materiale basta a dimostrare che è cambiata tutta la società?"
+  },
+  {
+    "id": "bronzo",
+    "name": "Età del Bronzo",
+    "dates": "Circa 2300–1000 a.C.",
+    "title": "La laguna come risorsa e collegamento",
+    "intro": [
+      "Coppa Nevigata mette insieme acqua, produzione, difesa e scambi. La sua posizione sulla sponda di una laguna rende insufficiente leggerla come semplice villaggio costiero.",
+      "I resti dei murici lavorati e le ceramiche di tipo egeo-miceneo permettono di seguire attività e relazioni. Una forma ceramica non dimostra da sola l’origine geografica dell’artigiano."
+    ],
+    "change": [
+      "Fortificazioni, riorganizzazione dell’abitato e attività specializzate.",
+      "Riporti e livellamenti di depositi umidi documentano interventi locali sul terreno."
+    ],
+    "environment": {
+      "clima": "Non ricostruiamo temperature da una struttura difensiva o da un tipo di ceramica.",
+      "vegetazione": "Nel settore di Lago Salso studiato, il paesaggio si apre attorno a 4000 cal BP (circa 2050 a.C.). Il dato richiede confronto con attività umane e processi naturali.",
+      "fauna": "Molluschi raccolti e lavorati sono una risorsa documentata; i murici sono collegati alla produzione della porpora.",
+      "acqua": "La laguna garantisce risorse e rapporti con il mare, ma cambia dimensioni e salinità.",
+      "risorse": "Produzione artigianale, risorse umide e relazioni con l’entroterra e l’Adriatico."
+    },
+    "limits": "Una rete di scambi non coincide necessariamente con uno Stato o con il controllo politico di tutto il territorio.",
+    "sources": [
+      "coppa-laguna",
+      "coppa-scambi",
+      "coppa-sedimenti",
+      "paleo-york"
+    ],
+    "before": [
+      "Un bacino umido con dinamiche proprie."
+    ],
+    "after": [
+      "Strutture difensive e piani d’uso modificano alcuni settori.",
+      "L’evoluzione dell’intero bacino non ha una sola causa."
+    ],
+    "question": "Una laguna ostacola o favorisce gli scambi? Quali condizioni possono renderla entrambe le cose?"
+  },
+  {
+    "id": "ferro",
+    "name": "Età del Ferro",
+    "dates": "Circa 1000–700 a.C.",
+    "title": "Comunità, tombe e appartenenze",
+    "intro": [
+      "La cultura daunia si forma attraverso processi, contatti e differenze interne. Il suo nome non implica un unico governo esteso sulla provincia attuale.",
+      "Monte Saraceno mostra un abitato e una necropoli sul rilievo; Arpi e Herdonia documentano nuclei insediativi e funerari in altri contesti."
+    ],
+    "change": [
+      "Abitati, aree funerarie e difese organizzano lo spazio.",
+      "Monumenti e corredi permettono di interrogare appartenenze e differenze sociali."
+    ],
+    "environment": {
+      "clima": "Le schede utilizzate non forniscono una ricostruzione climatica comparabile per ogni centro.",
+      "vegetazione": "Non trasferiamo la vegetazione moderna di Monte Saraceno alla prima età del Ferro.",
+      "fauna": "Oggetti in osso e rappresentazioni animali non sostituiscono uno studio archeozoologico contestualizzato.",
+      "acqua": "Alture, pianure e sistemi lagunari offrono possibilità diverse. La costa sulla carta resta moderna.",
+      "risorse": "Terra coltivabile, accessi e risorse costiere; funzioni documentate con intensità diversa nei siti."
+    },
+    "limits": "A Monte Saraceno l’inizio risale già al Bronzo finale; il massimo sviluppo indicato da Nava è tra IX e inizi VII secolo a.C.",
+    "sources": [
+      "nava",
+      "arpi",
+      "herdonia-daunia",
+      "salapia-daunia"
+    ],
+    "before": [
+      "Comunità del Bronzo con insediamenti e relazioni già articolati."
+    ],
+    "after": [
+      "Nuove organizzazioni dello spazio e pratiche funerarie."
+    ],
+    "question": "Perché le tombe aiutano a capire una comunità, ma non raccontano da sole tutta la sua economia?"
+  },
+  {
+    "id": "dauni",
+    "name": "Centri dauni",
+    "dates": "VII–V secolo a.C.",
+    "title": "Un territorio con molti centri",
+    "intro": [
+      "Arpi nel Tavoliere, gli abitati di altura e i centri delle lagune non hanno la stessa forma. Un grande perimetro può contenere nuclei abitati, sepolture e spazi liberi.",
+      "Non disegniamo confini di Stati dauni che le fonti non consentono di ricostruire. Confrontiamo invece funzioni e tracce materiali."
+    ],
+    "change": [
+      "Aggere di Arpi, abitati e necropoli ad Ausculum e Herdonia.",
+      "Il territorio è organizzato attraverso luoghi con funzioni e relazioni differenti."
+    ],
+    "environment": {
+      "clima": "Manca qui una serie paleoambientale omogenea per tutti i centri.",
+      "vegetazione": "Campi, aree aperte e boschi non si possono quantificare dalla sola estensione urbana.",
+      "fauna": "L’economia animale richiede resti ossei e contesti, non soltanto scene figurate.",
+      "acqua": "La fascia lagunare va distinta dalla costa attuale. Salapia vetus e Cupola–Beccarini appartengono a questo sistema.",
+      "risorse": "Suoli del Tavoliere, alture e connessioni fra interno e costa; interpretazioni da verificare nelle schede."
+    },
+    "limits": "Il marker di Siponto rappresenta la colonia romana; il suo antecedente daunio di Cupola–Beccarini è discusso nella scheda, senza sovrapporre i due abitati.",
+    "sources": [
+      "arpi",
+      "ausculum",
+      "herdonia-daunia",
+      "siponto-citta",
+      "salapia-daunia"
+    ],
+    "before": [
+      "Paesaggi già antropizzati da agricoltura e insediamenti."
+    ],
+    "after": [
+      "Grandi centri e spazi funerari riorganizzano il territorio."
+    ],
+    "question": "Un insediamento esteso deve essere densamente costruito in ogni sua parte?"
+  },
+  {
+    "id": "contatti",
+    "name": "Greci e popolazioni italiche",
+    "dates": "IV–III secolo a.C.",
+    "title": "Oggetti, modelli e scelte locali",
+    "intro": [
+      "Ad Arpi le residenze aristocratiche e le tombe monumentali mostrano contatti con modelli greci. Rapporti con ambienti osco-sanniti, Taranto e Roma attraversano la Daunia.",
+      "Le comunità locali selezionano e rielaborano ciò che circola. Una decorazione greca non trasforma automaticamente un centro daunio in colonia greca."
+    ],
+    "change": [
+      "Cambiamenti nelle case, nelle tombe e nelle forme di rappresentazione delle élite.",
+      "Alleanze, conflitti e colonizzazione romana modificano le possibilità politiche."
+    ],
+    "environment": {
+      "clima": "Le influenze artistiche non sono indicatori climatici.",
+      "vegetazione": "Non ricostruiamo un nuovo paesaggio vegetale perché cambia lo stile dei manufatti.",
+      "fauna": "Serve collegare i resti a contesti specifici; la fase non possiede un elenco faunistico unitario.",
+      "acqua": "I collegamenti marittimi e quelli interni contano in modi diversi per ciascun centro.",
+      "risorse": "Produzione, scambi e capacità dei gruppi dirigenti di mobilitare lavoro e beni."
+    },
+    "limits": "La fase si sovrappone all’inizio della romanizzazione: è una lente sui contatti, non un periodo isolato fra due date nette.",
+    "sources": [
+      "arpi",
+      "lucera",
+      "ausculum"
+    ],
+    "before": [
+      "Pratiche e forme insediative daunie."
+    ],
+    "after": [
+      "Modelli rielaborati; nuove relazioni politiche."
+    ],
+    "question": "Come distingueresti un oggetto importato da uno prodotto localmente seguendo un modello esterno?"
+  },
+  {
+    "id": "romanizzazione",
+    "name": "Romanizzazione",
+    "dates": "Fine IV–I secolo a.C.",
+    "title": "Cambiare le regole del territorio",
+    "intro": [
+      "La colonia latina di Lucera e la colonia romana di Siponto mostrano tempi e strumenti diversi di presenza romana. Altri centri entrano gradualmente in nuove reti politiche e amministrative.",
+      "Romanizzare significa trasformare status, proprietà, infrastrutture e relazioni. Non è un interruttore acceso con l’arrivo di un esercito."
+    ],
+    "change": [
+      "Colonizzazione, nuove cittadinanze e trasformazioni dell’organizzazione urbana e rurale.",
+      "Salapia viene rifondata in un luogo diverso: il cambiamento ambientale entra nelle scelte territoriali."
+    ],
+    "environment": {
+      "clima": "Il trasferimento di una città non è, da solo, una misura del clima regionale.",
+      "vegetazione": "La specializzazione agricola non autorizza una carta completa della deforestazione.",
+      "fauna": "La composizione degli allevamenti va ricostruita con campioni datati.",
+      "acqua": "Salubrità, collegamenti con il mare e gestione dell’acqua diventano problemi di progettazione urbana.",
+      "risorse": "Terre, lavoro, strade e accesso ai circuiti economici romani."
+    },
+    "limits": "I processi sono diversi nei vari centri. Gli intervalli della timeline si sovrappongono e non indicano transizioni istantanee.",
+    "sources": [
+      "lucera",
+      "siponto",
+      "salapia-romana",
+      "arpi-romana"
+    ],
+    "before": [
+      "Centri con istituzioni e relazioni locali."
+    ],
+    "after": [
+      "Nuovi status e reti territoriali, con persistenze e trasformazioni."
+    ],
+    "question": "Perché una nuova strada o una colonia cambia anche il territorio che la circonda?"
+  },
+  {
+    "id": "romana",
+    "name": "Età romana",
+    "dates": "I–III secolo d.C.",
+    "title": "Città, infrastrutture e campagne",
+    "intro": [
+      "Mercati, terme, acquedotti e strade concentrano persone e risorse. Herdonia rende visibile questa organizzazione urbana; le ville mostrano un altro modo di presidiare le campagne.",
+      "I porti legano la produzione dell’interno a circuiti più ampi. Siponto e Salapia non vanno interpretate soltanto come punti su una costa immobile."
+    ],
+    "change": [
+      "Edifici pubblici, reti idriche, abitazioni e luoghi produttivi.",
+      "Il rapporto fra città e campagne coinvolge proprietari, artigiani, coltivatori e lavoratori con condizioni diverse."
+    ],
+    "environment": {
+      "clima": "I monumenti non misurano temperature o piogge.",
+      "vegetazione": "I dati dei siti e dei sedimenti vanno confrontati; il territorio non era identico ai campi odierni.",
+      "fauna": "Allevamento e attività artigianali possono lasciare resti specifici: a Salapia il trattamento delle pelli è documentato.",
+      "acqua": "Acquedotti, cisterne, terme e collegamenti portuali mostrano lavoro e gestione, non semplice disponibilità naturale.",
+      "risorse": "Produzione rurale e scambi; investimenti pubblici e privati nei centri e lungo i collegamenti."
+    },
+    "limits": "Le linee tratteggiate sulla carta sono relazioni fra luoghi documentate, non ricostruzioni metriche delle strade.",
+    "sources": [
+      "herdonia-romana",
+      "herdonia-acqua",
+      "salapia-daunia",
+      "lucera-anfiteatro",
+      "faragola-fasi"
+    ],
+    "before": [
+      "Abitati e territori già in trasformazione sotto Roma."
+    ],
+    "after": [
+      "Infrastrutture e funzioni urbane moltiplicano gli interventi sull’ambiente."
+    ],
+    "question": "Che cosa deve esistere intorno a una città perché un mercato possa funzionare?"
+  },
+  {
+    "id": "tarda",
+    "name": "Tarda antichità",
+    "dates": "IV–VI secolo d.C.; raccordo VII–VIII",
+    "title": "Trasformazioni, senza una fine uguale per tutti",
+    "intro": [
+      "Faragola mostra investimenti aristocratici nel V secolo, mentre altri centri cambiano scala e funzioni. Le basiliche di Siponto testimoniano nuovi spazi e istituzioni religiose.",
+      "Una città può contrarsi senza scomparire; una villa può diventare un luogo con funzioni diverse. Il 476 non interrompe automaticamente la vita di ogni sito."
+    ],
+    "change": [
+      "Ristrutturazioni delle residenze, nuove forme di rappresentazione del potere e cambiamenti nelle campagne.",
+      "A Faragola la villa è seguita da un abitato altomedievale; non è la stessa organizzazione economica con un altro nome."
+    ],
+    "environment": {
+      "clima": "Nella carota pubblicata del settore Lago Salso esiste una lacuna sedimentaria che impedisce di leggerne direttamente molti secoli antichi: non interpoliamo un clima tardoantico.",
+      "vegetazione": "Le colture e il paesaggio vanno studiati con campioni datati dei singoli contesti.",
+      "fauna": "Per confrontare economie servono resti identificati e attribuiti alle fasi, non un elenco generico.",
+      "acqua": "Terme e cisterne di Faragola; mutamento degli spazi urbani nei centri costieri.",
+      "risorse": "Grandi proprietà, lavoro rurale, artigianato e reti cittadine; l’estensione delle proprietà non è ricostruita qui."
+    },
+    "limits": "Il proprietario della villa di Faragola e l’esatta estensione della tenuta non sono dati certi. Per Arpi le tracce tardoantiche sono troppo deboli per rappresentare una continuità urbana sicura.",
+    "sources": [
+      "faragola",
+      "faragola-sabap",
+      "siponto",
+      "salapia-tarda",
+      "arpi-romana",
+      "paleo-york"
+    ],
+    "before": [
+      "Città e campagne dell’età imperiale."
+    ],
+    "after": [
+      "Funzioni e insediamenti si riorganizzano in tempi diversi."
+    ],
+    "question": "Perché una villa lussuosa non dimostra da sola prosperità per tutti gli abitanti della campagna?"
+  }
+]

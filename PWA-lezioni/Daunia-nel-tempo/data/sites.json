@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "paglicci",
+    "name": "Grotta Paglicci",
+    "place": "Rignano Garganico · versante meridionale del Gargano",
+    "periods": [
+      0
+    ],
+    "mappedPeriods": [
+      0
+    ],
+    "zone": "Gargano",
+    "kind": "Grotta e riparo",
+    "dates": "Paleolitico; sequenze e interruzioni differenti nel riparo e nella grotta",
+    "summary": "La stessa cavità conserva ritorni, cambiamenti e assenze. Il paesaggio non era uguale in ogni strato.",
+    "environment": "Una cavità nel calcare, affacciata verso spazi aperti. Le faune e i piccoli mammiferi aiutano a distinguere ambienti di fasi diverse.",
+    "documented": [
+      {
+        "label": "Stratigrafia",
+        "text": "Depositi, industrie litiche, resti animali, sepolture e pitture documentano attività diverse.",
+        "sources": [
+          "paglicci-sepolture"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Alternanza",
+        "text": "Alcuni livelli registrano abbandoni e frequentazione da parte di carnivori.",
+        "sources": [
+          "paglicci-strati"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Riparo e accesso a territori di caccia sono ragioni plausibili di frequentazione; non provano occupazione continua né esclusiva scelta per la difesa.",
+    "impact": "Focolari, lavorazione dei materiali e uso funerario o simbolico trasformano parti della cavità.",
+    "limits": "I resti faunistici vanno attribuiti ai singoli livelli. Non tutti gli animali sono stati cacciati dall’uomo.",
+    "question": "Basterebbe una grotta per vivere? Quali risorse servirebbero nei dintorni?",
+    "answer": "Un riparo conta insieme alle risorse esterne e agli spostamenti. Gli strati documentano attività e ritorni, non una casa occupata per centinaia di migliaia di anni.",
+    "factors": [
+      "riparo",
+      "risorse",
+      "mobilità"
+    ],
+    "history": [
+      {
+        "label": "Paleolitico antico e medio",
+        "text": "Frequentazioni nel riparo e nella grotta; alternanze e conservazione diseguale.",
+        "sources": [
+          "paglicci-catalogo"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Paleolitico superiore",
+        "text": "Accampamenti, attività tecniche, sepolture e immagini; non un solo episodio.",
+        "sources": [
+          "paglicci-sepolture"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Dopo il Paleolitico",
+        "text": "La selezione qui non documenta una continuità abitativa: non prolunghiamo la fascia.",
+        "sources": [
+          "paglicci-catalogo"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "paglicci-catalogo",
+      "paglicci-strati",
+      "paglicci-fauna",
+      "paglicci-sepolture"
+    ],
+    "image": "paglicci",
+    "coordinates": [
+      41.6540466,
+      15.6146289
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/15961",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "scaloria",
+    "name": "Grotta Scaloria",
+    "place": "Manfredonia · margine del Gargano",
+    "periods": [
+      0,
+      1,
+      2
+    ],
+    "mappedPeriods": [
+      0,
+      1,
+      2
+    ],
+    "zone": "Gargano",
+    "kind": "Grotta plurifunzionale",
+    "dates": "Paleolitico finale/primo Olocene; frequentazione neolitica",
+    "summary": "Una grotta può avere funzioni differenti nel tempo. Qui le datazioni hanno corretto alcune classificazioni degli scavi più antichi.",
+    "environment": "Sistema ipogeo alla transizione tra Tavoliere e Gargano. Gocciolamento, cavità e accessi fanno parte delle condizioni del luogo.",
+    "documented": [
+      {
+        "label": "Cronologia rivista",
+        "text": "Il trench 8 comprende date del XII millennio a.C. e del tardo X–inizio VIII millennio a.C., presso la transizione Paleolitico finale/Mesolitico.",
+        "sources": [
+          "scaloria"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Neolitico",
+        "text": "Ceramiche, resti umani e animali mostrano molteplici usi della cavità.",
+        "sources": [
+          "scaloria-archivio"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Le pratiche di raccolta dell’acqua e deposizione sono interpretate in un quadro rituale; non tutte le tracce corrispondono alla stessa attività.",
+    "impact": "Collocazione di recipienti e deposizioni organizzano spazi naturali, senza trasformare la grotta in un villaggio agricolo.",
+    "limits": "Possibili mescolamenti e vecchie attribuzioni richiedono cautela. Un campione di carbone vicino a ossa non data automaticamente la sepoltura.",
+    "question": "Uno stesso luogo può servire per abitare, conservare acqua e seppellire?",
+    "answer": "Sì, ma servono contesti e date distinti. Non possiamo unire tutte le tracce in una sola scena di vita quotidiana.",
+    "factors": [
+      "acqua",
+      "riparo",
+      "rituali"
+    ],
+    "history": [
+      {
+        "label": "Paleolitico finale / Mesolitico",
+        "text": "Tracce di cacciatori-raccoglitori; attribuzione cronologica ampia e riveduta.",
+        "sources": [
+          "scaloria"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Neolitico",
+        "text": "Usi funerari, rituali e altri possibili usi della cavità; non tutti contemporanei.",
+        "sources": [
+          "scaloria"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Fasi successive",
+        "text": "Non documentiamo qui una continuità insediativa.",
+        "sources": [
+          "scaloria-archivio"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "scaloria",
+      "scaloria-archivio",
+      "scaloria-sabap",
+      "geositi"
+    ],
+    "image": null,
+    "coordinates": [
+      41.64083333333333,
+      15.905000000000001
+    ],
+    "coordinateSource": "https://sportellotelematico.provincia.foggia.it/sites/default/files/2022-06/3%20Analisi%20fisica.pdf",
+    "coordinateMethod": "Conversione da gradi, minuti e secondi; scheda 24 del complesso Scaloria–Occhiopinto. Punto del complesso, non del singolo ambiente interno."
+  },
+  {
+    "id": "corvo",
+    "name": "Passo di Corvo",
+    "place": "Foggia · contrada Arpinova",
+    "periods": [
+      2
+    ],
+    "mappedPeriods": [
+      2
+    ],
+    "zone": "Tavoliere",
+    "kind": "Villaggio trincerato",
+    "dates": "VI–IV millennio a.C. secondo la scheda MiC",
+    "summary": "Abitare significa anche scavare, raccogliere acqua, conservare e delimitare. Un villaggio rende visibile il lavoro sul territorio.",
+    "environment": "Piana del Tavoliere. L’acqua deve essere gestita; la vicinanza di un pozzo documentato è più significativa di un generico richiamo alla «fertilità».",
+    "documented": [
+      {
+        "label": "Strutture",
+        "text": "Fossati a C, pozzi, silos, recinti e sepolture sono documentati dagli scavi.",
+        "sources": [
+          "corvo"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "La compresenza di strutture di servizio e unità abitative indica organizzazione dello spazio. Le funzioni dei fossati non si esauriscono automaticamente nella difesa.",
+    "impact": "Scavo di fossati e pozzi; aree abitative e di conservazione. Campi e pascoli fanno parte del modello agropastorale, ma non ne ricostruiamo qui i confini.",
+    "limits": "Non disponiamo di una misura locale del disboscamento o di una carta completa dei campi. La fotografia mostra il parco attuale.",
+    "question": "Che cosa ti dice un silo sulle necessità di chi viveva qui?",
+    "answer": "Conservare risorse significa pensare oltre il consumo immediato. Le strutture implicano lavoro e organizzazione; il singolo silo non rivela da solo quantità e specie del raccolto.",
+    "factors": [
+      "acqua",
+      "suoli",
+      "scorte",
+      "spazi"
+    ],
+    "history": [
+      {
+        "label": "Neolitico",
+        "text": "Fasi del villaggio e strutture studiate negli scavi.",
+        "sources": [
+          "corvo"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Dopo il villaggio",
+        "text": "Non prolunghiamo la frequentazione sulla sola base del nome moderno della località.",
+        "sources": [
+          "corvo"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "corvo",
+      "corvo-II"
+    ],
+    "image": "corvo",
+    "coordinates": [
+      41.553032,
+      15.611277
+    ],
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2056141",
+    "coordinateMethod": "Coordinate Wikidata P625 del Parco archeologico Passo di Corvo; controllate con località Arpinova e categoria Commons. Non sono le coordinate del distinto Passo di Corvo II."
+  },
+  {
+    "id": "coppa",
+    "name": "Coppa Nevigata",
+    "place": "Manfredonia · area della foce del Candelaro",
+    "periods": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "mappedPeriods": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "zone": "Costa e lagune",
+    "kind": "Centro fortificato e produzione",
+    "dates": "Fasi neolitiche ed eneolitiche; insediamento del Bronzo; tracce dell’età del Ferro",
+    "summary": "Il luogo che oggi appare nell’entroterra era legato a una laguna. La sua storia combina dinamiche naturali e interventi umani.",
+    "environment": "Un rilievo basso sul margine del bacino lagunare. Accesso all’acqua, risorse umide e rapporti con il mare non significano una costa identica a quella attuale.",
+    "documented": [
+      {
+        "label": "Produzione",
+        "text": "Gusci di murici lavorati e materiali ceramici documentano attività specializzate e relazioni.",
+        "sources": [
+          "scaloria-sabap"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Terreno costruito",
+        "text": "I carotaggi distinguono riporti, livellamenti e superfici d’uso antropiche.",
+        "sources": [
+          "coppa-sedimenti"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Scambi",
+        "text": "Ceramiche italo-micenee e riorganizzazioni dell’abitato sono discusse dagli studiosi.",
+        "sources": [
+          "coppa-scambi"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "La laguna viene interpretata anche come protezione: navigarla richiedeva conoscenza degli accessi. Non conosciamo da queste tracce l’estensione di un eventuale dominio politico.",
+    "impact": "Fortificazioni e consolidamento di settori umidi; sfruttamento di risorse e produzione.",
+    "limits": "Per alcune fasi precedenti al Bronzo la selezione è meno dettagliata. Antropizzazione locale e trasformazione naturale del bacino vanno tenute distinte.",
+    "question": "Perché abitare vicino a un ambiente umido invece di evitarlo?",
+    "answer": "Risorse e accessi possono compensare difficoltà e rischi. Mura e piani d’uso mostrano investimenti per adattare il luogo, non soltanto adattarsi al luogo.",
+    "factors": [
+      "laguna",
+      "mare",
+      "scambi",
+      "difesa",
+      "produzione"
+    ],
+    "history": [
+      {
+        "label": "Neolitico / Rame",
+        "text": "Fasi preistoriche anteriori al grande centro fortificato.",
+        "sources": [
+          "scaloria-sabap"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Bronzo",
+        "text": "Insediamento fortificato, attività specializzate e relazioni transmarine.",
+        "sources": [
+          "coppa-scambi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Ferro",
+        "text": "Fasi antropiche distinte nei carotaggi; non identiche all’abitato del Bronzo.",
+        "sources": [
+          "coppa-sedimenti"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Paesaggio moderno",
+        "text": "Bonifiche recenti: la fotografia odierna non conserva tutta la laguna antica.",
+        "sources": [
+          "coppa-sedimenti"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "coppa-laguna",
+      "coppa-scambi",
+      "coppa-sedimenti",
+      "coppa-mura",
+      "scaloria-sabap"
+    ],
+    "image": "coppa",
+    "coordinates": [
+      41.55722222222222,
+      15.833333333333334
+    ],
+    "coordinateSource": "https://amq.aiqua.it/index.php/amq/article/download/507/446",
+    "coordinateMethod": "Coordinate pubblicate da Caldara, Caroli e Simone (2004): 41°33′26″N, 15°50′00″E; conversione WGS84 indicativa, confronto con il geosito provinciale."
+  },
+  {
+    "id": "saraceno",
+    "name": "Monte Saraceno",
+    "place": "Mattinata · promontorio sul mare",
+    "periods": [
+      4,
+      5,
+      6
+    ],
+    "mappedPeriods": [
+      4,
+      5,
+      6
+    ],
+    "zone": "Gargano",
+    "kind": "Abitato e necropoli",
+    "dates": "Bronzo finale–VI secolo a.C.; maggiore sviluppo IX–inizio VII",
+    "summary": "L’altura viene organizzata in spazi per i vivi e per i morti. La roccia stessa conserva parte del lavoro umano.",
+    "environment": "Promontorio calcareo a sud della baia di Mattinata; l’altura rende leggibili rapporti tra accessibilità e protezione.",
+    "documented": [
+      {
+        "label": "Strutture e fasi",
+        "text": "Tombe nella roccia, tracce dell’abitato, fossato e opere difensive sono descritti da Nava; le fasi non hanno uguale intensità.",
+        "sources": [
+          "nava-cronologia"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Altura e difendibilità sono fattori plausibili. La vista sul mare non dimostra da sola un controllo sistematico delle rotte.",
+    "impact": "Scavo della roccia per tombe e fossato; organizzazione di settori abitativi e funerari.",
+    "limits": "Vegetazione attuale e immagine del sito non ricostruiscono il bosco antico. La descrizione cronologica semplificata di una fotografia Commons non prevale sugli studi archeologici.",
+    "question": "Se il luogo è difficile da raggiungere, è sempre uno svantaggio?",
+    "answer": "Può limitare gli accessi e favorire protezione, ma rende più impegnativi approvvigionamenti e spostamenti. Le difese documentano interventi, non tutti i motivi della scelta.",
+    "factors": [
+      "altura",
+      "difesa",
+      "roccia"
+    ],
+    "history": [
+      {
+        "label": "Bronzo finale",
+        "text": "Avvio delle fasi documentate.",
+        "sources": [
+          "nava-cronologia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "IX–inizi VII secolo a.C.",
+        "text": "Maggiore sviluppo di abitato e necropoli.",
+        "sources": [
+          "nava"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Dopo",
+        "text": "Le attestazioni si riducono; non postuliamo una continuità romana.",
+        "sources": [
+          "nava"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "nava",
+      "nava-cronologia"
+    ],
+    "image": "saraceno",
+    "coordinates": [
+      41.6944305556,
+      16.0507111111
+    ],
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3861983",
+    "coordinateMethod": "P625 del rilievo di Monte Saraceno presso Mattinata; localizzazione orientativa dell’area, non coordinata di una specifica tomba."
+  },
+  {
+    "id": "arpi",
+    "name": "Arpi",
+    "place": "Foggia · area di Arpinova",
+    "periods": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mappedPeriods": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "zone": "Tavoliere",
+    "kind": "Grande centro e territorio",
+    "dates": "Età del Ferro; sviluppo VI–III secolo a.C.; evidenze romane",
+    "summary": "Un grande centro del Tavoliere non è una massa uniforme di edifici. Abitazioni, tombe e spazi liberi entrano nella stessa storia.",
+    "environment": "Piana del Tavoliere; collegamento con risorse agricole e reti dell’interno. Non identifichiamo automaticamente Arpi con Foggia.",
+    "documented": [
+      {
+        "label": "Aggere e sviluppo",
+        "text": "Fossato e terrapieno dal VI secolo; riorganizzazioni e residenze aristocratiche nel IV.",
+        "sources": [
+          "arpi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Fase romana",
+        "text": "Un settore presso Masseria Menga documenta abitato, silos, pozzi e canalizzazioni.",
+        "sources": [
+          "arpi-romana"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Territorio agricolo e collegamenti sono variabili plausibili. La leggenda di Diomede è un racconto antico, non una data di fondazione accertata.",
+    "impact": "Grandi opere di delimitazione, edifici e necropoli; investimenti nell’acqua e nelle scorte in settori romani.",
+    "limits": "La documentazione tardoantica non consente di disegnare una continuità urbana sicura. «Non sappiamo» non significa «nessuno viveva qui».",
+    "question": "Perché costruire un grande perimetro intorno a nuclei e spazi diversi?",
+    "answer": "Può organizzare accessi e appartenenza, oltre alla difesa. Il perimetro non misura da solo popolazione o superficie edificata.",
+    "factors": [
+      "suoli",
+      "collegamenti",
+      "spazi",
+      "difesa"
+    ],
+    "history": [
+      {
+        "label": "Ferro / età arcaica",
+        "text": "Prime occupazioni e definizione dell’insediamento.",
+        "sources": [
+          "arpi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "IV–III secolo a.C.",
+        "text": "Residenze e tombe mostrano trasformazioni e contatti.",
+        "sources": [
+          "arpi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età romana",
+        "text": "Evidenze in specifici settori; scala urbana non ricostruita integralmente.",
+        "sources": [
+          "arpi-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Tarda antichità",
+        "text": "Fonti itinerarie e tracce deboli: fascia urbana non prolungata.",
+        "sources": [
+          "arpi-romana"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "arpi",
+      "arpi-romana"
+    ],
+    "image": "arpi",
+    "coordinates": [
+      41.5229117,
+      15.565102450000001
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/22297",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "herdonia",
+    "name": "Herdonia / Ordona",
+    "place": "Ordona · margine della valle del Carapelle",
+    "periods": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "mappedPeriods": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "zone": "Interno e colline",
+    "kind": "Abitato diffuso e città",
+    "dates": "Età daunia, romana e fasi successive",
+    "summary": "Un abitato diffuso diventa una città con infrastrutture. Le tracce di epoche diverse non raccontano la medesima forma urbana.",
+    "environment": "Rilievi bassi e collegamenti tra pianura e interno; nel periodo romano la rete viaria accresce le funzioni del centro.",
+    "documented": [
+      {
+        "label": "Abitato daunio",
+        "text": "Tombe, fornaci, strutture e vasche intonacate; alcune vasche sono interpretate come legate alla lana.",
+        "sources": [
+          "herdonia-daunia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Infrastrutture romane",
+        "text": "Acquedotto, edifici pubblici e anfiteatro documentano investimenti urbani.",
+        "sources": [
+          "herdonia-romana",
+          "herdonia-acqua"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Un nodo di collegamento favorisce scambi e servizi. La vicinanza di una strada non spiega da sola tutte le trasformazioni della città.",
+    "impact": "Organizzazione di nuclei e sepolture, poi edifici pubblici e reti idriche.",
+    "limits": "L’uso funerario, produttivo e abitativo va distinto; la città non conserva sempre lo stesso impianto nelle fasi successive.",
+    "question": "Perché un acquedotto è anche una trasformazione politica e sociale?",
+    "answer": "Richiede progettazione, lavoro e manutenzione. Porta acqua a funzioni urbane e rende visibile la capacità di coordinare risorse.",
+    "factors": [
+      "collegamenti",
+      "acqua",
+      "produzione"
+    ],
+    "history": [
+      {
+        "label": "IX–VIII secolo a.C. e fasi daunie",
+        "text": "Nuclei e sepolture in un insediamento ampio.",
+        "sources": [
+          "herdonia-daunia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età romana",
+        "text": "Spazi pubblici, infrastrutture e nuovi assetti.",
+        "sources": [
+          "herdonia-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Fasi tarde",
+        "text": "Trasformazioni della città e del rapporto con il territorio; non semplice permanenza dell’impianto precedente.",
+        "sources": [
+          "herdonia-romana"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "herdonia-daunia",
+      "herdonia-romana",
+      "herdonia-acqua"
+    ],
+    "image": "herdonia",
+    "coordinates": [
+      41.308449100000004,
+      15.630047
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/16192",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "ausculum",
+    "name": "Ausculum / Ascoli Satriano",
+    "place": "Ascoli Satriano · Collina del Serpente",
+    "periods": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "mappedPeriods": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "zone": "Interno e colline",
+    "kind": "Insediamento e necropoli",
+    "dates": "Abitato VI–III secolo a.C.; necropoli ellenistica e romana",
+    "summary": "La Collina del Serpente permette di vedere un cambiamento di funzione: non ogni ritorno nello stesso luogo è continuità dell’abitato.",
+    "environment": "Altura nel territorio della valle del Carapelle. Il punto rappresenta il settore archeologico studiato, non tutta l’antica Ausculum.",
+    "documented": [
+      {
+        "label": "Abitato",
+        "text": "Strutture e tombe testimoniano le fasi indigene; sono documentati anche pavimenti di ciottoli.",
+        "sources": [
+          "ausculum"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Cambio d’uso",
+        "text": "Le fasi ellenistiche e romane comprendono uso funerario dell’altura.",
+        "sources": [
+          "ausculum-necropoli"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Altura, collegamenti e vicinanza ai territori della valle sono ragioni plausibili; non ricostruiamo i confini del territorio controllato.",
+    "impact": "Costruzioni, pavimentazioni e organizzazione di aree funerarie.",
+    "limits": "Il dato della singola collina non può descrivere l’intera città. La fascia romana segnala anche necropoli, non la sopravvivenza della stessa casa.",
+    "question": "Se troviamo una tomba sopra un’area abitata più antica, che cosa è cambiato?",
+    "answer": "Il luogo resta usato, ma può aver cambiato funzione. La continuità geografica va distinta da quella abitativa e sociale.",
+    "factors": [
+      "altura",
+      "collegamenti",
+      "suoli"
+    ],
+    "history": [
+      {
+        "label": "VI–V secolo a.C.",
+        "text": "Abitato e tombe; conoscenza parziale delle strutture.",
+        "sources": [
+          "ausculum"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "IV–III secolo a.C.",
+        "text": "Edifici, pratiche funerarie e riorganizzazioni.",
+        "sources": [
+          "ausculum"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età ellenistica e romana",
+        "text": "Necropoli: diversa destinazione di parti dell’altura.",
+        "sources": [
+          "ausculum-necropoli"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "ausculum",
+      "ausculum-necropoli"
+    ],
+    "image": null,
+    "coordinates": [
+      41.19810275,
+      15.5635124
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/17509",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "salapia-vetus",
+    "name": "Salapia vetus",
+    "place": "Cerignola · Lupara–Giardino / Torretta dei Monaci",
+    "periods": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "mappedPeriods": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "zone": "Costa e lagune",
+    "kind": "Abitato lagunare",
+    "dates": "Età del Ferro–tarda Repubblica; fasi funerarie discontinue",
+    "summary": "La città precedente a Salapia romana occupava un altro luogo. Le lagune offrivano risorse e problemi, e la scelta del sito poteva essere riconsiderata.",
+    "environment": "Sistema lagunare antico della fascia costiera. Le attuali bonifiche rendono difficile leggere direttamente quel paesaggio.",
+    "documented": [
+      {
+        "label": "Abitato e necropoli",
+        "text": "Le indagini a Lupara–Giardino hanno individuato fasi daunie e una necropoli, con interruzioni nell’uso.",
+        "sources": [
+          "salapia-daunia"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Accesso alle risorse umide e alle comunicazioni è una spiegazione plausibile. L’ambiente non va ridotto a una palude sempre uguale e inevitabilmente malsana.",
+    "impact": "Occupazione di lembi emersi, spazi abitativi e funerari; trasformazioni prima della rifondazione.",
+    "limits": "Il trasferimento non prova una scomparsa istantanea di tutte le persone o attività. La cronologia dei singoli settori deve essere distinta.",
+    "question": "Quando un luogo ricco di risorse può diventare problematico?",
+    "answer": "I vantaggi dipendono da accessi e condizioni ambientali. Il mutamento dell’acqua può rendere necessario investire o spostare l’insediamento.",
+    "factors": [
+      "laguna",
+      "risorse",
+      "collegamenti"
+    ],
+    "history": [
+      {
+        "label": "Età daunia",
+        "text": "Abitato e necropoli nel sistema lagunare.",
+        "sources": [
+          "salapia-daunia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Tarda Repubblica",
+        "text": "Rifondazione in un luogo diverso, presso Monte di Salpi.",
+        "sources": [
+          "salapia-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Dopo il trasferimento",
+        "text": "Non uniamo i due luoghi con una falsa fascia di occupazione sullo stesso punto.",
+        "sources": [
+          "salapia-romana"
+        ],
+        "status": "limite"
+      }
+    ],
+    "sources": [
+      "salapia-daunia",
+      "salapia-romana",
+      "salapia-studio"
+    ],
+    "image": null,
+    "coordinates": null,
+    "coordinateSource": null,
+    "coordinateMethod": "Localizzazione descrittiva: non disegniamo un punto senza georeferenziazione controllata."
+  },
+  {
+    "id": "salapia",
+    "name": "Salapia romana",
+    "place": "Trinitapoli · Monte di Salpi; attuale provincia BAT",
+    "periods": [
+      8,
+      9,
+      10
+    ],
+    "mappedPeriods": [
+      8,
+      9,
+      10
+    ],
+    "zone": "Costa e lagune",
+    "kind": "Città rifondata e artigianato",
+    "dates": "Fine I secolo a.C.–tarda antichità; seguito medievale",
+    "summary": "Una nuova fondazione risponde anche al rapporto fra città, acqua e salute. La storia di Salapia ha più sedi, non un solo punto immobile.",
+    "environment": "Terrazzamenti presso il bacino di Salpi, oggi in parte occupato dalle saline moderne. Estensione geografica oltre l’attuale provincia di Foggia.",
+    "documented": [
+      {
+        "label": "Piano urbano",
+        "text": "Prospezioni geomagnetiche e scavi mostrano un impianto organizzato con assi stradali.",
+        "sources": [
+          "salapia-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Artigianato e fasi tarde",
+        "text": "Domus e conceria; trasformazioni e contrazione nelle fasi successive.",
+        "sources": [
+          "salapia-daunia",
+          "salapia-tarda"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Una posizione più salubre e l’accesso al mare sono ragioni trasmesse dalle fonti antiche e discusse alla luce del paesaggio; non ogni anomalia geofisica ha identificazione certa.",
+    "impact": "Pianificazione urbana, strutture artigianali e gestione dell’acqua.",
+    "limits": "Le saline attuali non sono la laguna romana. Questa carta non ne disegna un perimetro antico non verificato.",
+    "question": "Una città può risolvere un problema ambientale solo trasferendosi?",
+    "answer": "Il trasferimento è una possibilità, insieme a interventi su accessi e acque. Il caso documenta decisioni collettive e infrastrutture, non un ambiente immobile.",
+    "factors": [
+      "laguna",
+      "mare",
+      "acqua",
+      "produzione"
+    ],
+    "history": [
+      {
+        "label": "Fine I secolo a.C.",
+        "text": "Rifondazione presso Monte di Salpi.",
+        "sources": [
+          "salapia-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età imperiale",
+        "text": "Abitazioni e attività artigianali.",
+        "sources": [
+          "salapia-daunia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Tarda antichità / Medioevo",
+        "text": "Contrazione e cambiamento della distribuzione dell’abitato; la fase medievale è un raccordo.",
+        "sources": [
+          "salapia-tarda"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "salapia-romana",
+      "salapia-daunia",
+      "salapia-tarda",
+      "salapia-studio"
+    ],
+    "image": null,
+    "coordinates": [
+      41.39987395,
+      15.995744949999999
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/26945",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "siponto",
+    "name": "Siponto",
+    "place": "Manfredonia · parco archeologico",
+    "periods": [
+      8,
+      9,
+      10
+    ],
+    "mappedPeriods": [
+      8,
+      9,
+      10
+    ],
+    "zone": "Costa e lagune",
+    "kind": "Colonia, porto e sede episcopale",
+    "dates": "Colonia romana dal 194 a.C.; basilica IV–V secolo d.C.",
+    "summary": "La posizione costiera conta insieme ai collegamenti con l’interno. In tarda antichità le istituzioni cristiane riorganizzano alcuni spazi.",
+    "environment": "Costa ai piedi del Gargano. L’antecedente daunio di Cupola–Beccarini è in un’area differente: non lo collochiamo nel punto della colonia romana.",
+    "documented": [
+      {
+        "label": "Colonia e porto",
+        "text": "Fondazione romana del 194 a.C. e ruolo portuale documentati nella scheda MiC.",
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Basilica",
+        "text": "Strutture e mosaici paleocristiani; la rete metallica di Tresoldi è un’opera contemporanea del 2016.",
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Mare e collegamenti sono fattori importanti. Le ragioni della diversa ubicazione rispetto al centro daunio restano discusse.",
+    "impact": "Cinta urbana, edifici e nuove funzioni religiose; investimenti nelle reti di comunicazione.",
+    "limits": "Non si dimostra una continuità topografica fra Coppa Nevigata, Cupola–Beccarini e Siponto: sono luoghi differenti.",
+    "question": "Un porto serve soprattutto a chi abita sulla costa o anche a chi vive nell’interno?",
+    "answer": "Un porto mette in relazione territori: merci e persone arrivano anche dall’interno. Per ricostruire queste reti servono reperti e collegamenti documentati.",
+    "factors": [
+      "mare",
+      "collegamenti",
+      "reti"
+    ],
+    "history": [
+      {
+        "label": "Antecedente daunio, altrove",
+        "text": "Cupola–Beccarini: luogo distinto dalla colonia romana.",
+        "sources": [
+          "siponto-citta"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "194 a.C. / età romana",
+        "text": "Colonia e centro portuale.",
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "IV–V secolo",
+        "text": "Basilica e funzioni episcopali.",
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Medioevo, raccordo",
+        "text": "Le trasformazioni e l’abbandono medievale non devono essere anticipati all’età romana.",
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "siponto",
+      "siponto-citta",
+      "siponto-mura"
+    ],
+    "image": "siponto",
+    "coordinates": [
+      41.60885715,
+      15.889316149999999
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/27953",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "lucera",
+    "name": "Lucera / Luceria",
+    "place": "Lucera · margine nord-occidentale del Tavoliere",
+    "periods": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "mappedPeriods": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "zone": "Interno e colline",
+    "kind": "Centro daunio e colonia",
+    "dates": "Fasi daunie; colonia latina dal 314 a.C.; fasi romane",
+    "summary": "Le relazioni con Sanniti e Romani cambiano lo status del centro. I monumenti permettono di osservare anche le scelte dei gruppi dirigenti locali.",
+    "environment": "Alture tra Tavoliere e Subappennino; il marker è un riferimento cartografico dell’area urbana, non il limite certo della città antica.",
+    "documented": [
+      {
+        "label": "Colonia",
+        "text": "La scheda regionale data la colonia latina al 314 a.C. e descrive trasformazioni dell’impianto.",
+        "sources": [
+          "lucera"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Anfiteatro",
+        "text": "L’epigrafe collega l’edificio augusteo a Marco Vecilio Campo e alla dedica ad Augusto.",
+        "sources": [
+          "lucera-anfiteatro"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Posizione e collegamenti favoriscono il valore strategico. Il monumento dimostra un investimento e una relazione politica, non il benessere di tutta la popolazione.",
+    "impact": "Cambiamenti urbanistici, quartieri e infrastrutture monumentali.",
+    "limits": "Non usiamo etimologie incerte del nome come prova di un bosco antico. Il centro moderno ha trasformato e coperto molte strutture.",
+    "question": "Perché un notabile paga un edificio pubblico e lo dedica all’imperatore?",
+    "answer": "L’iscrizione rende visibile il rapporto fra iniziativa locale, prestigio e potere romano. I motivi personali non si ricostruiscono soltanto dalla monumentalità.",
+    "factors": [
+      "altura",
+      "collegamenti",
+      "potere"
+    ],
+    "history": [
+      {
+        "label": "Fase daunia",
+        "text": "Insediamento sulle alture, prima della colonia.",
+        "sources": [
+          "lucera"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "314 a.C.",
+        "text": "Colonia latina: cambio politico e territoriale.",
+        "sources": [
+          "lucera"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età augustea e imperiale",
+        "text": "Anfiteatro e trasformazioni urbane.",
+        "sources": [
+          "lucera-anfiteatro"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Tarda antichità",
+        "text": "Nuovi ruoli amministrativi e trasformazioni; non identico assetto urbano.",
+        "sources": [
+          "lucera"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "lucera",
+      "lucera-anfiteatro"
+    ],
+    "image": null,
+    "coordinates": [
+      41.508483850000005,
+      15.3328703
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/22261",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  },
+  {
+    "id": "faragola",
+    "name": "Faragola",
+    "place": "Ascoli Satriano · valle del Carapelle",
+    "periods": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "mappedPeriods": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "zone": "Interno e colline",
+    "kind": "Insediamento rurale e villa",
+    "dates": "Fasi daunie e romane; villa III–VI secolo d.C.; seguito VII–VIII",
+    "summary": "Una residenza aristocratica è anche un nodo del territorio. Lusso e infrastrutture raccontano la capacità di concentrare risorse.",
+    "environment": "Pianoro presso il Carapelle tra Ausculum e Herdonia, in rapporto con la rete viaria dell’interno.",
+    "documented": [
+      {
+        "label": "Residenza e servizi",
+        "text": "Cenatio, terme, magazzini e cisterna; ristrutturazioni nel V secolo.",
+        "sources": [
+          "faragola"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Successione",
+        "text": "Villaggio daunio, fattoria/villa romana e abitato altomedievale sono fasi diverse.",
+        "sources": [
+          "faragola-fasi"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "interpretation": "Il complesso viene interpretato come centro di una grande proprietà. L’estensione della tenuta e l’identità del proprietario non sono accertate.",
+    "impact": "Costruzioni, gestione dell’acqua, impianti termali e trasformazione degli spazi rurali.",
+    "limits": "Non attribuiamo una coltura specifica a ogni appezzamento. La foto aerea del 2006 precede l’incendio del 2017.",
+    "question": "Che cosa devono fornire le campagne per sostenere terme e sale decorate?",
+    "answer": "Lavoro, prodotti e risorse possono sostenere investimenti. La ricchezza del proprietario non misura le condizioni di chi lavorava nelle campagne.",
+    "factors": [
+      "acqua",
+      "suoli",
+      "collegamenti",
+      "proprietà"
+    ],
+    "history": [
+      {
+        "label": "V–III secolo a.C.",
+        "text": "Insediamento daunio.",
+        "sources": [
+          "faragola-fasi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "Età romana",
+        "text": "Fattoria/villa precedente alla grande residenza tardoantica.",
+        "sources": [
+          "faragola-fasi"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "III–VI secolo",
+        "text": "Terme e residenza; monumentalizzazione nel V.",
+        "sources": [
+          "faragola"
+        ],
+        "status": "documentato"
+      },
+      {
+        "label": "VII–VIII secolo, raccordo",
+        "text": "Abitato altomedievale: cambiamento di funzione e organizzazione.",
+        "sources": [
+          "faragola-fasi"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "sources": [
+      "faragola",
+      "faragola-fasi",
+      "faragola-sabap"
+    ],
+    "image": "faragola",
+    "coordinates": [
+      41.2277723,
+      15.5601778
+    ],
+    "coordinateSource": "https://www.cartapulia.it/esplora-la-carta/-/rcp/ricercaCartapulia_INSTANCE_1yi8w0oVRO9u/dettaglio/17588",
+    "coordinateMethod": "Centro del perimetro pubblicato da CartApulia (WGS84), posizione indicativa del sito; non ingresso per le visite."
+  }
+]
