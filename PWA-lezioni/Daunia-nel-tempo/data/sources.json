@@ -271,5 +271,33 @@
     "kind": "Dati geografici",
     "note": "Dominio pubblico. Costa e Ofanto moderni generalizzati: non una ricostruzione del paesaggio antico.",
     "accessed": "2026-10-01"
+  },
+  "paglicci-alimenti": {
+    "title": "Mariotti Lippi et al. (2015) · Multistep food plant processing at Grotta Paglicci",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26351674/",
+    "kind": "Studio scientifico",
+    "note": "Studio originale PNAS, doi:10.1073/pnas.1505213112. Strumento di macinazione e residui di amido, anche Avena, circa 32.600 cal BP. Non prova agricoltura o una ricetta completa.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-porpora": {
+    "title": "Minniti e Recchia (2018) · New evidence on purple-dye production at Coppa Nevigata",
+    "url": "https://research.uniroma1.it/pubblicazioni/34799",
+    "kind": "Studio scientifico",
+    "note": "Lavorazione dei murici, interpretazione produttiva e variazioni nel corso del Bronzo. Non ricostruisce ogni attrezzo o impianto.",
+    "accessed": "2026-10-01"
+  },
+  "coppa-porpora-antica": {
+    "title": "Cazzella, Minniti, Moscoloni, Recchia (2005) · Porpora a Coppa Nevigata",
+    "url": "https://www2.muse.it/pubblicazioni/7/40-1/177-182_Cazzella-Minniti-Moscoloni-Recchia.pdf",
+    "kind": "Studio scientifico",
+    "note": "Preistoria Alpina, supplemento 40. Sito lagunare e murici lavorati; pubblicazione del Museo Tridentino di Scienze Naturali.",
+    "accessed": "2026-10-01"
+  },
+  "corvo-ceramica": {
+    "title": "MiC · Frammento di orcio, cultura di Passo di Corvo",
+    "url": "https://dati.cultura.gov.it/lodview-arco/resource/ArchaeologicalProperty/1600019643",
+    "kind": "Catalogo istituzionale",
+    "note": "Reperto catalogato: non una copia dei recipienti generati nella scena.",
+    "accessed": "2026-10-01"
   }
 }

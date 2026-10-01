@@ -1,0 +1,1290 @@
+{
+  "paglicci": {
+    "title": "Vivere fra la grotta e il territorio",
+    "scene": "Una giornata possibile: il ritmo della pietra colpita, il fuoco da mantenere, materiali da raccogliere e trasportare. La scena rende visibile un lavoro; non ritrae persone conosciute né un preciso livello di scavo.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Un ambiente da conoscere, ogni volta",
+        "paragraphs": [
+          "La parete calcarea offre un riparo, ma il cibo, la selce e il combustibile sono distribuiti fuori dalla cavità. Scegliere Paglicci significa quindi organizzare spostamenti: conoscere percorsi, riconoscere risorse e decidere quando fermarsi. Il riparo è un punto dentro una geografia più ampia, non tutto il mondo di chi lo frequenta.",
+          "La lunga sequenza comprende condizioni differenti. Faune e piccoli mammiferi permettono di discutere ambienti aperti o più temperati per specifici livelli. Un paesaggio disegnato una sola volta non potrebbe rappresentarli tutti. Nella ricostruzione visiva il terreno e la vegetazione restano generici; la foto attuale permette invece di osservare la natura calcarea del luogo."
+        ],
+        "sources": [
+          "paglicci-fauna",
+          "paglicci-strati"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Mangiare, scaldarsi, preparare",
+        "paragraphs": [
+          "I focolari e gli avanzi di pasto sono tracce di attività concrete: mantenere il fuoco richiede combustibile; preparare una preda comporta operazioni e strumenti; usare di nuovo lo stesso spazio produce accumuli che un’altra occupazione può spostare. Un pavimento archeologico nasce da gesti ripetuti e da ciò che accade dopo.",
+          "La sussistenza non si riduce alla caccia. Su uno strumento di macinazione di un livello datato a circa 32.600 anni calibrati BP sono stati identificati amidi riferibili anche ad Avena. Lo studio discute raccolta e lavorazione di piante: siamo molto prima dell’agricoltura. Non dimostra un campo coltivato né una ricetta completa, ma apre una finestra sulle competenze alimentari."
+        ],
+        "sources": [
+          "paglicci-sepolture",
+          "paglicci-alimenti"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "La selce richiede progetto e apprendimento",
+        "paragraphs": [
+          "Un bordo tagliente non è il risultato di colpi casuali. La lavorazione richiede scegliere la materia prima, preparare il nucleo e controllare la frattura. Strumenti e scarti permettono di ricostruire parti di questa catena operativa. Nella scena si vede un gesto possibile di scheggiatura; il manufatto disegnato non sostituisce la fotografia o l’analisi di un reperto.",
+          "Pietra, osso e altri materiali rispondono a esigenze differenti. Inoltre, un oggetto può essere riparato, trasportato e riutilizzato: la sua vita non coincide necessariamente con il luogo dove è stato abbandonato. La macinazione mostra che anche un ciottolo relativamente semplice può partecipare a una preparazione complessa. Materiale e abilità vanno letti insieme."
+        ],
+        "sources": [
+          "paglicci-sepolture",
+          "paglicci-alimenti"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Un luogo di relazioni e memoria",
+        "paragraphs": [
+          "Sepolture, denti di cervo perforati, ocra e manifestazioni figurative ampliano il racconto oltre la sopravvivenza. Documentano attenzione ai corpi, agli oggetti e agli spazi. Cavalli e impronte di mani dipinti, insieme all’arte su oggetti mobili, appartengono a contesti che devono essere distinti e datati.",
+          "Da queste tracce non ricaviamo i nomi, le parole o le regole della comunità. Possiamo però ragionare su trasmissione delle conoscenze e significato attribuito ai luoghi. Per questo la scena non assegna automaticamente ogni mestiere a un sesso o ogni ruolo a un’età: una scelta illustrativa non deve diventare una falsa prova sociale."
+        ],
+        "sources": [
+          "paglicci-sepolture"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "time",
+        "title": "Ritorni, assenze e trasformazioni",
+        "paragraphs": [
+          "L’intervento umano modifica aree circoscritte: superfici di combustione, distribuzione degli scarti, zone di attività e deposizioni. Nel frattempo sedimenti, animali e processi naturali trasformano anch’essi la cavità. Alcuni livelli registrano frequentazioni di carnivori e interruzioni.",
+          "Seguire Paglicci significa osservare questa successione, non immaginare la stessa famiglia dentro la stessa grotta per millenni. La domanda decisiva è quali attività appartengano allo stesso episodio. Solo dopo questa distinzione possiamo confrontare modi di vivere e condizioni ambientali."
+        ],
+        "sources": [
+          "paglicci-strati",
+          "paglicci-sepolture"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Nucleo e schegge di selce",
+        "material": "Pietra scheggiata",
+        "use": "Produrre bordi adatti a operazioni di taglio e altre lavorazioni.",
+        "evidence": "Industrie litiche documentate; il gesto nella scena è illustrativo.",
+        "sources": [
+          "paglicci-sepolture"
+        ]
+      },
+      {
+        "name": "Strumento di macinazione",
+        "material": "Ciottolo e residui microscopici",
+        "use": "Lavorare risorse vegetali raccolte.",
+        "evidence": "Analisi degli amidi: circa 32.600 cal BP, senza agricoltura dimostrata.",
+        "sources": [
+          "paglicci-alimenti"
+        ]
+      },
+      {
+        "name": "Denti perforati e ocra",
+        "material": "Resti animali e pigmento minerale",
+        "use": "Ornamento e pratiche funerarie.",
+        "evidence": "Elementi di sepolture specifiche; non un abbigliamento uguale per tutti.",
+        "sources": [
+          "paglicci-sepolture"
+        ]
+      }
+    ],
+    "compare": "Confronta Paglicci e Passo di Corvo: entrambi richiedono conoscenze complesse, ma differiscono nel modo di investire nello spazio e gestire risorse e scorte."
+  },
+  "scaloria": {
+    "title": "Una grotta con più vite",
+    "scene": "Una scena neolitica possibile: recipienti e gocce d’acqua rendono percepibile il rapporto fra un ambiente sotterraneo e gesti intenzionali. La scena non ricostruisce il rituale, che non conosciamo nei suoi dettagli.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Entrare in un ambiente sotterraneo",
+        "paragraphs": [
+          "All’estremità del Tavoliere, il sistema calcareo offre cavità con condizioni molto diverse da quelle della superficie. La luce diminuisce, l’accesso impone movimenti e il gocciolamento concentra l’acqua in punti particolari. Queste condizioni possono contribuire al significato di un luogo, senza determinare da sole come una comunità lo usa.",
+          "A Scaloria bisogna distinguere settori e momenti. Il deposito non è una singola stanza abitata sempre allo stesso modo. Le relazioni tra superfici, recipienti e resti sono decisive: osservare soltanto l’aspetto suggestivo della grotta rischierebbe di trasformare un problema di ricerca in un racconto già deciso."
+        ],
+        "sources": [
+          "scaloria",
+          "geositi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Dal primo Olocene al Neolitico",
+        "paragraphs": [
+          "Gli scavi hanno conservato tracce di frequentazioni molto antiche e di usi neolitici. La revisione delle date ha mostrato che alcune unità chiamate in passato mesolitiche includono episodi del Paleolitico finale. È una ragione per leggere con attenzione il termine «abitanti»: non tutti i resti appartengono alle stesse persone o allo stesso modo di vivere.",
+          "Per il Neolitico, ceramiche, resti animali e umani mostrano un luogo plurifunzionale. Le comunità agropastorali potevano utilizzare una grotta anche senza farne il proprio villaggio. Trasportare un recipiente dall’esterno, sceglierne la posizione e ritornare sono gesti che collegano la cavità alla vita sulla superficie."
+        ],
+        "sources": [
+          "scaloria"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "Recipienti, acqua e gesti",
+        "paragraphs": [
+          "La documentazione della camera inferiore include vasi in relazione con concrezioni e punti di raccolta dell’acqua. Le interpretazioni legate a pratiche rituali derivano da questa organizzazione e dal contesto; non dalla sola presenza dell’acqua. Il recipiente è quindi utile sia come oggetto tecnico sia come indizio di una scelta.",
+          "Fabbricare, trasportare e posare un vaso implica più fasi di lavoro. La ceramica permette di riconoscere tecniche e cronologie; l’analisi dei contenuti o dei residui, quando disponibile, può aggiungere informazioni. Il vaso generato nell’immagine rende comprensibile un uso possibile, ma non riproduce un esemplare catalogato."
+        ],
+        "sources": [
+          "scaloria",
+          "scaloria-archivio"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "I morti e la comunità",
+        "paragraphs": [
+          "I resti umani hanno un ruolo importante nella ricerca su Scaloria. Posizione, associazioni e modificazioni delle ossa contribuiscono a discutere pratiche funerarie e trattamento dei corpi. Il quadro è più complesso di una semplice fila di tombe conservate integralmente.",
+          "Una ricostruzione responsabile non deve inventare sacerdoti, formule religiose o una cerimonia completa. Per questo la scena sceglie un gesto circoscritto legato ai recipienti. Il testo può porre domande sui rapporti fra vivi, morti e acqua, ma distingue le domande dalle risposte effettivamente sostenute."
+        ],
+        "sources": [
+          "scaloria"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Quando una classificazione cambia",
+        "paragraphs": [
+          "La storia della ricerca fa parte della storia del luogo. Nuove analisi e radiocarbonio possono correggere attribuzioni precedenti. Un campione datato è sempre un materiale preciso: la data non si trasferisce automaticamente a ogni oggetto vicino.",
+          "Nel seguire Scaloria, il tratto Paleolitico finale/Mesolitico ha quindi un grado di risoluzione diverso da quello neolitico. Non riempiamo le lacune con una casa sotterranea continua. L’antropizzazione si osserva soprattutto nell’uso e nell’organizzazione di spazi naturali, oltre che negli oggetti e nelle deposizioni."
+        ],
+        "sources": [
+          "scaloria",
+          "scaloria-archivio"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Vaso ceramico",
+        "material": "Argilla cotta",
+        "use": "Contenere e trasportare; la posizione può avere valore interpretativo.",
+        "evidence": "Recipienti nella documentazione della cavità; il contenitore raffigurato è ipotetico.",
+        "sources": [
+          "scaloria"
+        ]
+      },
+      {
+        "name": "Strumenti litici",
+        "material": "Pietra lavorata",
+        "use": "Attività tecniche da attribuire ai singoli contesti.",
+        "evidence": "Tipologie e associazioni discusse nella revisione degli scavi.",
+        "sources": [
+          "scaloria"
+        ]
+      },
+      {
+        "name": "Campione radiocarbonico",
+        "material": "Materiale organico",
+        "use": "Misurare una data e valutarne la relazione con lo strato.",
+        "evidence": "Un carbone non data automaticamente una sepoltura vicina.",
+        "sources": [
+          "scaloria"
+        ]
+      }
+    ],
+    "compare": "Confronta Scaloria e Passo di Corvo nella fase neolitica: una comunità può organizzare villaggi e frequentare luoghi naturali con funzioni differenti."
+  },
+  "corvo": {
+    "title": "Restare significa organizzare il futuro",
+    "scene": "Una giornata possibile nel villaggio: macinare, portare acqua, curare risorse e riparare strutture. La scena collega attività che possono coesistere in un’economia agropastorale; non ricostruisce la pianta completa di Passo di Corvo.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "La pianura diventa uno spazio gestito",
+        "paragraphs": [
+          "Il Tavoliere offre superfici ampie, ma abitare una pianura richiede affrontare problemi concreti: acqua disponibile nei momenti necessari, suolo da lavorare, distanze fra abitazione e risorse, luoghi per animali e scorte. La fertilità non è una spiegazione sufficiente se non si considera il lavoro che rende una risorsa utilizzabile.",
+          "Pozzi, silos, recinti e fossati rendono visibile questo investimento. Scavare una struttura significa scegliere dove collocarla, impiegare energie e mantenerla. Il terreno intorno al villaggio non è soltanto uno sfondo: diventa parte del funzionamento della comunità."
+        ],
+        "sources": [
+          "corvo"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Una giornata e il ritmo delle stagioni",
+        "paragraphs": [
+          "La vita agropastorale mette in relazione attività quotidiane e tempi lunghi. Il raccolto non arriva ogni giorno; le risorse devono essere conservate. Gli animali richiedono attenzione anche quando il lavoro sui campi aumenta. Preparare alimenti, curare recipienti e mantenere spazi abitativi fanno parte dello stesso sistema.",
+          "La scena mostra operazioni plausibili per rendere comprensibile questa organizzazione. Non assegna un mestiere permanente a ogni figura né un calendario preciso al villaggio. Il dato locale più forte sono le strutture che consentono di discutere conservazione, accesso all’acqua e suddivisione degli spazi."
+        ],
+        "sources": [
+          "corvo"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "tools",
+        "title": "Oggetti che collegano lavori diversi",
+        "paragraphs": [
+          "Un contenitore permette di spostare e conservare; un utensile da taglio rende utilizzabile una materia prima; una macina trasforma una risorsa alimentare. Il loro valore dipende dalla catena di attività in cui entrano. Per questo l’immagine presenta pochi oggetti leggibili, invece di un catalogo di attrezzi genericamente «primitivi».",
+          "La ceramica riferita alla cultura di Passo di Corvo è documentata anche nel catalogo nazionale. La forma, la lavorazione e la decorazione di un frammento contribuiscono a collocarlo nel tempo. La presenza di recipienti nella scena è coerente con il contesto, ma nessuno di essi viene presentato come copia fedele di quel frammento."
+        ],
+        "sources": [
+          "corvo",
+          "corvo-ceramica"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Cooperare senza inventare un governo",
+        "paragraphs": [
+          "Le strutture richiedono decisioni e lavoro: chi scava, chi usa un pozzo, chi mantiene una delimitazione? Queste sono domande storiche legittime. Non abbiamo però un documento che descriva le regole della comunità o permetta di riconoscere un capo nella fotografia ipotetica.",
+          "Le sepolture aggiungono una relazione fra spazio dei vivi e memoria dei morti. L’organizzazione del villaggio può essere studiata attraverso distribuzione e successione delle evidenze. Una ricostruzione della socialità deve partire da queste relazioni e non dal presupposto che tutti i villaggi neolitici fossero identici."
+        ],
+        "sources": [
+          "corvo"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "La discontinuità è nel modo di investire",
+        "paragraphs": [
+          "Il cambiamento più importante è la capacità di rendere durevole l’organizzazione di un luogo. Fossati, pozzi e spazi per le scorte sopravvivono ai gesti che li hanno prodotti. Non per questo la mobilità scompare: risorse, relazioni e altri luoghi continuano a contare.",
+          "È corretto discutere apertura di spazi agricoli e pascoli come processo agropastorale; non è corretto inventare per Passo di Corvo una quantità di bosco abbattuto o i confini di ogni campo. La foto dello scavo e l’immagine ipotetica hanno compiti diversi: la prima documenta una traccia, la seconda aiuta a capire a quale lavoro quella traccia possa rimandare."
+        ],
+        "sources": [
+          "corvo",
+          "paleo-york"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Fossato a C",
+        "material": "Terreno scavato",
+        "use": "Organizzare e delimitare settori del villaggio.",
+        "evidence": "Struttura attestata; non ogni fossato è automaticamente una difesa militare.",
+        "sources": [
+          "corvo"
+        ]
+      },
+      {
+        "name": "Pozzo e silo",
+        "material": "Strutture nel terreno",
+        "use": "Accedere all’acqua e gestire risorse conservate.",
+        "evidence": "Evidenze della scheda MiC; forme e collocazione nella scena sono illustrative.",
+        "sources": [
+          "corvo"
+        ]
+      },
+      {
+        "name": "Recipiente e macina",
+        "material": "Ceramica e pietra",
+        "use": "Trasporto, conservazione e preparazione degli alimenti.",
+        "evidence": "Ceramica documentata; il gesto di macinazione è una proposta illustrativa dell’economia neolitica.",
+        "sources": [
+          "corvo",
+          "corvo-ceramica"
+        ]
+      }
+    ],
+    "compare": "Quale traccia permetterebbe di distinguere uno spazio di conservazione da uno spazio funerario? Cerca il contesto, non soltanto la forma del taglio nel terreno."
+  },
+  "coppa": {
+    "title": "La laguna diventa lavoro, difesa e scambio",
+    "scene": "Una giornata possibile nel Bronzo medio: gusci da lavorare, recipienti da preparare, un margine umido da gestire. La scena concentra attività documentate o interpretate, senza pretendere di riprodurre l’officina completa.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Un paesaggio diverso da quello attuale",
+        "paragraphs": [
+          "La posizione oggi nell’entroterra può ingannare. Il centro del Bronzo si affacciava su un bacino lagunare collegato al mare. Acqua bassa, lembi emersi e accessi potevano offrire risorse e collegamenti, ma richiedevano anche adattamenti a terreno umido e variazioni del bacino.",
+          "La laguna cambia attraverso processi naturali; gli abitanti intervengono su parti del luogo. I carotaggi permettono di riconoscere riporti e livellamenti. Non basta vedere un sedimento diverso per attribuirlo all’uomo: occorrono caratteri, associazioni e cronologia che distinguano un intervento da una trasformazione naturale."
+        ],
+        "sources": [
+          "coppa-laguna",
+          "coppa-sedimenti"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Dal mollusco al valore della produzione",
+        "paragraphs": [
+          "Le grandi quantità di murici lavorati sono discusse come evidenza della produzione di porpora. Questa attività rende il mare una risorsa tecnica: bisogna procurarsi materiale, lavorarlo e inserire il prodotto in relazioni di uso e scambio. L’organizzazione del lavoro conta quanto la disponibilità del mollusco.",
+          "Gli studi mostrano variazioni nell’intensità della produzione durante il Bronzo, con particolare sviluppo nelle fasi medie. Nell’immagine non compare un impianto industriale inventato: la lavorazione dei gusci è un gesto esplicativo. Non conosciamo tutti i dettagli dei recipienti, dei tempi e della distribuzione dei compiti dell’episodio raffigurato."
+        ],
+        "sources": [
+          "coppa-porpora",
+          "coppa-porpora-antica"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "Mura, recipienti e competenze",
+        "paragraphs": [
+          "Fortificare un luogo e svolgervi attività specializzate implica organizzare materiali, percorsi e lavoro. Le difese non sono isolate dall’economia dell’insediamento. Proteggere accessi e spazi può incidere sulla collocazione di attività e risorse, ma non dimostra automaticamente il controllo politico di tutta la costa.",
+          "Le ceramiche di tradizione egeo-micenea e le produzioni italo-micenee aprono il tema dei contatti e del trasferimento di tecniche. Stile, composizione e contesto aiutano a distinguere circolazione di oggetti e produzione locale. Una forma riconoscibile non permette da sola di assegnare una provenienza a ogni artigiano."
+        ],
+        "sources": [
+          "coppa-mura",
+          "coppa-scambi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Un centro con relazioni oltre il vicinato",
+        "paragraphs": [
+          "Chi lavora una risorsa locale può dipendere da conoscenze e richieste che circolano su distanze maggiori. Coppa Nevigata permette quindi di collegare un gesto minuto, come rompere un guscio, a reti di produzione e scambio. Il valore sociale del prodotto non è visibile nel solo materiale grezzo.",
+          "Difese e riorganizzazioni dell’abitato pongono anche domande su cooperazione e differenze sociali. La scena non identifica una corte, una classe dominante precisa o un incontro diplomatico. Mostra il lavoro che rende possibili quelle relazioni e lascia al testo la distinzione fra indizi e interpretazioni."
+        ],
+        "sources": [
+          "coppa-scambi",
+          "coppa-laguna"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Il luogo cambia anche quando il nome resta",
+        "paragraphs": [
+          "Le frequentazioni neolitiche ed eneolitiche precedono il grande insediamento del Bronzo. Le tracce del Ferro non autorizzano a conservare identiche mura, attività e organizzazione. Per leggere la successione occorre attribuire ciascuna struttura e ciascun campione alla propria fase.",
+          "Le bonifiche moderne hanno cambiato profondamente la leggibilità del paesaggio umido. La pianta e le foto aeree degli scavi mostrano ciò che è stato indagato; la ricostruzione ipotetica rende percepibile un rapporto fra acqua, produzione e difesa. Nessuna delle due immagini fornisce, da sola, una fotografia completa della laguna antica."
+        ],
+        "sources": [
+          "coppa-sedimenti",
+          "coppa-scambi"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Murice e gusci lavorati",
+        "material": "Molluschi marini",
+        "use": "Materia prima per una produzione specializzata di colorante.",
+        "evidence": "Accumuli e modalità di rottura studiati; la sequenza della scena è illustrativa.",
+        "sources": [
+          "coppa-porpora"
+        ]
+      },
+      {
+        "name": "Ceramiche di tradizione micenea",
+        "material": "Argilla cotta",
+        "use": "Contenitori e indizi di tecniche e contatti.",
+        "evidence": "Non tutte equivalgono a importazioni né a presenza di colonizzatori.",
+        "sources": [
+          "coppa-scambi"
+        ]
+      },
+      {
+        "name": "Fortificazione e riporti",
+        "material": "Pietra e depositi del terreno",
+        "use": "Proteggere e rendere utilizzabili parti del luogo.",
+        "evidence": "Interventi distinti dai processi naturali mediante scavo e carotaggi.",
+        "sources": [
+          "coppa-mura",
+          "coppa-sedimenti"
+        ]
+      }
+    ],
+    "compare": "Metti in relazione la scena di lavoro con la carta: perché una produzione specializzata beneficia di risorse locali e accesso a reti più ampie?"
+  },
+  "saraceno": {
+    "title": "Abitare un’altura, costruire la memoria",
+    "scene": "Una giornata possibile: il lavoro sulla roccia trasforma il promontorio in uno spazio della comunità. Il gesto rappresenta una lavorazione plausibile; non ricostruisce una sepoltura o una cerimonia specifica.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Un promontorio fra accesso e protezione",
+        "paragraphs": [
+          "L’altura di Monte Saraceno mette in relazione il rilievo del Gargano e la baia di Mattinata. Pendenze, roccia e accessi condizionano gli spostamenti e le possibilità di costruire. La visibilità sul territorio può contribuire alla scelta del luogo, ma una vista ampia non dimostra da sola un sistema politico di controllo della costa.",
+          "Nella scena il mare aiuta a percepire questo rapporto geografico. Vegetazione, costa e fabbricati lontani non sono una carta del IX secolo a.C. La fotografia attuale delle tombe offre invece una traccia reale del lavoro compiuto nella roccia, da leggere attraverso gli studi cronologici."
+        ],
+        "sources": [
+          "nava",
+          "nava-cronologia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "I vivi organizzano anche lo spazio dei morti",
+        "paragraphs": [
+          "Le evidenze comprendono abitato e necropoli. I luoghi funerari occupano spazio, richiedono lavoro e conservano relazioni fra persone e comunità. Scavare la roccia è un investimento: la forma del terreno viene modificata in modo durevole.",
+          "Questo lavoro non esaurisce la vita sul promontorio. Abitazioni, accessi e opere difensive rimandano a necessità quotidiane di riparo, movimento e protezione. La ricostruzione sceglie una delle attività più leggibili nelle tracce; non trasforma tutta la comunità in una popolazione impegnata soltanto nei funerali."
+        ],
+        "sources": [
+          "nava-cronologia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "tools",
+        "title": "La roccia come materiale da lavorare",
+        "paragraphs": [
+          "Una tomba rupestre nasce dall’asportazione di materiale: il risultato conserva parti del gesto anche quando gli strumenti non sono rimasti sul posto. Profilo, tagli e relazione con altre strutture possono essere confrontati. Il tipo di utensile raffigurato è una proposta visiva, non un reperto attribuito a quella tomba.",
+          "I corredi e le sculture, studiati nei contesti della Daunia, aprono questioni su rappresentazione e appartenenza. Non vanno mescolati liberamente con le statue-stele eneolitiche di altri luoghi. Forma, data e provenienza precedono l’interpretazione del significato."
+        ],
+        "sources": [
+          "nava",
+          "nava-cronologia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Differenze e appartenenza",
+        "paragraphs": [
+          "Lo spazio funerario permette di interrogare il modo in cui una comunità rappresenta i propri membri. Confrontare sepolture e oggetti può rivelare differenze, ma non autorizza ad assegnare automaticamente un titolo sociale a ogni inumato.",
+          "La cultura daunia comprende tradizioni condivise e differenze locali. Monte Saraceno deve essere confrontato con i centri della pianura, non presentato come una versione arretrata di essi. Vivere su un rilievo e vivere nel Tavoliere rispondono a rapporti diversi fra ambiente, risorse e organizzazione dello spazio."
+        ],
+        "sources": [
+          "nava"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Una crescita e una successiva rarefazione",
+        "paragraphs": [
+          "Le fasi iniziano nel Bronzo finale e hanno particolare sviluppo fra IX e inizi VII secolo a.C.; le attestazioni successive cambiano intensità. La fascia del tempo non deve trasformare questi episodi in una presenza identica e continua fino a Roma.",
+          "L’antropizzazione qui è molto concreta: tombe, tagli, spazi abitativi e difese modificano un substrato naturale. La roccia aiuta a conservare il segno; erosione, riusi e ricerca selettiva ne limitano comunque la lettura. La stessa fotografia può mostrare strutture di momenti diversi."
+        ],
+        "sources": [
+          "nava-cronologia"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Tomba rupestre",
+        "material": "Roccia calcarea scavata",
+        "use": "Organizzare uno spazio funerario durevole.",
+        "evidence": "Il risultato è documentato; il gesto e lo strumento della scena sono ipotetici.",
+        "sources": [
+          "nava-cronologia"
+        ]
+      },
+      {
+        "name": "Tagli e tracce dell’abitato",
+        "material": "Terreno e roccia",
+        "use": "Leggere la distribuzione degli spazi e le trasformazioni.",
+        "evidence": "Vanno distinti e datati, senza ricostruire ogni alzato.",
+        "sources": [
+          "nava-cronologia"
+        ]
+      },
+      {
+        "name": "Corredo funerario",
+        "material": "Materiali diversi",
+        "use": "Interrogare rappresentazione e differenze sociali.",
+        "evidence": "La funzione si interpreta nel contesto, non isolando un oggetto.",
+        "sources": [
+          "nava"
+        ]
+      }
+    ],
+    "compare": "Confronta il lavoro sulla roccia di Monte Saraceno con il lavoro sul terreno di Passo di Corvo: materiali differenti conservano tracce diverse."
+  },
+  "arpi": {
+    "title": "Case, prestigio e territorio nel Tavoliere",
+    "scene": "Una giornata possibile nel IV secolo a.C.: contenitori, lavoro domestico e spazio abitativo fanno incontrare necessità quotidiane e modi di rappresentarsi. Il cortile, il telaio e i motivi del vaso sono scelte illustrative, non una casa scavata riprodotta integralmente.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Un grande centro dentro una pianura produttiva",
+        "paragraphs": [
+          "Arpi si comprende mettendo in relazione abitato e territorio. Nel Tavoliere, le distanze fra nuclei, risorse e percorsi contano quanto la possibilità di costruire. Il grande perimetro non implica una superficie coperta senza interruzioni da case.",
+          "Aggere e fossato organizzano un’area che comprende spazi con funzioni diverse. Il limite diventa una scelta collettiva e un lavoro sul paesaggio. Non possiamo usare il confine amministrativo moderno di Foggia per ricavare quello del centro antico, né identificare i due abitati."
+        ],
+        "sources": [
+          "arpi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "La casa collega risorse e relazioni",
+        "paragraphs": [
+          "Abitare comporta preparare e conservare, gestire oggetti, distinguere attività e passaggi. Le residenze documentate ad Arpi mostrano anche investimenti che superano la semplice esigenza di riparo. Una casa può contribuire a rendere riconoscibile il prestigio di chi la usa.",
+          "Il cortile ipotetico rende visibile la relazione fra lavori e spazio domestico. Non è un inventario di reperti provenienti da una singola casa. Il telaio illustra un’attività compatibile con il mondo antico, ma non viene presentato come un manufatto rinvenuto in quel cortile; le strutture e i contesti funerari costituiscono evidenze distinte."
+        ],
+        "sources": [
+          "arpi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "tools",
+        "title": "Gli oggetti viaggiano insieme alle idee",
+        "paragraphs": [
+          "Vasi, immagini e modi di costruire possono segnalare relazioni culturali. I materiali di Arpi permettono di discutere contatti con modelli greci e con altre realtà dell’Italia antica. La fotografia delle figurine di amazzonomachia dà un esempio reale di repertorio figurativo.",
+          "Un motivo greco non trasforma automaticamente la comunità in una colonia greca. Occorre chiedere chi produce, chi acquista, in quale contesto usa e quale significato attribuisce all’oggetto. Il vaso della scena, con decorazione inventata, aiuta a porre queste domande: la prova rimane il reperto documentato e il suo contesto."
+        ],
+        "sources": [
+          "arpi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Élite e trasformazioni politiche",
+        "paragraphs": [
+          "Residenze e tombe monumentali offrono indizi sulle scelte dei gruppi più ricchi. La documentazione non descrive in modo equivalente tutte le abitazioni o tutte le persone. Un paesaggio di prestigio non coincide con la vita materiale di ogni abitante.",
+          "Contatti con ambienti greci, osco-sanniti e romani si intrecciano a conflitti e decisioni locali. La romanizzazione cambia relazioni e possibilità: non è un passaggio che rende improvvisamente tutti gli oggetti, tutti gli abitanti e tutte le istituzioni identici a quelli di Roma."
+        ],
+        "sources": [
+          "arpi",
+          "arpi-romana"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Le evidenze romane cambiano la scala del racconto",
+        "paragraphs": [
+          "Presso Masseria Menga, un settore imperiale documenta abitazioni, silos, pozzi e canalizzazioni. Questo permette di leggere gestione delle scorte e dell’acqua in luoghi specifici; non autorizza a ricostruire integralmente tutto il perimetro urbano romano.",
+          "Per la tarda antichità la documentazione è troppo debole per prolungare sulla carta una continuità urbana sicura. L’immagine del IV secolo a.C. non può rappresentare tutte queste fasi. Seguire Arpi significa confrontare scale e funzioni differenti, conservando anche la domanda su ciò che non è ancora documentato."
+        ],
+        "sources": [
+          "arpi-romana"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Aggere e fossato",
+        "material": "Terra e tagli nel terreno",
+        "use": "Delimitare e organizzare un’area molto ampia.",
+        "evidence": "Strutture documentate, senza confine politico ricostruito automaticamente.",
+        "sources": [
+          "arpi"
+        ]
+      },
+      {
+        "name": "Ceramica e immagini",
+        "material": "Argilla cotta e repertori figurativi",
+        "use": "Uso domestico e rappresentazione culturale.",
+        "evidence": "Le figurine fotografate sono un documento reale; il vaso della scena è inventato.",
+        "sources": [
+          "arpi"
+        ]
+      },
+      {
+        "name": "Silo, pozzo, canalizzazione",
+        "material": "Strutture nel terreno",
+        "use": "Gestire risorse e acqua in un settore imperiale.",
+        "evidence": "Evidenze di Masseria Menga: fase e localizzazione differenti dalla scena del IV secolo a.C.",
+        "sources": [
+          "arpi-romana"
+        ]
+      }
+    ],
+    "compare": "Osserva il vaso generato e il reperto fotografato: quale dei due può essere usato come prova per una datazione o per un contatto culturale?"
+  },
+  "herdonia": {
+    "title": "Dal lavoro sparso alla vita della città",
+    "scene": "Una giornata possibile nella città romana: comprare, pesare, trasportare e attingere acqua. La scena riunisce funzioni urbane; le merci, le persone e gli alzati del mercato sono illustrativi.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Fra pianura e itinerari dell’interno",
+        "paragraphs": [
+          "Herdonia si trova sui primi rilievi che delimitano la pianura e in rapporto con il territorio del Carapelle. Le possibilità di muoversi fra aree diverse contribuiscono alla sua storia. Nel periodo romano, la rete della via Traiana inserisce il centro in collegamenti più ampi.",
+          "Una strada porta movimento, ma non spiega da sola la città. Servono luoghi dove abitare, produrre, scambiare e amministrare. La carta mostra il punto; il racconto delle infrastrutture rende visibile il lavoro necessario per trasformarlo in un nodo territoriale."
+        ],
+        "sources": [
+          "herdonia-romana",
+          "herdonia-daunia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Prima della città romana",
+        "paragraphs": [
+          "Le evidenze daunie documentano nuclei abitativi e funerari distribuiti su un’area ampia. Case con materiali diversi, pozzi, fornaci e vasche mostrano una pluralità di attività. Non ogni spazio libero fra nuclei era privo di funzione.",
+          "Alcune vasche intonacate sono interpretate in relazione al trattamento della lana. È una pista per comprendere lavorazioni che richiedono acqua e superfici impermeabili, non una certezza sull’uso di ogni vasca. I cambiamenti di destinazione fra abitato e necropoli mostrano inoltre che lo spazio viene continuamente rinegoziato."
+        ],
+        "sources": [
+          "herdonia-daunia"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "Il mercato è una catena di operazioni",
+        "paragraphs": [
+          "Il macellum è una delle strutture che rendono leggibile la funzione urbana di Herdonia. Per scambiare una merce occorre farla arrivare, esporla, valutarla e trasportarla. Le bilance, i recipienti e i banchi nella scena sono un modo plausibile di spiegare questa catena, non oggetti attribuiti a uno specifico banco scavato.",
+          "L’acquedotto e gli impianti termali aggiungono altri circuiti di risorse. L’acqua deve essere condotta, distribuita e gestita; gli edifici richiedono costruzione e manutenzione. La presenza di un’infrastruttura cambia le possibilità di uso di un luogo, ma i suoi utenti e le sue regole non si ricavano dalla sola muratura."
+        ],
+        "sources": [
+          "herdonia-romana",
+          "herdonia-acqua"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "La vita pubblica e le sue differenze",
+        "paragraphs": [
+          "Una città riunisce persone con condizioni diverse: produttori, venditori, consumatori, amministratori e lavoratori. Lo spazio pubblico rende possibili incontri e servizi, senza cancellare differenze di ricchezza e di accesso alle risorse.",
+          "La scena usa abiti e gesti per rendere leggibili ruoli possibili, senza attribuire identità storiche alle figure. La domanda da porre è chi sostiene materialmente il funzionamento della città: le infrastrutture visibili sono il risultato di molti lavori, non solo della decisione di costruire un monumento."
+        ],
+        "sources": [
+          "herdonia-romana"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Una successione di organizzazioni",
+        "paragraphs": [
+          "Passare dal quadro daunio a quello romano significa osservare nuovi edifici, reti e modi di concentrare funzioni. Non significa cancellare istantaneamente ogni attività precedente. Le strutture vanno lette nella successione dei loro usi.",
+          "Anche le fasi tarde comportano trasformazioni, e non la semplice sopravvivenza immutata del mercato raffigurato. Nel seguire il luogo, confronta la dispersione dei nuclei dauni con la concentrazione di funzioni urbane: cambiano le relazioni fra case, lavoro, acqua e percorsi."
+        ],
+        "sources": [
+          "herdonia-daunia",
+          "herdonia-romana"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Vasca intonacata",
+        "material": "Muratura e rivestimento impermeabile",
+        "use": "Possibile trattamento della lana in fase daunia.",
+        "evidence": "Interpretazione funzionale, non uso accertato di tutte le vasche.",
+        "sources": [
+          "herdonia-daunia"
+        ]
+      },
+      {
+        "name": "Bilancia e contenitore",
+        "material": "Metallo, legno e ceramica nella scena",
+        "use": "Rendere comprensibili pesatura e scambio.",
+        "evidence": "Oggetti illustrativi; la struttura del mercato è il documento locale.",
+        "sources": [
+          "herdonia-romana"
+        ]
+      },
+      {
+        "name": "Rete idrica",
+        "material": "Canali e strutture costruite",
+        "use": "Condurre acqua alle funzioni urbane.",
+        "evidence": "L’acquedotto è documentato; la fontana della scena non è una copia di un reperto.",
+        "sources": [
+          "herdonia-acqua"
+        ]
+      }
+    ],
+    "compare": "Confronta Herdonia e Coppa Nevigata: in entrambi i casi attività e reti contano insieme alla posizione, ma cambiano infrastrutture, scala e organizzazione."
+  },
+  "ausculum": {
+    "title": "Costruire, incontrarsi, ricordare",
+    "scene": "Una giornata possibile del IV secolo a.C.: ciottoli disposti in una pavimentazione, edifici mantenuti, persone che attraversano uno spazio comune. La scena non riproduce la pianta del complesso cultuale né una cerimonia conosciuta.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Una collina dentro il territorio del Carapelle",
+        "paragraphs": [
+          "La Collina del Serpente è un settore studiato di Ausculum, non tutta la città antica. L’altura consente di porre domande su accessi, rapporti con il territorio e organizzazione degli spazi. Il fiume e la valle appartengono a una geografia più ampia di quella del singolo scavo.",
+          "La conoscenza parziale delle strutture richiede di distinguere il perimetro indagato dal centro nel suo insieme. La ricostruzione sceglie per questo una vista ravvicinata: rende leggibile il lavoro su un pavimento, senza inventare una veduta completa della città."
+        ],
+        "sources": [
+          "ausculum"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Case, passaggi e spazi condivisi",
+        "paragraphs": [
+          "Gli scavi documentano case con basi murarie in pietra e, per alcune fasi, elevati deperibili e coperture in laterizi. Materiali diversi richiedono operazioni diverse: fondare, montare, coprire e riparare. La casa non è soltanto un volume, ma un insieme di attività che la mantengono utilizzabile.",
+          "Il complesso interpretato come luogo di culto e i percorsi pavimentati mostrano che l’abitato comprendeva spazi con funzioni differenti. Entrare, sostare e attraversare diventano gesti organizzati dall’architettura. Non conosciamo però le parole pronunciate o la sequenza completa delle pratiche."
+        ],
+        "sources": [
+          "ausculum"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "Un pavimento che richiede scelta e lavoro",
+        "paragraphs": [
+          "I mosaici a ciottoli implicano selezione, trasporto e disposizione dei materiali. La geometria rende la superficie riconoscibile e può distinguere un luogo da altri. Non basta chiamarla decorazione: bisogna considerare anche lavoro, investimento e relazione con l’edificio.",
+          "Nella scena il disegno è inventato; il dato locale è la presenza di pavimentazioni e sistemazioni studiate negli scavi. Il gesto dei lavoratori aiuta a capire che una superficie archeologica conservata è il risultato di una serie di decisioni, non un oggetto apparso già completo."
+        ],
+        "sources": [
+          "ausculum"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Abitare e seppellire",
+        "paragraphs": [
+          "Case e tombe compaiono in relazioni che cambiano attraverso le fasi. Le sepolture consentono di interrogare memoria, rappresentazione e appartenenza; gli edifici aiutano a leggere la vita materiale. Sono documentazioni complementari, non intercambiabili.",
+          "Un corredo può essere scelto per una deposizione e non corrispondere a tutto ciò che una persona usava ogni giorno. Anche un edificio rappresentativo non racconta ogni abitazione. Comprendere la comunità richiede quindi collegare più tipi di tracce."
+        ],
+        "sources": [
+          "ausculum",
+          "ausculum-necropoli"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Cambiare funzione non è restare uguali",
+        "paragraphs": [
+          "Le evidenze dell’altura comprendono un abitato fra VI e III secolo a.C. e successivi usi funerari ellenistici e romani. La presenza di tombe più tarde non prova la continuità della medesima casa o dello stesso quartiere abitato.",
+          "Questa distinzione è visibile nella modalità Segui un luogo. Una fase può conservare evidenze senza mantenere la funzione precedente. L’antropizzazione continua allora in una forma diversa: nuovi tagli, deposizioni e modi di utilizzare uno spazio già segnato."
+        ],
+        "sources": [
+          "ausculum-necropoli"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Ciottoli disposti",
+        "material": "Pietra naturale selezionata",
+        "use": "Costruire una superficie e un disegno riconoscibili.",
+        "evidence": "Pavimentazioni documentate; il motivo generato è ipotetico.",
+        "sources": [
+          "ausculum"
+        ]
+      },
+      {
+        "name": "Base di muro e copertura",
+        "material": "Pietra, materiali deperibili e laterizi",
+        "use": "Rendere abitabile e mantenere un edificio.",
+        "evidence": "Materiali attestati per fasi specifiche; alzati non ricostruiti integralmente.",
+        "sources": [
+          "ausculum"
+        ]
+      },
+      {
+        "name": "Tomba",
+        "material": "Taglio nel terreno o nella roccia",
+        "use": "Leggere una destinazione funeraria.",
+        "evidence": "Non equivale alla continuità di un’abitazione.",
+        "sources": [
+          "ausculum-necropoli"
+        ]
+      }
+    ],
+    "compare": "Come può lo stesso luogo conservare una lunga storia senza avere sempre la stessa funzione? Confronta le fasce e le evidenze della Collina del Serpente."
+  },
+  "salapia-vetus": {
+    "title": "Il vantaggio e il problema dell’acqua",
+    "scene": "Una giornata possibile presso una laguna: riparare una rete, spostare un recipiente, raggiungere terra asciutta. Attrezzature, capanna e pesca sono proposte illustrative; non un inventario di oggetti scavati a Lupara–Giardino.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Vivere su un margine che cambia",
+        "paragraphs": [
+          "L’ambiente lagunare mette a contatto acqua e terra emersa. Offre possibilità di accesso a risorse e collegamenti, ma impone di leggere profondità, superfici praticabili e variazioni. Un paesaggio umido non è semplicemente una costa con un altro nome.",
+          "Le bonifiche e le trasformazioni recenti rendono difficile riconoscere direttamente il quadro antico. La ricostruzione mostra un tipo di rapporto con l’acqua; non definisce un perimetro datato della laguna. Per questo Salapia vetus non viene collocata sulla carta mediante una coordinata inventata."
+        ],
+        "sources": [
+          "salapia-studio",
+          "salapia-daunia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Risorse e manutenzione",
+        "paragraphs": [
+          "Sfruttare un ambiente umido comporta conoscenze e manutenzione: riconoscere i passaggi, trasportare materiali e mantenere gli strumenti utilizzabili. La rete nella scena permette di immaginare una possibile attività senza affermare che quella specifica rete sia stata rinvenuta.",
+          "Gli scavi documentano abitato e necropoli con fasi e interruzioni. È su queste evidenze che poggia la presenza delle comunità. Le proposte sulla vita quotidiana devono essere compatibili con il contesto, ma la plausibilità non le rende automaticamente documentate."
+        ],
+        "sources": [
+          "salapia-daunia"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "tools",
+        "title": "Una risorsa richiede una tecnica",
+        "paragraphs": [
+          "L’acqua non fornisce da sola un’economia: occorrono strumenti, saperi e relazioni. Una rete deve essere realizzata e riparata; un recipiente permette trasporto e conservazione; un’imbarcazione richiede materiali e manutenzione. La scena aiuta a seguire queste catene di lavoro.",
+          "I manufatti generati non sono copie di reperti locali. La loro presenza ha un valore esplicativo e resta distinguibile da tombe, strutture e materiali effettivamente studiati. Se un nuovo ritrovamento permetterà di precisare una tecnica, la ricostruzione potrà essere aggiornata."
+        ],
+        "sources": [
+          "salapia-daunia",
+          "salapia-studio"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Restare, cambiare settore, trasferirsi",
+        "paragraphs": [
+          "Le comunità scelgono un luogo attraverso rapporti fra risorse, condizioni e relazioni sociali. Questi rapporti possono cambiare. La storia di Salapia dimostra che una sede favorevole in una fase non deve essere considerata la scelta definitiva per ogni generazione.",
+          "La tradizione sul trasferimento in un luogo ritenuto più salubre deve essere confrontata con topografia e ricerca archeologica. Non basta un testo antico per identificare una malattia precisa o ricostruire ogni decisione degli abitanti."
+        ],
+        "sources": [
+          "salapia-romana",
+          "salapia-studio"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Due luoghi per una trasformazione territoriale",
+        "paragraphs": [
+          "La rifondazione romana presso Monte Salpi avviene a distanza dall’insediamento precedente. È quindi una trasformazione della distribuzione della popolazione e delle funzioni nel territorio, non soltanto un nuovo edificio sullo stesso punto.",
+          "Il trasferimento non prova che tutte le attività cessino nello stesso giorno. Le cronologie di abitato e necropoli devono essere distinte. Nella PWA le due schede restano separate proprio per rendere visibile questo problema."
+        ],
+        "sources": [
+          "salapia-daunia",
+          "salapia-romana"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Rete della scena",
+        "material": "Fibre intrecciate, ipotesi illustrativa",
+        "use": "Comprendere un’attività possibile nell’ambiente lagunare.",
+        "evidence": "Non presentata come reperto di Salapia vetus.",
+        "sources": [
+          "salapia-studio"
+        ]
+      },
+      {
+        "name": "Recipiente della scena",
+        "material": "Ceramica illustrativa",
+        "use": "Rendere leggibile il trasporto di risorse.",
+        "evidence": "Forma e contenuto non attribuiti a un esemplare locale.",
+        "sources": [
+          "salapia-daunia"
+        ]
+      },
+      {
+        "name": "Abitato e necropoli",
+        "material": "Strutture e deposizioni",
+        "use": "Documentare presenza e cambiamenti di uso.",
+        "evidence": "Fasi e interruzioni studiate nelle indagini.",
+        "sources": [
+          "salapia-daunia"
+        ]
+      }
+    ],
+    "compare": "Confronta le due Salapia: quali problemi risolve un trasferimento, e quali nuove infrastrutture richiede? Apri anche la scheda della città romana."
+  },
+  "salapia": {
+    "title": "Una città dove casa e lavoro si incontrano",
+    "scene": "Una giornata possibile presso un impianto interpretato come conceria: pelli, acqua e lavoro manuale accanto a uno spazio domestico. La sequenza e gli strumenti raffigurati spiegano l’interpretazione; non riproducono un’officina verificata in ogni dettaglio.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Rifondare significa riorganizzare",
+        "paragraphs": [
+          "La nuova Salapia presso Monte Salpi si colloca su terrazzi in rapporto con il bacino di Salpi. La decisione di rifondare non riguarda soltanto la salute: spazi urbani, accessi e gestione dell’acqua devono essere organizzati di nuovo. La posizione resta legata a una costa in trasformazione.",
+          "L’area è oggi nella provincia BAT e supera il centro amministrativo moderno del nostro atlante. Questa estensione serve a comprendere la Daunia storica. Le saline attuali non vengono usate come sagoma della laguna romana."
+        ],
+        "sources": [
+          "salapia-romana",
+          "salapia-studio"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Una domus accanto a un’attività artigianale",
+        "paragraphs": [
+          "Gli scavi documentano una casa ampliata nelle fasi imperiali e un impianto specializzato nel trattamento delle pelli, interpretato come conceria. La relazione fra residenza e produzione rende il luogo particolarmente utile per studiare la vita della città.",
+          "Il lavoro sulle pelli richiede operazioni e gestione di materiali; il bisogno d’acqua collega la tecnica all’ambiente urbano. La scena mette in evidenza questa relazione con vasche e superfici di lavoro. Le modalità precise, il numero di lavoratori e la loro condizione giuridica non vengono dedotti dall’immagine."
+        ],
+        "sources": [
+          "salapia-romana"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "L’acqua organizzata, non soltanto vicina",
+        "paragraphs": [
+          "Un impianto produttivo non dipende solo dalla disponibilità di una risorsa. Bisogna portarla dove serve, usarla e gestire ciò che l’attività produce. Strade e sistema fognario permettono di discutere questo lavoro di organizzazione dello spazio.",
+          "Le prospezioni geomagnetiche aiutano a riconoscere un piano con assi regolari; gli scavi verificano parti delle anomalie. Non ogni traccia può essere trasformata direttamente in una strada certa. L’ordine ipotizzato della città deriva da relazioni controllate fra tipi diversi di dati."
+        ],
+        "sources": [
+          "salapia-romana",
+          "salapia-studio"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Specializzazione e vicinato",
+        "paragraphs": [
+          "Una bottega o un impianto specializzato collega chi lavora, chi usa il prodotto e chi gestisce risorse e spazi. La vita economica non è separata dalle case. L’accostamento della conceria alla domus suggerisce domande sulle relazioni fra produzione, proprietà e abitazione.",
+          "Gli ambienti possono cambiare funzione nel tempo: un pavimento decorato e una vasca produttiva non descrivono necessariamente lo stesso momento. Per capire le persone bisogna prima ordinare questa successione. L’immagine concentra un episodio plausibile, mentre il testo mantiene le differenze cronologiche."
+        ],
+        "sources": [
+          "salapia-romana",
+          "salapia-tarda"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Continuità diseguale nelle fasi tarde",
+        "paragraphs": [
+          "L’impianto interpretato come conceria prosegue fino al V secolo nelle indagini citate. Successive trasformazioni e contrazioni modificano distribuzione e funzioni dell’abitato. La presenza di una sede episcopale è un altro elemento del quadro, non una prova che tutta la città mantenga lo stesso assetto.",
+          "Il seguito medievale sul monte va tenuto distinto. Salapia permette di studiare continuità di relazioni e cambiamenti della forma urbana nello stesso racconto. La sua storia non si riduce all’alternativa fra «città intatta» e «città scomparsa»."
+        ],
+        "sources": [
+          "salapia-tarda",
+          "salapia-romana"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Vasche e impianto",
+        "material": "Muratura e rivestimenti",
+        "use": "Discutere un’attività di trattamento delle pelli.",
+        "evidence": "Interpretazione di conceria; strumenti e gesti della scena sono ipotetici.",
+        "sources": [
+          "salapia-romana"
+        ]
+      },
+      {
+        "name": "Mosaico della casa",
+        "material": "Pavimentazione decorata",
+        "use": "Leggere investimenti e trasformazioni residenziali.",
+        "evidence": "Il motivo generato non copia un mosaico dello scavo.",
+        "sources": [
+          "salapia-romana"
+        ]
+      },
+      {
+        "name": "Strade e fogne",
+        "material": "Infrastrutture urbane",
+        "use": "Organizzare movimento e acqua nella rifondazione.",
+        "evidence": "Confronto fra scavo e prospezioni; non ogni anomalia è una strada.",
+        "sources": [
+          "salapia-romana",
+          "salapia-studio"
+        ]
+      }
+    ],
+    "compare": "Quali tracce dovrebbero sostenere l’identificazione di una conceria? Distingui funzione interpretata, strutture rinvenute e gesto generato."
+  },
+  "siponto": {
+    "title": "Dal territorio al mare, dal porto alla città",
+    "scene": "Una giornata possibile al margine del porto: un carico da spostare, recipienti da sistemare, persone da coordinare. Approdo, nave e magazzino sono illustrativi; la scena rende comprensibile la funzione portuale senza inventarne una pianta completa.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Una costa collegata all’interno",
+        "paragraphs": [
+          "La posizione ai piedi del Gargano va letta insieme al territorio da cui possono arrivare persone e risorse. Un porto è un passaggio fra circuiti di terra e di mare, non soltanto un edificio sulla spiaggia. Accessi, approdi e spazi urbani partecipano a questa funzione.",
+          "La costa moderna non riproduce ogni condizione antica. La scena usa acqua e rilievo per rendere percepibile una relazione geografica; non stabilisce profondità del porto o sagoma della laguna per una data precisa. I luoghi precedenti, fra cui Cupola–Beccarini, appartengono ad aree differenti."
+        ],
+        "sources": [
+          "siponto",
+          "siponto-citta"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Il lavoro intorno a un carico",
+        "paragraphs": [
+          "Trasportare merci richiede prepararle, imballarle, muoverle e conservarle in attesa di un nuovo passaggio. Recipienti e corde nell’immagine servono a seguire questa catena. Il contenuto di ogni anfora raffigurata non viene identificato come vino o olio proveniente da un ritrovamento locale.",
+          "I gesti collegano persone con competenze differenti e fanno dipendere il viaggio anche dal lavoro a terra. Una città portuale deve quindi essere letta insieme ai suoi spazi domestici, ai servizi e alle relazioni con le campagne, oltre che alle imbarcazioni."
+        ],
+        "sources": [
+          "siponto",
+          "siponto-citta"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "tools",
+        "title": "Infrastrutture che sostengono una funzione",
+        "paragraphs": [
+          "Cinta urbana, edifici e collegamenti trasformano la posizione in una realtà organizzata. Costruire e mantenere richiede materiali e risorse; il perimetro della città cambia il rapporto fra dentro e fuori. Non ogni vantaggio del luogo deriva soltanto dalla natura.",
+          "La colonia romana del 194 a.C. rappresenta anche una scelta politica. Insediare e organizzare un centro comporta nuove relazioni territoriali. La scena non mostra un momento di fondazione: sceglie un’attività imperiale per rendere leggibile una funzione che si costruisce e si modifica nel tempo."
+        ],
+        "sources": [
+          "siponto",
+          "siponto-mura"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Spazi e istituzioni della tarda antichità",
+        "paragraphs": [
+          "La basilica paleocristiana, con strutture e mosaici, documenta un diverso modo di organizzare incontri e funzioni urbane. Il centro episcopale aggiunge nuovi attori alla vita della città. Il rapporto fra porto, abitato e territorio non scompare perché cambiano le istituzioni.",
+          "La fotografia della basilica serve come documento di una struttura. La rete metallica di Tresoldi appartiene al 2016 ed è un’opera contemporanea: non va scambiata per materiale antico o per una fotografia del passato. L’immagine generata del porto ha invece il compito dichiarato di illustrare un’attività possibile."
+        ],
+        "sources": [
+          "siponto"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "time",
+        "title": "Non anticipare l’abbandono",
+        "paragraphs": [
+          "Le trasformazioni medievali devono essere collocate nelle loro fasi, evitando di proiettarle su tutta l’età romana o tardoantica. Un luogo può modificare funzioni e importanza senza diventare immediatamente vuoto.",
+          "La modalità Segui un luogo distingue antecedenti topograficamente separati, colonia, città portuale e funzioni cristiane. La domanda comune è come nuove reti e nuove esigenze trasformino gli spazi. La risposta richiede più di una sola immagine, anche quando quella immagine rende la scena facilmente comprensibile."
+        ],
+        "sources": [
+          "siponto",
+          "siponto-citta"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Anfora della scena",
+        "material": "Ceramica da trasporto illustrativa",
+        "use": "Capire contenimento, movimentazione e stoccaggio.",
+        "evidence": "Forma e contenuto non attribuiti a un carico scavato a Siponto.",
+        "sources": [
+          "siponto"
+        ]
+      },
+      {
+        "name": "Mura ed edifici",
+        "material": "Strutture costruite",
+        "use": "Organizzare il centro e i suoi accessi.",
+        "evidence": "Evidenze istituzionali; l’approdo generato non riproduce un impianto verificato.",
+        "sources": [
+          "siponto-mura"
+        ]
+      },
+      {
+        "name": "Basilica e mosaici",
+        "material": "Architettura e pavimentazioni",
+        "use": "Leggere funzioni paleocristiane.",
+        "evidence": "Documenti di una fase differente da quella del porto illustrato.",
+        "sources": [
+          "siponto"
+        ]
+      }
+    ],
+    "compare": "Segui idealmente il percorso di un contenitore dalle campagne alla nave: quali passaggi di lavoro e quali infrastrutture richiede?"
+  },
+  "lucera": {
+    "title": "Un monumento rende visibile una rete di potere",
+    "scene": "Una giornata possibile nell’età augustea: persone che raggiungono uno spazio pubblico e figure che conversano davanti a un ingresso. La scena non identifica Marco Vecilio Campo in un ritratto né ricostruisce esattamente l’alzato dell’anfiteatro.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Le alture e il territorio",
+        "paragraphs": [
+          "Lucera occupa una posizione fra Tavoliere e rilievi dell’interno. Il centro antico e la città moderna si sovrappongono in parte: questo rende la ricerca diversa da quella di un sito interamente visibile in aperta campagna.",
+          "Il rapporto con le alture e con gli spazi più pianeggianti cambia attraverso le fasi. Non possiamo ricavare un bosco antico dall’etimologia incerta del nome. Posizione, evidenze e trasformazioni urbanistiche devono restare distinguibili dalle suggestioni linguistiche."
+        ],
+        "sources": [
+          "lucera"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "La colonizzazione cambia relazioni e status",
+        "paragraphs": [
+          "La colonia latina del 314 a.C. si inserisce nei rapporti e nei conflitti fra realtà locali, Sanniti e Roma. Non significa soltanto aggiungere nuove case: cambia il quadro politico entro cui persone e gruppi agiscono.",
+          "Nelle fasi successive, la vita urbana comprende residenze, luoghi pubblici e infrastrutture. Le tracce sono spesso frammentarie perché la città continua a costruire sopra parti del suo passato. La ricostruzione si concentra su un episodio pubblico, evitando una veduta complessiva non sostenuta."
+        ],
+        "sources": [
+          "lucera"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "Costruire per riunire molte persone",
+        "paragraphs": [
+          "L’anfiteatro richiede una struttura capace di organizzare accessi, visibilità e permanenza degli spettatori. Il lavoro di costruzione deve mettere insieme materiali, conoscenze e risorse. Il monumento trasforma la circolazione delle persone e l’uso di un settore della città.",
+          "Il dettaglio raffigurato è ipotetico: non copia ogni arco o gradino conservato. I dati archeologici ed epigrafici offrono invece un riferimento reale per la cronologia e per il legame con il dedicante. Il testo permette di leggere il significato di un investimento che l’immagine rende concreto."
+        ],
+        "sources": [
+          "lucera-anfiteatro"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Beneficio pubblico e prestigio personale",
+        "paragraphs": [
+          "L’epigrafe collega l’edificio a Marco Vecilio Campo e alla dedica ad Augusto. L’investimento può essere interpretato entro relazioni fra notabili locali, comunità e potere imperiale. Un’opera pubblica produce un servizio e rende visibile chi la finanzia o la promuove.",
+          "La folla della scena aiuta a porre una domanda: chi partecipa, chi lavora, chi viene riconosciuto? Non conosciamo l’identità degli spettatori raffigurati né ogni regola di accesso applicata in quell’episodio. Il ruolo sociale suggerito dagli abiti resta una scelta illustrativa."
+        ],
+        "sources": [
+          "lucera-anfiteatro",
+          "lucera"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "La città continua a trasformarsi",
+        "paragraphs": [
+          "Quartieri, monumenti e ruoli amministrativi appartengono a una successione. La documentazione regionale discute anche il rilievo di Lucera nelle fasi tarde. Non si deve però immaginare che la città augustea sopravviva senza modifiche.",
+          "La sovrapposizione moderna conserva e nasconde tracce. Per questo la localizzazione della scheda è un riferimento dell’area, non un confine certo della città antica. Seguire Lucera significa leggere relazioni politiche e cambiamenti materiali insieme, senza ridurre tutta la storia al monumento più evidente."
+        ],
+        "sources": [
+          "lucera"
+        ],
+        "status": "interpretazione"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Epigrafe",
+        "material": "Testo inciso",
+        "use": "Collegare monumento, dedicante e potere imperiale.",
+        "evidence": "Il nome è documentato; il volto della scena non è un ritratto storico.",
+        "sources": [
+          "lucera-anfiteatro"
+        ]
+      },
+      {
+        "name": "Accessi e gradinate",
+        "material": "Architettura pubblica",
+        "use": "Organizzare ingresso, permanenza e visibilità.",
+        "evidence": "Il dettaglio generato è ipotetico, non un rilievo del monumento.",
+        "sources": [
+          "lucera-anfiteatro"
+        ]
+      },
+      {
+        "name": "Pavimenti e strutture urbane",
+        "material": "Evidenze sotto la città attuale",
+        "use": "Leggere abitazioni e trasformazioni.",
+        "evidence": "Conservazione e conoscenza sono parziali.",
+        "sources": [
+          "lucera"
+        ]
+      }
+    ],
+    "compare": "Perché un notabile investe in un edificio pubblico? Collega il beneficio per la comunità al prestigio e alle relazioni politiche."
+  },
+  "faragola": {
+    "title": "Il comfort della villa ha un territorio alle spalle",
+    "scene": "Una giornata possibile nel V secolo: ospiti che conversano, un recipiente portato al banchetto, ambienti curati. La scena rende percepibile il rapporto fra rappresentazione aristocratica e lavoro; persone, arredi e decorazioni sono ipotetici.",
+    "chapters": [
+      {
+        "id": "land",
+        "title": "Una residenza nella valle del Carapelle",
+        "paragraphs": [
+          "Faragola va letta insieme al territorio fra Ausculum e Herdonia. Il pianoro, l’acqua e i collegamenti contribuiscono alle possibilità del luogo. Una grande residenza rurale non vive soltanto del proprio edificio: deve ottenere materiali, alimenti e lavoro da relazioni più ampie.",
+          "Questo non permette di disegnare la proprietà completa o assegnare una coltura a ogni campo. Il settore produttivo della villa non è ricostruito integralmente. La residenza conservata e gli impianti mostrano però la capacità di concentrare risorse e organizzarne l’uso."
+        ],
+        "sources": [
+          "faragola",
+          "faragola-fasi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "life",
+        "title": "Banchettare è anche rappresentarsi",
+        "paragraphs": [
+          "La cenatio con stibadium in muratura è una delle evidenze più significative. Il banchetto può mettere in scena relazioni, disponibilità di risorse e prestigio. La monumentalizzazione del V secolo documenta investimenti in questa forma di residenza.",
+          "La scena rende visibili ospiti e servizio, ma non identifica il proprietario della villa o il contenuto di un pasto preciso. I materiali decorativi e le pavimentazioni sono studiati; colori degli abiti, arredi mobili, persone e disegno del pannello generato restano scelte illustrative."
+        ],
+        "sources": [
+          "faragola"
+        ],
+        "status": "documentato"
+      },
+      {
+        "id": "tools",
+        "title": "L’acqua rende possibile il comfort",
+        "paragraphs": [
+          "Gli impianti termali richiedono acqua, calore e manutenzione. La successione di ambienti per temperature e usi diversi rende il bagno una pratica organizzata dall’architettura. Cisterna, magazzini e latrina aggiungono esigenze meno spettacolari ma essenziali al funzionamento della residenza.",
+          "Una stanza calda implica combustibile e lavoro anche fuori dalla stanza; una superficie decorata deve essere costruita e curata; un recipiente deve arrivare al luogo d’uso. Guardare questi collegamenti permette di passare dall’immagine del lusso alla storia delle risorse che lo sostengono."
+        ],
+        "sources": [
+          "faragola"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "people",
+        "title": "Chi fa vivere una residenza",
+        "paragraphs": [
+          "Ospiti e proprietari non sono gli unici attori del luogo. Servire, pulire, trasportare e mantenere gli impianti sono attività necessarie. La figura che porta il recipiente mette queste attività dentro la scena, invece di lasciare il lavoro invisibile.",
+          "Non sappiamo però la condizione giuridica di quella persona immaginata. Alcuni ambienti sono stati proposti come alloggi servili, ma l’interpretazione è ipotetica. La ricchezza della residenza e il rapporto fra rappresentazione e lavoro possono essere discussi senza inventare un elenco di abitanti o una gerarchia completa."
+        ],
+        "sources": [
+          "faragola",
+          "faragola-fasi"
+        ],
+        "status": "interpretazione"
+      },
+      {
+        "id": "time",
+        "title": "Una villa e un abitato non sono la stessa cosa",
+        "paragraphs": [
+          "Le fasi daunie e romane precedono la grande residenza; il complesso viene poi trasformato, e nel VII–VIII secolo il sito conserva un abitato altomedievale. Nuove forme di occupazione modificano funzioni e relazioni: non è soltanto la villa con un nome diverso.",
+          "La fotografia aerea del 2006 documenta uno stato dello scavo precedente all’incendio del 2017. La scena ipotetica riguarda invece una vita possibile del V secolo. Tenerle affiancate permette di distinguere il documento di ricerca, l’interpretazione architettonica e la visualizzazione didattica."
+        ],
+        "sources": [
+          "faragola-fasi",
+          "faragola-sabap"
+        ],
+        "status": "documentato"
+      }
+    ],
+    "objects": [
+      {
+        "name": "Stibadium",
+        "material": "Struttura in muratura",
+        "use": "Organizzare la cenatio e il banchetto.",
+        "evidence": "Documentato; rivestimenti mobili e persone della scena sono ipotetici.",
+        "sources": [
+          "faragola"
+        ]
+      },
+      {
+        "name": "Opus sectile",
+        "material": "Pannelli di materiali diversi",
+        "use": "Costruire pavimenti e superfici di prestigio.",
+        "evidence": "Il disegno generato non è una copia di un pannello scavato.",
+        "sources": [
+          "faragola"
+        ]
+      },
+      {
+        "name": "Cisterna e terme",
+        "material": "Infrastrutture idriche e termiche",
+        "use": "Rendere possibile raccolta, uso e riscaldamento dell’acqua.",
+        "evidence": "Impianti documentati; non ricostruiamo ogni percorso del personale.",
+        "sources": [
+          "faragola"
+        ]
+      }
+    ],
+    "compare": "Segui il lavoro dietro un bagno caldo o un banchetto: quali risorse arrivano dall’esterno, quali impianti servono, chi li mantiene?"
+  }
+}

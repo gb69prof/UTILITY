@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'daunia-tempo-v1';
+const CACHE = 'daunia-tempo-v2';
 const PREFIX = 'daunia-tempo-';
 const FILES = [
   "./",
@@ -11,6 +11,22 @@ const FILES = [
   "./CREDITS.md",
   "./VALIDATION.md",
   "./data/images.json",
+  "./data/deepening.json",
+  "./data/reconstructions.json",
+  "./assets/reconstructions/scaloria.webp",
+  "./assets/reconstructions/corvo.webp",
+  "./assets/reconstructions/coppa.webp",
+  "./assets/reconstructions/saraceno.webp",
+  "./assets/reconstructions/arpi.webp",
+  "./assets/reconstructions/herdonia.webp",
+  "./assets/reconstructions/ausculum.webp",
+  "./assets/reconstructions/salapia-vetus.webp",
+  "./assets/reconstructions/salapia.webp",
+  "./assets/reconstructions/siponto.webp",
+  "./assets/reconstructions/lucera.webp",
+  "./assets/reconstructions/faragola.webp",
+  "./assets/reconstructions/paglicci.webp",
+
   "./data/land.geojson",
   "./data/periods.json",
   "./data/rivers.geojson",

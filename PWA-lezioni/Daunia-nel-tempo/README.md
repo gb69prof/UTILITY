@@ -10,9 +10,9 @@ Aprire `index.html` tramite un server HTTP/HTTPS, dalla sottocartella `PWA-lezio
 - **Segui un luogo:** evidenze, cambi di funzione e intervalli non documentati. Una casella piena non significa occupazione continua per l’intero periodo.
 - **Perché proprio qui:** formulare un’ipotesi e confrontarla con dati e interpretazioni; il testo personale non viene salvato.
 - **Il percorso:** risorse, clima, vegetazione, fauna, acqua, antropizzazione e domande per la classe.
-- **Prima / dopo:** confronto fra condizioni ambientali e tracce umane, con limiti e fonti; non contiene vedute antiche inventate.
+- **Prima / dopo:** confronto fra condizioni ambientali e tracce umane, con limiti e fonti; distingue documentazione e ricostruzione illustrativa.
 - **Come lo sappiamo:** nove casi di metodo, concetti essenziali, lessico e cinque esercizi con spiegazione e recupero.
-- **Fonti e immagini:** bibliografia ragionata, dieci documenti fotografici, crediti e licenze.
+- **Fonti e immagini:** bibliografia ragionata, dieci documenti fotografici, tredici ricostruzioni ipotetiche, crediti e licenze.
 - **LIM:** testo e carta ingranditi. Tastiera: Tab, Invio/Spazio, Esc per chiudere le finestre; anche l’elenco permette di aprire tutti i siti.
 
 ## Fasi e luoghi
@@ -46,7 +46,7 @@ Coordinate in WGS84, ordine **latitudine, longitudine**. `coordinateSource` e `c
 
 ## Immagini e diritti
 
-Dieci immagini reali scaricate da Wikimedia Commons con licenze compatibili. Nessuna immagine generata con IA. Le due icone sono segni grafici originali disegnati in SVG e rasterizzati, non ricostruzioni del passato. Tutte le fotografie hanno autore, fonte, licenza, data e nota sulla copia locale in `data/images.json`, nell’app e in `CREDITS.md`.
+Dieci immagini reali scaricate da Wikimedia Commons con licenze compatibili. La seconda edizione aggiunge 13 scene fotorealistiche generate con IA, sempre etichettate come ricostruzioni ipotetiche e accompagnate da una datazione, fonti e limiti. Le due icone sono segni grafici originali disegnati in SVG e rasterizzati, non ricostruzioni del passato. Tutte le fotografie hanno autore, fonte, licenza, data e nota sulla copia locale in `data/images.json`, nell’app e in `CREDITS.md`.
 
 Le didascalie distinguono scavo, reperto, pianta scientifica e ambiente attuale. Il cervo è una fotografia moderna di riferimento della specie, non dell’ambiente di Paglicci. Il panorama di Mattinata è un paesaggio moderno antropizzato. La foto di Faragola è del 2006, precedente all’incendio del 2017. La pianta di Coppa Nevigata documenta lo scavo, non è una veduta del villaggio antico.
 
@@ -84,3 +84,11 @@ Per aggiornare: modificare i JSON mantenendo riferimenti validi; cambiare la ver
 ## Possibile seconda fase
 
 Georeferenziazione scientifica di Salapia vetus; ulteriori dati archeobotanici e quantitativi per singole fasi; paleocoste datate con licenza e modelli espliciti; itinerari antichi georeferenziati verificati; nuovi siti e confronto con ricognizioni sistematiche. Non aggiungere continuità, specie, vie o confini per riempire lacune.
+
+## Seconda edizione — 1 ottobre 2026
+
+Le 13 schede contengono 65 capitoli estesi su paesaggio, vita quotidiana, tecniche, abitanti e trasformazioni; 39 approfondimenti su oggetti e strutture; confronto con le evidenze, cronologia, domande e fonti. I nuovi capitoli aggiungono oltre 5.400 parole al percorso esistente.
+
+La nuova interfaccia usa una copertina immersiva, schede fotografiche e un lettore ampio con navigazione fra capitoli. Le scene non rappresentano tutte le fasi del luogo: la datazione è indicata separatamente dalla cronologia complessiva. Volti, abiti, alzati, gesti e disposizione sono scelte illustrative. Le immagini non sono documenti antichi né ricostruzioni scientifiche validate.
+
+`data/deepening.json` contiene gli approfondimenti; `data/reconstructions.json` conserva prompt, revisioni, fonti e metadati delle immagini. `assets/reconstructions/` contiene le 13 copie WebP ottimizzate (circa 3,7 MB complessivi). Le scene e i testi sono inclusi nella cache offline v2. La bibliografia comprende 43 riferimenti.

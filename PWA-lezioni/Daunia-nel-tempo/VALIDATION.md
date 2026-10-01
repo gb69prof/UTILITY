@@ -1,16 +1,12 @@
-# Verifica — 1 ottobre 2026
+# Verifica — seconda edizione, 1 ottobre 2026
 
-## Controlli dei dati e delle risorse
+- Sintassi JavaScript dell’applicazione e del service worker verificata con Node.
+- 13 luoghi, 11 fasi, 43 fonti; 13 approfondimenti con 65 capitoli e 39 oggetti/strutture.
+- Tutti i riferimenti dei nuovi capitoli, degli oggetti e delle scene risolti.
+- 13 ricostruzioni WebP presenti, con etichetta IA, datazione e limiti; 10 immagini documentarie conservate con i rispettivi crediti.
+- 53 risorse della cache v2 verificate, senza percorsi mancanti né duplicati.
+- Revisione visiva delle scene: corretti il paesaggio di Paglicci, pozzo e colture di Corvo, fortificazione di Coppa Nevigata. Restano illustrazioni ipotetiche.
+- Nella prima edizione online erano stati verificati cambio delle 11 fasi, apertura dei 13 luoghi, filtri, ricerca, seguito temporale e funzionamento della copia offline.
+- Nessuna modifica a coordinate, distinzione delle due Salapie o criteri delle cronologie.
 
-- Sintassi di `app.js` e `sw.js`: verificata con `node --check`.
-- JSON: 13 siti, 11 fasi, 39 fonti; riferimenti delle evidenze, delle storie e delle fasi risolti.
-- 10 fotografie: file presenti, autore, fonte e licenza indicati; nessuna immagine generata con IA.
-- Percorsi locali dell’HTML e 38 voci della cache: tutti presenti, nessun duplicato.
-- Manifest: `scope`, `id` e `start_url` relativi; icone 192/512 presenti.
-- Coordinate: origine e metodo in ogni scheda; Salapia vetus senza punto inventato.
-- Indice generale: aggiunta una sola card; le dieci precedenti conservate.
-- 52 URL di fonti, fotografie e coordinate controllati: 50 risposte 200; UCLA risponde 202 (pagina raggiungibile con protezione); Natural Earth risponde 406 al client automatico, perciò il riferimento nell’app usa anche il repository ufficiale con la licenza.
-
-## Verifica interattiva
-
-Il controllo nel browser della versione pubblicata viene completato dopo il deploy automatico e registrato in questo file. Il browser locale di questa sessione non può aprire socket; la verifica avviene sul browser remoto.
+La verifica interattiva della nuova interfaccia viene effettuata sulla versione pubblicata. Non è stata eseguita una prova su dispositivi fisici iPad/Safari.

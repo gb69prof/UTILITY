@@ -1,0 +1,270 @@
+{
+  "scaloria": {
+    "id": "scaloria",
+    "file": "assets/reconstructions/scaloria.webp",
+    "title": "Scaloria · l’acqua nella grotta",
+    "dates": "Neolitico, VI–V millennio a.C.",
+    "periods": [
+      2
+    ],
+    "sources": [
+      "scaloria"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. A cropped close scene inside a limestone cave inspired by Neolithic Grotta Scaloria near Manfredonia. A few handmade round-bottomed pottery vessels stand beside low stalagmites beneath dripping water. Two adults in simple undyed woven garments carefully place a small ceramic vessel near a stalagmite, a small torch off to one side gives warm light with no modern lamps. The cave is natural, not a stone-built temple or permanent domestic room. No fantasy priests, no ceremonial crowns, no gruesome bones, no fabricated sacred symbols. Focus on the relationship between water droplets, containers and careful gestures. Exact ritual and chamber layout are unknown and must not be confidently portrayed.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-748e8a57-41f7-4742-b7b3-f55286b86b98.png"
+  },
+  "corvo": {
+    "id": "corvo",
+    "file": "assets/reconstructions/corvo.webp",
+    "title": "Passo di Corvo · abitare il villaggio",
+    "dates": "Neolitico, circa VI–V millennio a.C.",
+    "periods": [
+      2,
+      3
+    ],
+    "sources": [
+      "corvo"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. A Neolithic village activity area in the flat northern Apulian Tavoliere around 5500 BCE, inspired by Passo di Corvo. Eye-level, in the foreground an adult uses a handstone on a small saddle quern to grind grain, another carries a modest plain pottery jar, several figures tend an agricultural task in the middle distance. A shallow curved ditch is visible at one side, and a wooden bucket-like container near a modest well opening. Two modest wattle-and-daub shelters with generic thatched roofs, their exact shapes illustrative not documented reconstruction. Open low farmland in the distance with no specific mapped ancient field boundaries. No metal tools, Roman masonry, large fortification rampart, stone castle, modern ceramic decoration or wheeled vehicles. Do not show huge industrial fields.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-5c8ebbb4-9e33-4daa-ba54-80ccd070df74.png",
+    "revisionPrompt": "Eliminare piante simili al mais e argano, secchio e manovella del pozzo. Mostrare cereali bassi generici, apertura semplice e vaso ceramico."
+  },
+  "coppa": {
+    "id": "coppa",
+    "file": "assets/reconstructions/coppa.webp",
+    "title": "Coppa Nevigata · risorse della laguna",
+    "dates": "Età del Bronzo, XV–XIV secolo a.C.",
+    "periods": [
+      4
+    ],
+    "sources": [
+      "coppa-laguna",
+      "coppa-scambi",
+      "coppa-porpora"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Bronze Age Coppa Nevigata, northern Apulia, circa 1500-1400 BCE. Low ground beside a coastal lagoon, not a rocky cliff and not open surf. Close foreground of two adults carefully breaking small murex shells over a rough stone work surface; modest ceramic pots and piles of shell fragments, a small piece of subtly dyed textile, no implausibly huge purple vats. Behind them part of a thick low dry-stone defensive wall, not a medieval castle. Calm shallow lagoon and a simple small wooden boat in far background. Ordinary plain woven clothes, hand tools, no iron, no Roman amphora forms, no columns, no giant city plan. This illustrates the relation between resources, skilled work and defended settlement; exact production installation is unknown.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-faf76c19-ba1a-4be9-a952-0beac6ba4d8d.png",
+    "revisionPrompt": "Eliminare torri e merlature medievali. Mostrare una modesta muratura a secco priva di merli."
+  },
+  "saraceno": {
+    "id": "saraceno",
+    "file": "assets/reconstructions/saraceno.webp",
+    "title": "Monte Saraceno · scavare la roccia",
+    "dates": "Età del Ferro, IX–VIII secolo a.C.",
+    "periods": [
+      5,
+      6
+    ],
+    "sources": [
+      "nava",
+      "nava-cronologia"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Iron Age Monte Saraceno promontory near Mattinata, northern Apulia, circa ninth-eighth century BCE. Human-scale close viewpoint on limestone ground: a few shallow rectangular rock-cut burial pits, one adult stoneworker using a small historically plausible iron pointed hand chisel and stone/wood striking tool to work the edge of one pit. Another adult beside the work; no burial body or graphic content. Limestone slope and distant calm Adriatic coast; no invented temples or monumental marble mausoleums, no ornate sarcophagi. Simple plausible woven clothes, muted natural colours. The photographed-possible view is a hypothetical illustration of labour and organisation of burial space, not a depiction of an observed ritual.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-a38abaae-425f-4ad8-81b2-cff7d820e47f.png"
+  },
+  "arpi": {
+    "id": "arpi",
+    "file": "assets/reconstructions/arpi.webp",
+    "title": "Arpi · una casa e le relazioni",
+    "dates": "IV secolo a.C.",
+    "periods": [
+      7,
+      8
+    ],
+    "sources": [
+      "arpi"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Fourth-century BCE Arpi in the Apulian Tavoliere. Small cropped domestic courtyard, low stone foundations with earth/plastered upper walls and partial ceramic-tile roof, not a grand Greek temple or a Roman imperial palace. Adults handle a modest local ceramic vessel while one person works at a simple upright weighted loom in the shade; a child watches. A few plain storage jars, simple woven clothes, modest table, no shiny silk or precise invented museum vase patterns. A small area of pebble paving, unpretentious plaster. Convey domestic labour and selective cultural contacts through ordinary objects, not an exact house plan. Flat landscape beyond the doorway, not hilltop sea cliffs.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-169e5110-669b-4cfe-9d63-0db901bb4d3f.png"
+  },
+  "herdonia": {
+    "id": "herdonia",
+    "file": "assets/reconstructions/herdonia.webp",
+    "title": "Herdonia · il mercato e la città",
+    "dates": "Età romana, II secolo d.C.",
+    "periods": [
+      9
+    ],
+    "sources": [
+      "herdonia-romana",
+      "herdonia-acqua"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Second-century CE Roman Herdonia, northern Apulia, a cropped plausible market scene inspired by its excavated macellum. Everyday buyers and sellers with a few local vegetables and baskets, simple balances and ceramic storage containers. A modest stone-paved open area with a short stretch of plain plastered portico and restrained columns, not an extravagant Rome skyline. A small public water basin shows infrastructure, no huge visible aqueduct inferred from nowhere. Adults in simple wool/linen tunics, only one better dressed customer, realistic variety in social status without stereotypical ethnic markers. No battle or legionary parade, no modern produce including tomatoes potatoes peppers maize or pumpkins. Exact stalls and costumes illustrative.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-5da2c85f-afb4-4abe-aeeb-4c8fc97a0b26.png"
+  },
+  "ausculum": {
+    "id": "ausculum",
+    "file": "assets/reconstructions/ausculum.webp",
+    "title": "Ausculum · costruire uno spazio comune",
+    "dates": "IV secolo a.C.",
+    "periods": [
+      6,
+      7
+    ],
+    "sources": [
+      "ausculum"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Fourth-century BCE Collina del Serpente at Ausculum, northern Apulia. Cropped outdoor space before a modest building with a stone wall base, earth upper walls, wooden supports and a small tiled roof edge. Two workers carefully place rounded natural pebbles into a geometric paving strip; two other people walk toward the building. Simple undyed woven clothes, hand tools, small shallow stone/ceramic containers. Low hills in the distance. No marble temple, no large invented deity statues, no detailed cult ritual, no gladiators, no modern construction. This illustrates the attested use of pebble mosaics and built shared spaces, not an exact reconstruction of the sacred building plan or its ceremonies.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-0dfa63fc-4d92-4114-9827-2470c5e6338c.png"
+  },
+  "salapia-vetus": {
+    "id": "salapia-vetus",
+    "file": "assets/reconstructions/salapia-vetus.webp",
+    "title": "Salapia vetus · vivere fra terra e acqua",
+    "dates": "Età daunia, VI–V secolo a.C.",
+    "periods": [
+      6,
+      7
+    ],
+    "sources": [
+      "salapia-daunia",
+      "salapia-studio"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Sixth-fifth century BCE Daunian lagoon-edge settlement inspired by Salapia vetus, northern Apulia. A close everyday scene: two adults repair a simple fishing net beside a small plain wooden boat on a muddy bank; another carries a modest plain ceramic jar toward a low earth-walled house with an illustrative simple roof. Shallow lagoon water and damp low ground, some generically wetland vegetation, distant dry ground. No invented precise lagoon map, no Egyptian reeds fetish, no Roman harbour masonry, no sea cliffs, no extravagant ships or city skyline. Simple plausible woven clothes, humble tools, no modern fishing gear. Fishing gear and arrangement are illustrative proposals, not excavated objects claimed for this site.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-11cc88c7-79ba-4b76-923c-9a521a6db011.png"
+  },
+  "salapia": {
+    "id": "salapia",
+    "file": "assets/reconstructions/salapia.webp",
+    "title": "Salapia romana · casa e lavoro",
+    "dates": "Età romana, III secolo d.C.",
+    "periods": [
+      9,
+      10
+    ],
+    "sources": [
+      "salapia-romana",
+      "salapia-studio"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Third-century CE Roman Salapia, northern Apulia, a small cropped workshop courtyard inspired by evidence of a tannery beside a domus. Two adult artisans in simple work tunics handle animal hides beside a few low masonry basins, a wooden stretching frame and plain storage vessels. A doorway reveals a restrained plastered domestic room with a small mosaic floor section, not a luxury palace. Make the physical labour and need for water legible; no graphic slaughter, no modern steel machinery, no chemical bottles, no medieval guild costume, no exaggerated purple dye pots. Basins and tools are a hypothetical arrangement to explain the archaeological interpretation of hide processing; exact workshop layout is unknown.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-8be111ed-b06c-4141-9c11-bf3ddc08afa2.png"
+  },
+  "siponto": {
+    "id": "siponto",
+    "file": "assets/reconstructions/siponto.webp",
+    "title": "Siponto · tra porto e campagne",
+    "dates": "Età romana, II secolo d.C.",
+    "periods": [
+      9
+    ],
+    "sources": [
+      "siponto",
+      "siponto-citta"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Second-century CE Roman Siponto, northern Apulia. Cropped ordinary harbour-edge loading scene: adults carry plain ceramic transport amphorae and baskets between a modest storehouse with tile roof and a small wooden cargo boat near a low stone landing. Calm coastal water and very distant limestone Gargano relief, not a Mediterranean cliff city. No huge invented lighthouse, no grand monumental harbour reconstruction, no medieval basilica or modern Tresoldi wire installation. Plain tunics, sandals, simple rope and wood; realistic small load sizes, no mechanised crane. Convey connection between inland production, packaging and sea transport. Harbour buildings and vessel details are illustrative, not a reconstruction from an excavated port plan.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-d5d324bc-2e64-43b6-ac3a-5f026134d2be.png"
+  },
+  "lucera": {
+    "id": "lucera",
+    "file": "assets/reconstructions/lucera.webp",
+    "title": "Lucera · la città e gli spettatori",
+    "dates": "Età augustea, tra I secolo a.C. e I d.C.",
+    "periods": [
+      8,
+      9
+    ],
+    "sources": [
+      "lucera",
+      "lucera-anfiteatro"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Early imperial Roman Luceria around Augustus, northern Apulia. Cropped human-scale view along the outer entrance of an amphitheatre built in restrained local stone and brick: ordinary adults and families walking to the entrance, a better dressed benefactor-like figure conversing with a townsman. Only a small portion of seating and an arch, no invented complete aerial ellipse, no gigantic Colosseum facade. Plain tunics and a few simple draped cloaks, no medieval clothing, no Imperial Rome parade. No gladiatorial fight, gore or heroic spectacle. Explain public building, gathering and elite patronage; identity of pictured figures, crowd, completed elevation and costumes are illustrative choices.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-659cdf24-af6f-44ca-ba0f-3221565e4d8b.png"
+  },
+  "faragola": {
+    "id": "faragola",
+    "file": "assets/reconstructions/faragola.webp",
+    "title": "Faragola · la residenza e chi la fa vivere",
+    "dates": "Tarda antichità, V secolo d.C.",
+    "periods": [
+      10
+    ],
+    "sources": [
+      "faragola",
+      "faragola-fasi"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. Fifth-century CE late antique villa inspired by Faragola in the Carapelle valley, northern Apulia. A restrained cropped dining room with a curved masonry stibadium dining couch, a polished multicoloured stone and glass opus-sectile floor panel in a modest geometric pattern, warm plaster and a view toward an inner courtyard. Three guests in plausible late Roman tunics sit/recline in relaxed conversation, a worker carries a small ceramic serving vessel. No huge invented palace, no exact copied museum mosaic, no Christian church ceremony, no medieval armour, no Renaissance tables, no modern furniture. Exact elevation, furnishings, garment colours and scene are hypothetical; focus on contrast between elite comfort and the work that sustains it, not a precise excavation reconstruction.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Immagine illustrativa: persone, abiti, gesti, alzati e disposizione della scena sono ipotetici. Non è un documento archeologico né una ricostruzione scientifica validata.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-2b9b5e80-887e-4682-b3dd-c95ffb82f909.png"
+  },
+  "paglicci": {
+    "id": "paglicci",
+    "file": "assets/reconstructions/paglicci.webp",
+    "title": "Paglicci · imparare, lavorare, sostare",
+    "dates": "Un episodio del Paleolitico superiore, senza anno preciso",
+    "periods": [
+      0,
+      1
+    ],
+    "sources": [
+      "paglicci-sepolture",
+      "paglicci-fauna"
+    ],
+    "prompt": "Use case: historical-scene. Asset type: wide 16:9 photorealistic educational illustration for Daunia nel tempo. Create a plausible historical scene, NOT an authentic photograph, NOT an exact scientific reconstruction of a complete excavation plan. Close human-scale documentary composition, natural daylight or historically plausible hearth light, detailed believable materials, calm ordinary people of varied ages with dignified expressions. The surrounding exact topography, faces, clothing colours and arrangements are illustrative choices. No modern objects, no fantasy, no cinematic battle, no text, labels or watermark. Show only a small legible group and modest architecture; avoid extravagant invented city skylines. At a limestone rock shelter in the southern Gargano, far inland, Upper Palaeolithic: flint blade production, a small hearth and gathered resources; open generic inland landscape. No visible sea, no ceramics, no metal, no domestic animals or crops. Exact people, clothing and placement illustrative.",
+    "type": "Ricostruzione ipotetica generata con IA",
+    "author": "OpenAI Image Generation, su specifiche didattiche del progetto",
+    "created": "2026-10-01",
+    "limits": "Non ricostruisce un preciso livello di Paglicci. Volti, abiti, gesti, riparo e paesaggio sono ipotetici; le attività si ispirano alle evidenze.",
+    "modification": "Conversione WebP per uso web; nessuna modifica del contenuto.",
+    "generationFile": "exec-64e9bb4d-b93f-4518-b52a-7e050afec8e6.png",
+    "revisionPrompt": "Sostituire la vista marina con rilievi interni e il grande bifacciale con un nucleo per lame e piccole schegge."
+  }
+}

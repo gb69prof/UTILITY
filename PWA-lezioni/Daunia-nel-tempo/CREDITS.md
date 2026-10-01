@@ -2,7 +2,7 @@
 
 ## Immagini
 
-Le fotografie sono copie di documenti reali, non immagini IA. Le licenze delle fotografie rimangono quelle degli originali; un’eventuale modifica va indicata e deve rispettare la licenza. Il ritaglio visuale CSS non cambia il file distribuito.
+Le dieci immagini in `assets/photos/` sono copie di documenti reali. Le tredici immagini in `assets/reconstructions/` sono ricostruzioni ipotetiche generate con IA, dichiarate separatamente. Le licenze delle fotografie rimangono quelle degli originali; un’eventuale modifica va indicata e deve rispettare la licenza. Il ritaglio visuale CSS non cambia il file distribuito.
 
 ### Grotta Paglicci 1.jpg
 - File locale: `assets/photos/paglicci.jpg`
@@ -94,3 +94,21 @@ Aerial photo of the archaeological site, excavations 1983–2015 (archive of the
 - Componenti di accessibilità: risorse comuni preesistenti di gbprof in `pwa-common/`.
 
 Le fonti scientifiche sono citate e collegate, non redistribuite integralmente. Non sono incorporati PDF accademici o fotografie prive di licenza compatibile.
+
+## Ricostruzioni ipotetiche generate con IA
+
+Produzione: OpenAI Image Generation, su specifiche didattiche del progetto, 1 ottobre 2026. Illustrazioni, non prove archeologiche o ricostruzioni scientifiche validate. Datazioni, fonti, limiti, prompt integrali e revisioni sono conservati in `data/reconstructions.json`. Conversione e ridimensionamento in WebP per il sito.
+
+- **Scaloria · l’acqua nella grotta** — Neolitico, VI–V millennio a.C. — `assets/reconstructions/scaloria.webp`.
+- **Passo di Corvo · abitare il villaggio** — Neolitico, circa VI–V millennio a.C. — `assets/reconstructions/corvo.webp`.
+- **Coppa Nevigata · risorse della laguna** — Età del Bronzo, XV–XIV secolo a.C. — `assets/reconstructions/coppa.webp`.
+- **Monte Saraceno · scavare la roccia** — Età del Ferro, IX–VIII secolo a.C. — `assets/reconstructions/saraceno.webp`.
+- **Arpi · una casa e le relazioni** — IV secolo a.C. — `assets/reconstructions/arpi.webp`.
+- **Herdonia · il mercato e la città** — Età romana, II secolo d.C. — `assets/reconstructions/herdonia.webp`.
+- **Ausculum · costruire uno spazio comune** — IV secolo a.C. — `assets/reconstructions/ausculum.webp`.
+- **Salapia vetus · vivere fra terra e acqua** — Età daunia, VI–V secolo a.C. — `assets/reconstructions/salapia-vetus.webp`.
+- **Salapia romana · casa e lavoro** — Età romana, III secolo d.C. — `assets/reconstructions/salapia.webp`.
+- **Siponto · tra porto e campagne** — Età romana, II secolo d.C. — `assets/reconstructions/siponto.webp`.
+- **Lucera · la città e gli spettatori** — Età augustea, tra I secolo a.C. e I d.C. — `assets/reconstructions/lucera.webp`.
+- **Faragola · la residenza e chi la fa vivere** — Tarda antichità, V secolo d.C. — `assets/reconstructions/faragola.webp`.
+- **Paglicci · imparare, lavorare, sostare** — Un episodio del Paleolitico superiore, senza anno preciso — `assets/reconstructions/paglicci.webp`.
