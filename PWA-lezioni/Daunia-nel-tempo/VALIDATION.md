@@ -9,4 +9,15 @@
 - Nella prima edizione online erano stati verificati cambio delle 11 fasi, apertura dei 13 luoghi, filtri, ricerca, seguito temporale e funzionamento della copia offline.
 - Nessuna modifica a coordinate, distinzione delle due Salapie o criteri delle cronologie.
 
-La verifica interattiva della nuova interfaccia viene effettuata sulla versione pubblicata. Non è stata eseguita una prova su dispositivi fisici iPad/Safari.
+## Verifica online della seconda edizione
+
+- Deploy sul server gbprof: workflow completato con successo.
+- Copertina e lettore controllati visivamente nel browser Chrome.
+- Apertura delle schede attraverso l’elenco; cinque capitoli per luogo e immagini caricate.
+- Navigazione interna al capitolo «Vita quotidiana» verificata; titolo visibile sotto le barre fisse.
+- Pulsante «Confronta con le evidenze» e visualizzazione ingrandita della ricostruzione verificati.
+- Galleria: 13 scene; bibliografia: 43 riferimenti.
+- Aggiornamento dalla precedente cache riuscito dopo chiusura e riapertura della scheda; messaggio «Copia offline pronta».
+- Nessun errore dell’applicazione osservato nella console; presenti messaggi estranei di un’estensione del browser di prova.
+
+Non è stata eseguita una prova su dispositivi fisici iPad/Safari né una nuova simulazione di disconnessione della rete. La cache completa delle risorse locali è stata preparata correttamente dal browser.
