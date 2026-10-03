@@ -88,7 +88,18 @@ Verifica finale riuscita: `npm ci` (25 pacchetti installati, audit senza vulnera
 
 URL di sviluppo e preview mantengono il prefisso `/UTILITY/planetario/`. Il rilascio conserva vecchi asset con hash e sostituisce l'HTML per ultimo; nessuna pulizia di altre directory. I bundle contengono alcuni decoder e shader Babylon come chunk del motore: non significano asset astronomici o postprocessing attivo. Vite segnala il chunk principale oltre 500 kB: warning di dimensione, non errore. Nessun download di texture/modelli/font esterni.
 
-Pubblicazione HTTPS autorizzata: file statici e documentazione pronti per `main`. L'esito dei workflow e il confronto degli hash pubblici saranno registrati dopo il deploy; la verifica locale non li sostituisce.
+Pubblicazione verificata su [https://gbprof.it/UTILITY/planetario/](https://gbprof.it/UTILITY/planetario/) per il commit `93dfed877264f61456398eae1da4c479ffbda2c3`:
+
+- implementazione: `b99b046be4a5227a286ef63f5416a2e883e36f30`;
+- documentazione e release: `93dfed877264f61456398eae1da4c479ffbda2c3`;
+- [Deploy to gbprof server, run 37111166431](https://github.com/gb69prof/UTILITY/actions/runs/37111166431): completed / success;
+- [Pages, run 37111166105](https://github.com/gb69prof/UTILITY/actions/runs/37111166105): completed / success;
+- **43/43 file HTTP pubblici** con stato 200 e SHA-256 identico allo staging e al rilascio; prova in `.tmp/phase4-public-http.json`;
+- SHA-256 HTML: `a0a50805bcb457f44346d3cf784e5b963c338b934c1da2155fccaeb32cbf5851`;
+- browser pubblico: build 0.4.0, scena visibile, ray picking, focus e scheda funzionanti, viewport 390×844 senza overflow, console senza errori/warning. Screenshot `.tmp/phase4-public.jpg`;
+- albero GitHub confrontato con l'albero locale prima dell'aggiornamento non forzato di main; diff limitato a `planetario/`; blob gitkeep invariato `8b137891791fe96927ad78e64b0aad7bded08bdc`.
+
+Questo paragrafo è aggiunto dopo la pubblicazione in un commit documentale separato; non modifica gli asset applicativi. Le prove online non certificano iPad/Quest né sostituiscono Chrome/Edge autonomi.
 
 ## Problemi corretti e rischi rimasti
 
