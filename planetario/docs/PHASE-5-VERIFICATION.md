@@ -44,8 +44,21 @@ Browser integrato Codex su Windows, anteprima statica `http://127.0.0.1:4185/UTI
 - Viewport simulate 1024×768 e 390×844: nessun overflow orizzontale; pulsanti/select visibili con altezza ≥44 px. Pannello sotto la scena nel formato stretto. Non sono test iPad fisici.
 - Contatore del render loop osservato intorno a 60 FPS nelle scene provate: dato indicativo della sessione, non misura GPU né benchmark termico di 15 minuti.
 
-Build locale finale: **43/43 test**, TypeScript e audit scientifico passati; **58/58 file HTTP locali** identici allo staging e al rilascio. Browser dichiarato dal collaudo: Windows NT 10.0, Chrome/154.0.0.0 nel browser integrato Codex. Collaudo tecnico separato aperto e selezione confermata una sola volta, senza errori di console. Gli spazi finali nei kernel originali NAIF sono preservati intenzionalmente; non normalizzare le fonti acquisite. `.gitattributes` impedisce conversioni di terminatore sui dati per conservare gli hash. Le evidenze di pubblicazione e commit verranno aggiunte dopo il rilascio. La ripresa da una vera sospensione OS, gesture su iPad, stereo, trigger e comfort Quest non sono stati verificati in questa fase. I limiti della matrice B01–B08 restano quelli del rapporto Fase 4; non vengono chiusi per analogia.
+Build locale finale: **43/43 test**, TypeScript e audit scientifico passati; **58/58 file HTTP locali** identici allo staging e al rilascio. Browser dichiarato dal collaudo: Windows NT 10.0, Chrome/154.0.0.0 nel browser integrato Codex. Collaudo tecnico separato aperto e selezione confermata una sola volta, senza errori di console. Gli spazi finali nei kernel originali NAIF sono preservati intenzionalmente; non normalizzare le fonti acquisite. `.gitattributes` impedisce conversioni di terminatore sui dati per conservare gli hash. Le evidenze di pubblicazione e commit sono riportate nella sezione finale. La ripresa da una vera sospensione OS, gesture su iPad, stereo, trigger e comfort Quest non sono stati verificati in questa fase. I limiti della matrice B01–B08 restano quelli del rapporto Fase 4; non vengono chiusi per analogia.
 
 ## Limiti residui
 
 Orientamenti semplificati, superfici sferiche e mappe illustrative; niente previsioni di eclissi. Nessuna atmosfera o nube aggiuntiva. Stati soltanto nei 30 giorni J2000. La UI iniziale percorre t≥0 con rate positivi; la copertura scientifica negativa è verificata dal provider, ma la navigazione libera del calendario appartiene al completamento dei controlli. Lezioni complete, Gravity/Light Lab, audio, navigazione XR astronomica e ottimizzazione hardware non sono parte della Fase 5.
+
+
+## Pubblicazione verificata
+
+Commit scientifico: `4b7bed7d33dd2e19340acd52e158efd36e4c407e`. Commit scena/rilascio: `2f55adbc3f05d9ec6ce36f5894ff0c1e08bea444`. Alberi Git remoti confrontati con quelli locali prima di aggiornare main; identità confermata. Nessuna modifica fuori da `planetario/`; blob gitkeep invariato `8b137891791fe96927ad78e64b0aad7bded08bdc`.
+
+Workflow del rilascio entrambi SUCCESS: [Deploy to gbprof server 37114041401](https://github.com/gb69prof/UTILITY/actions/runs/37114041401), [Pages 37114040979](https://github.com/gb69prof/UTILITY/actions/runs/37114040979).
+
+[URL pubblico](https://gbprof.it/UTILITY/planetario/): **58/58 risorse HTTP 200**, bytes e SHA-256 coincidenti con staging e rilascio. Dettaglio in [phase5-public-http.json](phase5-public-http.json). HTML SHA-256 `34c6ce18b3d847a5fac730afba2217fc44965b3aeb0c582ee5a75327c33a0724`. Il primo confronto aveva rilevato solo i terminatori di riga dell’HTML locale: la build ora normalizza esplicitamente a LF come Git, preservando invece i byte delle fonti scientifiche.
+
+Browser pubblico: avvio scientifico, Sole con fotosfera emissiva e attenuazione al bordo, Terra con texture caricata e vista locale; ×100000 fino a +15 giorni, blocco di Avvia e reset a t=0/×1/pausa confermati. Nessun errore/warning di console. Viewport pubblica 1280×900 senza overflow orizzontale. Cattura dell’anteprima salvata localmente; il risultato è stato lasciato aperto nel browser. Le prove fisiche iPad/Quest non sono state eseguite.
+
+Integrità degli originali: tutti i 19 blob Git delle acquisizioni scientifiche e delle texture corrispondono agli hash dei manifest. Il successivo commit di questa evidenza e della normalizzazione HTML non cambia i byte dell’applicazione già verificata sul server.
