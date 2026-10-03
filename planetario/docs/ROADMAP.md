@@ -1,10 +1,10 @@
 # Planetario — Roadmap
 
-**3 ottobre 2026 · Fase 1: progettazione tecnica**
+**3 ottobre 2026 · Fase 2: consolidamento documentale concluso**
 
 Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La prima milestone deve provare qualità visiva, correttezza del modello, input e VR prima di estendere il numero dei corpi. La base tecnica è descritta in [ARCHITECTURE.md](ARCHITECTURE.md).
 
-**Punto di arresto del compito attuale:** completare l'analisi e i due documenti, quindi fermarsi. Le fasi successive sono pianificate, non avviate. Non installare dipendenze, acquisire asset, creare una scena o modificare altre aree di UTILITY in questa fase.
+**Punto di arresto del compito attuale:** consolidare le specifiche nei quattro documenti autorizzati, verificare il diff e registrare i commit, quindi fermarsi. Fase 3 e successive pianificate, non avviate. Nessuna dipendenza installata, scena realizzata o texture acquisita. Specifiche normative: [DATA-MODEL.md](DATA-MODEL.md); scenari e condizioni di uscita: [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md).
 
 ## 1. Regole comuni
 
@@ -19,7 +19,7 @@ Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La pr
 
 ### Fase 1 — Analisi tecnica
 
-**Ambito attuale.**
+**Conclusa**, commit `fc2fae1eeb58e9b9980d4c1f6fbd2cd4afd8396a`.
 
 Consegne: `docs/ARCHITECTURE.md` e `docs/ROADMAP.md`. Comprendono audit del repository, confronto Three.js/Babylon.js, decisione WebGL 2/WebXR, architettura proposta, scale, asset, input e prestazioni.
 
@@ -29,19 +29,21 @@ Criterio di uscita: due documenti coerenti, fonti collegate, confini e verifiche
 
 ### Fase 2 — Consolidamento dell'architettura
 
-Dipendenza: ripresa esplicita del lavoro dopo la Fase 1.
+**Conclusa documentalmente con questo aggiornamento.** Ripresa autorizzata dall'incarico di Fase 2. Letti integralmente ARCHITECTURE e ROADMAP e verificati albero e cronologia GitHub: alla ripresa `main` coincideva ancora con il commit della Fase 1, senza interventi successivi nel Planetario.
 
-Definire contratti di clock, provider scientifico, proiezione delle scale, azioni e ciclo degli ambienti. Stabilire epoca, intervallo iniziale e convenzioni di riferimento; separare misure e presentazione. Definire una matrice dei dispositivi disponibili con modello e versioni reali.
+Consegne: aggiornati ARCHITECTURE e ROADMAP; creati DATA-MODEL e ACCEPTANCE-TESTS. Nessun file applicativo o asset. Confermati Babylon.js, TypeScript, Vite, WebGL 2 e WebXR; nessuna riapertura del confronto motori.
 
-Consegne: aggiornamento dell'architettura, schemi dei dati e scenari di accettazione. Definire la prima prova Babylon e le condizioni per riesaminare Three.js/IWSDK.
+Decisioni chiuse: SI e radianti, Float64, frame ECLIPJ2000 destrorso con output eliocentrico, epoca JD 2451545.0 TDB, intervallo ±15 giorni, tre coniche osculatrici congelate e composizione Terra–Luna dal baricentro, rotazione IAU semplificata con inizializzazione completa. Formalizzati provider, clock, proiezione/origini, azioni, stato e lifecycle. Fissati preset delle scale, soglie scientifiche e condizioni di qualificazione Babylon.
 
-Criterio di uscita: ogni requisito della prima milestone è assegnato a un componente; nessun dubbio su unità, centro, scala temporale o trasformazione degli assi; nessuna falsa promessa di compatibilità.
+Criterio di uscita documentale: quattro documenti coerenti e diff limitato ai percorsi autorizzati; nessuna pretesa di aver acquisito/qualificato il dataset o provato l'hardware. La matrice usa `DA DEFINIRE CON TEST REALE` per i modelli non noti. La conformità delle future implementazioni ai contratti rimane da verificare nelle fasi eseguibili.
 
 ### Fase 3 — Struttura e build system
 
-Dipendenza: contratti consolidati.
+Dipendenza: contratti consolidati e successivo incarico. **Non avviata.**
 
 Creare struttura modulare, TypeScript, Vite, lockfile, controlli statici e comandi locali. Importare solo i moduli necessari; mantenere Inspector e strumenti diagnostici fuori dalla build normale. Creare `README.md`, `docs/SCIENTIFIC-SOURCES.md` e `docs/ASSET-SOURCES.md`, distinguendo fonti candidate da risorse già acquisite.
+
+Tradurre i tipi e le regole di DATA-MODEL in schema JSON e validatori, senza cambiare convenzioni implicitamente. La scelta delle prime versioni precede la prova minima e viene qualificata da essa, evitando una dipendenza circolare fra setup e test Babylon.
 
 Preparare staging e script di rilascio circoscritti a `planetario/`; il workflow esistente non compila il frontend. Nessuna modifica a `.github/`. Definire URL di prova HTTPS per dispositivi senza presupporre accesso al server.
 
@@ -55,6 +57,8 @@ Creare engine WebGL 2, camera, un oggetto di prova, luce, ciclo di rendering, se
 
 **Anticipare qui una prova WebXR limitata**: ingresso/uscita, controller, selezione e pannello su un visore disponibile. La Fase 8 rimane l'integrazione completa; rinviare ogni verifica XR fino a quel punto aumenterebbe inutilmente il rischio architetturale.
 
+Eseguire il protocollo B01–B08 di ACCEPTANCE-TESTS: una sfera con texture tecnica leggera, nessun corpo astronomico definitivo. Sono definite sia le condizioni di successo sia quelle sufficienti a giustificare un riesame del motore. Hardware assente significa prova bloccata, non Babylon fallito.
+
 Criterio di uscita: motore stabile su Chromium/Edge e prima verifica touch; nessun errore bloccante noto nel ciclo XR di prova. Se il Quest non è disponibile, registrare il rischio aperto e non dichiarare validata la scelta su hardware. Rivalutare il motore se la prova evidenzia difetti bloccanti.
 
 ### Fase 5 — Sole, Terra, Luna e Marte
@@ -62,6 +66,8 @@ Criterio di uscita: motore stabile su Chromium/Edge e prima verifica touch; ness
 Dipendenza: nucleo minimo stabile e fonti validate per i dati utilizzati.
 
 Integrare i quattro corpi, dataset separati, campo stellare plausibile, geometrie e texture progressive. Implementare orbite ellittiche, rotazioni, orientamento degli assi e clock condiviso. Prima la scala scientifica, quindi didattica ed esplorativa con indicazioni permanenti.
+
+Acquisire i tre set di elementi osculatori Horizons e i vettori di riferimento secondo DATA-MODEL, registrando richieste, versioni e hash. L'intervallo iniziale è di 30 giorni centrati su J2000-TDB: non estenderlo silenziosamente per animare un anno. La curva completa è l'ellisse del modello, non una traiettoria storica qualificata fuori intervallo.
 
 Il Sole riceve una resa della fotosfera studiata; la Terra una superficie realistica con illuminazione coerente. Luna e Marte usano risorse con provenienza registrata. Atmosfera e nuvole entrano solo entro il budget, senza rinviare la chiarezza del terminatore giorno/notte.
 
@@ -156,11 +162,11 @@ Il clock, i dati e i contratti devono consentire tali ampliamenti senza implemen
 - Asset: campi obbligatori, file e hash presenti, varianti referenziate esistenti, caricamento fallito gestito.
 - Browser: caricamento in sottocartella, nessun errore in console, layout, lifecycle, entrata/uscita XR emulata quando disponibile.
 
-Le tolleranze astronomiche quantitative vanno fissate alla selezione del dataset nella Fase 2 e confermate prima dell'integrazione. I test non devono confrontare il modello con numeri generati dalla medesima implementazione.
+Le tolleranze astronomiche quantitative sono fissate in ACCEPTANCE-TESTS, sezione 3. Il dataset deve superarle prima della qualifica: non sono errori già misurati né garanzie JPL. I test non devono confrontare il modello con numeri generati dalla medesima implementazione.
 
 ### Matrice dei dispositivi
 
-**Stato attuale di tutte le prove runtime: non eseguite; Fase 1 documentale.**
+**Stato attuale di tutte le prove runtime: non eseguite; Fasi 1–2 documentali.** La matrice normativa con identificatori, hardware da definire e tipo di evidenza è in ACCEPTANCE-TESTS, sezione 2; la tabella seguente conserva la panoramica dei requisiti.
 
 | Piattaforma | Prova prevista | Evidenza richiesta |
 | --- | --- | --- |
@@ -201,15 +207,19 @@ Se l'hardware manca, lasciare la procedura aperta con stato «da verificare sul 
 
 Il percorso Universo → Sistema solare → gravità → luce → energia → materia → Terra → vita → evoluzione → essere umano è una struttura di esplorazione. Ogni nuovo laboratorio richiede una propria verifica scientifica; non è una semplice estensione grafica della scena iniziale.
 
-## 6. Decisioni da chiudere alla ripresa
+## 6. Decisioni chiuse e attività residue
 
-L'architettura iniziale è definita; questi dettagli dipendono da dati e prove delle fasi successive:
+Non restano scelte scientifiche implicite per iniziare la costruzione dei contratti: epoca, intervallo, unità, frame, centri, modello orbitale, rotazione, convenzioni del tempo, scale e origini sono definiti in DATA-MODEL. Soglie e prove sono definite in ACCEPTANCE-TESTS; input, stato e lifecycle sono in ARCHITECTURE, sezioni 3.2–3.4.
 
-- Modelli e versioni dei dispositivi realmente disponibili, soprattutto iPad e Quest.
-- Versioni esatte delle dipendenze dopo la prova tecnica.
-- Epoca, intervallo e tolleranze del primo dataset orbitale, compreso il modello lunare.
-- File precisi di texture, termini d'uso, trasformazioni e risoluzioni effettive.
-- Budget affinati su misure reali e criteri per il profilo Auto.
-- Percorso HTTP e modalità di rilascio statico verificati sul server prima della pubblicazione funzionale.
+Restano attività esecutive, senza impedire la conclusione documentale della Fase 2:
 
-Al termine della Fase 1 fermarsi qui e presentare le decisioni tecniche. L'implementazione inizierà soltanto con un successivo incarico.
+- Inventario e prove dei dispositivi reali: modelli e versioni ancora `DA DEFINIRE CON TEST REALE`.
+- Prime versioni delle dipendenze da bloccare nella Fase 3 e qualificare nella Fase 4.
+- Acquisizione dei valori del dataset, inizializzazione PCK e confronto JPL: ricetta e soglie già decise, risultati non ancora disponibili.
+- File definitivi delle texture, condizioni d'uso, trasformazioni e risoluzioni.
+- Affinamento dei profili grafici sulle misure hardware; budget iniziali già espliciti.
+- Verifica del percorso HTTP e del rilascio statico prima della pubblicazione funzionale.
+
+Rischi aperti: il modello lunare osculatore potrebbe non superare le soglie fissate; le rotazioni semplificate non hanno accuratezza osservativa; iPad/Quest devono qualificare precisione visiva, input e comfort. Una soglia fallita richiede correzione o revisione motivata del contratto, non accettazione automatica.
+
+**Arresto alla Fase 2.** Il passo successivo sarà la Fase 3, soltanto su un nuovo incarico. Nessuna applicazione è stata costruita in questa consegna.

@@ -1,14 +1,16 @@
 # Planetario — Architettura generale
 
-**Fase 1 · Progettazione tecnica · 3 ottobre 2026**
+**Fasi 1–2 · Architettura consolidata · 3 ottobre 2026**
 
 Obiettivo: costruire un osservatorio scientifico virtuale nel quale entrare, esplorare e comprendere. La scena tridimensionale deve spiegare relazioni e fenomeni; dati, immagini e interazioni devono poter essere verificati.
 
-Questo documento definisce le decisioni iniziali. Non descrive funzionalità già implementate e non certifica prestazioni o compatibilità su dispositivi reali. L'unico intervento di questa fase è la documentazione, insieme a [ROADMAP.md](ROADMAP.md).
+Questo documento conserva le decisioni della Fase 1 e le consolida nella Fase 2. Non descrive funzionalità già implementate e non certifica prestazioni o compatibilità su dispositivi reali. Le specifiche scientifiche normative sono in [DATA-MODEL.md](DATA-MODEL.md); soglie e scenari in [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md). La [roadmap](ROADMAP.md) registra il punto di arresto: nessun avvio autonomo della Fase 3.
+
+Verifica di continuità della Fase 2: `main` è ancora `fc2fae1eeb58e9b9980d4c1f6fbd2cd4afd8396a`, ultimo commit della Fase 1. Cronologia e albero GitHub non mostrano modifiche successive; `planetario/` contiene i due documenti e `gitkeep`, con blob invariati. Audit precedente conservato nella sezione seguente come fotografia storica.
 
 ## 1. Repository e vincoli verificati
 
-Analisi tramite il collegamento GitHub su `gb69prof/UTILITY`, branch `main`, commit di partenza `bba355def087d956218ba1748a95d6cda8ce567c`. L'albero completo restituito dall'API contiene 439 voci e non risulta troncato.
+Analisi iniziale della Fase 1 tramite il collegamento GitHub su `gb69prof/UTILITY`, branch `main`, commit di partenza `bba355def087d956218ba1748a95d6cda8ce567c`. L'albero completo restituito dall'API contiene 439 voci e non risulta troncato. Le voci seguenti descrivono quello stato iniziale.
 
 - `planetario/` contiene soltanto `gitkeep`, un file di 1 byte, blob `8b137891791fe96927ad78e64b0aad7bded08bdc`. Va conservato.
 - Non esistono codice, dipendenze, build o asset del Planetario da riutilizzare. Nell'albero non risultano file `AGENTS.md` del repository; restano applicabili le istruzioni dell'ambiente di lavoro.
@@ -45,7 +47,7 @@ La scelta privilegia l'integrazione fra scena, input XR e interfacce spaziali. N
 
 Three.js resta un'alternativa valida. Va considerato anche **Meta Immersive Web SDK**, oggi basato su Three.js e su un'architettura ECS, con input, ciclo applicativo ed emulazione già integrati [T8]. Sarebbe scorretto confrontare Babylon solo con una scena Three.js elementare. Non lo si sceglie come base iniziale perché questa architettura richiede un nucleo scientifico autonomo e una UI HTML/touch curata quanto la VR; introdurre un ulteriore framework richiede una prova comparativa specifica. È una decisione progettuale, non un'affermazione di incompatibilità con iPad.
 
-Prima di consolidare le dipendenze, una prova limitata dovrà verificare Babylon con un oggetto texturizzato, pannello, selezione e sessione XR reale. Riaprire la decisione se emergono difetti bloccanti o costi di integrazione superiori alle alternative. Non sviluppare due motori in parallelo né un'astratta compatibilità universale.
+La Fase 3 bloccherà le prime versioni per una build riproducibile; la prova limitata della Fase 4 le qualificherà con un oggetto texturizzato, pannello, selezione e sessione XR reale. Successo, fallimento e condizioni per riesaminare Three.js/IWSDK sono definiti in ACCEPTANCE-TESTS, sezione 5. Nessuna riapertura del confronto in assenza di un difetto tecnico riproducibile. Non sviluppare due motori in parallelo né un'astratta compatibilità universale.
 
 ### 2.2 WebGL, WebGPU e WebXR hanno ruoli diversi
 
@@ -79,7 +81,7 @@ flowchart LR
     L --> M[UI HTML / pannelli XR]
 ```
 
-Struttura prevista, **non creata in questa fase** salvo i due documenti richiesti:
+Struttura prevista, **non creata nelle Fasi 1–2** salvo la documentazione richiesta:
 
 ```text
 planetario/
@@ -122,9 +124,115 @@ Poiché il workflow attuale copia il repository senza build, per il primo rilasc
 
 Nessun service worker nella prima milestone. Se aggiunto successivamente, scope e cache limitati al Planetario, senza cancellare cache altrui. Il funzionamento WebXR non richiede l'installazione come PWA.
 
+### 3.2 Input Action Model — contratto consolidato
+
+Flusso unico: **INPUT → ACTION → validazione/reducer → STATE → RENDERING/UI**. Gli adattatori leggono eventi e risultati del picking, traducono ID e intenti, quindi inviano azioni. Non ricevono il diritto di cambiare una mesh o un dato astronomico. Camera e puntamento hanno un controller applicativo, separato dagli adattatori.
+
+```ts
+type BodyId = 'sun' | 'earth' | 'moon' | 'mars';
+type TimeRate = 1 | 10 | 100 | 1000 | 10000 | 100000;
+type ScaleMode = 'scientific' | 'didactic' | 'exploratory';
+type InfoLevel = 'observe' | 'understand' | 'deepen';
+type Action =
+  | { type: 'selectBody'; bodyId: BodyId }
+  | { type: 'focusBody'; bodyId: BodyId }
+  | { type: 'overview' }
+  | { type: 'setTimeRate'; rate: TimeRate }
+  | { type: 'pauseTime' }
+  | { type: 'resumeTime' }
+  | { type: 'resetTime' }
+  | { type: 'setScaleMode'; mode: ScaleMode }
+  | { type: 'setViewContext'; context: 'near-body' | 'local' }
+  | { type: 'openInfo'; bodyId: BodyId; level: InfoLevel }
+  | { type: 'closeInfo' }
+  | { type: 'orbitView'; deltaYawRad: number; deltaPitchRad: number }
+  | { type: 'zoomView'; logDistanceDelta: number }
+  | { type: 'panView'; right: number; up: number }
+  | { type: 'moveView'; right: number; forward: number; up: number };
+type ActionEnvelope = Readonly<{
+  actionId: string; source: 'mouse' | 'keyboard' | 'touch' | 'xr' | 'ui';
+  inputSessionId: string; sequence: number; realNowMs: number;
+  action: Action;
+}>;
+```
+
+L'envelope aggiunge diagnostica e deduplicazione, non una seconda logica per dispositivo. `actionId=inputSessionId+sequence` univoco, sequence crescente; duplicati ignorati nella sessione. Valori non finiti, ID non presenti o comandi non ammessi nello stato corrente sono respinti con motivo; non corrette azioni per tentativi. La validazione non usa timestamp remoti o civil time.
+
+| Azione | Transizione obbligatoria |
+| --- | --- |
+| selectBody | Imposta selectedBody, apre livello Osserva; non avvicina né cambia tempo |
+| focusBody | Seleziona il corpo, apre Osserva coerente con la selezione, imposta focusedBody e contesto locale; camera orbit su schermo, xr-observatory in XR; pausa durante la transizione e ripresa esplicita |
+| overview | Azzera focusedBody e imposta contesto sistema; camera overview su schermo, xr-observatory in XR; conserva selectedBody e pannello; pausa durante il cambio contesto |
+| setTimeRate/pauseTime/resumeTime/resetTime | Comando al solo SimulationClock, secondo DATA-MODEL; nessun aggiornamento diretto delle posizioni |
+| setScaleMode | Aggiorna proiezione e dichiarazioni, conserva dati, selezione e contesto; tempo fermo durante il cambio |
+| setViewContext | Richiede focusedBody; passa fra vicino e locale con pausa e cambio scala, senza alterare pose XR |
+| openInfo | Seleziona bodyId e livello richiesto; non cambia camera |
+| closeInfo | Chiude pannello, conserva selezione; focus HTML al controllo che lo ha aperto |
+| orbitView/zoomView/panView/moveView | Controller della camera modifica il proprio stato numerico e poi il renderer applica il risultato; nessun movimento della camera XR imposto da queste azioni |
+
+`panView` usa frazioni della larghezza/altezza del viewport; `moveView` usa componenti d'intento in [−1,1], convertite dal controller in velocità contestuale e integrate sul tempo reale. `zoomView` usa variazione logaritmica della distanza, per consistenza fra scale. Orbitazione limita il pitch prima del polo, senza rollio; i limiti iniziali sono ±89°. Il renderer riceve una camera già decisa, non reinterpreta gli eventi.
+
+Click/tap vengono emessi al rilascio solo se un singolo puntatore non si è mosso oltre 8 CSS px; secondo dito, pointercancel o perdita della cattura annullano la selezione. Wheel/pinch producono zoom, drag orbitazione, pan a due dita spostamento. Pointer capture solo sul canvas, scorrimento dei pannelli preservato. Tastiera: Tab sui controlli, Enter attiva, Escape chiude il pannello o annulla la transizione; WASD solo nella modalità esplora e senza campo testo attivo.
+
+XR: usare l'evento semantico `select` per confermare, `selectstart/selectend` solo per feedback; non generare una seconda azione leggendo lo stesso trigger tramite Gamepad. Target UI spaziale ha priorità sugli oggetti dietro di esso. Picking produce BodyId senza cambiare la selezione prima del reducer. Tracking a 6DoF appartiene al runtime XR, non viene convertito in `moveView`.
+
+`measure`, `compare` e `openLab` sono riservate alle fasi future e non fanno parte dell'unione accettata v1. Comandi di qualità e ciclo XR sono eventi di servizio distinti, sottoposti alle stesse regole di stato. Nessun pulsante attivo deve inviare un comando non implementato.
+
+### 3.3 Interaction State — contratto consolidato
+
+Un piccolo store con reducer puro, servizi espliciti e sottoscrizioni selettive è sufficiente; nessuna dipendenza da uno state manager complesso. Stato del dominio e del rendering non vengono duplicati nel reducer.
+
+```ts
+type EnvironmentId = 'SolarSystem' | 'GravityLab' | 'LightLab'
+  | 'EnergyLab' | 'EarthLab' | 'LifeLab';
+type XrState = 'unsupported' | 'idle' | 'entering' | 'active' | 'exiting' | 'error';
+type InteractionState = Readonly<{
+  environment: EnvironmentId; // solo SolarSystem registrato nella v1
+  selectedBody: BodyId | null;
+  focusedBody: BodyId | null;
+  scaleMode: ScaleMode;
+  viewContext: 'system' | 'near-body' | 'local';
+  cameraMode: 'overview' | 'orbit' | 'explore' | 'xr-observatory';
+  qualityProfile: 'auto' | 'quality' | 'performance';
+  info: Readonly<{ bodyId: BodyId; level: InfoLevel }> | null;
+  xrSessionState: XrState;
+  transition: 'none' | 'focus' | 'scale' | 'environment';
+  error: Readonly<{ code: string; message: string }> | null;
+}>;
+```
+
+Iniziale: SolarSystem, selected/focused null, scala scientifica, contesto system, overview, Auto, info null, transition none; XR unsupported o idle dopo capability check. focusBody entra in near-body; sullo schermo il CameraController richiede local quando la distanza dal fuoco scende sotto 6 raggi fisici, e near-body sopra 8 raggi (isteresi). Il cambio aggiorna lo stato e avviene con transizione di scala e pausa. In XR i pulsanti di osservazione emettono setViewContext, senza zoom delle pose. Tempo e rate sono esposti in una vista composta `{interaction, clockSnapshot}`, dove il clock è l'unica fonte. Posizioni, velocità e orientamenti provengono dal provider; i dettagli numerici della camera vivono nel CameraController e sono serializzabili, senza oggetti Babylon.
+
+Invariant: se info è aperto, info.bodyId=selectedBody; focusedBody può differire, per leggere un altro corpo senza muovere la camera. `xrSessionState=active` implica cameraMode=xr-observatory; il controller conserva la camera schermo per il ritorno. Un ambiente non registrato restituisce errore leggibile, non un canvas vuoto. Durante una transizione, ignorare picking/gesti di camera; restano disponibili chiusura/cancel, pausa e uscita XR. Un nuovo focus sostituisce la transizione precedente con cancellazione controllata.
+
+### 3.4 Contratto degli ambienti — lifecycle consolidato
+
+```ts
+type EnvironmentFrame = Readonly<{
+  realNowMs: number; uiDeltaSeconds: number;
+  tTdbSeconds: number;
+}>;
+interface Environment {
+  readonly id: EnvironmentId;
+  load(context: EnvironmentContext, signal: AbortSignal): Promise<void>;
+  activate(): void;
+  update(frame: EnvironmentFrame): void;
+  deactivate(): void;
+  dispose(): Promise<void>;
+}
+```
+
+`EnvironmentContext` è un insieme di porte: lettura dello stato/clock; accesso al registro di provider; AssetService con handle a proprietà esplicita; SceneHost per registrare/rimuovere rappresentazioni; dispatcher delle azioni; logging. Non è uno store globale mutabile. SceneHost è il punto d'integrazione grafica: i dati e i laboratori fisici non importano Babylon. Ogni laboratorio futuro sceglie il proprio modello del dominio usando le stesse porte, senza essere obbligato a simulare corpi celesti.
+
+Stati ammessi: `new → loading → ready → active → ready → disposed`; `loading → failed`, `loading → disposed` tramite abort. load chiamato una volta per istanza; activate soltanto da ready; update soltanto da active. deactivate da active stacca input, audio e sottoscrizioni e torna ready; ripetuto su ready è innocuo. dispose è idempotente, abortisce carichi pendenti, deattiva se necessario e rilascia tutte le risorse possedute; da disposed nessuna riattivazione.
+
+Un solo ambiente attivo. Per cambiarlo: mettere in pausa il tempo, caricare il candidato senza attivarlo, disattivare il precedente, attivare il nuovo e infine disporre il precedente. Se load fallisce, liberare il candidato e lasciare il precedente disponibile; se activate fallisce, riattivare il precedente prima di rilasciare il candidato. La breve sovrapposizione delle risorse deve rientrare nel budget; in caso contrario usare una schermata di caricamento e ricostruire il precedente su rollback. Contatori degli handle/listener verificano l'assenza di perdite.
+
+Il scheduler invoca il clock una volta e passa l'istante alla scena attiva. SolarSystem richiede un solo snapshot atomico, applica ScaleProjection e aggiorna le rappresentazioni. `uiDeltaSeconds` è tempo reale limitato a 0,1 s per i soli effetti UI; non limita o integra il tempo astronomico. Nessuna istanza futura GravityLab/LightLab/EnergyLab/EarthLab/LifeLab è implementata in questa fase.
+
 ## 4. Dati e accuratezza scientifica
 
-I dati vengono acquisiti e revisionati in preparazione della build. L'esperienza iniziale non dipende da chiamate a NASA/JPL durante la navigazione: deve usare snapshot versionati e riproducibili.
+I dati vengono acquisiti e revisionati in preparazione della build. L'esperienza iniziale non dipende da chiamate a NASA/JPL durante la navigazione: deve usare snapshot versionati e riproducibili. La specifica normativa è DATA-MODEL, sezioni 1–6 e 10: schema JSON con validazione strutturale e semantica, elementi osculatori congelati a JD 2451545.0 TDB, dominio ±15 giorni, output geometrico eliocentrico ECLIPJ2000. Le soglie di accettazione sono fissate, ma la conformità del futuro dataset non è ancora misurata.
 
 Ogni grandezza deve contenere almeno `value`, `unit`, `sourceId`, definizione e, quando disponibili, incertezza e data di riferimento. Valori assenti sono `null`, mai zero inventato. Per intervalli o composizioni usare strutture esplicite, non stringhe da interpretare.
 
@@ -147,7 +255,7 @@ Unità canoniche del dominio: metri, secondi, chilogrammi e radianti, con numeri
 1. **KeplerianProvider**, prima milestone: modello educativo a due corpi, con parametri riferiti a un'epoca e intervallo dichiarato. Le ellissi devono rispettare la variazione della velocità orbitale, non essere percorse ad angolo uniforme. Marte e sistema Terra–Luna si riferiscono al Sole; la Luna ha un modello relativo dedicato.
 2. **EphemerisProvider**, successivo: campioni di vettori JPL Horizons preparati offline, intervallo limitato e interpolazione con errore verificato. Nessuna estrapolazione silenziosa.
 
-Le formule approssimate JPL distinguono il baricentro Terra–Luna dal centro della Terra [S1]. Se usate, il dataset e la UI devono rispettare questa distinzione; un provider che risolve Terra e Luna separatamente deve ricostruire le posizioni dal baricentro e dal vettore relativo con le rispettive masse. Non mescolare elementi riferiti a piani o centri differenti.
+Le formule approssimate JPL distinguono il baricentro Terra–Luna dal centro della Terra [S1]. La v1 consolidata sceglie elementi osculatori Horizons congelati, non i coefficienti secolari di quella tabella: propaga EMB/Sole, Marte/Sole e Luna/Terra, poi ricostruisce Terra e Luna dal baricentro con rapporti dei GM. Ricetta d'importazione e formule sono in DATA-MODEL. Non mescolare elementi riferiti a piani, centri o versioni differenti.
 
 Il modello iniziale non predice eclissi, occultazioni o puntamenti osservativi con accuratezza certificata. La sincronia lunare è una prima approssimazione; librazioni, precessione e perturbazioni saranno introdotte solo con modelli e verifiche dedicati. Gravity Lab avrà un integratore numerico separato e scenari modificabili, senza alterare il dataset canonico del Sistema solare.
 
@@ -155,11 +263,11 @@ Il modello iniziale non predice eclissi, occultazioni o puntamenti osservativi c
 
 Un unico `SimulationClock` distingue il tempo monotono usato per animare l'interfaccia dal tempo della simulazione. Controlli previsti: pausa, play, ×1, ×10, ×100, ×1000, ×10000, ×100000 e ripristino dell'epoca iniziale del dataset. Il moltiplicatore e la data/modello sono sempre visibili.
 
-Il tempo simulato avanza come `deltaReale × fattore`; posizione e rotazione si ricalcolano dal tempo assoluto, senza accumulare piccole rotazioni a ogni frame. Ridurre gli angoli modulo un giro per stabilità numerica. Una scheda nascosta sospende la simulazione per impostazione iniziale: al ritorno non recupera inaspettatamente ore di movimento. Le transizioni della camera usano secondi reali, non l'accelerazione astronomica.
+Il tempo simulato usa la formula ancorata definita in DATA-MODEL, sezione 7; posizione e rotazione si ricalcolano dal tempo assoluto, senza accumulare piccoli incrementi a ogni frame. Ridurre gli angoli modulo un giro per stabilità numerica. Stato iniziale e reset: t=0, ×1, pausa. Scheda nascosta, gap >1000 ms, transizioni XR o perdita tracking sospendono il tempo; la ripresa è esplicita. Le transizioni della camera usano secondi reali, non l'accelerazione astronomica.
 
-L'epoca interna deve avere una scala temporale esplicita: prevedere giorni giuliani TDB e secondi rispetto a J2000 per il provider astronomico. Il primo modello può esporre soprattutto il tempo trascorso dall'epoca; una data civile precisa va mostrata soltanto con conversione UTC–TT–TDB controllata, inclusa la gestione della tabella dei secondi intercalari. Il costruttore JavaScript `Date` non è un convertitore astronomico. Horizons richiede attenzione a scala temporale, centro, frame e correzioni osservative [S2].
+L'epoca interna è fissata a JD 2451545.0 TDB, secondi relativi in doppia precisione; intervallo inclusivo [−1296000,+1296000] s. La UI v1 mostra il tempo trascorso dall'epoca, non una data civile UTC non convertita. La conversione futura UTC–TAI–TT–TDB e i limiti sono definiti in DATA-MODEL. `Date` non è un convertitore astronomico. Horizons richiede attenzione a scala temporale, centro, frame e correzioni osservative [S2].
 
-Convenzione iniziale: frame eclittico J2000 destrorso per il dominio orbitale, con centro dichiarato per ogni provider. L'adattatore trasforma gli assi in un frame destrorso Y-up della scena, per esempio `(x, y, z) → (x, z, -y)`, e configura Babylon coerentemente. Testare verso delle orbite, polo nord e orientamento delle texture con punti noti.
+Convenzione consolidata: frame eclittico J2000 destrorso, output con centro Sole, suborbite con centri espliciti. L'adattatore usa esattamente `(x, y, z) → (x, z, -y)` e Babylon destrorso. Testare verso delle orbite, polo nord e orientamento delle texture con punti noti. Orientamento corpo→frame e trasformazione mesh/UV restano distinti.
 
 Rotazione propria, orientamento dell'asse e posizione orbitale sono trasformazioni distinte. Non ruotare il piano orbitale quando ruota il pianeta. A velocità elevate segnalare il possibile aliasing temporale: una rotazione apparentemente ferma o inversa non è un fenomeno fisico.
 
@@ -173,7 +281,7 @@ Lo stato fisico è unico. `ScaleProjection` produce posizioni e raggi per il ren
 | Didattica | Distanze inizialmente lineari; raggi moltiplicati per fattori dichiarati. Sistema Terra–Luna eventualmente in una vista separata | «Dimensioni ingrandite» con fattori per corpo; indicare anche eventuale adattamento delle distanze |
 | Esplorativa | Passaggio fra vista del sistema, vicinanze di un corpo e osservatorio locale; scala adattata al contesto | «Scala esplorativa» e rapporto corrente; la transizione non simula un volo fisico |
 
-Valore iniziale candidato per la panoramica: `L = 1 au` per unità di rendering; per i dettagli scegliere una scala locale più piccola. I valori sono parametri di visualizzazione da collaudare, non proprietà astronomiche. Per il confronto dimensionale futuro usare un fattore comune ai raggi, con corpi affiancati e distanze di disposizione esplicitamente convenzionali.
+Preset v1 fissati in DATA-MODEL, sezione 8: panoramica `L = 1 au` per unità; viste del corpo `L = 10 Rfocus` e `2 Rfocus`. Scientifica: fattori dei raggi tutti 1; didattica panoramica: Sole 5, Terra/Luna/Marte 1000, distanze invariate. La sovrapposizione Terra–Luna si risolve con selezione di gruppo e vista locale, senza separazione spaziale nascosta. Sono parametri di presentazione da collaudare. Per il confronto dimensionale futuro usare un fattore comune ai raggi, con corpi affiancati e distanze di disposizione esplicitamente convenzionali.
 
 In modalità scientifica i marcatori possono restare leggibili ma devono essere separati dalle superfici: «indicatore, non dimensione del corpo». Nessun raggio minimo invisibilmente imposto alla mesh scientifica. La selezione può usare un'area di tolleranza maggiore della sagoma, senza falsificare la visualizzazione.
 
@@ -191,7 +299,7 @@ La prima modalità didattica non necessita di distanze logaritmiche. Una futura 
 
 ## 7. Asset e resa visiva
 
-Nella Fase 1 non si scaricano né si incorporano texture. Le risorse qui elencate sono **candidate**, non asset già acquisiti o autorizzati all'uso.
+Nelle Fasi 1–2 non si scaricano né si incorporano texture. Le risorse qui elencate sono **candidate**, non asset già acquisiti o autorizzati all'uso.
 
 | Oggetto | Prima risorsa candidata | Trattamento previsto |
 | --- | --- | --- |
@@ -293,7 +401,7 @@ Audio predisposto come servizio disattivato inizialmente, avviato soltanto dopo 
 
 ## 11. Verifica e rischi aperti
 
-Nella Fase 1 si verificano documentazione, fonti e perimetro delle modifiche. Non c'è un'applicazione da eseguire. Le verifiche di runtime e scientifiche sono definite nella [roadmap](ROADMAP.md), non già superate.
+Nelle Fasi 1–2 si verificano documentazione, fonti e perimetro delle modifiche. Non c'è un'applicazione da eseguire. Le verifiche di runtime e scientifiche sono definite nella [matrice di accettazione](ACCEPTANCE-TESTS.md), non già superate. Dispositivi, versioni delle dipendenze e file definitivi del dataset restano attività delle fasi successive; convenzioni, contratti e soglie sono invece chiusi.
 
 | Rischio | Decisione e criterio di controllo |
 | --- | --- |
