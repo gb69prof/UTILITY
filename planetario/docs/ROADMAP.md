@@ -1,10 +1,10 @@
 # Planetario — Roadmap
 
-**3 ottobre 2026 · Fase 5: quattro corpi ed effemeridi verificate; qualificazione hardware aperta**
+**3 ottobre 2026 · Fase 6: interazioni desktop e touch implementate; qualificazione hardware aperta**
 
 Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La prima milestone deve provare qualità visiva, correttezza del modello, input e VR prima di estendere il numero dei corpi. La base tecnica è descritta in [ARCHITECTURE.md](ARCHITECTURE.md).
 
-**Punto di arresto attuale:** Fase 5 implementata su richiesta di proseguire alla fase successiva; fermarsi prima della Fase 6. La revisione del provider e le verifiche sono in [ADR-005](ADR-005-EPHEMERIS.md) e [PHASE-5-VERIFICATION](PHASE-5-VERIFICATION.md). Restano aperte le qualificazioni fisiche iPad/Quest e browser autonomi.
+**Punto di arresto attuale:** Fase 6 implementata su richiesta di proseguire; fermarsi prima della Fase 7. Verifiche e limiti in [PHASE-6-VERIFICATION](PHASE-6-VERIFICATION.md). Il criterio di uscita fisico iPad e il testo al 200% restano aperti; le sequenze touch automatiche e le viewport simulate non li sostituiscono. Restano aperte anche le qualificazioni Quest e browser autonomi.
 
 ## 1. Regole comuni
 

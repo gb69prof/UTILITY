@@ -451,3 +451,14 @@ Consultazione: 3 ottobre 2026. Le documentazioni online evolvono e alcune pagine
 - **A6** — [Khronos: KTX](https://www.khronos.org/ktx/).
 - **P1** — [Meta: metodo di analisi delle prestazioni WebXR](https://developers.meta.com/vr/documentation/web/webxr-perf-workflow/).
 - **P2** — [Meta: buone pratiche prestazionali WebXR](https://developers.meta.com/vr/documentation/web/webxr-perf-bp/).
+
+
+### Addendum Fase 6 — schermo astronomico
+
+`SolarController` applica gli envelope a selezione/scheda/camera e al solo Clock. Mouse, touch, tastiera e HTML inviano le stesse azioni; id e sequenze duplicati/obsoleti, valori non finiti, corpi sconosciuti e richieste fuori intervallo vengono rifiutati. La scena astronomica non accetta ancora input XR: il collaudo tecnico resta separato fino alla Fase 8.
+
+Comandi aggiunti: `seekTime {tTdbSeconds}` (solo intervallo chiuso ±1296000 s, pausa, conserva rate e blocchi ambientali), `recenterView` (azzera pan conservando orbita, contesto e tempo), `setGuide {key,value}` (solo visualizzazione). `openInfo` riapre la selezione corrente. Chiudere la scheda non cambia selezione, fuoco o tempo; Esc dal pannello restituisce il focus HTML al controllo d'origine. Transizioni immediate, senza viaggio animato obbligatorio anche per chi preferisce movimento ridotto.
+
+`panView` contiene frazioni del viewport; il controller usa distanza, FOV verticale 0,8 rad e rapporto larghezza/altezza per convertirle in unità di rendering. Il target viene proiettato sugli assi destra/alto della camera. Limiti: ±1 unità in near-body, ±5 nelle altre viste, compensazione ×5/÷5 nel cambio di scala. Camera e target rimangono entro l'inviluppo di 32 unità verificato: questa navigazione orbitale limitata non abilita il volo libero o un nuovo rebase XR.
+
+I marcatori condividono il riconoscitore dei gesti del canvas: un drag iniziato sull'etichetta orbita/sposta, non seleziona al rilascio. Solo un tap a singolo puntatore in modalità Orbita seleziona; la modalità Sposta e Maiusc/tasto destro escludono la selezione. Il secondo dito annulla il tap per l'intera sequenza; il pan usa il centro dei due puntatori. Resize, blur, pagina nascosta, perdita di cattura e pointercancel cancellano i gesti. La soglia è 8 CSS px; il trascinamento che torna al punto iniziale resta un drag.

@@ -11,7 +11,7 @@ import {CreateLines} from '@babylonjs/core/Meshes/Builders/linesBuilder.js';
 import {Vector3,Quaternion,Matrix} from '@babylonjs/core/Maths/math.vector.js';
 import {Color3,Color4} from '@babylonjs/core/Maths/math.color.js';
 import '@babylonjs/core/Culling/ray.js';
-import type {BodyId,ScaleMode,Snapshot,ViewContext,Vec3} from '../data/contracts.ts';
+import type {BodyId,Snapshot,Vec3} from '../data/contracts.ts';
 import type {DatasetDraft} from '../data/dataset.ts';
 import {hermite,type EphemerisData} from '../physics/ephemeris.ts';
 import {bodyIds} from '../physics/provider.ts';
@@ -24,8 +24,8 @@ import moonMap from '../assets/2k_moon.jpg';
 import marsMap from '../assets/2k_mars.jpg';
 import sunMap from '../assets/2k_sun.jpg';
 
-export interface SolarView {mode:ScaleMode;focus:BodyId|null;context:ViewContext;yaw:number;pitch:number;distance:number;right:number;up:number;guides:boolean;axes:boolean}
-export const initialView=():SolarView=>({mode:'scientific',focus:null,context:'system',yaw:-Math.PI/2,pitch:.55,distance:4.8,right:0,up:0,guides:true,axes:false});
+export {initialView, type SolarView} from '../core/solar-view.ts';
+import type {SolarView} from '../core/solar-view.ts';
 export function createSolarScene(canvas:HTMLCanvasElement,data:DatasetDraft,ephemeris:EphemerisData,notice:(s:string)=>void,onContext:(lost:boolean)=>void){
   const life=new Lifetime();
   try {
@@ -71,7 +71,7 @@ export function createSolarScene(canvas:HTMLCanvasElement,data:DatasetDraft,ephe
       currentSettings=settingsFor(view.mode,view.context,origin,view.focus?radii[view.focus]:radii.earth);
       const projected=projection.project(snapshot,currentSettings,radii);if(!projected.ok)throw new Error(projected.error.message);
       camera.alpha=view.yaw;camera.beta=view.pitch;camera.radius=view.distance;
-      camera.target.set(-Math.sin(view.yaw)*view.right,view.up,Math.cos(view.yaw)*view.right);
+      camera.target.set(-Math.sin(view.yaw)*view.right-Math.cos(view.yaw)*Math.cos(view.pitch)*view.up,Math.sin(view.pitch)*view.up,Math.cos(view.yaw)*view.right-Math.sin(view.yaw)*Math.cos(view.pitch)*view.up);
       camera.minZ=view.context==='system'?.00001:.0001;
       for(const body of projected.value.bodies){const mesh=meshes[body.id];const distance=Math.hypot(...body.position);mesh.setEnabled(distance<25);mesh.position.copyFromFloats(...body.position);mesh.scaling.setAll(body.radius);mesh.rotationQuaternion=Quaternion.FromArray(body.bodyToRender);axes[body.id].setEnabled(view.axes&&mesh.isEnabled());
         if(body.id!=='sun')lights[body.id]!.direction.copyFrom(Vector3.FromArray(frameToRender(snapshot.states[body.id].positionM)).normalize());
@@ -80,7 +80,7 @@ export function createSolarScene(canvas:HTMLCanvasElement,data:DatasetDraft,ephe
       for(const g of guides)g.mesh.setEnabled(view.guides&&view.context==='system');
       const showMoon=view.guides&&(view.focus==='earth'||view.focus==='moon');trajectory.setEnabled(showMoon);
       if(showMoon){const earth=snapshot.states.earth.positionM;CreateLines('moon-relative-30-days',{points:lunarPath.map(r=>Vector3.FromArray(projection.projectPoint(add(earth,r),currentSettings))),instance:trajectory},scene);}
-      canvas.dataset['context']=view.context;canvas.dataset['focus']=view.focus??'system';canvas.dataset['metersPerUnit']=String(currentSettings.metersPerUnit);canvas.dataset['earthRadius']=String(radii.earth*currentSettings.radiusFactors.earth/currentSettings.metersPerUnit);canvas.dataset['time']=String(snapshot.tTdbSeconds);canvas.dataset['distance']=String(view.distance);canvas.dataset['yaw']=String(view.yaw);
+      canvas.dataset['context']=view.context;canvas.dataset['focus']=view.focus??'system';canvas.dataset['metersPerUnit']=String(currentSettings.metersPerUnit);canvas.dataset['earthRadius']=String(radii.earth*currentSettings.radiusFactors.earth/currentSettings.metersPerUnit);canvas.dataset['time']=String(snapshot.tTdbSeconds);canvas.dataset['distance']=String(view.distance);canvas.dataset['yaw']=String(view.yaw);canvas.dataset['panRight']=String(view.right);canvas.dataset['panUp']=String(view.up);
       return projected.value.disclosures[0]!;
     }
     const resize=new ResizeObserver(()=>engine.resize());resize.observe(canvas);life.own(()=>resize.disconnect());

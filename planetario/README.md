@@ -1,8 +1,12 @@
 # Planetario gbprof
 
-**Versione 0.5.0 · Fase 5 — Sole, Terra, Luna e Marte.**
+**Versione 0.6.0 · Fase 6 — Interazioni desktop e touch.**
 
-[Apri il Planetario](https://gbprof.it/UTILITY/planetario/). Quattro corpi, mappe 2K su richiesta, giorno/notte, assi, tre scale dichiarate e tempo condiviso con pausa e reset. La Terra è preselezionata nella scheda per offrire un punto di partenza; la camera parte dalla panoramica scientifica a J2000 in pausa. Seleziona un corpo, premi **Osserva**, trascina per orbitare e usa rotella o +/− per avvicinarti. Le frecce funzionano quando la scena ha il focus. **La Fase 6 non è avviata.**
+[Apri il Planetario](https://gbprof.it/UTILITY/planetario/). Quattro corpi, mappe 2K su richiesta, giorno/notte, assi, tre scale dichiarate e tempo condiviso con pausa e reset. La Terra è preselezionata nella scheda per offrire un punto di partenza; la camera parte dalla panoramica scientifica a J2000 in pausa. Seleziona un corpo, premi **Osserva**, trascina per orbitare e usa rotella o +/− per avvicinarti. Le frecce orbitano quando la scena ha il focus; Maiusc + frecce sposta la vista. **Fase 6 implementata; Fase 7 non avviata.**
+
+Mouse: trascina per orbitare, Maiusc + trascina o tasto destro per spostare, rotella per zoom. Touch: scegli **Orbita/Sposta** per un dito; due dita spostano e fanno pinch. **Centra la vista** recupera il corpo dopo uno spostamento. C centra, Home torna al sistema, Invio osserva, Spazio avvia/ferma; Esc chiude la scheda e restituisce il focus. Il cursore temporale sceglie un istante fra −15 e +15 giorni da J2000 e mette in pausa; il reset conserva la selezione. Pannello laterale in landscape, inferiore in portrait fino a 1100 px.
+
+Il [rapporto della Fase 6](docs/PHASE-6-VERIFICATION.md) distingue 51 test automatici, prove nel browser integrato e controlli ancora aperti: iPad fisico, browser autonomi e zoom effettivo del testo al 200%.
 
 La verifica ha escluso il modello a tre coniche dal movimento: l’errore Luna–Terra raggiunge 45.233 km contro il limite di 30.000 km. La [revisione esplicita ADR-005](docs/ADR-005-EPHEMERIS.md) attiva le effemeridi JPL interpolate già previste nell’architettura. Restano invariati SI, frame, epoca e dominio di 30 giorni. Nessuna soglia allargata. Le ellissi sono soltanto guide etichettate.
 

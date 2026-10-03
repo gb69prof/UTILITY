@@ -489,3 +489,8 @@ Consultati il 3 ottobre 2026. Formule applicative, soglie, nomi dei contratti e 
 - **R10** — [NAIF, pck00011.tpc](https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc).
 - **R11** — [W3C, WebXR Device API](https://www.w3.org/TR/webxr/).
 - **R12** — [JSON Schema, validazione draft 2020-12](https://json-schema.org/draft/2020-12/json-schema-validation).
+
+
+### Estensione del clock nella Fase 6
+
+`seek(tTdbSeconds, realNowMs)` seleziona un istante entro l'intervallo validato chiuso. Valori non finiti o fuori intervallo sono rifiutati prima di mutare il clock. Il comando mette in pausa, mantiene il rate, conserva i blocchi ambientali (hidden/tracking/transizioni), rimuove suspended e aggiorna range-end solo al limite superiore. Un istante precedente al limite non riparte automaticamente: serve Play. Posizioni e orientamenti continuano a essere derivati dallo stesso unico istante del provider; nessun dato scientifico o soglia viene modificato. Il cursore HTML espone −15…+15 giorni, passo 0,01 giorno, con tastiera nativa Home/End e frecce; non è un calendario civile UTC.
