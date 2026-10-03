@@ -34,4 +34,12 @@ Su iPad: provare 20 tap su Terra e Luna, drag che ritorna all'origine, pinch con
 
 ## Pubblicazione
 
-Esito remoto e manifest HTTP da registrare dopo il rilascio.
+Commit controller: `f40df343df9fda6361031f82faf193d5b56858e3`. Commit interfaccia/rilascio: `dbf32812752eb0b04606737c4e421204f7f0ef96`. Alberi Git remoti identici ai commit locali prima di aggiornare main, nessuna modifica fuori da planetario. Il confronto Git/staging conferma tutti i 58 file.
+
+Workflow entrambi SUCCESS: [Deploy to gbprof server 37117511998](https://github.com/gb69prof/UTILITY/actions/runs/37117511998), [Pages 37117511537](https://github.com/gb69prof/UTILITY/actions/runs/37117511537).
+
+[Versione pubblica](https://gbprof.it/UTILITY/planetario/): **58/58 file HTTP 200 identici** in byte e SHA-256 allo staging e al rilascio. [Manifest completo](phase6-public-http.json). HTML SHA-256: `75c37715df681c89cda731813e3648cd1f90660dead4c64c56cf62118a291fe5`.
+
+Browser pubblico: Fase 06 e versione 0.6.0 visibili; Osserva Terra, pan da tastiera e centratura, seek esatto a −15 giorni in pausa, reset J2000 e zoom vicino→locale verificati. Texture Terra caricata. Console senza errori o warning. Screenshot finale salvato nell'area locale di verifica e sito lasciato aperto; override di viewport rimosso. Collaudo tecnico separato: scena e selezione della sfera funzionanti in locale, console pulita. Le limitazioni fisiche e del testo al 200% restano quelle indicate sopra.
+
+Il successivo commit di questo rapporto e del manifest non modifica il codice dell'applicazione verificata.

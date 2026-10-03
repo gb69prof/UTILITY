@@ -1,0 +1,471 @@
+{
+  "base": "https://gbprof.it/UTILITY/planetario/",
+  "checked": 58,
+  "matching": 58,
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 764,
+      "sha256": "75c37715df681c89cda731813e3648cd1f90660dead4c64c56cf62118a291fe5",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/2k_earth_daymap-DKLT2WuX.jpg",
+      "status": 200,
+      "bytes": 463087,
+      "sha256": "767ee1dc6eb3802699bfccf6f264880f8acd0b80de3191cd24984fe279b07b7c",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/2k_mars-BX2JGd6W.jpg",
+      "status": 200,
+      "bytes": 750547,
+      "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/2k_moon-BMpRMzYO.jpg",
+      "status": 200,
+      "bytes": 1053869,
+      "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/2k_sun-BfaUCBxs.jpg",
+      "status": 200,
+      "bytes": 822427,
+      "sha256": "ff0f076ba65e03b5ab518451bc96699325be38e3ccbdd5869ee1c00f3a0c8816",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/baseTexture.pure-Bt_wYZ_o.js",
+      "status": 200,
+      "bytes": 20497,
+      "sha256": "e3cf9d3f09ebfca44e509b892b5d33cd7bf9bf7d3c2df49b167f789405f486bf",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/basisTextureLoader-QVPM775U.js",
+      "status": 200,
+      "bytes": 8148,
+      "sha256": "8b990f236fd067434d0b3be338ca4fd663ea62ca26d08662d90bbacf886acaca",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/bootstrap-fBmB5TqM.js",
+      "status": 200,
+      "bytes": 156588,
+      "sha256": "63ef183d5b710ac4e6dfb563f171de2ba941db447abda431359c855b0b073f38",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/color.fragment-DVaYbzXa.js",
+      "status": 200,
+      "bytes": 982,
+      "sha256": "f7a9dc5b02009a66dd839d60b53371eae716d9ab668c43591a03dccd89723c43",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/color.fragment-SH3AKoaS.js",
+      "status": 200,
+      "bytes": 874,
+      "sha256": "1c320101aed7a2c3f3c745bcc48db7128b2b3cd5476a7be5ff0f92e5b168f08f",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/color.vertex-BYaj1Jpp.js",
+      "status": 200,
+      "bytes": 1412,
+      "sha256": "9a24b270733ec21730e168537515b72d59372e45c4953550d4b8e565b94ff1e4",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/color.vertex-UAuK67V9.js",
+      "status": 200,
+      "bytes": 1352,
+      "sha256": "7426d8d1445626cc1a093ce6aa6c34df059d8b6f0ca3d8f7c1322164485f470f",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/cubemapToSphericalPolynomial-CoQwL7O9.js",
+      "status": 200,
+      "bytes": 3662,
+      "sha256": "3184d702036d3cc72df06179ff2b86f6ce4ca09f8f740f4da282472c907b9a81",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/dds.pure-ChJm8dYN.js",
+      "status": 200,
+      "bytes": 6936,
+      "sha256": "f9b90335096dd57e2d021f9d16e5453d09b0f4df94e903a97ac98bb24943e183",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/ddsTextureLoader-Dpm06qIB.js",
+      "status": 200,
+      "bytes": 1264,
+      "sha256": "9bd170632021397deac850ef7ecf85dda585c6a0e7c0366e3050c7a09ed13fea",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/decorators-CsN2eWor.js",
+      "status": 200,
+      "bytes": 3575,
+      "sha256": "2d05e67aea9b3360871ec7272d65e8ac3d19eea632121b414932c3dfd68bfa5c",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/default.fragment-DOpJD8Rt.js",
+      "status": 200,
+      "bytes": 110447,
+      "sha256": "5161bd30d331d5a76c8159862fb75e957a70408c71ebb24db86621f4157250ae",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/default.fragment-JYy_LTJ1.js",
+      "status": 200,
+      "bytes": 115227,
+      "sha256": "eb023806c74825ce28a7db7376fa283c5110244f41961b278874d4ebef370ef7",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/default.vertex-CF_7OiRp.js",
+      "status": 200,
+      "bytes": 19625,
+      "sha256": "dcf317dbfeac2f12ecda891801a848af2c2e90f2dd35bbfeff61856826d19c3c",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/default.vertex-uAWj3KN-.js",
+      "status": 200,
+      "bytes": 38037,
+      "sha256": "26b928980a899c4e5b964f6f76964a9302892a23f54bcfd6043a9edcdfdb7900",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/diagnostics-D14SNfKN.css",
+      "status": 200,
+      "bytes": 3994,
+      "sha256": "ba53675f7f9aa8750c2c4bd5402b43ca270271fee8dee81ea947fb7e9ac6be75",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/dumpTools.pure-CNsiGwMO.js",
+      "status": 200,
+      "bytes": 11738,
+      "sha256": "4867feb7fe3ed527be022ee8bfda9a5351f2340b2dd441737d0205516c066347",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/engineStore-Bn2tApal.js",
+      "status": 200,
+      "bytes": 3512,
+      "sha256": "4ff4a065e9cbcecc87a977005df2188454cc7e97c65dd733927e9799a464793b",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/envTextureLoader-BwLmaqct.js",
+      "status": 200,
+      "bytes": 26015,
+      "sha256": "733a302248ad7a8d9dfc0ef368086e4afe2ba3215d9ee5804b4dc3067f979be4",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/exrTextureLoader-BLwRo7pv.js",
+      "status": 200,
+      "bytes": 13148,
+      "sha256": "79f120820218353569cc2b5673d64e95b78e5e734beb8aaf89aaa1bbe3cd5701",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/fogFragment-NFgubt9V.js",
+      "status": 200,
+      "bytes": 2430,
+      "sha256": "054bc520779bc8e3797647ce5f6ecb35a6495a88efc6755833ba9bcf4228745e",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/fogFragment-WPqtYpyX.js",
+      "status": 200,
+      "bytes": 2200,
+      "sha256": "b26c23e02289a3aa6d6abc66cc1f7a8b680ae042813afb3909033bcfbeef0018",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/hdrTextureLoader-BQVwkxK1.js",
+      "status": 200,
+      "bytes": 2313,
+      "sha256": "c1dfa7a7928d2c03e86324a093297ad10c35caefff14518691c5fe4d4172447a",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/helperFunctions-BH8P-eyq.js",
+      "status": 200,
+      "bytes": 6489,
+      "sha256": "019a076bb9af420aa999424c444b782a858fa7153a108bfb55fbf30b20917969",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/helperFunctions-gEnZbjN3.js",
+      "status": 200,
+      "bytes": 6815,
+      "sha256": "25cb5a62b09965a1f9d12f999eb40672c9f80924b8cf2353120e9809d11a03ba",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/iesTextureLoader-DkRm2YN5.js",
+      "status": 200,
+      "bytes": 2477,
+      "sha256": "6ede12cb54747ef5b9c41df0e584d70313d34d7b61e4837668aebeacb6c93e81",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/index-Bf9jvk5V.js",
+      "status": 200,
+      "bytes": 3904,
+      "sha256": "af1f8beab36f1fd7eab3981766140283ef7d1cdbf7bedc9f56352c137aed8fb6",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/internalTexture-B3djGrls.js",
+      "status": 200,
+      "bytes": 7879,
+      "sha256": "f8c7220eb9edcac1e8ec604ec785940fbeae29803178067d1b56aaf8ad4848f2",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/ktxTextureLoader-C7bG-Dyv.js",
+      "status": 200,
+      "bytes": 16411,
+      "sha256": "8d385f87ea4680b9906b7fda1c2e79538290384f6daee8022467e4c1cf02eacf",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/linesBuilder-D4r8ELpQ.js",
+      "status": 200,
+      "bytes": 835842,
+      "sha256": "999c9ff560f635c23a84603b20a30bf52ad8b27685c7c3a04c52708ba7453673",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/logDepthDeclaration-BKcd_JEL.js",
+      "status": 200,
+      "bytes": 2160,
+      "sha256": "fa28fea64fd32656afcd71c7cd7500f62ba35b7b69e4c5280d6ed6590bea1db6",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/logDepthDeclaration-CLGvI4QS.js",
+      "status": 200,
+      "bytes": 2545,
+      "sha256": "fe610df7a36b8bedded332aa15a3fdfd4b4d18eea758ca1ba49570af378fce3e",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/logger-CuBYPcDK.js",
+      "status": 200,
+      "bytes": 1881,
+      "sha256": "30a999582eace71f2e78a479182e71e943508bbda9574b17e5b29575c49a3b9e",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/math.color.pure-CO0n8AH-.js",
+      "status": 200,
+      "bytes": 76927,
+      "sha256": "805724172d6876444226cf6bf8760b4fdace62e985f634582e477fe0c9d8fc1f",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/math.scalar.functions-Bcxiuh2E.js",
+      "status": 200,
+      "bytes": 704,
+      "sha256": "224724705dbb6a469db9f384200da635fca3e16445f5181154376e3bee206e03",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/mesh.vertexData.functions-CD4JOR2q.js",
+      "status": 200,
+      "bytes": 930,
+      "sha256": "bdeb852116676b6289101b6ef271fb52200959188fba6863858942ec2e068338",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/pass.fragment-Cvd2TCWC.js",
+      "status": 200,
+      "bytes": 318,
+      "sha256": "9360b4269aa9ef2e3f7c40e8671692d8efa20ef17ef57f3207ce34b5cd3751e2",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/performanceConfigurator-UtxC_Odd.js",
+      "status": 200,
+      "bytes": 500,
+      "sha256": "18ac183db602e06e8f22bb36ef5a1b0127170dfa0401d3e6aff4f81dc5d76b26",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/postprocess.vertex-CmVXXq2T.js",
+      "status": 200,
+      "bytes": 584,
+      "sha256": "7f3cb8f402651e0c1378f484fdd319a6859ce17c20cb877ede973037d487ca79",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/postprocess.vertex-DJCmMhI8.js",
+      "status": 200,
+      "bytes": 460,
+      "sha256": "520bb6e9e2851654258b110a11a5d138f1e77aaaaa22013e6d723cdd59bdeacd",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/precisionDate-CcRlxfnG.js",
+      "status": 200,
+      "bytes": 13262,
+      "sha256": "f0b40dce004f6e1d28a78b8f6e07d06b6c0e0ac84cbb46292e07cb8ced2d5389",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/rgbdDecode.fragment-Cdz2Tveq.js",
+      "status": 200,
+      "bytes": 520,
+      "sha256": "bee2fc90a9d5fad759b42d5df5a6f2e1302957a5d4bdd56bc8a4e78891d589da",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/rgbdDecode.fragment-DXl2fYur.js",
+      "status": 200,
+      "bytes": 663,
+      "sha256": "e6968fe3710c058f004d6bbcd515bb9fed0cdad1265a70ff16ed0b044874d00c",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/shaderStore-D-XQlhUT.js",
+      "status": 200,
+      "bytes": 469,
+      "sha256": "db600316439f2fedb7bfd3bcbc61b24d30c2b2646828dcea1c7c778cd07d5e3e",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/solar-BRZwmOvD.css",
+      "status": 200,
+      "bytes": 8349,
+      "sha256": "4567129930a7d7fdd67bfc91afbcc03089cdca2342f212898169656282776408",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/solar-CEz53OrE.js",
+      "status": 200,
+      "bytes": 529465,
+      "sha256": "1b556ad2aa379725d6823f66ea3ff8c63110de783bc40aaa363be7248340b3b6",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/technical-D1XPZBPC.js",
+      "status": 200,
+      "bytes": 3835,
+      "sha256": "07efbed7e8c6324103c837578d7b417026979fb83bb6840ac94f3cf70cbc145a",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/tgaTextureLoader-CqhhocF6.js",
+      "status": 200,
+      "bytes": 3408,
+      "sha256": "7edd7f23ff0ade28e79de5a87b7c966629d4e26d815fa3321589c50632179ae0",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/thinEngine.pure-Bll2w3VJ.js",
+      "status": 200,
+      "bytes": 128200,
+      "sha256": "54e8deb0c26281b2737440393f5545957fc75629b76167319ad9f325a230e54f",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/tools.pure-Cf0oYH4u.js",
+      "status": 200,
+      "bytes": 29814,
+      "sha256": "ab02d6708f4bd0c43e5f746440786c38a5a4a2054dbd01b8bfe75edd7dc45fa6",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/typeStore-BGi7uhG_.js",
+      "status": 200,
+      "bytes": 1372,
+      "sha256": "18785acde6902ad9c178c7ca5d28c553d18d8193599217e8f698654b4f6b7526",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/vertexColorMixing-CBmtHj8r.js",
+      "status": 200,
+      "bytes": 11727,
+      "sha256": "8c2f381f6d64926c7225149709007280074fd7959e6bc679bf39ae7ceede100d",
+      "matches_staging": true,
+      "matches_release": true
+    },
+    {
+      "path": "build/vertexColorMixing-HinktY3n.js",
+      "status": 200,
+      "bytes": 10398,
+      "sha256": "5722816c8048e24c799920477614f325900c4183d42f132d652bc8e61b60227e",
+      "matches_staging": true,
+      "matches_release": true
+    }
+  ]
+}
