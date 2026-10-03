@@ -1,5 +1,8 @@
 # Planetario — Matrice di accettazione
 
+> **Aggiornamento Fase 5, 3 ottobre 2026:** il confronto indipendente ha respinto la conica lunare congelata per l’intero intervallo. La revisione [ADR-005](ADR-005-EPHEMERIS.md) attiva il provider Hermite previsto da DATA-MODEL §6.1. Le soglie, SI, ECLIPJ2000, J2000-TDB e ±15 giorni restano invariati. Le sezioni sulla propagazione kepleriana descrivono il modello di confronto e le guide, non il provider operativo della v0.5.0. La scheda iniziale mostra Terra preselezionata; camera in panoramica scientifica, tempo fermo.
+
+
 **Fase 2 · Specifica v1 · 3 ottobre 2026**
 
 Questa matrice stabilisce cosa dovrà essere verificato. **Nessuno dei test applicativi, scientifici o su dispositivi elencati è stato eseguito nella Fase 2.** In questa fase si controllano documenti, riferimenti, coerenza dei contratti e diff. I criteri numerici sono requisiti di progetto, non benchmark o errori già misurati.

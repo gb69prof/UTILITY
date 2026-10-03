@@ -1,5 +1,8 @@
 # Planetario — Architettura generale
 
+> **Aggiornamento Fase 5, 3 ottobre 2026:** il confronto indipendente ha respinto la conica lunare congelata per l’intero intervallo. La revisione [ADR-005](ADR-005-EPHEMERIS.md) attiva il provider Hermite previsto da DATA-MODEL §6.1. Le soglie, SI, ECLIPJ2000, J2000-TDB e ±15 giorni restano invariati. Le sezioni sulla propagazione kepleriana descrivono il modello di confronto e le guide, non il provider operativo della v0.5.0. La scheda iniziale mostra Terra preselezionata; camera in panoramica scientifica, tempo fermo.
+
+
 **Fasi 1–2 · Architettura consolidata · 3 ottobre 2026**
 
 Obiettivo: costruire un osservatorio scientifico virtuale nel quale entrare, esplorare e comprendere. La scena tridimensionale deve spiegare relazioni e fenomeni; dati, immagini e interazioni devono poter essere verificati.

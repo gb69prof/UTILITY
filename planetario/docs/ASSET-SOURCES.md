@@ -1,8 +1,12 @@
 # Registro delle fonti degli asset
 
-**Fase 3 · 3 ottobre 2026. Nessun asset astronomico acquisito, trasformato o inserito nella build.**
+**Fase 5 · quattro texture acquisite e integrate il 3 ottobre 2026.** Il registro macchina completo è `data/assets.json`, con URL diretto, autore, licenza, data, dimensioni in byte e SHA-256. Autore Solar System Scope / INOVE; [pagina e licenza dichiarata](https://www.solarsystemscope.com/textures/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribuzione presente nell’interfaccia. Originali JPEG 2048×1024, non modificati: `2k_earth_daymap.jpg`, `2k_moon.jpg`, `2k_mars.jpg`, `2k_sun.jpg`. Nessuna texture 8K/16K.
 
-Il registro riguarda texture, modelli, mappe, immagini e audio futuri. La pagina diagnostica usa HTML/CSS e il codice del motore; non simula mappe osservate.
+Caricamento progressivo: colore di riserva immediato, richiesta 2K quando si osserva il corpo o si attiva la panoramica didattica, applicazione soltanto a caricamento concluso, mipmap GPU. Fallimento: superficie colorata e avviso. Quattro mappe complessivamente circa 3,09 MB decimali; memoria RGBA8 con mipmap stimata circa 42,7 MiB, non misura VRAM. Geometria canonica generata localmente, 96×48 segmenti, +Z nord / +X longitudine zero / +Y est. UV e assi verificati nel codice; la Terra è stata ispezionata visivamente.
+
+Le mappe sono elaborazioni illustrative, non misure dell’istante J2000. La Terra mostra un mosaico elaborato; la fotosfera solare non rappresenta attività corrente, ed è resa emissiva con attenuazione qualitativa al bordo, non calibrazione radiometrica. Nessuna atmosfera, nube o rilievo geometrico aggiuntivo. Stelle sintetiche deterministiche, senza catalogo o identità, esposizione illustrativa. Nessun audio o modello esterno.
+
+La tabella seguente conserva i candidati della ricognizione iniziale: non attribuire loro gli asset effettivamente integrati.
 
 ## Candidati già individuati
 

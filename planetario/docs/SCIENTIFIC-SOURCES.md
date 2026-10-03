@@ -1,20 +1,12 @@
 # Registro delle fonti scientifiche
 
-**Fase 3 · 3 ottobre 2026. Nessun dataset astronomico acquisito o qualificato.**
+**Fase 5 · fonti acquisite e verificate il 3 ottobre 2026.** Il registro operativo è `data/acquisition.json` più `data/ephemeris-acquisition.json`; ogni risposta originale è conservata con query completa e SHA-256. `data/dataset.json` conserva quantità, definizioni e provenienza, distinguendo EMB da Terra. PCK00011 completo e GM DE440; Horizons API risponde 1.2, DE441 per Terra/Luna/EMB e mar099 per Marte 499. La versione effettivamente ricevuta prevale sulla versione generale della documentazione API.
 
-Questo registro prepara l'acquisizione successiva. Una pagina consultata non equivale a uno snapshot operativo. Le convenzioni e la ricetta restano quelle di [DATA-MODEL](DATA-MODEL.md), in particolare §§2, 5 e 10.
+`data/qualification.json`: tre coniche confrontate con CSPICE e cinque stati con Horizons, rotazioni con PCK completo. Esito complessivo FAIL (Luna/Terra), escluso dal runtime. `data/ephemeris-qualification.json`: PASS delle effemeridi operative e degli orientamenti semplificati. Campioni orari e controlli alla mezz’ora sono distinti; non viene confrontato il modello con i propri risultati. Nessuna richiesta esterna durante l’esecuzione dell’app.
 
-| ID di registro | Ente / riferimento | Uso previsto | Stato |
-| --- | --- | --- | --- |
-| candidate-jpl-ssd | [NASA JPL Solar System Dynamics](https://ssd.jpl.nasa.gov/), [parametri astrodinamici](https://ssd.jpl.nasa.gov/astro_par.html) | GM, costanti e controllo dei riferimenti | Candidata |
-| candidate-jpl-horizons | [JPL Horizons: manuale](https://ssd.jpl.nasa.gov/horizons/manual.html), [API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) | Elementi osculatori a t0 e vettori geometrici indipendenti | Candidata |
-| candidate-naif-pck | [NAIF PCK](https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/pck.html), [pck00011.tpc](https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc) | Inizializzazione completa di poli e meridiani | Candidata |
-| candidate-nasa-science | [NASA Science](https://science.nasa.gov/) | Contenuti e documentazione di missione, da identificare per singola affermazione | Candidata |
-| candidate-iau | [IAU](https://www.iau.org/), [SOFA](https://www.iausofa.org/current-software) | Convenzioni e futura conversione del tempo; documento/versione da fissare | Candidata |
-| candidate-esa | [ESA](https://www.esa.int/) | Contenuti e risorse di missione, da selezionare | Candidata |
-| candidate-usgs | [USGS Astrogeology](https://astrogeology.usgs.gov/) | Riferimenti cartografici e proiezioni dei futuri asset | Candidata |
+Raggi: sfera di volume equivalente `(abc)^(1/3)`, con trattamento esatto del caso sferico. GM relativo delle coniche preso dalla specifica risposta Horizons. Il GM marziano effettivo è derivato dalla risposta 499 meno il GM solare DE440, con limite di precisione da sottrazione esplicito in `data/gm-reconciliation.json`; BODY4_GM non è usato come GM di Marte. Le effemeridi operative non dipendono da quel GM marziano. Massa, densità, temperature e composizione non acquisite restano null/vuote con motivazione.
 
-Consultazione web di questo turno: portali JPL, Horizons, NASA, IAU, ESA raggiunti; il recupero del portale USGS tramite lo strumento web non è riuscito. USGS resta il riferimento candidato già approvato in ARCHITECTURE; ciò non costituisce acquisizione di un file.
+Le fonti candidate riportate di seguito documentano la ricognizione precedente; non sono tutte entrate nel prodotto.
 
 ## Stati e tracciabilità
 

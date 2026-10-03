@@ -1,5 +1,8 @@
 # Planetario — Modello dei dati e contratti scientifici
 
+> **Aggiornamento Fase 5, 3 ottobre 2026:** il confronto indipendente ha respinto la conica lunare congelata per l’intero intervallo. La revisione [ADR-005](ADR-005-EPHEMERIS.md) attiva il provider Hermite previsto da DATA-MODEL §6.1. Le soglie, SI, ECLIPJ2000, J2000-TDB e ±15 giorni restano invariati. Le sezioni sulla propagazione kepleriana descrivono il modello di confronto e le guide, non il provider operativo della v0.5.0. La scheda iniziale mostra Terra preselezionata; camera in panoramica scientifica, tempo fermo.
+
+
 **Fase 2 · Specifica normativa v1 · 3 ottobre 2026**
 
 Questa specifica consolida [ARCHITECTURE.md](ARCHITECTURE.md). Definisce contratti da implementare nelle fasi successive, senza introdurre applicazione, dipendenze o dataset operativi. I frammenti TypeScript e JSON sono specifiche documentali. I criteri di verifica sono in [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md).

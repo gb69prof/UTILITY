@@ -37,6 +37,14 @@ test('Vite never empties output implicitly and points only to internal staging',
   assert.equal(config.base, basePath);
   assert.equal(config.publicDir, false);
 });
+
+test('release accepts hash-named JPEG surfaces but rejects unhashed or nested assets', async () => sandbox(async root => {
+  await staged(root);
+  await writeFile(resolve(root,'.staging/build/surface-12345678.jpg'),Buffer.from([255,216,255,217]));
+  assert.ok((await inspectStaging(root)).includes('build/surface-12345678.jpg'));
+  await writeFile(resolve(root,'.staging/build/surface.jpg'),'unversioned');
+  await assert.rejects(()=>inspectStaging(root),/allowlist/);
+}));
 test('release promotes allowlisted files, is repeatable, and preserves unrelated files', async () => sandbox(async root => {
   await staged(root);
   await mkdir(resolve(root, 'build'));

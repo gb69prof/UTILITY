@@ -1,10 +1,10 @@
 # Planetario — Roadmap
 
-**3 ottobre 2026 · Fase 4: implementazione minima disponibile; qualificazione hardware aperta**
+**3 ottobre 2026 · Fase 5: quattro corpi ed effemeridi verificate; qualificazione hardware aperta**
 
 Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La prima milestone deve provare qualità visiva, correttezza del modello, input e VR prima di estendere il numero dei corpi. La base tecnica è descritta in [ARCHITECTURE.md](ARCHITECTURE.md).
 
-**Punto di arresto del compito attuale:** Fase 4 implementata su incarico esplicito; fermarsi prima della Fase 5. Scena tecnica, input unificato, pannello, diagnostica e integrazione XR limitata disponibili. La matrice B01–B08 non è chiusa su tutti i dispositivi: leggere [PHASE-4-VERIFICATION](PHASE-4-VERIFICATION.md) e [QUEST-TEST](QUEST-TEST.md). Dati e soglie di [DATA-MODEL](DATA-MODEL.md) e [ACCEPTANCE-TESTS](ACCEPTANCE-TESTS.md) restano invariati.
+**Punto di arresto attuale:** Fase 5 implementata su richiesta di proseguire alla fase successiva; fermarsi prima della Fase 6. La revisione del provider e le verifiche sono in [ADR-005](ADR-005-EPHEMERIS.md) e [PHASE-5-VERIFICATION](PHASE-5-VERIFICATION.md). Restano aperte le qualificazioni fisiche iPad/Quest e browser autonomi.
 
 ## 1. Regole comuni
 
@@ -55,7 +55,7 @@ Dipendenza soddisfatta: Fase 3 verificata su `main` al commit `53c9aa18ffcc5ff1e
 
 Consegnati engine WebGL 2, scena destrorsa con una sfera tecnica, griglia 512 px locale, camera, azioni/picking, scheda HTML, touch simulato e tastiera, diagnostica, profili e gestione del contesto. WebXR implementato con sessione reale su richiesta, raggi semantic select, pannello mesh, tracciamento in metri e osservatorio fermo. Nessuna sessione immersiva fisica eseguita.
 
-Decisione: **BABYLON CONFERMATO per la prova nel browser integrato su Windows, provvisoriamente rispetto a Chrome/Edge autonomi, iPad e Quest.** Nessun difetto bloccante del motore dimostrato. Gli esiti parziali e le misure sono nel rapporto; hardware assente non è un pass né un fallimento Babylon. La Fase 5 non è avviata.
+Decisione: **BABYLON CONFERMATO per la prova nel browser integrato su Windows, provvisoriamente rispetto a Chrome/Edge autonomi, iPad e Quest.** Nessun difetto bloccante del motore dimostrato. Gli esiti parziali e le misure sono nel rapporto; hardware assente non è un pass né un fallimento Babylon. Questo era lo stato alla chiusura della Fase 4; la Fase 5 è ora implementata con la revisione ADR-005.
 
 Obiettivi normativi conservati:
 
@@ -68,6 +68,8 @@ Eseguire il protocollo B01–B08 di ACCEPTANCE-TESTS: una sfera con texture tecn
 Criterio di uscita: motore stabile su Chromium/Edge e prima verifica touch; nessun errore bloccante noto nel ciclo XR di prova. Se il Quest non è disponibile, registrare il rischio aperto e non dichiarare validata la scelta su hardware. Rivalutare il motore se la prova evidenzia difetti bloccanti.
 
 ### Fase 5 — Sole, Terra, Luna e Marte
+
+**Implementata nella v0.5.0, con revisione esplicita del provider.** Tre coniche acquisite e collaudate; modello lunare non qualificato e conservato come evidenza. Movimento da vettori JPL con Hermite oraria; 720 controlli intermedi per cinque stati, 241 orientamenti PCK per corpo. Quattro sfere e mappe 2K, luce solare, stelle illustrative, clock e scale disponibili. Le prove realmente eseguite e le lacune sono nel rapporto. I requisiti originari seguenti restano leggibili; ADR-005 modifica soltanto la scelta del provider operativo e la semantica delle guide.
 
 Dipendenza: nucleo minimo stabile e fonti validate per i dati utilizzati.
 

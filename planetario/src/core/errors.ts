@@ -4,7 +4,7 @@ export function reportError(error: unknown): void {
   const panel = document.getElementById('error');
   if (panel) { panel.hidden = false; panel.textContent = `Avvio interrotto: ${message}`; }
   const status = document.getElementById('status');
-  if (status) status.textContent = 'Fase 4 — errore di inizializzazione';
+  if (status) status.textContent = 'Errore di inizializzazione';
 }
 export function installErrorHandlers(): () => void {
   const controller = new AbortController();

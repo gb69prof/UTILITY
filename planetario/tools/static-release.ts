@@ -2,7 +2,7 @@ import { lstat, mkdir, readdir, readFile, realpath, rm, writeFile } from 'node:f
 import { resolve, relative, isAbsolute, dirname } from 'node:path';
 import { basePath } from './paths.ts';
 
-const allowedAsset = /^build\/[A-Za-z0-9_][A-Za-z0-9_.-]*-[A-Za-z0-9_-]{8,}\.(?:js|css)$/;
+const allowedAsset = /^build\/[A-Za-z0-9_][A-Za-z0-9_.-]*-[A-Za-z0-9_-]{8,}\.(?:js|css|jpg)$/;
 async function checkedRoot(root: string): Promise<string> {
   const absolute = resolve(root);
   if ((await lstat(absolute)).isSymbolicLink()) throw new Error('Project root must not be a link.');

@@ -1,6 +1,6 @@
 {
   "name": "planetario-gbprof",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "engines": { "node": ">=24.14.1 <25", "npm": ">=11 <12" },
@@ -9,7 +9,8 @@
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.ts",
-    "build": "npm run typecheck && node tools/build.ts",
+    "science:audit": "node tools/verify-science.ts --expect-unqualified && node tools/verify-ephemeris.ts",
+    "build": "npm run typecheck && npm run science:audit && node tools/build.ts",
     "release": "npm run test && npm run build && node tools/release.ts",
     "preview": "vite preview --host 127.0.0.1"
   },

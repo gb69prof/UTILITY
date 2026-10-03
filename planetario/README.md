@@ -1,10 +1,12 @@
 # Planetario gbprof
 
-**Versione 0.4.0 · Fase 4 — motore 3D minimo e verifica dei rischi.**
+**Versione 0.5.0 · Fase 5 — Sole, Terra, Luna e Marte.**
 
-Il progetto prepara un osservatorio scientifico per gbprof.it. La prova corrente mostra una sfera tecnica con griglia UV generata, camera orbitale, picking, scheda HTML e diagnostica. Mouse, tastiera, touch e trigger XR convergono sullo stesso stato applicativo. Non contiene corpi astronomici o propagazione orbitale. **Fermarsi prima della Fase 5.**
+[Apri il Planetario](https://gbprof.it/UTILITY/planetario/). Quattro corpi, mappe 2K su richiesta, giorno/notte, assi, tre scale dichiarate e tempo condiviso con pausa e reset. La Terra è preselezionata nella scheda per offrire un punto di partenza; la camera parte dalla panoramica scientifica a J2000 in pausa. Seleziona un corpo, premi **Osserva**, trascina per orbitare e usa rotella o +/− per avvicinarti. Le frecce funzionano quando la scena ha il focus. **La Fase 6 non è avviata.**
 
-Aprire [la prova pubblica](https://gbprof.it/UTILITY/planetario/). I risultati e le lacune di collaudo sono in [PHASE-4-VERIFICATION](docs/PHASE-4-VERIFICATION.md); la procedura per il visore è in [QUEST-TEST](docs/QUEST-TEST.md). Il supporto fisico iPad/Quest non è ancora qualificato.
+La verifica ha escluso il modello a tre coniche dal movimento: l’errore Luna–Terra raggiunge 45.233 km contro il limite di 30.000 km. La [revisione esplicita ADR-005](docs/ADR-005-EPHEMERIS.md) attiva le effemeridi JPL interpolate già previste nell’architettura. Restano invariati SI, frame, epoca e dominio di 30 giorni. Nessuna soglia allargata. Le ellissi sono soltanto guide etichettate.
+
+Il [rapporto della Fase 5](docs/PHASE-5-VERIFICATION.md) separa verifiche scientifiche, browser integrato e pubblicazione. iPad e Quest fisici restano da qualificare. Il [collaudo tecnico / VR della Fase 4](https://gbprof.it/UTILITY/planetario/?technical=1) rimane disponibile; la scena astronomica in XR appartiene alla Fase 8.
 
 ## Prerequisiti e versioni
 
@@ -60,17 +62,17 @@ Non aprire l'HTML tramite `file://`: i moduli richiedono un server HTTP. Non ser
 - `src/xr`: sessione immersiva, tracciamento metrico, raggi e pannello tecnico.
 - `src/data`: tipi normativi, schema JSON, controlli semantici e envelope draft.
 - `src/ui`: diagnostica HTML e stile responsive.
-- `tests`: dati **fittizi di collaudo**, mai importati dall'applicazione o pubblicati nel bundle.
+- `tests`: fixture sintetiche e confronti con dati scientifici congelati; i test non entrano nel bundle.
 - `tools`: percorsi fissi, build e promozione statica.
 - `docs`: specifiche e registri delle fonti, rapporti delle Fasi 3 e 4.
 - `.staging`, `.cache`, `.tmp`, `node_modules`: solo locali, ignorati da Git.
 - `index.html` e `build/`: output statico versionato, necessario perché il workflow corrente non compila.
 
-Le altre directory saranno introdotte quando ospiteranno implementazioni o risorse effettive. Non ci sono cartelle vuote decorative né asset astronomici.
+`data/` contiene originali JPL/NAIF, richieste, import, riferimenti indipendenti e rapporti con hash. `src/physics/` contiene calcolo, provider, clock e proiezione; `src/assets/` conserva le quattro texture originali. Le librerie Python per la sola acquisizione sono locali in `.tmp/science-tools`, escluse dalla build.
 
 Il base path unico è `/UTILITY/planetario/`, definito in `tools/paths.ts` e usato da Vite e dal controllo di rilascio. Non si presume la root del sito. `emptyOutDir:false` impedisce a Vite di cancellare automaticamente l'output. `tools/build.ts` può pulire soltanto il figlio fisso `.staging`, dopo verifica del percorso e rifiuto di link/junction. Nessun parametro CLI consente di scegliere un'altra destinazione.
 
-Lo script di rilascio accetta **solo** `index.html` e file JS/CSS con hash dentro `build/`, senza sottodirectory; rifiuta file inattesi, link e riferimenti HTML fuori base path. Valida tutte le destinazioni prima delle scritture e scrive l'HTML per ultimo. Mantiene i vecchi asset con hash per le pagine già aperte; non effettua pulizie automatiche del rilascio. Una futura rimozione di asset obsoleti richiederà una procedura esplicita. Aggiungere nuovi formati alla allowlist soltanto quando necessari e con test dedicati. La promozione non è una transazione filesystem atomica contro un arresto del sistema durante la scrittura dell'HTML.
+Lo script di rilascio accetta **solo** `index.html` e file JS/CSS/JPEG con hash dentro `build/`, senza sottodirectory; rifiuta file inattesi, link e riferimenti HTML fuori base path. Valida tutte le destinazioni prima delle scritture e scrive l'HTML per ultimo. Mantiene i vecchi asset con hash per le pagine già aperte; non effettua pulizie automatiche del rilascio. Una futura rimozione di asset obsoleti richiederà una procedura esplicita. Aggiungere nuovi formati alla allowlist soltanto quando necessari e con test dedicati. La promozione non è una transazione filesystem atomica contro un arresto del sistema durante la scrittura dell'HTML.
 
 Non vengono modificati `.github`, server, indice generale o altre PWA. `gitkeep` è conservato.
 
@@ -80,15 +82,17 @@ Non vengono modificati `.github`, server, indice generale o altre PWA. `gitkeep`
 
 `validateBodyData` accetta bozze strutturalmente e semanticamente coerenti per revisione; la modalità `reviewed` richiede GM/raggio/rotazione, provenienza revisionata e hash sorgenti. Anche un record già dichiarato `reviewed` viene sottoposto a questi controlli. I fallimenti restituiscono codici, JSON Pointer e motivi, senza conversioni o correzioni automatiche.
 
-`validateOrbitalElements` controlla unità, frame, epoca, dominio e centri; `validateOrbitalImport` confronta mean motion (rad/s) e periodo (s) importati con a e μ. `validateDatasetDraft` risolve il grafo dell'envelope, distinguendo EMB dalla Terra. `loadOperationalDataset` **rifiuta sempre** anche in Fase 4: non esistono ancora provider e rapporti indipendenti V12/V13. Nessun campo inserito a mano può attribuire automaticamente la qualifica astronomica. La diagnostica non carica dataset.
+`validateOrbitalElements` e `validateOrbitalImport` verificano struttura, unità, frame, centro e n/periodo. Il caricatore generico `loadOperationalDataset` continua a rifiutare le bozze. Il nuovo `EphemerisProvider.initialize` richiede rapporto passato, hash SHA-256 corrispondenti e griglia completa; un semplice flag reviewed non basta. La build ricalcola il confronto scientifico e rifiuta regressioni. I massimi misurati riguardano la griglia di controllo, non un limite dimostrato su ogni istante né l’errore fisico assoluto di JPL.
 
-Implementati V01–V07, V09, V11, V14 per i record previsti; V08 come funzione di controllo all'importazione; V10 per periodo/verso dello spin. Norma di quaternion/polo degli stati, calcoli baricentrici, confronti JPL, copertura dei campioni di effemeridi e rapporti V12/V13 saranno verificati insieme ai futuri provider. I test sui numeri fittizi verificano il software, non l'accuratezza astronomica.
+`npm run science:audit` rigenera il rapporto delle coniche, richiedendo l’unico fallimento noto Luna–Terra, e il rapporto operativo Hermite, che deve passare interamente. V12/V13 sono eseguiti con riferimenti JPL e CSPICE indipendenti dal codice TypeScript. `npm run test` verifica anche Keplero, invarianti, barycenter, clock, proiezione, orientamenti e rifiuto di dati non qualificati.
+
+Acquisizione riproducibile, non necessaria all’avvio o alla normale build: Python 3.14, SpiceyPy 8.2.0 (CSPICE N0067) e NumPy 2.5.3. Eseguire `python tools/acquire-science.py`, `python tools/acquire-ephemeris.py`, `python tools/import-science.py`, poi `npm run science:audit`. Gli script non sovrascrivono risposte originali già presenti. I manifest versionati registrano la prima acquisizione di questo rilascio; una nuova acquisizione va revisionata e nuovamente qualificata.
 
 Per capacità, `available` significa esito positivo della singola prova, `unavailable` assenza/esito negativo, `unverified` prova fallita/non completata. Per WebGPU viene rilevata soltanto l'API; nessun adattatore viene richiesto. Per WebXR viene interrogato `isSessionSupported('immersive-vr')` con timeout. Solo il pulsante Entra in VR richiede una sessione, quando supportata; un rifiuto lascia operativa la scena sullo schermo. Touch e Pointer Events non costituiscono prove di gesture fisiche.
 
 Vedere [verifica Fase 3](docs/PHASE-3-VERIFICATION.md), [fonti scientifiche](docs/SCIENTIFIC-SOURCES.md), [fonti asset](docs/ASSET-SOURCES.md) e [roadmap](docs/ROADMAP.md). Nessun supporto iPad/Quest è dichiarato già qualificato.
 
-## Comandi della prova
+## Comandi del collaudo tecnico separato (`?technical=1`)
 
 Clic/tocco breve sulla sfera selezionano e aprono la scheda; trascinamento orbita; rotella/pinch zoom; due dita spostano il bersaglio. Il canvas gestisce le gesture soltanto nella propria area. Sui pannelli rimane lo scorrimento ordinario. Tastiera: frecce, +/−, Invio, Home, Escape; gli stessi comandi sono accessibili con pulsanti HTML. La scheda è non modale, si chiude senza perdere la selezione e restituisce il focus al comando di apertura.
 
