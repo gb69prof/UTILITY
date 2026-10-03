@@ -4,9 +4,11 @@ export function reportError(error: unknown): void {
   const panel = document.getElementById('error');
   if (panel) { panel.hidden = false; panel.textContent = `Avvio interrotto: ${message}`; }
   const status = document.getElementById('status');
-  if (status) status.textContent = 'Fase 3 — errore di inizializzazione';
+  if (status) status.textContent = 'Fase 4 — errore di inizializzazione';
 }
-export function installErrorHandlers(): void {
-  window.addEventListener('error', event => reportError(event.error ?? event.message));
-  window.addEventListener('unhandledrejection', event => reportError(event.reason));
+export function installErrorHandlers(): () => void {
+  const controller = new AbortController();
+  window.addEventListener('error', event => reportError(event.error ?? event.message), { signal: controller.signal });
+  window.addEventListener('unhandledrejection', event => reportError(event.reason), { signal: controller.signal });
+  return () => controller.abort();
 }

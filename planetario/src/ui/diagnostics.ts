@@ -10,7 +10,7 @@ export function renderDiagnostics(config: AppConfig, capabilities: Capabilities,
   const label = document.getElementById('build-label');
   if (!diagnostics || !status || !label) throw new Error('Struttura della diagnostica incompleta.');
   const rows = [
-    { name: 'Babylon.js', state: 'available', value: `Caricato · ${babylonVersion}`, detail: 'Modulo Engine importato. Renderer predisposto, non avviato.' },
+    { name: 'Babylon.js', state: 'available', value: `Caricato · ${babylonVersion}`, detail: 'Motore WebGL 2; misure della scena riportate sopra.' },
     ...Object.entries(capabilities).map(([key, capability]) => ({ name: key === 'webxr' ? 'WebXR / VR' : key, state: capability.status, value: statuses[capability.status], detail: capability.detail }))
   ];
   diagnostics.replaceChildren(...rows.map(row => {
@@ -20,6 +20,6 @@ export function renderDiagnostics(config: AppConfig, capabilities: Capabilities,
     const detail = document.createElement('dd'); detail.className = 'detail'; detail.textContent = row.detail;
     item.append(name, value, detail); return item;
   }));
-  status.textContent = 'Fase 3 — struttura inizializzata';
+  status.textContent = 'Fase 4 — avvio della scena';
   label.textContent = `Build ${config.version} · ${config.basePath}`;
 }
