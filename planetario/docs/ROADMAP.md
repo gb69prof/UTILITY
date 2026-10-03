@@ -1,10 +1,10 @@
 # Planetario — Roadmap
 
-**3 ottobre 2026 · Fase 3: struttura e build system conclusi**
+**3 ottobre 2026 · Fase 4: implementazione minima disponibile; qualificazione hardware aperta**
 
 Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La prima milestone deve provare qualità visiva, correttezza del modello, input e VR prima di estendere il numero dei corpi. La base tecnica è descritta in [ARCHITECTURE.md](ARCHITECTURE.md).
 
-**Punto di arresto del compito attuale:** Fase 3 completata su incarico esplicito; fermarsi prima della Fase 4. Installazione riproducibile, diagnostica eseguibile, contratti e validazione disponibili. Nessuna scena 3D o texture astronomica. Specifiche normative: [DATA-MODEL.md](DATA-MODEL.md); scenari: [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md); risultati e limiti correnti: [PHASE-3-VERIFICATION.md](PHASE-3-VERIFICATION.md).
+**Punto di arresto del compito attuale:** Fase 4 implementata su incarico esplicito; fermarsi prima della Fase 5. Scena tecnica, input unificato, pannello, diagnostica e integrazione XR limitata disponibili. La matrice B01–B08 non è chiusa su tutti i dispositivi: leggere [PHASE-4-VERIFICATION](PHASE-4-VERIFICATION.md) e [QUEST-TEST](QUEST-TEST.md). Dati e soglie di [DATA-MODEL](DATA-MODEL.md) e [ACCEPTANCE-TESTS](ACCEPTANCE-TESTS.md) restano invariati.
 
 ## 1. Regole comuni
 
@@ -51,7 +51,13 @@ Criterio di uscita soddisfatto: `npm ci`, TypeScript, 19 test e build/release ri
 
 ### Fase 4 — Motore 3D minimo e verifica dei rischi
 
-Dipendenza: build eseguibile. **Non avviata; richiede un nuovo incarico.**
+Dipendenza soddisfatta: Fase 3 verificata su `main` al commit `53c9aa18ffcc5ff1ee8f768e5d3da094099b7450`. **Implementazione minima conclusa; qualificazione fisica e browser autonomi ancora aperti.**
+
+Consegnati engine WebGL 2, scena destrorsa con una sfera tecnica, griglia 512 px locale, camera, azioni/picking, scheda HTML, touch simulato e tastiera, diagnostica, profili e gestione del contesto. WebXR implementato con sessione reale su richiesta, raggi semantic select, pannello mesh, tracciamento in metri e osservatorio fermo. Nessuna sessione immersiva fisica eseguita.
+
+Decisione: **BABYLON CONFERMATO per la prova nel browser integrato su Windows, provvisoriamente rispetto a Chrome/Edge autonomi, iPad e Quest.** Nessun difetto bloccante del motore dimostrato. Gli esiti parziali e le misure sono nel rapporto; hardware assente non è un pass né un fallimento Babylon. La Fase 5 non è avviata.
+
+Obiettivi normativi conservati:
 
 Creare engine WebGL 2, camera, un oggetto di prova, luce, ciclo di rendering, selezione e gestione errori. Introdurre diagnostica di frame, memoria stimata, profilo grafico e ripristino del contesto. UI HTML minima separata dalla scena.
 
