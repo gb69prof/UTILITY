@@ -1,0 +1,8 @@
+/node_modules/
+/.staging/
+/.cache/
+/.tmp/
+*.log
+*.tsbuildinfo
+.env.local
+.env.*.local
