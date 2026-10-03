@@ -1,0 +1,2023 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gbprof.it/UTILITY/planetario/schema/scientific-v1",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "institution": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "format": "http-url"
+        },
+        "publishedOrVersion": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessedOn": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "format": "calendar-date"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "artifactSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "institution",
+        "url",
+        "publishedOrVersion",
+        "accessedOn",
+        "locator",
+        "artifactSha256"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "originalValue": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "originalUnit": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "transformations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "status": {
+          "enum": [
+            "reported",
+            "derived",
+            "educational-approximation"
+          ]
+        },
+        "review": {
+          "enum": [
+            "pending",
+            "reviewed"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "sourceIds",
+        "originalValue",
+        "originalUnit",
+        "transformations",
+        "status",
+        "review",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "quantity": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "enum": [
+            "m",
+            "s",
+            "kg",
+            "rad",
+            "rad/s",
+            "m3/s2",
+            "m/s2",
+            "kg/m3",
+            "K",
+            "1"
+          ]
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "plusMinus": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "coverage": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "plusMinus",
+                "coverage"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "definition",
+        "uncertainty",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "recordStatus": {
+          "enum": [
+            "draft",
+            "reviewed"
+          ]
+        },
+        "id": {
+          "enum": [
+            "sun",
+            "earth",
+            "moon",
+            "mars"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "internationalName": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "kind": {
+          "enum": [
+            "star",
+            "planet",
+            "satellite"
+          ]
+        },
+        "centralBody": {
+          "anyOf": [
+            {
+              "enum": [
+                "sun",
+                "earth",
+                "moon",
+                "mars"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "naifId": {
+          "type": "integer"
+        },
+        "physical": {
+          "type": "object",
+          "properties": {
+            "mass": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "kg"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "gm": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "m3/s2"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "meanRadius": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "m"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "equatorialRadius": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "m"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "polarRadius": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "m"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "gravity": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "m/s2"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "density": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "kg/m3"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "temperatures": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "surface",
+                      "effective",
+                      "photosphere",
+                      "atmosphere"
+                    ]
+                  },
+                  "value": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "unit": {
+                        "const": "K"
+                      },
+                      "definition": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "uncertainty": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "plusMinus": {
+                                "type": "number",
+                                "minimum": 0
+                              },
+                              "coverage": {
+                                "type": "string",
+                                "minLength": 1,
+                                "pattern": "\\S"
+                              }
+                            },
+                            "required": [
+                              "plusMinus",
+                              "coverage"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "provenance": {
+                        "$ref": "#/$defs/provenance"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "unit",
+                      "definition",
+                      "uncertainty",
+                      "provenance"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "statistic": {
+                    "enum": [
+                      "mean",
+                      "minimum",
+                      "maximum",
+                      "representative"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind",
+                  "value",
+                  "context",
+                  "statistic"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "composition": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "region": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "basis": {
+                    "enum": [
+                      "mass-fraction",
+                      "mole-fraction",
+                      "volume-fraction"
+                    ]
+                  },
+                  "completeness": {
+                    "enum": [
+                      "partial",
+                      "complete"
+                    ]
+                  },
+                  "components": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "species": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "fraction": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "unit": {
+                              "const": "1"
+                            },
+                            "definition": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            },
+                            "uncertainty": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "plusMinus": {
+                                      "type": "number",
+                                      "minimum": 0
+                                    },
+                                    "coverage": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "pattern": "\\S"
+                                    }
+                                  },
+                                  "required": [
+                                    "plusMinus",
+                                    "coverage"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "provenance": {
+                              "$ref": "#/$defs/provenance"
+                            }
+                          },
+                          "required": [
+                            "value",
+                            "unit",
+                            "definition",
+                            "uncertainty",
+                            "provenance"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "species",
+                        "fraction"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "region",
+                  "basis",
+                  "completeness",
+                  "components"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "mass",
+            "gm",
+            "meanRadius",
+            "equatorialRadius",
+            "polarRadius",
+            "gravity",
+            "density",
+            "temperatures",
+            "composition"
+          ],
+          "additionalProperties": false
+        },
+        "motion": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "origin"
+                },
+                "center": {
+                  "const": "sun"
+                }
+              },
+              "required": [
+                "kind",
+                "center"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "kepler"
+                },
+                "orbitId": {
+                  "const": "mars-sun"
+                }
+              },
+              "required": [
+                "kind",
+                "orbitId"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "earth-moon-member"
+                },
+                "member": {
+                  "enum": [
+                    "earth",
+                    "moon"
+                  ]
+                },
+                "barycenterOrbitId": {
+                  "const": "emb-sun"
+                },
+                "relativeOrbitId": {
+                  "const": "moon-earth"
+                }
+              },
+              "required": [
+                "kind",
+                "member",
+                "barycenterOrbitId",
+                "relativeOrbitId"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "rotation": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "fixed-pole-uniform-spin"
+                },
+                "epoch": {
+                  "type": "object",
+                  "properties": {
+                    "jd": {
+                      "const": 2451545
+                    },
+                    "scale": {
+                      "const": "TDB"
+                    }
+                  },
+                  "required": [
+                    "jd",
+                    "scale"
+                  ],
+                  "additionalProperties": false
+                },
+                "poleFrame": {
+                  "const": "J2000-equatorial"
+                },
+                "poleRa": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "minimum": 0,
+                      "exclusiveMaximum": 6.283185307179586
+                    },
+                    "unit": {
+                      "const": "rad"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "poleDec": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "minimum": -1.5707963267948966,
+                      "maximum": 1.5707963267948966
+                    },
+                    "unit": {
+                      "const": "rad"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "primeMeridianAtEpoch": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "minimum": 0,
+                      "exclusiveMaximum": 6.283185307179586
+                    },
+                    "unit": {
+                      "const": "rad"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "spinRate": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "const": "rad/s"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "siderealPeriod": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "unit": {
+                      "const": "s"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "direction": {
+                  "enum": [
+                    "positive-about-pole",
+                    "negative-about-pole"
+                  ]
+                },
+                "obliquityAtEpoch": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 3.141592653589793
+                    },
+                    "unit": {
+                      "const": "rad"
+                    },
+                    "definition": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "uncertainty": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "plusMinus": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "coverage": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "\\S"
+                            }
+                          },
+                          "required": [
+                            "plusMinus",
+                            "coverage"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "provenance": {
+                      "$ref": "#/$defs/provenance"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit",
+                    "definition",
+                    "uncertainty",
+                    "provenance"
+                  ],
+                  "additionalProperties": false
+                },
+                "obliquityReference": {
+                  "enum": [
+                    "emb-sun-normal",
+                    "mars-sun-normal",
+                    "moon-earth-normal",
+                    "ecliptic-north"
+                  ]
+                },
+                "provenance": {
+                  "$ref": "#/$defs/provenance"
+                }
+              },
+              "required": [
+                "kind",
+                "epoch",
+                "poleFrame",
+                "poleRa",
+                "poleDec",
+                "primeMeridianAtEpoch",
+                "spinRate",
+                "siderealPeriod",
+                "direction",
+                "obliquityAtEpoch",
+                "obliquityReference",
+                "provenance"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missingReasons": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^/"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "recordStatus",
+        "id",
+        "name",
+        "internationalName",
+        "kind",
+        "centralBody",
+        "naifId",
+        "physical",
+        "motion",
+        "rotation",
+        "missingReasons"
+      ],
+      "additionalProperties": false
+    },
+    "orbit": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "enum": [
+            "emb-sun",
+            "mars-sun",
+            "moon-earth"
+          ]
+        },
+        "target": {
+          "enum": [
+            "emb",
+            "mars",
+            "moon"
+          ]
+        },
+        "center": {
+          "enum": [
+            "sun",
+            "earth"
+          ]
+        },
+        "frame": {
+          "const": "ECLIPJ2000"
+        },
+        "epoch": {
+          "type": "object",
+          "properties": {
+            "jd": {
+              "const": 2451545
+            },
+            "scale": {
+              "const": "TDB"
+            }
+          },
+          "required": [
+            "jd",
+            "scale"
+          ],
+          "additionalProperties": false
+        },
+        "valid": {
+          "type": "object",
+          "properties": {
+            "startTdbSeconds": {
+              "type": "number",
+              "maximum": -1296000
+            },
+            "endTdbSeconds": {
+              "type": "number",
+              "minimum": 1296000
+            }
+          },
+          "required": [
+            "startTdbSeconds",
+            "endTdbSeconds"
+          ],
+          "additionalProperties": false
+        },
+        "convention": {
+          "const": "osculating-frozen-two-body"
+        },
+        "a": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "unit": {
+              "const": "m"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        },
+        "e": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.2
+            },
+            "unit": {
+              "const": "1"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        },
+        "i": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3.141592653589793
+            },
+            "unit": {
+              "const": "rad"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        },
+        "ascendingNode": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "exclusiveMaximum": 6.283185307179586
+            },
+            "unit": {
+              "const": "rad"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        },
+        "argumentOfPeriapsis": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "exclusiveMaximum": 6.283185307179586
+            },
+            "unit": {
+              "const": "rad"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        },
+        "anomalyAtEpoch": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "mean"
+            },
+            "angle": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "minimum": 0,
+                  "exclusiveMaximum": 6.283185307179586
+                },
+                "unit": {
+                  "const": "rad"
+                },
+                "definition": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "uncertainty": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "plusMinus": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "coverage": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        }
+                      },
+                      "required": [
+                        "plusMinus",
+                        "coverage"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "provenance": {
+                  "$ref": "#/$defs/provenance"
+                }
+              },
+              "required": [
+                "value",
+                "unit",
+                "definition",
+                "uncertainty",
+                "provenance"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "kind",
+            "angle"
+          ],
+          "additionalProperties": false
+        },
+        "mu": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "unit": {
+              "const": "m3/s2"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uncertainty": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "plusMinus": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "coverage": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "plusMinus",
+                    "coverage"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provenance": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "definition",
+            "uncertainty",
+            "provenance"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "target",
+        "center",
+        "frame",
+        "epoch",
+        "valid",
+        "convention",
+        "a",
+        "e",
+        "i",
+        "ascendingNode",
+        "argumentOfPeriapsis",
+        "anomalyAtEpoch",
+        "mu"
+      ],
+      "additionalProperties": false
+    },
+    "dataset": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "valid": {
+          "type": "object",
+          "properties": {
+            "startTdbSeconds": {
+              "type": "number",
+              "maximum": -1296000
+            },
+            "endTdbSeconds": {
+              "type": "number",
+              "minimum": 1296000
+            }
+          },
+          "required": [
+            "startTdbSeconds",
+            "endTdbSeconds"
+          ],
+          "additionalProperties": false
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "minItems": 1
+        },
+        "bodies": {
+          "type": "object",
+          "properties": {
+            "sun": {
+              "$ref": "#/$defs/body"
+            },
+            "earth": {
+              "$ref": "#/$defs/body"
+            },
+            "moon": {
+              "$ref": "#/$defs/body"
+            },
+            "mars": {
+              "$ref": "#/$defs/body"
+            }
+          },
+          "required": [
+            "sun",
+            "earth",
+            "moon",
+            "mars"
+          ],
+          "additionalProperties": false
+        },
+        "nodes": {
+          "type": "object",
+          "properties": {
+            "emb": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "const": "emb"
+                },
+                "naifId": {
+                  "const": 3
+                },
+                "members": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "const": "earth"
+                    },
+                    {
+                      "const": "moon"
+                    }
+                  ],
+                  "items": false,
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              },
+              "required": [
+                "id",
+                "naifId",
+                "members"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "emb"
+          ],
+          "additionalProperties": false
+        },
+        "orbits": {
+          "type": "object",
+          "properties": {
+            "emb-sun": {
+              "$ref": "#/$defs/orbit"
+            },
+            "mars-sun": {
+              "$ref": "#/$defs/orbit"
+            },
+            "moon-earth": {
+              "$ref": "#/$defs/orbit"
+            }
+          },
+          "required": [
+            "emb-sun",
+            "mars-sun",
+            "moon-earth"
+          ],
+          "additionalProperties": false
+        },
+        "constants": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/quantity"
+          }
+        },
+        "validationReport": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "unvalidated"
+            },
+            "reportId": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "status",
+            "reportId"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "version",
+        "valid",
+        "sources",
+        "bodies",
+        "nodes",
+        "orbits",
+        "constants",
+        "validationReport"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
