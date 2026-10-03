@@ -16,5 +16,6 @@ export class Clock implements SimulationClock {
   pause(reason:PauseReason,now:number):ClockSnapshot{this.sample(now);this.running=false;this.reasons.add(reason);this.reanchor(now);return this.snapshot();}
   clearBlock(reason:Exclude<PauseReason,'user'|'range-end'>,now:number):ClockSnapshot{this.sample(now);this.reasons.delete(reason);this.running=false;this.reanchor(now);return this.snapshot();}
   setRate(rate:TimeRate,now:number):ClockSnapshot{if(![1,10,100,1000,10000,100000].includes(rate))throw new Error('Invalid rate');this.sample(now);this.rate=rate;this.reanchor(now);return this.snapshot();}
+  seek(t:number,now:number):ClockSnapshot{if(!Number.isFinite(t)||t<this.valid.startTdbSeconds||t>this.valid.endTdbSeconds)throw new Error('Seek outside validated interval');this.sample(now);this.t=t;this.running=false;this.reasons.delete('range-end');this.reasons.delete('suspended');this.reasons.add('user');if(t===this.valid.endTdbSeconds)this.reasons.add('range-end');this.reanchor(now);return this.snapshot();}
   reset(now:number):ClockSnapshot{this.sample(now);this.t=0;this.rate=1;this.running=false;this.reasons.delete('range-end');this.reasons.delete('suspended');this.reasons.add('user');this.reanchor(now);return this.snapshot();}
 }

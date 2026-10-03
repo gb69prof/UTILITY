@@ -131,6 +131,7 @@ export interface SimulationClock {
     realNowMs: number): ClockSnapshot;
   setRate(rate: TimeRate, realNowMs: number): ClockSnapshot;
   reset(realNowMs: number): ClockSnapshot;
+  seek(tTdbSeconds: number, realNowMs: number): ClockSnapshot;
 }
 
 export type ScaleMode = 'scientific' | 'didactic' | 'exploratory';
