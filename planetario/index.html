@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111b2a" />
+    <link rel="icon" href="data:," />
+    <title>Planetario gbprof — nucleo tecnico</title>
+    <script type="module" crossorigin src="/UTILITY/planetario/build/index-Obo9BNg0.js"></script>
+    <link rel="stylesheet" crossorigin href="/UTILITY/planetario/build/index-6-Bo_tlK.css">
+  </head>
+  <body>
+    <main>
+      <header><p class="eyebrow">GBPROF · LABORATORIO SCIENTIFICO</p>
+        <h1>Planetario gbprof <span>— nucleo tecnico</span></h1>
+        <p id="status" role="status">Avvio della diagnostica…</p>
+      </header>
+      <section aria-labelledby="canvas-title" class="stage">
+        <canvas id="render-canvas" width="960" height="320" aria-label="Canvas predisposto, scena 3D non ancora attiva"></canvas>
+        <div class="stage-caption"><p class="eyebrow">AREA DI RENDERING</p><h2 id="canvas-title">Canvas predisposto</h2>
+          <p>La prova 3D appartiene alla Fase 4.<br>In questa fase non sono presenti corpi astronomici.</p></div>
+      </section>
+      <section aria-labelledby="diagnostics-title"><h2 id="diagnostics-title">Capacità del browser</h2>
+        <p>Diagnostica tecnica: il rilevamento di un'API non certifica il funzionamento su un dispositivo.</p>
+        <dl id="diagnostics" class="diagnostics"></dl>
+      </section>
+      <p id="error" role="alert" hidden></p>
+      <footer><span id="build-label"></span><span>Nessuna sessione XR avviata · Nessun dataset scientifico caricato</span></footer>
+      <noscript>JavaScript è necessario per la diagnostica. Non è stata avviata alcuna scena.</noscript>
+    </main>
+  </body>
+</html>

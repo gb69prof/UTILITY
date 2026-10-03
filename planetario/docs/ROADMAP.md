@@ -1,10 +1,10 @@
 # Planetario — Roadmap
 
-**3 ottobre 2026 · Fase 2: consolidamento documentale concluso**
+**3 ottobre 2026 · Fase 3: struttura e build system conclusi**
 
 Il progetto parte da un osservatorio dedicato a Sole, Terra, Luna e Marte. La prima milestone deve provare qualità visiva, correttezza del modello, input e VR prima di estendere il numero dei corpi. La base tecnica è descritta in [ARCHITECTURE.md](ARCHITECTURE.md).
 
-**Punto di arresto del compito attuale:** consolidare le specifiche nei quattro documenti autorizzati, verificare il diff e registrare i commit, quindi fermarsi. Fase 3 e successive pianificate, non avviate. Nessuna dipendenza installata, scena realizzata o texture acquisita. Specifiche normative: [DATA-MODEL.md](DATA-MODEL.md); scenari e condizioni di uscita: [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md).
+**Punto di arresto del compito attuale:** Fase 3 completata su incarico esplicito; fermarsi prima della Fase 4. Installazione riproducibile, diagnostica eseguibile, contratti e validazione disponibili. Nessuna scena 3D o texture astronomica. Specifiche normative: [DATA-MODEL.md](DATA-MODEL.md); scenari: [ACCEPTANCE-TESTS.md](ACCEPTANCE-TESTS.md); risultati e limiti correnti: [PHASE-3-VERIFICATION.md](PHASE-3-VERIFICATION.md).
 
 ## 1. Regole comuni
 
@@ -39,19 +39,19 @@ Criterio di uscita documentale: quattro documenti coerenti e diff limitato ai pe
 
 ### Fase 3 — Struttura e build system
 
-Dipendenza: contratti consolidati e successivo incarico. **Non avviata.**
+Dipendenza: contratti consolidati e successivo incarico. **Conclusa con l'incarico di Fase 3.** Base verificata: `99107d1ae7a3393c1bdd39fcbda97413aa4f49c8`, senza cambi incompatibili dopo la Fase 2.
 
-Creare struttura modulare, TypeScript, Vite, lockfile, controlli statici e comandi locali. Importare solo i moduli necessari; mantenere Inspector e strumenti diagnostici fuori dalla build normale. Creare `README.md`, `docs/SCIENTIFIC-SOURCES.md` e `docs/ASSET-SOURCES.md`, distinguendo fonti candidate da risorse già acquisite.
+Consegnati struttura modulare TypeScript/Vite/Babylon, versioni esatte e lockfile, bootstrap separato, canvas predisposto e diagnostica delle capacità. Nessun Inspector o renderer avviato. Creati `README.md`, `docs/SCIENTIFIC-SOURCES.md` e `docs/ASSET-SOURCES.md`; tutte le fonti/risorse future restano candidate, nessun dataset astronomico acquisito.
 
-Tradurre i tipi e le regole di DATA-MODEL in schema JSON e validatori, senza cambiare convenzioni implicitamente. La scelta delle prime versioni precede la prova minima e viene qualificata da essa, evitando una dipendenza circolare fra setup e test Babylon.
+Tradotti i tipi di DATA-MODEL, aggiunti schema JSON 2020-12 e validatori semantici, senza cambiare frame/unità/epoca/intervallo. Fixture solo sintetiche, escluse dalla build. La verifica di forma e revisione non attribuisce qualificazione astronomica: il caricamento operativo resta bloccato fino ai rapporti indipendenti V12/V13. Norme dei quaternion/poli degli stati e comportamento di provider/clock/proiezione restano alle fasi applicative.
 
-Preparare staging e script di rilascio circoscritti a `planetario/`; il workflow esistente non compila il frontend. Nessuna modifica a `.github/`. Definire URL di prova HTTPS per dispositivi senza presupporre accesso al server.
+Preparati staging ignorato e rilascio statico tramite allowlist; `emptyOutDir:false` e pulizia circoscritta alla sola `.staging`, con rifiuto di link/junction. Versionati soltanto gli output previsti (`index.html`, `build/`) oltre ai sorgenti e documenti. Workflow invariato. URL locali per dev/preview disponibili; URL HTTPS e test dei dispositivi rimangono da qualificare separatamente.
 
-Criterio di uscita: installazione riproducibile, controllo TypeScript e build riusciti; pagina minima servita correttamente da una sottocartella, nessun asset 404, nessuna scrittura oltre il perimetro. La pagina minima è un controllo tecnico, non una consegna del Planetario.
+Criterio di uscita soddisfatto: `npm ci`, TypeScript, 19 test e build/release riusciti; pagina avviata nel browser integrato Codex dalla sottocartella `/UTILITY/planetario/`, console senza errori/warning; 27/27 file HTTP identici allo staging e al rilascio. Diff finale confinato a `planetario/`, gitkeep conservato. Il [rapporto](PHASE-3-VERIFICATION.md) distingue prove locali, simulate e non eseguite. La pagina minima è un controllo tecnico, non il Planetario completo.
 
 ### Fase 4 — Motore 3D minimo e verifica dei rischi
 
-Dipendenza: build eseguibile.
+Dipendenza: build eseguibile. **Non avviata; richiede un nuovo incarico.**
 
 Creare engine WebGL 2, camera, un oggetto di prova, luce, ciclo di rendering, selezione e gestione errori. Introdurre diagnostica di frame, memoria stimata, profilo grafico e ripristino del contesto. UI HTML minima separata dalla scena.
 
@@ -166,7 +166,7 @@ Le tolleranze astronomiche quantitative sono fissate in ACCEPTANCE-TESTS, sezion
 
 ### Matrice dei dispositivi
 
-**Stato attuale di tutte le prove runtime: non eseguite; Fasi 1–2 documentali.** La matrice normativa con identificatori, hardware da definire e tipo di evidenza è in ACCEPTANCE-TESTS, sezione 2; la tabella seguente conserva la panoramica dei requisiti.
+**Fase 3:** eseguiti controlli automatici dei contratti/build e diagnostica nel browser integrato, descritti in PHASE-3-VERIFICATION. Le prove del Planetario/renderer e i dispositivi fisici della tabella seguente restano non eseguiti. La matrice normativa con identificatori, hardware da definire e tipo di evidenza è in ACCEPTANCE-TESTS, sezione 2; la tabella seguente conserva la panoramica dei requisiti.
 
 | Piattaforma | Prova prevista | Evidenza richiesta |
 | --- | --- | --- |
@@ -214,7 +214,7 @@ Non restano scelte scientifiche implicite per iniziare la costruzione dei contra
 Restano attività esecutive, senza impedire la conclusione documentale della Fase 2:
 
 - Inventario e prove dei dispositivi reali: modelli e versioni ancora `DA DEFINIRE CON TEST REALE`.
-- Prime versioni delle dipendenze da bloccare nella Fase 3 e qualificare nella Fase 4.
+- Dipendenze bloccate e build qualificate nella Fase 3; rendering/touch/XR ancora da qualificare nella Fase 4.
 - Acquisizione dei valori del dataset, inizializzazione PCK e confronto JPL: ricetta e soglie già decise, risultati non ancora disponibili.
 - File definitivi delle texture, condizioni d'uso, trasformazioni e risoluzioni.
 - Affinamento dei profili grafici sulle misure hardware; budget iniziali già espliciti.
@@ -222,4 +222,4 @@ Restano attività esecutive, senza impedire la conclusione documentale della Fas
 
 Rischi aperti: il modello lunare osculatore potrebbe non superare le soglie fissate; le rotazioni semplificate non hanno accuratezza osservativa; iPad/Quest devono qualificare precisione visiva, input e comfort. Una soglia fallita richiede correzione o revisione motivata del contratto, non accettazione automatica.
 
-**Arresto alla Fase 2.** Il passo successivo sarà la Fase 3, soltanto su un nuovo incarico. Nessuna applicazione è stata costruita in questa consegna.
+**Arresto alla Fase 3.** Il passo successivo sarà la Fase 4, soltanto su un nuovo incarico. Consegnato il nucleo tecnico; nessuna scena, corpo astronomico o sessione XR costruita in questa consegna.
