@@ -270,10 +270,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "4.993910588731374",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.15065803464584335, -0.9809851065290283, 0.12235349347232778], [0.8861935214116581, -0.1888678232151968, -0.42307208364764326], [0.4381360510214346, 0.0446896646013847, 0.8977971010607901]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_SUN to J2000 at ET=0, including periodic terms",
+              "atan2(pole.y,pole.x)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -289,10 +290,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "1.1147417932487782",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.15065803464584335, -0.9809851065290283, 0.12235349347232778], [0.8861935214116581, -0.1888678232151968, -0.42307208364764326], [0.4381360510214346, 0.0446896646013847, 0.8977971010607901]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_SUN to J2000 at ET=0, including periodic terms",
+              "asin(pole.z)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -308,10 +310,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "1.4691483511587475",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.15065803464584335, -0.9809851065290283, 0.12235349347232778], [0.8861935214116581, -0.1888678232151968, -0.42307208364764326], [0.4381360510214346, 0.0446896646013847, 0.8977971010607901]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_SUN to J2000 at ET=0, including periodic terms",
+              "atan2(dot(bodyX,k cross u),dot(bodyX,u)); u=(-sin(RA),cos(RA),0)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -327,10 +330,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "2.8653296576375425e-06",
-            "originalUnit": "rad/s",
+            "originalValue": "14.1844",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY10_PM secular coefficient",
+              "multiply by pi / 180 / 86400"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -346,10 +350,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "2192831.561433688",
-            "originalUnit": "s",
+            "originalValue": "14.1844",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY10_PM secular coefficient",
+              "period = 360 * 86400 / abs(coefficient)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -366,10 +371,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.1265665092142541",
-            "originalUnit": "rad",
+            "originalValue": "{\"poleJ2000\": [0.12235349347232778, -0.42307208364764326, 0.8977971010607901], \"orbitalNormalEcliptic\": [0, 0, 1]}",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_SUN to J2000 at ET=0, including periodic terms",
+              "Rotate pole by Rx(-84381.448 arcsec); acos(dot(pole, orbitalNormal))"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -515,10 +521,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.0",
-            "originalUnit": "rad",
+            "originalValue": "[[0.17617425963267894, 0.9843589945964213, 0.0], [-0.9843589945964213, 0.17617425963267894, 0.0], [-0.0, 0.0, 1.0]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_EARTH to J2000 at ET=0, including periodic terms",
+              "atan2(pole.y,pole.x)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -534,10 +541,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "1.5707963267948966",
-            "originalUnit": "rad",
+            "originalValue": "[[0.17617425963267894, 0.9843589945964213, 0.0], [-0.9843589945964213, 0.17617425963267894, 0.0], [-0.0, 0.0, 1.0]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_EARTH to J2000 at ET=0, including periodic terms",
+              "asin(pole.z)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -553,10 +561,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "3.3186912127896573",
-            "originalUnit": "rad",
+            "originalValue": "[[0.17617425963267894, 0.9843589945964213, 0.0], [-0.9843589945964213, 0.17617425963267894, 0.0], [-0.0, 0.0, 1.0]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_EARTH to J2000 at ET=0, including periodic terms",
+              "atan2(dot(bodyX,k cross u),dot(bodyX,u)); u=(-sin(RA),cos(RA),0)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -572,10 +581,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "7.292115373194001e-05",
-            "originalUnit": "rad/s",
+            "originalValue": "360.9856235",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY399_PM secular coefficient",
+              "multiply by pi / 180 / 86400"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -591,10 +601,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "86164.0962275053",
-            "originalUnit": "s",
+            "originalValue": "360.9856235",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY399_PM secular coefficient",
+              "period = 360 * 86400 / abs(coefficient)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -611,10 +622,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.40909141503026786",
-            "originalUnit": "rad",
+            "originalValue": "{\"poleJ2000\": [0.0, 0.0, 1.0], \"orbitalNormalEcliptic\": [1.153651074904219e-06, 1.3891935958767138e-06, 0.9999999999983696]}",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_EARTH to J2000 at ET=0, including periodic terms",
+              "Rotate pole by Rx(-84381.448 arcsec); acos(dot(pole, orbitalNormal))"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -760,10 +772,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "4.657546083023791",
-            "originalUnit": "rad",
+            "originalValue": "[[0.7842270520919169, -0.6200619152508559, -0.022608671404182493], [0.5578471124601639, 0.7205566654668131, -0.4118309009426129], [0.2716514860755947, 0.31035675134719964, 0.9109797785934293]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MOON to J2000 at ET=0, including periodic terms",
+              "atan2(pole.y,pole.x)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -779,10 +792,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "1.1456533675897982",
-            "originalUnit": "rad",
+            "originalValue": "[[0.7842270520919169, -0.6200619152508559, -0.022608671404182493], [0.5578471124601639, 0.7205566654668131, -0.4118309009426129], [0.2716514860755947, 0.31035675134719964, 0.9109797785934293]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MOON to J2000 at ET=0, including periodic terms",
+              "asin(pole.z)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -798,10 +812,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.7189929926922298",
-            "originalUnit": "rad",
+            "originalValue": "[[0.7842270520919169, -0.6200619152508559, -0.022608671404182493], [0.5578471124601639, 0.7205566654668131, -0.4118309009426129], [0.2716514860755947, 0.31035675134719964, 0.9109797785934293]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MOON to J2000 at ET=0, including periodic terms",
+              "atan2(dot(bodyX,k cross u),dot(bodyX,u)); u=(-sin(RA),cos(RA),0)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -817,10 +832,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "2.6616994576329732e-06",
-            "originalUnit": "rad/s",
+            "originalValue": "13.17635815",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY301_PM secular coefficient",
+              "multiply by pi / 180 / 86400"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -836,10 +852,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "2360591.572110538",
-            "originalUnit": "s",
+            "originalValue": "13.17635815",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY301_PM secular coefficient",
+              "period = 360 * 86400 / abs(coefficient)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -856,10 +873,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.11886352172779181",
-            "originalUnit": "rad",
+            "originalValue": "{\"poleJ2000\": [-0.022608671404182493, -0.4118309009426129, 0.9109797785934293], \"orbitalNormalEcliptic\": [0.07575549337259646, 0.051017075467584376, 0.9958204472868637]}",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MOON to J2000 at ET=0, including periodic terms",
+              "Rotate pole by Rx(-84381.448 arcsec); acos(dot(pole, orbitalNormal))"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -905,17 +923,18 @@
         "gm": {
           "value": 42828374862670.9,
           "unit": "m3/s2",
-          "definition": "GM dinamico del centro del corpo",
+          "definition": "GM dinamico effettivo del centro di Marte",
           "uncertainty": null,
           "provenance": {
             "sourceIds": [
-              "mars-sun-elements"
+              "mars-sun-elements",
+              "gm_de440"
             ],
-            "originalValue": "42828.3748626709",
+            "originalValue": "1.3271248286965425E+11",
             "originalUnit": "km3/s2",
             "transformations": [
-              "multiply by 1e9",
-              "Horizons relative GM minus DE440 Sun; see reconciliation.json"
+              "subtract DE440 BODY10_GM = 132712440041.27939 km3/s2",
+              "multiply by 1000000000; precision limited by subtraction of printed relative GM"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1004,10 +1023,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "5.544576879956258",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.7067364464274375, 0.5490619907161186, 0.44615527077685696], [-0.7065882946541798, -0.5793961327942199, -0.40624266536246617], [0.035448231956131226, -0.6023545896346731, 0.7974411396443181]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MARS to J2000 at ET=0, including periodic terms",
+              "atan2(pole.y,pole.x)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1023,10 +1043,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.9230424950070161",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.7067364464274375, 0.5490619907161186, 0.44615527077685696], [-0.7065882946541798, -0.5793961327942199, -0.40624266536246617], [0.035448231956131226, -0.6023545896346731, 0.7974411396443181]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MARS to J2000 at ET=0, including periodic terms",
+              "asin(pole.z)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1042,10 +1063,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "3.0828110069012546",
-            "originalUnit": "rad",
+            "originalValue": "[[-0.7067364464274375, 0.5490619907161186, 0.44615527077685696], [-0.7065882946541798, -0.5793961327942199, -0.40624266536246617], [0.035448231956131226, -0.6023545896346731, 0.7974411396443181]]",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MARS to J2000 at ET=0, including periodic terms",
+              "atan2(dot(bodyX,k cross u),dot(bodyX,u)); u=(-sin(RA),cos(RA),0)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1061,10 +1083,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "7.088218070006562e-05",
-            "originalUnit": "rad/s",
+            "originalValue": "350.891982443297",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY499_PM secular coefficient",
+              "multiply by pi / 180 / 86400"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1080,10 +1103,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "88642.66371496905",
-            "originalUnit": "s",
+            "originalValue": "350.891982443297",
+            "originalUnit": "deg/day",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "Read BODY499_PM secular coefficient",
+              "period = 360 * 86400 / abs(coefficient)"
             ],
             "status": "derived",
             "review": "reviewed",
@@ -1100,10 +1124,11 @@
             "sourceIds": [
               "pck00011"
             ],
-            "originalValue": "0.4396737727006057",
-            "originalUnit": "rad",
+            "originalValue": "{\"poleJ2000\": [0.44615527077685696, -0.40624266536246617, 0.7974411396443181], \"orbitalNormalEcliptic\": [0.024569206570781398, -0.020938143018064445, 0.9994788383229719]}",
+            "originalUnit": "1",
             "transformations": [
-              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+              "CSPICE pxform IAU_MARS to J2000 at ET=0, including periodic terms",
+              "Rotate pole by Rx(-84381.448 arcsec); acos(dot(pole, orbitalNormal))"
             ],
             "status": "derived",
             "review": "reviewed",
