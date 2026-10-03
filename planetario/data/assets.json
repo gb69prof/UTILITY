@@ -1,0 +1,58 @@
+[
+  {
+    "body": "earth",
+    "file": "src/assets/2k_earth_daymap.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg",
+    "author": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://www.solarsystemscope.com/textures/",
+    "sha256": "767ee1dc6eb3802699bfccf6f264880f8acd0b80de3191cd24984fe279b07b7c",
+    "bytes": 463087,
+    "accessedOn": "2026-10-03T09:11:11.525028+00:00",
+    "modifications": "None. Original 2K JPEG; GPU mipmaps.",
+    "limitations": "Processed illustrative surface map; color and details are not a dated observation. Sun is an illustrative photosphere, not current activity."
+  },
+  {
+    "body": "mars",
+    "file": "src/assets/2k_mars.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_mars.jpg",
+    "author": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://www.solarsystemscope.com/textures/",
+    "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01",
+    "bytes": 750547,
+    "accessedOn": "2026-10-03T09:11:12.927423+00:00",
+    "modifications": "None. Original 2K JPEG; GPU mipmaps.",
+    "limitations": "Processed illustrative surface map; color and details are not a dated observation. Sun is an illustrative photosphere, not current activity."
+  },
+  {
+    "body": "moon",
+    "file": "src/assets/2k_moon.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_moon.jpg",
+    "author": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://www.solarsystemscope.com/textures/",
+    "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd",
+    "bytes": 1053869,
+    "accessedOn": "2026-10-03T09:11:14.385583+00:00",
+    "modifications": "None. Original 2K JPEG; GPU mipmaps.",
+    "limitations": "Processed illustrative surface map; color and details are not a dated observation. Sun is an illustrative photosphere, not current activity."
+  },
+  {
+    "body": "sun",
+    "file": "src/assets/2k_sun.jpg",
+    "url": "https://www.solarsystemscope.com/textures/download/2k_sun.jpg",
+    "author": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://www.solarsystemscope.com/textures/",
+    "sha256": "ff0f076ba65e03b5ab518451bc96699325be38e3ccbdd5869ee1c00f3a0c8816",
+    "bytes": 822427,
+    "accessedOn": "2026-10-03T09:11:15.798234+00:00",
+    "modifications": "None. Original 2K JPEG; GPU mipmaps.",
+    "limitations": "Processed illustrative surface map; color and details are not a dated observation. Sun is an illustrative photosphere, not current activity."
+  }
+]

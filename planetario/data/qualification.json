@@ -1,0 +1,102 @@
+{
+  "id": "j2000-phase5-v1",
+  "status": "fail",
+  "datasetSha256": "e3b4d888be5127c1f604bbeb86fb2a80f93f13817215db4b40ceae69c4642b48",
+  "referenceSha256": "abfad3ad725d71307c892adb6b47fe22b4601eb694e4db21cd1b9ddc4210b88d",
+  "referenceTool": "SpiceyPy 8.2.0, CSPICE_N0067",
+  "interval": {
+    "startTdbSeconds": -1296000,
+    "endTdbSeconds": 1296000
+  },
+  "results": {
+    "internal-emb-sun": {
+      "pass": true,
+      "maxRelativePositionError": 7.248815136612671e-13,
+      "maxRelativeVelocityError": 7.129160115838353e-13
+    },
+    "internal-mars-sun": {
+      "pass": true,
+      "maxRelativePositionError": 1.1841431197978309e-12,
+      "maxRelativeVelocityError": 1.0865416714081072e-12
+    },
+    "internal-moon-earth": {
+      "pass": true,
+      "maxRelativePositionError": 8.644688057045492e-13,
+      "maxRelativeVelocityError": 8.164480410048361e-13
+    },
+    "emb-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxPositionErrorM": 76918.81438331316,
+      "maxVelocityErrorMps": 0.12216011020006091,
+      "positionLimitM": 20000000,
+      "velocityLimitMps": 20,
+      "epochPositionErrorM": 0.0002664832946257108,
+      "epochVelocityErrorMps": 5.650590380177889e-11
+    },
+    "earth-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxPositionErrorM": 483262.87098316144,
+      "maxVelocityErrorMps": 1.1627067135593165,
+      "positionLimitM": 20000000,
+      "velocityLimitMps": 20,
+      "epochPositionErrorM": 0.00027871929576840225,
+      "epochVelocityErrorMps": 5.7298706865057324e-11
+    },
+    "moon-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxPositionErrorM": 44750241.11373531,
+      "maxVelocityErrorMps": 97.99063876115939,
+      "positionLimitM": 50000000,
+      "velocityLimitMps": 100,
+      "epochPositionErrorM": 0.0003009627160183295,
+      "epochVelocityErrorMps": 5.6856154356772266e-11
+    },
+    "mars-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxPositionErrorM": 140463.1614881165,
+      "maxVelocityErrorMps": 0.2241391735118024,
+      "positionLimitM": 20000000,
+      "velocityLimitMps": 20,
+      "epochPositionErrorM": 0.00016506005963378857,
+      "epochVelocityErrorMps": 7.932050513096513e-12
+    },
+    "moon-earth": {
+      "pass": false,
+      "samples": 241,
+      "maxPositionErrorM": 45233494.28195389,
+      "maxVelocityErrorMps": 99.15009781186596,
+      "positionLimitM": 30000000,
+      "velocityLimitMps": 100,
+      "epochPositionErrorM": 3.8172866277246174e-7,
+      "epochVelocityErrorMps": 6.431196840798743e-13
+    },
+    "orientation-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 1.861302714690765e-15,
+      "limitRad": 0.0017453292519943296
+    },
+    "orientation-earth": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.00000608674606226365,
+      "limitRad": 0.0017453292519943296
+    },
+    "orientation-moon": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.0012406757895363544,
+      "limitRad": 0.17453292519943295
+    },
+    "orientation-mars": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.0000019415042707351124,
+      "limitRad": 0.0017453292519943296
+    }
+  }
+}

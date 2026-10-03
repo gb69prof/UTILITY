@@ -1,0 +1,6 @@
+{
+  "mars_DE440_center_GM_km3s2": 42828.37362069909,
+  "mars_effective_Horizons499_minus_Sun_km3s2": 42828.3748626709,
+  "difference_km3s2": 0.0012419718113960698,
+  "policy": "Use exact response Keplerian GM for conics; body Mars GM is explicitly derived from that response minus DE440 solar GM. No use of BODY4_GM. Precision limited by subtraction of printed response."
+}

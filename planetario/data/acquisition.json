@@ -1,0 +1,72 @@
+[
+  {
+    "file": "data/raw/pck00011.tpc",
+    "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+    "sha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+    "bytes": 131226,
+    "accessedOn": "2026-10-03T09:01:30.264775+00:00"
+  },
+  {
+    "file": "data/raw/gm_de440.tpc",
+    "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/gm_de440.tpc",
+    "sha256": "924ddf4fb9ead9fe8a1aa55780bcabde40b09d00065d58226e24b68d8092f140",
+    "bytes": 12406,
+    "accessedOn": "2026-10-03T09:01:31.044439+00:00"
+  },
+  {
+    "file": "data/raw/emb-sun-elements.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%273%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+    "sha256": "df83e6e90df91ec7694a3a101381ed1cb4ceadb0b8397482a637bc934732f292",
+    "bytes": 6379,
+    "accessedOn": "2026-10-03T09:01:31.864008+00:00"
+  },
+  {
+    "file": "data/raw/mars-sun-elements.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+    "sha256": "0ca74e836b53a4266e4ad80e920da63e80e4ee514359206788cbe445002d3f0e",
+    "bytes": 7472,
+    "accessedOn": "2026-10-03T09:01:32.635069+00:00"
+  },
+  {
+    "file": "data/raw/moon-earth-elements.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+    "sha256": "b8537c144d2f6fad2303b07b0419616b34152b8d0facca3b0a5b07f42bbb9655",
+    "bytes": 7616,
+    "accessedOn": "2026-10-03T09:01:33.405362+00:00"
+  },
+  {
+    "file": "data/raw/emb-sun-vectors.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%273%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+    "sha256": "31f7480e3162121bcf2eb49919cb5d86b666a764bd6fad68c5038493db01fa13",
+    "bytes": 52635,
+    "accessedOn": "2026-10-03T09:01:34.372841+00:00"
+  },
+  {
+    "file": "data/raw/earth-sun-vectors.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+    "sha256": "b8bfce1505873cd063b5fd330a6ee3f2d7670e243310cc8bfcb044a590d4a29c",
+    "bytes": 54190,
+    "accessedOn": "2026-10-03T09:01:35.287587+00:00"
+  },
+  {
+    "file": "data/raw/moon-sun-vectors.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+    "sha256": "0771522c79b5dfda34fa36e2da4908a05704bfde6d82a665f52c46c2b8037416",
+    "bytes": 53753,
+    "accessedOn": "2026-10-03T09:01:36.188757+00:00"
+  },
+  {
+    "file": "data/raw/mars-sun-vectors.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+    "sha256": "6442358dfb2db0a7b35d555fba075775802e9f5947a6a99b70818872c7722ea6",
+    "bytes": 53728,
+    "accessedOn": "2026-10-03T09:01:37.117045+00:00"
+  },
+  {
+    "file": "data/raw/moon-earth-vectors.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+    "sha256": "48952cf9b898354cbdc56a56ffd2defa852ecadd571abf5bf06a61bc9f67b378",
+    "bytes": 53872,
+    "accessedOn": "2026-10-03T09:01:38.088418+00:00"
+  }
+]

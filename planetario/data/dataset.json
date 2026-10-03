@@ -1,0 +1,1603 @@
+{
+  "schemaVersion": "1.0",
+  "version": "j2000-de441-mar099-pck11-v1",
+  "valid": {
+    "startTdbSeconds": -1296000,
+    "endTdbSeconds": 1296000
+  },
+  "sources": [
+    {
+      "id": "pck00011",
+      "title": "pck00011.tpc",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/pck00011.tpc",
+      "publishedOrVersion": "PCK00011",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/pck00011.tpc",
+      "artifactSha256": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1"
+    },
+    {
+      "id": "gm_de440",
+      "title": "gm_de440.tpc",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/gm_de440.tpc",
+      "publishedOrVersion": "DE440",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/gm_de440.tpc",
+      "artifactSha256": "924ddf4fb9ead9fe8a1aa55780bcabde40b09d00065d58226e24b68d8092f140"
+    },
+    {
+      "id": "emb-sun-elements",
+      "title": "emb-sun-elements.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%273%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/emb-sun-elements.json",
+      "artifactSha256": "df83e6e90df91ec7694a3a101381ed1cb4ceadb0b8397482a637bc934732f292"
+    },
+    {
+      "id": "mars-sun-elements",
+      "title": "mars-sun-elements.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+      "publishedOrVersion": "Horizons API response 1.2; mar099",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/mars-sun-elements.json",
+      "artifactSha256": "0ca74e836b53a4266e4ad80e920da63e80e4ee514359206788cbe445002d3f0e"
+    },
+    {
+      "id": "moon-earth-elements",
+      "title": "moon-earth-elements.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27ELEMENTS%27&TLIST=%272451545.0%27&TLIST_TYPE=%27JD%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/moon-earth-elements.json",
+      "artifactSha256": "b8537c144d2f6fad2303b07b0419616b34152b8d0facca3b0a5b07f42bbb9655"
+    },
+    {
+      "id": "emb-sun-vectors",
+      "title": "emb-sun-vectors.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%273%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/emb-sun-vectors.json",
+      "artifactSha256": "31f7480e3162121bcf2eb49919cb5d86b666a764bd6fad68c5038493db01fa13"
+    },
+    {
+      "id": "earth-sun-vectors",
+      "title": "earth-sun-vectors.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/earth-sun-vectors.json",
+      "artifactSha256": "b8bfce1505873cd063b5fd330a6ee3f2d7670e243310cc8bfcb044a590d4a29c"
+    },
+    {
+      "id": "moon-sun-vectors",
+      "title": "moon-sun-vectors.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/moon-sun-vectors.json",
+      "artifactSha256": "0771522c79b5dfda34fa36e2da4908a05704bfde6d82a665f52c46c2b8037416"
+    },
+    {
+      "id": "mars-sun-vectors",
+      "title": "mars-sun-vectors.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+      "publishedOrVersion": "Horizons API response 1.2; mar099",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/mars-sun-vectors.json",
+      "artifactSha256": "6442358dfb2db0a7b35d555fba075775802e9f5947a6a99b70818872c7722ea6"
+    },
+    {
+      "id": "moon-earth-vectors",
+      "title": "moon-earth-vectors.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&COMMAND=%27301%27&CENTER=%27500%40399%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%273+h%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/moon-earth-vectors.json",
+      "artifactSha256": "48952cf9b898354cbdc56a56ffd2defa852ecadd571abf5bf06a61bc9f67b378"
+    },
+    {
+      "id": "emb-sun-30min",
+      "title": "emb-sun-30min.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%273%27&CENTER=%27500%4010%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%2730+m%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/emb-sun-30min.json",
+      "artifactSha256": "56b8d87cd11c3f23bea0c6bebd2f3cfe4665be2488da70ff6900226e5aba0a40"
+    },
+    {
+      "id": "earth-sun-30min",
+      "title": "earth-sun-30min.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&CENTER=%27500%4010%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%2730+m%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/earth-sun-30min.json",
+      "artifactSha256": "8c589ca9b476393fb9dbe3da6345a48050420f22a6c4c18bddb89f14481f8f7e"
+    },
+    {
+      "id": "moon-sun-30min",
+      "title": "moon-sun-30min.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&CENTER=%27500%4010%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%2730+m%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/moon-sun-30min.json",
+      "artifactSha256": "3694b2204349a37b72411f9296a5f7ccc8939b19116b23b839f034388047228d"
+    },
+    {
+      "id": "mars-sun-30min",
+      "title": "mars-sun-30min.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&CENTER=%27500%4010%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%2730+m%27",
+      "publishedOrVersion": "Horizons API response 1.2; mar099",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/mars-sun-30min.json",
+      "artifactSha256": "b857587479a0e2ffdaa9f1336d44610194d26bf128db7d8bc3157708f8ae214e"
+    },
+    {
+      "id": "moon-earth-30min",
+      "title": "moon-earth-30min.json",
+      "institution": "NASA JPL / NAIF",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&CENTER=%27500%40399%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&TIME_TYPE=%27TDB%27&REF_SYSTEM=%27ICRF%27&REF_PLANE=%27ECLIPTIC%27&OUT_UNITS=%27KM-S%27&CSV_FORMAT=%27YES%27&EPHEM_TYPE=%27VECTORS%27&VEC_TABLE=%272%27&VEC_CORR=%27NONE%27&START_TIME=%27JD2451530.0%27&STOP_TIME=%27JD2451560.0%27&STEP_SIZE=%2730+m%27",
+      "publishedOrVersion": "Horizons API response 1.2; DE441",
+      "accessedOn": "2026-10-03",
+      "locator": "data/raw/moon-earth-30min.json",
+      "artifactSha256": "ab14df81d6acdd5835417260387ba5a11f081f502b58a91d2ee77366c6fbffcb"
+    }
+  ],
+  "bodies": {
+    "sun": {
+      "schemaVersion": "1.0",
+      "recordStatus": "reviewed",
+      "id": "sun",
+      "name": "Sole",
+      "internationalName": "Sun",
+      "kind": "star",
+      "centralBody": null,
+      "naifId": 10,
+      "physical": {
+        "mass": null,
+        "gm": {
+          "value": 1.3271244004127939e+20,
+          "unit": "m3/s2",
+          "definition": "GM dinamico del centro del corpo",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "gm_de440"
+            ],
+            "originalValue": "132712440041.27939",
+            "originalUnit": "km3/s2",
+            "transformations": [
+              "multiply by 1e9"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "meanRadius": {
+          "value": 695700000.0,
+          "unit": "m",
+          "definition": "Raggio della sfera di volume equivalente all’ellissoide PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "[np.float64(695700.0), np.float64(695700.0), np.float64(695700.0)]",
+            "originalUnit": "km",
+            "transformations": [
+              "1000 * (a*b*c)^(1/3)"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "equatorialRadius": {
+          "value": 695700000.0,
+          "unit": "m",
+          "definition": "Raggio equatoriale PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "695700.0",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "polarRadius": {
+          "value": 695700000.0,
+          "unit": "m",
+          "definition": "Raggio polare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "695700.0",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "gravity": null,
+        "density": null,
+        "temperatures": [],
+        "composition": []
+      },
+      "motion": {
+        "kind": "origin",
+        "center": "sun"
+      },
+      "rotation": {
+        "kind": "fixed-pole-uniform-spin",
+        "epoch": {
+          "jd": 2451545,
+          "scale": "TDB"
+        },
+        "poleFrame": "J2000-equatorial",
+        "poleRa": {
+          "value": 4.993910588731374,
+          "unit": "rad",
+          "definition": "Ascensione retta polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "4.993910588731374",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "poleDec": {
+          "value": 1.1147417932487782,
+          "unit": "rad",
+          "definition": "Declinazione polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1.1147417932487782",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "primeMeridianAtEpoch": {
+          "value": 1.4691483511587475,
+          "unit": "rad",
+          "definition": "Meridiano primo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1.4691483511587475",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "spinRate": {
+          "value": 2.8653296576375425e-06,
+          "unit": "rad/s",
+          "definition": "Velocità secolare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "2.8653296576375425e-06",
+            "originalUnit": "rad/s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "siderealPeriod": {
+          "value": 2192831.561433688,
+          "unit": "s",
+          "definition": "Periodo 2π/|ω|",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "2192831.561433688",
+            "originalUnit": "s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "direction": "positive-about-pole",
+        "obliquityAtEpoch": {
+          "value": 0.1265665092142541,
+          "unit": "rad",
+          "definition": "Obliquità derivata rispetto alla normale dichiarata",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.1265665092142541",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "obliquityReference": "ecliptic-north",
+        "provenance": {
+          "sourceIds": [
+            "pck00011"
+          ],
+          "originalValue": "IAU full orientation at ET=0",
+          "originalUnit": "rad",
+          "transformations": [
+            "SpiceyPy 8.2.0 / CSPICE N0067 initialization; fixed pole and secular spin thereafter"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": [
+            "No Earth UT1/polar motion, accurate lunar libration or solar differential rotation"
+          ]
+        }
+      },
+      "missingReasons": {
+        "/physical/mass": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/gravity": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/density": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/temperatures": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/composition": "Non acquisito: non necessario alla Fase 5; nessun valore inventato"
+      }
+    },
+    "earth": {
+      "schemaVersion": "1.0",
+      "recordStatus": "reviewed",
+      "id": "earth",
+      "name": "Terra",
+      "internationalName": "Earth",
+      "kind": "planet",
+      "centralBody": "sun",
+      "naifId": 399,
+      "physical": {
+        "mass": null,
+        "gm": {
+          "value": 398600435507022.6,
+          "unit": "m3/s2",
+          "definition": "GM dinamico del centro del corpo",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "gm_de440"
+            ],
+            "originalValue": "398600.4355070226",
+            "originalUnit": "km3/s2",
+            "transformations": [
+              "multiply by 1e9"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "meanRadius": {
+          "value": 6371000.385249621,
+          "unit": "m",
+          "definition": "Raggio della sfera di volume equivalente all’ellissoide PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "[np.float64(6378.1366), np.float64(6378.1366), np.float64(6356.7519)]",
+            "originalUnit": "km",
+            "transformations": [
+              "1000 * (a*b*c)^(1/3)"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "equatorialRadius": {
+          "value": 6378136.6,
+          "unit": "m",
+          "definition": "Raggio equatoriale PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "6378.1366",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "polarRadius": {
+          "value": 6356751.9,
+          "unit": "m",
+          "definition": "Raggio polare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "6356.7519",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "gravity": null,
+        "density": null,
+        "temperatures": [],
+        "composition": []
+      },
+      "motion": {
+        "kind": "earth-moon-member",
+        "member": "earth",
+        "barycenterOrbitId": "emb-sun",
+        "relativeOrbitId": "moon-earth"
+      },
+      "rotation": {
+        "kind": "fixed-pole-uniform-spin",
+        "epoch": {
+          "jd": 2451545,
+          "scale": "TDB"
+        },
+        "poleFrame": "J2000-equatorial",
+        "poleRa": {
+          "value": 0.0,
+          "unit": "rad",
+          "definition": "Ascensione retta polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.0",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "poleDec": {
+          "value": 1.5707963267948966,
+          "unit": "rad",
+          "definition": "Declinazione polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1.5707963267948966",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "primeMeridianAtEpoch": {
+          "value": 3.3186912127896573,
+          "unit": "rad",
+          "definition": "Meridiano primo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "3.3186912127896573",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "spinRate": {
+          "value": 7.292115373194001e-05,
+          "unit": "rad/s",
+          "definition": "Velocità secolare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "7.292115373194001e-05",
+            "originalUnit": "rad/s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "siderealPeriod": {
+          "value": 86164.0962275053,
+          "unit": "s",
+          "definition": "Periodo 2π/|ω|",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "86164.0962275053",
+            "originalUnit": "s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "direction": "positive-about-pole",
+        "obliquityAtEpoch": {
+          "value": 0.40909141503026786,
+          "unit": "rad",
+          "definition": "Obliquità derivata rispetto alla normale dichiarata",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.40909141503026786",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "obliquityReference": "emb-sun-normal",
+        "provenance": {
+          "sourceIds": [
+            "pck00011"
+          ],
+          "originalValue": "IAU full orientation at ET=0",
+          "originalUnit": "rad",
+          "transformations": [
+            "SpiceyPy 8.2.0 / CSPICE N0067 initialization; fixed pole and secular spin thereafter"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": [
+            "No Earth UT1/polar motion, accurate lunar libration or solar differential rotation"
+          ]
+        }
+      },
+      "missingReasons": {
+        "/physical/mass": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/gravity": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/density": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/temperatures": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/composition": "Non acquisito: non necessario alla Fase 5; nessun valore inventato"
+      }
+    },
+    "moon": {
+      "schemaVersion": "1.0",
+      "recordStatus": "reviewed",
+      "id": "moon",
+      "name": "Luna",
+      "internationalName": "Moon",
+      "kind": "satellite",
+      "centralBody": "earth",
+      "naifId": 301,
+      "physical": {
+        "mass": null,
+        "gm": {
+          "value": 4902800118457.549,
+          "unit": "m3/s2",
+          "definition": "GM dinamico del centro del corpo",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "gm_de440"
+            ],
+            "originalValue": "4902.800118457549",
+            "originalUnit": "km3/s2",
+            "transformations": [
+              "multiply by 1e9"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "meanRadius": {
+          "value": 1737400.0,
+          "unit": "m",
+          "definition": "Raggio della sfera di volume equivalente all’ellissoide PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "[np.float64(1737.4), np.float64(1737.4), np.float64(1737.4)]",
+            "originalUnit": "km",
+            "transformations": [
+              "1000 * (a*b*c)^(1/3)"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "equatorialRadius": {
+          "value": 1737400.0,
+          "unit": "m",
+          "definition": "Raggio equatoriale PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1737.4",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "polarRadius": {
+          "value": 1737400.0,
+          "unit": "m",
+          "definition": "Raggio polare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1737.4",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "gravity": null,
+        "density": null,
+        "temperatures": [],
+        "composition": []
+      },
+      "motion": {
+        "kind": "earth-moon-member",
+        "member": "moon",
+        "barycenterOrbitId": "emb-sun",
+        "relativeOrbitId": "moon-earth"
+      },
+      "rotation": {
+        "kind": "fixed-pole-uniform-spin",
+        "epoch": {
+          "jd": 2451545,
+          "scale": "TDB"
+        },
+        "poleFrame": "J2000-equatorial",
+        "poleRa": {
+          "value": 4.657546083023791,
+          "unit": "rad",
+          "definition": "Ascensione retta polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "4.657546083023791",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "poleDec": {
+          "value": 1.1456533675897982,
+          "unit": "rad",
+          "definition": "Declinazione polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "1.1456533675897982",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "primeMeridianAtEpoch": {
+          "value": 0.7189929926922298,
+          "unit": "rad",
+          "definition": "Meridiano primo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.7189929926922298",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "spinRate": {
+          "value": 2.6616994576329732e-06,
+          "unit": "rad/s",
+          "definition": "Velocità secolare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "2.6616994576329732e-06",
+            "originalUnit": "rad/s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "siderealPeriod": {
+          "value": 2360591.572110538,
+          "unit": "s",
+          "definition": "Periodo 2π/|ω|",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "2360591.572110538",
+            "originalUnit": "s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "direction": "positive-about-pole",
+        "obliquityAtEpoch": {
+          "value": 0.11886352172779181,
+          "unit": "rad",
+          "definition": "Obliquità derivata rispetto alla normale dichiarata",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.11886352172779181",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "obliquityReference": "moon-earth-normal",
+        "provenance": {
+          "sourceIds": [
+            "pck00011"
+          ],
+          "originalValue": "IAU full orientation at ET=0",
+          "originalUnit": "rad",
+          "transformations": [
+            "SpiceyPy 8.2.0 / CSPICE N0067 initialization; fixed pole and secular spin thereafter"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": [
+            "No Earth UT1/polar motion, accurate lunar libration or solar differential rotation"
+          ]
+        }
+      },
+      "missingReasons": {
+        "/physical/mass": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/gravity": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/density": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/temperatures": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/composition": "Non acquisito: non necessario alla Fase 5; nessun valore inventato"
+      }
+    },
+    "mars": {
+      "schemaVersion": "1.0",
+      "recordStatus": "reviewed",
+      "id": "mars",
+      "name": "Marte",
+      "internationalName": "Mars",
+      "kind": "planet",
+      "centralBody": "sun",
+      "naifId": 499,
+      "physical": {
+        "mass": null,
+        "gm": {
+          "value": 42828374862670.9,
+          "unit": "m3/s2",
+          "definition": "GM dinamico del centro del corpo",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "mars-sun-elements"
+            ],
+            "originalValue": "42828.3748626709",
+            "originalUnit": "km3/s2",
+            "transformations": [
+              "multiply by 1e9",
+              "Horizons relative GM minus DE440 Sun; see reconciliation.json"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "meanRadius": {
+          "value": 3389513.550271081,
+          "unit": "m",
+          "definition": "Raggio della sfera di volume equivalente all’ellissoide PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "[np.float64(3396.19), np.float64(3396.19), np.float64(3376.2)]",
+            "originalUnit": "km",
+            "transformations": [
+              "1000 * (a*b*c)^(1/3)"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "equatorialRadius": {
+          "value": 3396190.0,
+          "unit": "m",
+          "definition": "Raggio equatoriale PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "3396.19",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "polarRadius": {
+          "value": 3376200.0,
+          "unit": "m",
+          "definition": "Raggio polare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "3376.2",
+            "originalUnit": "km",
+            "transformations": [
+              "multiply by 1000"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "gravity": null,
+        "density": null,
+        "temperatures": [],
+        "composition": []
+      },
+      "motion": {
+        "kind": "kepler",
+        "orbitId": "mars-sun"
+      },
+      "rotation": {
+        "kind": "fixed-pole-uniform-spin",
+        "epoch": {
+          "jd": 2451545,
+          "scale": "TDB"
+        },
+        "poleFrame": "J2000-equatorial",
+        "poleRa": {
+          "value": 5.544576879956258,
+          "unit": "rad",
+          "definition": "Ascensione retta polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "5.544576879956258",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "poleDec": {
+          "value": 0.9230424950070161,
+          "unit": "rad",
+          "definition": "Declinazione polo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.9230424950070161",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "primeMeridianAtEpoch": {
+          "value": 3.0828110069012546,
+          "unit": "rad",
+          "definition": "Meridiano primo a t0",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "3.0828110069012546",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "spinRate": {
+          "value": 7.088218070006562e-05,
+          "unit": "rad/s",
+          "definition": "Velocità secolare PCK",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "7.088218070006562e-05",
+            "originalUnit": "rad/s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "siderealPeriod": {
+          "value": 88642.66371496905,
+          "unit": "s",
+          "definition": "Periodo 2π/|ω|",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "88642.66371496905",
+            "originalUnit": "s",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "direction": "positive-about-pole",
+        "obliquityAtEpoch": {
+          "value": 0.4396737727006057,
+          "unit": "rad",
+          "definition": "Obliquità derivata rispetto alla normale dichiarata",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "pck00011"
+            ],
+            "originalValue": "0.4396737727006057",
+            "originalUnit": "rad",
+            "transformations": [
+              "CSPICE pxform evaluated at ET=0 including periodic terms; extracted active body-frame columns"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        },
+        "obliquityReference": "mars-sun-normal",
+        "provenance": {
+          "sourceIds": [
+            "pck00011"
+          ],
+          "originalValue": "IAU full orientation at ET=0",
+          "originalUnit": "rad",
+          "transformations": [
+            "SpiceyPy 8.2.0 / CSPICE N0067 initialization; fixed pole and secular spin thereafter"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": [
+            "No Earth UT1/polar motion, accurate lunar libration or solar differential rotation"
+          ]
+        }
+      },
+      "missingReasons": {
+        "/physical/mass": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/gravity": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/density": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/temperatures": "Non acquisito: non necessario alla Fase 5; nessun valore inventato",
+        "/physical/composition": "Non acquisito: non necessario alla Fase 5; nessun valore inventato"
+      }
+    }
+  },
+  "nodes": {
+    "emb": {
+      "id": "emb",
+      "naifId": 3,
+      "members": [
+        "earth",
+        "moon"
+      ]
+    }
+  },
+  "orbits": {
+    "emb-sun": {
+      "id": "emb-sun",
+      "target": "emb",
+      "center": "sun",
+      "frame": "ECLIPJ2000",
+      "epoch": {
+        "jd": 2451545,
+        "scale": "TDB"
+      },
+      "valid": {
+        "startTdbSeconds": -1296000,
+        "endTdbSeconds": 1296000
+      },
+      "convention": "osculating-frozen-two-body",
+      "a": {
+        "value": 149597336223.3347,
+        "unit": "m",
+        "definition": "Semiasse maggiore osculatore a J2000",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "1.495973362233347E+08",
+          "originalUnit": "km",
+          "transformations": [
+            "multiply by 1000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "e": {
+        "value": 0.01670236222428361,
+        "unit": "1",
+        "definition": "Eccentricità",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "1.670236222428361E-02",
+          "originalUnit": "1",
+          "transformations": [],
+          "status": "reported",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "i": {
+        "value": 1.8057601306530382e-06,
+        "unit": "rad",
+        "definition": "Inclinazione",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "1.034624342994112E-04",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "ascendingNode": {
+        "value": 2.448560453778597,
+        "unit": "rad",
+        "definition": "Longitudine del nodo ascendente",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "1.402921798841513E+02",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "argumentOfPeriapsis": {
+        "value": 5.6308816328303095,
+        "unit": "rad",
+        "definition": "Argomento del pericentro",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "3.226257524989104E+02",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "anomalyAtEpoch": {
+        "kind": "mean",
+        "angle": {
+          "value": 6.240341031406885,
+          "unit": "rad",
+          "definition": "Anomalia media all’epoca",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "emb-sun-elements"
+            ],
+            "originalValue": "3.575452038219296E+02",
+            "originalUnit": "deg",
+            "transformations": [
+              "multiply by 0.017453292519943295"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        }
+      },
+      "mu": {
+        "value": 1.3271284354451502e+20,
+        "unit": "m3/s2",
+        "definition": "GM relativo della specifica risposta Horizons",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "emb-sun-elements"
+          ],
+          "originalValue": "1.3271284354451501E+11",
+          "originalUnit": "km3/s2",
+          "transformations": [
+            "multiply by 1000000000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      }
+    },
+    "mars-sun": {
+      "id": "mars-sun",
+      "target": "mars",
+      "center": "sun",
+      "frame": "ECLIPJ2000",
+      "epoch": {
+        "jd": 2451545,
+        "scale": "TDB"
+      },
+      "valid": {
+        "startTdbSeconds": -1296000,
+        "endTdbSeconds": 1296000
+      },
+      "convention": "osculating-frozen-two-body",
+      "a": {
+        "value": 227939132973.9321,
+        "unit": "m",
+        "definition": "Semiasse maggiore osculatore a J2000",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "2.279391329739321E+08",
+          "originalUnit": "km",
+          "transformations": [
+            "multiply by 1000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "e": {
+        "value": 0.09331510145811761,
+        "unit": "1",
+        "definition": "Eccentricità",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "9.331510145811761E-02",
+          "originalUnit": "1",
+          "transformations": [],
+          "status": "reported",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "i": {
+        "value": 0.03228643528075944,
+        "unit": "rad",
+        "definition": "Inclinazione",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "1.849876477109795E+00",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "ascendingNode": {
+        "value": 0.865020182634384,
+        "unit": "rad",
+        "definition": "Longitudine del nodo ascendente",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "4.956200565858587E+01",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "argumentOfPeriapsis": {
+        "value": 5.001020764902177,
+        "unit": "rad",
+        "definition": "Argomento del pericentro",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "2.865373830861814E+02",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "anomalyAtEpoch": {
+        "kind": "mean",
+        "angle": {
+          "value": 0.3378343555459837,
+          "unit": "rad",
+          "definition": "Anomalia media all’epoca",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "mars-sun-elements"
+            ],
+            "originalValue": "1.935648274730694E+01",
+            "originalUnit": "deg",
+            "transformations": [
+              "multiply by 0.017453292519943295"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        }
+      },
+      "mu": {
+        "value": 1.3271248286965426e+20,
+        "unit": "m3/s2",
+        "definition": "GM relativo della specifica risposta Horizons",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "mars-sun-elements"
+          ],
+          "originalValue": "1.3271248286965425E+11",
+          "originalUnit": "km3/s2",
+          "transformations": [
+            "multiply by 1000000000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      }
+    },
+    "moon-earth": {
+      "id": "moon-earth",
+      "target": "moon",
+      "center": "earth",
+      "frame": "ECLIPJ2000",
+      "epoch": {
+        "jd": 2451545,
+        "scale": "TDB"
+      },
+      "valid": {
+        "startTdbSeconds": -1296000,
+        "endTdbSeconds": 1296000
+      },
+      "convention": "osculating-frozen-two-body",
+      "a": {
+        "value": 381874524.8499886,
+        "unit": "m",
+        "definition": "Semiasse maggiore osculatore a J2000",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "3.818745248499886E+05",
+          "originalUnit": "km",
+          "transformations": [
+            "multiply by 1000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "e": {
+        "value": 0.06314721685094304,
+        "unit": "1",
+        "definition": "Eccentricità",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "6.314721685094304E-02",
+          "originalUnit": "1",
+          "transformations": [],
+          "status": "reported",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "i": {
+        "value": 0.09146001755875816,
+        "unit": "rad",
+        "definition": "Inclinazione",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "5.240273000309245E+00",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "ascendingNode": {
+        "value": 2.1634762017486735,
+        "unit": "rad",
+        "definition": "Longitudine del nodo ascendente",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "1.239580554371928E+02",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "argumentOfPeriapsis": {
+        "value": 5.391717773036377,
+        "unit": "rad",
+        "definition": "Argomento del pericentro",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "3.089226727206595E+02",
+          "originalUnit": "deg",
+          "transformations": [
+            "multiply by 0.017453292519943295"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      },
+      "anomalyAtEpoch": {
+        "kind": "mean",
+        "angle": {
+          "value": 2.5599315695493865,
+          "unit": "rad",
+          "definition": "Anomalia media all’epoca",
+          "uncertainty": null,
+          "provenance": {
+            "sourceIds": [
+              "moon-earth-elements"
+            ],
+            "originalValue": "1.466732747774804E+02",
+            "originalUnit": "deg",
+            "transformations": [
+              "multiply by 0.017453292519943295"
+            ],
+            "status": "derived",
+            "review": "reviewed",
+            "limitations": []
+          }
+        }
+      },
+      "mu": {
+        "value": 403503235625480.1,
+        "unit": "m3/s2",
+        "definition": "GM relativo della specifica risposta Horizons",
+        "uncertainty": null,
+        "provenance": {
+          "sourceIds": [
+            "moon-earth-elements"
+          ],
+          "originalValue": "4.0350323562548013E+05",
+          "originalUnit": "km3/s2",
+          "transformations": [
+            "multiply by 1000000000"
+          ],
+          "status": "derived",
+          "review": "reviewed",
+          "limitations": []
+        }
+      }
+    }
+  },
+  "constants": {},
+  "validationReport": {
+    "status": "unvalidated",
+    "reportId": null
+  }
+}

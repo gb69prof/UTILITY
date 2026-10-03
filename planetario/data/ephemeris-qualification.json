@@ -1,0 +1,88 @@
+{
+  "id": "phase5-hermite-hourly-v1",
+  "status": "pass",
+  "model": "JPL geometric vectors; hourly cubic Hermite; fixed PCK pole and uniform spin",
+  "datasetSha256": "e3b4d888be5127c1f604bbeb86fb2a80f93f13817215db4b40ceae69c4642b48",
+  "ephemerisSha256": "dc4c9dbb5bda59d2bbf1b23a12c236ccf8b542762c4b750fd161f98ffb152fba",
+  "checksSha256": "21f3f73060a14b34b4fb42e9499ee15a89bb88f790f2ed4bfc520ed441492de4",
+  "interval": {
+    "startTdbSeconds": -1296000,
+    "endTdbSeconds": 1296000
+  },
+  "results": {
+    "emb-sun": {
+      "pass": true,
+      "samples": 720,
+      "maxPositionErrorM": 0.00021701130825603677,
+      "positionWorstTdbSeconds": 880200,
+      "maxVelocityErrorMps": 5.728008772243565e-8,
+      "velocityWorstTdbSeconds": -977400,
+      "positionLimitM": 1000,
+      "velocityLimitMps": 0.01
+    },
+    "earth-sun": {
+      "pass": true,
+      "samples": 720,
+      "maxPositionErrorM": 0.0003147070726312414,
+      "positionWorstTdbSeconds": 592200,
+      "maxVelocityErrorMps": 5.717982255085468e-8,
+      "velocityWorstTdbSeconds": -977400,
+      "positionLimitM": 1000,
+      "velocityLimitMps": 0.01
+    },
+    "moon-sun": {
+      "pass": true,
+      "samples": 720,
+      "maxPositionErrorM": 0.01529471211307662,
+      "positionWorstTdbSeconds": -869400,
+      "maxVelocityErrorMps": 6.61665245824178e-8,
+      "velocityWorstTdbSeconds": -977400,
+      "positionLimitM": 1000,
+      "velocityLimitMps": 0.01
+    },
+    "mars-sun": {
+      "pass": true,
+      "samples": 720,
+      "maxPositionErrorM": 0.00032432779595380006,
+      "positionWorstTdbSeconds": 322200,
+      "maxVelocityErrorMps": 6.838023290829876e-8,
+      "velocityWorstTdbSeconds": -1013400,
+      "positionLimitM": 1000,
+      "velocityLimitMps": 0.01
+    },
+    "moon-earth": {
+      "pass": true,
+      "samples": 720,
+      "maxPositionErrorM": 0.015319005709267008,
+      "positionWorstTdbSeconds": -865800,
+      "maxVelocityErrorMps": 1.3591932734828825e-8,
+      "velocityWorstTdbSeconds": -862200,
+      "positionLimitM": 100,
+      "velocityLimitMps": 0.01
+    },
+    "orientation-sun": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 1.861302714690765e-15,
+      "limitRad": 0.0017453292519943296
+    },
+    "orientation-earth": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.00000608674606226365,
+      "limitRad": 0.0017453292519943296
+    },
+    "orientation-moon": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.0012406757895363544,
+      "limitRad": 0.17453292519943295
+    },
+    "orientation-mars": {
+      "pass": true,
+      "samples": 241,
+      "maxOrientationErrorRad": 0.0000019415042707351124,
+      "limitRad": 0.0017453292519943296
+    }
+  }
+}

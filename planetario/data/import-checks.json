@@ -1,0 +1,14 @@
+{
+  "emb-sun": {
+    "meanMotionRadPerSecond": 1.9909973714988317e-07,
+    "periodSeconds": 31557978.91611266
+  },
+  "mars-sun": {
+    "meanMotionRadPerSecond": 1.0585894200484754e-07,
+    "periodSeconds": 59354318.00264794
+  },
+  "moon-earth": {
+    "meanMotionRadPerSecond": 2.6917980859913097e-06,
+    "periodSeconds": 2334196.364830861
+  }
+}
