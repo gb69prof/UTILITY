@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17324d">
+  <title>Prova d'ingresso - Classi prime</title>
+  <style>
+    :root {
+      --bg: #eef2f5;
+      --panel: #ffffff;
+      --ink: #1d2733;
+      --muted: #687684;
+      --accent: #17324d;
+      --accent-2: #2f648f;
+      --line: #d9e1e8;
+      --shadow: 0 10px 28px rgba(23, 50, 77, 0.10);
+      --reading-size: 1.08rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .app {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    header {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 22px;
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
+      z-index: 5;
+    }
+
+    .heading {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 3px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      opacity: 0.74;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+      line-height: 1.15;
+      font-weight: 750;
+    }
+
+    .instructions {
+      flex: 0 1 530px;
+      margin: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      text-align: right;
+      opacity: 0.9;
+    }
+
+    main {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(340px, 2fr);
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .panel {
+      min-width: 0;
+      min-height: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .form-panel {
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .panel-bar {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #f9fbfc;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 750;
+      color: var(--accent);
+    }
+
+    .fallback-link {
+      color: var(--accent-2);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .fallback-link:hover,
+    .fallback-link:focus-visible {
+      text-decoration: underline;
+    }
+
+    .form-wrap {
+      min-height: 0;
+      background: #f5f7fa;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      border: 0;
+      display: block;
+      background: #fff;
+    }
+
+    .text-panel {
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .reading-tools {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .reading-tools button {
+      width: 35px;
+      height: 32px;
+      border: 1px solid #cbd5df;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--accent);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .reading-tools button:hover,
+    .reading-tools button:focus-visible {
+      background: #eef5fb;
+      outline: none;
+      border-color: #9cb9d1;
+    }
+
+    .reading {
+      min-height: 0;
+      overflow-y: auto;
+      padding: clamp(22px, 3vw, 38px);
+      scroll-behavior: smooth;
+      scrollbar-gutter: stable;
+    }
+
+    .story-kicker {
+      margin: 0 0 10px;
+      color: var(--accent-2);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .story-title {
+      margin: 0 0 26px;
+      color: var(--accent);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.75rem, 3.2vw, 2.7rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+    }
+
+    .story-text {
+      max-width: 72ch;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: var(--reading-size);
+      line-height: 1.78;
+      text-wrap: pretty;
+    }
+
+    .story-text p {
+      margin: 0 0 1.2em;
+    }
+
+    .story-text p:first-of-type::first-letter {
+      float: left;
+      margin: 0.08em 0.1em 0 0;
+      color: var(--accent);
+      font-size: 3.3em;
+      line-height: 0.82;
+      font-weight: 700;
+    }
+
+    .reading-note {
+      max-width: 72ch;
+      margin: 30px auto 0;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      header {
+        align-items: flex-start;
+      }
+
+      .instructions {
+        display: none;
+      }
+
+      main {
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        padding: 9px;
+      }
+
+      .panel {
+        border-radius: 12px;
+      }
+
+      .reading {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        overflow: auto;
+      }
+
+      .app {
+        height: auto;
+        min-height: 100vh;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+      }
+
+      .panel {
+        min-height: 0;
+      }
+
+      .form-panel {
+        height: 72vh;
+        min-height: 560px;
+      }
+
+      .text-panel {
+        height: auto;
+      }
+
+      .reading {
+        overflow: visible;
+      }
+
+      .fallback-link {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media print {
+      header,
+      .form-panel,
+      .reading-tools {
+        display: none !important;
+      }
+
+      body,
+      .app,
+      main,
+      .text-panel,
+      .reading {
+        height: auto;
+        overflow: visible;
+        background: #fff;
+      }
+
+      main {
+        display: block;
+        padding: 0;
+      }
+
+      .panel {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .reading {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="heading">
+        <p class="eyebrow">Italiano · Prova d'ingresso</p>
+        <h1>Classi prime</h1>
+      </div>
+      <p class="instructions">
+        Leggi il testo nel pannello di destra e rispondi alle domande nel pannello di sinistra.
+        I due riquadri scorrono in modo indipendente.
+      </p>
+    </header>
+
+    <main>
+      <section class="panel form-panel" aria-label="Prova interattiva">
+        <div class="panel-bar">
+          <h2 class="panel-title">Prova</h2>
+          <a
+            class="fallback-link"
+            href="https://forms.gle/5uRxpo2JB9URLigQ6"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Usa questo collegamento solo se il modulo non viene visualizzato correttamente"
+          >Apri in una scheda ↗</a>
+        </div>
+        <div class="form-wrap">
+          <iframe
+            src="https://forms.gle/5uRxpo2JB9URLigQ6"
+            title="Prova d'ingresso classi prime"
+            loading="eager"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="clipboard-write"
+          >
+            Il tuo browser non supporta i contenuti incorporati.
+          </iframe>
+        </div>
+      </section>
+
+      <section class="panel text-panel" aria-label="Testo della prova">
+        <div class="panel-bar">
+          <h2 class="panel-title">Testo da leggere</h2>
+          <div class="reading-tools" aria-label="Dimensione del testo">
+            <button type="button" id="decreaseText" aria-label="Riduci il testo">A−</button>
+            <button type="button" id="increaseText" aria-label="Ingrandisci il testo">A+</button>
+          </div>
+        </div>
+
+        <article class="reading" id="readingPanel">
+          <p class="story-kicker">Racconto</p>
+          <h2 class="story-title">Il segreto della soffitta numero 9</h2>
+
+          <div class="story-text" id="storyText">
+            <p>Il commissario Valenti camminava lentamente verso la vecchia palazzina di via dei Mille. L’aria di novembre era gelida e pungeva il viso come mille spilli invisibili. Sapeva che quella non era una chiamata come le altre: la signora Adelaide, un’anziana insegnante in pensione, aveva denunciato la scomparsa di un oggetto “impossibile”.</p>
+
+            <p>«È sparito il tempo, commissario», aveva esclamato la donna al telefono con voce tremante.</p>
+
+            <p>Entrando nell’appartamento, Valenti avvertì subito l’odore di carta antica e cera. Adelaide lo guidò fino alla soffitta. Al centro della stanza svettava un imponente orologio a pendolo del Settecento, ma il quadrante era nudo: le lancette erano state rimosse con una precisione chirurgica.</p>
+
+            <p>Valenti osservò i cardini della finestra: erano intatti. La porta era stata chiusa dall’interno. Il commissario interrogò a lungo la signora, cercando di scorgere un segno di esitazione nei suoi occhi grigi.</p>
+
+            <p>«Chi altro ha le chiavi?», chiese lui mentre osservava la polvere sul pavimento.</p>
+
+            <p>«Solo io, eppure ieri sera le lancette segnavano la mezzanotte. Stamattina, il vuoto».</p>
+
+            <p>Valenti notò un dettaglio minuscolo: una scia di polvere era stata rimossa non verso l’uscita, ma verso un pesante armadio di quercia. Sebbene l’oscurità fosse fitta, il commissario accese la sua torcia perché voleva vederci chiaro.</p>
+
+            <p>Dietro il mobile, incastrato in una fessura del legno, brillava un piccolo ingranaggio d’oro. Non era un furto esterno; era un messaggio. Qualcuno voleva che il tempo si fermasse proprio in quella casa.</p>
+
+            <p>Valenti sospirò. La soluzione non era fuori, ma annidata tra quei ricordi polverosi. Il colpevole aveva lasciato una traccia deliberata, e lui l’avrebbe seguita fino in fondo.</p>
+          </div>
+
+          <p class="reading-note">
+            Puoi scorrere questo testo senza perdere la posizione raggiunta nella prova.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const readingPanel = document.getElementById('readingPanel');
+      const minSize = 0.95;
+      const maxSize = 1.45;
+      const step = 0.08;
+      let currentSize = 1.08;
+
+      function applySize() {
+        root.style.setProperty('--reading-size', currentSize.toFixed(2) + 'rem');
+      }
+
+      document.getElementById('increaseText').addEventListener('click', () => {
+        currentSize = Math.min(maxSize, currentSize + step);
+        applySize();
+      });
+
+      document.getElementById('decreaseText').addEventListener('click', () => {
+        currentSize = Math.max(minSize, currentSize - step);
+        applySize();
+      });
+
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
+      window.addEventListener('load', () => {
+        readingPanel.scrollTop = 0;
+      });
+    })();
+  </script>
+</body>
+</html>
