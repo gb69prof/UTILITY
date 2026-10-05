@@ -1,0 +1,27 @@
+name: Verify entrance test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify public page via server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            set -eu
+            url="https://gbprof.it/UTILITY/Prove-ingresso-invalsi/Ingresso-prime/"
+            code="$(curl -sS -L --max-time 15 -o /tmp/prova-prime.html -w '%{http_code}' "$url")"
+            echo "URL=$url"
+            echo "HTTP=$code"
+            test "$code" = "200"
+            grep -Fq "Il segreto della soffitta numero 9" /tmp/prova-prime.html
+            grep -Fq "forms.gle/5uRxpo2JB9URLigQ6" /tmp/prova-prime.html
+            echo "VERIFICA=OK"
